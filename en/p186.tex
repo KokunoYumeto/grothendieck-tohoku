@@ -1,0 +1,81 @@
+% Source-aligned English for printed p.186.
+\clearpage
+\SourcePage{186}
+
+\LayerTarget{tohoku:proof:proposition-4.1.1:p1}
+\LayerTarget{tohoku:diagram:4.1.1:finite-type-stalk-hom}
+\[
+\begin{array}{ccccc}
+0&\longrightarrow&\mathbf{Hom}_O(A,B)(x)&\longrightarrow&
+  \mathbf{Hom}_O(O^n,B)(x)\\
+&&\big\downarrow&&\big\downarrow\\[0.45em]
+0&\longrightarrow&\mathrm{Hom}_{O(x)}(A(x),B(x))&\longrightarrow&
+  \mathrm{Hom}_{O(x)}(O^n(x),B(x)).
+\end{array}
+\]
+
+\LayerTarget{tohoku:eq:4.1.4}
+Now $\mathbf{Hom}_O(O^n,B)=\mathbf{Hom}_O(O,B)^n=B^n$, since there is a
+canonical isomorphism
+\[
+\tag{4.1.4}
+\mathbf{Hom}_O(O,B)=B.
+\]
+
+\LayerTarget{tohoku:proof:proposition-4.1.1:p2}
+The groups in the last column of the diagram therefore identify respectively
+with $B(x)^n$ and $\mathrm{Hom}_{O(x)}(O(x),B(x))^n=B(x)^n$. Thus the last
+vertical homomorphism is an isomorphism, and it follows at once that the first
+homomorphism is a monomorphism. Now suppose that $A$ is pseudo-coherent at
+$x$; that is, after restricting if necessary to a suitable neighborhood of
+$x$, there is an exact sequence
+$O^m\longrightarrow O^n\longrightarrow A\longrightarrow0$. Again using the
+left exactness of the $\mathrm{Hom}$ functors, we obtain a homomorphism of
+exact sequences:
+
+\LayerTarget{tohoku:diagram:4.1.1:pseudo-coherent-stalk-hom}
+\[
+\begin{array}{ccccccc}
+0&\longrightarrow&\mathbf{Hom}_O(A,B)(x)&\longrightarrow&
+  \mathbf{Hom}_O(O^n,B)(x)&\longrightarrow&\mathbf{Hom}_O(O^m,B)(x)\\
+&&\big\downarrow&&\big\downarrow&&\big\downarrow\\[0.45em]
+0&\longrightarrow&\mathrm{Hom}_{O(x)}(A(x),B(x))&\longrightarrow&
+  \mathrm{Hom}_{O(x)}(O^n(x),B(x))&\longrightarrow&
+  \mathrm{Hom}_{O(x)}(O^m(x),B(x)).
+\end{array}
+\]
+
+\LayerTarget{tohoku:proof:proposition-4.1.1:p3}
+We have already noted that the last two vertical homomorphisms are bijective.
+It follows at once that the first vertical homomorphism is an isomorphism.
+
+\LayerTarget{tohoku:question:injectivity-of-stalk}
+Now suppose that $B$ is an injective object of the abelian category $C^O$.
+Can we conclude that $B(x)$ is an injective $O(x)$-module? By Lemma 1 of 1.10,
+it is enough to verify that every $O(x)$-homomorphism from a left ideal $a$ of
+$O(x)$ into $B(x)$ extends to an $O(x)$-homomorphism from $O(x)$ into $B(x)$.
+Since the restriction of an injective $O$-module to an open subset is still
+injective (Prop. 3.1.3), it is enough to find an open neighborhood $U$ of $x$,
+a submodule $A$ of $O|U$, and a homomorphism $u$ from $A$ to $B|U$ such that
+$A(x)=a$ and the homomorphism from $A(x)$ to $B(x)$ defined by $u$ is the
+given homomorphism $a\longrightarrow B(x)$. Moreover, if $A$ is
+pseudo-coherent at $x$, the existence of $u$ follows automatically from
+Proposition 4.1.1. We therefore prove:
+
+\LayerTarget{tohoku:lemma:4.1.1}
+\noindent\textsc{Lemma 1.} \textit{Suppose that $O$ is a coherent sheaf of
+rings [15, Chap. I, §2], that $M$ is a coherent $O$-module (a ``coherent sheaf
+of modules'' in the terminology of [15]), and that $n$ is a submodule of
+finite type of $M(x)$. Then, on some suitable open neighborhood $U$ of $x$,
+there is a coherent subsheaf $N$ of $M$ such that $N(x)=n$.}
+
+\LayerTarget{tohoku:proof:lemma-4.1.1}
+Let $(n_i)$ be a finite system of generators of $n$ ($1\leq i\leq k$). For
+each $i$, we have $n_i\in M(x)$, hence $n_i=f_i(x)$, where $f_i$ is a section
+of $M$ defined on an open neighborhood of $x$. We may suppose that all the
+$f_i$ are defined on the same open neighborhood $U$; over $U$ they then
+define a homomorphism $O^k\longrightarrow M$. Take $N$ to be the image of
+this homomorphism, which is coherent as a submodule of finite type of the
+coherent sheaf $M$.
+
+\TohokuContinuation{187}

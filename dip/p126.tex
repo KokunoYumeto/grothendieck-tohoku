@@ -1,0 +1,83 @@
+% Direct-authority diplomatic French for printed p.126.
+\SourcePage{126}
+
+\LayerTarget{tohoku:section:1.3}
+\noindent\textbf{1.3. Catégories additives.}
+Une \textit{catégorie additive} est une catégorie $C$ pour laquelle on s'est
+donné, pour tout couple $(A,B)$ d'objets de $C$, une loi de groupe abélien dans
+$\mathrm{Hom}(A,B)$, de telle façon que la composition des morphismes soit une
+opération bilinéaire.
+
+\LayerTarget{tohoku:section:1.3:p1}
+On suppose de plus que la somme et le produit de deux objets quelconques $A,B$
+de $C$ existe. Il suffit d'ailleurs de postuler l'existence de la somme
+\textit{ou} du produit de $A$ et $B$, l'existence de l'autre s'en déduit alors
+facilement et de plus $A+B$ est canoniquement isomorphe à $A\times B$.
+(Supposant par exemple que $A\times B$ existe, on considère les morphismes
+$A\longrightarrow A\times B$ et $B\longrightarrow A\times B$ dont les
+composantes sont $(I_A,0)$ resp. $(0,I_B)$, et on vérifie qu'on obtient là une
+représentation de $A\times B$ comme somme directe de $A$ et $B$). Enfin, on
+postule l'existence d'un objet $A$ tel que $I_A=0$, on l'appelle un
+\textit{objet nul} ou \textit{zéro} de $C$. Il revient au même de dire que
+$\mathrm{Hom}(A,A)$ est réduit à zéro, ou encore que pour tout $B\in C$,
+$\mathrm{Hom}(A,B)$ (ou $\mathrm{Hom}(B,A)$) est réduit à zéro. Si $A$ et $A'$
+sont deux objets nuls, alors il existe un isomorphisme unique de $A$ sur $A'$
+(savoir l'unique élément $0$ de $\mathrm{Hom}(A,A')$ !), aussi on identifiera
+tous les objets nuls de $C$ à un seul, noté $0$ par abus d'écriture.
+
+\LayerTarget{tohoku:section:1.3:p2}
+La catégorie duale d'une catégorie additive est encore une catégorie additive.
+
+\LayerTarget{tohoku:section:1.3:p3}
+Soient $C$ une catégorie additive, $u:A\longrightarrow B$ un morphisme dans
+$C$. Pour que $u$ soit injectif (resp. surjectif) il faut et il suffit qu'il
+n'existe pas de morphisme non nul, qui composé à droite (resp. à gauche) avec
+$u$ donne zéro. On appelle \textit{noyau généralisé} de $u$ tout monomorphisme
+$i:A'\longrightarrow A$ tel que les morphismes $C\longrightarrow A$ qui sont
+diviseur de zéro à droite de $u$ soient exactement ceux qui se factorisent en
+
+\[
+  C\longrightarrow A'\mathrel{\mathop{\longrightarrow}^{i}}A;
+\]
+
+\noindent un tel monomorphisme est défini à équivalence près (cf.
+N\textsuperscript{o}1), donc parmi les noyaux généralisés de $u$ (s'il en
+existe) il y a exactement un qui soit un sous-truc de $A$ : on l'appelle
+\textit{le noyau de $u$}, et on le note $\mathrm{Ker}\,u$. On définit
+dualement le \textit{conoyau de $u$} (qui est un truc quotient de $B$, s'il
+existe), noté $\mathrm{Coker}\,u$. On appelle \textit{image} (resp.
+\textit{coimage}) du morphisme $u$, le noyau de son conoyau (resp. le conoyau
+de son noyau), s'il existe ; c'est donc un sous-truc de $B$ (resp. un truc
+quotient de $A$)%
+\LayerTarget{tohoku:section:1.3:footnote:1ter}\textsuperscript{1 ter)}
+on les note $\mathrm{Im}\,u$ resp. $\mathrm{Coim}\,u$. Si $u$ admet une image
+et une coimage, alors il existe un morphisme unique
+$\bar u:\mathrm{Coim}\,u\longrightarrow\mathrm{Im}\,u$ tel que $u$ soit
+identique au composé
+
+\[
+ A\longrightarrow\mathrm{Coim}\,u\longrightarrow
+ \mathrm{Im}\,u\longrightarrow B,
+\]
+
+\noindent où les morphismes extrêmes sont les morphismes canoniques.
+
+\LayerTarget{tohoku:section:1.3:p4}
+Un foncteur $F$ d'une catégorie additive $C$ dans une autre $C'$ est dit
+\textit{foncteur additif} si pour deux morphismes
+$u,v:A\longrightarrow B$ dans $C$, on a
+$F(u+v)=F(u)+F(v)$. Définition analogue pour les multifoncteurs. Des foncteurs
+composés de foncteurs additifs sont additifs. Si $F$ est un foncteur additif,
+$F$ transforme une somme directe finie d'objets $A_i$ en la somme directe des
+$F(A_i)$.
+
+\par\medskip\hrule\smallskip
+\LayerTarget{tohoku:section:1.3:footnote:1ter:text}%
+\noindent
+\textsuperscript{1 ter)} Une définition, plus naturelle à vrai dire, de
+l'image de $u$, serait de prendre le plus petit sous-truc $B'$ de $B$ (s'il en
+existe) tel que $u$ provienne d'un morphisme de $A$ dans $B'$. Cette définition
+n'est équivalente à celle donnée dans le texte que dans le cas où $C$ est une
+catégorie abélienne (cf. 1.4.)
+
+\TohokuContinuation{127}

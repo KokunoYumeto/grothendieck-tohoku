@@ -1,0 +1,77 @@
+% Direct-authority diplomatic French for printed p.182.
+\SourcePage{182}
+
+\LayerTarget{tohoku:proof:proposition-3.10.1:p2}
+$H^p(\varinjlim_i F_iC(A))$, ils sont donc isomorphes puisque le foncteur
+$\varinjlim_i$ sur la catégorie des systèmes inductifs sur $I$ à valeurs dans
+$\mathcal C'$ est exact (prop. 1.8) et en particulier permute à la formation
+de homologies de complexes.
+
+\LayerTarget{tohoku:corollary:3.10.1:1}
+\noindent\textsc{Corollaire 1.} \textit{Soit $X$ un espace muni d'une famille
+paracompactifiante $\Phi$. On a alors, pour tout faisceau abélien $F$ sur
+$X$ :}
+
+\LayerTarget{tohoku:eq:corollary-3.10.1-1:support-limit}
+\[
+H^p_{\Phi}(X,F)=\varinjlim_U H^p(X,F_U),
+\]
+\textit{la limite inductive étant prise suivant l'ordonné filtrant des ouverts
+$U$ de $X$ dont l'adhérence est dans $\Phi$. ($F_U$ désigne le faisceau sur
+$X$ dont la restriction à $U$ est $F|U$, et la restriction à $C U$ est 0).}
+
+\LayerTarget{tohoku:proof:corollary-3.10.1-1}
+En vertu du théorème 3.5.1. on a
+$H^p(X,F_U)=H^p_{\Phi_U}(U,F)$, où $\Phi_U$ est l'ensemble des parties de $U$
+fermées dans $X$. Posant $\Gamma_{\Phi_U}(F)=H^0(X,F_U)$, on peut donc aussi
+écrire $H^p(X,F_U)=\mathbf R^p\Gamma_{\Phi_U}(F)$ (compte tenu de proposition
+3.1.3), d'où en vertu de prop. 3.10.1 :
+$\varinjlim_U H^p(X,F_U)=\mathbf R^p\Gamma_{\Phi}(F)$ puisque
+$\varinjlim_U\Gamma_{\Phi_U}(F)=\Gamma_{\Phi}(F)$, cqfd.
+
+\LayerTarget{tohoku:remark:corollary-3.10.1-1:cartan}
+--- Le corollaire précédent est parfois utile pour ramener la cohomologie
+``à supports dans $\Phi$'' à la cohomologie à supports quelconques, et m'avait
+été signalé par M. Cartan.
+
+\LayerTarget{tohoku:corollary:3.10.1:2}
+\noindent\textsc{Corollaire 2.} \textit{Soient $X$ un espace topologique, $Y$
+une partie de $X$ admettant un système fondamental de voisinages paracompacts
+(il suffit par exemple que $X$ soit métrisable, ou localement compact et
+paracompact). Alors pour tout faisceau abélien $F$ sur $X$, on a}
+
+\LayerTarget{tohoku:eq:corollary-3.10.1-2:neighborhood-limit}
+\[
+H^p(Y,F)=\varinjlim_U H^p(U,F),
+\]
+\textit{la limite étant prise suivant l'ensemble ordonné filtrant décroissant
+des voisinages ouverts de $U$ dans $X$.}
+
+\LayerTarget{tohoku:proof:corollary-3.10.1-2}
+En effet, il résulte de l'hypothèse que
+$H^0(Y,F)=\varinjlim_U H^0(U,F)$ ([11], prop. 2.2.1), or les foncteurs dérivés
+de $F\longmapsto H^0(U,F)$ sont les $H^p(U,F)$, de sorte que le corollaire 2
+est un cas particulier de la proposition. On notera que l'on a aussi
+$H^0(Y,F)=\varinjlim_U H^0(U,F)$, et par suite la validité du corollaire 2, si
+$Y$ est \textit{fermé} et admet \textit{un voisinage paracompact}
+(démonstration analogue à celle de [11]) ; dans loc. cité, on trouvera aussi
+un contre-exemple simple (avec $p=0$) relatif au cas où on ne fait pas
+d'hypothèse de paracompacité.
+
+\LayerTarget{tohoku:result:3.10.2:preliminary}
+A titre de complément, indiquons encore sans démonstration le résultat
+suivant, cas particulier de résultats généraux sur les systèmes projectifs.
+Soit $X$ un espace localement compact, considérons l'ensemble filtrant
+croissant des parties ouvertes relativement compactes $U$ de $X$, alors pour
+tout faisceau abélien $F$ sur $X$, les homomorphismes de restriction
+$H^p(X,F)\longrightarrow H^p(U,F)$ définissent des homomorphismes canoniques
+(qui sont évidemment des homomorphismes de $\partial$-foncteurs) :
+
+\LayerTarget{tohoku:eq:3.10.2}
+\[
+\tag{3.10.2}
+H^p(X,F)\longrightarrow\varprojlim_U H^p(U,F)
+\]
+qui sont évide nment bijectifs pour $p=0$.
+
+\TohokuContinuation{183}

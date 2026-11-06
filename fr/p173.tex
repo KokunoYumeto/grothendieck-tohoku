@@ -1,0 +1,92 @@
+% Corrected French for printed p.173; departures are append-only below.
+\SourcePage{173}
+
+\LayerTarget{tohoku:proof:3.7.1:2:p2}
+\noindent induisant $g_1$. Le support de $h$ est contenu dans
+$A\cap f^{-1}(B_1)$, d'où il résulte aussitôt qu'il est dans $\Psi'$. Donc
+$h$ peut être considéré comme un élément de $\Gamma_\Phi(f_\Psi(F))$,
+induisant évidemment sur $U_1$ la même section que $g'$, et par suite
+induisant $g$ sur $B$.
+
+\LayerTarget{tohoku:construction:relative-leray-spectral-functor}
+Il résulte du corollaire à la proposition 3.3.1 que dans chacune des conditions
+du lemme 3.7.1, on peut appliquer le théorème 2.4.1 au foncteur composé
+$\Gamma_{\Psi'}=\Gamma_\Phi f_\Psi$ : il existe un foncteur spectral
+cohomologique sur $C^Y$, aboutissant au foncteur gradué
+$(H^n_{\Psi'}(Y,F))$, et dont le terme initial est
+
+\LayerTarget{tohoku:eq:relative-leray-preliminary-E2}
+\[
+E_2^{p,q}=H^p_\Phi\bigl(X,(R^qf_\Psi)(F)\bigr).
+\]
+Il reste à expliciter les faisceaux $(R^qf_\Psi)(F)$. De façon générale :
+
+\LayerTarget{tohoku:lemma:3.7.2}
+\noindent\textsc{Lemme 3.7.2.} --- \textit{Soit $T$ un foncteur covariant
+d'une catégorie abélienne $C$ dans la catégorie $C^X$ des faisceaux abéliens
+sur $X$. On suppose que tout objet de $C$ est isomorphe à un sous-objet d'un
+objet injectif, de sorte que les foncteurs dérivés droits $R^iT$ existent.
+Alors pour tout $A\in C$, le faisceau $R^iT(A)$ s'identifie au faisceau associé
+(cf. 3.1) au préfaisceau qui, à tout ouvert $U\subset X$, associe
+$R^i(\Gamma^U T)(A)$ (où $\Gamma^U$ désigne le foncteur
+$F\longmapsto\Gamma(U,F)$ sur $C^X$).}
+
+\LayerTarget{tohoku:proof:3.7.2}
+En effet, soit $C(A)$ le complexe associé à une résolution droite de $A$ par
+des objets injectifs, on a donc $R^iT(A)=H^i(T(C(A)))$. Or le $i.$\,ème
+faisceau de cohomologie d'un complexe de faisceaux $K=(K^i)$ n'est autre que
+le faisceau associé au préfaisceau qui, à l'ouvert $U$, associe le groupe
+$H^i(\Gamma(U,K))$ ; donc $R^iT(A)$ est le faisceau associé au préfaisceau
+\[
+U\longmapsto H^i\bigl(\Gamma(U,T(C(A)))\bigr)
+=R^i(\Gamma^U T)(A),
+\]
+ce qui démontre le lemme.
+
+\LayerTarget{tohoku:eq:derived-direct-image-presheaf}
+Dans le cas actuel $T=f_\Psi$, on voit donc que $R^if_\Psi(F)$ est le faisceau
+associé au préfaisceau
+\[
+U\longmapsto R^i(\Gamma^U f_\Psi)(F)=R^i\Gamma_{\Psi(U)}(F).
+\]
+Or nous avons déjà remarqué, comme conséquence immédiate de prop. 3.1.3, que
+les foncteurs dérivés de $\Gamma_{\Psi(U)}(f^{-1}(U),F)$ ne sont autres que
+les $H^i_{\Psi(U)}(f^{-1}(U),F)$. On obtient donc :
+
+\LayerTarget{tohoku:theorem:3.7.3}
+\noindent\textsc{Théorème 3.7.3.} --- \textit{Soit $f$ une application
+continue d'un espace $Y$ dans un espace $X$, on suppose $X$ et $Y$ munis d'un
+antifiltre de parties fermées $\Phi$ resp. $\Psi$. Les notations $\Psi(U)$,
+$f_\Psi$, $\Psi'$ sont celles indiquées au début de ce numéro. On suppose que
+$\Phi$ est paracompactifiante ou que $\Psi$ est l'ensemble de toutes les
+parties fermées de $Y$. Alors il existe un foncteur spectral cohomologique sur
+la catégorie $C^Y$ des faisceaux abéliens $F$ sur $Y$, aboutissant au foncteur
+gradué $(H^n_{\Psi'}(Y,F))$, et dont le terme initial est}
+
+\LayerTarget{tohoku:eq:relative-leray-E2}
+\[
+E_2^{p,q}(F)=H^p_\Phi(X,R^qf_\Psi(F)).
+\]
+
+\LayerTarget{tohoku:def:relative-derived-direct-image}
+\textit{Dans cette formule, $R^qf_\Psi(F)$ est le faisceau sur $X$ associé au
+préfaisceau qui, à l'ouvert $U$ sur $X$, associe le groupe
+$H^q_{\Psi(U)}(f^{-1}(U),F)$.}
+
+\LayerTarget{tohoku:specialization:ordinary-leray}
+Le cas le plus simple est celui où $\Phi$ et $\Psi$ sont l'ensemble de tous les
+fermés de $X$ resp. $Y$. Alors, \textit{sans aucune hypothèse sur $X,Y,f$, on
+trouve un foncteur spectral aboutissant à $(H^n(Y,F))$, et dont le terme
+initial est}
+
+\LayerTarget{tohoku:eq:ordinary-leray-E2}
+\[
+H^p(X,R^qf(F)),
+\]
+\textit{où $R^qf(F)$ est le faisceau associé au préfaisceau
+$U\longmapsto H^q(f^{-1}(U),F)$.}
+
+\LayerTarget{tohoku:application:leray-algebraic-varieties:p1}
+Cet énoncé peut s'appliquer par exemple utilement dans la théorie cohomologique
+
+\TohokuContinuation{174}

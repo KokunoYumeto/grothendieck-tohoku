@@ -1,0 +1,95 @@
+% Direct-authority diplomatic French for printed p.193.
+\clearpage
+\SourcePage{193}
+
+\LayerTarget{tohoku:remark:4.3.2:1}
+cependant encore vrai, (pour d'autres raisons) si on remplace $C(A)$ par la
+``résolvante de Cartan'' $A\otimes_{\mathbf Z}F$ (où $F$ est un ``faisceau
+fondamental'' sur $X$ supposé paracompact).
+
+\LayerTarget{tohoku:remark:4.3.2:2}
+\noindent 2. Soit $x\in X$, alors on a vu dans 4.2. qu'on a
+
+\LayerTarget{tohoku:formula:stalk-ext-filtered-colimit}
+$\mathbf{Ext}_{\mathbf O}^p(\mathbf M,A)(x)=
+\varinjlim\mathrm{Ext}_{\mathbf O}^p(U;\mathbf M,A)$, la limite inductive étant
+prise suivant le filtre des voisinages ouverts $U$ de $x$.
+
+\LayerTarget{tohoku:construction:stalk-spectral-sequence-limits}
+Or pour tout $U$, on peut écrire les suites spectrales $II$ et $III$, d'où on
+conclut par un passage à la limite facile que
+$(\mathbf{Ext}_{\mathbf O}^p(\mathbf M,A)(x))_p$ est l'aboutissement de deux
+suites spectrales, dont les termes initiaux sont respectivement
+
+\LayerTarget{tohoku:formula:stalk-spectral-ii-initial-term}
+\[
+\mathrm{II}_2^{p,q}=\varinjlim
+\mathrm{Ext}_O^p(M,H^q(U,A))
+\]
+
+\LayerTarget{tohoku:formula:stalk-spectral-iii-initial-term}
+\[
+\mathrm{III}_2^{p,q}=
+\bigoplus_{q'+q''=q}\varinjlim
+\mathrm{Ext}_K^p(\mathrm{Tor}_{q'}^K(K,M),H^{q''}(U,A)).
+\]
+(Dans la deuxième suite spectrale, on suppose $A$ annulé par un idéal bilatère
+$I$, et $K=O/I$).
+
+\LayerTarget{tohoku:criterion:stalk-ext-limit-transfer}
+Il en résulte que chaque fois que dans l'une de ses suites spectrales, on peut
+transférer le signe $\varinjlim$ sur $H(U,A)$ dans chacune des composantes du
+terme initial, la formule
+$\mathbf{Ext}_{\mathbf O}^p(\mathbf M,A)(x)=
+\mathrm{Ext}_O^p(M,A(x))$ est valable (dont la validité n'était assurée à
+priori que si $M$ admet une résolution projective par d2s modules $O^{n_i}$ de
+type fini). Voici deux cas typiques où ceci a lieu :
+
+\LayerTarget{tohoku:example:constant-sheaf-hlc}
+a) $A$ est le faisceau \textit{constant} défini par un $O$-module $N$, $X$ est
+HLC (on regarde la première suite spectrale).
+
+\LayerTarget{tohoku:example:noetherian-quotient}
+b) $A$ est annulé par un idéal $I$ tel que $O/I=K$ soit noethérien, et les
+$\mathrm{Tor}_q^O(K,M)$ sont de type fini sur $K$. ---Supposons que $A$ soit
+le faisceau constant défini par un $O$-module $N$ annulé par $I$, supposons
+$K=O/I$ un corps pour simplifier : alors
+
+\LayerTarget{tohoku:formula:constant-sheaf-ext-presheaf}
+$\mathbf{Ext}_{\mathbf O}^n(\mathbf M,\mathbf N)$ est le faisceau associé au
+préfaisceau défini par les
+\[
+\bigoplus_{p+q=n}
+\mathrm{Hom}_K(\mathrm{Tor}_p^O(K,M),H^q(U,N)).
+\]
+
+\LayerTarget{tohoku:example:theorem-4.2.2-stalk-failure}
+Il est facile de construire des exemples (avec $M=N=K$, $p=1$, $O$ étant
+l'algèbre $K(G)$ d'un groupe $G$ et $I$ l'idéal d'augmentation) où ce faisceau
+est distinct du faisceau constant associé à
+$\mathrm{Ext}_O^p(M,N)$ ($=H^p(G,K)$); dans ce cas, la conclusion du théorème
+4.2.2 est donc en défaut.
+
+\LayerTarget{tohoku:section:4.4}
+\SectionHeading{4.4. Cas des faisceaux avec groupe d'opérateurs.}
+
+\LayerTarget{tohoku:setup:group-operator-sheaves}
+Soit $G$ un groupe et $k$ un anneau cɔmmutatif avec unité, on pose $O=k(G)$
+(algèbre du groupe $G$ à coëfficients dans $k$), $O$ est une algèbre augmentée
+dont l'idéal d'augmentation sera désigné par $I$ : donc $k$ s'identifie à
+l'$O$-module $O/I$. Un $O$-Module $A$ n'est pas autre chose qu'un faisceau de
+$k$-modules admettant $G$ comme groupe d'opérateurs. Dire que $A$ est annulé
+par $I$ signifie que $G$ opère trivialement sur $A$. A cause de leur
+importance pour le chapitre suivant, nous allons reprendre rapidement les
+notations et résultats essentiels des numéros précédents dans le cas actuel.
+
+\LayerTarget{tohoku:setup:g-module-sheaf-notation}
+Sous-entendant une fois pour toutes $k$ dans les notations (en pratique, $k$
+sera l'anneau $\mathbf Z$ des entiers, ou un corps), on dira $G$-Module ou
+$G$-faisceau au lieu de $O$-Module. Si $A,B$ sont deux $G$-faisceaux, on
+écrira $\mathrm{Hom}_G(B,A)$, $\mathbf{Hom}_G(B,A)$,
+$\mathrm{Ext}_G^p(X;B,A)$ et $\mathbf{Ext}_G^p(B,A)$ (en mettant $G$ en indice
+au lieu de $O$). Dans le cas où $B=k$ (le seul important par la suite) les
+objets précédents seront notés aussi $\Gamma^G(A)$, $A^G$, $H^p(X;G,A)$ et
+
+\TohokuContinuation{194}

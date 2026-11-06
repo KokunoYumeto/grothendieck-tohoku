@@ -1,0 +1,88 @@
+% Source-aligned English for printed p.172.
+\SourcePage{172}
+
+\LayerTarget{tohoku:eq:direct-image-support}
+\[
+\operatorname{supp}_{X}(\varphi)
+=\overline{f(\operatorname{supp}_{Y}\varphi)}
+\]
+for every $\varphi\in\Gamma(f_\Psi(F))=\Gamma_{\Psi(X)}(F)$ (here the
+supports in $X$ and in $Y$ are distinguished by putting the space as a
+subscript on the symbol $\operatorname{supp}$).
+
+\LayerTarget{tohoku:def:pushforward-adapted-support-antifilter}
+Now let $\Phi$ be an antifilter of closed subsets of $X$, and let $\Psi'$ be
+the antifilter of closed subsets $A$ of $Y$ that belong to $\Psi(X)$ and for
+which the closure of $f(A)$ belongs to $\Phi$. The preceding formulas then
+imply
+
+\LayerTarget{tohoku:eq:adapted-support-sections}
+\[
+\Gamma_\Phi(f_\Psi(F))=\Gamma_{\Psi'}(F).
+\]
+
+\LayerTarget{tohoku:def:adapted-antifilters}
+(The families $\Phi$ and $\Psi$ are said to be \textit{adapted (relative to
+$f$)} if $\Psi=\Psi'$. This is the case, for example, if $\Phi$ and $\Psi$
+consist of all closed subsets of $X$ and $Y$, respectively.)
+
+\LayerTarget{tohoku:functor:relative-direct-image-left-exact}
+The functor $f_\Psi$ is left exact from the category $C^Y$ of sheaves of
+abelian groups on $Y$ to the category $C^X$. Moreover, the preceding formula
+is a functorial isomorphism. We may write it as
+
+\LayerTarget{tohoku:eq:adapted-support-functor-factorization}
+\[
+\Gamma_{\Psi'}=\Gamma_\Phi f_\Psi.
+\]
+We wish to apply Theorem 2.4.1 to it. For this, we need conditions under which
+$f_\Psi$ sends an injective sheaf to a $\Gamma_\Phi$-acyclic sheaf.
+
+\LayerTarget{tohoku:lemma:3.7.1}
+\noindent\textsc{Lemma 3.7.1.}
+\begin{description}
+\LayerTarget{tohoku:subitem:3.7.1:1}
+\item[\textit{1)}] \textit{If $\Psi$ is the set of all closed subsets of
+$Y$, then $f_\Psi$ sends injective sheaves to injective sheaves.}
+\LayerTarget{tohoku:subitem:3.7.1:2}
+\item[\textit{2)}] \textit{If $\Phi$ is paracompactifying, then $f_\Psi$
+sends flabby sheaves to $\Phi$-soft sheaves.}
+\end{description}
+
+\LayerTarget{tohoku:proof:3.7.1:1}
+\noindent\textsc{Proof.} 1) Suppose that $F$ is injective. For every
+$y\in Y$, let $M(y)$ be an injective abelian group containing $F(y)$, and let
+$M$ be the product sheaf defined by the $M(y)$ (cf. 3.1). The sheaf $F$ is a
+subsheaf of $M$ and hence a direct summand of $M$, since it is injective.
+Therefore $f_\Psi(F)$ is a direct summand of $f_\Psi(M)$, and it suffices to
+prove that $f_\Psi(M)$ is injective.
+
+\LayerTarget{tohoku:def:product-direct-image-sheaf}
+For every $x\in X$, let $N(x)$ be the product of the $M(y)$ over
+$y\in f^{-1}(x)$. It follows immediately from the definitions that
+$f(M)$ is the product sheaf $N$ defined by the family of groups $N(x)$.
+Each $N(x)$ is an injective abelian group, being a product of injective groups;
+hence $N$ is injective (Proposition 3.1.2), and therefore $f(M)$ is
+injective.
+
+\LayerTarget{tohoku:proof:3.7.1:2:p1}
+2) Suppose that $F$ is flabby, and let us prove that $f_\Psi(F)$ is
+$\Phi$-soft. Let $g$ be a section of $f_\Psi(F)$ over some $B\in\Phi$. We
+seek an $h\in\Gamma_\Phi(f_\Psi(F))=\Gamma_{\Psi'}(F)$ whose restriction to
+$B$ is $g$. Since $\Phi$ is paracompactifying, $B$ has a paracompact
+neighborhood $B'\in\Phi$. Thus $g$ is the restriction of a section $g'$ of
+$f_\Psi(F)$ defined on a suitable neighborhood $U\subset B'$ of $B$. Since
+$B'$ is normal, there is a closed neighborhood $B_1$ of $B$ contained in
+$U$; let $U_1$ be its interior.
+
+\LayerTarget{tohoku:construction:flabby-extension-section}
+Regard $g'$ as an element of $\Gamma_{\Psi(U)}(f^{-1}(U),F)$. Its support
+$A$ is a closed subset of $f^{-1}(U)$, so $A\cap f^{-1}(B_1)$ is closed in
+$Y$, and its complement in $Y$ is therefore open. The intersection of this
+open set with $f^{-1}(U_1)$ is contained in $\mathrm C A$, where $g'$ is zero.
+Consequently, there exists a section $g_1$ of $F$ on the union of
+$f^{-1}(U_1)$ and $\mathrm C(A\cap f^{-1}(B_1))$ that agrees with $g'$ on the
+first open set and is zero on the second. Finally, since $F$ is flabby, there
+exists a section $h$ of $F$ on $Y$
+
+\TohokuContinuation{173}

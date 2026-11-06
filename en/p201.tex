@@ -1,0 +1,105 @@
+% Source-aligned English for printed p.201.
+\clearpage
+\SourcePage{201}
+
+\LayerTarget{tohoku:proof:theorem-5.2.1:p1}
+\noindent from the fact that every abelian $G$-sheaf can be embedded in a
+flabby abelian $G$-sheaf (as we saw in the preceding section), which therefore
+makes the $H^q(X,A)$ vanish for $q>0$.
+
+\LayerTarget{tohoku:construction:edge-homomorphisms-5.2}
+These spectral sequences first give rise to the important edge homomorphisms
+
+\LayerTarget{tohoku:equation:5.2.6}
+\[
+H^n(Y,A^G)\longrightarrow H^n(X;G,A)
+\longrightarrow H^0(Y,\mathbf H^n(G,A)),
+\tag{5.2.6}
+\]
+
+\LayerTarget{tohoku:equation:5.2.7}
+\[
+H^n(G,H^0(X,A))\longrightarrow H^n(X;G,A)
+\longrightarrow H^n(X,A)^G.
+\tag{5.2.7}
+\]
+
+\LayerTarget{tohoku:construction:edge-map-interpretation}
+The second map in (5.2.6) has an immediate interpretation. By Lemma 3.7.2,
+$\mathbf H^n(G,A)$ is the sheaf on $Y$ associated with the presheaf formed by
+the $H^n(f^{-1}(U);G,A)$. The composite of the first homomorphism in the first
+line with the second homomorphism in the second line is the homomorphism
+$f^*$ associated with the natural injection (5.1.2) from $f^{-1}(A^G)$ into
+$A$ (cf. 3.2).
+
+\LayerTarget{tohoku:result:five-term-exact-sequences-5.2}
+The spectral sequences of Theorem 5.2.1 also define two five-term exact
+sequences:
+
+\LayerTarget{tohoku:equation:5.2.8}
+\[
+\tag{5.2.8}
+\begin{aligned}
+0\longrightarrow H^1(Y,A^G)&\longrightarrow H^1(X;G,A)
+\longrightarrow H^0(Y,\mathbf H^1(G,A))\longrightarrow H^2(Y,A^G)\\
+&\longrightarrow H^2(X;G,A),
+\end{aligned}
+\]
+
+\LayerTarget{tohoku:equation:5.2.9}
+\[
+\tag{5.2.9}
+\begin{aligned}
+0\longrightarrow H^1(G,\Gamma A)&\longrightarrow H^1(X;G,A)
+\longrightarrow H^1(X,A)^G\longrightarrow H^2(G,\Gamma A)\\
+&\longrightarrow H^2(X;G,A).
+\end{aligned}
+\]
+
+\LayerTarget{tohoku:construction:third-spectral-sequence}
+There is a third way to express $\Gamma_X^G$ as a composite functor, namely
+$\Gamma_X^G=\Gamma_Y^Gf_*$. Theorem 2.4.1 again applies by Proposition 5.1.3.
+Thus the graded functor $(H^n(X;G,A))$ is also the abutment of a third spectral
+sequence whose initial term is
+
+\LayerTarget{tohoku:formula:third-spectral-initial-term}
+\[
+E_2^{p,q}=H^p(Y;G,R^qf_*(A)).
+\]
+
+\LayerTarget{tohoku:equation:5.2.10}
+This spectral sequence defines functorial homomorphisms
+\[
+H^n(Y;G,f_*(A))\longrightarrow H^n(X;G,A).
+\tag{5.2.10}
+\]
+
+\LayerTarget{tohoku:remark:third-spectral-sequence-pathology}
+This spectral sequence is of limited interest, since it appears to be
+pathological whenever it is nontrivial, that is, outside the hypotheses of
+the following proposition.
+
+\LayerTarget{tohoku:proposition:5.2.2}
+\noindent\textsc{Proposition 5.2.2.} \textit{Let $A$ be an abelian
+$G$-sheaf such that $R^qf_*(A)=0$ for $q>0$. Then the homomorphisms (5.2.10)
+are isomorphisms. Moreover, the two spectral sequences of Theorem 5.2.1 are
+then identified with the two corresponding spectral sequences for the
+$G$-sheaf $f_*(A)$ on $Y$, and}
+
+\LayerTarget{tohoku:equation:5.2.11}
+\[
+\mathbf H^q(G,A)=\mathbf H^q(G,f_*(A)).
+\tag{5.2.11}
+\]
+
+\LayerTarget{tohoku:proof:proposition-5.2.2:p1}
+The first assertion follows at once from the form of the initial term of the
+spectral sequence $E$ defining (5.2.10). The other assertions follow from the
+explicit definition of the terms being compared, on observing that for every
+injective resolution $C(A)$ of $A$ in $C^{X(G)}$, the complex $f_*(C(A))$ is
+a \textit{resolution} of $f_*(A)$ (this is precisely what the hypothesis
+$R^qf_*(A)=0$ for $q>0$ means) and is injective by Proposition 5.1.3. --- Note
+that we had implicitly defined the $R^qf_*(A)$ as the right derived functors
+of $f_*$ viewed as a
+
+\TohokuContinuation{202}

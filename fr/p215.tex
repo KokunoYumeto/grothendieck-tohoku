@@ -1,0 +1,106 @@
+% Corrected French for printed p.215.
+% Direct review found no print-level repair on this page.
+\clearpage
+\SourcePage{215}
+
+\LayerTarget{tohoku:comparison:equivariant-hom-stalk-to-fiber}
+\LayerTarget{tohoku:equation:5.6.9}
+\noindent bijectifs lorsque $O$ est un faisceau \textit{cohérent} d'anneaux
+\textit{noethériens} à gauche, et $A$ est cohérent en tant que $O$-module ; et
+que sous ces conditions sur $X,G,O$, le $U_x$-module $B(x)$ est injectif chaque
+fois que $B$ est un objet injectif de $C^{O(G)}$. (On remplacera dans la
+démonstration, les $O$-Modules libres de 4.1. par des $G$-$O$-modules du type
+$L(U)$ introduits dans la démonstration de prop. 5.1.1). On en conclut
+immédiatement que les homomorphismes naturels
+
+\LayerTarget{tohoku:comparison:equivariant-ext-stalk-to-fiber}
+\LayerTarget{tohoku:equation:5.6.10}
+\[
+\tag{5.6.10}
+\mathbf{Ext}_{O,G}^n(A,B)(y)
+\longrightarrow \operatorname{Ext}_{U_x}^n(A(x),B(x))
+\]
+
+\noindent \textit{déduits des homomorphismes} (5.6.9) \textit{sont des
+isomorphismes si on suppose le groupe d'homéomorphismes $G$ discontinu au sens
+de 5.3, $O$ un faisceau cohérent d'anneaux noethériens à gauche, et $A$ un
+$G$-$O$-Module, cohérent en tant que $O$-Module}. Cet énoncé contient à la fois
+les théorèmes 4.2.2 et 5.3.1 (le faisceau d'anneaux constant $\mathbf Z$ étant
+cohérent et noethérien !) et précise dans les cas les plus importants la
+structure des $\mathbf{Ext}_{O,G}^n(A,B)$.
+
+\LayerTarget{tohoku:spectral-sequence:equivariant-ext-composite-functors}
+Des formules (5.6.4) et (5.6.5), on peut tirer autant de suites spectrales par
+application du théorème 2.4.1. Nous ne nous intéresserons qu'à celles déduites
+de (5.6.5), aboutissant à $\operatorname{Ext}_{O,G}^{*}(X;A,B)$. Il faut encore
+vérifier que dans chacune de ces trois formules donnant $h_{O,G,A}$ comme un
+foncteur composé, la condition d'acyclicité usuelle est vérifiée, cela résulte
+du
+
+\LayerTarget{tohoku:lemma:5.6.1}
+\noindent\textsc{Lemme 5.6.1.}\quad \textit{Supposons que $B$ soit un objet
+injectif de $C^{O(G)}$, alors $\mathbf{Hom}_{O,G}(A,B)$ est un faisceau flasque
+sur $Y$, $\operatorname{Hom}_O(A,B)$ est un $G$-module
+$\Gamma^G$-acyclique, et $\mathbf{Hom}_O(A,B)$ est un $G$-faisceau
+$\Gamma_X^G$-acyclique.}
+
+\LayerTarget{tohoku:proof:lemma-5.6.1}
+En vertu de proposition 5.1.2, on est ramené au cas où $B$ est le faisceau
+produit défini par une famille $(B_x)_{x\in X}$ de $U_x$-modules injectifs
+$B_x$. Il en résulte que le $G$-faisceau abélien
+$\mathbf H=\mathbf{Hom}_O(A,B)$ est le faisceau produit défini par la famille
+de $G_x$-modules
+$H_x=\operatorname{Hom}_{O(x)}(A(x),B(x))$.
+
+\LayerTarget{tohoku:construction:product-hom-sheaf}
+Alors $\mathbf{Hom}_{O,G}(A,B)$ est le faisceau produit sur $Y$ défini par la
+famille des groupes
+
+\LayerTarget{tohoku:equation:product-stalk-invariants}
+\[
+H_y=\left(\prod_{f(x)=y} H_x\right)^G
+\simeq H_{\xi(y)}^{G_{\xi(y)}}
+\]
+
+\noindent (où $\xi(y)$ est un représentant de l'orbite $f^{-1}(y)$), donc
+est flasque.
+Admettons un instant que les $H_x$ sont des $G_x$-modules
+$\Gamma^{G_x}$-acycliques, (ce sera prouvé dans le corollaire ci-dessous).
+
+\LayerTarget{tohoku:construction:coinduced-hom-module}
+Alors le $G$-module $\overline H_x$ induit par le $G_x$-module $H_x$ par
+extension contravariante des scalaires est $\Gamma^G$-acyclique comme bien
+connu, donc
+
+\LayerTarget{tohoku:equation:global-hom-product}
+\[
+\operatorname{Hom}_O(A,B)=\Gamma_X\mathbf H
+=\prod_{x\in X/G}\overline H_x
+\quad\hbox{est $\Gamma^G$-acyclique.}
+\]
+
+Enfin, $\mathbf H$ étant flasque donc $\Gamma_X$-acyclique, il résulte de la
+deuxième suite spectrale du théorème 5.2.1 que
+
+\LayerTarget{tohoku:equation:equivariant-hom-cohomology-vanishing}
+\[
+H^n(X;G,\mathbf H)=H^n(G,\Gamma_X\mathbf H),
+\]
+
+\noindent qui est nul pour $n>0$ d'après ce qu'on a vu. Cela achève la
+démonstration du lemme 5.6.1, pourvu qu'on prouve le cas particulier suivant :
+
+\LayerTarget{tohoku:corollary:coinduced-hom-acyclicity}
+\noindent\textsc{Corollaire.}\quad \textit{Soit $O$ un anneau avec unité où
+opère un groupe $G$, soit $U$ l'anneau engendré par $O$ et $\mathbf Z(G)$,
+soumis aux relations de commutation $g\lambda g^{-1}=\lambda^g$ pour $g\in G$,
+$\lambda\in O$. Soient $A$ et $B$ deux $U$-modules, $B$ injectif. Alors le
+$G$-module $\operatorname{Hom}_O(A,B)$ est $\Gamma^G$-acyclique. (Ne pas croire
+qu'il soit injectif !)}
+
+\LayerTarget{tohoku:proof:coinduced-hom-acyclicity}
+\LayerTarget{tohoku:definition:coinduced-module-b-prime}
+Soit $B'=\operatorname{Hom}_{\mathbf Z}(\mathbf Z(G),B)$ le groupe des
+applications $f$ de $G$ dans $B$, nous
+
+\TohokuContinuation{216}

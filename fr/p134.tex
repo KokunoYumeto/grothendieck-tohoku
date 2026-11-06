@@ -1,0 +1,67 @@
+% Corrected French for printed p.134.
+% Corrections: infinie -> infinies; u(A) -> u(U).
+\SourcePage{134}
+
+\LayerTarget{tohoku:prop:1.8:proof:p2}
+\noindent $=w_{ij}(A_i)$, soit $N$ le sous-truc de $S$ borne supérieure des
+$N_{ij}$ (qui existe en vertu de l'axiome AB 3)), soit
+$\overline A=S/N$, soit $u_i:A_i\longrightarrow\overline A$ le morphisme
+induit par le morphisme canonique $S\longrightarrow S/N$, on constate aussitôt
+que $(\overline A,u_i)$ est une limite inductive de $\mathbf A$. Nous laissons
+au lecteur la démonstration des autres assertions de la proposition 1.8.,
+démonstration évidemment bien connue.
+
+\LayerTarget{tohoku:section:1.9}
+\noindent\textbf{1.9. Générateurs et cogénérateurs.} Soit $C$ une catégorie,
+et soit $(U_i)_{i\in I}$ une famille d'objets de $C$. On dit que c'est une
+\textit{famille de générateurs de $C$} si pour tout objet $A\in C$ et tout
+sous-truc $B\neq A$, on peut trouver un $i\in I$ et un morphisme
+$u:U_i\longrightarrow A$ qui ne provienne pas d'un morphisme de $U_i$ dans
+$B$. Alors pour tout $A\in C$, les sous-trucs de $A$ forment un
+\textit{ensemble} : en effet, un sous-truc $B$ de $A$ est complètement
+déterminé par l'ensemble des morphismes d'objets $U_i$ dans $A$ qui proviennent
+d'un morphisme de $U_i$ dans $B$. On dit qu'un objet $U\in C$ est un
+\textit{générateur} de $C$ si la famille $\{U\}$ est une famille de
+générateurs.
+
+\LayerTarget{tohoku:prop:1.9.1}
+\noindent\textsc{Proposition 1.9.1.} --- \textit{Supposons que $C$ soit une
+catégorie abélienne satisfaisant à l'axiome AB 3) (existence de sommes directes
+infinies), soit $(U_i)_{i\in I}$ une famille d'objets de $C$,
+$U=\bigoplus U_i$ sa somme directe. Les conditions suivantes sont
+équivalentes :}
+
+\begin{enumerate}
+\item[a)] \textit{$(U_i)$ est une famille de générateurs de $C$.}
+\item[b)] \textit{$U$ est un générateur de $C$.}
+\item[c)] \textit{Tout $A\in C$ est isomorphe à un quotient d'une somme
+directe $U^{(I)}$ d'objets tous identiques à $U$.}
+\end{enumerate}
+
+\LayerTarget{tohoku:prop:1.9.1:proof}
+L'équivalence de a) et b) est une conséquence à peu près immédiate de la
+définition. b) implique c), car il suffit de prendre pour $I$ l'ensemble
+$\mathrm{Hom}(U,A)$ et de considérer le morphisme de $U^{(I)}$ dans $A$ dont
+la composante suivant chaque $u\in I$ est $u$ lui-même : l'image $B$ de ce
+morphisme est $A$, puisque autrement il existerait un
+$u\in\mathrm{Hom}(U,A)=I$ tel que $u(U)\not\subset B$, ce qui serait absurde ;
+donc $A$ est isomorphe à un quotient de $U^{(I)}$. c) implique b), car il est
+immédiat que si $A$ est un quotient de $U^{(I)}$, alors pour tout sous-truc
+$B$ de $A$ distinct de $A$, il existe un $i$ tel que l'image canonique dans
+$A$ du i.ème facteur de $U^{(I)}$ soit $\not\subset B$, d'où un morphisme de
+$U$ dans $A$ qui ne provient pas d'un morphisme de $U$ dans $B$. (On notera
+que la structure additive de $C$ n'a pas réellement servi ici).
+
+\LayerTarget{tohoku:section:1.9:examples:p1}
+\noindent\textsc{Exemples.} Si $C$ est la catégorie abélienne des modules à
+gauche unitaires sur un anneau $U$ avec unité, alors $U$ (considéré comme
+module à gauche sur lui-même) est un générateur. Si $C$ est la catégorie des
+faisceaux de groupes abéliens sur un espace topologique fixé $X$, et si pour
+tout ouvert $U\subset X$ on désigne par $Z_U$ le faisceau sur $X$ qui est nul
+au dessus de $C U$ et identique au faisceau constant des entiers au dessus de
+$U$, la famille des $Z_U$ forme un système de générateurs de $C$ ; cet exemple
+se généralise aussitôt au cas où on se donne sur $X$ un faisceau $O$ d'anneaux,
+et où l'on considère la catégorie des faisceaux de $O$-modules sur $X$.
+D'autres exemples sont contenus dans la proposition suivante :
+
+\TohokuContinuation{135}

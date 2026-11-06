@@ -1,0 +1,94 @@
+% Source-aligned English for printed p.188.
+\clearpage
+\SourcePage{188}
+
+\LayerTarget{tohoku:remark:ext-bifunctoriality:p1}
+\LayerTarget{tohoku:remark:ext-center-modules}
+Finally, to complete this chain of observations, note that
+$\mathrm{Ext}_O^p(X;A,B)$ is a module over $\Gamma(O^\natural)$, while
+$\mathbf{Ext}_O^p(A,B)$ is a module over the sheaf of rings $O^\natural$, the
+center of $O$.
+
+\LayerTarget{tohoku:construction:hom-composite-functors}
+Formula (4.1.2) can also be written as follows. Let $h_A$ and, respectively,
+$\mathbf{h}_A$ denote the covariant functors from $C^O$ to the category $C$ of
+abelian groups and, respectively, to $C^X$, defined by
+
+\LayerTarget{tohoku:eq:4.2.4}
+\[
+\tag{4.2.4}
+h_A(B)=\mathrm{Hom}_O(A,B),\qquad
+\mathbf{h}_A(B)=\mathbf{Hom}_O(A,B):
+\qquad h_A=\Gamma\mathbf{h}_A.
+\]
+
+Thus $h_A$ appears as a composite functor, to which Theorem 2.4.1 applies by
+Proposition 4.1.3 and the corollary to Proposition 3.3.1. We therefore obtain:
+
+\LayerTarget{tohoku:theorem:4.2.1}
+\noindent\textsc{Theorem 4.2.1.} \textit{Let $X$ be a topological space
+equipped with a sheaf of rings with identity $O$, and let $C^O$ be the category
+of $O$-modules on $X$. Fix an $O$-module $A\in C^O$. Then there exists on
+$C^O$ a cohomological spectral functor abutting to the graded functor
+$(\mathrm{Ext}_O^p(X;A,B))$, whose initial term is}
+
+\LayerTarget{tohoku:eq:4.2.5}
+\[
+\tag{4.2.5}
+I_2^{p,q}(A,B)=H^p(X,\mathbf{Ext}_O^q(A,B)).
+\]
+
+\LayerTarget{tohoku:eq:4.2.6}
+In particular, one obtains the edge homomorphisms
+\[
+\tag{4.2.6}
+\begin{aligned}
+H^p(X,\mathbf{Hom}_O(A,B))&\longrightarrow
+  \mathrm{Ext}_O^p(X;A,B),\\
+\mathrm{Ext}_O^p(X;A,B)&\longrightarrow
+  H^0(X,\mathbf{Ext}_O^p(A,B))
+\end{aligned}
+\]
+(the latter is also the map arising from the interpretation of
+$\mathbf{Ext}_O^p(A,B)$ as the sheaf associated with the presheaf
+$\mathrm{Ext}_O^p(-;A,B)$), together with the five-term exact sequence
+
+\LayerTarget{tohoku:eq:4.2.7}
+\[
+\tag{4.2.7}
+\begin{aligned}
+0\longrightarrow H^1(X,\mathbf{Hom}_O(A,B))
+&\longrightarrow \mathrm{Ext}_O^1(X;A,B)
+\longrightarrow H^0(X,\mathbf{Ext}_O^1(A,B))\\
+&\longrightarrow H^2(X,\mathbf{Hom}_O(A,B))
+\longrightarrow \mathrm{Ext}_O^2(X;A,B).
+\end{aligned}
+\]
+
+\LayerTarget{tohoku:remark:ext1-extension-classes}
+This exact sequence \textit{makes precise, in particular, the structure of
+the group $\mathrm{Ext}_O^1(X;A,B)$ of classes of $O$-module extensions of
+$A$ (the quotient module) by $B$ (the submodule).}
+
+\LayerTarget{tohoku:construction:stalk-ext-comparison}
+To use the spectral sequence just obtained, it remains to specify the
+calculation of $\mathbf{Ext}_O^p(A,B)$. Since the functor
+$F\longmapsto F(x)$, which assigns to an abelian sheaf $F$ its stalk $F(x)$,
+is exact, the groups $\mathbf{Ext}_O^p(A,B)(x)$ may, with $A$ fixed and $p$
+and $B$ variable, be regarded as forming a universal covariant cohomological
+functor in $B$, reducing in dimension 0 to $\mathbf{Hom}_O(A,B)(x)$. Likewise,
+the groups $\mathrm{Ext}_{O(x)}^p(A(x),B(x))$ form a cohomological functor in
+$B$, reducing in dimension 0 to
+$\mathrm{Hom}_{O(x)}(A(x),B(x))$. The functorial homomorphism (4.1.3) and the
+definition of universal cohomological functors therefore give homomorphisms
+
+\LayerTarget{tohoku:eq:4.2.8}
+\[
+\tag{4.2.8}
+\mathbf{Ext}_O^p(A,B)(x)\longrightarrow
+\mathrm{Ext}_{O(x)}^p(A(x),B(x))
+\]
+(characterized by defining a homomorphism of cohomological functors which in
+dimension 0 reduces to homomorphism (4.1.3)).
+
+\TohokuContinuation{189}

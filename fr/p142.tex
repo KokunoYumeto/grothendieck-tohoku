@@ -1,0 +1,72 @@
+% Corrected French for printed p.142.
+% Corrections: homomorphisme de bord; n° 2.1; standard; masculine agreement
+% for groupes algébriques (définis, complets, abéliens).
+\SourcePage{142}
+
+\LayerTarget{tohoku:thm:2.2.2:p2}
+\noindent\textit{faut et il suffit que $F$ satisfasse aux conditions suivantes :
+$F$ est semi-exact, et pour $P\subset Q\subset R$ dans $C$, le noyau de
+$F(Q/P)\longrightarrow F(R/P)$ est contenu dans l'image de
+$F(Q)\longrightarrow F(Q/P)$ (conditions toujours satisfaites si $F$ est
+exact à gauche ou exact à droite).}\footnote{(Note ajoutée pendant la
+correction des épreuves.) Cette condition est aussi automatiquement vérifiée
+si tout objet de $C$ est isomorphe à un sous-objet d'un objet injectif,
+cf. [6, Chap. III].}
+
+\LayerTarget{tohoku:thm:2.2.2:proof:p1}
+La démonstration est essentiellement contenue dans [6, Chap. III]. Pour la
+première partie, il suffit de prouver l'existence de $S^1F$. Soit $A\in C$,
+considérons une suite exacte
+$0\longrightarrow A\longrightarrow M\longrightarrow A'\longrightarrow0$, où
+le premier morphisme est un effacement injectif de $A$, posons
+$S^1F(A)=F(A')/\mathrm{Im}(F(M))$, on voit comme dans [6] que le deuxième
+membre est indépendant du choix particulier de la suite exacte choisie,
+(modulo des isomorphismes canoniques) et peut être considéré comme un foncteur
+en $A$. La définition de l'homomorphisme de bord, la vérification des axiomes
+(i) et (ii) du n\textsuperscript{o} 2.1, et du fait que le
+$\partial$-foncteur obtenu $(F,S^1F)$ est universel est aussi standard. De
+même, nous omettrons la démonstration du critère d'exactitude.
+
+\LayerTarget{tohoku:thm:2.2.2:dual}
+--- \textit{Signalons l'énoncé dual : Si dans $C$, tout objet admet un
+effacement projectif, alors les satellites $S^iF$ ($i\leq0$) existent, et
+sont des foncteurs coeffaçables ; la condition pour que le $\partial$-foncteur
+$(S^iF)_{i\leq0}$ soit exact est la même que dans l'énoncé du théorème 2.2.2.}
+Par suite, si dans $C$ tout objet admet un effacement injectif et un effacement
+projectif, alors tout foncteur covariant additif $F$ admet des satellites
+$S^iF$ pour tout $i$. Pour tout $a>0$, la troncation droite finie
+$(S^iF)_{0\leq i\leq a}$ est universelle au sens initial pour le prolongement
+d'un morphisme partant de $F$ en degré 0 ; après renversement des degrés, la
+troncation gauche finie $(S^iF)_{-a\leq i\leq0}$ transporte l'universalité au
+sens terminal pour le prolongement d'un morphisme arrivant dans $F$ en degré
+0. Le $\partial$-foncteur recollé $(S^iF)_{i\in\mathbf{Z}}$ est exact si et
+seulement si $F$ satisfait à la condition donnée dans l'énoncé du théorème
+2.2.2, mais il n'est pas en général universel globalement. Si $F$ est un foncteur contravariant, il faut, dans
+les énoncés ci-dessus, permuter les cas $i\leq0$ et $i\geq0$, et remplacer la
+condition d'exactitude par une condition duale.
+
+\LayerTarget{tohoku:remark:satellites-small-skeleton:p1}
+\noindent\textsc{Remarque.} Signalons un autre cas, très différent de celui
+donné dans le théorème 2.2.2, où on peut construire les foncteurs satellites
+d'un foncteur arbitraire de $C$ dans $C'$ : Supposons qu'on puisse trouver un
+ensemble $C_0\subset C$ tel que tout $A\in C$ soit isomorphe à un objet
+$\in C_0$, et supposons que $C'$ soit une catégorie abélienne où les sommes
+directes infinies existent. Alors pour tout foncteur additif $F$ de $C$ dans
+$C'$, les satellites $(S^iF)$ ($i\geq0$) existent. De plus, si $C'$ satisfait
+à l'axiome AB 5) (cf. 1.5) et si $F$ satisfait la condition de la fin du
+théorème 2.2.2, alors le $\partial$-foncteur $(S^iF)_{i\geq0}$ est exact. Comme
+en particulier la catégorie des groupes abéliens satisfait à la condition
+AB 5), on peut appliquer le résultat précédent au foncteur
+$\mathrm{Hom}(A,B)$ à valeurs dans la catégorie des groupes abéliens et
+définir ainsi les foncteurs $\mathrm{Ext}^i(A,B)$ comme satellites de
+$\mathrm{Hom}(A,B)$, considéré soit comme foncteur covariant en $B$, soit
+comme foncteur contravariant en $A$. (Mais il resterait à prouver que ces deux
+procédés donnent le même résultat). La condition envisagée sur $C$ est
+vérifiée pour des catégories dont les objets sont soumis à certaines
+conditions de finitude (et où en particulier des sommes directes infinies
+n'existent pas en général). Exemple : la catégorie abélienne des groupes
+algébriques (non nécessairement connexes) définis sur un corps $k$ fixé de
+caractéristique 0, qui sont complets en tant que variétés algébriques et
+abéliens en tant que groupes, i. e. la catégorie des groupes algébriques
+
+\TohokuContinuation{143}

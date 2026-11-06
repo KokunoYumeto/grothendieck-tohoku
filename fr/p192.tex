@@ -1,0 +1,105 @@
+% Corrected French for printed p.192; departures are append-only below.
+\clearpage
+\SourcePage{192}
+
+\LayerTarget{tohoku:corollary:4.3.2:1}
+\noindent\textsc{Corollaire 1.} \textit{Supposons que $A$ soit annulé par un
+idéal bilatère $I$ de $O$ tel que $O/I$ soit un anneau semi-simple $K$. Alors
+les deux suites spectrales du bicomplexe $\mathrm{Hom}_O(L,\Gamma C(A))$ sont
+triviales, et leurs termes initiaux s'identifient canoniquement à l'homologie
+$\mathrm{Ext}_{\mathbf O}(X;\mathbf M,A)$ de ce bicomplexe, et on a plus
+précisément des isomorphismes canoniques :}
+
+\LayerTarget{tohoku:eq:4.3.4}
+\[
+\tag{4.3.4}
+\mathrm{Ext}_{\mathbf O}^n(X;\mathbf M,A)=
+\bigoplus_{p+q=n}
+\mathrm{Hom}_K(\mathrm{Tor}_p^O(K,M),H^q(X,A)).
+\]
+
+\LayerTarget{tohoku:proof:corollary-4.3.2:1}
+En effet, $C(A)$ et par suite $\Gamma C(A)$ sera aussi annulé par $I$, d'où on
+conclut
+
+\LayerTarget{tohoku:eq:4.3.5}
+\[
+\tag{4.3.5}
+\mathrm{Hom}_O(L,\Gamma C(A))=
+\mathrm{Hom}_K(K\otimes_O L,\Gamma C(A))
+\]
+
+\LayerTarget{tohoku:proof:kunneth-collapse-4.3.4}
+et comme $K$ est semi-simple on peut appliquer la version la plus simple du
+théorème de Künneth (due au fait que $\mathrm{Hom}_K$ est un bifoncteur exact) :
+On trouve la trivialité des suites spectrales, plus la formule
+\[
+H(\mathrm{Hom}_K(K\otimes_O L,\Gamma C(A)))=
+\mathrm{Hom}_K(H(K\otimes_O L),H(\Gamma C(A))),
+\]
+ce qui n'est autre que la formule (4.3.4).
+
+\LayerTarget{tohoku:construction:relative-k-hyperhomology-spectral-sequences}
+Supposons toujours que $A$ est annulé par un idéal bilatère $I$, mais ne
+supposons rien sur $K=O/I$. On a (4.3.5), ce qui amène à considérer les suites
+spectrales de hyperhomologie du bifoncteur $\mathrm{Hom}_K$ relativement aux
+complexes $K\otimes_O L$ et $\Gamma C(A)$. Dans la première le terme initial
+
+\LayerTarget{tohoku:formula:first-relative-k-initial-term}
+$H^p(\mathrm{Ext}_K^q(K\otimes_O L,\Gamma C(A)))$ est nul pour $q>0$, puisque
+$K\otimes_O L$ est $K$-libre. Donc l'aboutissement s'identifie canoniquement à
+$H(\mathrm{Hom}_K(K\otimes_O L,\Gamma C(A)))$ qu'il s'agit précisément de
+calculer. Dans la deuxième suite spectrale, le terme initial est
+
+\LayerTarget{tohoku:formula:second-relative-k-initial-term}
+\[
+\bigoplus_{q'+q''=q}
+\mathrm{Ext}_K^p(H^{q'}(K\otimes_O L),H^{q''}\Gamma C(A)).
+\]
+Donc :
+
+\LayerTarget{tohoku:corollary:4.3.2:2}
+\noindent\textsc{Corollaire 2.} \textit{Supposons le $\mathbf O$-Module $A$
+annulé par un idéal bilatère $I$ de $O$, posons $K=O/I$. Alors
+$(\mathrm{Ext}_{\mathbf O}^n(X;\mathbf M,A))$ est aussi l'aboutissement d'un
+troisième foncteur spectral, dont le terme initial est}
+
+\LayerTarget{tohoku:eq:4.3.6}
+\[
+\tag{4.3.6}
+\mathrm{III}_2^{p,q}(A)=
+\bigoplus_{q'+q''=q}
+\mathrm{Ext}_K^p(\mathrm{Tor}_{q'}^O(K,M),H^{q''}(X,A)).
+\]
+
+\LayerTarget{tohoku:corollary:left-hereditary-k}
+\textit{En particulier, si $K$ est un ``anneau héréditaire à gauche''
+[6, 1.5] (par exemple un anneau principal) on a une suite exacte canonique :}
+
+\LayerTarget{tohoku:sequence:left-hereditary-k}
+\[
+\begin{split}
+0\longrightarrow{}&
+\bigoplus_{p+q=n-1}
+\mathrm{Ext}_K^1(\mathrm{Tor}_p^O(K,M),H^q(X,A))\\
+\longrightarrow{}&\mathrm{Ext}_{\mathbf O}^n(X;\mathbf M,A)
+\longrightarrow
+\bigoplus_{p+q=n}
+\mathrm{Hom}_K(\mathrm{Tor}_p^O(K,M),H^q(X,A))
+\longrightarrow0.
+\end{split}
+\]
+
+\LayerTarget{tohoku:remark:4.3.2:1}
+\noindent\textsc{Remarques.} 1. Supposons les $L_i$ isomorphes à des
+$O^{n_i}$, alors (prop. 4.3.2) la première suite spectrale d'hyperhomologie du
+foncteur $\mathrm{Hom}_O(M,-)$ pour le complexe $\Gamma C(A)$ est celle du
+théorème 4.2.1 dont le terme initial a donc l'interprétation remarquable
+(4.2.5). Mais on fera bien attention que ce fait avait été déduit du cor. 3 à
+prop. 4.2.4 et tient essentiellement à la formule (4.2.11) c'est-à-dire
+\textit{au fait que le foncteur $C$ ``résolvante canonique'' permute au
+foncteur $\mathrm{Hom}_O(L,-)$, si $L$ est un $O$-module isomorphe à un $O^n$}
+(grâce à quoi on est d'ailleurs dans les conditions du corollaire à la
+proposition 2.5.2). C'est
+
+\TohokuContinuation{193}

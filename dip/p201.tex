@@ -1,0 +1,107 @@
+% Direct-authority diplomatic French for printed p.201.
+\clearpage
+\SourcePage{201}
+
+\LayerTarget{tohoku:proof:theorem-5.2.1:p1}
+\noindent atement du fait que tout $G$-faisceau abélien peut se plonger dans
+un $G$-faisceau abélien flasque (comme nous avons vu au numéro précédent),
+qui annule donc les $H^q(X,A)$ pour $q>0$.
+
+\LayerTarget{tohoku:construction:edge-homomorphisms-5.2}
+Ces suites spectrales donnent lieu tout d'abord à des
+``edge-homomorphismes'' importants :
+
+\LayerTarget{tohoku:equation:5.2.6}
+\[
+H^n(Y,A^G)\longrightarrow H^n(X;G,A)
+\longrightarrow H^0(Y,\mathbf H^n(G,A)),
+\tag{5.2.6}
+\]
+
+\LayerTarget{tohoku:equation:5.2.7}
+\[
+H^n(G,H^0(X,A))\longrightarrow H^n(X;G,A)
+\longrightarrow H^n(X,A)^G.
+\tag{5.2.7}
+\]
+
+\LayerTarget{tohoku:construction:edge-map-interpretation}
+La deuxième application (5.2.6) s'interprète immédiatement si on note qu'en
+vertu de lemme 3.7.2, $\mathbf H^n(G,A)$ est le faisceau sur $Y$ associé au
+préfaisceau formé par les $H^n(f^{-1}(U);G,A)$. Le composé du premier
+homomorphisme de la première ligne avec le deuxième homomorphisme de la
+deuxième ligne est l'homomorphisme $f^*$ associé à l'injection naturelle
+(5.1.2) de $f^{-1}(A^G)$ dans $A$ (cf. 3.2).
+
+\LayerTarget{tohoku:result:five-term-exact-sequences-5.2}
+Les suites spectrales du théorème 5.2.1 définissent aussi deux suites exactes
+à 5 termes :
+
+\LayerTarget{tohoku:equation:5.2.8}
+\[
+\tag{5.2.8}
+\begin{aligned}
+0\longrightarrow H^1(Y,A^G)&\longrightarrow H^1(X;G,A)
+\longrightarrow H^0(Y,\mathbf H^1(G,A))\longrightarrow H^2(Y,A^G)\\
+&\longrightarrow H^2(X;G,A),
+\end{aligned}
+\]
+
+\LayerTarget{tohoku:equation:5.2.9}
+\[
+\tag{5.2.9}
+\begin{aligned}
+0\longrightarrow H^1(G,\Gamma A)&\longrightarrow H^1(X;G,A)
+\longrightarrow H^1(X,A)^G\longrightarrow H^2(G,\Gamma A)\\
+&\longrightarrow H^2(X;G,A).
+\end{aligned}
+\]
+
+\LayerTarget{tohoku:construction:third-spectral-sequence}
+Il y a une troisième façon de représenter $\Gamma_X^G$ comme un foncteur
+composé, savoir $\Gamma_X^G=\Gamma_Y^Gf_*$, et le théorème 2.4.1 est encore
+appliquable en vertu de proposition 5.1.3. Donc, le foncteur gradué
+$(H^n(X;G,A))$ est aussi l'aboutissement d'une troisième suite spectrale dont
+le terme initial est
+
+\LayerTarget{tohoku:formula:third-spectral-initial-term}
+\[
+E_2^{p,q}=H^p(Y;G,R^qf_*(A)).
+\]
+
+\LayerTarget{tohoku:equation:5.2.10}
+Cette suite spectrale définit des homomorphismes fonctoriels
+\[
+H^n(Y;G,f_*(A))\longrightarrow H^n(X;G,A).
+\tag{5.2.10}
+\]
+
+\LayerTarget{tohoku:remark:third-spectral-sequence-pathology}
+L'intérêt de cette suite spectrale est limitée, car il apparait qu'elle est
+pathologique dans les cas où elle n'est pas triviale, c'est-à-dire quand on
+n'est pas dans les conditions de la proposition suivante :
+
+\LayerTarget{tohoku:proposition:5.2.2}
+\noindent\textsc{Proposition 5.2.2.} \textit{Supposons le $G$-faisceau
+abélien $A$ tel que $R^qf_*(A)=0$ pour $q>0$. Alors les homomorphismes
+(5.2.10) sont des isomorphismes, de plus les deux suites spectrales du
+théorème 5.2.1 s'identifient alors aux deux suites spectrales correspondantes
+pour le $G$-faisceau $f_*(A)$ sur $Y$, et on a}
+
+\LayerTarget{tohoku:equation:5.2.11}
+\[
+\mathbf H^q(G,A)=\mathbf H^q(G,f_*(A)).
+\tag{5.2.11}
+\]
+
+\LayerTarget{tohoku:proof:proposition-5.2.2:p1}
+La première assertion résulte aussitôt de la forme du terme initial de la
+suite spectrale $E$ définissant (5.2.10). Les autres assertions résultent de
+la définition explicite des fermes qu'il s'agit de comparer, si on note que
+pour toute résolution injective $C(A)$ de $A$ dans $C^{X(G)}$, le complexe
+$f_*(C(A))$ est une \textit{résolution} de $f_*(A)$ (c'est ce que signifie
+l'hypothèse $R^qf_*(A)=0$ pour $q>0$!) qui est injective en vertu de
+proposition 5.1.3. --- Notons que nous avions implicitement défini les
+$R^qf_*(A)$ comme dérivés droits de $f_*$ considéré comme
+
+\TohokuContinuation{202}

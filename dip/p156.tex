@@ -1,0 +1,73 @@
+% Direct-authority diplomatic French for printed p.156.
+\SourcePage{156}
+
+\LayerTarget{tohoku:proof:3.1.1:p2}
+\noindent dans un $\mathbf O$-Module $F$ s'identifient aux éléments de $F(U)$.
+Tenant compte de théorème 1.10.1, on trouve :
+
+\LayerTarget{tohoku:cor:3.1.1}
+\textsc{Corollaire.} --- \textit{Tout $\mathbf O$-module est isomorphe à un
+sous-$\mathbf O$-module d'un $\mathbf O$-module injectif.}
+
+\LayerTarget{tohoku:construction:godement-injective-product}
+Indiquons une démonstration directe de ce corollaire, due à Godement. Soit,
+pour tout $x\in X$, $M_x$ un $\mathbf O(x)$-module, et soit $M$ le faisceau
+sur $X$ défini par
+\[
+M(U)=\prod_{x\in U}M_x,
+\]
+les applications de restrictions, et les opérations de $\mathbf O(U)$ sur
+$M(U)$, étant définies de façon évidente. $M$ est un $\mathbf O$-Module sur
+$X$, par construction isomorphe au produit des $\mathbf O$-Modules $M^x$
+($x\in X$) qu'on obtient en définissant $M^x(U)$ comme étant égal à $M_x$ si
+$x\in U$, à 0 dans le cas contraire. De cette remarque, on déduit aussitôt
+que pour tout $\mathbf O$-Module $F$, les homomorphismes de $F$ dans $M$
+s'identifient aux familles $(u_x)_{x\in X}$, où pour tout $x\in X$, $u_x$ est
+un $\mathbf O(x)$-homomorphisme de $F(x)$ dans $M_x$. De ceci on conclut :
+
+\LayerTarget{tohoku:prop:3.1.2}
+\textsc{Proposition 3.1.2.} --- \textit{Si pour tout $x\in X$, $M_x$ est un
+$\mathbf O_x$-module injectif, alors le faisceau produit $M$ défini ci-dessus
+est un $\mathbf O$-module injectif.}
+
+Soit alors $F$ un $\mathbf O$-module quelconque, il est classique (et résulte
+d'ailleurs de th. 1.10.1) que pour tout $x\in X$, $F(x)$ peut se plonger dans
+un $\mathbf O_x$-module injectif, soit $M_x$, et par suite on obtient un
+plongement de $F$ dans le $\mathbf O$-module injectif $M$ défini par les
+$M_x$.
+
+\LayerTarget{tohoku:prop:3.1.3}
+Signalons encore pour usage ultérieur :
+
+\textsc{Proposition 3.1.3.} --- \textit{Soit $M$ un $\mathbf O$-Module
+injectif sur $X$, $U$ une partie ouverte de $X$, $\mathbf O_U$ (resp. $M_U$)
+la restriction de $\mathbf O$ (resp. $M$) à $U$. Alors $M_U$ est un
+$\mathbf O_U$-Module injectif.}
+
+$M_U$ est évidemment un $\mathbf O_U$-module. Soient $F$ un
+$\mathbf O_U$-Module, $G$ un sous-module, $u$ un homomorphisme de $G$ dans
+$M_U$, prouvons que $u$ peut se prolonger en un homomorphisme de $F$ dans
+$M_U$. Pour tout $\mathbf O_U$-Module $H$ sur $U$, soit $\overline H$ le
+$\mathbf O$-Module obtenu, en termes d'espaces étalés, en \og prolongeant $H$
+par 0 dans $CU$\fg{} (cf. [4, XVII, prop. 1]), la donnée d'un homomorphisme de
+$\mathbf O_U$-Modules $u:G\longrightarrow M_U$ est alors équivalente à la
+donnée d'un homomorphisme de $\mathbf O$-Modules
+$\overline u:\overline G\longrightarrow M$. $\overline G$ étant un
+sous-module de $\overline F$ et $M$ étant injectif, $\overline u$ peut se
+prolonger en un homomorphisme de $\overline F$ dans $M$, qui induit
+l'homomorphisme cherché de $G$ dans $M_U$. --- On notera que la proposition
+3.1.3 devient \textit{fausse} si on suppose $U$ \textit{fermé} au lieu
+d'ouvert. On démontre de façon toute analogue :
+
+\LayerTarget{tohoku:prop:3.1.4}
+\textsc{Proposition 3.1.4.} --- \textit{Soit $M$ un $\mathbf O$-Module
+injectif sur une partie fermée $Y$ de $X$. Alors le $\mathbf O$-Module $M^X$
+qui coïncide avec $M$ sur $Y$, et est nul dans $CY$, est injectif.}
+
+\LayerTarget{tohoku:section:3.2}
+\textbf{3.2. Définition des $H^p_\Phi(X,F)$.} Soit $X$ un espace topologique,
+nous désignons par $C^X$ la catégorie abélienne $C^{\mathbb Z_X}$ des
+faisceaux abéliens sur $X$. Si $F$ est un
+
+\TohokuContinuation{157}
+

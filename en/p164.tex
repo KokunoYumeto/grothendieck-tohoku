@@ -1,0 +1,104 @@
+% Source-aligned English for printed p.164.
+\SourcePage{164}
+
+\LayerTarget{tohoku:diagram:3.4.2:H1-square}
+\[
+\begin{array}{ccc}
+H^1(X,G)&\longrightarrow&H^1(X,P)\\
+\big\downarrow&&\big\downarrow\\[0.45em]
+H^1(X,G)&\longrightarrow&H^1(X,H)
+\end{array}
+\]
+
+\LayerTarget{tohoku:eq:3.4.2:obstruction-cohomology}
+where the vertical arrows are bijections); on the other hand,
+$H^1(X,{F'}^Q)$ is canonically isomorphic to
+$H^2(X,F^Q)=H^2(X,F^E)$. Indeed, from the exact sequence
+
+\LayerTarget{tohoku:eq:3.4.2:twisted-flabby-sequence}
+\[
+0\longrightarrow F\longrightarrow\overline F\longrightarrow F'
+\longrightarrow0
+\]
+we obtain the exact sequence
+\[
+0\longrightarrow F^Q\longrightarrow\overline F^Q\longrightarrow {F'}^Q
+\longrightarrow0.
+\]
+Since $\overline F^Q$ is flabby, being locally isomorphic to the flabby sheaf
+$\overline F$, we have $H^i(X,\overline F^Q)=0$ for $i>0$.
+
+\LayerTarget{tohoku:eq:3.4.2:boundary-as-minus-dQ}
+It therefore suffices to put
+\[
+\partial(E)=-d(Q)\in H^2(X,F^E)
+\]
+to satisfy the required conditions. It remains to define $d(Q)$ with the
+desired properties of functoriality and ``exactness.'' This will be done under
+the more general conditions below, with the notation slightly changed.
+
+\LayerTarget{tohoku:construction:crossed-homomorphism-general}
+Let $P$ be a sheaf of groups on $X$, and let $A$ be a sheaf of groups on which
+$P$ acts on the left; denote by $\sigma(p)$ the action defined by $p\in P$.
+Let $u$ be a crossed homomorphism from $P$ to $A$, that is, a map of sheaves
+such that, in every fiber $P(x)$,
+$u(e)=e$ and $u(pp')=u(p)\sigma(p)\mathbin{\cdot}u(p')$. Then the inverse
+image $G$ in $P$ of the neutral section of $A$ under $u$ is a subsheaf of
+groups, and two elements of $P$ have the same image in $A$ if and only if they
+define the same right coset modulo $G$.
+
+\LayerTarget{tohoku:eq:rho-action}
+For every $x\in X$, $p\in P(x)$, and $a\in A(x)$, put
+\[
+\rho(p)a=u(p)\bigl(\sigma(p)a\bigr).
+\]
+The assertion that $u$ is a crossed homomorphism means precisely that this
+formula defines a representation $\rho$ of $P$ by germs of automorphisms of
+the underlying sheaf of sets $A$. Moreover, the map of sheaves of sets
+$A\times A\longrightarrow A$ defined by multiplication in $A$ is compatible
+with the actions of $P$ given respectively by $\rho,\sigma,\rho$:
+
+\LayerTarget{tohoku:eq:rho-product-compatibility}
+\[
+\rho(p)(ab)=\bigl(\rho(p)a\bigr)\bigl(\sigma(p)b\bigr).
+\]
+
+\LayerTarget{tohoku:construction:associated-rho-torsor}
+Consequently, for every fiber space $E$ with structure sheaf $P$, there is a
+map of associated sheaves of sets
+\[
+A(\rho)^E\times A(\sigma)^E\longrightarrow A(\rho)^E.
+\]
+Thus $A(\rho)^E$ becomes a sheaf of sets on which the sheaf of groups
+$A(\sigma)^E$ acts on the right; more precisely, $A(\rho)^E$ is a principal
+right $A(\sigma)^E$-sheaf.
+
+\LayerTarget{tohoku:def:dE-obstruction}
+We may consider its class
+\[
+c\bigl(A(\rho)^E\bigr)\in H^1\bigl(X,A(\sigma)^E\bigr),
+\]
+which we also denote by $d(E)$. Its vanishing is necessary and sufficient for
+$A(\rho)^E$ to have a section. The monomorphism $P/G\longrightarrow A$
+induced by $u$ is compatible with the actions of $P$, acting canonically on
+$P/G$ and through $\rho$ on $A$. Hence there is a natural monomorphism of
+associated sheaves
+
+\LayerTarget{tohoku:eq:associated-quotient-monomorphism}
+\[
+(P/G)^E\longrightarrow A(\rho)^E,
+\]
+which is bijective if and only if $u$ is surjective.
+
+\LayerTarget{tohoku:proof:3.4.2:closure}
+Therefore, the existence of a section of $(P/G)^E$, which is necessary and
+sufficient for the class $c(E)\in H^1(X,P)$ of $E$ to lie in the image of
+$H^1(X,G)$, implies the existence of a section of $A(\rho)^E$, that is,
+$d(E)=0$. The converse holds if $u$ is an epimorphism from $P$ onto $A$.
+These considerations complete the proof of Proposition 3.4.2.
+
+\LayerTarget{tohoku:remark:3.4.2:1:p1}
+\textsc{Remarks.} 1. The minus sign was inserted in the formula
+$\partial(E)=-d(Q)$,
+
+\TohokuContinuation{165}

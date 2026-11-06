@@ -1,0 +1,66 @@
+% Source-aligned English for printed p.157.
+\SourcePage{157}
+
+\LayerTarget{tohoku:def:sections-and-supports}
+\noindent sheaf and $A$ is a subset of $X$, write $\Gamma(A,F)$ for the group
+of sections of $F$, regarded as an étalé space, over $A$, and put
+$\Gamma(F)=\Gamma(X,F)$. Thus $\Gamma(A,F)=\Gamma(F\vert A)$, where
+$F\vert A$ denotes the restriction of $F$ to $A$. More generally, let $\Phi$
+be a nonempty upward-filtered set of closed subsets of $X$ such that
+$A\in\Phi$ and $B\subset A$ imply $B\in\Phi$. For short, we call $\Phi$ an
+\textit{antifilter of closed subsets of $X$}. Let $\Gamma_\Phi(F)$ be the
+subgroup of $\Gamma(F)$ formed by the sections $f$ whose support---the
+complement of the largest open subset of $X$ on which $f$ restricts to
+zero---belongs to $\Phi$.
+
+\LayerTarget{tohoku:def:cohomology-with-supports}
+The functor $\Gamma_\Phi$ from $C^X$ to abelian groups is visibly left exact.
+We must therefore consider its right derived functors, equivalently its right
+satellites; see 2.3. They exist by the corollary to Proposition 3.1.1. Denote
+them by $H^p_\Phi(X,F)$, where $p$ is any integer. The theory of derived
+functors gives:
+
+\LayerTarget{tohoku:prop:3.2.1}
+\textsc{Proposition 3.2.1.} --- \textit{The system of functors
+$H^p_\Phi(X,F)$ ($-\infty<p<+\infty$) is characterized by the following
+conditions: it is a cohomological functor on $C^X$ with values in abelian
+groups; $H^p_\Phi(X,F)$ is zero for $p<0$, agrees with $\Gamma_\Phi(F)$ for
+$p=0$, and is effaceable---that is, it vanishes on injective $F$---for
+$p>0$.}
+
+\LayerTarget{tohoku:construction:compute-cohomology-with-supports}
+To compute $H^p_\Phi(X,F)$, take a right resolution of $F$ by injective
+sheaves $C^i$, or more generally by sheaves known in advance to satisfy
+$H^p_\Phi(X,C^i)=0$ for $p>0$; such $C^i$ are called
+$\Gamma_\Phi$-acyclic. If $C(F)$ denotes the resulting complex, then
+\[
+H^p_\Phi(X,F)=H^p\Gamma_\Phi(C(F)).
+\]
+To use this method, it is important to have criteria ensuring that a sheaf is
+$\Gamma_\Phi$-acyclic; some are given below in 3.3.
+
+\LayerTarget{tohoku:construction:inverse-image-comparison:p1}
+Let $f:X\longrightarrow Y$ be a continuous map. For every sheaf $F$ on $Y$,
+one naturally defines the \textit{inverse-image sheaf} of $F$ under $f$,
+written $f^{-1}(F)$ by abuse of notation: regarding $F$ as an étalé space
+over $Y$, one uses the ordinary definition of the inverse image of a fibered
+space. This gives an exact additive covariant functor
+$F\longmapsto f^{-1}(F)$ from $C^Y$ to $C^X$, which we denote by $g$. For
+every $F\in C^Y$, there is an evident natural homomorphism
+$\Gamma(F)\longrightarrow\Gamma(g(F))$; equivalently, there is a natural
+homomorphism of functors $\Gamma^Y\longrightarrow\Gamma^Xg$, where the
+superscript records the space relative to which $\Gamma$ is taken.
+
+More generally, let $\Phi$ be an antifilter of closed subsets of $X$ and
+$\Psi$ an antifilter of closed subsets of $Y$ such that $B\in\Psi$ implies
+$f^{-1}(B)\in\Phi$. Then for every $F\in C^Y$, the homomorphism
+$\Gamma(F)\longrightarrow\Gamma(g(F))$ sends $\Gamma_\Psi(F)$ into
+$\Gamma_\Phi(g(F))$, giving a natural homomorphism
+$\Gamma^Y_\Psi\longrightarrow\Gamma^X_\Phi g$. Since $g$ is exact,
+$(R\Gamma^X_\Phi)g$ may be regarded as a cohomological functor on $C^Y$ whose
+degree-zero part is $\Gamma^X_\Phi g$. Since the cohomological functor
+$R\Gamma^Y_\Psi$ is universal by Proposition 2.2.1, the natural
+homomorphism $\Gamma^Y_\Psi\longrightarrow\Gamma^X_\Phi g$
+
+\TohokuContinuation{158}
+

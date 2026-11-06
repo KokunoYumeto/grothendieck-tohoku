@@ -1,0 +1,67 @@
+% Corrected French for printed p.124.
+% Correction: injections canonique -> injections canoniques.
+\SourcePage{124}
+
+\LayerTarget{tohoku:section:1.1:p8}
+\noindent naturel de choisir alors parmi tous les $(A,(u_i))$ comme ci-dessus,
+un système particulier (par exemple au moyen du symbole $\tau$ de Hilbert)
+qu'on appellera \textit{le produit} de la famille d'objets $(A_i)_{i\in I}$.
+C'est donc, non un simple objet $A$ de $C$, mais un tel objet muni d'une
+famille $(u_i)$ de morphismes dans les $A_i$, appelés les
+\textit{projections canoniques du produit} sur ses facteurs $A_i$. On note le
+produit des $A_i$ (s'il existe) par $\prod_{i\in I}A_i$. Si $I$ est réduit à
+un élément $i$, alors le produit s'identifie à $A_i$ lui même. On dit que $C$
+est une \textit{catégorie avec produits} si le produit de deux objets de $C$
+existe toujours (alors, il en est de même du produit d'une famille finie non
+vide quelconque d'objets de $C$). On dit que $C$ est une \textit{catégorie
+avec produits infinis} si le produit d'une famille non vide quelconque d'objets
+de $C$ existe toujours. Nous avons vu que si on a deux produits
+$A=\prod_{i\in I}A_i$ et $B=\prod_{i\in I}B_i$ correspondants à un même
+ensemble d'indices $I$, alors une famille $(v_i)$ de morphismes
+$A_i\longrightarrow B_i$ définit canoniquement un morphisme $v$ de $A$ dans
+$B$, appelé \textit{produit des morphismes $v_i$} et parfois noté
+$\prod_{i\in I}v_i$. Si les $v_i$ sont des monomorphismes, il en est de même
+de leur produit, mais l'énoncé analogue pour les épimorphismes n'est pas vrai
+en général, (comme on voit par exemple sur la catégorie des faisceaux sur un
+espace topologique fixé).
+
+\LayerTarget{tohoku:section:1.1:p9}
+Des considérations duales des précédentes permettent de définir la notion de
+\textit{représentation d'un objet $A$ comme somme} d'une famille d'objets $A_i$
+par des morphismes $u_i:A_i\longrightarrow A$ (pour tout $B\in C$,
+l'application naturelle
+\[
+  \mathrm{Hom}(A,B)\longrightarrow
+  \prod_{i\in I}\mathrm{Hom}(A_i,B)
+\]
+est bijective), de \textit{somme directe} $\bigoplus_{i\in I}A_i$, munie des
+\textit{injections canoniques} $A_i\longrightarrow\bigoplus_{i\in I}A_i$ (qui
+d'ailleurs ne sont pas nécessairement des monomorphismes, malgré leur nom), de
+\textit{morphisme somme} d'une famille de morphismes
+$u_i:A_i\longrightarrow B_i$. Si les $u_i$ sont des épimorphismes, il en est de
+même de leur somme.
+
+\LayerTarget{tohoku:section:1.2}
+\noindent\textbf{1.2. Foncteurs.}\quad
+\LayerTarget{tohoku:section:1.2:p1}
+Soient $C,C'$ deux catégories. Rappelons qu'on appelle \textit{foncteur
+covariant} de $C$ dans $C'$ une ``fonction'' $F$ qui à un objet $A\in C$,
+associe un objet $F(A)$ de $C'$, et à un morphisme
+$u:A\longrightarrow B$ dans $C$, un morphisme
+$F(u):F(A)\longrightarrow F(B)$, de telle façon qu'on ait
+$F(I_A)=I_{F(A)}$ et $F(vu)=F(v)F(u)$. Définition analogue pour les
+\textit{foncteurs contravariants} de $C$ dans $C'$ (qui sont aussi des
+foncteurs covariants de $C^{\circ}$ dans $C'$ ou de $C$ dans
+${C'}^{\circ}$). On définit de même les foncteurs de plusieurs variables ou
+\textit{multifoncteurs}, covariants en certaines variables et contravariants en
+d'autres. Dans les généralités, nous nous bornerons pour simplifier aux
+foncteurs d'une variable. Les foncteurs se composent comme des fonctions,
+cette composition est associative et les ``foncteurs identiques'' jouent le
+rôle d'unités.
+
+\LayerTarget{tohoku:section:1.2:p2}
+Soient $C$ et $C'$ deux catégories fixées, $F$ et $G$ deux foncteurs covariants
+de $C$ dans $C'$, un \textit{morphisme fonctoriel} $f$ de $F$ dans $G$ (appelé
+aussi ``transformation
+
+\TohokuContinuation{125}

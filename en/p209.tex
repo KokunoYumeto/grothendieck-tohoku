@@ -1,0 +1,75 @@
+% Source-aligned English for printed p.209.
+\clearpage
+\SourcePage{209}
+
+\LayerTarget{tohoku:conclusion:theorem-5.5.3:p1}
+\noindent is injective if $n=1$. Moreover:
+
+\LayerTarget{tohoku:corollary:1-theorem-5.5.3}
+\noindent\textsc{Corollary 1.} \textit{If all the $U_{i_0\ldots i_p}$ are
+$A$-acyclic, then the homomorphisms (5.5.5) are isomorphisms.}
+
+\LayerTarget{tohoku:corollary:2-theorem-5.5.3}
+\noindent\textsc{Corollary 2.} \textit{The preceding theorem remains valid if
+$\mathcal U$ is a closed $G$-covering, provided that one of the following two
+conditions holds: a) $\mathcal U$ is locally finite and $X$ is paracompact;
+b) $\mathcal U$ is finite.}
+
+\LayerTarget{tohoku:proof:corollary-2-theorem-5.5.3}
+In case a), by what is supposed to have been seen in 3.8 (see the remark in
+3.8), conditions (i) and (ii) of Lemma 5.5.1 are still satisfied (for (i), this
+is in fact trivial without any paracompactness hypothesis, since $\mathcal U$
+is locally finite), and the formula
+$R^q\mathbf K(A)=C(\mathcal U,H^q(A))$ remains valid. In case b), one must
+follow Godement's method (which he develops for $G$ reduced to the identity),
+which we shall sketch because of its possible applications to abstract
+algebraic geometry. First, following an idea of P. Cartier, introduce the
+complex of sheaves $C(\mathcal U,A)$, whose complex of sections over any open
+set $V$ is by definition $C(\mathcal U|V,A|V)$ (the sign $|$ indicating, as
+usual, restriction to the set written after it). This is proved to be a
+resolution of $A$ (see Godement's book [9] for details). We apply to it the
+corollary to Lemma 5.5.2 (the letters in that lemma having the same meaning as
+above). It remains only to prove that
+$R^iF(C)=H^i(X,C(\mathcal U,A))$ is functorially isomorphic to
+$C(\mathcal U,H^i(A))$. This presents no difficulty because $\mathcal U$ is
+finite, using Theorem 3.5.1.
+
+\LayerTarget{tohoku:definition:fixed-point-free-g-cover}
+We shall say that a $G$-covering $\mathcal U=(U_i)_{i\in I}$ is
+``fixed-point-free'' if $G$ acts on $I$ without fixed points, i.e. if $g\ne e$
+implies $g\cdot i\ne i$ for every $i$. If $P$ is any $G$-presheaf, then for
+every $n$ one has
+
+\LayerTarget{tohoku:equation:5.5.6}
+\[
+\tag{5.5.6}
+C^n(\mathcal U,P)=
+\prod_{(i_0,\ldots,i_n)}\ \prod_{g\in G}
+P(g\cdot U_{i_0\ldots i_n}),
+\]
+
+\LayerTarget{tohoku:calculation:fixed-point-free-g-cover-cochains}
+where the first product extends over a complete system of representatives
+$(i_0,\ldots,i_n)$ of $I^{n+1}/G$. In the second product all terms are
+canonically isomorphic to $P(U_{i_0\ldots i_n})$, so this product identifies
+with the group of maps from $G$ to the fixed group $P(U_{i_0\ldots i_n})$, on
+which $G$ acts by left translations. Such a $G$-module is well known to be
+$\Gamma^G$-acyclic, and hence so is $C^n(\mathcal U,P)$. One must note,
+however, that formula (5.5.6) is valid only when $C(\mathcal U,P)$ denotes the
+complex of arbitrary cochains (not necessarily alternating) of $\mathcal U$
+with coefficients in $P$ (whereas the preceding considerations applied
+equally to arbitrary or alternating cochains). Using the first hyperhomology
+spectral sequence for the functor $\Gamma^G$ relative to the complex
+$C(\mathcal U,P)$, one obtains:
+
+\LayerTarget{tohoku:proposition:5.5.4}
+\noindent\textsc{Proposition 5.5.4.} \textit{If $\mathcal U$ is a
+fixed-point-free $G$-covering, then for every $G$-presheaf $P$ one has:}
+
+\LayerTarget{tohoku:equation:5.5.7}
+\[
+\tag{5.5.7}
+H^n(\mathcal U;G,P)=H^n\bigl((C(\mathcal U,P))^G\bigr).
+\]
+
+\TohokuContinuation{210}

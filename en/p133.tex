@@ -1,0 +1,78 @@
+% Source-aligned English for printed p.133.
+\SourcePage{133}
+
+\LayerTarget{tohoku:example:1.7:h:p2}
+\noindent corresponding diagrams, for a given category $C$ not necessarily
+additive, are known as \textit{inductive systems} on $I$ with values in $C$.
+Replacing $I$ by the opposite preordered set, or $C$ by $C^\circ$, gives the
+\textit{projective systems} on $I$ with values in $C$. An important case is
+that in which $I$ is the set of open subsets of a topological space $X$,
+ordered by the relation $\supset$; this gives the notion of a
+\textit{presheaf} on $X$ with values in the category $C$.
+
+\LayerTarget{tohoku:section:1.8}
+\noindent\textbf{1.8. Inductive and projective limits.} We shall discuss only
+the former, since the notion of a projective limit is dual to that of an
+inductive limit. Let $C$ be a category, let $I$ be a preordered set, and let
+$\mathbf A=(A_i,u_{ij})$ be an inductive system on $I$ with values in $C$
+($u_{ij}$ is a morphism $A_j\longrightarrow A_i$ defined for $i\geq j$).
+
+\LayerTarget{tohoku:def:inductive-limit}
+A (generalized) \textit{inductive limit} of $\mathbf A$ is a system consisting
+of an object $\overline A\in C$ and a family $(u_i)$ of morphisms
+$u_i:A_i\longrightarrow\overline A$ satisfying the following conditions:
+a) if $i\leq j$, then $u_i=u_j u_{ji}$; b) for every $B\in C$ and every family
+$(v_i)$ of morphisms $v_i:A_i\longrightarrow B$ such that
+$v_i=v_j u_{ji}$ whenever $i\leq j$, there is a unique morphism $v$ from
+$\overline A$ to $B$ such that $v_i=v u_i$ for every $i\in I$.
+
+\LayerTarget{tohoku:def:inductive-limit:functoriality}
+Suppose $(\overline A,(u_i))$ is an inductive limit of
+$\mathbf A=(A_i,u_{ij})$, $(\overline B,(v_i))$ is an inductive limit of a
+second inductive system $\mathbf B=(B_i,v_{ij})$, and $w=(w_i)$ is a morphism
+from $\mathbf A$ to $\mathbf B$. Then there is a unique morphism
+$\overline w$ from $\overline A$ to $\overline B$ such that
+$\overline w u_i=v_iw_i$ for every $i\in I$. In particular, any two inductive
+limits of the same inductive system are canonically isomorphic, in the evident
+sense. It is therefore natural to choose, for every inductive system admitting
+an inductive limit, one such limit (for example by means of Hilbert's
+$\tau$-symbol), denoted
+$\mathop{\rm lim}\limits_{\longrightarrow}\mathbf A$ or
+$\mathop{\rm lim}\limits_{\longrightarrow,\,i\in I}A_i$, and
+called \textit{the} inductive limit of the given inductive system.
+
+\LayerTarget{tohoku:def:inductive-limit:functor}
+If $I$ and $C$ are such that
+$\mathop{\rm lim}\limits_{\longrightarrow}\mathbf A$ exists for
+\textit{every} inductive system $\mathbf A$ on $I$ with values in $C$, it
+follows that $\mathop{\rm lim}\limits_{\longrightarrow}\mathbf A$ is a
+\textit{covariant functor} from the category of inductive systems from $I$ to
+$C$, with values in $C$.
+
+\LayerTarget{tohoku:prop:1.8}
+\noindent\textsc{Proposition 1.8.} --- \textit{Let $C$ be an abelian category
+satisfying axiom AB 3), the existence of arbitrary direct sums, and let $I$ be
+an increasing filtered preordered set. Then for every inductive system
+$\mathbf A$ on $I$ with values in $C$, the inductive limit
+$\mathop{\rm lim}\limits_{\longrightarrow}\mathbf A$ exists, and as a functor
+of $\mathbf A$ it is additive and right exact. If $C$ satisfies axiom AB 5)
+(cf. 1.5), this functor is even exact, and the kernel of the canonical
+morphism
+$u_i:A_i\longrightarrow\mathop{\rm lim}\limits_{\longrightarrow}\mathbf A$
+is then the supremum of the kernels of the morphisms
+$u_{ji}:A_i\longrightarrow A_j$ for $j\geq i$. In particular, if the $u_{ji}$
+are injective, then so is $u_i$.}
+
+\LayerTarget{tohoku:prop:1.8:proof:p1}
+To construct an inductive limit of $(A_i,u_{ij})$, set
+
+\[
+  S=\bigoplus_{i\in I}A_i,
+\]
+
+\noindent and, for every pair $(i,j)$ with $i\leq j$, let $w_{ij}$ be the
+morphism from $A_i$ to $S$ deduced from the morphism
+$A_i\longrightarrow A_i+A_j$ whose components are $I_{A_i}$ and $-u_{ji}$.
+Let $N_{ij}$
+
+\TohokuContinuation{134}

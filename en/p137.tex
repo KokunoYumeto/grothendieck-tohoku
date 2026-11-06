@@ -1,0 +1,75 @@
+% Source-aligned English for printed p.137.
+\SourcePage{137}
+
+\LayerTarget{tohoku:thm:1.10.1:construction:transfinite:p2}
+\noindent set $M_i(A)=M_1(M_j(A))$, and let the morphism
+$M_j(A)\longrightarrow M_{j+1}(A)$ be $f(M_j(A))$; this simultaneously
+defines the morphisms $M_k(A)\longrightarrow M_i(A)$ for $k\leq i$. If $i$ is
+a limit ordinal, set
+
+\[
+ M_i(A)=\mathop{\rm lim}\limits_{\longrightarrow,\,j<i}M_j(A),
+\]
+
+\noindent and take as the morphisms $M_j(A)\longrightarrow M_i(A)$ for $j<i$
+the canonical morphisms, which are indeed injective by Proposition 1.8. Let
+$k$ now be the least ordinal whose cardinality is strictly greater than the
+cardinality of the set of subobjects of $U$, and set $M(A)=M_k(A)$. It remains
+to prove that $M_k$ is injective, that is, that it satisfies the condition of
+Lemma 1. With the notation of that lemma, we prove that $v(V)$ is contained in
+one of the $M_i$ with $i<k$, which will finish the proof. Indeed, from
+$M_k=\mathop{\rm Sup}M_i$ one obtains
+
+\[
+ V=\mathop{\rm Sup}_{i<k}v^{-1}(M_i)
+\]
+
+\noindent by AB 5). The set of subobjects of $V$ has cardinality less than
+$\mathrm{card}\,k$, while every set of ordinals below $k$ and cofinal in $k$
+has cardinality $k$, since $\mathrm{card}\,k$ is not a limit cardinal.
+Consequently $v^{-1}(M_i)$ is constant from some $i_0<k$ onward, so
+$V=v^{-1}(M_{i_0})$. This completes the proof.
+
+\LayerTarget{tohoku:thm:1.10.1:remark:1}
+\noindent\textsc{Remarks. 1. Variant of Theorem 1.10.1:} If $C$ satisfies
+axioms AB 3), AB 4), and AB 3*), and has a cogenerator $T$, then every
+$A\in C$ has an injective effacement. We shall not use this result.
+
+\LayerTarget{tohoku:thm:1.10.1:remark:2}
+\noindent 2. The fact that $M(A)$ is functorial in $A$ can be useful, for
+example in proving that every object $A\in C^G$ (that is, an object $A\in C$
+with operator group $G$; cf. 1.7, Example f) that is injective in $C^G$ is
+also injective in $C$.
+
+\LayerTarget{tohoku:thm:1.10.1:remark:3}
+\noindent 3. In many cases the existence of a monomorphism from $A$ into an
+injective object can be seen directly in a simpler way. The advantage of
+Theorem 1 is that it applies to very different cases. Moreover, its conditions
+are stable under passage to certain categories of diagrams (cf.
+Propositions 1.6.1 and 1.9.2), where the existence of enough injective objects
+is not always visible to the naked eye.
+
+\LayerTarget{tohoku:thm:1.10.1:remark:4}
+\noindent 4. We leave to the reader the task of giving the dual statements for
+projective objects and projective effacements.
+
+\LayerTarget{tohoku:section:1.11}
+\noindent\textbf{1.11. Quotient categories.} Although they will not be used in
+the rest of this work, the considerations of this section, which systematize
+and make more flexible Serre's ``language modulo $C$'' [17], are useful in
+various applications.
+
+\LayerTarget{tohoku:def:subcategory:p1}
+Let $C$ be a category. A \textit{subcategory of $C$} is a category $C'$ whose
+objects are objects of $C$, such that for $A,B\in C'$ the set
+$\mathrm{Hom}_{C'}(A,B)$ of morphisms from $A$ to $B$ in the sense of $C'$ is
+a subset of the set $\mathrm{Hom}_C(A,B)$ of morphisms from $A$ to $B$ in the
+sense of $C$, composition in $C'$ is induced by composition in $C$, and the
+identity morphisms in $C'$ are identity morphisms in $C$. The last two
+conditions say that the ``function'' assigning to an object or morphism of
+$C'$ the same object or morphism of $C$ is a covariant functor from $C'$ to
+$C$, called the \textit{canonical injection of $C'$ into $C$}. If $C$ and
+$C'$ are additive categories, then $C'$ is called an \textit{additive
+subcategory} if
+
+\TohokuContinuation{138}

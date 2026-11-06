@@ -1,0 +1,75 @@
+% Corrected French for printed p.127.
+% Correction: groupes abélien filtrés -> groupes abéliens filtrés.
+\SourcePage{127}
+
+\LayerTarget{tohoku:section:1.4}
+\noindent\textbf{1.4. Catégories abéliennes.}
+On appelle \textit{catégorie abélienne} une catégorie additive $C$
+satisfaisant aux deux axiomes supplémentaires suivants (qui sont autoduals) :
+
+\LayerTarget{tohoku:section:1.4:AB1}
+\noindent\textbf{AB 1)} \textit{Tout morphisme admet un noyau et un conoyau}
+(cf. 1.3.)
+
+\LayerTarget{tohoku:section:1.4:AB2}
+\noindent\textbf{AB 2)} \textit{Soit $u$ un morphisme dans $C$. Alors le
+morphisme canonique
+$\bar u:\mathrm{Coim}\,u\longrightarrow\mathrm{Im}\,u$ (cf. 1.3.) est un
+isomorphisme.}
+
+\LayerTarget{tohoku:section:1.4:p1}
+Il en résulte en particulier qu'\textit{une bijection est un isomorphisme}.
+Notons qu'il existe de nombreuses catégories additives satisfaisant à AB 1) et
+où les morphismes $\bar u:\mathrm{Coim}\,u\longrightarrow\mathrm{Im}\,u$ sont
+toujours bijectifs, sans être nécessairement des isomorphismes. Il en est ainsi
+par exemple de la catégorie additive des modules topologiques séparés sur un
+anneau topologique donné, en y prenant comme morphismes les homomorphismes
+continus, ou de la catégorie des groupes abéliens \textit{filtrés}. Autre
+exemple moins évident : la catégorie additive des espaces fibrés holomorphes à
+fibre vectorielle sur une variété holomorphe de dimension complexe 1. Ce sont
+donc là des catégories additives non abéliennes.
+
+\LayerTarget{tohoku:section:1.4:p2}
+Si $C$ est une catégorie abélienne, alors tout le formalisme habituel des
+diagrammes d'homomorphismes entre groupes abéliens peut se développer à
+nouveau en y remplaçant les homomorphismes par des morphismes dans $C$, pour
+autant qu'on n'a en vue que des propriétés ``de caractère fini'', i. e. ne
+faisant pas intervenir des sommes directes ou produits directs infinis (pour
+lesquels des précautions spéciales sont nécessaires, voir
+N\textsuperscript{o}5). Nous nous contentons ici d'indiquer quelques faits
+particulièrement importants, renvoyant pour d'autres détails à [3].
+
+\LayerTarget{tohoku:section:1.4:p3}
+Dans la suite, nous nous plaçons dans une catégorie abélienne fixée $C$. Soit
+$A\in C$, et à tout sous-truc de $A$ faisons correspondre son conoyau (qui est
+donc un quotient de $A$), et à tout truc quotient de $A$ faisons correspondre
+son noyau (qui est donc un sous-truc de $A$). On obtient ainsi \textit{une
+correspondance biunivoque entre la classe des sous-trucs de $A$ et la classe
+des trucs quotients de $A$}, cette correspondance étant d'ailleurs un
+\textit{antiisomorphisme} pour les relations d'ordre naturelles. D'ailleurs,
+les sous-trucs de $A$ forment une classe \textit{réticulée} (donc aussi les
+trucs quotients) : si $P$ et $Q$ sont deux sous-trucs de $A$, leur sup est
+l'image de la somme directe $P+Q$ par le morphisme dont les composantes sont
+les injections canoniques de $P$ et $Q$ dans $A$, et leur inf est le noyau du
+morphisme de $A$ dans le produit
+
+\[
+  (A/P)\times(A/Q)
+\]
+
+\noindent dont les composantes sont les surjections canoniques de $A$ sur
+$A/P$ et $A/Q$. (Conformément à l'usage, on désigne par $A/P$ le quotient de
+$A$ qui correspond au sous-truc $P$ ; une notation duale comme
+$A\backslash R$ pour le sous-truc de $A$ qui correspond à un truc quotient $R$
+semble naturelle). On a des interprétations duales pour le inf ou le sup de
+deux trucs quotient de $A$.
+
+\LayerTarget{tohoku:section:1.4:p4}
+Soit $u:A\longrightarrow B$ un morphisme. Si $A'$ est un sous-truc de $A$, on
+définit l'image de $A'$ par $u$, notée $u(A')$, comme $\mathrm{Im}\,ui$, où
+$i$ est l'injection canonique $A'\longrightarrow A$. Dualement, on définit
+l'image inverse $u^{-1}(B')$ d'un quotient $B'$ de $B$, c'est un quotient de
+$A$. Si $B'$ est maintenant un sous-truc de $B$, on définit l'image inverse de
+$B'$ par $u$, notée $u^{-1}(B')$, comme le noyau de $ju$, où $j$ est
+
+\TohokuContinuation{128}

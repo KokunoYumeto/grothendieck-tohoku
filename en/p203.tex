@@ -1,0 +1,134 @@
+% Source-aligned English for printed p.203.
+\clearpage
+\SourcePage{203}
+
+\LayerTarget{tohoku:remark:5.2.4:2}
+\noindent and that of $G$. More generally, suppose that two five-term exact
+sequences are given, as in the present case (see the diagram below).
+
+\LayerTarget{tohoku:diagram:five-term-comparison-5.2}
+\begin{center}
+\setlength{\unitlength}{0.62mm}
+\begin{picture}(140,78)
+\put(58,75){\makebox(0,0){$0$}}
+\put(58,71){\vector(0,-1){6}}
+\put(58,61){\makebox(0,0){$A'$}}
+\put(58,57){\vector(0,-1){9}}
+\put(54,52){\makebox(0,0)[r]{$\alpha$}}
+\put(2,44){\makebox(0,0){$0$}}
+\put(5,44){\vector(1,0){12}}
+\put(22,44){\makebox(0,0){$A$}}
+\put(27,44){\vector(1,0){25}}
+\put(40,48){\makebox(0,0){$\alpha'$}}
+\put(58,44){\makebox(0,0){$H^1$}}
+\put(64,44){\vector(1,0){21}}
+\put(75,39){\makebox(0,0){$\beta'$}}
+\put(91,44){\makebox(0,0){$B$}}
+\put(96,44){\vector(1,0){12}}
+\put(102,39){\makebox(0,0){$\gamma'$}}
+\put(113,44){\makebox(0,0){$C$}}
+\put(118,44){\vector(1,0){11}}
+\put(123,39){\makebox(0,0){$\delta'$}}
+\put(135,44){\makebox(0,0){$D$}}
+\put(58,40){\vector(0,-1){7}}
+\put(62,36){\makebox(0,0)[l]{$\beta$}}
+\put(58,29){\makebox(0,0){$B'$}}
+\put(58,25){\vector(0,-1){5}}
+\put(62,22){\makebox(0,0)[l]{$\gamma$}}
+\put(58,17){\makebox(0,0){$C'$}}
+\put(58,13){\vector(0,-1){5}}
+\put(62,10){\makebox(0,0)[l]{$\delta$}}
+\put(58,5){\makebox(0,0){$D'$}}
+\put(62,59){\vector(2,-1){25}}
+\put(76,58){\makebox(0,0){$u$}}
+\put(26,42){\vector(2,-1){28}}
+\put(39,31){\makebox(0,0){$u'$}}
+\end{picture}
+\end{center}
+
+\LayerTarget{tohoku:construction:five-term-comparison-maps}
+Set $u=\beta'\alpha$ and $u'=\beta\alpha'$. Then
+$A\cap A'=\operatorname{Ker}u=\operatorname{Ker}u'$. There are natural
+homomorphisms
+\[
+\begin{aligned}
+\beta\beta'^{-1}&:\operatorname{Ker}\gamma'\longrightarrow
+  \operatorname{Coker}u',\\
+\beta'\beta^{-1}&:\operatorname{Ker}\gamma\longrightarrow
+  \operatorname{Coker}u.
+\end{aligned}
+\]
+These homomorphisms give rise to the following two exact sequences (in which
+$H^1$ no longer appears):
+
+\LayerTarget{tohoku:equation:5.2.12}
+\[
+\tag{5.2.12}
+\left\{
+\begin{aligned}
+0\longrightarrow{}&\operatorname{Ker}u\longrightarrow A'
+\longrightarrow\operatorname{Ker}\gamma'
+\longrightarrow\operatorname{Coker}u'\longrightarrow C'\longrightarrow D',\\[-0.2em]
+&\mathrel{\Vert}\\[-0.45em]
+0\longrightarrow{}&\operatorname{Ker}u'\longrightarrow A
+\longrightarrow\operatorname{Ker}\gamma
+\longrightarrow\operatorname{Coker}u\longrightarrow C\longrightarrow D.
+\end{aligned}
+\right.
+\]
+
+\LayerTarget{tohoku:example:five-term-comparison}
+For example, let $u$ be the natural homomorphism from $H^1(Y,A^G)$ to
+$H^1(X,A)^G$, and let $u'$ be the natural homomorphism from
+$H^1(G,\Gamma(A))$ to $H^0(Y,\mathbf H^1(G,A))$. \textit{Then the kernel of
+$u$ is isomorphic to that of $u'$, whereas the image of $u$ is isomorphic to
+the kernel of the natural homomorphism from
+$\operatorname{Ker}(H^1(X,A)^G\longrightarrow H^2(G,\Gamma(A)))$ to
+$\operatorname{Coker}u'$.}
+
+\LayerTarget{tohoku:remark:5.2.4:3}
+\noindent 3. The hypotheses of Proposition 5.2.2 hold in most cases that
+arise naturally. Its interest lies chiefly in formula (5.2.11), which, when
+$G$ is finite, can also be written as
+
+\LayerTarget{tohoku:equation:5.2.11-bis}
+\[
+\mathbf H^q(G,A)(y)=H^q(G,f_*(A)(y)),\qquad y\in Y.
+\tag{5.2.11 bis}
+\]
+
+\LayerTarget{tohoku:application:finite-group-algebraic-variety}
+This gives an explicit computation of the sheaves $\mathbf H^q(G,A)$.
+Proposition 5.2.2 applies whenever $G$ is finite and $X$ is Hausdorff. Another
+important case is that in which $G$ is a finite group of automorphisms of an
+abstract algebraic variety $X$ and $Y=X/G$ is an algebraic variety (for
+example, $G$ is the Galois group of a covering $X$, ramified or not, of a
+normal variety $Y$). The hypotheses of Proposition 5.2.2 then hold if $A$ is
+a \textit{coherent algebraic $G$-sheaf}, or if $A$ is the multiplicative
+sheaf $\mathbf O_X^*$ of germs of invertible regular functions on $X$.
+Moreover, if $X$ is unramified over $Y$, then $\mathbf H^n(G,A)=0$ for $n>0$
+when $A$ is a coherent algebraic $G$-sheaf, which allows Proposition 5.2.3 to
+be applied. In the same case one can also show that
+$\mathbf H^1(G,\mathbf O_X^*)=0$. Arithmetic varieties could also be
+considered; the same results hold.
+
+\LayerTarget{tohoku:section:5.3}
+\bigskip
+\noindent\textbf{5.3. Case of a discontinuous group of homeomorphisms.} For
+brevity, and by an abuse of language, we shall say that $G$ is a
+\textit{discontinuous group of homeomorphisms of $X$} if it satisfies the
+following condition:
+
+\LayerTarget{tohoku:condition:5.3:D}
+\noindent\textit{(D) For every $x\in X$, the stabilizer $G_x$ of $x$ is
+finite, and there exists a neighborhood $V_x$ of $x$ such that, for every
+$g\in G$ not in $G_x$, one has $g\cdot V_x\cap V_x=\phi$.}
+
+\LayerTarget{tohoku:remark:condition-D-basic-properties:p1}
+We may then clearly suppose that $V_x$ is open and, moreover, that
+$g\cdot V_x=V_x$ for $g\in G_x$ (replacing $V_x$, if necessary, by the
+intersection of the $g\cdot V_x$ for $g\in G_x$). Condition (D) holds, for
+example, if $G$ is finite and $X$ is Hausdorff, as is immediately clear. If
+$X$ is an irreducible algebraic variety endowed with its
+
+\TohokuContinuation{204}

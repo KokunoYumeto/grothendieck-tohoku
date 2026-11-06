@@ -1,0 +1,70 @@
+% Corrected French for printed p.159.
+% Corrections: restriction singular; make f explicitly a section.
+\SourcePage{159}
+
+\LayerTarget{tohoku:def:flasque-and-soft-sheaves}
+Un faisceau d'ensembles $F$ sur un espace $X$ est dit \textit{flasque}
+(resp. \textit{mou}) si pour toute partie $A$ ouverte (resp. fermée) de $X$,
+toute section de $F$ sur $A$ est la restriction d'une section de $F$ sur
+$X$. Ainsi si on se donne pour tout $x\in X$ un ensemble $E_x$, le faisceau
+$E$ dont l'ensemble des sections sur un ouvert $U$ est
+\[
+E(U)=\prod_{x\in U}E_x
+\]
+(avec les applications de restriction évidentes ; comparer l'exemple traité
+avant prop. 3.1.2) est évidemment flasque et mou ; on en conclut que tout
+faisceau d'ensembles se plonge dans un faisceau flasque d'ensembles, de même
+tout faisceau de groupes abéliens (resp. de $\mathbf O$-modules, si
+$\mathbf O$ est un faisceau d'anneaux sur $X$) se plonge dans un faisceau
+flasque de groupes abéliens (resp. de $\mathbf O$-modules). Notons que si une
+partie fermée $A$ de $X$ admet un voisinage paracompact, alors toute section
+sur $A$ d'un faisceau $F$ défini sur $X$ est la restriction d'une section
+définie dans un voisinage de $A$ ; il en résulte aussitôt que
+\textit{si $X$ est paracompact, un faisceau flasque est mou}.
+
+\LayerTarget{tohoku:def:phi-soft-and-paracompactifying}
+Soit maintenant $\Phi$ une famille de parties fermées de $X$ satisfaisant aux
+conditions générales envisagées dans 3.2, un faisceau $F$ de groupes abéliens
+sur $X$ est dit $\Phi$-\textit{mou} si pour tout $A\in\Phi$ et toute section
+de $F$ sur $A$, il existe une section $f\in\Gamma_\Phi(F)$ induisant la
+section donnée. Disons que $\Phi$ est une \textit{famille paracompactifiante}
+si, en plus des conditions déjà envisagées, elle satisfait aux conditions
+supplémentaires suivantes (introduites d'abord dans [4]) :
+\textit{tout $A\in\Phi$ est paracompact, et admet un voisinage $B\in\Phi$}.
+On voit alors facilement, comme ci-dessus, \textit{qu'un faisceau flasque de
+groupes abéliens est $\Phi$-mou pour toute famille $\Phi$
+paracompactifiante}, d'où résulte en particulier que tout faisceau de groupes
+abéliens se plonge dans un faisceau $\Phi$-mou (puisqu'il se plonge même dans
+un flasque). L'intérêt des définitions précédentes tient à la
+
+\LayerTarget{tohoku:prop:3.3.2}
+\textsc{Proposition 3.3.2.} --- \textit{Soit $X$ un espace topologique muni
+d'une \og famille $\Phi$\fg{}. Considérons le foncteur $\Gamma_\Phi$ défini
+sur la catégorie $C^X$ des faisceaux de groupes abéliens sur $X$, et à
+valeurs dans la catégorie des groupes abéliens. Alors les conditions du lemme
+3.3.1 sont satisfaites dans chacun des deux cas suivants :}
+
+\textit{1) $\mathbf M$ est la famille des faisceaux flasques sur $X$.}
+
+\textit{2) $\Phi$ est paracompactifiante, et $\mathbf M$ est la famille des
+faisceaux $\Phi$-mous sur $X$.}
+
+\LayerTarget{tohoku:cor:3.3.2}
+\textsc{Corollaire.} --- \textit{$H^p_\Phi(X,F)=0$ pour $p>0$ si $F$ est
+flasque, ou si $F$ est $\Phi$-mou et la famille $\Phi$
+paracompactifiante.}
+
+La condition (i) du lemme a déjà été vérifiée, la condition (ii) se vérifie
+trivialement, seule la condition (iii) demande une démonstration, pour
+laquelle nous renvoyons au livre de Godement (ou que nous proposons au
+lecteur à titre d'exercice).
+
+\LayerTarget{tohoku:remark:fine-sheaves-are-soft}
+\textsc{Remarque.} --- Si la famille $\Phi$ est paracompactifiante, on
+vérifie facilement que les faisceaux fins [4, XV] sont $\Phi$-mous, donc
+vérifient $H^p_\Phi(X,F)=0$. Il en résulte que la théorie de la cohomologie
+donnée dans [4] pour des familles $\Phi$ paracompactifiantes est bien un cas
+particulier de celle développée ici. Nous renvoyons aussi au livre de Godement
+pour une définition particulièrement jolie
+
+\TohokuContinuation{160}

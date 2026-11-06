@@ -1,0 +1,95 @@
+% Corrected French for printed p.177; departures are append-only below.
+\SourcePage{177}
+
+\LayerTarget{tohoku:corollary:3.8.1:4:p2}
+\noindent\textit{$(U_1,\ldots,U_k)$ d'ouverts de $\mathcal U$, leur
+intersection $U$ satisfait à $\check H^i(U,F)=\{0\}$ pour $i>0$. Alors on a
+aussi $H^i(U,F)=\{0\}$, et pour toute partie ouverte $V$ de $X$,
+l'homomorphisme naturel $\check H^i(V,F)\longrightarrow H^i(V,F)$ est un
+isomorphisme.}
+
+\LayerTarget{tohoku:proof:3.8.1:corollary-4:fixed-cover}
+Il suffit de prouver $H^i(U,F)=\{0\}$, car $V$ admet des recouvrements
+arbitrairement fins $\mathbf R$ par des ouverts de $\mathcal U$, et on conclut
+du corollaire 1 que pour un tel $\mathbf R$ l'homomorphisme
+$H^i(\mathbf R,F)\longrightarrow H^i(V,F)$ est un isomorphisme, ce qui prouve
+en même temps ($\mathbf R$ étant arbitrairement fin) que
+$\check H^i(V,F)\longrightarrow H^i(V,F)$ est un isomorphisme.
+
+\LayerTarget{tohoku:proof:3.8.1:corollary-4:induction}
+--- Pour prouver $H^i(U,F)=\{0\}$, on prouve par récurrence sur $n$ que
+$H^i(U,F)=\{0\}$ pour $0<i\leq n$ et tout $U$ de la forme indiquée. C'est
+trivial si $n=0$, supposons $n\geq 1$ et l'assertion démontrée pour
+$n'=n-1$. Il y a des recouvrements arbitrairement fins $\mathbf R$ de $U$ par
+des ouverts de $\mathcal U$, pour un tel $\mathbf R$ on a
+
+\LayerTarget{tohoku:eq:corollary-4-cover-complex-vanishing}
+\[
+C(\mathbf R,H^q(F))=0\quad\text{pour }0<q<n
+\]
+d'après l'hypothèse de récurrence, à fortiori
+
+\LayerTarget{tohoku:eq:corollary-4-cover-cohomology-vanishing}
+\[
+H^p(\mathbf R,H^q(F))=0\quad\text{pour de tels }q,
+\]
+d'où
+
+\LayerTarget{tohoku:eq:corollary-4-cech-limit-vanishing}
+\[
+\check H^p(U,H^q(F))=0\quad\text{pour de tels }q,
+\]
+ce qui, en vertu de la remarque précédant le corollaire 4, implique que
+
+\LayerTarget{tohoku:eq:corollary-4-induction-conclusion}
+\[
+H^n(U,F)=\check H^n(U,F),
+\]
+qui est nul.
+
+\LayerTarget{tohoku:application:affine-zariski-coherent-sheaf}
+Le corollaire 4 s'applique par exemple au cas où $X$ est une variété
+algébrique munie de sa topologie de Zariski, $\mathcal U$ l'ensemble des
+ouverts affines dans $X$, $F$ un faisceau algébrique cohérent sur $X$ [15]. En
+effet, d'après [15], les ouverts affines forment une base de la topologie de
+$X$, et l'intersection de deux ouverts affines est un ouvert affine. Si $U$
+est un ouvert affine, on a $H^i(U,F)=0$ pour $i>0$. On a donc
+
+\LayerTarget{tohoku:eq:affine-cech-derived-comparison}
+\[
+H^i(X,F)=\check H^i(X,F),
+\]
+de plus le corollaire 1 ci-dessus montre que l'on peut calculer les $H^i(X,F)$
+à l'aide d'un recouvrement arbitrairement choisi de $X$ par des ouverts
+affines.
+
+\LayerTarget{tohoku:remark:closed-cover-leray-spectral-sequences}
+\noindent\textsc{Remarque.} Il y a d'autres cas que celui du théorème 3.8.1 où
+la suite spectrale de Leray est valable. Le plus connu est celui d'un
+\textit{recouvrement localement fini de $X$ supposé paracompact par des
+ensembles fermés} (c'est le cas envisagé par Leray) ; il se traite le plus
+simplement comme ci-dessus pour les recouvrements ouverts, grâce au fait que
+la restriction d'un faisceau mou à une partie fermée est encore un faisceau
+mou (remplaçant prop. 3.1.3). Un autre cas, dégagé par Godement par une méthode
+différente, est celui d'un \textit{recouvrement fini de $X$ par des ensembles
+fermés} (sans hypothèse de paracompacité). Quand on est simultanément dans ces
+deux cas, les deux suites spectrales obtenues coïncident, fort heureusement.
+
+\LayerTarget{tohoku:example:cech-H2-comparison-failure:p1}
+\noindent\textsc{Un exemple.} Pour terminer ce N\textsuperscript{o}, nous
+allons indiquer un exemple simple où le monomorphisme
+$\check H^2(X,F)\longrightarrow H^2(X,F)$ n'est pas un isomorphisme, et où on
+a même $\check H^2(X,F)=0$, $H^2(X,F)\neq 0$. Comme on tire du corollaire 2 au
+théorème 3.8.1 une suite exacte
+
+\LayerTarget{tohoku:eq:cech-H2-comparison-exact-sequence}
+\[
+0\longrightarrow\check H^2(X,F)\longrightarrow H^2(X,F)
+\longrightarrow\check H^1(X,H^1(F))\longrightarrow 0,
+\]
+
+\LayerTarget{tohoku:criterion:cech-H2-example-reduction:p1}
+\noindent\textit{il suffit d'indiquer un cas où $H^2(X,F)\neq 0$ et
+$H^2(X,F)\longrightarrow\check H^1(X,H^1(F))$ est un isomorphisme.}
+
+\TohokuContinuation{178}

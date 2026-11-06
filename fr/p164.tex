@@ -1,0 +1,109 @@
+% Corrected French for printed p.164.
+% Nine correction groups are recorded in the page decision ledger.
+\SourcePage{164}
+
+\LayerTarget{tohoku:diagram:3.4.2:H1-square}
+\[
+\begin{array}{ccc}
+H^1(X,G)&\longrightarrow&H^1(X,P)\\
+\big\downarrow&&\big\downarrow\\[0.45em]
+H^1(X,G)&\longrightarrow&H^1(X,H)
+\end{array}
+\]
+
+\LayerTarget{tohoku:eq:3.4.2:obstruction-cohomology}
+où les flèches verticales sont des bijections) : et d'autre part
+$H^1(X,{F'}^Q)$ est canoniquement isomorphe à
+$H^2(X,F^Q)=H^2(X,F^E)$, puisque de la suite exacte
+
+\LayerTarget{tohoku:eq:3.4.2:twisted-flabby-sequence}
+\[
+0\longrightarrow F\longrightarrow\overline F\longrightarrow F'
+\longrightarrow0
+\]
+on déduit la suite exacte
+\[
+0\longrightarrow F^Q\longrightarrow\overline F^Q\longrightarrow {F'}^Q
+\longrightarrow0
+\]
+et que, $\overline F^Q$ étant flasque puisque localement isomorphe au faisceau
+flasque $\overline F$, $H^i(X,\overline F^Q)=0$ pour $i>0$.
+
+\LayerTarget{tohoku:eq:3.4.2:boundary-as-minus-dQ}
+Il suffira donc de poser
+\[
+\partial(E)=-d(Q)\in H^2(X,F^E)
+\]
+pour satisfaire aux conditions voulues. Il reste donc à définir $d(Q)$, ayant
+les propriétés de fonctoralité et \og d'exactitude\fg{} voulues. C'est ce qui
+va être fait sous les conditions plus générales qui suivent où les notations
+sont légèrement changées.
+
+\LayerTarget{tohoku:construction:crossed-homomorphism-general}
+Soit $P$ un faisceau de groupes sur $X$, $A$ un faisceau de groupes sur lequel
+$P$ opère (à gauche), l'opération définie par $p\in P$ étant désignée par
+$\sigma(p)$. Soit $u$ un homomorphisme croisé de $P$ dans $A$, i. e. un
+homomorphisme de faisceaux tel que, sur chaque fibre $P(x)$, on ait $u(e)=e$,
+$u(pp')=u(p)\sigma(p)\mathbin{\cdot}u(p')$. Alors le sous-faisceau $G$ de $P$
+image inverse de la section nulle de $A$ par $u$ est un sous-faisceau de
+groupes, et deux éléments de $P$ ont même image dans $A$ si et seulement s'ils
+définissent la même classe à droite mod. $G$.
+
+\LayerTarget{tohoku:eq:rho-action}
+D'autre part, pour tout $x\in X$, $p\in P(x)$, $a\in A(x)$, posons
+\[
+\rho(p)a=u(p)\bigl(\sigma(p)a\bigr).
+\]
+Dire que $u$ est un homomorphisme croisé signifie précisément que la formule
+précédente définit une représentation $\rho$ de $P$ par des germes
+d'automorphismes du faisceau \textit{d'ensembles} $A$. D'ailleurs
+l'homomorphisme de faisceaux d'ensembles
+$A\times A\longrightarrow A$ défini par le produit dans $A$, est compatible
+avec les opérations de $P$ opérant respectivement par $\rho,\sigma,\rho$ :
+
+\LayerTarget{tohoku:eq:rho-product-compatibility}
+\[
+\rho(p)(ab)=\bigl(\rho(p)a\bigr)\bigl(\sigma(p)b\bigr).
+\]
+
+\LayerTarget{tohoku:construction:associated-rho-torsor}
+On en conclut, pour tout fibré $E$ à faisceau structural $P$, un homomorphisme
+des faisceaux d'ensembles associés
+\[
+A(\rho)^E\times A(\sigma)^E\longrightarrow A(\rho)^E,
+\]
+et il est immédiat qu'ainsi $A(\rho)^E$ devient un faisceau d'ensembles sur
+lequel le faisceau de groupes $A(\sigma)^E$ opère à droite, et plus précisément
+$A(\rho)^E$ est un faisceau \textit{principal} (à droite) sous $A(\sigma)^E$.
+
+\LayerTarget{tohoku:def:dE-obstruction}
+Nous pouvons considérer sa classe
+\[
+c\bigl(A(\rho)^E\bigr)\in H^1\bigl(X,A(\sigma)^E\bigr),
+\]
+que nous dénoterons aussi par $d(E)$. Son annulation est la condition nécessaire
+et suffisante pour qu'il existe une section du faisceau $A(\rho)^E$. Notons
+d'ailleurs que le monomorphisme $P/G\longrightarrow A$ déduit de $u$ est
+compatible avec les opérations de $P$, opérant sur $P/G$ de la façon canonique
+et sur $A$ par $\rho$ ; d'où un monomorphisme naturel pour les faisceaux
+associés :
+
+\LayerTarget{tohoku:eq:associated-quotient-monomorphism}
+\[
+(P/G)^E\longrightarrow A(\rho)^E,
+\]
+bijectif si et seulement si $u$ est surjectif.
+
+\LayerTarget{tohoku:proof:3.4.2:closure}
+Par suite, l'existence d'une section de $(P/G)^E$, qui est la condition
+nécessaire et suffisante pour que la classe $c(E)\in H^1(X,P)$ de $E$ soit
+dans l'image de $H^1(X,G)$, implique l'existence d'une section de $A(\rho)^E$
+c'est-à-dire la nullité de $d(E)$, et la réciproque est vraie si $u$ est un
+épimorphisme de $P$ sur $A$. Ces considérations achèvent donc la démonstration
+de la prop. 3.4.2.
+
+\LayerTarget{tohoku:remark:3.4.2:1:p1}
+\textsc{Remarques.} 1. On a mis le signe $-$ dans la formule
+$\partial(E)=-d(Q)$,
+
+\TohokuContinuation{165}

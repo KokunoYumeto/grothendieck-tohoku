@@ -1,0 +1,91 @@
+% Source-aligned English for printed p.135.
+\SourcePage{135}
+
+\LayerTarget{tohoku:prop:1.9.2}
+\noindent\textsc{Proposition 1.9.2.} --- \textit{Let $\Sigma$ be a diagram
+scheme with commutation relations (cf. 1.6), let $C$ be an abelian category,
+and let $(U_i)_{i\in I}$ be a family of generators of $C$. Assume that the
+origin and endpoint of every arrow of $\Sigma$ are distinct, and that no
+identity morphisms $e_s$, where $s$ is a vertex, occur in the commutation
+relations}\textsuperscript{2)}. \textit{Then for every $A\in C$ and every
+vertex $s$ of the scheme, the diagram $\varepsilon_s(A)$ whose value is $A$ at
+$s$ and $0$ at every other vertex, and whose value on every arrow is $0$,
+belongs to $C^\Sigma$. Moreover, the family of the $\varepsilon_s(U_i)$, with
+$s$ and $i$ variable, is a system of generators of $C^\Sigma$.}
+
+\LayerTarget{tohoku:prop:1.9.2:proof}
+The verification is immediate. For the last assertion it suffices to observe
+that morphisms from $\varepsilon_s(A)$ to a diagram $D$ are identified with
+morphisms from $A$ to $D(s)$.
+
+\begin{quote}
+\small
+\textbf{Editorial correction.} The proposition's last assertion and the
+preceding justification are false in general. Let $C=\mathbf{Ab}$ and take
+the relation-free scheme with one arrow $1\longrightarrow2$. For
+$D=(\mathbf Z\xrightarrow{\mathrm{id}}\mathbf Z)$ and its proper subdiagram
+$B=(2\mathbf Z\hookrightarrow\mathbf Z)$, every morphism
+$\varepsilon_1(\mathbf Z)\longrightarrow D$ is zero, while every morphism
+$\varepsilon_2(\mathbf Z)\longrightarrow D$ factors through $B$. Thus the
+stated family does not detect $B\subsetneq D$. The first assertion, that each
+$\varepsilon_s(A)$ belongs to $C^\Sigma$, remains valid under the printed
+hypotheses. A replacement statement generally requires free diagram objects
+representing evaluation, together with the needed existence hypotheses.
+\end{quote}
+
+\LayerTarget{tohoku:def:cogenerator-family}
+We leave to the reader the task of developing the dual notion of a
+\textit{family of cogenerators} of an abelian category. One can show that if
+$C$ is an abelian category satisfying axiom AB 5) (cf. 1.5), then the
+existence of a generator implies the existence of a cogenerator; we shall not
+use this result. Thus the category of unital left modules over a ring $U$ with
+identity always has a cogenerator. For example, if $U=\mathbf Z$, one may take
+the group of rational numbers modulo $\mathbf Z$, or the torus
+$\mathbf T=\mathbf R/\mathbf Z$.
+
+\LayerTarget{tohoku:section:1.10}
+\noindent\textbf{1.10. Injective and projective objects.}
+
+\LayerTarget{tohoku:def:injective-object}
+Recall that an object $M$ of an abelian category $C$ is called
+\textit{injective} if the functor $A\longmapsto\mathrm{Hom}(A,M)$, which is in
+any case left exact, is exact; that is, if every morphism $u$ to $M$ from a
+subobject $B$ of an object $A\in C$ extends to a morphism from $A$ to $M$.
+
+\LayerTarget{tohoku:def:injective-effacement}
+A morphism $A\longrightarrow M$ is called an \textit{injective effacement} of
+$A$ if it is a monomorphism and if, for every monomorphism
+$B\longrightarrow C$ and every morphism $B\longrightarrow A$, there is a
+morphism $C\longrightarrow M$ making the diagram commute:
+
+\LayerTarget{tohoku:diagram:injective-effacement}
+\[
+\begin{array}{ccc}
+B & \longrightarrow & C \\
+\big\downarrow && \big\downarrow \\
+A & \longrightarrow & M
+\end{array}
+\]
+
+Thus the identity map of $M$ is an injective effacement if and only if $M$ is
+injective; every monomorphism into an injective object is an injective
+effacement.
+
+\LayerTarget{tohoku:thm:1.10.1:p1}
+\noindent\textsc{Theorem 1.10.1.} --- \textit{If $C$ satisfies axiom AB 5)
+(cf. 1.5) and has a generator (cf. 1.9), then for every $A\in C$ there is a
+monomorphism from $A$ into an injective object $M$.}
+
+We shall in fact construct a functor
+$M:A\longrightarrow M(A)$, not additive in general,
+
+\LayerTarget{tohoku:footnote:2}
+\begin{quote}
+\footnotesize
+2) The category $C^\Sigma$ of inductive systems in $C$ constructed on an
+\textit{ordered} index set $I$ falls under this case. Indeed, in Example 1.7.h)
+it suffices to consider the arrows $(i,j)$ with $i<j$ and the commutation
+relations $(i,j)(j,k)=(i,k)$, in which the $e_s$ no longer occur.
+\end{quote}
+
+\TohokuContinuation{136}

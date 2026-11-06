@@ -1,0 +1,84 @@
+% Corrected French for printed p.174; departures are append-only below.
+\SourcePage{174}
+
+\LayerTarget{tohoku:application:leray-algebraic-varieties:p2}
+\noindent des variétés algébriques (munies de leur topologie de Zariski).
+
+\LayerTarget{tohoku:remark:relative-leray-scope}
+Nous nous bornerons ici à cet énoncé des conditions naturelles de validité de
+la suite spectrale de Leray, dont nous ne pousserons pas l'étude plus loin.
+
+\LayerTarget{tohoku:section:3.8}
+\textbf{3.8. Comparaison avec la cohomologie de Čech.} Nous renvoyons à [15]
+pour la définition de ``groupes de cohomologie'' de $X$ à coefficients dans un
+faisceau abélien $F$, calculés par la méthode des recouvrements de Čech.
+
+\LayerTarget{tohoku:def:cech-cohomology}
+Nous noterons ces groupes $\check H^p(X,F)$ par distinction avec les groupes
+$H^p(X,F)$ définis au N\textsuperscript{o} 2. (Pour simplifier, nous ne
+considérerons pas d'autre ``famille $\Phi$'' que celle formée de l'ensemble de
+toutes les parties fermées). Nous noterons cependant que ces groupes peuvent
+se définir en supposant seulement que $F$ est un \textit{préfaisceau} de
+groupes abéliens :
+
+\LayerTarget{tohoku:construction:cech-cochain-complex}
+pour tout recouvrement ouvert $\mathcal U=(U_i)$ de $X$, on peut former le
+complexe
+
+\LayerTarget{tohoku:eq:cech-cochain-complex-total}
+\[
+C(\mathcal U,F)=\sum_p C^p(\mathcal U,F)
+\]
+des cochaines de $\mathcal U$ à valeurs dans le préfaisceau $F$, et poser
+
+\LayerTarget{tohoku:def:cover-cohomology}
+\[
+H^p(\mathcal U,F)=H^p(C(\mathcal U,F)),
+\]
+puis prendre
+
+\LayerTarget{tohoku:eq:cech-cohomology-direct-limit}
+\[
+\check H^p(X,F)=\varinjlim_{\mathcal U} H^p(\mathcal U,F),
+\]
+la limite inductive étant prise sur l'ordonné filtrant des ``classes de
+recouvrements ouverts'' de $X$ (deux recouvrements ouverts étant considérés
+comme équivalents si chacun raffine l'autre).
+
+\LayerTarget{tohoku:obstruction:cech-not-cohomological}
+Malheureusement, les $\check H^p(X,F)$ ne forment pas en général un foncteur
+cohomologique sur la catégorie $C^X$ des faisceaux de groupes abéliens sur $X$
+(voir exemple à la fin de ce N\textsuperscript{o}).
+
+\LayerTarget{tohoku:construction:cech-delta-functor}
+Mais $(\check H^0,\check H^1)$ forme un $\partial$-foncteur exact [15], [11].
+De plus, les $\check H^p$ sont des foncteurs effaçables pour $p>0$ :
+
+\LayerTarget{tohoku:lemma:product-sheaf-cech-acyclic}
+pour ceci, il suffit de montrer par exemple que si $M$ est le faisceau produit
+défini par une famille $(M_x)_{x\in X}$ de groupes abéliens, (cf.
+N\textsuperscript{o}1), alors les $\check H^p(X,M)$ sont nuls pour $p>0$. En
+fait, on prouve même $H^p(\mathcal U,M)=0$ pour tout recouvrement ouvert
+$\mathcal U$ de $X$, en se servant de l'opérateur d'homotopie bien connu,
+employé classiquement dans le cas où $M$ est fin et $X$ paracompact.
+
+\LayerTarget{tohoku:comparison:cech-and-derived-cohomology}
+\textit{Il en résulte que, si $X$ est tel que les $\check H^p$ puissent être
+considérés comme les composantes d'un foncteur cohomologique, alors ces
+$\check H^p$ sont canoniquement isomorphes aux foncteurs $H^p$. Il en est
+ainsi si $X$ est paracompact} (cf. par exemple [15,
+N\textsuperscript{o} 25]), ou si $X$ est quelconque mais en se bornant aux
+valeurs $p=0$ et $p=1$, (comme nous l'avions déjà remarqué au
+N\textsuperscript{o} 4).
+
+\LayerTarget{tohoku:construction:cartan-leray-fixed-cover:p1}
+Des résultats plus précis sont liés à la suite spectrale de Cartan-Leray d'un
+recouvrement, comme me l'a fait observer M. Cartan, (dont je reprends ici
+l'idée). Soit $\mathcal U$ un recouvrement ouvert fixé de $X$, posons
+$C(F)=C(\mathcal U,F)$ pour tout faisceau $F$. On obtient ainsi un foncteur
+covariant exact à gauche de $C=C^X$ dans la catégorie $C'$ des complexes de
+groupes abéliens, à degrés positifs. D'ailleurs, on a vu que les foncteurs
+$H^p(C(F))$ sont effaçables. On en conclut facilement un foncteur spectral
+aboutissant au foncteur dérivé droit
+
+\TohokuContinuation{175}

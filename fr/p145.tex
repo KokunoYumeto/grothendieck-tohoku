@@ -1,0 +1,98 @@
+% Corrected French for printed p.145.
+% Corrections: une catégorie (twice); suite spectrale; homomorphismes de bord;
+% coherent filtration/cofiltration indexing in source footnote 4.
+\SourcePage{145}
+
+\LayerTarget{tohoku:section:2.4:intro}
+\noindent suites spectrales, nous renvoyons à [6, Chap. XV et XVII], en nous
+contentant de préciser notre terminologie, et de dégager les cas généraux les
+plus utiles pour la suite où l'on peut écrire des suites spectrales.
+
+\LayerTarget{tohoku:def:filtered-object}
+Soit $C$ une catégorie abélienne. Soit $A\in C$, une \textit{filtration}
+(décroissante) sur $A$ est une famille $(F^n(A))$ de sous-trucs de $A$
+($n\in\mathbf Z$) avec $F^n(A)\subset F^{n'}(A)$ si $n\geq n'$, un
+\textit{objet filtré} dans $C$ est un objet de $C$ muni d'une filtration. Si
+$A,B$ sont deux objets filtrés de $C$, un morphisme $u:A\longrightarrow B$ est
+dit compatible avec la filtration si $u(F^n(A))\subset F^n(B)$ pour tout $n$.
+Avec cette notion de morphisme, les objets avec filtration dans $C$ forment une
+catégorie additive (mais non une catégorie abélienne, car une bijection de
+cette catégorie n'est pas nécessairement un isomorphisme !).
+
+\LayerTarget{tohoku:def:associated-graded}
+On appelle \textit{gradué associé} à un objet filtré $A$ la famille des
+$G^n(A)=F^n(A)/F^{n+1}(A)$, on la dénote par $G(A)$\footnote{Ces définitions ne
+sont pas autoduales. On rétablit la dualité en associant à toute ``filtration
+décroissante'' de $A$ par des $F^n(A)$, la ``cofiltration décroissante
+associée'' par les $F'_n(A):=A/F^n(A)$. Alors, passant d'une catégorie à la
+catégorie duale, ces deux filtrations deviennent respectivement une
+cofiltration décroissante et une filtration décroissante associées. Il est
+encore commode de poser $F_n(A)=F^{1-n}(A)$,
+$F'^n(A)=F'_{1-n}(A)$ (filtration et cofiltration \textit{croissantes}
+associées aux filtrations précédentes), et suivant les cas, c'est l'une ou
+l'autre parmi quatre filtrations ainsi associées dont la considération est la
+plus commode. Posant
+$G^n(A)=\mathrm{Coker}(F^{n+1}(A)\longrightarrow F^n(A))$,
+$G_n(A)=\mathrm{Ker}(F'_n(A)\longrightarrow F'_{n-1}(A))$, on aura
+$G^n(A)=G_{n+1}(A)$. Les foncteurs $G^n$ et $G_n$ s'échangent si on passe de
+$C$ à la catégorie duale. \emph{Correction éditoriale :} le texte imprimé
+donne ici $F'_n=A/F_{1-n}$,
+$G^n=\mathrm{Coker}(F^n\longrightarrow F^{n-1})$ et $G^n=G_{-n}$ ; ces
+formules contredisent la définition $G^n=F^n/F^{n+1}$. La convention affichée
+ci-dessus est la normalisation cohérente avec cette définition.}. $G(A)$ est
+un foncteur covariant par rapport à
+l'objet filtré $A$.
+
+\LayerTarget{tohoku:def:spectral-sequence}
+Une \textit{suite spectrale} dans $C$ est un système
+$E=(E_r^{p,q},E^n)$ formé a) d'objets $E_r^{p,q}\in C$ définis pour des
+entiers $p,q,r$ avec $r\geq2$ (on pourrait remplacer 2 par un entier $r_0$
+quelconque, mais dans les applications seul le cas $r=2$ ou $r=1$ semble
+intéressant) ; b) de morphismes
+\[
+d_r^{p,q}:E_r^{p,q}\longrightarrow E_r^{p+r,q-r+1}
+\]
+tels que $d_r^{p+r,q-r+1}d_r^{p,q}=0$ ; c) d'isomorphismes
+\[
+\alpha_r^{p,q}:
+\mathrm{Ker}(d_r^{p,q})/\mathrm{Im}(d_r^{p-r,q+r-1})
+\longrightarrow E_{r+1}^{p,q};
+\]
+d) d'objets filtrés $E^n$ dans $C$, définis pour tout entier $n$ ; on suppose
+que pour tout couple $(p,q)$ fixé, on ait $d_r^{p,q}=0$ et
+$d_r^{p-r,q+r-1}=0$ pour $r$ assez grand, d'où on conclut que $E_r^{p,q}$ est
+indépendant de $r$ pour $r$ assez grand, on note cet objet par
+$E_\infty^{p,q}$ ; on suppose de plus que pour tout $n$ fixé, $F^p(E^n)$ est
+égal à $E^n$ pour $p$ assez petit et égal à 0 pour $p$ assez grand ; enfin on
+suppose donnés e) des isomorphismes
+\[
+\beta^{p,q}:E_\infty^{p,q}\longrightarrow G^p(E^{p+q}).
+\]
+La famille $(E^n)$ (sans filtrations) est appelée \textit{l'aboutissement de
+la suite spectrale $E$}.
+
+\LayerTarget{tohoku:def:morphism-spectral-sequence}
+Un \textit{morphisme $u$ d'une suite spectrale}
+$E=(E_r^{p,q},E^n)$ dans une autre $E'=(E_r'^{p,q},E'^n)$ consiste en un
+système de morphismes
+$u_r^{p,q}:E_r^{p,q}\longrightarrow E_r'^{p,q}$ et
+$u^n:E^n\longrightarrow E'^n$ compatibles avec les filtrations, ces morphismes
+étant assujettis à commuter aux morphismes $d_r^{p,q}$, $d_r'^{p,q}$,
+$\alpha_r^{p,q}$ et $\beta^{p,q}$. Les suites spectrales dans $C$ forment alors
+une catégorie additive (mais bien entendu pas une catégorie abélienne).
+
+\LayerTarget{tohoku:def:spectral-functor}
+On appelle \textit{foncteur spectral} un foncteur additif défini sur une
+catégorie abélienne, à valeurs dans une catégorie de suites
+spectrales\footnote{Il semble que pour tous les foncteurs spectraux connus,
+l'aboutissement soit en fait un foncteur cohomologique. Il resterait à examiner
+les relations entre les homomorphismes de bord dans l'aboutissement, et les
+autres constituants du foncteur spectral.}.
+
+\LayerTarget{tohoku:def:cohomological-spectral-sequence}
+Une suite spectrale est dite \textit{suite spectrale cohomologique} si
+$E_r^{p,q}$ est nul pour $p<0$ et pour $q<0$, alors on a
+$E_r^{p,q}=E_\infty^{p,q}$ dès que $r>\mathrm{Sup}(p,q+1)$, $E^n=0$ pour
+$n<0$, $F^m(E^n)=0$ si $m>n$, $F^m(E^n)=E^n$ si $m\leq0$.
+
+\TohokuContinuation{146}

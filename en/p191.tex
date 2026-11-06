@@ -1,0 +1,92 @@
+% Source-aligned English for printed p.191.
+\clearpage
+\SourcePage{191}
+
+\LayerTarget{tohoku:section:4.3}
+\SectionHeading{4.3. Case of a constant sheaf of rings.}
+
+\LayerTarget{tohoku:setup:constant-ring-sheaf}
+Suppose that $\mathbf O$ is the constant sheaf of rings defined by a ring
+with identity $O$. Let $M$ be an $O$-module, and let $\mathbf M$ be the
+constant $\mathbf O$-module it defines. For every $\mathbf O$-module $A$,
+there is then a natural isomorphism
+
+\LayerTarget{tohoku:eq:4.3.1}
+\[
+\tag{4.3.1}
+\mathrm{Hom}_{\mathbf O}(\mathbf M,A)=\mathrm{Hom}_O(M,\Gamma(A)).
+\]
+
+This is a functorial isomorphism, which may also be written
+
+\LayerTarget{tohoku:eq:4.3.2}
+\[
+\tag{4.3.2}
+h_{\mathbf M}=h_M\Gamma,
+\]
+
+\LayerTarget{tohoku:setup:functors-h-constant-module}
+where, as in the preceding subsection, we set
+$h_{\mathbf M}(A)=\mathrm{Hom}_{\mathbf O}(\mathbf M,A)$ and
+$h_M(N)=\mathrm{Hom}_O(M,N)$ for every $\mathbf O$-module $A$ and every
+$O$-module $N$. Here $\Gamma$ is regarded as a functor from
+$C^{\mathbf O}$ to the category $C^O$ of left $O$-modules, and
+$h_{\mathbf M}$ as a functor from $C^{\mathbf O}$ to the category of abelian
+groups. Theorem 3.4.1 applies, by virtue of the following
+
+\LayerTarget{tohoku:lemma:4.3:gamma-injective}
+\noindent\textsc{Lemma.} \textit{If $A$ is an injective $\mathbf O$-module,
+then $\Gamma(A)$ is an injective $O$-module.}
+
+\LayerTarget{tohoku:proof:lemma-4.3-gamma-injective}
+We must show that the functor
+$M\longmapsto\mathrm{Hom}_O(M,\Gamma(A))$ is exact. This follows at once from
+(4.3.1), since $M\longmapsto\mathbf M$ is an exact functor. Thus, by Theorem
+3.4.1, and observing that the derived functors of $\Gamma$ are the same
+whether $\Gamma$ is regarded as taking its values in $C^O$ or in the category
+$C$ of abelian groups, we obtain:
+
+\LayerTarget{tohoku:theorem:4.3.1}
+\noindent\textsc{Theorem 4.3.1.} \textit{Let $X$ be a space, $O$ a ring with
+identity, and $M$ an $O$-module; let $\mathbf O$ and $\mathbf M$ be the
+constant sheaves on $X$ defined by $O$ and $M$. There is then a cohomological
+spectral functor on $C^{\mathbf O}$, abutting to the graded functor
+$(\mathrm{Ext}_{\mathbf O}^p(X;\mathbf M,A))$, whose initial term is}
+
+\LayerTarget{tohoku:eq:4.3.3}
+\[
+\tag{4.3.3}
+\mathrm{II}_2^{p,q}(A)=\mathrm{Ext}_O^q(M,H^p(X,A)).
+\]
+
+\LayerTarget{tohoku:remark:edge-maps-and-five-term-sequence-4.3.1}
+As usual, this yields edge homomorphisms and a five-term exact sequence, which
+the reader may write out.
+
+\LayerTarget{tohoku:construction:computing-constant-sheaf-spectral-functor}
+To compute the spectral functor, we shall use Corollary 1 to Proposition
+2.5.3, employing the resolvent functor $\Gamma C(A)$ for $\Gamma$, regarded
+here as a covariant functor from $C^{\mathbf O}$ to $C^O$, where $C(A)$ is the
+canonical resolution of $A$ (cf. 2.3), and the resolvent functor $h_L$ for
+$h_M$, where $L$ is a left resolution of $M$ by free $O$-modules. We obtain
+the first part of the following
+
+\LayerTarget{tohoku:proposition:4.3.2}
+\noindent\textsc{Proposition 4.3.2.} \textit{Under the hypotheses of Theorem
+4.3.1, choose a left resolution $L$ of $M$ by free $O$-modules. Then the
+spectral functor of Theorem 4.3.1 is computed by taking the second spectral
+sequence of the bicomplex $\mathrm{Hom}_O(L,\Gamma C(A))$, where $C(A)$ is
+the canonical resolution of $A$ (cf. 2.3). If the $L_i$ are isomorphic to
+$O^{n_i}$, where $n_i$ is an integer $>0$, the first spectral sequence of this
+bicomplex gives the spectral functor of Theorem 4.2.1.}
+
+\LayerTarget{tohoku:proof:proposition-4.3.2}
+For the latter assertion, it suffices to consider the resolution $\mathbf L$
+of $\mathbf M$ deduced from $L$ and apply Corollary 3 to Proposition 4.2.4.
+
+\LayerTarget{tohoku:reduction:kunneth-for-constant-sheaves}
+The preceding proposition reduces the computation of
+$\mathrm{Ext}_{\mathbf O}(\mathbf M,A)$ and its spectral sequences to a
+classical problem of Künneth type. Thus:
+
+\TohokuContinuation{192}

@@ -1,0 +1,89 @@
+% Direct-authority diplomatic French for printed p.200.
+\clearpage
+\SourcePage{200}
+
+\LayerTarget{tohoku:setup:equivariant-derived-functors}
+Nous bornant maintenant à prendre $A$ dans la catégorie $C^{X(G)}$ des
+$G$-faisceaux abéliens sur $X$, $\Gamma_X^G$ est un foncteur additif exact à
+gauche de $C^{X(G)}$ dans la catégorie $C$ des groupes abéliens, et $f_*^G$
+est un foncteur exact à gauche de $C^{X(G)}$ dans la catégorie $C^Y$ des
+faisceaux abéliens(sans opérateurs) sur $Y$. On posera alors
+
+\LayerTarget{tohoku:equation:5.2.3}
+\[
+H^n(X;G,A)=R^n\Gamma_X^G(A)
+\tag{5.2.3}
+\]
+
+\LayerTarget{tohoku:equation:5.2.4}
+\[
+\mathbf H^n(G,A)=R^nf_*^G(A)
+\tag{5.2.4}
+\]
+
+\LayerTarget{tohoku:result:equivariant-cohomology-universality}
+Ainsi, pour un $G$-faisceau abélien, les $H^n(X;G,A)$ sont des groupes
+abéliens, les $\mathbf H^n(G,A)$ sont des faisceaux sur $Y$. Les uns et les
+autres forment des foncteurs cohomologiques universels en $A$, se réduisant
+pour $n=0$ à $\Gamma_X^G(A)$ resp. à $A^G$. Si $G$ opère trivialement sur
+$X$, on retrouve les notions introduites dans 4.4. --- On voit encore
+facilement comme dans prop. 3.1.3 que si $U$ est un ouvert de $Y$, et $A$ un
+$G$-faisceau abélien injectif sur $X$, alors sa restriction à $f^{-1}(U)$ est
+un $G$-faisceau abélien injectif sur cet espace. On en conclut comme dans
+4.2 :
+
+\LayerTarget{tohoku:proposition:5.2.1}
+\noindent\textsc{Proposition 5.2.1.} \textit{Soit $A$ un $G$-faisceau abélien
+sur $X$, alors pour tout ouvert $U\subset Y$, on a
+$\mathbf H^p(G,A)\vert U=\mathbf H^p(G,A\vert f^{-1}(U))$.}
+
+\LayerTarget{tohoku:remark:sheaf-group-cohomology-notation}
+C'est pourquoi on se dispense d'indiquer $X$ dans la notation
+$\mathbf H^p(G,A)$. Une réduction plus poussée du calcul des
+$\mathbf H^p(G,A)$ s'obtient par le
+
+\LayerTarget{tohoku:corollary:5.2.1}
+\noindent\textsc{Corollaire.} \textit{Supposons que $f^{-1}(U)$ soit la
+réunion d'ouverts $g\mathbin{\cdot}V$ ($g\in G/G_0$) disjoints deux à deux,
+où $V$ est un ouvert de $X$ et $G_0$ un sous-groupe de $G$ tel que
+$g_0\mathbin{\cdot}V=V$ pour $g_0\in G_0$. Alors
+$\mathbf H^p(G,A)\vert U=\mathbf H^p(G_0,A\vert V)$ (moyennant
+l'identification naturelle $U=V/G_0$).}
+
+\LayerTarget{tohoku:proof:corollary-5.2.1}
+En vertu de la proposition 2.5.1, on peut supposer $U=Y$, d'où
+$f^{-1}(U)=X$. On constate alors immédiatement que la catégorie des
+$G$-faisceaux sur $X$ est isomorphe à la catégorie des $G_0$-faisceaux sur
+$V$, cet isomorphisme étant compatible avec les foncteurs $f_*^G$,
+$f_*^{G_0}$. D'où aussitôt la formule voulue. --- Un calcul plus explicite
+sera donné plus bas. (cf. formule (5.2.11) et théorème 5.3.1).
+
+\LayerTarget{tohoku:construction:two-compositions-of-gamma-x-g}
+Les formules (5.2.2) représentent $\Gamma_X^G$ comme un foncteur composé de
+deux façons différentes, et dans les deux cas, le théorème 2.4.1 s'applique,
+grâce au corollaire de prop. 5.1.3. On obtient donc :
+
+\LayerTarget{tohoku:theorem:5.2.1}
+\noindent\textsc{Théorème 5.2.1.} \textit{Il existe sur la catégorie
+$C^{X(G)}$ des $G$-faisceaux abéliens sur $X$ deux foncteurs spectraux
+cohomologiques, aboutissant au foncteur gradué $(H^n(X;G,A))$, et dont les
+termes initiaux sont respectivement :}
+
+\LayerTarget{tohoku:equation:5.2.5}
+\[
+\tag{5.2.5}
+\left\{
+\begin{aligned}
+\mathrm I_2^{p,q}(A)&=H^p(Y,\mathbf H^q(X,A)),\\
+\mathrm {II}_2^{p,q}(A)&=H^p(G,H^q(X,A)).
+\end{aligned}
+\right.
+\]
+
+\LayerTarget{tohoku:proof:theorem-5.2.1:p1}
+Pour établir la forme explicite de $\mathrm {II}_2^{p,q}(A)$, il faut
+seulement montrer encore que les foncteurs dérivés de $\Gamma_X$, considéré
+comme foncteur de $C^{X(G)}$ dans la catégorie $C^G$ des $G$-modules, sont
+bien les $H^q(X,A)$. Or cela résulte immé-
+
+\TohokuContinuation{201}

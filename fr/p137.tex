@@ -1,0 +1,79 @@
+% Corrected French for printed p.137.
+% Corrections: prof. -> prop.; effacement -> effacements;
+% functor direction C->C' -> C'->C; addtives -> additives.
+\SourcePage{137}
+
+\LayerTarget{tohoku:thm:1.10.1:construction:transfinite:p2}
+\noindent on posera $M_i(A)=M_1(M_j(A))$, et le morphisme
+$M_j(A)\longrightarrow M_{j+1}(A)$ sera $f(M_j(A))$ (ce qui définit en même
+temps les morphismes $M_k(A)\longrightarrow M_i(A)$ pour $k\leq i$). Si $i$
+est ordinal limite, on posera
+
+\[
+ M_i(A)=\mathop{\rm lim}\limits_{\longrightarrow,\,j<i}M_j(A),
+\]
+
+\noindent et on prendra pour morphismes $M_j(A)\longrightarrow M_i(A)$
+($j<i$) les morphismes canoniques, qui sont bien injectifs (prop. 1.8). Soit
+maintenant $k$ le plus petit ordinal dont la puissance est strictement plus
+grande que la puissance de l'ensemble des sous-trucs de $U$, (prenons
+$M(A)=M_k(A)$), tout revient à prouver que $M_k$ est injectif, i. e. satisfait
+à la condition du lemme 1. Avec les notations de ce lemme prouvons que $v(V)$
+est contenu dans un des $M_i$ avec $i<k$ (ce qui achèvera la démonstration).
+En effet, de $M_k=\mathop{\rm Sup}M_i$ on tire
+
+\[
+ V=\mathop{\rm Sup}_{i<k}v^{-1}(M_i)
+\]
+
+\noindent (en vertu de AB 5)), or comme l'ensemble des sous-trucs de $V$ a une
+puissance $<\mathrm{puiss.}\,k$, et que tout ensemble de nombres ordinaux $<k$
+et ayant pour limite $k$ a la puissance de $k$ (car $\mathrm{puiss.}\,k$ n'est
+pas cardinal limite), il s'ensuit que $v^{-1}(M_i)$ reste constant à partir
+d'un $i_0<k$, d'où $V=v^{-1}(M_{i_0})$, ce qui achève la démonstration.
+
+\LayerTarget{tohoku:thm:1.10.1:remark:1}
+\noindent\textsc{Remarques. 1. Variante du Théorème 1.10.1 :} Si $C$ satisfait
+aux axiomes AB 3), AB 4) et AB 3*), et admet un cogénérateur $T$, alors tout
+$A\in C$ admet un effacement injectif. Nous n'aurons pas à nous servir de ce
+résultat.
+
+\LayerTarget{tohoku:thm:1.10.1:remark:2}
+\noindent 2. Le fait que $M(A)$ soit un foncteur en $A$ peut-être commode, par
+exemple pour prouver que tout objet $A\in C^G$ (i. e. un objet $A\in C$ avec
+groupe d'opérateurs $G$ --- cf. 1.7. exemple f ---) qui est injectif dans
+$C^G$, est aussi injectif dans $C$.
+
+\LayerTarget{tohoku:thm:1.10.1:remark:3}
+\noindent 3. Dans beaucoup de cas, l'existence d'un monomorphisme de $A$ dans
+un objet injectif peut se voir directement de façon plus simple. Le théorème 1
+a l'avantage de s'appliquer à des cas très différents. De plus, les conditions
+du théorème sont stables par passage à certaines catégories de diagrammes
+(cf. prop. 1.6.1 et 1.9.2), où l'existence de suffisamment d'objets injectifs
+n'est pas toujours visible à l'œil nu.
+
+\LayerTarget{tohoku:thm:1.10.1:remark:4}
+\noindent 4. On laisse au lecteur le soin de donner les énoncés duals relatifs
+aux objets projectifs et les effacements projectifs.
+
+\LayerTarget{tohoku:section:1.11}
+\noindent\textbf{1.11. Catégories quotient.} Bien qu'elles ne serviront pas
+dans la suite de ce travail, les considérations de ce numéro, qui
+systématisent et assouplissent le ``langage modulo $C$'' de Serre [17], sont
+commodes dans diverses applications.
+
+\LayerTarget{tohoku:def:subcategory:p1}
+Soit $C$ une catégorie, on appelle \textit{sous-catégorie de $C$} une catégorie
+$C'$ dont les objets sont des objets de $C$, telle que pour $A,B\in C'$,
+l'ensemble $\mathrm{Hom}_{C'}(A,B)$ de morphismes de $A$ dans $B$ au sens de
+$C'$, soit une partie de l'ensemble $\mathrm{Hom}_C(A,B)$ des morphismes de
+$A$ dans $B$ au sens de $C$, la composition des morphismes dans $C'$ étant
+induite par la composition des morphismes dans $C$, et les morphismes
+identiques dans $C'$ étant des morphismes identiques dans $C$. Ces deux
+dernières conditions signifient que la ``fonction'' qui à un objet ou
+morphisme de $C'$ associe le même objet ou morphisme de $C$, est un foncteur
+covariant de $C'$ dans $C$ (appelé \textit{injection canonique de $C'$ dans
+$C$}). Si $C,C'$ sont des catégories additives, $C'$ est dite
+\textit{sous-catégorie additive} si en
+
+\TohokuContinuation{138}

@@ -1,0 +1,82 @@
+% Source-aligned English for printed p.212.
+\clearpage
+\SourcePage{212}
+
+\LayerTarget{tohoku:construction:fixed-point-free-refinement}
+\noindent It therefore suffices to define a canonical homomorphism
+$H^n(\mathcal U';G,P)\to H^n(\mathcal V;G,P)$. We are now in the case
+considered at the outset, since $\mathcal U'$ is a fixed-point-free
+$G$-covering less fine than $\mathcal V$. This completes the definition of
+the homomorphisms (5.5.12); moreover, these homomorphisms have evident
+transitivity properties. It follows first that if $\mathcal U$ and
+$\mathcal V$ are two equivalent $G$-coverings, then the homomorphism (5.5.12)
+is an isomorphism, so that $H^n(\mathcal U;G,P)$ depends only on the class of
+the $G$-covering $\mathcal U$ (for the equivalence relation defined by the
+preorder relation: $\mathcal V$ is finer than $\mathcal U$). Set
+
+\LayerTarget{tohoku:definition:equivariant-cech-cohomology}
+\LayerTarget{tohoku:equation:5.5.13}
+\[
+\tag{5.5.13}
+\check H^n(X;G,P)=\varinjlim\,\cdot\,H^n(\mathcal U;G,P),
+\]
+
+\noindent where the direct limit is taken over the ordered set of classes of
+open $G$-coverings of $X$. The homomorphisms (5.5.3) define functorial
+homomorphisms
+
+\LayerTarget{tohoku:comparison:cech-to-equivariant-cohomology}
+\LayerTarget{tohoku:equation:5.5.14}
+\[
+\tag{5.5.14}
+\check H^n(X;G,A)\longrightarrow H^n(X;G,A)
+\]
+
+\noindent for $A\in C^{X(G)}$; we shall indicate conditions under which these
+are isomorphisms. Passing to the direct limit in the spectral sequences
+associated with the various $\mathcal U$ (Theorem 5.5.3) shows that
+$H^*(X;G,A)$ is the abutment of a cohomological spectral functor whose initial
+term is
+
+\LayerTarget{tohoku:spectral-sequence:equivariant-cech-cohomology}
+\LayerTarget{tohoku:equation:5.5.15}
+\[
+\tag{5.5.15}
+E_2^{p,q}(A)=H^p(X;G,H^q(A)),
+\]
+
+\noindent the homomorphisms (5.5.14) being precisely the
+``edge-homomorphisms'' of this spectral sequence. We prove:
+
+\LayerTarget{tohoku:lemma:5.5.5}
+\noindent\textsc{Lemma 5.5.5.}\quad \textit{Suppose that $Y$ is paracompact,
+$X$ is separated, and $G$ is a discontinuous group of homeomorphisms of $X$
+(cf. 5.5.3). If $P$ is an abelian $G$-presheaf whose associated sheaf is
+zero, then $\check H^n(X;G,P)=0$ for every $n>0$.}
+
+\LayerTarget{tohoku:proof:lemma-5.5.5}
+In calculating $\check H^n(X;G,P)$ by (5.5.13), one may restrict to
+fixed-point-free $G$-coverings $\mathcal U$; Proposition 5.5.4 applies to
+these, so it is enough to prove the following. If
+$f^n\in C^n(\mathcal U,P)^G$, where $\mathcal U$ is an open fixed-point-free
+$G$-covering, then there exist a finer open fixed-point-free $G$-covering
+$\mathcal V$ and a map $\varphi:J\to I$ of the index sets satisfying the
+conditions considered above, such that $\overline\varphi(f^n)=0$. We begin by
+showing that there exist arbitrarily fine open $G$-coverings of the form
+$(gU_i)_{(g,i)\in G\times I}$, where $(U_i)$ is a family of open subsets of
+$X$ such that, if $G_i$ is the stabilizer of $U_i$, then $G_i$ is finite and
+$g\notin G_i$ implies $gU_i\cap U_i=\phi$. We shall therefore assume
+henceforth that $\mathcal U$ is of the preceding type.
+
+Consider the nonhomogeneous cochain
+$(F_{i_0,g_1i_1,\ldots,g_ni_n})$ corresponding to $f^n$. Regard $I$ as the
+nerve of the covering $(f(U_i))=(U'_i)$ of $Y$, and for every simplex
+$s=(i_0,\ldots,i_n)$ of $I$, set $U'_s=U'_{i_0\ldots i_n}$. For every
+$n$-simplex $s$ of $I$ and every $y\in U'_s$, let $W^s_y$ be an open
+neighborhood of $y$, contained in $U'_s$, such that for every system
+$\mathbf g=(g_1,\ldots,g_n)$ for which
+$U_{s,\mathbf g}=U_{i_0}\cap g_1U_{i_1}\cap\cdots\cap g_nU_{i_n}$ has an
+image in $Y$ containing $y$, the restriction of
+$F_{i_0,g_1i_1,\ldots,g_ni_n}$ to
+
+\TohokuContinuation{213}

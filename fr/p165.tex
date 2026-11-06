@@ -1,0 +1,94 @@
+% Corrected French for printed p.165.
+% Five correction groups are recorded in the page decision ledger.
+\SourcePage{165}
+
+\LayerTarget{tohoku:remark:3.4.2:1:p2}
+donnée dans la démonstration de prop. 3.4.2, pour qu'on retrouve l'opérateur
+bord usuel de la suite exacte de cohomologie relative à la suite exacte
+$0\longrightarrow F\longrightarrow G\longrightarrow H\longrightarrow0$, dans
+le cas où $G$ (donc aussi $F$ et $H$) est abélien. Dans ce cas, on a un
+diagramme de suites exactes horizontales et verticales
+
+\LayerTarget{tohoku:diagram:3.4.2:exact-sequence-grid}
+\[
+\begin{array}{ccccccccc}
+&&0&&0&&0&&\\
+&&\big\downarrow&&\big\downarrow&&\big\downarrow&&\\[0.45em]
+0&\longrightarrow&F&\longrightarrow&G&\longrightarrow&H&\longrightarrow&0\\
+&&\big\downarrow&&\big\downarrow&&\big\downarrow&&\\[0.45em]
+0&\longrightarrow&\overline F&\longrightarrow&\overline G&\longrightarrow&\overline H&\longrightarrow&0\\
+&&\big\downarrow&&\big\downarrow&&\big\downarrow&&\\[0.45em]
+0&\longrightarrow&F'&\longrightarrow&G'&\longrightarrow&H'&\longrightarrow&0\\
+&&\big\downarrow&&\big\downarrow&&\big\downarrow&&\\[0.45em]
+&&0&&0&&0&&
+\end{array}
+\]
+d'où on conclut [6, prop. III 4.1] que le diagramme d'homomorphismes cobords
+suivant est \textit{anticommutatif} :
+
+\LayerTarget{tohoku:diagram:3.4.2:boundary-anticommutative-square}
+\[
+\begin{array}{ccc}
+H^0(X,H')&\longrightarrow&H^1(X,F')\\
+\big\downarrow&&\big\downarrow\\[0.45em]
+H^1(X,H)&\longrightarrow&H^2(X,F).
+\end{array}
+\]
+
+\LayerTarget{tohoku:eq:3.4.2:dQ-minus-boundary-cE}
+Le premier homomorphisme vertical est surjectif, et on vérifie que dans la
+construction faite plus haut, $d(Q)$ s'obtient à partir de la classe
+$c(E)\in H^1(X,H)$ par passage au quotient dans l'homomorphisme composé
+\[
+H^0(X,H')\longrightarrow H^1(X,F')\longrightarrow H^2(X,F),
+\]
+et est donc égal à $-\partial c(E)$.
+
+\LayerTarget{tohoku:remark:3.4.2:2:local-triviality}
+2. On n'oubliera pas que pour appliquer prop. 3.3.1, à un fibré algébrique
+projectif, il faut d'abord vérifier qu'il est localement trivial.
+Malheureusement, cette vérification, quand on ne sait pas à priori qu'on peut
+remonter le groupe structural semble souvent difficile.
+
+\LayerTarget{tohoku:example:projective-bundle-vector-lift}
+Exemple : Sur une variété projective complexe sans singularités, on a un fibré
+\textit{holomorphe} $E$ à fibre l'espace projectif (on sait, d'après
+Kodaira--Borel, que $E$ est aussi une variété algébrique), provient-il d'un
+fibré holomorphe vectoriel? La réponse est affirmative d'après prop. 3.4.1, si
+$E$ est localement trivial du point de vue algébrique, i. e. si par tout point
+de la base passe une section rationnelle ; la réciproque est d'ailleurs vraie,
+car [16] tout fibré holomorphe vectoriel sur $X$ est algébrique localement
+trivial.
+
+\LayerTarget{tohoku:remark:3.4.2:3:p1}
+3. La situation $u:P\longrightarrow A$ ($u$, homomorphisme croisé de
+faisceaux) décrite plus haut se rencontre dans diverses situations
+intéressantes, par exemple : $X$ est une variété holomorphe, $G$ un groupe de
+Lie complexe ayant l'algèbre de Lie $V$, $P$ est le faisceau des germes
+d'applications holomorphes de $X$ dans $G$, $A$ le faisceau des germes de
+1-formes différentielles holomorphes sur $X$ à valeurs dans $V$, sur lequel
+$P$ opère à l'aide de la représentation adjointe, et on pose
+
+\LayerTarget{tohoku:eq:adjoint-logarithmic-derivative}
+\[
+u(g)=(dg)g^{-1}.
+\]
+Ceci permet, à tout espace fibré holomorphe $E$ sur $X$ de groupe structural
+$G$, de faire correspondre
+
+\LayerTarget{tohoku:def:adjoint-obstruction-class}
+une classe
+\[
+d(E)\in H^1\bigl(X,\Omega^1(\operatorname{ad}(E))\bigr),
+\]
+où $\operatorname{ad}(E)$ désigne le fibré vectoriel (de fibre $V$)
+\og adjoint\fg{} de $E$ et $\Omega^1(\operatorname{ad}(E))$ le faisceau des
+germes de 1-formes différentielles holomorphes à valeurs dans
+$\operatorname{ad}(E)$.
+
+\LayerTarget{tohoku:construction:constant-transition-reduction:p1}
+Le noyau de $u$ étant le sous-faisceau de $P$ formé des germes d'applications
+constantes de $X$ dans $G$, on voit que l'annulation de $d(E)$ est une
+condition nécessaire pour que le
+
+\TohokuContinuation{166}

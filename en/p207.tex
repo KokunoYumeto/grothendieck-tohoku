@@ -1,0 +1,78 @@
+% Source-aligned English for printed p.207.
+\clearpage
+\SourcePage{207}
+
+\LayerTarget{tohoku:remark:smith-fixed-point-application:p1}
+\noindent in [2] is entirely unnecessary. As another easy application of the
+preceding corollary, if a finite group $G$ of prime order $p$ acts on a
+finite-dimensional space $X$ which is acyclic mod. $p$, then the fixed-point
+set $X_0$ and the quotient space $X/G$ are acyclic mod. $p$. It follows that
+if $X$ is acyclic for a coefficient field $k$ (of arbitrary characteristic,
+the case of characteristic $\ne p$ being trivial), then so is $X/G$; and,
+since $k$ is arbitrary, this statement remains valid with $k$ replaced by
+$\mathbf Z$. An immediate induction shows that these results concerning $X/G$
+remain valid if one assumes only that $G$ is finite and solvable. Finally, the
+calculations of this section are also useful in studying Steenrod powers in
+sheaves and the cohomology of symmetric powers of a space. Indeed, analogous
+calculations in an unpublished manuscript of R. Godement on Steenrod powers
+inspired the present section.
+
+\LayerTarget{tohoku:section:5.5}
+\bigskip
+\noindent\textbf{5.5. Calculation of $H^n(X;G,A)$ by coverings.} We shall
+need the following auxiliary results.
+
+\LayerTarget{tohoku:lemma:5.5.1}
+\noindent\textsc{Lemma 5.5.1.} \textit{Let $C_1,C_2,C_3$ be three abelian
+categories, and suppose that in each of the first two every object is
+isomorphic to a subobject of an injective object. Let $F$ and $G$ be covariant
+functors from $C_1$ to $C_2$ and from $C_2$ to $C_3$, respectively, and
+suppose that $F$ sends injective objects to $G$-acyclic objects. Finally, let
+$\mathbf K$ be a covariant functor from $C_1$ to the category
+$\mathbf K(C_2)$ of positive-degree complexes in $C_2$, satisfying the two
+conditions (i) $H^0\mathbf K(A)=F(A)$ (a functorial isomorphism), and (ii)
+$\mathbf K(A)$ is acyclic in dimensions $n>0$ when $A$ is injective. Under
+these conditions there exists on $C_1$ a cohomological spectral functor
+abutting to the graded functor $(R^n(GF)(A))$, whose initial term is}
+
+\LayerTarget{tohoku:equation:5.5.1}
+\[
+\tag{5.5.1}
+E_2^{p,q}(A)=R^pG\bigl(R^q\mathbf K(A)\bigr).
+\]
+
+\LayerTarget{tohoku:proof:lemma-5.5.1}
+Let $H^0$ denote the covariant functor $L\longmapsto H^0(L)$ from
+$\mathbf K(C_2)$ to $C_2$. We then have
+$GF=G(H^0\mathbf K)=(GH^0)\mathbf K$. If $A$ is injective, $\mathbf K(A)$ is
+$(GH^0)$-acyclic, i.e. $R^nG(\mathbf K(A))=0$ for $n>0$; indeed,
+$\mathbf K(A)$ is a resolution of $F(A)$ by (i) and (ii), so
+$R^nG(\mathbf K(A))=R^nG(F(A))$, and the latter term is zero by the hypothesis
+on $F$. We may therefore apply Theorem 2.4.1 to the composite functor
+$(GH^0)\mathbf K$, which gives the spectral functor of the lemma.
+
+\LayerTarget{tohoku:lemma:5.5.2}
+\noindent\textsc{Lemma 5.5.2.} \textit{With $C_1,C_2,C_3,F$, and $G$ as in
+the preceding lemma, there exists a cohomological spectral functor on the
+category $\mathbf K(C_1)$ of positive-degree complexes $C$ in $C_1$, abutting
+to the graded functor $(R^n(GF)(C))$, whose initial term is}
+
+\LayerTarget{tohoku:equation:5.5.2}
+\[
+\tag{5.5.2}
+E_2^{p,q}(C)=R^pG\bigl(R^qF(C)\bigr).
+\]
+
+\LayerTarget{tohoku:proof:lemma-5.5.2:p1}
+Place a bar over a functor to denote the functor obtained by ``extension'' to
+the categories of positive-degree complexes. We then have
+\[
+R^n(GF)=R^n\bigl(H^0\overline{GF}\bigr)
+=R^n\bigl((H^0\overline G)\overline F\bigr).
+\]
+The functor $\overline F:\mathbf K(C_1)\longrightarrow\mathbf K(C_2)$ sends
+injective objects to $(H^0\overline G)$-acyclic objects; in other words, if
+$C$ is an injective object of $\mathbf K(C_1)$, then
+$R^nG(\overline F(C))=0$ for $n>0$; indeed, by the characterization
+
+\TohokuContinuation{208}

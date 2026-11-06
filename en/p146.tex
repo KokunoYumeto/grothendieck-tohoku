@@ -1,0 +1,66 @@
+% Source-aligned English for printed p.146.
+\SourcePage{146}
+
+\LayerTarget{tohoku:example:bicomplex-spectral-sequences}
+For example, let $K=(K^{p,q})$ be a \textit{bicomplex}\footnote{Contrary to
+the terminology introduced in [6], we suppose that the two boundary operators
+$d'$ and $d''$ of a bicomplex $K$ commute. We therefore take the total
+boundary operator to be $d=d'+d_t''$, where
+$d_t''x=(-1)^p d''x$ for $x\in K^{p,q}$.} in $C$, and suppose that for every
+integer $n$ only finitely many pairs $(p,q)$ with $p+q=n$ have
+$K^{p,q}\ne0$. There are then two spectral sequences, both abutting to
+$H(K)=(H^n(K))$, the cohomology of the simple complex $(K^n)$ associated to
+$K$, where $K^n=\sum_{p+q=n}K^{p,q}$. Their first terms are respectively
+\LayerTarget{tohoku:eq:2.4.1}
+\[
+\tag{2.4.1}
+{}_{\mathrm I}E_2^{p,q}(K)=H_{\mathrm I}^pH_{\mathrm{II}}^q(K),
+\qquad
+{}_{\mathrm{II}}E_2^{p,q}(K)=H_{\mathrm{II}}^pH_{\mathrm I}^q(K).
+\]
+Here we use the notation of [6, Chapter XV, no.~6]. These spectral sequences
+are spectral functors of $K$. They are cohomological spectral sequences when
+the degrees of $K$ are nonnegative.
+
+\LayerTarget{tohoku:construction:right-derived-spectral-functors:p1}
+Let $F:C\longrightarrow C'$ be a covariant functor between abelian categories,
+and suppose that every object of $C$ is isomorphic to a subobject of an
+injective object. Let $K=(K^n)$ be a complex in $C$ bounded below, that is,
+$K^n=0$ for all sufficiently small $n$. The constructions of [6, Chapter XVII]
+then give two spectral sequences
+$({}_{\mathrm I}E_r^{p,q}(K),{}_{\mathrm I}F^n(K))$ and
+$({}_{\mathrm{II}}E_r^{p,q}(K),{}_{\mathrm{II}}F^n(K))$, both abutting to the
+same graded object $\mathfrak R F(K)=(\mathfrak R^nF(K))$, with two suitable
+filtrations. Their initial terms are
+\LayerTarget{tohoku:eq:2.4.2}
+\[
+\tag{2.4.2}
+{}_{\mathrm I}E_2^{p,q}(K)=H^p(R^qF(K)),
+\qquad
+{}_{\mathrm{II}}E_2^{p,q}(K)=R^pF(H^q(K)).
+\]
+As usual, applying a functor to a complex means applying it to each term.
+These spectral sequences are functorial in $K$, and the variance of the
+initial and final terms is evident from their explicit form. They define two
+spectral functors on the category of complexes in $C$ bounded below, called
+the \textit{right derived spectral functors of $F$}, or the \textit{right
+hyperhomology spectral functors of $F$}. The functors
+$\mathfrak R^nF(K)$ are called the \textit{hyperhomology functors of $F$}.
+
+\LayerTarget{tohoku:construction:hyperhomology-resolution:a:p1}
+We recall the construction, restricting for definiteness to complexes $K$ in
+nonnegative degrees. Let $L=(L^{p,q})$ be a double complex in nonnegative
+degrees equipped with an augmentation $K\longrightarrow L$, where $K$ is
+regarded as a bicomplex whose second degree is zero. Suppose that for every
+$p$ the complex $L^{p,*}=(L^{p,q})_q$ is a resolution of $K^p$, and that
+$R^nF(L^{p,q})=0$ for every $p,q$ and $n>0$. There are two particular ways to
+construct such a bicomplex, each unique up to homotopy equivalence of
+bicomplexes. a) Regard $K$ as an object of the abelian category $\mathfrak K$
+of complexes in $C$ in nonnegative degrees, and take an injective resolution
+$L$ of $K$. The injective objects of $\mathfrak K$ are precisely the complexes
+$A=(A^i)$ in nonnegative degrees for which every $A^i$ is injective,
+$H^i(A)=0$ for $i>0$, and which ``split,'' meaning that the cycle subobjects
+$Z(A^i)$ are direct summands of the $A^i$. Moreover, every object of
+$\mathfrak K$ embeds in
+
+\TohokuContinuation{147}

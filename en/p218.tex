@@ -1,0 +1,106 @@
+% Source-aligned English for printed p.218.
+\clearpage
+\SourcePage{218}
+
+\LayerTarget{tohoku:transition:degeneration-case}
+\LayerTarget{tohoku:corollary:theorem-5.6.3-locally-free}
+\noindent\textsc{Corollary.}\quad \textit{If the $G$-$O$-module $A$ is
+locally isomorphic, as an $O$-module, to $O^n$, then there are canonical
+isomorphisms}
+
+\LayerTarget{tohoku:equation:5.6.12}
+\begin{equation}
+\operatorname{Ext}_{O,G}^n(X;A,B)
+  =H^n\bigl(X;G,\mathbf{Hom}_O(A,B)\bigr).
+\tag{5.6.12}
+\end{equation}
+
+\LayerTarget{tohoku:proof:theorem-5.6.3-locally-free-corollary}
+This follows from spectral sequence III, since then
+$\mathbf{Ext}_O^q(A,B)=0$ for $q>0$ (Prop. 4.2.3). In particular, taking
+$A=O$, one obtains:
+
+\LayerTarget{tohoku:corollary:theorem-5.6.3-structure-sheaf}
+\noindent\textsc{Corollary 2.}\quad \textit{For every $G$-$O$-module $B$
+there are functorial isomorphisms:}
+
+\LayerTarget{tohoku:equation:5.6.14}
+\begin{equation}
+\operatorname{Ext}_{O,G}^n(X;O,B)=H^n(X;G,B).
+\tag{5.6.14}
+\end{equation}
+
+\LayerTarget{tohoku:remarks:two-additional-spectral-sequences}
+\noindent\textsc{Remarks.}\quad Let us record two further spectral sequences,
+in two special cases, converging to $\operatorname{Ext}_{O,G}^n(X;A,B)$.
+
+\LayerTarget{tohoku:construction:constant-equivariant-crossed-product}
+Suppose that $O$ is the constant $G$-sheaf of rings defined by a ring $O$ on
+which $G$ acts, and that $A$ is the constant $G$-$O$-sheaf $\mathbf M$
+defined by an $O$-module $M$ on which $G$ acts compatibly with its operations
+on $O$: $g^\circ(\lambda m)=g(\lambda)g(m)$. Introduce the ring $U$ generated
+by $O$ and $\mathbf Z(G)$, subject to the commutation relations
+$g\lambda g^{-1}=g(\lambda)$; thus $M$ is a $U$-module. Consider the functor
+$h_{U,M}$ on the category of $U$-modules, defined by
+$h_{U,M}(N)=\operatorname{Hom}_U(M,N)$. Then, for every $G$-$O$-module $B$,
+$\operatorname{Hom}_{O,G}(M,B)=\operatorname{Hom}_U(M,\Gamma_X(B))$; that is,
+one has the functorial identity
+
+\LayerTarget{tohoku:equation:5.6.5-bis}
+\begin{equation}
+h_{O,G,M}=h_{U,M}\Gamma_X.
+\tag{5.6.5 bis}
+\end{equation}
+
+\LayerTarget{tohoku:spectral-sequence:iv}
+One easily checks further that $\Gamma_X$ takes injective objects of
+$C^{O(G)}$ to injective $U$-modules. Theorem 2.4.1 therefore gives a
+cohomological spectral functor IV on the category $C^{O(G)}$, converging to
+the graded functor $\bigl(\operatorname{Ext}_{O,G}^n(X;M,B)\bigr)$, whose
+initial term is
+
+\LayerTarget{tohoku:equation:5.6.11-bis}
+\begin{equation}
+\mathrm {IV}_2^{p,q}(B)=\operatorname{Ext}_U^p\bigl(M,H^q(X,B)\bigr).
+\tag{5.6.11 bis}
+\end{equation}
+
+\LayerTarget{tohoku:specialization:trivial-action-on-m}
+If, in addition, $G$ acts trivially on $O$ and on $M$, then one also has
+\[
+\operatorname{Hom}_{O,G}(M,B)
+=\operatorname{Hom}_U(M,\Gamma_X(B))
+=\operatorname{Hom}_O(M,\Gamma_X^G(B)),
+\]
+whence the functorial formula
+
+\LayerTarget{tohoku:equation:5.6.5-ter}
+\begin{equation}
+h_{O,G,M}=h_{O,M}\Gamma_X^G.
+\tag{5.6.5 ter}
+\end{equation}
+
+\LayerTarget{tohoku:spectral-sequence:v}
+One can further show that $\Gamma_X^G$ takes injective objects of $C^{O(G)}$
+to injective $O$-modules (by showing that if $N$ is an injective $U$-module,
+then $N^G$ is an injective $O$-module). Theorem 2.4.1 then gives a fifth
+cohomological spectral functor, with the same abutment as the preceding ones,
+whose initial term is
+
+\LayerTarget{tohoku:equation:5.6.11-ter}
+\begin{equation}
+\mathrm V_2^{p,q}(B)=\operatorname{Ext}_O^p\bigl(M,H^q(X;G,B)\bigr).
+\tag{5.6.11 ter}
+\end{equation}
+
+\LayerTarget{tohoku:comparison:spectral-sequences-iv-v}
+If $G$ reduces to the identity, spectral sequences IV and V agree with the
+spectral sequence of Theorem 4.3.1. If $X$ consists of a single point,
+spectral sequence IV is trivial, whereas spectral sequence V is not trivial
+in general and does not reduce to the preceding ones.\textsuperscript{12)}
+
+\LayerTarget{tohoku:footnote:12}
+\noindent\textsuperscript{12)} The initial term of this spectral sequence is
+(with the notation of 11)) $\operatorname{Ext}_O^p\bigl(A,H^q(G,B)\bigr)$.
+
+\TohokuContinuation{219}

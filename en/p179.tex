@@ -1,0 +1,92 @@
+% Source-aligned English for printed p.179.
+\SourcePage{179}
+
+\LayerTarget{tohoku:eq:special-cover-H1-is-Z:p2}
+
+\LayerTarget{tohoku:section:3.9}
+\noindent\textbf{3.9. Acyclicity criteria by the method of
+coverings.}\textsuperscript{8)}
+
+\LayerTarget{tohoku:setup:acyclicity-cover-families}
+Let $X$ be a topological space and let $\mathcal S$ be a nonempty collection
+of subsets of $X$. For every $A\in\mathcal S$, suppose that a nonempty set
+$\mathfrak R(A)$ of coverings $\mathbf R$ of $A$ has been given, where the
+members of each covering and their finite intersections belong to
+$\mathcal S$. Assume that if $\mathbf R,\mathbf R'\in\mathfrak R(A)$ and
+$B\in\mathbf R$, then the trace $\mathbf R'_B$ of $\mathbf R'$ on $B$
+belongs to $\mathfrak R(B)$.
+
+\LayerTarget{tohoku:conditions:acyclicity-cover-families}
+Assume in addition that one of the following three conditions holds (each of
+which allows the Leray--Cartan spectral sequence to be written for every
+covering $\mathbf R\in\mathfrak R(A)$, with $A\in\mathcal S$): (i) the
+members of $\mathcal S$ are open; (ii) the members of $\mathcal S$ are closed
+and the coverings $\mathbf R\in\mathfrak R(A)$ are finite; (iii) the members
+of $\mathcal S$ are closed, $X$ is paracompact, and the coverings
+$\mathbf R\in\mathfrak R(A)$ are locally finite.
+
+\LayerTarget{tohoku:theorem:3.9.1}
+\noindent\textsc{Theorem 3.9.1.} \textit{Under the preceding conditions, let
+an abelian sheaf $F$ on $X$ and a natural number $n\geq0$ be given. Suppose
+the following conditions hold:}
+
+\LayerTarget{tohoku:condition:3.9.1:A-n}
+\begin{quote}\itshape
+$A(n)$: $H^i(\mathbf R,F)=0$ for $1\leq i\leq n$ and every
+$\mathbf R\in\mathfrak R(A)$, $A\in\mathcal S$.
+\end{quote}
+
+\LayerTarget{tohoku:condition:3.9.1:B-n-minus-1}
+\begin{quote}\itshape
+$B(n-1)$: For every $A\in\mathcal S$ and every $c^i\in H^i(A,F)$, with
+$1\leq i\leq n-1$, there is a finite subset $L$ of $\mathfrak R(A)$ such
+that, if $\mathbf R^L$ denotes the ``intersection'' covering of the coverings
+$\mathbf R\in L$, the restriction of $c^i$ to every member
+$B\in\mathbf R^L$ is zero.
+\end{quote}
+
+\LayerTarget{tohoku:conclusion:3.9.1}
+\noindent\textit{Under these conditions, $H^i(A,F)=\{0\}$ for every
+$A\in\mathcal S$ and $1\leq i\leq n-1$. Moreover, if $c^n\in H^n(A,F)$,
+then $c^n$ is zero if and only if there is a finite subset $L$ of
+$\mathfrak R(A)$ such that the restriction of $c^n$ to every
+$B\in\mathbf R^L$ is zero.}
+
+Let us state at once the most interesting corollaries.
+
+\LayerTarget{tohoku:corollary:3.9.1:1}
+\noindent\textsc{Corollary 1.} \textit{With the notation of Theorem 3.9.1,
+one has $H^i(A,F)=\{0\}$ for every $A\in\mathcal S$ and
+$1\leq i\leq n$ if and only if conditions $A(n)$ and $B(n)$ hold.}
+
+\LayerTarget{tohoku:proof:corollary-3.9.1-1:sufficiency}
+Indeed, sufficiency follows immediately from the theorem.
+
+\LayerTarget{tohoku:proof:corollary-3.9.1-1:necessity}
+Conversely, suppose that $H^i(A,F)=\{0\}$ for $A\in\mathcal S$ and
+$1\leq i\leq n$. Then $B(n)$ holds trivially; let us verify $A(n)$. The
+Leray spectral sequence for the covering $\mathbf R$ of $A$ (Theorem 3.8.1
+and the remark in 3.8) abuts to $H^*(A,F)$ and has initial term
+\[
+E_2^{p,q}=H^p(\mathbf R,H^q(F)).
+\]
+This is zero for $1\leq q\leq n$, since
+$C(\mathbf R,H^q(F))=0$ for those values of $q$: the finite intersections of
+members of $\mathbf R$ belong to $\mathcal S$. It follows in the usual way
+that $H^i(A,F)=H^i(\mathbf R,F)$ for $0\leq i\leq n$, and hence
+$H^i(\mathbf R,F)=0$ for these $i$.
+
+\LayerTarget{tohoku:corollary:3.9.1:2}
+\noindent\textsc{Corollary 2.} \textit{Suppose, with the notation of Theorem
+3.9.1, that for every $A\in\mathcal S$ and every open covering of $A$ there
+is a finer covering of the form $\mathbf R^L$, where $L$ is a finite subset
+of $\mathfrak R(A)$. Then $H^i(A,F)=\{0\}$ for every $A\in\mathcal S$ and
+$1\leq i\leq n$ if and only if $H^i(\mathbf R,F)=\{0\}$ for every
+$\mathbf R\in\mathfrak R(A)$, with $A\in\mathcal S$, and
+$1\leq i\leq n$.}
+
+\LayerTarget{tohoku:proof:corollary-3.9.1-2}
+Indeed, condition $B(n)$ holds for every $n>0$ by Lemma 3.8.2; it therefore
+suffices to apply Corollary 1.
+
+\TohokuContinuation{180}

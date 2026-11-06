@@ -1,0 +1,119 @@
+% Corrected French for printed p.178; departures are append-only below.
+\SourcePage{178}
+
+\LayerTarget{tohoku:criterion:cech-H2-example-reduction:p2}
+
+\LayerTarget{tohoku:example:cech-H2-counterexample-construction}
+Soit $X$ un espace irréductible (cf. fin de 3.3), $Y_1$ et $Y_2$ deux parties
+fermées irréductibles de $X$ se rencontrant en exactement deux points $x_1$ et
+$x_2$ (par exemple deux cercles sécants dans le plan muni de la topologie de
+Zariski), $Y$ leur réunion. Par abus de notation, on désigne par $\mathbf Z$ le
+faisceau constant des entiers sur $X$, et on considère, avec les notations de
+3.5, la suite exacte de faisceaux
+
+\LayerTarget{tohoku:eq:closed-complement-constant-sheaf}
+\[
+0\longrightarrow\mathbf Z_{C_Y}\longrightarrow\mathbf Z
+\longrightarrow\mathbf Z_Y\longrightarrow 0.
+\]
+
+\LayerTarget{tohoku:claim:cech-H2-counterexample-sheaf}
+Je dis que le faisceau $F=\mathbf Z_{C_Y}$ satisfait aux conditions voulues.
+Tout d'abord, comme $H^p(X,\mathbf Z)=0$ pour $p>0$ d'après la fin de 3.3, on a
+$H^2(X,\mathbf Z_{C_Y})=H^1(X,\mathbf Z_Y)=H^1(Y,\mathbf Z)$, montrons que ce
+groupe n'est pas nul, et de façon précise est isomorphe à $\mathbf Z$. En
+effet, on a un monomorphisme naturel du faisceau constant $\mathbf Z$ sur $Y$
+dans la somme directe des faisceaux $\mathbf Z_{Y_1}$ et $\mathbf Z_{Y_2}$,
+d'où une suite exacte de faisceaux sur $Y$ :
+
+\LayerTarget{tohoku:eq:union-components-constant-sheaves}
+\[
+0\longrightarrow\mathbf Z_Y
+\longrightarrow(\mathbf Z_{Y_1}+\mathbf Z_{Y_2})
+\longrightarrow\mathbf Z_{Y_1\cap Y_2}\longrightarrow 0.
+\]
+
+\LayerTarget{tohoku:calculation:H1-union-cokernel}
+Or $Y_i$ étant irréductible, on a encore
+$H^p(Y,\mathbf Z_{Y_i})=H^p(Y_i,\mathbf Z)=0$ pour $p>0$, d'où
+\[
+H^1(Y,\mathbf Z)
+=\Gamma(\mathbf Z_{Y_1\cap Y_2})/
+\operatorname{Im}\bigl(\Gamma(\mathbf Z_{Y_1}+\mathbf Z_{Y_2})\bigr),
+\]
+c'est le conoyau du homomorphisme de groupes
+$\mathbf Z^2\longrightarrow\mathbf Z^2$ donné par
+$(n_1,n_2)\longmapsto(n_1-n_2,n_1-n_2)$, c'est-à-dire un groupe isomorphe à
+$\mathbf Z$, d'où
+
+\LayerTarget{tohoku:eq:counterexample-H2-is-Z}
+\[
+H^2(X,\mathbf Z_{C_Y})=H^1(X,\mathbf Z_Y)=\mathbf Z.
+\]
+
+\LayerTarget{tohoku:goal:counterexample-cech-H1-is-Z}
+Il reste à prouver que $\check H^1(X,H^1(\mathbf Z_{C_Y}))$ est isomorphe à
+$\mathbf Z$ (car compte tenu de la relation précédente, l'épimorphisme
+$H^2(X,F)\longrightarrow\check H^1(X,H^1(F))$ sera nécessairement un
+isomorphisme). Calculons $H^1(\mathbf Z_{C_Y})$ ; pour tout ouvert $V$,
+$H^1(V,\mathbf Z_{C_Y})$ peut se calculer grâce à la suite exacte suivante de
+faisceaux sur $V$ :
+
+\LayerTarget{tohoku:eq:restricted-complement-constant-sheaf}
+\[
+0\longrightarrow\mathbf Z_{C_Y}\longrightarrow\mathbf Z
+\longrightarrow\mathbf Z_{Y'}\longrightarrow 0,
+\]
+où on a posé $Y'=Y\cap V$. Comme $V$ est aussi irréductible, on en conclut
+
+\LayerTarget{tohoku:eq:local-H1-reduced-H0}
+\[
+H^1(V,\mathbf Z_{C_Y})
+=H^0(Y',\mathbf Z)/\operatorname{Im}H^0(V,\mathbf Z)
+=\widetilde H^0(Y',\mathbf Z),
+\]
+où le dernier groupe désigne le groupe de cohomologie entière réduite de
+dimension 0, i.e. ici le groupe abélien libre engendré par les composantes
+connexes de $Y'$, modulo le sous-groupe diagonal.
+
+\LayerTarget{tohoku:criterion:local-H1-two-components}
+Ici $Y'=Y\cap V$ est un sous-espace ouvert de $Y=Y_1\cup Y_2$, et a donc 0, 1
+ou 2 composantes connexes, le dernier cas se présentant exactement si $V$
+rencontre à la fois $Y_1$ et $Y_2$ sans rencontrer leur intersection ; donc on
+a $H^1(V,\mathbf Z_{C_Y})=0$, sauf dans ce dernier cas.
+
+\LayerTarget{tohoku:construction:special-point-indexed-coverings}
+Pour calculer
+\[
+\check H^1(X,H^1(F))=\varinjlim H^1(\mathcal U,H^1(F)),
+\]
+on peut se limiter aux recouvrements $\mathcal U=(U_x)_{x\in X}$ tels que
+chaque $U_x$ rencontre au plus un seul des deux fermés $Y_1$ et $Y_2$, sauf si
+$x$ est l'un des deux points $x_1,x_2$ de $Y_1\cap Y_2$ auquel cas on suppose
+qu'il ne contient pas l'autre.
+
+\LayerTarget{tohoku:eq:special-cover-C0-vanishing}
+Pour un tel $\mathcal U$, on voit aussitôt
+$C^0(\mathcal U,H^1(F))=0$, donc $H^1(\mathcal U,H^1(F))$ s'identifie au groupe
+$Z^1(\mathcal U,H^1(F))$ des 1-cocycles de $\mathcal U$ à coefficients dans
+$H^1(F)$, soient $(f_{x,y})_{x,y\in X}$.
+
+\LayerTarget{tohoku:eq:special-cover-intersection-sections}
+Mais on a
+\[
+\Gamma(U_x\cap U_y,H^1(F))=0
+\]
+sauf si $x=x_1$, $y=x_2$ ou $x=x_2$, $y=x_1$. D'où
+
+\LayerTarget{tohoku:eq:special-cover-C1-is-Z2}
+\[
+C^1(\mathcal U,H^1(F))\simeq\mathbf Z^2,
+\]
+et on voit aussitôt que les cocycles s'identifient aux couples $(n,-n)$
+d'entiers opposés ($n=f_{x_1,x_2}$).
+
+\LayerTarget{tohoku:eq:special-cover-H1-is-Z}
+On a donc $H^1(\mathcal U,H^1(F))=\mathbf Z$, d'où aussitôt à la limite
+$\check H^1(X,H^1(F))=\mathbf Z$, ce qui achève la démonstration.
+
+\TohokuContinuation{179}

@@ -1,0 +1,88 @@
+% Source-aligned English for printed p.199.
+\clearpage
+\SourcePage{199}
+
+\LayerTarget{tohoku:construction:canonical-map-inverse-direct:p1}
+$g(x)$ on $V$, whose value at each $x\in V$ is an element of
+\[
+f_*^G(A)(f(x))=
+\varinjlim_{U\ni f(x)}\Gamma(f^{-1}(U),A)^G,
+\]
+and such that for every $x\in V$ there exist an open neighborhood
+$V'\subset V$ of $x$ and a section $h$ of $f_*^G(A)$ over a neighborhood
+$U'$ of $f(x)$ (i.e. an invariant section $h$ of $A$ over $f^{-1}(U')$) such
+that $g(x)=h(x)$ for $x\in V'\cap f^{-1}(U')$. We obtain a canonical
+monomorphism\textsuperscript{10)}:
+
+\LayerTarget{tohoku:equation:5.1.2}
+\[
+f^{-1}(f_*^G(A))\longrightarrow A.
+\tag{5.1.2}
+\]
+
+\LayerTarget{tohoku:criterion:inverse-direct-essential-image}
+This identifies $f^{-1}(f_*^G(A))$ with a subsheaf $A'$ of $A$. Formula
+(5.1.1) above implies that $A'\simeq A$ if and only if $A$ is isomorphic to a
+$G$-sheaf of the form $f^{-1}(B)$. If this is so, then for every $x\in X$ the
+operations of $G_x$ on $A(x)$ are trivial. The converse is also true if $G$
+satisfies condition (D) below (cf. 5.3), as is readily checked;
+
+\LayerTarget{tohoku:result:fixed-point-free-equivalence}
+\textit{thus, if in addition every $G_x$ is reduced to the identity} (i.e. if
+no $g\ne e$ in $G$ has a fixed point), \textit{the functors $f_*^G$ and
+$f^{-1}$ establish mutually inverse isomorphisms between the category of
+$G$-sheaves on $X$ and the category of sheaves on $Y$.}
+
+\LayerTarget{tohoku:example:constant-direct-image}
+\noindent\textsc{Examples of direct images of $G$-sheaves.} If $A$ is the
+constant sheaf on $X$ defined by a set $M$ on which $G$ acts trivially, then
+$A^G$ is the constant sheaf on $Y$ defined by the same set $M$. But if $G$
+does not act trivially on $M$, and if the action on $X$ is not fixed-point
+free, then $f_*^G(M)$ is in general no longer locally constant.
+
+\LayerTarget{tohoku:example:germ-function-direct-images}
+Suppose condition (D) of 5.3 holds, and let $A$ be the sheaf of germs of maps
+from $X$ to a set $M$; then $A^G$ is the sheaf of germs of maps from $Y$ to
+$M$. Under this correspondence, if $X$ is a differentiable manifold (resp. a
+real analytic space, resp. a complex analytic space), and if $A$ is the sheaf
+of germs of differentiable functions (resp. real analytic functions, resp.
+complex analytic functions) with values in a space of the same kind, then
+$A^G$ is the corresponding sheaf on $Y$. This last example is particularly
+important, and the analogous statement is true (by definition, as for the
+preceding examples) in abstract Algebraic Geometry, and even for arithmetic
+varieties.
+
+\LayerTarget{tohoku:section:5.2}
+\bigskip
+\noindent\textbf{5.2. The functors $H^n(X;G,A)$ and $H^n(G,A)$ and the
+fundamental spectral sequences.}
+
+\LayerTarget{tohoku:definition:section-invariant-functors}
+To avoid confusion, we write $\Gamma_X$ and $\Gamma_Y$ for the ``section''
+functors defined for sheaves on $X$ and on $Y$, respectively, and $\Gamma^G$
+for the functor $M\longmapsto M^G$ that associates to a set $M$ on which $G$
+acts its subset of invariants. Finally, if $A$ is a $G$-sheaf on $X$, set
+
+\LayerTarget{tohoku:equation:5.2.1}
+\[
+\Gamma_X^G(A)=\Gamma_X(A)^G,
+\tag{5.2.1}
+\]
+so that, by definition, we have the formulas
+
+\LayerTarget{tohoku:equation:5.2.2}
+\[
+\Gamma_X^G=\Gamma^G\Gamma_X=\Gamma_Yf_*^G.
+\tag{5.2.2}
+\]
+
+\LayerTarget{tohoku:footnote:10}
+\begin{quote}
+\footnotesize
+10) More generally, if $f$ is a continuous map from a space $X$ to a space
+$Y$, then for sheaves $A$ on $X$ there are functorial monomorphisms
+$f^{-1}(f_*(A))\longrightarrow A$, from which the monomorphism (5.1.2) follows
+immediately by virtue of the injection $A^G\longrightarrow f_*(A)$.
+\end{quote}
+
+\TohokuContinuation{200}

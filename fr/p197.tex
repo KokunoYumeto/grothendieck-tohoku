@@ -1,0 +1,103 @@
+% Corrected French for printed p.197.
+\clearpage
+\SourcePage{197}
+
+\LayerTarget{tohoku:conclusion:injective-g-o-embedding:p1}
+suite d'obtenir une forme explicite commode pour ``suffisamment'' d'objets
+injectifs, en généralisant la construction faite dans 3.1.
+
+\LayerTarget{tohoku:construction:pointwise-g-o-action}
+Soit $(A_x)_{x\in X}$ une famille de $O(x)$-modules $A_x$, considérons le
+$O$-Module produit qu'elle définit (cf. 3.1). Pour y faire opérer $G$ de façon
+à obtenir un $G$-$O$-faisceau, il suffit pour tout $x\in X$ et $g\in G$ de se
+donner un homomorphisme $a\longmapsto g\mathbin{\cdot}a$ du groupe abélien
+$A_x$ dans le groupe abélien $A_{g\cdot x}$, de façon qu'on ait
+
+\[
+g\mathbin{\cdot}(ua)=(g\mathbin{\cdot}u)(g\mathbin{\cdot}a)
+\quad(u\in O(x),\ a\in A_x),
+\qquad
+e\mathbin{\cdot}a=a,
+\qquad
+g\mathbin{\cdot}(g'\mathbin{\cdot}a)=(gg')\mathbin{\cdot}a.
+\]
+
+\LayerTarget{tohoku:construction:auxiliary-ring-u-x}
+Introduisant alors l'anneau auxiliaire $U_x$ engendré par l'algèbre
+$\mathbf Z(G_x)$ de $G_x$ et l'anneau $O(x)$, soumis aux relations de
+commutation
+\[
+gug^{-1}=u^g\qquad(u\in O(x),\ g\in G_x)
+\]
+(où on note $u^g$, pour éviter des confusions, le transformé de $u$ par
+$g\in G_x$), on voit que les $A_x$ sont en fait des $U_x$-modules, et un
+$g\in G$ quelconque définit un isomorphisme
+$a\longmapsto g\mathbin{\cdot}a$ du groupe $A_x$ sur $A_{g\cdot x}$
+satisfaisant à
+\[
+g\mathbin{\cdot}(ua)=(g\mathbin{\cdot}u)(g\mathbin{\cdot}a)
+\qquad(u\in U_x,\ a\in A_x).
+\]
+
+\LayerTarget{tohoku:construction:orbit-representative-u-y}
+Il en résulte facilement que, si on choisit un élément $\xi(y)$ dans toute
+trajectoire $y\in Y$, et si on pose $U_y=U_{\xi(y)}$, alors les données
+précédentes sont équivalentes à la donnée d'une famille $(A_y)_{y\in Y}$ de
+$U_y$-modules $A_y$ $(=A_{\xi(y)})$.
+
+\LayerTarget{tohoku:construction:induced-a-bar-y}
+Les $A_x$ ($x\in y$) peuvent se déduire de $A_y$ de la façon suivante. Soit
+$\overline A_y$ le $G$-module \textit{induit} par le $G_y$-module $A_y$, i.e.
+le $G$-module $\mathrm{Hom}_{G_y}(\mathbf Z(G),A_y)$ obtenu à partir du
+$G_y$-module $A_y$ par ``extension contravariante des scalaires'' : $A_y$
+s'identifie alors à un groupe quotient de $\overline A_y$ par un sous-groupe
+abélien stable par $G_y$, et $\overline A_y$ s'identifie au produit de tous
+les quotients transformés $g\mathbin{\cdot}A_y$ pour $g\in G/G_y$.
+
+\LayerTarget{tohoku:construction:induced-o-bar-y}
+Introduisant de même le $G$-module $\overline O_y$ induit par
+$O_y=O(\xi(y))$, on constate aussitôt que $\overline A_y$ est un
+$\overline O_y$-module s'identifiant au produit des
+$g\mathbin{\cdot}O_y$-modules $g\mathbin{\cdot}A_y$ pour $g\in G/G_y$. On a
+alors des isomorphismes canoniques
+\[
+g\mathbin{\cdot}O_y=O(g\mathbin{\cdot}\xi(y)),
+\qquad
+g\mathbin{\cdot}A_y=A_{g\cdot\xi(y)}.
+\]
+
+\LayerTarget{tohoku:construction:p-a-g-o-sheaf}
+Désignons par $P(A)$ le $G$-$O$-faisceau sur $X$ défini par la famille
+$A=(A_y)$ de $U_y$-modules $A_y$.
+
+\LayerTarget{tohoku:comparison:hom-to-p-a}
+Soit $B$ un $G$-$O$-faisceau quelconque. Un $O$-homomorphisme d'un
+$G$-$O$-Module $B$ dans $P(A)$ s'identifie à une famille $(v_x)_{x\in X}$ de
+$O(x)$-homomorphismes $B(x)\longrightarrow A_x$ (comme nous l'avions signalé
+dans 3.1), et ce $O$-homomorphisme est compatible avec $G$ si et seulement si
+les $v_x$ ``permutent'' à $G$ ; on voit alors tout de suite qu'il revient au
+même de se donner un $G$-$O$-homomorphisme de $B$ dans $P(A)$, ou une famille
+$(v_y)_{y\in Y}$ de $U_y$-homomorphismes
+$B(\xi(y))\longrightarrow A_y$. On en conclut aussitôt :
+
+\LayerTarget{tohoku:proposition:5.1.2}
+\noindent\textsc{Proposition 5.1.2.} \textit{Soit $(A_y)_{y\in Y}$ une
+famille de $U_y$-modules injectifs, alors le $G$-$O$-Module $P((A_y))$
+qu'elle définit est injectif. De plus, tout $G$-$O$-Module est isomorphe à un
+sous-faisceau d'un faisceau du type précédent.}
+
+\LayerTarget{tohoku:proof:5.1.2}
+Ce dernier fait (le plus important pour nous) est immédiat, en plongeant pour
+tout $y$, le module ponctuel $B(\xi(y))$ du faisceau donné $B$ dans un
+$U_y$-module injectif.
+
+\LayerTarget{tohoku:construction:direct-image-g-sheaf:p1}
+\noindent\textit{Images directes de $G$-faisceaux.} Soit $A$ un faisceau
+d'ensembles sur $X$, rappelons qu'on a défini son image directe $f_*(A)$ comme
+le faisceau sur $Y$ dont les sections sur l'ouvert $U\subset Y$ sont les
+sections de $A$ sur $f^{-1}(U)$. Si $A$ est un $G$-faisceau, alors
+$\Gamma(f^{-1}(U),A)$ admet $G$ comme groupe d'opérateurs, d'où on conclut
+facilement que \textit{l'image directe $f_*(A)$ d'un $G$-faisceau sur $X$ est
+un $G$-faisceau sur $Y$} (rappelons que $G$ opère trivialement sur $Y$) ; bien
+
+\TohokuContinuation{198}

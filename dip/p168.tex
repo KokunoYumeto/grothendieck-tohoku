@@ -1,0 +1,98 @@
+% Direct-authority diplomatic French for printed p.168.
+\SourcePage{168}
+
+\LayerTarget{tohoku:proof:3.6.1:p2}
+\noindent de sous-faisceaux $F_j$ dont chacun admet une famille \textit{finie}
+de générateurs.
+
+\LayerTarget{tohoku:construction:finite-generator-reduction}
+Comme $C''$ est épaisse et stable par sommes directes infinies, elle est aussi
+stable par limites inductives (car une limite inductive d'objets dans $C'$ est
+isomorphe à un quotient de leur somme directe) ; comme
+\[
+T^p(F)=\varinjlim_j T^p(F_j),
+\]
+il suffit, pour prouver $T^p(F)\in C''$, de prouver que
+$T^p(F_j)\in C''$ pour tout $j$, ce qui nous ramène au cas où $F$ admet une
+famille \textit{finie} de générateurs $(f_i)_{1\leq i\leq k}$.
+
+\LayerTarget{tohoku:construction:finite-generator-filtration}
+Désignons alors par $F_n$ ($0\leq n\leq k$) le sous-faisceau de $F$ engendré
+par les $f_i$ avec $1\leq i\leq n$. Les $F_n$ forment une suite croissante
+finie de sous-faisceaux de $F$ dont les quotients successifs
+$F_n/F_{n-1}$ ($1\leq n\leq k$) admettent chacun \textit{un} générateur.
+
+\LayerTarget{tohoku:eq:finite-generator-quotient-reduction}
+Raisonnant par récurrence sur la longueur $k$ de cette suite, et utilisant le
+fait que $T^p$ est semi-exact, on est ramené à prouver que
+$T^p(F_n/F_{n-1})\in C''$ pour tout $n$.
+
+\LayerTarget{tohoku:eq:single-generator-presentation}
+Cela nous ramène au cas où $F$ est engendré par \textit{un} générateur,
+c'est-à-dire où il existe une suite exacte de faisceaux
+\[
+0\longrightarrow R\longrightarrow Z_U\longrightarrow F\longrightarrow0.
+\]
+
+\LayerTarget{tohoku:eq:single-generator-cohomology}
+où $R$ est un sous-faisceau de $Z_U$ donc aussi de $Z$. On en conclut la suite
+exacte
+\[
+T^p(Z_U)\longrightarrow T^p(F)\longrightarrow T^{p+1}(R),
+\]
+et comme on a $T^p(Z_U)\in C''$ par hypothèse, on est ramené à prouver que
+$T^{p+1}(R)\in C''$.
+
+\LayerTarget{tohoku:construction:constant-section-generators}
+Or le sous-faisceau $R$ du faisceau constant $Z$ est engendré par une famille
+$(f_i)_{i\in I}$ de sections \textit{constantes} $n_i$ de $Z$ sur des ouverts
+$U_i$. Procédant comme plus haut, on est ramené au cas où cette famille est
+finie. On peut bien entendu supposer les $n_i>0$.
+
+\LayerTarget{tohoku:construction:gcd-refinement}
+Nous pouvons supposer de plus les $f_i$ choisis de telle façon que pour tout
+$x\in X$, il existe parmi les $n_i$ pour lesquels $U_i$ contient $x$, un
+générateur du sous-groupe $R(x)$ du groupe $Z(x)={}$ groupe $Z$ des entiers.
+Il suffit pour ceci, pour toute partie $(i_1,\ldots,i_p)$ de l'ensemble $[1,k]$
+des $k$ premiers entiers $>0$, de considérer la section
+$f_{i_1\cdots i_p}$ de $F$ sur $U_{i_1}\cap\cdots\cap U_{i_p}$ dont la valeur
+est le $\operatorname{pgcd}$ de $n_{i_1},\ldots,n_{i_p}$ et d'adjoindre ces
+sections au système de générateurs.
+
+\LayerTarget{tohoku:construction:R-filtration}
+Supposons donc notre hypothèse sur les $f_i$ satisfaite, et supposons
+$n_1\leq n_2\leq\cdots\leq n_k$. Si on désigne par $R_m$ ($0\leq m\leq k$)
+le sous-faisceau de $R$ engendré par les sections $f_i$ avec
+$1\leq i\leq m$, les $R_m$ forment une suite croissante finie de
+sous-faisceaux de $R$.
+
+\LayerTarget{tohoku:eq:R-filtration-reduction}
+Et on montre encore comme plus haut, par récurrence sur $k$, et utilisant le
+fait que $T^{p+1}$ est semi-exact, que pour prouver $T^{p-1}(R)\in C''$, il
+suffit de prouver $T^{p+1}(F_m/F_{m-1})\in C''$ pour $1\leq m\leq k$.
+
+\LayerTarget{tohoku:construction:Vm-Ym}
+Or soit pour tout $m$, $V_m$ la réunion des $U_i$ pour $1\leq i\leq m$, et
+soit
+\[
+Y_m=U_m\cap \mathrm C V_{m-1}.
+\]
+
+\LayerTarget{tohoku:eq:R-quotient-ZYm}
+Je dis que $F_m/F_{m-1}$ est \textit{isomorphe à} $Z_{Y_m}$.
+
+\LayerTarget{tohoku:proof:R-quotient-ZYm:p1}
+En effet sa restriction au complémentaire de $V_m$ est évidemment nulle
+(puisque celle de $F_m$ l'est déjà), il en est de même de sa restriction à
+$V_{m-1}$. Il suffit de le vérifier en tout $x\in V_{m-1}\cap U_m$, or par
+hypothèse, parmi les $n_i$ relatifs aux $U_i$ contenant $x$ figure leur
+$\operatorname{pgcd}$ $n_{i_0}$, qui doit donc diviser à la fois $n_m$ et un
+$n_i$ avec $i<m$ (prendre un indice $i<m$ avec $x\in U_i$, qui existe puisque
+$x\in V_{m-1}$). Alors ou bien $i_0<m$, ce qui prouve que
+$f_{n_m}(x)\in F_{m-1}(x)$, ou $i_0\geq m$, d'où $n_{i_0}\geq n_m$ et par
+suite $n_{i_0}=n_m$, donc $n_m$ (divisant $n_i$ et $\geq n_i$) est égal à
+$n_i$, d'où encore $f_{n_m}(x)\in F_{m-1}(x)$, donc dans les deux cas
+$F_{m-1}(x)=F_m(x)$. Ainsi la restriction de $F_m/F_{m-1}$ à la réunion de
+$\mathrm C V_m$ et de $V_{m-1}$, i.\,e. à $\mathrm C Y_m$, est
+
+\TohokuContinuation{169}

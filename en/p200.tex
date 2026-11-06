@@ -1,0 +1,91 @@
+% Source-aligned English for printed p.200.
+\clearpage
+\SourcePage{200}
+
+\LayerTarget{tohoku:setup:equivariant-derived-functors}
+We now restrict $A$ to the category $C^{X(G)}$ of abelian $G$-sheaves on
+$X$. Then $\Gamma_X^G$ is a left-exact additive functor from $C^{X(G)}$ to
+$C$, the category of abelian groups, and $f_*^G$ is a left-exact functor from
+$C^{X(G)}$ to $C^Y$, the category of abelian sheaves (without operators) on
+$Y$. We set
+
+\LayerTarget{tohoku:equation:5.2.3}
+\[
+H^n(X;G,A)=R^n\Gamma_X^G(A)
+\tag{5.2.3}
+\]
+
+\LayerTarget{tohoku:equation:5.2.4}
+\[
+\mathbf H^n(G,A)=R^nf_*^G(A).
+\tag{5.2.4}
+\]
+
+\LayerTarget{tohoku:result:equivariant-cohomology-universality}
+Thus, for an abelian $G$-sheaf, the $H^n(X;G,A)$ are abelian groups and the
+$\mathbf H^n(G,A)$ are sheaves on $Y$. Both form universal cohomological
+functors in $A$, reducing for $n=0$ to $\Gamma_X^G(A)$ and $A^G$,
+respectively. If $G$ acts trivially on $X$, we recover the notions introduced
+in 4.4. --- As in Proposition 3.1.3, one also sees readily that if $U$ is an
+open subset of $Y$ and $A$ is an injective abelian $G$-sheaf on $X$, then its
+restriction to $f^{-1}(U)$ is an injective abelian $G$-sheaf on that space.
+Hence, as in 4.2:
+
+\LayerTarget{tohoku:proposition:5.2.1}
+\noindent\textsc{Proposition 5.2.1.} \textit{Let $A$ be an abelian
+$G$-sheaf on $X$. Then, for every open subset $U\subset Y$,
+\[
+\mathbf H^p(G,A)\vert U=\mathbf H^p(G,A\vert f^{-1}(U)).
+\]}
+
+\LayerTarget{tohoku:remark:sheaf-group-cohomology-notation}
+This is why $X$ is omitted from the notation $\mathbf H^p(G,A)$. A more
+substantial reduction in the calculation of the $\mathbf H^p(G,A)$ is given
+by the following result.
+
+\LayerTarget{tohoku:corollary:5.2.1}
+\noindent\textsc{Corollary.} \textit{Suppose that $f^{-1}(U)$ is the union
+of pairwise disjoint open subsets $g\mathbin{\cdot}V$ ($g\in G/G_0$), where
+$V$ is open in $X$ and $G_0$ is a subgroup of $G$ such that
+$g_0\mathbin{\cdot}V=V$ for $g_0\in G_0$. Then
+\[
+\mathbf H^p(G,A)\vert U=\mathbf H^p(G_0,A\vert V),
+\]
+under the natural identification $U=V/G_0$.}
+
+\LayerTarget{tohoku:proof:corollary-5.2.1}
+By Proposition 2.5.1, we may assume $U=Y$, whence $f^{-1}(U)=X$. The category
+of $G$-sheaves on $X$ is then isomorphic to the category of $G_0$-sheaves on
+$V$, and this isomorphism is compatible with the functors $f_*^G$ and
+$f_*^{G_0}$. The stated formula follows at once. --- A more explicit
+calculation will be given below (cf. formula (5.2.11) and Theorem 5.3.1).
+
+\LayerTarget{tohoku:construction:two-compositions-of-gamma-x-g}
+The formulas (5.2.2) express $\Gamma_X^G$ as a composite functor in two
+different ways. In both cases Theorem 2.4.1 applies, by virtue of the
+corollary to Proposition 5.1.3. We therefore obtain:
+
+\LayerTarget{tohoku:theorem:5.2.1}
+\noindent\textsc{Theorem 5.2.1.} \textit{On the category $C^{X(G)}$ of
+abelian $G$-sheaves on $X$, there are two cohomological spectral functors
+converging to the graded functor $(H^n(X;G,A))$, whose initial terms are,
+respectively,}
+
+\LayerTarget{tohoku:equation:5.2.5}
+\[
+\tag{5.2.5}
+\left\{
+\begin{aligned}
+\mathrm I_2^{p,q}(A)&=H^p(Y,\mathbf H^q(G,A)),\\
+\mathrm {II}_2^{p,q}(A)&=H^p(G,H^q(X,A)).
+\end{aligned}
+\right.
+\]
+
+\LayerTarget{tohoku:proof:theorem-5.2.1:p1}
+To establish the explicit form of $\mathrm {II}_2^{p,q}(A)$, it remains only
+to show that the derived functors of $\Gamma_X$, viewed as a functor from
+$C^{X(G)}$ to $C^G$, the category of $G$-modules, are indeed the
+$H^q(X,A)$. This follows immediately
+
+\TohokuContinuation{201}

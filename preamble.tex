@@ -1,0 +1,51 @@
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[leqno]{amsmath}
+\usepackage{amssymb}
+\usepackage[english,french]{babel}
+\usepackage[a4paper,margin=30mm,marginparwidth=18mm]{geometry}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{paracol}
+\usepackage{fancyhdr}
+\usepackage[hypertexnames=false]{hyperref}
+\usepackage{bookmark}
+
+\definecolor{TohokuBlue}{HTML}{17365D}
+\definecolor{TohokuGray}{HTML}{667085}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=TohokuBlue,
+  urlcolor=TohokuBlue,
+  citecolor=TohokuBlue,
+  pdfauthor={Alexandre Grothendieck},
+  unicode=true
+}
+
+\setlength{\parindent}{1.35em}
+\setlength{\parskip}{0.35em}
+\setlength{\emergencystretch}{2em}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\small\textsc{Sur quelques points d'algebre homologique}}
+\fancyhead[RE,LO]{\small\nouppercase{\leftmark}}
+\fancyfoot[C]{\thepage}
+
+\newcommand{\TohokuTarget}[1]{\hypertarget{#1}{}}
+\providecommand{\LayerTarget}[1]{\TohokuTarget{#1}}
+\providecommand{\LayerContents}[1]{\addcontentsline{toc}{chapter}{#1}}
+\providecommand{\SectionHeading}[1]{\noindent\textbf{#1}}
+\providecommand{\SourcePage}[1]{%
+  \TohokuTarget{tohoku:source-page:#1}%
+  \marginpar{\raggedleft\scriptsize\color{TohokuGray}source p.~#1}%
+}
+\newcommand{\TohokuContinuation}[1]{%
+  \par\smallskip\noindent\hfill
+  {\scriptsize\itshape\color{TohokuGray}Continued on source p.~#1.}%
+}
+\newcommand{\TohokuPartBoundary}[1]{}
+\newcommand{\TohokuTerminal}[1]{}
+\newcommand{\TohokuAuthorityLine}{%
+  Tohoku Mathematical Journal (Second Series), vol.~9 (1957), pp.~119--221%
+}

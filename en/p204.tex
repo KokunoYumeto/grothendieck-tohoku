@@ -1,0 +1,72 @@
+% Source-aligned English for printed p.204.
+\clearpage
+\SourcePage{204}
+
+\LayerTarget{tohoku:remark:condition-D-basic-properties:p1}
+\noindent Zariski topology and $G$ is a finite group of automorphisms of $X$,
+condition (D) does not hold (unless $G$ acts trivially).
+
+\LayerTarget{tohoku:theorem:5.3.1}
+\noindent\textsc{Theorem 5.3.1.} \textit{Suppose that condition (D) holds.
+Let $A$ be an abelian $G$-sheaf on $X$, let $y\in Y$, and let $x$ be an
+element of $f^{-1}(y)$. There are then canonical isomorphisms}
+
+\LayerTarget{tohoku:equation:5.3.1}
+\[
+\mathbf H^n(G,A)(y)=H^n(G_x,A(x)).
+\tag{5.3.1}
+\]
+
+\LayerTarget{tohoku:proof:theorem-5.3.1}
+Taking $V_x$ as in the statement of condition (D), and moreover taking $V_x$
+open and stable under $G_x$, we may apply the corollary to Theorem 5.2.1. This
+reduces us to the case $G=G_x$, $X=V_x$, and hence to $G$ \textit{finite}.
+Let us show that $R^qf_*(A)=0$ for $q>0$. For every $y\in Y$ we have
+
+\LayerTarget{tohoku:equation:5.3.1-stalk-limit}
+\[
+R^qf_*(A)(y)=\varinjlim H^q(f^{-1}(U),A),
+\]
+where the limit is taken over the open neighborhoods $U$ of $y$. With $x$ and
+$V_x$ chosen as above, and restricting to $U\subset f(V_x)$, we see that
+$f^{-1}(U)$ is a finite union of pairwise disjoint open sets $g\cdot U_x$
+($g\in G/G_x$), where $U_x=V_x\cap f^{-1}(U)$. Thus
+$H^q(f^{-1}(U),A)$ is a direct sum of finitely many groups isomorphic to
+$H^q(U_x,A)$. As $U$ ranges over a fundamental system of neighborhoods of
+$y$, $U_x$ ranges over a fundamental system of neighborhoods of $x$; hence
+for $R^qf_*(A)$ we obtain a direct sum of finitely many groups isomorphic to
+$\varinjlim H^q(U_x,A)$. The latter is zero for $q>0$ by Lemma 3.8.2.
+
+Thus indeed $R^qf_*(A)=0$ for $q>0$. By Proposition 5.2.2, the left-hand side
+of (5.3.1) is therefore identified with $\mathbf H^n(G,f_*(A))(y)$, which,
+since $G$ is finite, is equal to $H^n(G,f_*(A)(y))$ (as noted in 4.4).
+Recalling that we could suppose $X=V_x$, so that $f^{-1}(y)$ is reduced to
+$x$, we have $f_*(A)(y)=A(x)$, which completes the proof.
+
+\LayerTarget{tohoku:corollary:5.3.1:1}
+\noindent\textsc{Corollary.} \textit{Suppose that for every $x\in X$ the
+order $n_x$ of the stabilizer $G_x$ is such that multiplication by $n_x$ is
+an automorphism of the group $A(x)$. Then $H^*(X;G,A)=H^*(Y,A^G)$;
+consequently $H^*(Y,A^G)$ is the abutment of a spectral sequence whose
+initial term is $\mathrm{II}_2^{p,q}=H^p(G,H^q(X,A))$.}
+
+\LayerTarget{tohoku:proof:corollary-5.3.1:1}
+Indeed, Theorem 5.3.1 gives $\mathbf H^q(G,A)=0$ for $q>0$, so the hypotheses
+of Proposition 5.2.3 apply. The preceding corollary is especially useful when
+$A$ is a sheaf of vector spaces over a field of characteristic $p$ that
+divides none of the $n_x$ (as is always the case in characteristic $0$). When
+there is no ground field, one may use the following variant.
+
+\LayerTarget{tohoku:corollary:5.3.1:2}
+\noindent\textsc{Corollary 2.} \textit{Suppose that the orders $n_x$ of the
+$G_x$ admit a least common multiple $n$; let $P$ be the set of prime divisors
+of $n$, and let $C(P)$ be the category of abelian groups each of whose elements
+has finite order with no prime divisors other than members $p\in P$. Then, in
+the terminology introduced in 1.11, $H^*(X;G,A)$ is isomorphic modulo $C(P)$
+to $H^*(Y,A^G)$; consequently the latter is, modulo $C(P)$, the abutment of a
+cohomological spectral sequence whose initial term is $H^p(G,H^q(X,A))$.}
+
+\LayerTarget{tohoku:proof:corollary-5.3.1:2:p1}
+Indeed, reduce modulo $C(P)$ the spectral sequences of Theorem 5.2.1.
+
+\TohokuContinuation{205}

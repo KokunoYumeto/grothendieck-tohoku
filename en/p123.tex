@@ -1,0 +1,65 @@
+% Source-aligned English for printed p.123.
+\SourcePage{123}
+
+\LayerTarget{tohoku:section:1.1:p4}
+\noindent bijective (the converse being false in general).
+
+\LayerTarget{tohoku:section:1.1:p5}
+The composite of two monomorphisms (epimorphisms) is a monomorphism
+(epimorphism), hence the composite of two bijections is a bijection; likewise,
+the composite of two isomorphisms is an isomorphism. If the composite $vu$ of
+two morphisms $u,v$ is a monomorphism (respectively, an epimorphism), then $u$
+(respectively, $v$) is also one. Although the development of such sorites is
+obviously necessary, we shall most often dispense with spelling them out
+explicitly in what follows, and shall content ourselves with indicating the
+definitions carefully.
+
+\LayerTarget{tohoku:section:1.1:p6}
+Consider two monomorphisms $u:B\longrightarrow A$ and
+$u':B'\longrightarrow A$. We say that \textit{$u'$ majorizes or contains $u$}
+and write $u\leq u'$ if $u$ can be factored as $u'v$, where $v$ is a morphism
+from $B$ to $B'$ (which is then uniquely determined). This is a
+\textit{preorder} on the class of monomorphisms with codomain $A$. We say that
+two such monomorphisms $u,u'$ are \textit{equivalent} if each majorizes the
+other; then the corresponding morphisms $B\longrightarrow B'$ and
+$B'\longrightarrow B$ are inverse to one another. Choose (for example, by
+means of Hilbert's all-purpose symbol $\tau$) one monomorphism in each class of
+equivalent monomorphisms: the chosen monomorphisms will be called the
+\textit{subobjects of $A$}. Thus a subobject of $A$ is not a mere object of
+$C$, but an object $B$ equipped with a monomorphism $u:B\longrightarrow A$,
+called the \textit{canonical injection} of $B$ into $A$. (Nevertheless, by an
+abuse of language, a subobject of $A$ will often be denoted by the symbol $B$
+for the corresponding object $B\in C$.) The majorization relation defines an
+\textit{order relation} (not merely a preorder) on the class of subobjects of
+$A$. It follows from what was seen above that the subobjects of $A$ contained
+in a subobject $B$ identify with the subobjects of $B$, this correspondence
+respecting the natural order relations. (This does not, however, mean that a
+subobject of $B$ is \textit{equal} to a subobject of $A$, which would indeed
+require $A=B$.)
+
+\LayerTarget{tohoku:section:1.1:p7}
+Dually, consideration of a preorder on the class of epimorphisms from $A$
+makes it possible to define the ordered class of \textit{quotient objects of
+$A$}.
+
+\LayerTarget{tohoku:section:1.1:p8}
+Let $A\in C$, and let $(u_i)_{i\in I}$ be a nonempty family of morphisms
+$u_i:A\longrightarrow A_i$. Then for every $B\in C$, the maps
+$v\longrightarrow u_iv$ from $\mathrm{Hom}(B,A)$ to $\mathrm{Hom}(B,A_i)$
+define a natural map
+\[
+  \mathrm{Hom}(B,A)\longrightarrow
+  \prod_{i\in I}\mathrm{Hom}(B,A_i).
+\]
+We say that the $u_i$ define a \textit{representation of $A$ as a direct
+product of the $A_i$} if, for every $B$, the preceding map is bijective. If
+this is so, and if $A'$ is another object of $C$ represented as a product of
+the $A'_i$ by morphisms $u'_i:A'\longrightarrow A'_i$ (the index set being the
+same), then for every family $(v_i)$ of morphisms
+$v_i:A_i\longrightarrow A'_i$ there exists a unique morphism $v$ from $A$ to
+$A'$ such that $u'_iv=v_iu_i$ for every $i$. It follows that if the $v_i$ are
+equivalences, then so is $v$; in particular, if the $v_i$ are the identity
+maps $I_{A_i}$, we see that two objects $A,A'$ represented as products of the
+family of $A_i$ are canonically isomorphic. It is therefore
+
+\TohokuContinuation{124}

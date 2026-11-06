@@ -1,0 +1,93 @@
+% Source-aligned English for printed p.175.
+\SourcePage{175}
+
+\LayerTarget{tohoku:construction:cartan-leray-fixed-cover:p2}
+\noindent $R(H^0C)$ of the functor $H^0C$, whose initial term is
+
+\LayerTarget{tohoku:eq:cartan-leray-abstract-E2}
+\[
+E_2^{p,q}=H^p(R^qC).
+\]
+
+\LayerTarget{tohoku:proof:cartan-leray-derived-functor}
+This may be seen directly by taking an injective resolution of $F\in C$ and
+examining the spectral sequences of the double complex obtained by applying
+$C$ to that resolution; or better, by observing that $H^0(K)$, regarded as a
+covariant left-exact functor on $C'$ (with values in the category of abelian
+groups), has right derived functors $H^p(K)$. Thus our spectral sequence is a
+simple special case of Theorem 2.4.1. Of course, $(R^qC)(F)$ is the complex
+whose components are $(R^qC^p)(F)$, if the $C^p$ are the components of $C$.
+It remains, in the present case, to describe the $R^qC^p$. By
+
+\LayerTarget{tohoku:eq:cover-cochains-product}
+\[
+C^pF=\prod_{\sigma^p}\Gamma(U_{\sigma^p},F)
+\]
+(the product extending over all sequences $\sigma^p=(i_0,\ldots,i_p)$ of
+$p+1$ indices of the covering $\mathcal U=(U_i)_{i\in I}$), one immediately
+sees that
+
+\LayerTarget{tohoku:eq:derived-cover-cochains-product}
+\[
+R^qC^p(F)=\prod_{\sigma^p}R^q(\Gamma(U_{\sigma^p},F)).
+\]
+
+\LayerTarget{tohoku:lemma:open-sections-derived}
+Now if $V$ is an open subset of $X$, the right derived functors of
+$\Gamma(V,F)=\Gamma(F\mid V)$ are easily made explicit, since the restriction
+functor $F\longmapsto F\mid V$ from $C^X$ to $C^V$ is exact and sends
+injective objects to injective objects (Proposition 3.1.3). Thus
+
+\LayerTarget{tohoku:eq:open-sections-derived}
+\[
+R^q(\Gamma(V,F))=(R^q\Gamma^V)(F\mid V)=H^q(V,F).
+\]
+
+\LayerTarget{tohoku:def:cohomology-presheaf}
+Let $H^q(F)$ denote the \textit{presheaf} on $X$ whose value on an open subset
+$V$ is $H^q(V,F)$. Then
+
+\LayerTarget{tohoku:eq:derived-cover-cochains-presheaf}
+\[
+R^qC^p(F)=\prod_{\sigma^p}\Gamma(U_{\sigma^p},H^q(F))
+=C^p(\mathcal U,H^q(F)).
+\]
+Of course, the differential on $R^qC(F)=\sum_p R^qC^p(F)$ is that of
+$C(\mathcal U,H^q(F))$. Consequently,
+
+\LayerTarget{tohoku:eq:cartan-leray-E2}
+\[
+E_2^{p,q}(F)=H^p(\mathcal U,H^q(F)).
+\]
+As for the abutment of the spectral sequence, it is the right derived functor
+of $H^0C(F)=\Gamma(X,F)$, namely $(H^n(X,F))$. Hence:
+
+\LayerTarget{tohoku:theorem:3.8.1}
+\noindent\textsc{Theorem 3.8.1.} --- \textit{Let $X$ be a topological space
+endowed with an open covering $\mathcal U$. Then there exists a cohomological
+spectral functor on the category $C^X$ of sheaves of abelian groups on $X$,
+abutting to the graded functor $(H^n(X,F))$, whose initial term is}
+
+\LayerTarget{tohoku:eq:3.8.1-E2}
+\[
+E_2^{p,q}=H^p(\mathcal U,H^q(F)),
+\]
+\textit{where, for every sheaf $F\in C^X$, $H^q(F)$ denotes the presheaf
+$V\longmapsto H^q(V,F)$ on $X$.}
+
+\LayerTarget{tohoku:remark:3.8.1-no-hypotheses}
+Note that this spectral sequence is established here without any paracompactness
+hypothesis on $X$ or local-finiteness hypothesis on $\mathcal U$. The
+preceding spectral sequence gives functorial homomorphisms
+
+\LayerTarget{tohoku:map:cech-to-derived-cohomology}
+\[
+H^p(\mathcal U,F)\longrightarrow H^p(X,F)
+\]
+and moreover:
+
+\LayerTarget{tohoku:corollary:3.8.1:1:p1}
+\noindent\textsc{Corollary 1.} \textit{The preceding homomorphisms are
+isomorphisms if}
+
+\TohokuContinuation{176}

@@ -1,0 +1,87 @@
+% Source-aligned English for printed p.206.
+\clearpage
+\SourcePage{206}
+
+\LayerTarget{tohoku:proof:transformation-first-spectral-sequence:p1}
+\noindent Theorem 5.3.1 we have
+$\mathbf H^n(G,A_U)(y)=\mathbf H^n(G,A_U(y))$ for $y\in Y_0$. By Proposition
+5.2.3, the homomorphism
+$H^n(Y,(A^G)_V)\longrightarrow H^n(X;G,A_U)$ is therefore an isomorphism for
+every $n$. It is just as easy to see that $H^n(X;G,A_{X_0})$ identifies with
+$H^n(X_0;G,A)$; moreover, we know that
+$H^n(Y,(A^G)_{Y_0})=H^n(Y_0,A^G)$. From the preceding diagram we then obtain,
+by an evident ``diagram chase'', a sequence of homomorphisms
+
+\LayerTarget{tohoku:sequence:5.4.2}
+\[
+\tag{5.4.2}
+\begin{aligned}
+{}\longrightarrow H^{n-1}(X;G,A)
+ &\xrightarrow{\beta^{n-1}}
+ \frac{H^{n-1}(X_0;G,A)}{\operatorname{Im}H^{n-1}(Y_0,A^G)}
+ \xrightarrow{\partial} H^n(Y,A^G)\\[-0.2em]
+ &\xrightarrow{\alpha^n}H^n(X;G,A)
+ \xrightarrow{\beta^n}
+ \frac{H^n(X_0;G,A)}{\operatorname{Im}H^n(Y_0,A^G)}
+ \longrightarrow
+\end{aligned}
+\]
+which is a complex (the product of two consecutive homomorphisms is zero) and
+is exact everywhere except possibly at the terms $H^n(Y,A^G)$. The defect of
+exactness $\operatorname{Ker}\alpha^n/\operatorname{Im}\partial$ at such a
+term is canonically isomorphic to the kernel of the homomorphism
+$H^n(Y_0,A^G)\longrightarrow H^n(X_0;G,A)$. We thus obtain:
+
+\LayerTarget{tohoku:proposition:5.4.1}
+\noindent\textsc{Proposition 5.4.1.} \textit{The sequence of homomorphisms
+(5.4.2) defines on $H^n(Y,A^G)$ a composition series of length 3 whose
+successive quotients are respectively isomorphic to}
+\[
+\operatorname{Coker}\beta^{n-1}
+=\frac{H^{n-1}(X_0;G,A)}{
+  \operatorname{Im}H^{n-1}(X;G,A)+\operatorname{Im}H^{n-1}(Y_0,A^G)},
+\]
+\textit{to}
+$\operatorname{Ker}\bigl(H^n(Y_0,A^G)\longrightarrow H^n(X_0;G,A)\bigr)$,
+\textit{and to} $\operatorname{Ker}\beta^n\subset H^n(X;G,A)$.
+
+\LayerTarget{tohoku:comparison:first-and-second-spectral-sequences-5.4}
+Thus the first spectral sequence gives us a means of reducing the
+determination of $H^*(Y,A^G)$ to good knowledge of $H^*(X;G,A)$,
+$H^*(X_0;G,A)$, $H^*(Y_0,A^G)$, and the natural homomorphisms
+\[
+H^*(X;G,A)\longrightarrow H^*(X_0;G,A)\longleftarrow H^*(Y_0,A^G).
+\]
+The determination of the first two groups can be attempted using the
+\textit{second} spectral sequence, whereas the calculation of $H^*(Y_0,A^G)$
+will often be possible if $Y_0$ can be chosen sufficiently small. A
+particularly simple and important case is given by the following
+
+\LayerTarget{tohoku:corollary:5.4.1}
+\noindent\textsc{Corollary.} \textit{Suppose that $G$ acts trivially on $X_0$
+(so $G$ is finite), that $A$ is a sheaf of vector spaces over a field $k$,
+and that $G$ acts trivially on $A\mathbin{|}X_0$. Then the sequence (5.4.2) is
+exact, and $H^n(X_0;G,A)$ identifies canonically with}
+\[
+\bigoplus_{p+q=n}H^p(G,k)\otimes H^q(X_0,A).
+\]
+
+\LayerTarget{tohoku:proof:corollary-5.4.1}
+Indeed, the latter assertion is a special case of the last assertion of
+Theorem 4.4.1. Consequently, the canonical homomorphism from
+$H^n(Y_0,A^G)=H^n(X_0,A)$ into $H^n(X_0;G,A)$ is injective, so the sequence
+(5.4.2) is exact.
+
+\LayerTarget{tohoku:remark:smith-fixed-point-application:p1}
+\noindent\textsc{Remarks.} Suppose that $G$ is a finite group of prime order.
+Taking $X_0$ to be the set of points of $X$ fixed by $G$, and setting
+$Y_0=f(X_0)$, the set $Y_0$ satisfies the condition stated at the beginning of
+this section. If $A$ is then a sheaf of vector spaces arising from a sheaf on
+$Y$ (i.e. $G$ acts trivially on $A\mathbin{|}X_0$), the hypotheses of
+Corollary 1 hold. For example, one recovers very easily the theorem of P. A.
+Smith concerning the case in which $X$ is a homology sphere mod. $p$ of
+finite dimension ($p$ being the order of $G$): then $X_0$ is a homology sphere
+mod. $p$. Moreover, this ``natural'' proof using general spectral sequences is
+in fact very close to Borel's [2]; of course, the compactness hypothesis made
+
+\TohokuContinuation{207}

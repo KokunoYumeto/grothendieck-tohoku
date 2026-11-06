@@ -1,0 +1,153 @@
+% Source-aligned English for printed p.169.
+\SourcePage{169}
+
+\LayerTarget{tohoku:proof:R-quotient-ZYm:p2}
+\noindent zero. On the other hand, the restriction of $R_m/R_{m-1}$ to
+$Y_m=U_m\cap \mathrm C V_{m-1}$ is isomorphic to that of $R_m$ (since that
+of $R_{m-1}$ is zero) and is generated there by the restriction of the section
+$f_m$; hence it is isomorphic to the constant sheaf $Z$.
+
+\LayerTarget{tohoku:proof:3.6.1:p3}
+This proves that $R_m/R_{m-1}$ is isomorphic to $Z_{Y_m}$ and reduces us to
+proving that $T^{p+1}(Z_Y)\in C''$ when $Y$ is a locally closed subset of
+$X$. We may write $Y=V\cap \mathrm C U$, where $U$ and $V$ are open subsets
+of $X$. Let $W$ be the open subset $U\cup V$ of $X$. There is an evident exact
+sequence
+\[
+0\longrightarrow Z_U\longrightarrow Z_W\longrightarrow Z_Y
+\longrightarrow0,
+\]
+and hence an exact sequence
+\[
+T^{p+1}(Z_W)\longrightarrow T^{p+1}(Z_Y)
+\longrightarrow T^{p+2}(Z_U).
+\]
+By hypothesis the two outer terms of this exact sequence belong to $C''$;
+therefore so does $T^{p+1}(Z_Y)$. This completes the proof of the proposition.
+
+\LayerTarget{tohoku:proposition:3.6.2}
+\noindent\textsc{Proposition 3.6.2.} --- \textit{Let $C$ and $C'$ be two
+abelian categories satisfying axiom AB 5) (cf. 1.5), and suppose that $C$
+admits a generator (cf. 1.9). Let $T$ be a covariant functor from $C$ to $C'$.
+For the right derived functors $R^pT$ to commute with inductive limits, it is
+enough that:}
+\begin{description}
+\LayerTarget{tohoku:subitem:3.6.2:a}
+\item[\textit{a)}] \textit{$T$ commute with inductive limits;}
+\LayerTarget{tohoku:subitem:3.6.2:b}
+\item[\textit{b)}] \textit{if $M=\varinjlim_i M_i$ in $C$, where the $M_i$
+are injective, then $M$ is $T$-acyclic, i.\,e.
+$R^pT(M)=0$ for $p>0$.}
+\end{description}
+
+\begin{quote}
+\small
+\textbf{Editorial qualification.} With the definition on p.~143, for a
+covariant functor that is assumed only additive, the canonical morphism
+$T(M)\longrightarrow R^0T(M)$ need not be an isomorphism. Thus the
+vanishing $R^qT(M)=0$ for $q>0$ required in b) does not by itself supply
+the degree-zero comparison needed for the equality
+$R^pT(A)=H^p(T(C))$ used below. The proposition and its proof are valid
+if one adds the hypothesis that $T$ is left exact. Without this
+hypothesis, b) must instead be strengthened by requiring, for every
+$M=\varinjlim_i M_i$ occurring there, both that
+$T(M)\longrightarrow R^0T(M)$ be an isomorphism and that
+$R^qT(M)=0$ for $q>0$. This qualification changes neither a), nor the
+compatible-resolution construction, nor the resulting comparison
+isomorphisms under either qualified hypothesis.
+\end{quote}
+
+\LayerTarget{tohoku:proof:3.6.2:p1}
+(Condition b) is plainly necessary for the conclusion to hold, and so is a)
+when $T$ is left exact, hence $R^0T=T$.) First note that the $R^pT$ are
+well-defined by Theorem 1.10.1. Let $(A_i)_{i\in I}$ be an inductive system in
+$C$, and let $A$ be its inductive limit. We wish to prove that the natural
+morphisms
+
+\LayerTarget{tohoku:eq:derived-colimit-comparison}
+\[
+\varinjlim_i R^pT(A_i)\longrightarrow R^pT(A)
+\]
+are isomorphisms.
+
+\LayerTarget{tohoku:construction:inductive-injective-resolutions}
+We first show that there exists an inductive system $(C_i)_{i\in I}$ of
+complexes with values in $C$, together with an ``augmentation''
+$(A_i)\longrightarrow(C_i)$, such that for every $i\in I$ the map
+$A_i\longrightarrow C_i$ is a right resolution of $A_i$ by injective objects.
+
+\LayerTarget{tohoku:construction:diagram-category-resolution}
+Indeed, consider the category $I(C)$ of inductive systems indexed by $I$ with
+values in $C$. It is a diagram category and, by Proposition 1.6.1, satisfies
+the same hypotheses as $C$. By Theorem 1.10.1, every object of this category
+therefore admits a right resolution by injective objects. Moreover, if $(M_i)$
+is an injective object of $I(C)$, then the $M_i$ are injective objects of $C$
+(this is a general fact for diagram categories indexed by a scheme $\Sigma$
+satisfying the general conditions of Proposition 1.9.2).
+
+\begin{quote}
+\small
+\textbf{Editorial correction.} The appeal to Proposition 1.9.2 is not valid
+as printed: its assertion about the stated family of generators is false in
+general. For $i$ in the small filtered poset $I$, let
+$F_i:C\longrightarrow I(C)$ be the left adjoint to evaluation at $i$, defined
+by
+\[
+F_i(A)_j=
+\begin{cases}
+A,&i\leq j,\\
+0,&\text{otherwise,}
+\end{cases}
+\]
+with identity transition maps wherever both values are $A$. This functor is
+exact objectwise. If $E$ is a generator of $C$, then
+$\bigoplus_{i\in I}F_i(E)$ is a generator of $I(C)$. Since each $F_i$ is an
+exact left adjoint, its right adjoint, evaluation at $i$, sends injectives of
+$I(C)$ to injectives of $C$. Thus $I(C)$ has the generator required by
+Theorem 1.10.1, evaluation preserves injectives, and the remaining argument is
+valid.
+\end{quote}
+
+Take a right resolution of $(A_i)$ by injective objects of $I(C)$,
+
+\LayerTarget{tohoku:eq:diagram-injective-resolution}
+\[
+0\longrightarrow(A_i)\longrightarrow(C_i^0)\longrightarrow(C_i^1)
+\longrightarrow\cdots.
+\]
+
+\LayerTarget{tohoku:eq:component-injective-complex}
+For each $i$, let $C_i$ be the complex
+\[
+0\longrightarrow C_i^0\longrightarrow C_i^1\longrightarrow\cdots.
+\]
+Then the system $(C_i)$ has the required property.
+
+\LayerTarget{tohoku:eq:colimit-resolution}
+Since the functor $\varinjlim$ on $I(C)$ is exact (Proposition 1.8), we obtain
+a resolution $C$ of $A$ by the objects
+\[
+C^p=\varinjlim_i C_i^p.
+\]
+
+\LayerTarget{tohoku:eq:T-acyclic-computation}
+By condition b), the $C^p$ are $T$-acyclic, and therefore
+\[
+R^pT(A)=H^p(T(C)).
+\]
+
+\LayerTarget{tohoku:eq:T-colimit-complex}
+Since $T$ commutes with inductive limits by a),
+\[
+T(C)=\varinjlim_i T(C_i).
+\]
+The exactness of $\varinjlim$ on $I(C')$, which follows from axiom AB 5) by
+Proposition 1.8, now gives
+
+\LayerTarget{tohoku:eq:cohomology-colimit-comparison}
+\[
+H^p(T(C))=\varinjlim_i H^pT(C_i).
+\]
+But since $C_i$ is the complex
+
+\TohokuContinuation{170}

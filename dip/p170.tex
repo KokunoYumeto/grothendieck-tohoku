@@ -1,0 +1,83 @@
+% Direct-authority diplomatic French for printed p.170.
+\SourcePage{170}
+
+\LayerTarget{tohoku:proof:3.6.2:p2}
+\noindent associé à une résolution injective de $A_i$, on a
+$H^pT(C_i)=R^pT(A_i)$, d'où la conclusion voulue
+
+\LayerTarget{tohoku:eq:derived-colimit-isomorphism}
+\[
+R^pT(A)=\varinjlim_i R^pT(A_i).
+\]
+
+\LayerTarget{tohoku:proposition:3.6.3}
+\noindent\textsc{Proposition 3.6.3.} --- \textit{Soit $X$ un espace
+topologique muni d'un antifiltre $\Phi$ de parties fermées. Alors les foncteurs
+$H^p_\Phi(X,F)$ sur $C^X$ permutent à la limite inductive dans les deux cas
+suivants :}
+\begin{enumerate}
+\LayerTarget{tohoku:subitem:3.6.3:1}
+\item \textit{$X$ est localement compact et $\Phi$ la famille des parties
+compactes.}
+\LayerTarget{tohoku:subitem:3.6.3:2}
+\item \textit{$X$ est un espace de Zariski, $\Phi$ la famille de toutes ses
+parties fermées.}
+\end{enumerate}
+
+\LayerTarget{tohoku:def:zariski-space}
+(Nous appellerons \textit{espace de Zariski} un espace dont toute suite
+décroissante de parties fermée est stationnaire, cf. [15, page 223]). ---
+
+\LayerTarget{tohoku:proof:3.6.3}
+Il suffit de vérifier les conditions a) et b) de la proposition 3.6.2 pour le
+foncteur $\Gamma_\Phi$. La vérification de a) est un exercice facile de
+compacité et laissée au lecteur (voir aussi [9]). La condition b) résultera du
+corollaire à prop. 3.3.1 et du
+
+\LayerTarget{tohoku:lemma:3.6.4}
+\noindent\textsc{Lemme. 3.6.4.} --- \textit{Sous les conditions de 1) toute
+limite inductive de faisceaux $\Phi$-mous est $\Phi$-mou. Sous les conditions
+de 2, toute limite inductive de faisceaux flasques est flasque.}
+
+\LayerTarget{tohoku:proof:3.6.4}
+Plaçons-nous les conditions de 1), soit $(F_i)$ un système inductif de
+faisceaux-$\Phi$-mous sur $X$, $F$ sa limite inductive, $f$ une section de $F$
+sur un $A\in\Phi$, i.\,e. sur une partie compacte $A$. D'après a) appliqué à
+l'espace compact $A$, $f$ provient d'une section $f_i$ d'un $F_i$ sur $A$, et
+$F_i$ étant $\Phi$-mou, cette $f_i$ est la restriction d'une
+$g_i\in\Gamma_\Phi(F_i)$, donc $f$ est la restriction de la
+$g\in\Gamma_\Phi(F)$ définie par $g_i$. Le cas 2) se traite de façon toute
+analogue, en remarquant qu'une partie $U$ d'un espace de Zariski est un espace
+de Zariski, donc que a) lui est applicable.
+
+\LayerTarget{tohoku:def:cohomological-dimension}
+Nous dirons qu'un espace $X$ est de \textit{dimension cohomologique} $\leq n$
+si $H^i(X,F)=0$ pour $i>n$, pour tout faisceau abélien $F$ sur $X$. Conjuguant
+prop. 3.6.1 et prop. 3.6.3 on trouve le
+
+\LayerTarget{tohoku:corollary:cohomological-dimension-test}
+\noindent\textsc{Corollaire.} --- \textit{Soit $X$ un espace qui est soit
+compact, soit un espace de Zariski, soit $n$ un entier $\geq0$ Pour que $X$
+soit de dimension cohomologique $\leq n$, il faut et il suffit que l'on ait
+$H^i(X,Z_U)=0$ pour $i>n$, et toute partie ouverte $U$ de $X$.}
+
+\LayerTarget{tohoku:def:combinatorial-dimension}
+Nous en arrivons au résultat essentiel de ce N\textsuperscript{o}. Soit $X$ un
+espace de Zariski, on dit que $X$ est de \textit{dimension combinatoire}
+$\leq n$ si toute suite strictement décroissante de parties fermées
+irréductibles a au plus $n+1$ éléments. Ceci dit :
+
+\LayerTarget{tohoku:theorem:3.6.5}
+\noindent\textsc{Théorème 3.6.5.} --- \textit{Soit $X$ un espace de Zariski de
+dimension combinatoire $\leq n$, alors $X$ est de dimension cohomologique
+$\leq n$, i.\,e. on a $H^i(X,F)=0$ pour $i>n$, et tout faisceau abélien $F$
+sur $X$.}
+
+\LayerTarget{tohoku:proof:3.6.5:p1}
+Nous raisonnons par récurrence sur la dimension combinatoire $n$ de $X$, le
+théorème étant trivial si $n=0$ (alors $X$ est un ensemble fini discret).
+Supposons le démontré pour les dimensions combinatoires $\leq n-1$, où
+$n\geq1$, et prouvons le si $X$ est de dimension combinatoire $\leq n$.
+Soient $X_i$ les com-
+
+\TohokuContinuation{171}

@@ -1,0 +1,92 @@
+% Source-aligned English for printed p.177.
+\SourcePage{177}
+
+\LayerTarget{tohoku:corollary:3.8.1:4:p2}
+\noindent\textit{$(U_1,\ldots,U_k)$ of open sets in $\mathcal U$, their
+intersection $U$ satisfies $\check H^i(U,F)=\{0\}$ for $i>0$. Then also
+$H^i(U,F)=\{0\}$, and for every open subset $V$ of $X$, the natural
+homomorphism $\check H^i(V,F)\longrightarrow H^i(V,F)$ is an isomorphism.}
+
+\LayerTarget{tohoku:proof:3.8.1:corollary-4:fixed-cover}
+It is enough to prove $H^i(U,F)=\{0\}$, since $V$ has arbitrarily fine
+coverings $\mathbf R$ by open sets in $\mathcal U$, and Corollary 1 shows that
+for such an $\mathbf R$ the homomorphism
+$H^i(\mathbf R,F)\longrightarrow H^i(V,F)$ is an isomorphism. At the same time,
+since $\mathbf R$ is arbitrarily fine, this proves that
+$\check H^i(V,F)\longrightarrow H^i(V,F)$ is an isomorphism.
+
+\LayerTarget{tohoku:proof:3.8.1:corollary-4:induction}
+--- To prove $H^i(U,F)=\{0\}$, we prove by induction on $n$ that
+$H^i(U,F)=\{0\}$ for $0<i\leq n$ and every $U$ of the indicated form. This is
+trivial for $n=0$. Suppose $n\geq 1$ and that the assertion has been proved
+for $n'=n-1$. There are arbitrarily fine coverings $\mathbf R$ of $U$ by open
+sets in $\mathcal U$; for such an $\mathbf R$ we have
+
+\LayerTarget{tohoku:eq:corollary-4-cover-complex-vanishing}
+\[
+C(\mathbf R,H^q(F))=0\quad\text{for }0<q<n
+\]
+by the induction hypothesis, and hence, a fortiori,
+
+\LayerTarget{tohoku:eq:corollary-4-cover-cohomology-vanishing}
+\[
+H^p(\mathbf R,H^q(F))=0\quad\text{for such }q.
+\]
+It follows that
+
+\LayerTarget{tohoku:eq:corollary-4-cech-limit-vanishing}
+\[
+\check H^p(U,H^q(F))=0\quad\text{for such }q.
+\]
+By the observation preceding Corollary 4, this implies
+
+\LayerTarget{tohoku:eq:corollary-4-induction-conclusion}
+\[
+H^n(U,F)=\check H^n(U,F),
+\]
+which is zero.
+
+\LayerTarget{tohoku:application:affine-zariski-coherent-sheaf}
+Corollary 4 applies, for example, when $X$ is an algebraic variety with its
+Zariski topology, $\mathcal U$ is the collection of affine open subsets of
+$X$, and $F$ is a coherent algebraic sheaf on $X$ [15]. Indeed, by [15], the
+affine open subsets form a basis for the topology of $X$, and the intersection
+of two affine open subsets is affine. If $U$ is affine open, then
+$H^i(U,F)=0$ for $i>0$. Thus
+
+\LayerTarget{tohoku:eq:affine-cech-derived-comparison}
+\[
+H^i(X,F)=\check H^i(X,F).
+\]
+Moreover, Corollary 1 above shows that the $H^i(X,F)$ can be computed using an
+arbitrarily chosen covering of $X$ by affine open subsets.
+
+\LayerTarget{tohoku:remark:closed-cover-leray-spectral-sequences}
+\noindent\textsc{Remark.} There are cases other than that of Theorem 3.8.1 in
+which the Leray spectral sequence is valid. The best-known one is a
+\textit{locally finite covering of a paracompact $X$ by closed subsets} (the
+case considered by Leray); it is handled just as simply as the open-covering
+case above, since the restriction of a soft sheaf to a closed subset is still
+soft (replacing Proposition 3.1.3). Another case, obtained by Godement
+by a different method, is a \textit{finite covering of $X$ by closed subsets}
+(without a paracompactness hypothesis). When both cases apply simultaneously,
+the two resulting spectral sequences coincide, fortunately.
+
+\LayerTarget{tohoku:example:cech-H2-comparison-failure:p1}
+\noindent\textsc{An example.} To conclude this section, we shall give a simple
+example in which the monomorphism
+$\check H^2(X,F)\longrightarrow H^2(X,F)$ is not an isomorphism, and in fact
+$\check H^2(X,F)=0$ while $H^2(X,F)\neq 0$. Since Corollary 2 to Theorem 3.8.1
+gives an exact sequence
+
+\LayerTarget{tohoku:eq:cech-H2-comparison-exact-sequence}
+\[
+0\longrightarrow\check H^2(X,F)\longrightarrow H^2(X,F)
+\longrightarrow\check H^1(X,H^1(F))\longrightarrow 0,
+\]
+
+\LayerTarget{tohoku:criterion:cech-H2-example-reduction:p1}
+\noindent\textit{it is enough to give a case in which $H^2(X,F)\neq 0$ and
+$H^2(X,F)\longrightarrow\check H^1(X,H^1(F))$ is an isomorphism.}
+
+\TohokuContinuation{178}

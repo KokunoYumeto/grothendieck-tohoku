@@ -1,0 +1,83 @@
+% Source-aligned English for printed p.205.
+\clearpage
+\SourcePage{205}
+
+\LayerTarget{tohoku:proof:corollary-5.3.1:2:p1}
+\noindent We have $\mathrm I_2^{p,q}=0\ \mathrm{mod}\ C(P)$ for $q>0$, since
+by Theorem 5.3.1 $\mathbf H^q(G,A)$ is a sheaf annihilated by $n$; hence
+$H^p(X,\mathbf H^q(G,A))$ is annihilated by $n$ for every $p$, and is
+therefore zero modulo $C(P)$. Corollary 2 follows at once.
+
+\LayerTarget{tohoku:application:fixed-point-free-case-5.3}
+If all the $n_x$ are equal to 1, that is, if every $g\in G$, $g\ne e$, has no
+fixed point (we then simply say that $G$ \textit{acts without fixed points}),
+we obtain $\mathbf H^n(G,A)=0$ for $n>0$, and hence
+$H^*(X;G,A)=H^*(Y,A^G)$. This is also evident a priori from the isomorphism,
+noted at the end of 5.1, between the category of sheaves on $Y$ and the
+category of $G$-sheaves on $X$ when $G$ is a discrete group of homeomorphisms
+without fixed points. We therefore obtain in this case the classical
+statement:
+
+\LayerTarget{tohoku:corollary:5.3.1:3}
+\noindent\textsc{Corollary 3.} \textit{If $G$ acts ``without fixed points'',
+then $H^*(Y,A^G)$ is the abutment of a cohomological spectral sequence whose
+initial term is $H^p(G,H^q(X,A))$.}
+
+\LayerTarget{tohoku:remark:spectral-sequence-construction-5.3}
+\noindent\textsc{Remark.} By definition, the second spectral sequence of
+Theorem 5.2.1 is obtained by taking a resolution $C(A)$ of $A$ by
+$\Gamma_X$-acyclic sheaves and taking the second spectral sequence of the
+functor $\Gamma^G$ relative to the complex $\Gamma_X(C(A))$. In general, the
+first spectral sequence of $\Gamma^G$ relative to this complex is clearly not
+identified with the first spectral sequence of Theorem 5.2.1 (take an
+injective resolution of $A$!). It is, however, so identified if one takes for
+$C(A)$ the \textit{canonical resolution of $A$} (see 3.3), as follows by an
+argument analogous to that of Proposition 4.3.2. It is also so identified if
+$X$ and $Y$ are paracompact and one takes for $C(A)$ a Cartan resolution of
+$A$, i.e. $C(A)=A\otimes_{\mathbf Z}C$, where $C$ is a ``fundamental sheaf''
+in the sense of Cartan--Leray, as can be shown by rather different arguments
+(we shall not need this fact). Consequently spectral sequence I is precisely
+the spectral sequence of [10], whose initial term had been left unspecified.
+
+\LayerTarget{tohoku:section:5.4}
+\bigskip
+\noindent\textbf{5.4. Transformation of the first spectral sequence.} We
+continue to suppose that condition (D) of the preceding section holds
+(although this is not absolutely essential).
+
+\LayerTarget{tohoku:setup:transformation-first-spectral-sequence}
+Let $Y_0$ be a closed subset of $Y$ containing the supports of the
+$\mathbf H^n(G,A)$ for $n>0$ (for example, by Theorem 5.3.1 it is enough that
+$Y_0$ contain the set of $y\in Y$ such that $G_y\ne e$). Let
+$X_0=f^{-1}(Y_0)$, let $V$ be the complement of $Y_0$, and let $U$ be the
+complement of $X_0$. Consider the exact sequences
+
+\LayerTarget{tohoku:sequence:5.4-support-exact-sequences}
+\[
+\begin{gathered}
+0\longrightarrow A_U\longrightarrow A\longrightarrow A_{X_0}\longrightarrow0,\\
+0\longrightarrow(A^G)_V\longrightarrow A^G\longrightarrow
+  (A^G)_{Y_0}\longrightarrow0.
+\end{gathered}
+\]
+Since manifestly $(A_U)^G=(A^G)_V$, we obtain a commutative diagram of
+cohomology sequences:
+
+\LayerTarget{tohoku:diagram:5.4.1}
+\[
+\tag{5.4.1}
+\begin{array}{c@{\;}c@{\;}c@{\;}c@{\;}c@{\;}c@{\;}c}
+\mathinner{\cdotp\cdotp\cdotp\cdotp}H^n(Y,(A^G)_V)&\to&H^n(Y,A^G)&\to&H^n(Y,(A^G)_{Y_0})&\to&
+H^{n+1}(Y,(A^G)_V)\!\to\!\mathinner{\cdotp\cdotp\cdotp\cdotp}\\[-0.2em]
+\downarrow&&\downarrow&&\downarrow&&\downarrow\\[0.45em]
+\mathinner{\cdotp\cdotp\cdotp\cdotp}H^n(X;G,A_U)&\to&H^n(X;G,A)&\to&H^n(X;G,A_{X_0})&\to&
+H^{n+1}(X;G,A_U)\!\to\!\mathinner{\cdotp\cdotp\cdotp\cdotp}
+\end{array}
+\]
+
+\LayerTarget{tohoku:proof:transformation-first-spectral-sequence:p1}
+It follows from the hypothesis on $Y_0$ that $\mathbf H^n(G,A_U)=0$ for
+$n>0$, since this is clearly the case on the open set $V$, but it is also true
+on $Y_0$, because by
+
+\TohokuContinuation{206}

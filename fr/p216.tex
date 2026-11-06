@@ -1,0 +1,124 @@
+% Corrected French for printed p.216.
+% Three print-level repairs are recorded.
+\clearpage
+\SourcePage{216}
+\begingroup
+\small
+
+\LayerTarget{tohoku:proof:coinduced-hom-acyclicity}
+\LayerTarget{tohoku:definition:coinduced-module-b-prime}
+\noindent y ferons opérer $G$ et $O$ par
+
+\LayerTarget{tohoku:equation:coinduced-u-actions}
+\[
+(g'f)(g)=f(gg'),
+\qquad
+(\lambda f)(g)=\lambda^g f(g),
+\]
+
+\LayerTarget{tohoku:construction:coinduced-u-module-b-prime}
+\noindent on constate aussitôt que $B'$ devient ainsi un $U$-module, et qu'on
+définit un $U$-homomorphisme injectif $\varphi:B\longrightarrow B'$ en posant
+
+\LayerTarget{tohoku:equation:coinduced-u-embedding}
+\[
+\varphi(b)(g)=g\mathbin{\cdot}b.
+\]
+
+\LayerTarget{tohoku:reduction:hom-direct-summand-acyclicity}
+Ainsi $B$ se plonge dans le $U$-module $B'$, et comme $B$ est injectif, c'est
+un facteur direct de $B'$, donc $\operatorname{Hom}_O(A,B)$ est (en tant que
+$G$-module) un facteur direct de $\operatorname{Hom}_O(A,B')$, et il suffit de
+montrer que ce dernier est $\Gamma^G$-acyclique.
+
+\LayerTarget{tohoku:definition:conjugation-action-on-hom}
+Posons $H=\operatorname{Hom}_O(A,B)$, considérons $H$ comme un $G$-module en y
+faisant opérer $G$ par
+\[
+u^g(a)=g\,u(g^{-1}a) ;
+\]
+on vérifie alors immédiatement qu'on a un isomorphisme canonique
+
+\LayerTarget{tohoku:equation:hom-coinduction-isomorphism}
+\[
+\begin{aligned}
+\operatorname{Hom}_O(A,B')
+&=\operatorname{Hom}_O
+  \bigl(A,\operatorname{Hom}_{\mathbf Z}(\mathbf Z(G),B)\bigr)\\
+&=\operatorname{Hom}_{\mathbf Z}
+  \bigl(\mathbf Z(G),\operatorname{Hom}_O(A,B)\bigr)
+\end{aligned}
+\]
+
+\LayerTarget{tohoku:construction:two-coinduced-g-actions}
+\noindent en convenant de mettre sur le dernier membre
+$H''=\operatorname{Hom}_{\mathbf Z}(\mathbf Z(G),H)$ la structure de
+$G$-module définie par
+\[
+f^{g'}(g)=g'f(gg').
+\]
+On écrit pour ceci, pour toute
+$u\in\operatorname{Hom}_O
+\bigl(A,\operatorname{Hom}_{\mathbf Z}(\mathbf Z(G),B)\bigr)$,
+$u(a)(g)=g\mathbin{\cdot}u_g(a)$, alors les $u_g$ sont des
+$O$-homomorphismes de $A$ dans $B$ et $u$ s'identifie à la famille des $u_g$,
+identifiée à un élément de $\operatorname{Hom}_{\mathbf Z}(\mathbf Z(G),H)$.
+Considérons aussi le $G$-module $H'$ obtenu en mettant sur
+$\operatorname{Hom}_{\mathbf Z}(\mathbf Z(G),H)$ la structure de $G$-module
+définie par
+\[
+(g'f)(g)=f(gg').
+\]
+
+\LayerTarget{tohoku:equation:coinduced-action-intertwiner}
+On obtient un $G$-isomorphisme $\psi$ de $H'$ sur $H''$ en posant
+\[
+\psi(f)(g)=g^{-1}f(g).
+\]
+
+\LayerTarget{tohoku:conclusion:coinduced-hom-acyclicity}
+Or il est bien connu que $H'$ est $\Gamma^G$-acyclique, quel que soit le
+$G$-module $H$, il en est donc de même de $H''$, cqfd.
+
+\LayerTarget{tohoku:spectral-sequence:three-equivariant-ext-sequences}
+Le lemme 5.6.1 nous permet de tirer des formules (5.6.5) trois suites
+spectrales aboutissant à $\operatorname{Ext}_{O,G}^{*}(X;A,B)$. Pour
+expliciter les termes initiaux des deux dernières, il reste à expliciter les
+foncteurs dérivés de $h_{O,A}$ et $\mathbf h_{O,A}$ considérés comme foncteurs
+sur $C^{O(G)}$.
+
+\LayerTarget{tohoku:relation:derived-hom-functors}
+Quand on les considère comme foncteurs sur la catégorie $C^O$ des $O$-Modules
+(sans opérateurs) leurs foncteurs dérivés sont par définition (4.2) les
+foncteurs $\operatorname{Ext}_O^n(X;A,B)$ resp. les foncteurs
+$\mathbf{Ext}_O^n(A,B)$. Il en est encore ainsi quand on les considère comme
+des foncteurs sur $C^{O(G)}$, comme il résulte aussitôt des définitions et du
+
+\LayerTarget{tohoku:lemma:5.6.2}
+\noindent\textsc{Lemme 5.6.2.}\quad \textit{Si $B$ est un $G$-$O$-Module
+injectif, c'est un $O$-Module injectif.}
+
+\LayerTarget{tohoku:proof:lemma-5.6.2}
+Comme dans le lemme 5.6.1, on est ramené au cas où $B$ est le faisceau produit
+défini par une famille $(B_x)_{x\in X}$ de $U_x$-modules injectifs $B_x$. Il
+suffit donc de prouver que les $B_x$ sont aussi des $O(x)$-modules injectifs,
+ce qui nous ramène au cas où $X$ est réduit à un point $x$.
+
+\LayerTarget{tohoku:reduction:equivariant-injective-underlying}
+En fait, la démonstration ne semble pas plus simple dans ce cas, et celle que
+nous allons donner s'appliquerait en fait chaque fois qu'on a une catégorie
+abélienne $C$ (telle que $C^O$) où ``opère'' un groupe $G$, comme
+dans\textsuperscript{9)}, permettant de passer à la catégorie $C(G)$ (ici
+$C^{O(G)}$) des ``objets avec opérateur'' correspondante ; on suppose que $C$
+satisfait AB 5) et admet un générateur : \textit{alors tout objet injectif $A$
+de $C(G)$ est aussi injectif dans $C$}.
+
+\LayerTarget{tohoku:construction:equivariant-injective-envelope}
+Pour le prouver, il suffit évidemment de prouver que tout objet $A$ de $C(G)$
+se plonge dans un objet $M$ de $C(G)$ qui est injectif dans $C$. Pour ceci, il
+suffit d'examiner la construction donnée dans 1.10 pour l'immersion de $A$
+(considéré comme objet de $C$) dans un objet injectif $M$ de $C$ : on plonge
+$A$
+
+\endgroup
+\TohokuContinuation{217}

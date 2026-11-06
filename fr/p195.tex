@@ -1,0 +1,83 @@
+% Corrected French for printed p.195.
+\clearpage
+\SourcePage{195}
+
+\LayerTarget{tohoku:proof:remark-4.4.1:1}
+Comme $\mathbf{Ext}_{\mathbf Z(G)}^n(\mathbf Z,A)$ est le faisceau associé au
+préfaisceau des $\mathrm{Ext}_{\mathbf Z(G)}^n(U;\mathbf Z,A)$ qui est nul
+d'après ce qui précède (puisque $A|U$ est aussi injectif), notre assertion est
+démontrée.
+
+\LayerTarget{tohoku:remark:4.4.1:2}
+\noindent 2. Supposons que $A$ soit le faisceau \textit{constant} défini par un
+$G$-module $M$, alors on écrira évidemment $H^p(X;G,M)$ et
+$\mathbf H^p(G,M)$ au lieu de $H^p(X;G,A)$ et $\mathbf H^p(G,A)$. Si $G$
+opère trivialement sur $M$, alors $H^p(X;G,M)$ se calcule donc complètement
+par la formule 4.4.3, ou la formule 4.4.2 si $M$ est un espace vectoriel sur
+un corps $k$. Dans ce dernier cas, et si $X$ est un espace HLC, on obtient
+même :
+
+\LayerTarget{tohoku:formula:bilinear-equivariant-cohomology}
+\[
+H^*(X;G,M)=\text{espace des applications bilinéaires de }
+H_*(G,k)\times H_*(X,k)\text{ dans }M.
+\]
+
+On fera attention qu'en général, $\mathbf H^p(G,M)$ n'est pas le faisceau
+constant défini par $H^p(G,M)$, cf. remarque 2 de 4.3.
+
+\LayerTarget{tohoku:chapter:V}
+\bigskip
+\begin{center}
+{\large\bfseries Chapitre V\quad Étude cohomologique des espaces à
+opérateurs.}
+\end{center}
+
+\LayerTarget{tohoku:section:5.1}
+\noindent\textbf{5.1. Généralités sur les $G$-faisceaux.}
+
+\LayerTarget{tohoku:setup:g-space-and-orbit-space}
+Dans tout ce Chapitre, nous considérons un espace $X$ où opère un groupe $G$
+(à gauche pour fixer les idées). L'opération définie par un $g\in G$ sera
+notée $x\mapsto g\mathbin{\cdot}x$. Nous n'exigeons pas que $G$ opère
+fidèlement ; en particulier, nous aurons à considérer aussi le cas où $G$
+opérerait trivialement. Nous écrirons $X(G)$ pour $X$ muni de la structure
+supplémentaire définie par les opérations de $G$. L'espace des trajectoires
+$X/G$ sera noté $Y$, il sera muni de la topologie quotient. L'application
+canonique de $X$ sur $Y$ sera notée $f$, c'est une application continue
+ouverte. $Y$ sera considéré comme muni du groupe d'opérateurs $G$ opérant
+trivialement, on écrira donc $Y(G)$ pour rappeler cette structure
+supplémentaire sur $Y$.
+
+\LayerTarget{tohoku:definition:g-sheaf}
+Nous appellerons \textit{$G$-faisceau} sur $X=X(G)$ un faisceau (d'ensembles)
+$A$ sur $X$, dans lequel $G$ opère de façon compatible avec ses opérations
+sur $X$. Pour donner un sens à cette définition, on pourra par exemple
+considérer $A$ comme espace étalé dans $X$ (cf. 3.1) ; nous n'insisterons pas.
+On définit de même la notion de \textit{$G$-faisceau de groupes, d'anneaux},
+de \textit{$G$-faisceau abélien} (= $G$-faisceau de groupes abéliens) etc.
+
+\LayerTarget{tohoku:example:g-sheaves}
+De façon imagée, on peut dire que si $X$ est muni de certaines structures et
+si un faisceau $A$ sur $X$ est défini en termes structuraux, alors $A$ est un
+$G$-faisceau de façon naturelle si les opérations de $G$ dans $X$ sont des
+automorphismes. Ainsi, un faisceau constant peut toujours être considéré comme
+un $G$-faisceau (``$G$-faisceau trivial''), de même le faisceau des germes
+d'applications quelconques resp. continues de $X$ dans un ensemble donné, le
+faisceau des germes de fonctions holomorphes si $X$ est une variété holomorphe
+et si les opérations de $G$ sont des automorphismes de la variété $X$, etc.
+
+\LayerTarget{tohoku:definition:g-homomorphism}
+On appelle \textit{$G$-homomorphisme} d'un faisceau dans un autre un
+homomorphisme de faisceau qui permute aux opérations de $G$. Si les faisceaux
+envisagés sont des faisceaux de groupes par exemple, on sous-entend que
+l'homomorphisme respecte cette structure, comme d'habitude.
+
+\LayerTarget{tohoku:definition:category-g-sheaves}
+Avec cette notion d'homomorphisme, les $G$-faisceaux d'ensembles (resp. les
+$G$-faisceaux de groupes etc.) forment une \textit{catégorie} (cf. 1.1), qui a
+les mêmes propriétés que la catégorie correspondante sans groupe d'opérateurs
+$G$, (qui en est d'ailleurs un cas particulier, correspondant au cas où $G$
+est réduit à l'élément neutre).
+
+\TohokuContinuation{196}

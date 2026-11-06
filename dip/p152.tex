@@ -1,0 +1,90 @@
+% Direct-authority diplomatic French for printed p.152.
+\SourcePage{152}
+
+\LayerTarget{tohoku:prop:2.5.3:proof:p2}
+\noindent qui est une résolution injective de $K^p$. Par suite,
+$H^q(M^{p*})=H^q(\mathbf F(C(K^p)))$, et le dernier membre s'identifie à
+$R^qF(K^p)$ en vertu de prop. 2.5.2.
+
+Reste à calculer le terme médian de la deuxième ligne (2.5.5). On a tout
+d'abord
+\[
+H_{\mathrm I}(M)^{p,q}
+=\sum_{q'+q''=q}H^p(\mathbf F^{q''}(C^{*q'}(K))).
+\]
+Comme $\mathbf F^{q''}$ est un foncteur exact, on obtient pour le terme
+général de la somme du second membre
+\[
+\mathbf F^{q''}(H_{\mathrm I}^p(C^{*q'}(K)))
+=\mathbf F^{q''}(C^{q'}(H^p(K))),
+\]
+où $C(H^p(K))$ désigne une résolution injective de $H^p(K)$ (se rappeler la
+définition d'une \og résolution injective\fg{} $C(K)$ du complexe $K$ !). On
+trouve donc
+\[
+(H_{\mathrm{II}}(H_{\mathrm I}(M)))^{p,q}
+=H^q(\mathbf F(C(H^p(K)))),
+\]
+qui s'identifie à $R^qF(H^p(K))$ en vertu de proposition 2.5.2, cqfd.
+
+\LayerTarget{tohoku:construction:composite-resolving-functor-spectral-sequence}
+$\mathbf F$ étant toujours un foncteur résolvant pour le foncteur exact à
+gauche $F$ de $C$ dans $C'$, supposons de plus qu'on se donne un foncteur
+covariant $G$ de $C'$ dans une catégorie abélienne $C''$, et que dans $C'$
+tout objet est isomorphe à un sous-truc d'un objet injectif. Pour tout
+$A\in C$, considérons la deuxième suite spectrale d'hyperhomologie du
+foncteur $G$ par rapport au complexe $\mathbf F(A)$ ; c'est un foncteur
+spectral en $A$, dont le terme initial, en vertu de proposition 2.5.1, se
+calcule aussitôt :
+\LayerTarget{tohoku:eq:2.5.6}
+\[
+\tag{2.5.6}
+{}_{\mathrm{II}}E_2^{p,q}G(\mathbf F(A))=R^pG(R^qF(A)).
+\]
+C'est là un isomorphisme fonctoriel avec le terme initial de la deuxième suite
+spectrale du foncteur composé $GF$.
+
+\LayerTarget{tohoku:prop:2.5.4}
+\noindent\textsc{Proposition 2.5.4.} --- \textit{L'isomorphisme (2.5.6)
+provient d'un isomorphisme fonctoriel de la deuxième suite spectrale
+d'hyperhomologie de $G$ par rapport au complexe $\mathbf F(K)$, avec la
+deuxième suite spectrale du foncteur composé $GF$.}
+
+\LayerTarget{tohoku:prop:2.5.4:proof}
+Soit $C(A)$ une résolution injective de $A$, considérons $F(C(A))$ comme un
+complexe simple dans $C'$, et considérons les homomorphismes naturels (2.5.1),
+d'où des homomorphismes correspondants pour les deuxièmes suites spectrales
+d'hyperhomologie de $G$ :
+\[
+\mathrm{II}G(F(C(A)))\longrightarrow\mathrm{II}G(\mathbf F(C(A)))
+\longleftarrow\mathrm{II}G(\mathbf F(A)).
+\]
+Tout revient encore à montrer que ce sont là des isomorphismes, et pour ceci,
+à montrer que les homomorphismes correspondants pour les termes initiaux sont
+des isomorphismes. Or en vertu de proposition 2.5.1, les homomorphismes
+\[
+HF(C(A))\longrightarrow H\mathbf F(C(A))\longleftarrow H\mathbf F(A)
+\]
+sont des isomorphismes, d'où aussitôt la conclusion voulue.
+
+\LayerTarget{tohoku:diagram:2.5:functor-square}
+\[
+\begin{array}{ccc}
+C & \xrightarrow{\ G'\ } & C'''\\
+{\scriptstyle F,\mathbf F}\downarrow && \downarrow{\scriptstyle F',\mathbf F'}\\
+C' & \xrightarrow{\ G\ } & C''
+\end{array}
+\]
+
+\LayerTarget{tohoku:construction:four-functor-square:p1}
+Soient $C,C',C'',C'''$ quatre catégories abéliennes, on suppose pour les trois
+premières que tout objet y est isomorphe à un sous-truc d'un objet injectif.
+Considérons des foncteurs covariants $F,G,F',G'$ (voir diagramme ci-contre),
+on suppose donné un foncteur résolvant $\mathbf F$ pour $F$ et un foncteur
+résolvant $\mathbf F'$ pour $F'$, satisfaisant aux conditions de commutation
+$\mathbf F'G'=G\mathbf F$\footnote{Il est entendu que cet isomorphisme est
+fonctoriel, et respecte l'homomorphisme cobord dans les complexes
+$\mathbf F'G'(A)$ et $G\mathbf F(A)$.}. Supposons de plus que $\mathbf F$ transforme
+objets injectifs en
+
+\TohokuContinuation{153}

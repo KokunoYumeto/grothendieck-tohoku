@@ -1,0 +1,86 @@
+% Source-aligned English for printed p.138.
+\SourcePage{138}
+
+\LayerTarget{tohoku:def:subcategory:p2}
+\noindent in addition to the preceding conditions, the groups
+$\mathrm{Hom}_{C'}(A,B)$ are subgroups of $\mathrm{Hom}_C(A,B)$.
+
+\LayerTarget{tohoku:def:complete-subcategory}
+Suppose that $C$ is an abelian category. We call $C'$ a \textit{full
+subcategory} if (i) \textit{for $A,B\in C'$ one has
+$\mathrm{Hom}_{C'}(A,B)=\mathrm{Hom}_C(A,B)$}; and (ii) \textit{if, in an
+exact sequence $A\longrightarrow B\longrightarrow C\longrightarrow
+D\longrightarrow E$, the four outer terms lie in $C'$, then the middle term
+$C$ also lies in $C'$.} By (i), $C'$ is completely determined by its class of
+objects. Condition (ii) is equivalent to saying that for every morphism
+$P\longrightarrow Q$ with $P,Q\in C'$, the kernel and cokernel lie in $C'$,
+and that for every exact sequence
+$0\longrightarrow R'\longrightarrow R\longrightarrow R''\longrightarrow 0$
+with $R',R''\in C'$, one has $R\in C'$. It follows immediately that $C'$ is
+itself an abelian category and that, for a morphism $u:A\longrightarrow B$ in
+$C'$, its kernel and cokernel, and hence also its image and coimage, are
+identical to the kernel and cokernel, respectively, computed in $C$.
+
+\LayerTarget{tohoku:def:thick-subcategory}
+The subcategory $C'$ of $C$ is called \textit{thick} if it satisfies condition
+(i) above and the following strengthening of condition (ii): (iii)
+\textit{if, in an exact sequence $A\longrightarrow B\longrightarrow C$, the
+outer terms $A,C$ lie in $C'$, then $B$ also lies in $C'$.} If $C$ is the
+abelian category of abelian groups, this gives the notion of a ``class of
+abelian groups'' in [17]. As in [17], condition (iii) is equivalent to the
+conjunction of the following three conditions: every zero object lies in
+$C'$; every object isomorphic to a subobject or quotient object of an object
+of $C'$ lies in $C'$; and every extension of two objects of $C'$ lies in
+$C'$.
+
+\LayerTarget{tohoku:def:quotient-category}
+Let $C$ be an abelian category and $C'$ a thick subcategory. We shall define a
+new abelian category, denoted $C/C'$ and called the \textit{quotient category
+of $C$ by $C'$}. The objects of $C/C'$ are, by definition, the objects of
+$C$. We shall define the morphisms from $A$ to $B$ in $C/C'$, called
+``morphisms modulo $C'$ from $A$ to $B$''.
+
+\LayerTarget{tohoku:def:quasi-equal}
+Say that a subobject $A'$ of $A$ is equal to $A$ modulo $C'$, or
+\textit{quasi-equal} to $A$, if $A/A'\in C'$. Every subobject of $A$
+containing $A'$ is then again quasi-equal to $A$, and the infimum of two
+subobjects of $A$ quasi-equal to $A$ is again quasi-equal to $A$. Dually, we
+introduce the notion of a quotient of $B$ quasi-equal to $B$: such a quotient
+$B/N$ is quasi-equal to $B$ if $N\in C'$.
+
+\LayerTarget{tohoku:def:quotient-morphism}
+A morphism from $A$ to $B$ modulo $C'$ is represented by a morphism $f'$ from
+a subobject $A'$ of $A$ quasi-equal to $A$ to a quotient $B'$ of $B$
+quasi-equal to $B$. A morphism $f'':A''\longrightarrow B''$ satisfying the
+same conditions represents the same morphism modulo $C'$ if and only if
+there exist $A'''\leq\mathrm{Inf}(A',A'')$ and
+$B'''\leq\mathrm{Inf}(B',B'')$, with $A'''$ quasi-equal to $A$ and $B'''$
+quasi-equal to $B$, such that the morphisms $A'''\longrightarrow B'''$
+induced by $f'$ and $f''$ are identical. This relation between $f'$ and $f''$
+is indeed an equivalence relation, so the preceding definition of morphisms
+modulo $C'$ is coherent.
+
+\LayerTarget{tohoku:def:quotient-hom}
+Suppose that, for every $A\in C$, the subobjects of $A$ form a set, as is true
+for all known categories. We may then consider the set of morphisms from $A$
+to $B$ modulo $C'$, denoted $\mathrm{Hom}_{C/C'}(A,B)$. It appears as the
+direct limit of the abelian groups $\mathrm{Hom}_C(A',B')$, where $A'$ ranges
+over the subobjects of $A$ quasi-equal to $A$ and $B'$ ranges over the
+quotients of $B$ quasi-equal to $B$; consequently it may be regarded as an
+abelian group.
+
+\LayerTarget{tohoku:def:quotient-composition:p1}
+We likewise define a pairing
+
+\[
+ \mathrm{Hom}_{C/C'}(A,B)\times\mathrm{Hom}_{C/C'}(B,C)
+ \longrightarrow\mathrm{Hom}_{C/C'}(A,C)
+\]
+
+\noindent as follows. Let $u\in\mathrm{Hom}_C(A',B')$ represent
+$u'\in\mathrm{Hom}_{C/C'}(A,B)$, and let
+$v\in\mathrm{Hom}_C(B'',C')$ represent
+$v'\in\mathrm{Hom}_{C/C'}(B,C)$. Let $Q$ be the image of the canonical
+morphism $B''\longrightarrow B'$ from
+
+\TohokuContinuation{139}

@@ -1,0 +1,68 @@
+% Corrected French for printed p.143.
+% Correction: restore the missing quotient slash in F(M/A)/Im(F(M)).
+\SourcePage{143}
+
+\LayerTarget{tohoku:remark:satellites-small-skeleton:p2}
+\noindent abéliens définis sur $k$ dont la composante connexe de l'élément
+neutre est une ``variété abélienne''. (On est obligé de supposer la
+caractéristique nulle, sinon un homomorphisme bijectif ne serait pas
+nécessairement un isomorphisme). Indiquons seulement qu'on démontre le
+résultat énoncé ci-dessus en construisant $S^1F(A)$ comme limite inductive des
+objets $F(M/A)/\mathrm{Im}(F(M))$ pour ``tous'' les monomorphismes
+$A\longrightarrow M$ dans $C$, préordonnés en disant que
+$A\longrightarrow M$ est ``majoré'' par $A\longrightarrow M'$ si on peut
+trouver un morphisme $M\longrightarrow M'$ induisant l'identité sur $A$.
+
+\LayerTarget{tohoku:section:2.3}
+\noindent\textbf{2.3. Foncteurs dérivés.} Soient $C$ et $C'$ deux catégories
+abéliennes. La théorie des foncteurs dérivés d'un foncteur additif $F$ de $C$
+dans $C'$ se développe comme dans [6, Chap. V], à cela près qu'il faut supposer
+suivant les cas que tout objet $A\in C$ est isomorphe à un sous-truc d'un objet
+injectif, resp. à un truc quotient d'un objet projectif, ou les deux.
+
+\LayerTarget{tohoku:construction:right-derived-functors:p1}
+Ainsi, pour pouvoir définir les foncteurs dérivés \textit{droits} d'un foncteur
+\textit{covariant} ou les foncteurs dérivés \textit{gauches} d'un foncteur
+\textit{contravariant}, il faut supposer que tout objet $A\in C$ est isomorphe
+à un sous-truc d'un objet injectif, d'où on conclut en effet que tout $A\in C$
+admet une résolution injective\footnote{Une \textit{résolution droite} d'un
+$A\in C$ est par définition un complexe $C$ à degrés positifs, muni d'un
+``homomorphisme d'augmentation'' $A\longrightarrow C$ ($A$ étant considéré
+comme un complexe réduit au degré 0), de façon que la suite
+$0\longrightarrow A\longrightarrow C^0\longrightarrow C^1\longrightarrow
+\cdots$ soit exacte. On appelle \textit{résolution injective} de $A$ une
+résolution $C$ de $A$ telle que les $C^i$ soient des objets injectifs. Les
+\textit{résolutions gauches} de $A$, et en particulier les \textit{résolutions
+projectives} de $A$, se définissent dualement.} :
+$0\longrightarrow A\longrightarrow C^0\longrightarrow C^1\longrightarrow
+\cdots$, d'où la définition des
+$R^iF(A)=H^i(F(C))$ (où $C$ désigne le complexe des $C^i$). Si on veut définir
+des foncteurs dérivés gauches d'un foncteur covariant ou des foncteurs dérivés
+droits d'un foncteur contravariant, il faut de même supposer que tout objet
+$A\in C$ est isomorphe à un quotient d'un objet projectif. Et enfin, pour
+définir des foncteurs dérivés d'un foncteur mixte en plusieurs variables, il
+faut faire sur la catégorie de chaque variable l'hypothèse appropriée. À cela
+près, l'exposé de [6] se transporte tel quel.
+
+\LayerTarget{tohoku:morphism:satellite-to-derived}
+En particulier, si $F$ est par exemple covariant et si on peut former les
+foncteurs dérivés droits $R^iF$, alors (posant $R^iF=0$ pour $i<0$)
+$RF=(R^iF)$ est un foncteur cohomologique (dit \textit{foncteur cohomologique
+dérivé droit de $F$}), et on a un morphisme canonique de $\partial$-foncteurs
+à degrés positifs $SF\longrightarrow RF$ (où $SF=(S^iF)$ est le
+$\partial$-foncteur universel à degrés positifs satellite de $F$, qui existe
+en vertu de th. 2.2.2.) ; ce dernier est un isomorphisme si et seulement si
+$F$ est exact à gauche. Notons qu'il semble que la considération des $R^iF$
+n'ait guère d'intérêt que dans le cas où $F$ est exact à gauche, i.e. quand ils
+coïncident avec les foncteurs satellites ; cependant la définition simultanée
+des $R^iF$ par résolutions injectives est plus maniable que la définition
+récurrente des $S^iF$, et en particulier se prête mieux à la construction des
+suites spectrales les plus importantes (voir 2.4).
+
+\LayerTarget{tohoku:construction:derived-bifunctor:p1}
+Soient $C_1,C_2,C'$ trois catégories abéliennes, soit $T(A,B)$ un bifoncteur
+additif de $C_1\times C_2$ dans $C'$, que nous supposerons pour fixer les idées
+contravariant en $A$ et covariant en $B$. Supposons que tout objet de $C_2$
+soit isomorphe à un sous-truc d'un objet injectif, on peut alors construire les
+
+\TohokuContinuation{144}

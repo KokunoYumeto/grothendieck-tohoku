@@ -1,0 +1,75 @@
+% Direct-authority diplomatic French for printed p.154.
+\SourcePage{154}
+
+\LayerTarget{tohoku:def:presheaf-and-sheaf:p2}
+\noindent que les $F(U)$ sont des groupes (resp. des anneaux etc.) et que les
+$\varphi_{VU}$ sont des homomorphismes, on obtient la notion de préfaisceau
+(ou de faisceau) de groupes (resp. d'anneaux etc.) ; plus généralement, on
+pourrait définir la notion de préfaisceau ou faisceau à valeurs dans une
+catégorie (cf. 1.1) donnée. Les préfaisceaux, ou les faisceaux, sur $X$, à
+valeurs dans une catégorie donnée, forment une catégorie, les morphismes étant
+définis comme morphismes de systèmes inductifs. Les préfaisceaux ou faisceaux
+sur $X$, à valeurs dans une catégorie \textit{additive}, par exemple la
+catégorie des groupes abéliens, forment une catégorie additive, et dans le cas
+des préfaisceaux et faisceaux de groupes abéliens, même une catégorie
+abélienne. (Pour abréger, nous dirons \textit{faisceau abélien} et
+\textit{préfaisceau abélien} pour un faisceau ou préfaisceau de groupes
+abéliens).
+
+\LayerTarget{tohoku:remark:sheaves-vs-presheaves-abelian}
+Mais on fera attention que le foncteur identique, qui à un faisceau abélien
+fait correspondre le préfaisceau abélien correspondant, est exact à gauche
+mais non pas exact : si on a un homomorphisme de faisceaux
+$u:F\longrightarrow G$, son conoyau en tant qu'homomorphisme de préfaisceaux
+est le préfaisceau
+\[
+Q(U)=G(U)/\operatorname{Im}F(U),
+\]
+qui en général n'est pas un faisceau ; son conoyau en tant qu'homomorphisme de
+faisceaux est le faisceau \textit{associé} au préfaisceau $Q$ (voir plus bas).
+Nous n'insisterons pas plus sur ces questions, assez bien connues actuellement
+(cf. [4] et le livre de Godement [9]).
+
+\LayerTarget{tohoku:def:etale-space-from-presheaf}
+Soit $F$ un préfaisceau d'ensembles sur $X$, on pose pour tout $x\in X$ :
+\[
+F(x)=\varinjlim_{U\ni x}F(U),
+\]
+la limite inductive étant prise suivant l'ordonné filtrant des vosinages
+ouverts $U$ de $x$. Sur l'ensemble $\overline F$, réunion des $F(x)$, on met
+la topologie engendrée par l'ensemble des parties de $\overline F$ qui sont de
+la forme $A(f)$, où pour tout ouvert $U\subset X$ et tout $f\in F(U)$, on
+désigne par $A(f)$ l'ensemble des images canoniques $f(x)$ de $f$ dans les
+$F(x)$, $x\in U$. Quand $\overline F$ est muni de cette topologie,
+l'application naturelle de $\overline F$ dans $X$ est un homéomorphisme local
+(i. e. tout point de $\overline F$ a un voisinage ouvert appliqué
+homéomorphiquement sur un ouvert de $X$), nous dirons (en suivant Godement)
+que $\overline F$ est un \textit{espace étalé} dans $X$.
+
+\LayerTarget{tohoku:prop:sheaves-etale-spaces-equivalence}
+D'ailleurs un espace étalé dans $X$, soit $E$, définit un faisceau
+$\mathfrak F(E)$ de façon naturelle, savoir celui qui à un ouvert $U$ associe
+l'ensemble des \og section\fg{} continues de $E$ au dessus de $U$ ; de plus
+l'espace étalé $\overline{\mathfrak F(E)}$ associé à $\mathfrak F(E)$
+s'identifie canoniquement à $E$. Si on part d'un préfaisceau $F$ sur $X$, on
+a d'autre part un homomorphisme canonique
+\[
+F\longrightarrow\mathfrak F(\overline F),
+\]
+car toute $f\in F(U)$ définit une section continue
+$x\longmapsto f(x)$ de $\overline F$ sur $U$ ; cet homomorphisme est un
+isomorphisme si et seulement si $F$ est un faisceau. Ces considérations
+prouvent : (i) \textit{La notion de faisceau d'ensembles sur $X$ est
+équivalente à la notion d'espace étalé dans $X$} (de façon précise, nous avons
+défini une équivalance de la catégorie des faisceaux d'ensembles sur $X$, sur
+avec la catégorie des espaces étalés dans $X$).
+
+\LayerTarget{tohoku:construction:sheafification:p1}
+(ii) \textit{À tout préfaisceau $F$ sur $X$ correspond un faisceau
+$\mathfrak F(\overline F)$ et un homomorphisme
+$F\longrightarrow\mathfrak F(\overline F)$, qui est un isomorphisme si et
+seulement si $F$ est un faisceau.} (D'ailleurs, $\mathfrak F(\overline F)$ est
+un
+
+\TohokuContinuation{155}
+

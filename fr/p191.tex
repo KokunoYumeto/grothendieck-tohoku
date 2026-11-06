@@ -1,0 +1,93 @@
+% Corrected French for printed p.191; departures are append-only below.
+\clearpage
+\SourcePage{191}
+
+\LayerTarget{tohoku:section:4.3}
+\SectionHeading{4.3. Cas d'un faisceau d'anneaux constant.}
+
+\LayerTarget{tohoku:setup:constant-ring-sheaf}
+Supposons que $\mathbf O$ soit le faisceau d'anneaux constant défini par un
+anneau avec unité $O$. Soit $M$ un $O$-module, et soit $\mathbf M$ le
+$\mathbf O$-Module constant qu'il définit. Pour tout $\mathbf O$-Module $A$,
+on a alors un isomorphisme naturel
+
+\LayerTarget{tohoku:eq:4.3.1}
+\[
+\tag{4.3.1}
+\mathrm{Hom}_{\mathbf O}(\mathbf M,A)=\mathrm{Hom}_O(M,\Gamma(A)).
+\]
+
+C'est là un isomorphisme fonctoriel, qu'on peut aussi écrire
+
+\LayerTarget{tohoku:eq:4.3.2}
+\[
+\tag{4.3.2}
+h_{\mathbf M}=h_M\Gamma
+\]
+
+\LayerTarget{tohoku:setup:functors-h-constant-module}
+où on pose, comme au numéro précédent,
+$h_{\mathbf M}(A)=\mathrm{Hom}_{\mathbf O}(\mathbf M,A)$,
+$h_M(N)=\mathrm{Hom}_O(M,N)$ pour tout $\mathbf O$-Module $A$ et tout
+$O$-module $N$. $\Gamma$ est considéré comme un foncteur de
+$C^{\mathbf O}$ dans la catégorie $C^O$ des $O$-modules à gauche, et
+$h_{\mathbf M}$ comme un foncteur de $C^{\mathbf O}$ dans la catégorie des
+groupes abéliens. Le théorème 3.4.1 s'applique, grâce au
+
+\LayerTarget{tohoku:lemma:4.3:gamma-injective}
+\noindent\textsc{Lemme.} \textit{Si $A$ est un $\mathbf O$-Module injectif,
+alors $\Gamma(A)$ est un $O$-module injectif.}
+
+\LayerTarget{tohoku:proof:lemma-4.3-gamma-injective}
+Il faut montrer que le foncteur
+$M\longmapsto\mathrm{Hom}_O(M,\Gamma(A))$ est exact, ce qui résulte aussitôt
+de la formule (4.3.1), puisque $M\longmapsto\mathbf M$ est un foncteur exact.
+On obtient donc, grâce au théorème 3.4.1, et en remarquant que les foncteurs
+dérivés de $\Gamma$ sont les mêmes, qu'on considère $\Gamma$ comme prenant
+ses valeurs dans $C^O$ ou dans la catégorie $C$ des groupes abéliens :
+
+\LayerTarget{tohoku:theorem:4.3.1}
+\noindent\textsc{Théorème 4.3.1.} \textit{Soient $X$ un espace, $O$ un anneau
+avec unité, $M$ un $O$-module, $\mathbf O$ et $\mathbf M$ les faisceaux
+constants sur $X$ définis par $O$ et $M$. Il existe alors un foncteur spectral
+cohomologique sur $C^{\mathbf O}$, aboutissant au foncteur gradué
+$(\mathrm{Ext}_{\mathbf O}^p(X;\mathbf M,A))$, et dont le terme initial est}
+
+\LayerTarget{tohoku:eq:4.3.3}
+\[
+\tag{4.3.3}
+\mathrm{II}_2^{p,q}(A)=\mathrm{Ext}_O^q(M,H^p(X,A)).
+\]
+
+\LayerTarget{tohoku:remark:edge-maps-and-five-term-sequence-4.3.1}
+On en conclut comme d'habitude des ``edge-homomorphisms'' et une suite exacte
+à 5 termes que le lecteur explicitera.
+
+\LayerTarget{tohoku:construction:computing-constant-sheaf-spectral-functor}
+Pour calculer le foncteur spectral, nous utiliserons le corollaire 1 à la
+proposition 2.5.3, en utilisant le foncteur résolvant $\Gamma C(A)$ de
+$\Gamma$ (qu'on considère ici comme foncteur covariant de $C^{\mathbf O}$
+dans $C^O$), $C(A)$ étant la résolution canonique de $A$ (cf. 2.3), et le
+foncteur résolvant $h_L$ de $h_M$, où $L$ est une résolution gauche de $M$ par
+des $O$-modules libres. On trouve la première partie de la
+
+\LayerTarget{tohoku:proposition:4.3.2}
+\noindent\textsc{Proposition 4.3.2.} \textit{Sous les conditions du théorème
+4.3.1, choisissons une résolution gauche $L$ de $M$ par des $O$-modules
+libres. Alors le foncteur spectral du théorème 4.3.1 se calcule en prenant la
+deuxième suite spectrale du bicomplexe $\mathrm{Hom}_O(L,\Gamma C(A))$, où
+$C(A)$ est la résolution canonique de $A$ (cf. 2.3). Si on suppose les $L_i$
+isomorphes à des $O^{n_i}$ ($n_i$ entier $>0$), la première suite spectrale de
+ce bicomplexe donne le foncteur spectral du théorème 4.2.1.}
+
+\LayerTarget{tohoku:proof:proposition-4.3.2}
+Pour la dernière assertion, il suffit de considérer la résolution $\mathbf L$
+de $\mathbf M$ déduite de $L$, et de lui appliquer le corollaire 3 à la
+proposition 4.2.4.
+
+\LayerTarget{tohoku:reduction:kunneth-for-constant-sheaves}
+La proposition précédente ramène le calcul de
+$\mathrm{Ext}_{\mathbf O}(\mathbf M,A)$ et de ses suites spectrales à un
+classique problème du type Künneth. Ainsi :
+
+\TohokuContinuation{192}

@@ -1,0 +1,83 @@
+% Source-aligned English for printed p.196.
+\clearpage
+\SourcePage{196}
+
+\LayerTarget{tohoku:result:abelian-g-sheaves-additive}
+In particular, the abelian $G$-sheaves form an additive category, whose
+properties we shall now indicate.
+
+\LayerTarget{tohoku:definition:g-o-module}
+More generally, let $O$ be a $G$-sheaf of rings with identity, and consider
+the sheaves $A$ on $X$ that are both abelian $G$-sheaves and $O$-modules, the
+operations of $O$ on $A$ being compatible with the operations of $G$ (i.e.
+the natural homomorphism of sheaves of sets
+$O\times A\longrightarrow A$ being a $G$-homomorphism). Such a sheaf will be
+called a \textit{$G$-$O$-module}. Calling a sheaf homomorphism that is both an
+$O$-homomorphism and a $G$-homomorphism a
+\textit{$G$-$O$-homomorphism}, we see that the sum or composite of two
+$G$-$O$-homomorphisms is a $G$-$O$-homomorphism.
+
+\LayerTarget{tohoku:definition:category-g-o-modules}
+Thus the $G$-$O$-modules form an \textit{additive category}, denoted
+$C^{O(G)}$; if $O$ is the constant sheaf of integers (with the trivial
+operations of $G$), we recover the category of abelian $G$-sheaves, denoted
+$C^{X(G)}$.
+
+\LayerTarget{tohoku:comparison:trivial-action-g-o-modules}
+If $G$ acts trivially on $X$, the category $C^{O(G)}$ may be interpreted as
+the category of $O'$-modules, where $O'$ is a suitable sheaf of rings. For
+example, if $G$ acts trivially on $O$, we have
+$O'=O\otimes_{\mathbf Z}\mathbf Z(G)$, where $\mathbf Z(G)$ denotes the
+algebra of $G$ over the ring $\mathbf Z$ of integers, or rather the constant
+sheaf that it defines. The results of 3.1 remain valid with small
+modifications:
+
+\LayerTarget{tohoku:proposition:5.1.1}
+\noindent\textsc{Proposition 5.1.1.} \textit{Let $O$ be a $G$-sheaf of rings
+on $X$. Then the additive category $C^{O(G)}$ of $G$-$O$-modules is an
+abelian category satisfying axioms AB 5) and AB 3*) of 1.5, and it has a
+generator.}\textsuperscript{9)}
+
+\LayerTarget{tohoku:proof:5.1.1:p1}
+The verification is immediate except for the existence of a generator, which
+we shall now construct, generalizing the construction of 3.1.
+
+\LayerTarget{tohoku:construction:generator-l-u}
+For every open subset $U$ of $X$, let $L(U)$ be the $O$-module that is the
+direct sum of the $O$-modules $O_{g\cdot U}$ for $g\in G$. The sheaf $L(U)$
+can evidently be regarded as a $G$-sheaf, so that it is even a
+$G$-$O$-module. If $A$ is any $G$-$O$-module, a $G$-$O$-homomorphism from
+$L(U)$ to $A$ is determined by its restriction to $O_U$, which is an
+$O$-homomorphism from $O_U$ to $A$ and may, moreover, be prescribed
+arbitrarily in advance. Giving such a homomorphism is also equivalent to
+giving a section of $A$ over $U$.
+
+\LayerTarget{tohoku:result:generator-family-g-o-modules}
+If $B$ is a proper sub-$G$-$O$-module of $A$, then on some suitable open
+subset $U$ one can find a section of $A$ that is not a section of $B$.
+Consequently, the family of the $L(U)$ is a family of generators of
+$C^{O(G)}$, and their direct sum, as $U$ ranges over all open subsets of $X$,
+is therefore a generator.
+
+\LayerTarget{tohoku:conclusion:injective-g-o-embedding:p1}
+It follows in particular from Proposition 4.1 that every $G$-$O$-sheaf is
+isomorphic to a subsheaf of an injective $G$-$O$-module. It is important for
+the
+
+\LayerTarget{tohoku:footnote:9}
+\begin{quote}
+\footnotesize
+9) This proposition, as well as various subsequent results, can also be
+stated in the following more general context. Let a category $C$, a group
+$G$, and a ``representation of $G$ by functors in $C$'' be given: to every
+$g\in G$ there is associated a functor $F_g:C\longrightarrow C$, in such a
+way that $F_e$ is the identity functor and $F_gF_{g'}=F_{gg'}$ (at least up to
+specified functorial isomorphisms satisfying certain coherence conditions
+that we shall not make explicit). One can then construct the category $C^G$
+of ``objects of $C$ with operator group $G$'', just as $C^{X(G)}$ (for a
+space with operator group $X(G)$) can be constructed from $C^X$. (Compare
+also the special case, Example 1.7.f). Many properties that hold for $C$ are
+then preserved upon passage to $C^G$.
+\end{quote}
+
+\TohokuContinuation{197}

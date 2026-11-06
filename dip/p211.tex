@@ -1,0 +1,82 @@
+% Direct-authority diplomatic French for printed p.211.
+\clearpage
+\SourcePage{211}
+
+\LayerTarget{tohoku:construction:complex-from-local-composition-data}
+\noindent uniquement la loi de composition $(g,g')\mapsto g^{-1}g'$ dans $L$
+(là où elle est définie), les intersections $D\cap g\cdot D$ ($g\in L$), et
+bien entendu les groupes
+$P(D\cap g_1\cdot D\cap\cdots\cap g_n\cdot D)$ (les $g_i$ dans $L$), leurs
+applications de restrictions et la façon dont les $g_i\in L$ y opèrent.
+
+\LayerTarget{tohoku:remark:1a-local-composition-computation}
+\noindent\textsc{Remarques I.}\quad a) Dans les conditions précédentes,
+supposons par exemple que $P$ soit le faisceau constant défini par un anneau
+commutatif $k$, et que les
+$D\cap g_1\cdot D\cap\cdots\cap g_n\cdot D$ soient acycliques pour $k$, et
+connexes. Alors les valeurs $F_{g_1,\ldots,g_n}$ sont simplement des éléments
+de $k$ (définis pour
+$D\cap g_1\cdot D\cap\cdots\cap g_n\cdot D_n\ne\phi$), et le complexe de ces
+cochaînes donne la cohomlogie $H^*(X;G,k)$. Cela donne une méthode explicite de
+calcul si on suppose l'ensemble $L$ ci-dessus fini (ce qui implique que le
+complexe $C(\mathcal U,k)^G$ est libre de type fini en toute dimension). Il
+semble que ceci doive permettre par exemple la calcul de la cohomologie des
+groupes modulaires à plusieurs variables (ici
+$H^*(X;G,\mathbf Z)=H^*(G,\mathbf Z)$, puisque $X$ est un ouvert contractile de
+l'espace euclidien), quand on connaît un domaine fondamental assez simple $D$,
+(sans avoir à regarder ce qui se passe aux points multiples comme dans la
+méthode [10], qui semble impraticable pour un ensemble de points fixes trop
+compliqué).
+
+\LayerTarget{tohoku:remark:1b-spectral-sequence-comparison}
+b) Prenons $D=X$, donc $\mathcal U=(g\cdot X)_{g\in G}$, on constate que la
+suite spectrale du théorème 5.5.3 n'est autre que la deuxième suite spectrale du
+théorème 5.2.1, de terme initial $H^p(G,H^q(X,A))$. On notera d'ailleurs qu'il
+y a en tous cas un homomorphisme fonctoriel canonique de la suite spectrale du
+théorème 5.5.3. dans la deuxième suite spectrale du théorème 5.5.1, comme on
+voit en complétant le lemme 5.5.1. resp. 5.5.2. dans ce sens.
+
+\LayerTarget{tohoku:construction:equivariant-cech-refinement-maps}
+Pour finir ce numéro, nous allons donner quelques indications sur le calcul
+``céchiste'' des $H^n(X;G,A)$, généralisant les considérations de 3.8. Soient
+$\mathcal U$ et $\mathcal V$ deux $G$-recouvrements, $\mathcal V$ plus fin que
+$\mathcal U$, on va définir des homomorphismes canoniques
+
+\LayerTarget{tohoku:equation:5.5.12}
+\[
+\tag{5.5.12}
+H^n(\mathcal U;G,P)\longrightarrow H^n(\mathcal V;G,P)
+\]
+
+\LayerTarget{tohoku:proof:independence-of-equation-5.5.12}
+définis pour tout $G$-préfaisceau abélien $P$, et fonctoriels en $P$. Tout
+d'abord, posant $\mathcal U=(U_i)_{i\in I}$,
+$\mathcal V=(V_j)_{j\in J}$, supposons qu'il existe une application
+$\varphi:J\to I$ telle que $V_j\subset U_{\varphi(j)}$ pour tout $j\in J$, et
+qui commute à $G$. On en déduit classiquement un homomorphisme
+$\overline\varphi:C(\mathcal U,P)\to C(\mathcal V,P)$, et qui de plus ici
+commute à $G$, d'où en vertu de (5.5.3) un homomorphisme (5.5.12). Ce dernier
+est \textit{indépendant du choix de $\varphi$}. Si en effet $\varphi'$ est une
+autre application ayant les mêmes propriétés, on construit classiquement une
+homotopie bien déterminée $s$ de $\overline\varphi$ à
+$\overline{\varphi'}$ :
+$\overline\varphi-\overline{\varphi'}=\partial s+s\partial$, et pour des raisons
+évidentes de ``transport de structure'' $s$ commute à $G$, d'où résulte que
+$\overline\varphi$ et $\overline{\varphi'}$ définissent le même homomorphisme
+(5.5.12).
+
+\LayerTarget{tohoku:construction:fixed-point-free-refinement}
+Si on ne suppose plus que l'on peut trouver une $\varphi$ comme ci-dessus, on
+considère l'ensemble $I'=G\times I$ où on fait opérer $G$ par
+$g'(g,i)=(g'g,i)$, et le $G$-recouvrement $\mathcal U'$ sans points fixes
+$(U'_{(g,i)})_{(g,i)\in G\times I}$ défini par
+$U'_{(g,i)}=U_{g\cdot i}=gU_i$. L'application
+$\psi(g,i)=g\cdot i$ a les propriétés requises plus haut, et définit donc un
+homomorphisme.
+
+\LayerTarget{tohoku:equation:fixed-point-free-refinement-map}
+\[
+H^n(\mathcal U;G,P)\longrightarrow H^n(\mathcal U';G,P)
+\]
+
+\TohokuContinuation{212}

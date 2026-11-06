@@ -1,0 +1,79 @@
+% Source-aligned English for printed p.151.
+\SourcePage{151}
+
+\LayerTarget{tohoku:construction:resolving-functor-spectral-sequences:p2}
+\noindent hyperhomology spectral sequences (2.4.2) of $F$ with respect to the
+complex $K$.
+
+\LayerTarget{tohoku:prop:2.5.3}
+\noindent\textsc{Proposition 2.5.3.} --- \textit{The isomorphisms (2.5.3)
+arise from natural isomorphisms of the first, respectively second, spectral
+sequence of the bicomplex $\mathbf F(K)$ with the first, respectively second,
+hyperhomology spectral sequence of $F$ with respect to $K$.}
+
+\LayerTarget{tohoku:prop:2.5.3:proof:p1}
+We now make these isomorphisms explicit. Let
+$C(K)=(C^{p,q}(K))_{p,q}$ be an \textquotedblleft injective
+resolution\textquotedblright{} of $K$ in the sense of [6, Chapter XVII].
+Regard $K$ as a bicomplex whose second degree is zero; there is then an
+augmentation homomorphism $K\longrightarrow C(K)$. Consider the bicomplex
+$M(K)=\mathbf F(C(K))$ defined by
+\[
+M^{p,q}(K)=\sum_{q'+q''=q}\mathbf F^{q''}(C^{p,q'}(K)).
+\]
+Although $M(K)$ is not uniquely determined by $K$, its two spectral sequences
+and their common abutment are: $C(K)$ is determined up to a homotopy
+equivalence of bicomplexes. They are therefore well-defined spectral functors
+of $K$. Put $L(K)=F(C(K))$. The augmentations
+$K\longrightarrow C(K)$ and $F\longrightarrow\mathbf F$ define
+homomorphisms of bicomplexes
+\[
+L(K)=F(C(K))\longrightarrow M(K)=\mathbf F(C(K))
+\longleftarrow\mathbf F(K).
+\]
+Thus there are natural homomorphisms of the corresponding spectral sequences,
+independent of the choice of $C(K)$:
+\LayerTarget{tohoku:eq:2.5.4}
+\[
+\tag{2.5.4}
+\begin{aligned}
+\mathrm I L(K)&\longrightarrow\mathrm I M(K)\longleftarrow\mathrm I\mathbf F(K),\\
+\mathrm{II}L(K)&\longrightarrow\mathrm{II}M(K)\longleftarrow\mathrm{II}\mathbf F(K).
+\end{aligned}
+\]
+They define the same homomorphisms on the abutments,
+\[
+HL(K)\longrightarrow HM(K)\longleftarrow H\mathbf F(K).
+\]
+On the initial terms, the homomorphisms in (2.5.4) give
+\LayerTarget{tohoku:eq:2.5.5}
+\[
+\tag{2.5.5}
+\begin{aligned}
+{}_{\mathrm I}E_2^{p,q}L(K)&\longrightarrow{}_{\mathrm I}E_2^{p,q}M(K)
+\longleftarrow{}_{\mathrm I}E_2^{p,q}\mathbf F(K),\\
+{}_{\mathrm{II}}E_2^{p,q}L(K)&\longrightarrow{}_{\mathrm{II}}E_2^{p,q}M(K)
+\longleftarrow{}_{\mathrm{II}}E_2^{p,q}\mathbf F(K).
+\end{aligned}
+\]
+We shall prove that the homomorphisms in (2.5.5) are isomorphisms, and that
+the resulting isomorphisms between the extreme terms of (2.5.5), which are
+the initial terms of the hyperhomology spectral sequences of $F$ for $K$ and
+of the bicomplex $\mathbf F(K)$, are those in (2.5.3). It will follow that
+the homomorphisms in (2.5.4) are isomorphisms, and the resulting isomorphisms
+between their extreme terms are the ones sought. It therefore suffices to
+show that the middle terms in the two lines of (2.5.5) have the forms
+$H^p(R^q(F(K)))$ and $R^pF(H^q(K))$, respectively. Once this is done,
+checking that the homomorphisms in (2.5.5) are the natural isomorphisms is
+purely mechanical and is implicit in the proof that follows.
+
+We shall show that $H_{\mathrm{II}}(M)^{p,q}=R^qF(K^p)$, which immediately
+gives $ {}_{\mathrm I}E_2^{p,q}(M)=H^p(R^qF(K))$. For fixed $p$,
+$M^{p*}=(M^{p,q})_q$ is the simple complex associated to the bicomplex
+\[
+(\mathbf F^{q''}(C^{p,q'}(K)))_{q',q''}=\mathbf F(C(K^p)),
+\]
+where $C(K^p)$ denotes the complex $C^{p*}(K)$,
+
+\TohokuContinuation{152}
+

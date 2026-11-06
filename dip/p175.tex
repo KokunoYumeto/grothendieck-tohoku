@@ -1,0 +1,97 @@
+% Direct-authority diplomatic French for printed p.175.
+\SourcePage{175}
+
+\LayerTarget{tohoku:construction:cartan-leray-fixed-cover:p2}
+\noindent droit $R(H^0C)$ du foncteur $H^0C$, et dont le terme initial est
+
+\LayerTarget{tohoku:eq:cartan-leray-abstract-E2}
+\[
+E_2^{p,q}=H^p(R^qC).
+\]
+
+\LayerTarget{tohoku:proof:cartan-leray-derived-functor}
+On peut le voir, soit directement en prenant une résolution injective de
+$F\in C$ et regardant les suites spectrales du-bicomplexe obtenu en
+transformant cette résolution par $C$ ; soit mieux, en remarquant que si on
+considère $H^0(K)$ comme un foncteur covariant à gauche sur $C'$, (à valeurs
+dans la catégorie des groupes abéliens), ses foncteurs dérivés droits sont les
+$H^p(K)$, de sorte que notre suite spectrale est un simple cas particulier du
+théorème 2.4.1. Bien entendu, $(R^qC)(F)$ est le complexe dont les composantes
+sont les $(R^qC^p)(F)$, si les $C^p$ sont les composantes de $C$. Il reste à
+expliciter, dans le cas qui nous occupe, les $R^qC^p$. En vertu de
+
+\LayerTarget{tohoku:eq:cover-cochains-product}
+\[
+C^pF=\prod_{\sigma^p}\Gamma(U_{\sigma^p},F)
+\]
+(le produit étant étendu à toutes les suites
+$\sigma^p=(i_0,\ldots,i_p)$ de $p+1$ indices du recouvrement
+$\mathcal U=(U_i)_{i\in I}$), on voit aussitôt que
+
+\LayerTarget{tohoku:eq:derived-cover-cochains-product}
+\[
+R^qC^p(F)=\prod_{\sigma^p}R^q(\Gamma(U_{\sigma^p},F)).
+\]
+
+\LayerTarget{tohoku:lemma:open-sections-derived}
+Or si $V$ est une partie ouverte de $X$, les foncteurs dérivés droits du
+foncteur $\Gamma(V,F)=\Gamma(F\mid V)$ s'explicitent aisément, grâce au fait
+que le foncteur restriction $F\longmapsto F\mid V$ de $C^X$ dans $C^V$ est
+exact, et transforme objets injectifs en objets injectifs (prop. 3.1.3) : on
+aura
+
+\LayerTarget{tohoku:eq:open-sections-derived}
+\[
+R^q(\Gamma(V,F))=(R^q\Gamma^V)(V\mid F)=H^q(V,F).
+\]
+
+\LayerTarget{tohoku:def:cohomology-presheaf}
+Désignons donc par $H^q(F)$ le \textit{préfaisceau} sur $X$ dont la valeur,
+sur un ouvert $V$, est $H^q(V,F)$, on aura alors
+
+\LayerTarget{tohoku:eq:derived-cover-cochains-presheaf}
+\[
+R^qC^p(F)=\prod_{\sigma^p}\Gamma(U_{\sigma^p},H^q(F))
+=C^p(\mathcal U,H^q(F)).
+\]
+Bien entendu, l'opération de différentiation de
+$R^qC(F)=\sum_p R^qC^p(F)$ est celui de $C(\mathcal U,H^q(F))$, d'où en
+définitive
+
+\LayerTarget{tohoku:eq:cartan-leray-E2}
+\[
+E_2^{p,q}(F)=H^p(\mathcal U,H^q(F)).
+\]
+Quant à l'aboutissement de la suite spectrale, c'est le foncteur dérivé droit
+de $H^0C(F)=\Gamma(X,F)$, i.e. le foncteur $(H^n(X,F))$. D'où :
+
+\LayerTarget{tohoku:theorem:3.8.1}
+\noindent\textsc{Théorème 3.8.1.} --- \textit{Soit $X$ un espace topologique
+muni d'un recouvrement ouvert $\mathcal U$. Alors il existe un foncteur
+spectral cohomologique sur la catégorie $C^X$ des faisceaux de groupes
+abéliens sur $X$, aboutissant au foncteur gradué $(H^n(X,F))$, et dont le
+terme initial est}
+
+\LayerTarget{tohoku:eq:3.8.1-E2}
+\[
+E_2^{p,q}=H^p(\mathcal U,H^q(F)),
+\]
+\textit{où $H^q(F)$ désigne (pour tout faisceau $F\in C^X$) le préfaisceau
+$V\longmapsto H^q(V,F)$ sur $X$.}
+
+\LayerTarget{tohoku:remark:3.8.1-no-hypotheses}
+On notera que cette suite spectrale est établie ici sans aucune hypothèse de
+paracompacité sur $X$ ou de locale finitude sur $\mathcal U$. La suite
+spectrale précédente donne des homomorphismes fonctoriels
+
+\LayerTarget{tohoku:map:cech-to-derived-cohomology}
+\[
+H^p(\mathcal U,F)\longrightarrow H^p(X,F)
+\]
+et de plus :
+
+\LayerTarget{tohoku:corollary:3.8.1:1:p1}
+\noindent\textsc{Corollaire 1.} \textit{Les homomorphismes précédents sont des
+isomorphismes si}
+
+\TohokuContinuation{176}

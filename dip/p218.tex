@@ -1,0 +1,110 @@
+% Diplomatic French for printed p.218.
+% Printed A in (5.6.11 ter), the extra citation period, and spectral are preserved.
+\clearpage
+\SourcePage{218}
+
+\LayerTarget{tohoku:transition:degeneration-case}
+\LayerTarget{tohoku:corollary:theorem-5.6.3-locally-free}
+\noindent\textsc{Corollaire.}\quad \textit{Si le $G$-$O$-module $A$ est
+localement isomorphe, en tant que $O$-module, à $O^n$, alors on a des
+isomorphismes canoniques}
+
+\LayerTarget{tohoku:equation:5.6.12}
+\begin{equation}
+\operatorname{Ext}_{O,G}^n(X;A,B)
+  =H^n\bigl(X;G,\mathbf{Hom}_O(A,B)\bigr).
+\tag{5.6.12}
+\end{equation}
+
+\LayerTarget{tohoku:proof:theorem-5.6.3-locally-free-corollary}
+Cela résulte de la suite spectrale III, puisque alors
+$\mathbf{Ext}_O^q(A,B)=0$ pour $q>0$ (prop. 4.2.3). En particulier, prenant
+$A=O$, on trouve :
+
+\LayerTarget{tohoku:corollary:theorem-5.6.3-structure-sheaf}
+\noindent\textsc{Corollaire 2.}\quad \textit{On a, pour tout $G$-$O$-Module
+$B$, des isomorphismes fonctoriels :}
+
+\LayerTarget{tohoku:equation:5.6.14}
+\begin{equation}
+\operatorname{Ext}_{O,G}^n(X;O,B)=H^n(X;G,B).
+\tag{5.6.14}
+\end{equation}
+
+\LayerTarget{tohoku:remarks:two-additional-spectral-sequences}
+\noindent\textsc{Remarques.}\quad Signalons encore, dans deux cas
+particuliers, deux autres suites spectrales aboutissant à
+$\operatorname{Ext}_{O,G}^n(X;A,B)$.
+
+\LayerTarget{tohoku:construction:constant-equivariant-crossed-product}
+Supposons que $O$ soit le $G$-faisceau d'anneaux constant défini par un anneau
+$O$ où $G$ opère, et que $A$ soit le $G$-$O$-faisceau constant $\mathbf M$
+défini par un $O$-module $M$ où $G$ opère de façon compatible avec ses
+opérations sur $O$ : $g^\circ(\lambda m)=g(\lambda)g(m)$. Introduisons
+l'anneau $U$ engendré par $O$ et $\mathbf Z(G)$ soumis aux relations de
+commutation $g\lambda g^{-1}=g(\lambda)$, $M$ est donc un $U$-module.
+Considérons le foncteur $h_{U,M}$ sur la catégorie des $U$-modules, défini par
+$h_{U,M}(N)=\operatorname{Hom}_U(M,N)$, on a alors pour tout $G$-$O$-Module
+$B$ :
+$\operatorname{Hom}_{O,G}(M,B)=\operatorname{Hom}_U(M,\Gamma_X(B))$, i.~e.
+on a l'identité fonctorielle
+
+\LayerTarget{tohoku:equation:5.6.5-bis}
+\begin{equation}
+h_{O,G,M}=h_{U,M}\Gamma_X.
+\tag{5.6.5 bis}
+\end{equation}
+
+\LayerTarget{tohoku:spectral-sequence:iv}
+On vérifie facilement de plus que $\Gamma_X$ transforme objets injectifs de
+$C^{O(G)}$ en des $U$-modules injectifs, de sorte que le théorème 2.4.1 donne
+un foncteur spectral cohomologique IV sur la catégorie $C^{O(G)}$,
+aboutissant au foncteur gradué
+$\bigl(\operatorname{Ext}_{O,G}^n(X;M,B)\bigr)$, et dont le terme initial est
+
+\LayerTarget{tohoku:equation:5.6.11-bis}
+\begin{equation}
+\mathrm {IV}_2^{p,q}(B)=\operatorname{Ext}_U^p\bigl(M,H^q(X,B)\bigr).
+\tag{5.6.11 bis}
+\end{equation}
+
+\LayerTarget{tohoku:specialization:trivial-action-on-m}
+Si on suppose de plus que $G$ opère trivialement sur $M$, alors on a aussi
+\[
+\operatorname{Hom}_{O,G}(M,B)
+=\operatorname{Hom}_U(M,\Gamma_X(B))
+=\operatorname{Hom}_O(M,\Gamma_X^G(B)),
+\]
+d'où la formule fonctorielle
+
+\LayerTarget{tohoku:equation:5.6.5-ter}
+\begin{equation}
+h_{O,G,M}=h_{O,M}\Gamma_X^G.
+\tag{5.6.5 ter}
+\end{equation}
+
+\LayerTarget{tohoku:spectral-sequence:v}
+On peut encore montrer que $\Gamma_X^G$ transforme objets injectifs de
+$C^{O(G)}$ en $O$-modules injectifs (en montrant que si $N$ est un $U$-module
+injectif, alors $N^G$ est un $O$-module injectif), et le théorème 2.4.1. donne
+un cinquième foncteur spectral cohomologique, de même aboutissement que les
+précédents, et dont le terme initial est
+
+\LayerTarget{tohoku:equation:5.6.11-ter}
+\begin{equation}
+\mathrm V_2^{p,q}(B)=\operatorname{Ext}_O^p\bigl(M,H^q(X;G,A)\bigr).
+\tag{5.6.11 ter}
+\end{equation}
+
+\LayerTarget{tohoku:comparison:spectral-sequences-iv-v}
+Si $G$ est réduit à l'unité, les suites spectrales IV et V coïncident avec la
+suite spectrale du théorème 4.3.1. Si $X$ est réduit à un point, la suite
+spectrale IV est triviale, mais la suite spectrale V n'est pas triviale en
+général, et ne se réduit pas aux précédentes\textsuperscript{12)}.
+
+\LayerTarget{tohoku:footnote:12}
+\noindent\textsuperscript{12)} Le terme initial de cette suite spectral est
+(avec les notations de 11))
+$\operatorname{Ext}_O^p\bigl(A,H^q(G,B)\bigr)$.
+
+\TohokuContinuation{219}

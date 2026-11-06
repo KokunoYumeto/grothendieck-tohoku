@@ -1,0 +1,89 @@
+% Source-aligned English for printed p.145, with logged indexing correction.
+\SourcePage{145}
+
+\LayerTarget{tohoku:section:2.4:intro}
+\noindent spectral sequences we refer to [6, Chapters XV and XVII], confining
+ourselves to specifying our terminology and isolating the most useful general
+cases in which spectral sequences can be written down below.
+
+\LayerTarget{tohoku:def:filtered-object}
+Let $C$ be an abelian category. A decreasing \textit{filtration} on an object
+$A\in C$ is a family $(F^n(A))$ of subobjects of $A$, indexed by
+$n\in\mathbf Z$, such that $F^n(A)\subset F^{n'}(A)$ if $n\geq n'$. A
+\textit{filtered object} of $C$ is an object equipped with a filtration. If
+$A$ and $B$ are filtered objects, a morphism $u:A\longrightarrow B$ is
+compatible with the filtrations if $u(F^n(A))\subset F^n(B)$ for every $n$.
+With these morphisms, the filtered objects of $C$ form an additive category,
+but not an abelian category, since a bijection in it need not be an
+isomorphism.
+
+\LayerTarget{tohoku:def:associated-graded}
+The \textit{associated graded object} of a filtered object $A$ is the family
+$G^n(A)=F^n(A)/F^{n+1}(A)$, denoted $G(A)$\footnote{These definitions are not
+self-dual. Duality is restored by associating to every decreasing filtration
+of $A$ by $F^n(A)$ the associated decreasing cofiltration
+$F'_n(A):=A/F^n(A)$. On passage to the opposite category, these two become,
+respectively, a decreasing cofiltration and its associated decreasing
+filtration. It is also convenient to put $F_n(A)=F^{1-n}(A)$ and
+$F'^n(A)=F'_{1-n}(A)$, the increasing filtration and cofiltration associated
+to the preceding ones. Depending on the case, one of these four associated
+filtrations is the most convenient. With
+$G^n(A)=\mathrm{Coker}(F^{n+1}(A)\longrightarrow F^n(A))$ and
+$G_n(A)=\mathrm{Ker}(F'_n(A)\longrightarrow F'_{n-1}(A))$, one has
+$G^n(A)=G_{n+1}(A)$. The functors $G^n$ and $G_n$ are interchanged on passage
+to the opposite category. \emph{Editorial correction:} the print instead gives
+$F'_n=A/F_{1-n}$, $G^n=\mathrm{Coker}(F^n\longrightarrow F^{n-1})$, and
+$G^n=G_{-n}$; these formulas contradict $G^n=F^n/F^{n+1}$. The displayed
+convention is the normalization consistent with that definition.}. The
+construction $G(A)$ is covariantly functorial
+in the filtered object $A$.
+
+\LayerTarget{tohoku:def:spectral-sequence}
+A \textit{spectral sequence} in $C$ is a system $E=(E_r^{p,q},E^n)$ consisting
+of: a) objects $E_r^{p,q}\in C$ for integers $p,q,r$ with $r\geq2$; the 2
+could be replaced by any integer $r_0$, although only $r=2$ or $r=1$ seems
+interesting in applications; b) morphisms
+\[
+d_r^{p,q}:E_r^{p,q}\longrightarrow E_r^{p+r,q-r+1}
+\]
+such that $d_r^{p+r,q-r+1}d_r^{p,q}=0$; c) isomorphisms
+\[
+\alpha_r^{p,q}:
+\mathrm{Ker}(d_r^{p,q})/\mathrm{Im}(d_r^{p-r,q+r-1})
+\longrightarrow E_{r+1}^{p,q};
+\]
+d) filtered objects $E^n$ of $C$ for every integer $n$. For each fixed
+$(p,q)$, one requires $d_r^{p,q}=0$ and $d_r^{p-r,q+r-1}=0$ for all
+sufficiently large $r$. Thus $E_r^{p,q}$ is eventually independent of $r$;
+the stable object is denoted $E_\infty^{p,q}$. For each fixed $n$, one also
+requires $F^p(E^n)=E^n$ for sufficiently small $p$ and $F^p(E^n)=0$ for
+sufficiently large $p$; and e) one is given isomorphisms
+\[
+\beta^{p,q}:E_\infty^{p,q}\longrightarrow G^p(E^{p+q}).
+\]
+The family $(E^n)$, without its filtrations, is called the \textit{abutment}
+of the spectral sequence $E$.
+
+\LayerTarget{tohoku:def:morphism-spectral-sequence}
+A \textit{morphism of spectral sequences} from $E=(E_r^{p,q},E^n)$ to
+$E'=(E_r'^{p,q},E'^n)$ is a system of morphisms
+$u_r^{p,q}:E_r^{p,q}\longrightarrow E_r'^{p,q}$ and
+$u^n:E^n\longrightarrow E'^n$ compatible with the filtrations and commuting
+with the $d_r^{p,q}$, $d_r'^{p,q}$, $\alpha_r^{p,q}$, and $\beta^{p,q}$.
+Spectral sequences in $C$ form an additive category, though of course not an
+abelian one.
+
+\LayerTarget{tohoku:def:spectral-functor}
+A \textit{spectral functor} is an additive functor from an abelian category to
+a category of spectral sequences\footnote{For every known spectral functor,
+the abutment seems in fact to be a cohomological functor. The relations between
+the boundary homomorphisms in the abutment and the other constituents of the
+spectral functor remain to be examined.}.
+
+\LayerTarget{tohoku:def:cohomological-spectral-sequence}
+A spectral sequence is \textit{cohomological} if $E_r^{p,q}=0$ for $p<0$ and
+for $q<0$. Then $E_r^{p,q}=E_\infty^{p,q}$ once
+$r>\mathrm{Sup}(p,q+1)$, $E^n=0$ for $n<0$, $F^m(E^n)=0$ if $m>n$, and
+$F^m(E^n)=E^n$ if $m\leq0$.
+
+\TohokuContinuation{146}

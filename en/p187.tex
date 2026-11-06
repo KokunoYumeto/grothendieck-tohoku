@@ -1,0 +1,96 @@
+% Source-aligned English for printed p.187.
+\clearpage
+\SourcePage{187}
+
+\LayerTarget{tohoku:proof:lemma-4.1.1}
+Taking account, then, of the observations preceding Lemma 1, we obtain:
+
+\LayerTarget{tohoku:proposition:4.1.2}
+\noindent\textsc{Proposition 4.1.2.} \textit{Suppose that $O$ is a coherent
+sheaf of left Noetherian rings. Then, for every injective $O$-module $B$ and
+every $x\in X$, $B(x)$ is an injective $O(x)$-module.}
+
+Finally, we also record:
+
+\LayerTarget{tohoku:proposition:4.1.3}
+\noindent\textsc{Proposition 4.1.3.} \textit{Let $A$ and $B$ be two
+$O$-modules. If $B$ is injective, then $\mathbf{Hom}_O(A,B)$ is a flabby sheaf
+(cf. 3.3).}
+
+\LayerTarget{tohoku:proof:proposition-4.1.3}
+Indeed, a section of this sheaf over the open set $U$ identifies with a
+homomorphism from the $O$-module $A_U$ to $B$, where the notation $A_U$ is
+that of 3.5. Since $B$ is injective, this extends to a homomorphism from $A$ to
+$B$, that is, to a section of $\mathbf{Hom}_O(A,B)$ over all of $X$.
+
+\LayerTarget{tohoku:section:4.2}
+\SectionHeading{4.2. The functors $\mathrm{Ext}_O^p(X,A,B)$ and
+$\mathbf{Ext}_O^p(A,B)$ and the fundamental spectral sequence.}
+
+\LayerTarget{tohoku:construction:global-ext-o}
+By the corollary to Proposition 3.1.1, one can take the derived functors of
+every additive covariant functor defined on $C^O$. In particular, this permits
+the usual construction of the functors $\mathrm{Ext}_O^p(A,B)$ in $C^O$ as
+the right derived functors of $B\longmapsto\mathrm{Hom}_O(A,B)$ on $C^O$,
+with values in the category of abelian groups. To avoid notational confusion,
+however, we shall denote these functors by $\mathrm{Ext}_O^p(X;A,B)$, thereby
+indicating both the space $X$ and the sheaf of rings $O$. For every subset $U$
+of $X$, put
+
+\LayerTarget{tohoku:eq:4.2.1}
+\[
+\tag{4.2.1}
+\mathrm{Ext}_O^p(U;A,B)=
+\mathrm{Ext}_{O|U}^p(U;A|U,B|U).
+\]
+
+\LayerTarget{tohoku:construction:ext-restriction-maps}
+By Proposition 3.1.3 and the exactness of $B\longmapsto B|U$, the groups
+$\mathrm{Ext}_O^p(U;A,B)$ are the right derived functors of
+$B\longmapsto\mathrm{Hom}_O(U;A,B)$ on $C^O$. The functorial homomorphisms
+$\mathrm{Hom}_O(U;A,B)\longrightarrow\mathrm{Hom}_O(V;A,B)$ therefore induce
+homomorphisms on the right derived functors:
+
+\LayerTarget{tohoku:eq:4.2.2}
+\[
+\tag{4.2.2}
+\mathrm{Ext}_O^p(U;A,B)\longrightarrow\mathrm{Ext}_O^p(V;A,B)
+\qquad(V\subset U).
+\]
+
+\LayerTarget{tohoku:definition:ext-presheaf}
+Through these maps, the system $\mathrm{Ext}_O^p(U;A,B)$, for variable open
+$U$, becomes an \textit{abelian presheaf} on $X$, denoted
+$\mathrm{Ext}_O^p(-;A,B)$.
+
+\LayerTarget{tohoku:definition:sheaf-ext-o}
+One may also take the right derived functors of $\mathbf{Hom}_O(A,B)$ with
+respect to $B$; these are denoted $\mathbf{Ext}_O^p(A,B)$. By Proposition
+3.1.3 and the evident relation
+$\mathbf{Hom}_O(A,B)|U=\mathbf{Hom}_{O|U}(A|U,B|U)$, there are isomorphisms
+
+\LayerTarget{tohoku:eq:4.2.3}
+\[
+\tag{4.2.3}
+\mathbf{Ext}_O^p(A,B)|U=
+\mathbf{Ext}_{O|U}^p(A|U,B|U).
+\]
+
+\LayerTarget{tohoku:remark:local-nature-of-sheaf-ext}
+This is why the notation need not specify the space on which one is working.
+Figuratively, \textit{the functors $\mathbf{Ext}_O^p(A,B)$ are local in
+nature}, unlike the essentially “global” functors
+$\mathrm{Ext}_O^p(X;A,B)$. By Lemma 3.7.2,
+$\mathbf{Ext}_O^p(A,B)$ can also be regarded as the sheaf associated with the
+presheaf $\mathrm{Ext}_O^p(-;A,B)$ defined above.
+
+\LayerTarget{tohoku:remark:ext-bifunctoriality:p1}
+The considerations at the end of 2.3 show that
+$\mathrm{Ext}_O^p(X;A,B)$ and, respectively, $\mathbf{Ext}_O^p(A,B)$ are not
+only \textit{covariant cohomological functors with respect to $B$}, but also
+\textit{contravariant cohomological functors with respect to $A$}. Indeed, for
+injective $B$, the functors $A\longmapsto\mathrm{Hom}_O(A,B)$ and
+$A\longmapsto\mathbf{Hom}_O(A,B)$ are exact. (The second fact follows
+immediately from the first by Proposition 3.1.3.)
+
+\TohokuContinuation{188}

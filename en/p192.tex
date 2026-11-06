@@ -1,0 +1,105 @@
+% Source-aligned English for printed p.192.
+\clearpage
+\SourcePage{192}
+
+\LayerTarget{tohoku:corollary:4.3.2:1}
+\noindent\textsc{Corollary 1.} \textit{Suppose that $A$ is annihilated by a
+two-sided ideal $I$ of $O$ such that $O/I$ is a semisimple ring $K$. Then the
+two spectral sequences of the bicomplex $\mathrm{Hom}_O(L,\Gamma C(A))$ are
+trivial, and their initial terms identify canonically with the homology
+$\mathrm{Ext}_{\mathbf O}(X;\mathbf M,A)$ of this bicomplex. More precisely,
+there are canonical isomorphisms}
+
+\LayerTarget{tohoku:eq:4.3.4}
+\[
+\tag{4.3.4}
+\mathrm{Ext}_{\mathbf O}^n(X;\mathbf M,A)=
+\bigoplus_{p+q=n}
+\mathrm{Hom}_K(\mathrm{Tor}_p^O(K,M),H^q(X,A)).
+\]
+
+\LayerTarget{tohoku:proof:corollary-4.3.2:1}
+Indeed, $C(A)$, and hence $\Gamma C(A)$, is also annihilated by $I$, whence
+
+\LayerTarget{tohoku:eq:4.3.5}
+\[
+\tag{4.3.5}
+\mathrm{Hom}_O(L,\Gamma C(A))=
+\mathrm{Hom}_K(K\otimes_O L,\Gamma C(A)).
+\]
+
+\LayerTarget{tohoku:proof:kunneth-collapse-4.3.4}
+Since $K$ is semisimple, we may apply the simplest form of the Künneth theorem,
+which follows here from the fact that $\mathrm{Hom}_K$ is an exact bifunctor.
+This gives the triviality of the spectral sequences, together with the formula
+\[
+H(\mathrm{Hom}_K(K\otimes_O L,\Gamma C(A)))=
+\mathrm{Hom}_K(H(K\otimes_O L),H(\Gamma C(A))),
+\]
+which is precisely (4.3.4).
+
+\LayerTarget{tohoku:construction:relative-k-hyperhomology-spectral-sequences}
+Continue to suppose that $A$ is annihilated by a two-sided ideal $I$, but make
+no assumption on $K=O/I$. Equation (4.3.5) leads us to consider the
+hyperhomology spectral sequences of the bifunctor $\mathrm{Hom}_K$ with
+respect to the complexes $K\otimes_O L$ and $\Gamma C(A)$. In the first, the
+initial term
+
+\LayerTarget{tohoku:formula:first-relative-k-initial-term}
+$H^p(\mathrm{Ext}_K^q(K\otimes_O L,\Gamma C(A)))$ vanishes for $q>0$, since
+$K\otimes_O L$ is $K$-free. Thus the abutment identifies canonically with
+$H(\mathrm{Hom}_K(K\otimes_O L,\Gamma C(A)))$, which is precisely what must be
+computed. In the second spectral sequence, the initial term is
+
+\LayerTarget{tohoku:formula:second-relative-k-initial-term}
+\[
+\bigoplus_{q'+q''=q}
+\mathrm{Ext}_K^p(H^{q'}(K\otimes_O L),H^{q''}\Gamma C(A)).
+\]
+Hence:
+
+\LayerTarget{tohoku:corollary:4.3.2:2}
+\noindent\textsc{Corollary 2.} \textit{Suppose that the $\mathbf O$-module
+$A$ is annihilated by a two-sided ideal $I$ of $O$, and put $K=O/I$. Then
+$(\mathrm{Ext}_{\mathbf O}^n(X;\mathbf M,A))$ is also the abutment of a third
+spectral functor, whose initial term is}
+
+\LayerTarget{tohoku:eq:4.3.6}
+\[
+\tag{4.3.6}
+\mathrm{III}_2^{p,q}(A)=
+\bigoplus_{q'+q''=q}
+\mathrm{Ext}_K^p(\mathrm{Tor}_{q'}^O(K,M),H^{q''}(X,A)).
+\]
+
+\LayerTarget{tohoku:corollary:left-hereditary-k}
+\textit{In particular, if $K$ is a ``left hereditary ring'' [6, 1.5], for
+example a principal ideal ring, there is a canonical exact sequence}
+
+\LayerTarget{tohoku:sequence:left-hereditary-k}
+\[
+\begin{split}
+0\longrightarrow{}&
+\bigoplus_{p+q=n-1}
+\mathrm{Ext}_K^1(\mathrm{Tor}_p^O(K,M),H^q(X,A))\\
+\longrightarrow{}&\mathrm{Ext}_{\mathbf O}^n(X;\mathbf M,A)
+\longrightarrow
+\bigoplus_{p+q=n}
+\mathrm{Hom}_K(\mathrm{Tor}_p^O(K,M),H^q(X,A))
+\longrightarrow0.
+\end{split}
+\]
+
+\LayerTarget{tohoku:remark:4.3.2:1}
+\noindent\textsc{Remarks.} 1. Suppose that the $L_i$ are isomorphic to
+$O^{n_i}$. Then, by Proposition 4.3.2, the first hyperhomology spectral
+sequence of the functor $\mathrm{Hom}_O(M,-)$ for the complex $\Gamma C(A)$
+is that of Theorem 4.2.1, whose initial term therefore has the remarkable
+interpretation (4.2.5). Notice carefully, however, that this fact was deduced
+from Corollary 3 to Proposition 4.2.4 and depends essentially on (4.2.11),
+that is, \textit{on the fact that the canonical-resolution functor $C$ commutes
+with $\mathrm{Hom}_O(L,-)$ when $L$ is an $O$-module isomorphic to $O^n$}
+(which, moreover, places us under the hypotheses of the corollary to
+Proposition 2.5.2). This is
+
+\TohokuContinuation{193}

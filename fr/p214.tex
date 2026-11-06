@@ -1,0 +1,125 @@
+% Corrected French for printed p.214.
+% Four print-level repairs are recorded.
+\clearpage
+\SourcePage{214}
+
+\LayerTarget{tohoku:definition:equivariant-o-homomorphisms}
+\noindent l'espace sur lequel on considère $A$ et $B$ (ce qui donne un sens
+aussi au symbole $\operatorname{Hom}_{O,G}(U;A,B)$ si $U$ est une partie de
+$X$ stable par $G$). On a, en notant que le faisceau
+$\mathbf{Hom}_O(A,B)$ est un $G$-faisceau, donc le groupe
+$\operatorname{Hom}_O(A,B)=\Gamma_X\mathbf{Hom}_O(A,B)$ un $G$-module, les
+formules
+
+\LayerTarget{tohoku:equation:5.6.1}
+\[
+\tag{5.6.1}
+\operatorname{Hom}_{O,G}(A,B)
+=\Gamma_X^G\mathbf{Hom}_O(A,B)
+=\Gamma^G\operatorname{Hom}_O(A,B).
+\]
+
+\LayerTarget{tohoku:definition:equivariant-hom-sheaf}
+On pose :
+
+\LayerTarget{tohoku:equation:5.6.2}
+\[
+\tag{5.6.2}
+\mathbf{Hom}_{O,G}(A,B)=(\mathbf{Hom}_O(A,B))^G
+\]
+
+\noindent donc $\mathbf{Hom}_{O,G}(A,B)$ est le faisceau sur $Y=X/G$ dont les
+sections sur l'ouvert $U\subset Y$ forment le groupe
+$\operatorname{Hom}_{O,G}(f^{-1}U;A,B)$ des $G$-$O$-homomorphismes de
+$A|f^{-1}(U)$ dans $B|f^{-1}(U)$. Posons :
+
+\LayerTarget{tohoku:definition:four-equivariant-hom-functors}
+\LayerTarget{tohoku:equation:5.6.3}
+\[
+\tag{5.6.3}
+\begin{aligned}
+\mathbf h_{O,A}(B)&=\mathbf{Hom}_O(A,B),&
+h_{O,A}(B)&=\operatorname{Hom}_O(A,B),\\
+\mathbf h_{O,G,A}(B)&=\mathbf{Hom}_{O,G}(A,B),&
+h_{O,G,A}(B)&=\operatorname{Hom}_{O,G}(A,B),
+\end{aligned}
+\]
+
+\LayerTarget{tohoku:relation:equivariant-hom-functors}
+\noindent définissant ainsi, pour $A$ fixé, quatre foncteurs exacts à gauche,
+les deux derniers étant liés aux deux premiers (déjà rencontrés au Chapitre
+IV) par les formules fonctorielles
+
+\LayerTarget{tohoku:equation:5.6.4}
+\[
+\tag{5.6.4}
+\mathbf h_{O,G,A}=f_*^G\mathbf h_{O,A}
+\]
+
+\LayerTarget{tohoku:equation:5.6.5}
+\[
+\tag{5.6.5}
+h_{O,G,A}=\Gamma_Y\mathbf h_{O,G,A}
+=\Gamma^G h_{O,A}=\Gamma_X^G\mathbf h_{O,A}.
+\]
+
+\LayerTarget{tohoku:definition:equivariant-ext}
+Nous poserons :
+
+\LayerTarget{tohoku:equation:5.6.6}
+\[
+\tag{5.6.6}
+\operatorname{Ext}_{O,G}^n(X;A,B)=R^n h_{O,G,A}(B),
+\]
+
+\LayerTarget{tohoku:equation:5.6.7}
+\[
+\tag{5.6.7}
+\mathbf{Ext}_{O,G}^n(A,B)=R^n\mathbf h_{O,G,A}(B).
+\]
+
+\LayerTarget{tohoku:property:equivariant-ext-functoriality}
+Ainsi, pour deux $G$-$O$-Modules $A,B$, les
+$\operatorname{Ext}_{O,G}^n(X;A,B)$ sont des groupes abéliens, formant un
+foncteur cohomologique universel en $B$ et se réduisant à
+$\operatorname{Hom}_{O,G}(X;A,B)$ en dimension 0, tandis que les
+$\mathbf{Ext}_{O,G}^n(A,B)$ sont des faisceaux abéliens sur $Y$, formant un
+foncteur cohomologique universel en $B$, et se réduisant à
+$\mathbf{Hom}_{O,G}(A,B)$ en dimension 0. D'ailleurs les
+$\operatorname{Ext}_{O,G}^n(X;A,B)$ ne sont autres que les groupes $\operatorname{Ext}$
+généraux dans la catégorie $C^{O(G)}$. (Bien entendu, nos définitions sont
+justifiées grâce à la prop. 5.1.1). Comme $\operatorname{Hom}_{O,G}(A,B)$ donc
+aussi $\mathbf{Hom}_{O,G}(A,B)$ est un foncteur contravariant exact en $A$
+chaque fois que $B$ est un objet injectif de $C^{O(G)}$, il en résulte
+(cf. 2.3) que les $\operatorname{Ext}_{O,G}^n(X;A,B)$ resp. les
+$\mathbf{Ext}_{O,G}^n(A,B)$ forment aussi un foncteur cohomologique
+contravariant par rapport à $A$ (pour $B$ fixé). Notons enfin qu'on montre
+facilement, comme dans 4.2 et 5.2 (qui sont des cas particuliers) que l'on a
+
+\LayerTarget{tohoku:equation:5.6.8}
+\[
+\tag{5.6.8}
+\mathbf{Ext}_{O,G}^n(A,B)|U
+=\mathbf{Ext}_{O,G}^n(A|f^{-1}(U),B|f^{-1}(U))
+\]
+
+\noindent (\textit{nature locale des} $\mathbf{Ext}$ \textit{par rapport à
+l'espace} $Y$). On en conclut un énoncé analogue à celui du corollaire à la
+prop. 5.2.1, et qui permet, dans le cas où $G$ est un groupe \textit{discontinu}
+d'homomorphismes (cf. 5.3), de se ramener au cas où $G$ est un groupe fini. On
+montre alors, en reprenant les raisonnements de 4.1, que les homomorphismes
+naturels
+
+\LayerTarget{tohoku:comparison:equivariant-hom-stalk-to-fiber}
+\LayerTarget{tohoku:equation:5.6.9}
+\[
+\tag{5.6.9}
+\mathbf{Hom}_{O,G}(A,B)(y)
+\longrightarrow \operatorname{Hom}_{U_x}(A(x),B(x))
+\qquad (f(x)=y)
+\]
+
+\noindent (où $U_x$ est l'anneau, engendré par $O(x)$ et $Z(G_x)$, envisagé
+dans 5.1) sont
+
+\TohokuContinuation{215}

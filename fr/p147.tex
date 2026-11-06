@@ -1,0 +1,75 @@
+% Corrected French for printed p.147.
+% Corrections: du truc; il y a donc; induit; K as the argument of R^n(F∘H^0).
+\SourcePage{147}
+
+\LayerTarget{tohoku:construction:hyperhomology-resolution:a:p2}
+\noindent un objet injectif.
+
+\LayerTarget{tohoku:construction:hyperhomology-resolution:b}
+b) On prend une ``résolution injective'' de $K$ au sens de [6, Chap. XVII]
+(les guillemets sont nécessaires, la terminologie de [6] étant visiblement
+équivoque), i. e. on suppose que les $L^{p,q}$ sont injectifs, et que pour $p$
+fixé, si on prend les cycles (resp. bords, resp. la cohomologie) des $L^{p,*}$
+par rapport au premier opérateur différentiel, on trouve une résolution
+injective du truc formé des cycles (resp. les bords, resp. la cohomologie) dans
+$K^p$.
+
+\LayerTarget{tohoku:construction:hyperhomology-identification}
+--- Ceci dit, si $L$ est comme ci-dessus, alors $H^*F(L)$ est essentiellement
+indépendant du choix de $L$, et s'identifie d'ailleurs à
+$R^*(F\mathbin{\circ}H^0)(K)$ (où $H^0$ est considéré comme un foncteur
+covariant exact à gauche $\mathfrak K\longrightarrow C$, et
+$F\mathbin{\circ}H^0$ est le foncteur composé
+$\mathfrak K\longrightarrow C'$). Pour le voir, il suffit de prendre une
+résolution injective $L'$ de $K$ (au sens de a)), il y a donc un homomorphisme
+(unique à homotopie près) de la résolution $L$ dans la résolution $L'$, d'où
+un homomorphisme $F(L)\longrightarrow F(L')$, qui induit un \textit{isomorphisme}
+\[
+{}_{\mathrm I}E_2^{p,q}(F(L))\longrightarrow
+{}_{\mathrm I}E_2^{p,q}(F(L'))
+\]
+(les deux membres s'identifient en effet à $H^p(R^qF(K))$), donc un
+\textit{isomorphisme} de $HF(L)$ sur $HF(L')$. Or ce dernier s'explicite grâce
+à la seconde suite spectrale du bicomplexe $F(L')$ : on a
+$H_{\mathrm I}^q(F(L'))=0$ pour $q>0$ comme on voit aussitôt, on trouve donc
+\[
+H^nF(L')=H^n(FH^0(L'^{*,n})),
+\]
+or le deuxième membre est par définition $R^n(F\mathbin{\circ}H^0)(K)$.
+D'où la définition et le mode de calcul général de \textit{l'hyperhomologie}
+$\mathfrak R F(K)=\mathfrak R^*(FH^0)(K)$ du foncteur $F$ par rapport au
+complexe $K$, et de la première suite spectrale, de terme initial
+${}_{\mathrm I}E_2^{p,q}F(K)=H^p(R^qF(K))$ qui y aboutit.
+
+Si maintenant on prend pour $L$ une ``résolution injective'' de $K$ comme dans
+b), alors la deuxième suite spectrale du bicomplexe $F(L)$ est essentiellement
+indépendante de $L$ (puisque $L$ est unique à une équivalence d'homotopie
+près), elle aboutit à $\mathfrak R F(K)$ et son terme initial est celui donné
+dans (2.4.2) ; il suffirait d'ailleurs qu'on ait $R^nF(L^{p,q})=0$ pour $n>0$
+(au lieu de $L^{p,q}$ injectif) dans l'énoncé des conditions b), pour que la
+deuxième suite spectrale du complexe $F(L)$ soit celle envisagée dans (2.4.2).
+
+\LayerTarget{tohoku:remark:derived-spectral-functor-scope}
+Notons encore que, si les degrés de $K$ sont positifs, les deux suites
+spectrales dérivées de $F$ sont des suites spectrales \textit{cohomologiques}.
+On peut encore définir les suites spectrales dérivées de $F$ sur $K$ si on ne
+suppose plus que $K$ est à degrés bornés inférieurement, \textit{pourvu que
+$F$ soit de dimension injective finie}, i. e. $R^pF=0$ pour $p$ convenable. Ce
+fait ne semble pas contenu dans [6], mais comme nous ne nous en servirons pas
+dans la suite, nous nous bornons à le signaler ici sans démonstration. --- Bien
+entendu, on pourrait définir aussi des foncteurs spectraux dérivés à gauche de
+$F$, pourvu que $C$ contienne assez d'objets projectifs, et on peut envisager
+aussi le cas d'un foncteur contravariant. Dans [6], on envisage le cas où $F$
+est un multifoncteur, mais nous n'aurons pas à nous en servir.
+
+\LayerTarget{tohoku:construction:composite-functor-spectral-sequences:p1}
+Soient $C,C',C''$ trois catégories abéliennes, considérons deux foncteurs
+covariants $F:C\longrightarrow C'$ et $G:C'\longrightarrow C''$. On suppose
+que tout objet de $C$ ou $C'$ est isomorphe à un sous-truc d'un objet injectif,
+ce qui permet de considérer les foncteurs dérivés à droite de $F,G,GF$, on se
+propose d'établir des relations entre ces foncteurs dérivés. Soit $A\in C$,
+soit $C(A)$ le complexe associé à une résolution droite de $A$ par des objets
+injectifs, considérons le complexe $F(C(A))$ dans $C'$, il est déterminé à une
+homotopie près quand on fait varier
+
+\TohokuContinuation{148}

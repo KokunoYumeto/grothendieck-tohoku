@@ -1,0 +1,81 @@
+% Direct-authority diplomatic French for printed p.160.
+\SourcePage{160}
+
+\LayerTarget{tohoku:remark:fine-sheaves-are-soft:p2}
+\noindent lièrement jolie, des faisceaux fins en termes de faisceaux mous.
+
+\LayerTarget{tohoku:construction:godement-resolution}
+\textit{Résolution de l'identité.} Pour tout faisceau $F$, soit $C^0(F)$ le
+faisceau produit défini par la famille des ensembles $F(x)$, on a un
+homomorphisme fonctoriel $F\longrightarrow C^0(F)$, d'ailleurs injectif. Si
+on se restreint à prendre $F$ dans la catégorie des faisceaux abéliens sur
+$X$, la méthode de 2.5, exemple a), permet de construire une résolution de
+l'identité, $C(F)$ qui se réduit à $C^0(F)$ en dimension 0 et est défini par
+\[
+C^n(F)=C^0\bigl(C^{n-1}(F)/\operatorname{Im}C^{n-2}(F)\bigr)
+\]
+en dimension $n\geq2$. Les $C^n(A)$ sont flasques, donc
+$\Gamma_\Phi$-acycliques quel que soit l'antifiltre $\Phi$ de parties
+fermées, donc $\Gamma_\Phi C(A)$ est un foncteur résolvant pour
+$\Gamma_\Phi$, et on a par suite
+\[
+H^n_\Phi(X,F)=H^n\bigl(\Gamma_\Phi C(F)\bigr).
+\]
+$C(F)$ est appelée la \textit{résolution canonique de $F$}, (introduite et
+utilisée systématiquement par Godement).
+
+\LayerTarget{tohoku:construction:cartan-resolution}
+Si la famille $\Phi$ est paracompactifiante, on trouve un autre foncteur
+résolvant pour $\Gamma_\Phi$ en prenant une résolution fixe $C$ du faisceau
+constant $\mathbf Z$ par des faisceaux \textit{fins et sans torsion}, et
+prenant pour tout $F$ le complexe de faisceaux $F\otimes C$. C'est la une
+résolution de $F$ (parce que $C$ est sans torsion), c'est un foncteur exact en
+$F$ (même raison), de plus les $F\otimes C^n$ sont aussi fins donc
+$\Gamma_\Phi$-acycliques ; donc le foncteur $\Gamma_\Phi(F\otimes C)$ est un
+foncteur résolvant pour $\Gamma_\Phi$, et on a par suite
+\[
+H^n_\Phi(X,F)=H^n\bigl(\Gamma_\Phi(F\otimes C)\bigr).
+\]
+$F\otimes C$ sera appelée la résolution de Cartan de $F$. On se rappellera
+qu'elle n'est utilisable que si $\Phi$ est paracompactifiante.
+
+\LayerTarget{tohoku:example:irreducible-constant-sheaves}
+\textit{Un exemple amusant.} Un espace $X$ est dit \textit{irréductible} s'il
+n'est pas réunion de deux parties fermées distinctes de lui-même, c'est-à-dire
+si l'intersection de deux parties ouvertes non vides est non vide ; il revient
+encore au même de dire que toute partie ouverte de $X$ est connexe. Alors tout
+faisceau \textit{constant} $F$ sur $X$ est évidemment flasque (la réciproque
+étant d'ailleurs vraie si $X$ est connexe, comme on voit en prenant un
+faisceau constant à fibre non réduite à un point). \textit{En particulier, si
+$F$ est un faisceau constant de groupes abéliens sur l'espace irréductible
+$X$, on a $H^p(X,F)=0$ pour $p>0$.}
+
+\LayerTarget{tohoku:section:3.4}
+\textbf{3.4. Applications à des questions de relèvement de groupe
+structural\textsuperscript{8)}.} Soit $X$ une variété algébrique irréductible
+sur un corps $k$ algébriquement clos (voir [15, Chap. II], dont nous suivons
+la terminologie), $\mathbf O$ son faisceau d'anneaux locaux (=faisceau des
+germes de fonctions régulières sur $X$), $\mathbf K$ le faisceau des germes de
+fonctions rationelles sur $X$. $\mathbf K$ est un faisceau constant
+(loc. cit. prop. 9). Soient $\mathbf O^*$ et $\mathbf K^*$ resp. les
+sous-faisceaux des $\mathbf O$ et $\mathbf K$ formé des germes inversibles ;
+évidemment, $\mathbf K^*$ est encore un faisceau constant de groupes
+abéliens, et $\mathbf O^*$ en est un sous faisceau.
+
+\LayerTarget{tohoku:construction:divisor-sequence:p1}
+Le faisceau quotient $\mathbf K^*/\mathbf O^*=\mathbf D$ est le faisceau des
+\textit{germes de diviseurs localement principaux sur $X$}, et coïncide avec
+le faisceau des \textit{germes de diviseurs sur $X$} si les anneaux locaux
+$\mathbf O(x)$ de $X$ sont factoriels (par exemple si $X$ est sans
+singularités), ce que nous supposerons désormais. D'autre part, il est
+immédiat que le faisceau $\mathbf D$ des germes de diviseurs sur
+
+\LayerTarget{tohoku:footnote:8}
+\begin{quote}
+\footnotesize
+8) La lecture du présent numéro est inutile pour la compréhension de la
+suite.
+\end{quote}
+
+\TohokuContinuation{161}
+

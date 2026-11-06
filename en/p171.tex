@@ -1,0 +1,109 @@
+% Source-aligned English for printed p.171.
+\SourcePage{171}
+
+\LayerTarget{tohoku:proof:3.6.5:p2}
+\noindent components of $X$ [15, Chap. II, Prop. 2]. If $F$ is a sheaf of
+abelian groups on $X$, there is a natural monomorphism from $F$ into the
+direct sum of the $F_k=F_{X_k}$, giving an exact sequence
+
+\LayerTarget{tohoku:eq:irreducible-components-resolution}
+\[
+0\longrightarrow F\longrightarrow\bigoplus_k F_k\longrightarrow R
+\longrightarrow0,
+\]
+where $R$ is a sheaf whose support is contained in
+
+\LayerTarget{tohoku:def:singular-locus-union}
+\[
+Y=\bigcup_{k\ne l}X_k\cap X_l,
+\]
+which has combinatorial dimension $\leq n-1$. We therefore obtain an exact
+sequence
+
+\LayerTarget{tohoku:eq:cohomology-component-sequence}
+\[
+H^{i-1}(X,R)\longrightarrow H^i(X,F)\longrightarrow
+\bigoplus_k H^i(X,F_k).
+\]
+If $i>n$, so that $i-1>n-1$, then
+$H^{i-1}(X,R)=H^{i-1}(Y,R)=0$ by the induction hypothesis. Thus, to prove
+$H^i(X,F)=0$, it suffices to prove $H^i(X,F_k)=0$. But
+
+\LayerTarget{tohoku:eq:component-cohomology-identification}
+\[
+H^i(X,F_k)=H^i(X_k,F),
+\]
+so we are reduced to proving the theorem for the irreducible space $X_k$.
+We may therefore suppose that $X$ is irreducible. By the corollary to
+Proposition 3.6.3, it suffices to prove that $H^i(X,Z_U)=0$ for $i>n$ and
+every open subset $U$ of $X$. We may suppose that $U\ne\phi$; then
+$Y=\mathrm C U$ is a proper closed subset of $X$, and hence has combinatorial
+dimension $\leq n-1$. From the exact sequence
+
+\LayerTarget{tohoku:eq:open-complement-sequence}
+\[
+0\longrightarrow Z_U\longrightarrow Z\longrightarrow Z_Y
+\longrightarrow0
+\]
+we obtain, since $Z$ is flabby (cf. the end of 3.3),
+
+\LayerTarget{tohoku:eq:open-support-cohomology-reduction}
+\[
+H^i(X,Z_U)=H^{i-1}(X,Z_Y)=H^{i-1}(Y,Z),
+\]
+which again vanishes by the induction hypothesis.
+
+\LayerTarget{tohoku:remark:3.6.5:1}
+\noindent\textsc{Remarks 1.} The preceding theorem generalizes an earlier
+theorem of Serre [18].
+
+\LayerTarget{tohoku:remark:3.6.5:2}
+\noindent 2. There exist Zariski spaces of cohomological dimension zero and
+of either infinite combinatorial dimension or arbitrarily high finite
+combinatorial dimension.
+
+\LayerTarget{tohoku:def:ordered-zariski-example}
+It suffices to take a finite or infinite well-ordered set $X$ and endow it
+with the topology whose closed sets are the sets of the form $X_x$, where,
+for each $x\in X$, the symbol $X_x$ denotes the set of all $y\in X$ such that
+$y<x$.
+
+\LayerTarget{tohoku:section:3.7}
+\textbf{3.7. The Leray spectral sequence of a continuous map.} Let $f$ be a
+continuous map from a space $Y$ to a space $X$.
+
+\LayerTarget{tohoku:def:relative-support-antifilter}
+Suppose that an antifilter $\Psi$ of closed subsets is given on $Y$. For every
+open subset $U\subset X$, let $\Psi(U)$ be the antifilter of closed subsets
+of $f^{-1}(U)$ consisting of those $A\subset f^{-1}(U)$ such that, for every
+$x\in U$, there exists a neighborhood $V\subset U$ of $x$ for which the
+closure of $A\cap f^{-1}(V)$ belongs to $\Psi$. In particular, $\Psi(X)$ is
+an antifilter of closed subsets of $Y$.
+
+\LayerTarget{tohoku:def:relative-direct-image}
+Let $F$ be a sheaf of abelian groups on $Y$. For every open subset
+$U\subset X$, consider the group $\Gamma_{\Psi(U)}(f^{-1}(U),F)$. The evident
+restriction maps corresponding to inclusions $V\subset U$ make these groups
+into a sheaf on $X$, denoted $f_\Psi(F)$ and called the \textit{direct image
+of $F$ under $f$ relative to $\Psi$}.
+
+\LayerTarget{tohoku:def:ordinary-direct-image}
+If $\Psi$ is the family of all closed subsets of $Y$, we simply write
+$f_*(F)$ in place of $f_\Psi(F)$, and $f_*(F)$ is called the \textit{direct
+image sheaf of $F$ under $f$}. In this case $\Psi(U)$ is the set of all closed
+subsets of $f^{-1}(U)$, and hence
+
+\LayerTarget{tohoku:eq:direct-image-sections}
+\[
+\Gamma(U,f_*(F))=\Gamma(f^{-1}(U),F)
+\]
+(a definition that also makes sense if $F$ is assumed only to be a sheaf of
+sets). --- By definition, in the general case we have
+
+\LayerTarget{tohoku:eq:relative-direct-image-sections}
+\[
+\Gamma(U,f_\Psi(F))=\Gamma_{\Psi(U)}(f^{-1}(U),F).
+\]
+One immediately verifies the formula:
+
+\TohokuContinuation{172}

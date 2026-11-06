@@ -1,0 +1,107 @@
+% Source-aligned English for printed p.210.
+\clearpage
+\SourcePage{210}
+
+\LayerTarget{tohoku:proposition:5.5.4}
+\noindent\textit{where $C(\mathcal U,P)$ denotes the complex (with operators)
+of arbitrary cochains (not necessarily alternating) of $\mathcal U$ with
+coefficients in $P$.}
+
+Combining this with Corollary 1 to Theorem 5.5.3, one obtains:
+
+\LayerTarget{tohoku:corollary:fixed-point-free-g-covering}
+\noindent\textsc{Corollary.} \textit{Let $\mathcal U$ be a fixed-point-free
+$G$-covering. Suppose that $\mathcal U$ is open, or that $\mathcal U$ is closed
+and moreover $X$ is paracompact, or that $\mathcal U$ is finite. If $A$ is a
+$G$-sheaf such that $H^n(U_{i_0\ldots i_p},A)=0$ for every
+$(i_0,\ldots,i_p)\in I^{p+1}$ and every $n>0$, then there are canonical
+isomorphisms:}
+
+\LayerTarget{tohoku:equation:fixed-point-free-g-covering-cohomology}
+\[
+H^n(X;G,A)=H^n\bigl(C(\mathcal U,A)^G\bigr).
+\]
+
+\LayerTarget{tohoku:calculation:nonhomogeneous-equivariant-cochains}
+We shall make the complex $C(\mathcal U,P)^G$ explicit when $\mathcal U$ is a
+fixed-point-free $G$-covering. The index set of $\mathcal U$ is then
+isomorphic (as a set on which $G$ acts) to a product $G\times I$, where $G$
+acts by left translations on the first factor:
+$g'\cdot(g,i)=(g'g,i)$; we identify $i$ with $(e,i)$. Let
+$(f_{g_0i_0,\ldots,g_ni_n})$ be an invariant $n$-cochain with coefficients in
+$P$, and set
+
+\LayerTarget{tohoku:equation:5.5.9}
+\[
+\tag{5.5.9}
+F_{i_0,g_1i_1,\ldots,g_ni_n}
+=f_{e\cdot i_0,g_1i_1,\ldots,g_ni_n}.
+\]
+
+$F$ is a function of the $n+1$ arguments $i_0,\ldots,i_n\in I$ and the $n$
+arguments $g_1,\ldots,g_n\in G$, with values in the groups
+$P(U_{i_0}\cap g_1U_{i_1}\cap\cdots\cap g_nU_{i_n})$, and the given invariant
+cochain is completely determined by this ``nonhomogeneous cochain'' $F$, by
+
+\LayerTarget{tohoku:equation:5.5.10}
+\[
+\tag{5.5.10}
+f_{g_0i_0,\ldots,g_ni_n}
+=g_0\cdot F_{i_0,g_0^{-1}g_1i_1,\ldots,g_0^{-1}g_ni_n}.
+\]
+
+Conversely, starting from a nonhomogeneous cochain $F$, this formula defines
+an invariant cochain $f$, and the nonhomogeneous cochain associated with $f$
+is precisely $F$. It remains to express the differential operator of
+$C(\mathcal U,P)^G$ directly in terms of nonhomogeneous cochains. One obtains
+immediately:
+
+\LayerTarget{tohoku:equation:5.5.11}
+\[
+\tag{5.5.11}
+\begin{aligned}
+(\partial F)_{i_0,g_1i_1,\ldots,g_{n+1}i_{n+1}}
+&=g_1\cdot F_{i_1,g_1^{-1}g_2i_2,\ldots,
+g_1^{-1}g_{n+1}i_{n+1}}\\
+&\quad+\sum_{1\leq\alpha\leq n+1}(-1)^\alpha
+F_{i_0,g_1i_1,\ldots,\widehat{g_\alpha i_\alpha},\ldots,
+g_{n+1}i_{n+1}}.
+\end{aligned}
+\]
+
+where the sign $\widehat{\phantom{g_\alpha i_\alpha}}$ means that the letters
+placed below it are to be omitted.
+
+\LayerTarget{tohoku:special-case:single-orbit-covering}
+A particularly interesting case is that in which $I$ has one element; that is,
+one starts from a subset $D$ of $X$ such that
+$\bigcup_{g\in G}g\cdot D=X$, and considers the covering
+$(g\cdot D)_{g\in G}$. The nonhomogeneous $n$-cochains are then systems
+$(F_{g_1,\ldots,g_n})$, with
+
+\LayerTarget{tohoku:equation:single-orbit-cochain-domain}
+\[
+F_{g_1,\ldots,g_n}\in
+P(D\cap g_1\cdot D\cap\cdots\cap g_n\cdot D)
+\]
+
+and formula (5.5.11) becomes
+
+\LayerTarget{tohoku:equation:5.5.11bis}
+\[
+\tag{5.5.11 bis}
+\begin{aligned}
+(\partial F)_{g_1,\ldots,g_{n+1}}
+&=g_1\cdot F_{g_1^{-1}g_2,\ldots,g_1^{-1}g_{n+1}}\\
+&\quad+\sum_{1\leq\alpha\leq n+1}(-1)^\alpha
+F_{g_1,\ldots,\widehat{g_\alpha},\ldots,g_{n+1}}.
+\end{aligned}
+\]
+
+\LayerTarget{tohoku:construction:complex-from-local-composition-data}
+Let $L$ be the set of $g\in G$ such that $g\cdot D\cap D\ne\phi$ (this will
+be a finite set in the ``reasonable'' cases). The preceding formula shows that
+the complex $C(\mathcal U,P)^G$ yielding the groups $H^n(\mathcal U;G,P)$ can
+be constructed knowing
+
+\TohokuContinuation{211}

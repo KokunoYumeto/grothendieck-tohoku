@@ -1,0 +1,105 @@
+% Corrected French for printed p.190; departures are append-only below.
+\clearpage
+\SourcePage{190}
+
+\LayerTarget{tohoku:corollary:4.2.4:1}
+\LayerTarget{tohoku:eq:4.2.10}
+\[
+\tag{4.2.10}
+\mathbf{Ext}_O^n(A,B)=H^n(\mathbf{Hom}_O(\mathbf{L},B))
+\]
+d'où
+
+\LayerTarget{tohoku:eq:4.2.10-bis}
+\[
+\tag{4.2.10 bis}
+\mathbf{Ext}_O^n(A,B)(x)=
+\mathrm{Ext}_{O(x)}^n(A(x),B(x)).
+\]
+
+\LayerTarget{tohoku:proof:corollary-4.2.4:1}
+Il suffit en effet d'appliquer prop. 2.5.1.
+
+Appliquons maintenant prop. 2.5.4, on trouve :
+
+\LayerTarget{tohoku:corollary:4.2.4:2}
+\noindent\textsc{Corollaire 2.} \textit{Sous les conditions précédentes, le
+foncteur spectral du th. 4.2.1 est isomorphe au foncteur spectral
+$\Pi\Gamma(\mathbf{Hom}_O(\mathbf{L},B))$, en particulier on a}
+\[
+\mathrm{Ext}_O^n(X;A,B)=
+\mathbb{H}^n\Gamma(\mathbf{Hom}_O(\mathbf{L},B))
+\]
+\textit{(où le deuxième membre est le n.ième groupe de hyperhomologie de
+$\Gamma$ par rapport au complexe $\mathbf{Hom}_O(\mathbf{L},B)$, cf. 2.4.).}
+
+\LayerTarget{tohoku:construction:canonical-resolvent-spectral-sequence}
+Comme nous disposons aussi d'un foncteur résolvant pour $\Gamma$, par exemple
+le foncteur $\Gamma C(F)$ (où $C(F)$ est la \textit{résolution canonique} de
+$F$, cf. 2.3), la suite spectrale
+$\Pi\Gamma(\mathbf{Hom}_O(\mathbf{L},B))$ s'explicite, c'est la première suite
+spectrale du bicomplexe $\Gamma C(\mathbf{Hom}_O(\mathbf{L},B))$ (où on a pris
+comme premier degré celui qui provient de $C$). Or on a un isomorphisme
+fonctoriel
+
+\LayerTarget{tohoku:eq:4.2.11}
+\[
+\tag{4.2.11}
+C(\mathbf{Hom}_O(\mathbf{L},B))=
+\mathbf{Hom}_O(\mathbf{L},C(B)).
+\]
+
+En effet, on a pour tout $O$-Module $L$ un homomorphisme (fonctoriel)
+
+\LayerTarget{tohoku:eq:4.2.12}
+\[
+\tag{4.2.12}
+C(\mathbf{Hom}_O(L,B))\longrightarrow\mathbf{Hom}_O(L,C(B))
+\]
+
+\LayerTarget{tohoku:proof:equations-4.2.11-4.2.12}
+(où au deuxième membre, $C(B)$ est considéré de façon évidente comme un
+$O$-Module), défini par récurrence sur la dimension des composantes de $C$ à
+partir de l'homomorphisme naturel
+\[
+C^0(\mathbf{Hom}_O(L,B))\longrightarrow\mathbf{Hom}_O(L,C^0(B)),
+\]
+déduit des homomorphismes naturels
+$\mathbf{Hom}_O(L,B)(x)\longrightarrow
+\mathrm{Hom}_{O(x)}(L(x),B(x))$. Ce dernier est un isomorphisme si $L$ est
+pseudo-cohérent (prop. 4.1.1), d'où on conclut que dans ce cas, (4.2.12) est un
+isomorphisme, ce qui établit en particulier la formule 4.2.11. On en conclut
+$\Gamma C(\mathbf{Hom}_O(\mathbf{L},B))=
+\mathbf{Hom}_O(\mathbf{L},C(B))$, d'où le
+
+\LayerTarget{tohoku:corollary:4.2.4:3}
+\noindent\textsc{Corollaire 3.} \textit{$\mathbf{L}$ étant comme dans la
+proposition 4.2.4, le foncteur spectral du théorème 4.2.1 est donné par la
+première suite spectrale
+$\Gamma\mathbf{Hom}_O(\mathbf{L},C(B))$ du bicomplexe
+$\mathbf{Hom}_O(\mathbf{L},C(B))$, où $C(B)$ est la résolution canonique
+(cf. 2.3) du faisceau abélien $B$ (dont la graduation est prise comme premier
+degré du bicomplexe). En particulier, on a}
+\[
+\mathrm{Ext}_O^n(X;A,B)=
+H^n(\mathbf{Hom}_O(\mathbf{L},C(B))).
+\]
+
+\LayerTarget{tohoku:remark:ext-with-supports}
+\noindent\textsc{Remarques.} 1) On peut aussi définir les foncteurs
+$\mathrm{Ext}_{O,\varphi}^p(X;A,B)$ comme les foncteurs dérivés droits, par
+rapport à $B$, du foncteur
+$\mathrm{Hom}_{O,\varphi}(A,B)=
+\Gamma_\varphi(\mathbf{Hom}_O(A,B))$ ($\varphi$ étant un antifiltre de parties
+fermées de $X$). Les développements précédents sont encore valables. Nous
+n'aurons pas à nous en servir.
+
+\LayerTarget{tohoku:remark:finiteness-in-theorem-4.2.2}
+2) Il est essentiel dans le théorème 4.2.2 que $A$ satisfasse à une condition
+de finitude. Si par exemple $A=O^{(I)}$ où $I$ est infini, alors le deuxième
+membre de (4.2.8) est nul pour tout $x$ et tout $p>0$, cependant on n'aura
+\textit{pas} en général $\mathbf{Ext}_O^1(A,B)=0$, car le foncteur
+$B\longmapsto\mathbf{Hom}_O(O^{(I)},B)=B^I$ n'est en général pas un foncteur
+exact.
+
+\TohokuContinuation{191}

@@ -1,0 +1,82 @@
+% Source-aligned English for printed p.198.
+\clearpage
+\SourcePage{198}
+
+\LayerTarget{tohoku:construction:direct-image-g-sheaf:p1}
+course, if $A$ is a $G$-sheaf of groups or rings, and so forth, the same is
+true of $f_*(A)$.
+
+\LayerTarget{tohoku:definition:invariant-direct-image}
+If $A$ is a $G$-sheaf, we shall denote by $A^G$ or $f_*^G(A)$ the sheaf
+$\Gamma^G(f_*(A))$ of invariants of the $G$-sheaf $f_*(A)$ on $Y$; that is,
+the sheaf whose sections over an open subset $U\subset Y$ are the sections of
+$A$ over $f^{-1}(U)$ invariant under $G$. Evidently, if $A$ is a $G$-sheaf of
+groups or rings, and so forth, the same is again true of $A^G=f_*^G(A)$.
+
+\LayerTarget{tohoku:construction:direct-image-g-o-module}
+Moreover, $f_*^G$ can be regarded as a \textit{covariant functor} defined on
+the category of $G$-sheaves on $X$ and taking values in the category of
+sheaves on $Y$ (regarded as $G$-sheaves on which $G$ acts trivially). If $O$
+is a $G$-sheaf of rings and $O'$ denotes the sheaf $f_*^G(O)$, then, for every
+$G$-$O$-module $A$ on $X$, $f_*(A)$ is a $G$-$O'$-module on $Y$. Thus $f_*$
+is a \textit{covariant functor} from $C^{O(G)}$ to $C^{O'(G)}$; it is also
+additive and left exact, as usual. The functor $f_*^G$ then appears as the
+composite functor $\Gamma^Gf_*$ from $C^{O(G)}$ to the category $C^{O'}$ of
+$O'$-modules on $Y$, where $\Gamma^G$ denotes the functor
+$C^{O'(G)}\longrightarrow C^{O'}$ that associates to a $G$-$O'$-sheaf $B$ on
+$Y$ the sheaf $B^G$ of germs of sections invariant under $G$. To simplify,
+suppose now that $O$, and hence also $O'$, is the constant sheaf $\mathbf Z$
+of integers (which amounts to considering no sheaf of rings at all). We then
+have:
+
+\LayerTarget{tohoku:proposition:5.1.3}
+\noindent\textsc{Proposition 5.1.3.} \textit{The functor $f_*$ transforms
+injective objects of $C^{X(G)}$ into injective objects of $C^{Y(G)}$.}
+
+\LayerTarget{tohoku:proof:5.1.3}
+Indeed, it is enough to see this for an abelian $G$-sheaf $A$ defined by a
+family $(A_y)$ of injective $G_y$-modules (Proposition 5.1.2). Returning to the
+notation of the construction preceding Proposition 5.1.2, one sees that
+$f_*(A)$ is the product sheaf defined by the groups
+\[
+\overline A_y=\prod_{x\in f^{-1}(y)}A_x,
+\]
+and the $G$-sheaf structure on $f_*(A)$ is the one defined by the $G$-module
+structure on $\overline A_y$. Since the latter is obtained from the injective
+$G_y$-module $A_y$ by contravariant extension of scalars, it is evidently
+itself injective [6, II, Proposition 6.1.a]. Hence $f_*(A)$ is injective by
+Proposition 3.1.2.
+
+\LayerTarget{tohoku:corollary:5.1.3}
+\noindent\textsc{Corollary.} \textit{If $A$ is an injective abelian
+$G$-sheaf, then $\Gamma'(A)$ is an injective $G$-module, and $A^G$ is a flabby
+sheaf on $Y$.}
+
+\LayerTarget{tohoku:proof:corollary-5.1.3}
+Indeed, $\Gamma'(A)=\Gamma(f_*(A))$ and
+$f_*^G(A)=\Gamma^G(f_*(A))$; it is therefore enough to apply Lemma 4.3 and,
+respectively, Proposition 4.1.3 (with $O=\mathbf Z(G)$ and $O$ the constant
+sheaf of rings defined by $O$).
+
+\LayerTarget{tohoku:construction:inverse-image-g-sheaf}
+\noindent\textit{Inverse images and direct images.} Let $B$ be a sheaf of sets
+on $Y$ (without operators). Then \textit{its inverse image $f^{-1}(B)$} (as
+considered in 3.2) \textit{can be regarded naturally as a $G$-sheaf}, for the
+evident reasons of ``transport of structure''. A section of $B$ over an open
+subset $U$ defines by inverse image a section of $f^{-1}(B)$ over $f^{-1}(U)$
+\textit{invariant under $G$}, i.e. a section of $f_*^G(f^{-1}(B))$. This gives
+a natural homomorphism $B\longrightarrow f_*^G(f^{-1}(B))$, which one checks
+at once to be an isomorphism:
+
+\LayerTarget{tohoku:equation:5.1.1}
+\[
+f_*^G(f^{-1}(B))=B.
+\tag{5.1.1}
+\]
+
+\LayerTarget{tohoku:construction:canonical-map-inverse-direct:p1}
+Conversely, start with a $G$-sheaf $A$ on $X$ and consider
+$f^{-1}(f_*^G(A))$: a section of this sheaf over an open subset $V$ consists
+of the data of a function
+
+\TohokuContinuation{199}

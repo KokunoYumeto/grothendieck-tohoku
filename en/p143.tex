@@ -1,0 +1,67 @@
+% Source-aligned English for printed p.143.
+\SourcePage{143}
+
+\LayerTarget{tohoku:remark:satellites-small-skeleton:p2}
+\noindent that are abelian and defined over $k$, and whose connected component
+of the identity is an ``abelian variety.'' The characteristic must be zero,
+since otherwise a bijective homomorphism need not be an isomorphism. We merely
+indicate that the preceding result is proved by constructing $S^1F(A)$ as the
+direct limit of the objects $F(M/A)/\mathrm{Im}(F(M))$ over ``all''
+monomorphisms $A\longrightarrow M$ in $C$, preordered by declaring
+$A\longrightarrow M$ to be ``dominated'' by $A\longrightarrow M'$ when there
+is a morphism $M\longrightarrow M'$ inducing the identity on $A$.
+
+\LayerTarget{tohoku:section:2.3}
+\noindent\textbf{2.3. Derived functors.} Let $C$ and $C'$ be abelian
+categories. The theory of derived functors of an additive functor
+$F:C\longrightarrow C'$ develops as in [6, Chap. V], except that, according
+to the case, one must suppose that every object $A\in C$ is isomorphic to a
+subobject of an injective object, to a quotient object of a projective object,
+or both.
+
+\LayerTarget{tohoku:construction:right-derived-functors:p1}
+Thus, to define the right derived functors of a covariant functor or the left
+derived functors of a contravariant functor, one must suppose that every
+$A\in C$ is isomorphic to a subobject of an injective object. It then follows
+that every $A\in C$ has an injective resolution\footnote{A \textit{right
+resolution} of an object $A\in C$ is, by definition, a complex $C$ in
+nonnegative degrees equipped with an ``augmentation homomorphism''
+$A\longrightarrow C$, where $A$ is regarded as a complex concentrated in
+degree zero, such that
+$0\longrightarrow A\longrightarrow C^0\longrightarrow C^1\longrightarrow
+\cdots$ is exact. An \textit{injective resolution} of $A$ is a resolution $C$
+of $A$ for which all $C^i$ are injective objects. Left resolutions of $A$,
+and projective resolutions in particular, are defined dually.}:
+$0\longrightarrow A\longrightarrow C^0\longrightarrow C^1\longrightarrow
+\cdots$. One defines
+$R^iF(A)=H^i(F(C))$, where $C$ denotes the complex of the $C^i$. To define
+the left derived functors of a covariant functor or the right derived functors
+of a contravariant functor, one must likewise suppose that every $A\in C$ is
+isomorphic to a quotient of a projective object. Finally, to define derived
+functors of a multivariable functor with mixed variance, the appropriate
+hypothesis must be imposed on the category of each variable. Apart from this,
+the account in [6] carries over unchanged.
+
+\LayerTarget{tohoku:morphism:satellite-to-derived}
+In particular, suppose for example that $F$ is covariant and that its right
+derived functors $R^iF$ can be formed. Setting $R^iF=0$ for $i<0$, the system
+$RF=(R^iF)$ is a cohomological functor, called the \textit{right derived
+cohomological functor of $F$}, and there is a canonical morphism of
+$\partial$-functors in nonnegative degrees
+$SF\longrightarrow RF$. Here $SF=(S^iF)$ is the universal
+$\partial$-functor in nonnegative degrees associated to the satellites of
+$F$, whose existence follows from Theorem 2.2.2. This morphism is an
+isomorphism if and only if $F$ is left exact. It seems that the $R^iF$ are of
+little interest except when $F$ is left exact, that is, when they coincide
+with the satellite functors. Nevertheless, their simultaneous definition by
+injective resolutions is more manageable than the recursive definition of
+the $S^iF$, and is particularly well suited to constructing the most important
+spectral sequences; see 2.4.
+
+\LayerTarget{tohoku:construction:derived-bifunctor:p1}
+Let $C_1,C_2,C'$ be three abelian categories and let $T(A,B)$ be an additive
+bifunctor from $C_1\times C_2$ to $C'$, contravariant in $A$ and covariant in
+$B$, to fix ideas. Suppose that every object of $C_2$ is isomorphic to a
+subobject of an injective object. One can then construct the
+
+\TohokuContinuation{144}

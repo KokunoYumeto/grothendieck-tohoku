@@ -1,0 +1,92 @@
+% Source-aligned English for printed p.165.
+\SourcePage{165}
+
+\LayerTarget{tohoku:remark:3.4.2:1:p2}
+given in the proof of Proposition 3.4.2 so as to recover the usual boundary
+operator in the long exact cohomology sequence associated with the exact
+sequence
+$0\longrightarrow F\longrightarrow G\longrightarrow H\longrightarrow0$
+when $G$ (and therefore also $F$ and $H$) is abelian. In this case there is a
+diagram with exact rows and columns:
+
+\LayerTarget{tohoku:diagram:3.4.2:exact-sequence-grid}
+\[
+\begin{array}{ccccccccc}
+&&0&&0&&0&&\\
+&&\big\downarrow&&\big\downarrow&&\big\downarrow&&\\[0.45em]
+0&\longrightarrow&F&\longrightarrow&G&\longrightarrow&H&\longrightarrow&0\\
+&&\big\downarrow&&\big\downarrow&&\big\downarrow&&\\[0.45em]
+0&\longrightarrow&\overline F&\longrightarrow&\overline G&\longrightarrow&\overline H&\longrightarrow&0\\
+&&\big\downarrow&&\big\downarrow&&\big\downarrow&&\\[0.45em]
+0&\longrightarrow&F'&\longrightarrow&G'&\longrightarrow&H'&\longrightarrow&0\\
+&&\big\downarrow&&\big\downarrow&&\big\downarrow&&\\[0.45em]
+&&0&&0&&0&&
+\end{array}
+\]
+It follows from [6, Prop. III 4.1] that the following square of boundary
+homomorphisms is \textit{anticommutative}:
+
+\LayerTarget{tohoku:diagram:3.4.2:boundary-anticommutative-square}
+\[
+\begin{array}{ccc}
+H^0(X,H')&\longrightarrow&H^1(X,F')\\
+\big\downarrow&&\big\downarrow\\[0.45em]
+H^1(X,H)&\longrightarrow&H^2(X,F).
+\end{array}
+\]
+
+\LayerTarget{tohoku:eq:3.4.2:dQ-minus-boundary-cE}
+The first vertical homomorphism is surjective. One checks that, in the
+construction above, $d(Q)$ is obtained from the class $c(E)\in H^1(X,H)$ by
+passage to the quotient in the composite homomorphism
+\[
+H^0(X,H')\longrightarrow H^1(X,F')\longrightarrow H^2(X,F),
+\]
+and is therefore equal to $-\partial c(E)$.
+
+\LayerTarget{tohoku:remark:3.4.2:2:local-triviality}
+2. One should not forget that, in order to apply Proposition 3.3.1 to a
+projective algebraic fiber space, one must first verify that it is locally
+trivial. Unfortunately, this verification often seems difficult when one
+does not know a priori that the structure group can be lifted.
+
+\LayerTarget{tohoku:example:projective-bundle-vector-lift}
+Example: On a nonsingular complex projective variety, let $E$ be a holomorphic
+fiber space with projective-space fiber (one knows, by Kodaira--Borel, that
+$E$ is also an algebraic variety). Does it arise from a holomorphic vector
+bundle? By Proposition 3.4.1 the answer is affirmative if $E$ is locally
+trivial algebraically, that is, if a rational section passes through every
+point of the base. The converse also holds, since [16] every holomorphic vector
+bundle on $X$ is algebraically locally trivial.
+
+\LayerTarget{tohoku:remark:3.4.2:3:p1}
+3. The situation $u:P\longrightarrow A$, with $u$ a crossed homomorphism of
+sheaves, described above occurs in various interesting settings. For example,
+let $X$ be a complex manifold, let $G$ be a complex Lie group with Lie algebra
+$V$, let $P$ be the sheaf of germs of holomorphic maps from $X$ to $G$, and
+let $A$ be the sheaf of germs of holomorphic differential $1$-forms on $X$
+with values in $V$. The sheaf $P$ acts on $A$ through the adjoint
+representation, and we put
+
+\LayerTarget{tohoku:eq:adjoint-logarithmic-derivative}
+\[
+u(g)=(dg)g^{-1}.
+\]
+Thus every holomorphic fiber space $E$ over $X$ with structure group $G$
+determines
+
+\LayerTarget{tohoku:def:adjoint-obstruction-class}
+a class
+\[
+d(E)\in H^1\bigl(X,\Omega^1(\operatorname{ad}(E))\bigr),
+\]
+where $\operatorname{ad}(E)$ denotes the vector bundle (with fiber $V$)
+``adjoint'' to $E$, and $\Omega^1(\operatorname{ad}(E))$ is the sheaf of
+germs of holomorphic differential $1$-forms with values in
+$\operatorname{ad}(E)$.
+
+\LayerTarget{tohoku:construction:constant-transition-reduction:p1}
+Since the kernel of $u$ is the subsheaf of $P$ formed by germs of constant
+maps from $X$ to $G$, the vanishing of $d(E)$ is a necessary condition for the
+
+\TohokuContinuation{166}

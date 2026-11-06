@@ -1,0 +1,69 @@
+% Source-aligned English for printed p.148.
+\SourcePage{148}
+
+\LayerTarget{tohoku:construction:composite-functor-spectral-sequences:p2}
+\noindent $C(A)$. It follows at once that the spectral sequences defined by
+$G$ and the complex $F(C(A))$ depend only on $A$. They are therefore
+cohomological spectral functors on $C$, with the same abutment, called the
+\textit{spectral functors of the composite functor} $G\mathbin{\circ}F$. The
+formulas above immediately give their initial terms:
+\[
+{}_{\mathrm I}E_2^{p,q}(A)=\bigl(R^p((R^qG)F)\bigr)(A),
+\qquad
+{}_{\mathrm{II}}E_2^{p,q}(A)=R^pG(R^qF(A)).
+\]
+By far the most important case for obtaining nontrivial spectral sequences is
+that in which $F$ carries injective objects to objects annihilated by
+$R^qG$, $q\geq1$; such objects are called $G$-acyclic. Suppose also that
+$R^0G=G$, so $G$ is left exact. Then
+${}_{\mathrm I}E_2^{p,q}=0$ for $q>0$, while for $q=0$ it reduces to
+$R^p(GF)$. The common abutment of the two spectral sequences therefore
+identifies with the right derived functor of $GF$. Thus we obtain the
+following theorem.
+
+\LayerTarget{tohoku:thm:2.4.1}
+\noindent\textsc{Theorem 2.4.1.} --- \textit{Let $C,C',C''$ be three abelian
+categories, and suppose every object of $C$ or $C'$ is isomorphic to a
+subobject of an injective object. Let $F:C\longrightarrow C'$ and
+$G:C'\longrightarrow C''$ be covariant functors. Suppose $G$ is left exact
+and $F$ carries injective objects to $G$-acyclic objects, that is, objects
+annihilated by $R^qG$ for $q>0$. Then there is a cohomological spectral
+functor on $C$, with values in $C''$, abutting to the suitably filtered right
+derived functor $\mathfrak R(GF)$ of $GF$, whose initial term is}
+\LayerTarget{tohoku:eq:2.4.3}
+\[
+\tag{2.4.3}
+E_2^{p,q}(A)=R^pG(R^qF(A)).
+\]
+
+\LayerTarget{tohoku:remark:2.4.1:1}
+\noindent\textsc{Remarks 1.} The second hypothesis on the pair $(F,G)$ says
+that the functors $(R^qG)F$, $q>0$, are effaceable; see 2.2. Equivalently,
+for every $A\in C$ there is a monomorphism from $A$ to an object $M$ such that
+$(R^qG)(F(M))=0$ for $q\geq1$. This is the form in which we shall most often
+verify the hypothesis.
+
+\LayerTarget{tohoku:remark:2.4.1:2}
+\noindent 2. To compute the second spectral sequence of a composite functor,
+namely the one in Theorem 2.4.1, it suffices to take a resolution $C(A)$ of
+$A$ by $F$-acyclic objects $C^i$, not necessarily injective ones, and then
+take the second hyperhomology spectral sequence of $G$ with respect to the
+complex $FC(A)$.
+
+\LayerTarget{tohoku:remark:2.4.1:3}
+\noindent 3. We record two important special cases in which one of the two
+hyperhomology spectral sequences of a functor $F$ with respect to a complex
+$K$ degenerates. \textit{If $K$ is a resolution\textsuperscript{3)} of an
+object $A$ of $C$, then $\mathfrak R^nF(K)=R^nF(A)$}. Thus the graded object
+$(R^nF(A))$ is the abutment of a spectral sequence with initial term
+${}_{\mathrm I}E_2^{p,q}(K)=H^p(R^qF(K))$. \textit{If the $K^n$ are
+$F$-acyclic}, that is, $R^mF(K^n)=0$ for $m>0$, \textit{then
+$\mathfrak R^nF(K)=H^n(F(K))$}. Thus the graded object $(H^n(F(K)))$ is the
+abutment of a spectral sequence with initial term
+${}_{\mathrm{II}}E_2^{p,q}(K)=R^pF(H^q(K))$. Combining these results gives:
+\textit{if $K$ is a resolution of $A$ by $F$-acyclic objects, then
+$R^nF(A)=H^n(F(K))$}. The resulting isomorphisms are also the morphisms
+deduced from a homomorphism of $K$ into an injective resolution of $A$.
+Consequently, up to sign, they agree with the homomorphisms defined by the
+``iterated connecting homomorphism'' in $K$ [6, V, 7].
+

@@ -1,0 +1,102 @@
+% Corrected French for printed p.194; departures are append-only below.
+\clearpage
+\SourcePage{194}
+
+\LayerTarget{tohoku:setup:g-module-sheaf-notation}
+$H^p(G,A)$. Ainsi $\Gamma^G$ est le foncteur $h_k$ avec les notations
+précédentes, on a
+
+\LayerTarget{tohoku:definition:g-invariant-sections-sheaf}
+$\Gamma^G(A)=\Gamma(A)^G$ (groupe des éléments de $\Gamma(A)$ invariants sous
+$G$) $=\Gamma(A^G)$, où $A^G$ désigne le sous-faisceau de $A$ formé des germes
+de sections invariantes sous $G$. (Si $G$ admet un système \textit{fini} de
+générateurs, alors $A^G$ est aussi l'ensemble des éléments de $A$ invariants
+sous $G$).
+
+\LayerTarget{tohoku:definition:sheaf-group-cohomology}
+Les $\mathbf H^p(G,A)$ ($-\infty<p<+\infty$) sont des faisceaux foncteurs de
+$A$, qui forment le foncteur cohomologique dérivé de
+$\boldsymbol{\Gamma}^G(A)=A^G$. On a des homomorphismes canoniques
+
+\LayerTarget{tohoku:map:group-cohomology-stalk}
+\[
+\mathbf H^p(G,A)(x)\longrightarrow H^p(G,A(x))
+\]
+
+\LayerTarget{tohoku:remark:locality-group-cohomology}
+qui sont bijectifs dans tous les cas que nous aurons à considérer, et en tous
+cas si $G$ est fini (en vertu de th. 4.2.2 ou du corollaire 1 à la prop. 4.2.4,
+au choix!). Ces foncteurs sont de nature locale, c'est-à-dire permutent à
+l'opération de restriction à un ouvert.
+
+\LayerTarget{tohoku:definition:equivariant-cohomology}
+Les $H^p(X;G,A)$ forment le foncteur cohomologique dérivé de $\Gamma^G(A)$.
+On a le
+
+\LayerTarget{tohoku:theorem:4.4.1}
+\noindent\textsc{Théorème 4.4.1.} \textit{Il existe deux foncteurs spectraux
+cohomologiques sur la catégorie des $G$-faisceaux, aboutissant au foncteur
+gradué $(H^m(X;G,A))$, et dont les termes initiaux sont respectivement}
+
+\LayerTarget{tohoku:eq:4.4.1}
+\[
+\tag{4.4.1}
+\begin{aligned}
+\mathrm I_2^{p,q}(A)&=H^p(X,\mathbf H^q(G,A)),\\
+\mathrm {II}_2^{p,q}&=H^p(G,H^q(X,A)).
+\end{aligned}
+\]
+
+\LayerTarget{tohoku:construction:operator-complex-spectral-sequences}
+\textit{Ce sont aussi les deux suites spectrales du ``complexe à opérateurs''
+$C(A)$, où $C(A)$ est la résolution canonique de $A$, ou les deux suites
+spectrales de hypercohomologie de l'espace $X$ par rapport au complexe
+$C(G,A)$ des ``cochaines de $G$ à coëfficients dans le faisceau $A$''. Ces
+deux suites spectrales sont triviales si $G$ opère trivialement sur $A$ et si
+de plus $A$ est un espace vectoriel sur le corps $k$; alors on a un
+isomorphisme canonique :}
+
+\LayerTarget{tohoku:eq:4.4.2}
+\[
+\tag{4.4.2}
+H^n(X;G,A)=
+\bigoplus_{p+q=n}
+\mathrm{Hom}_k(H_p(G,k),H^q(X,A)).
+\]
+
+\textit{Plus généralement, supposons seulement que $G$ opère trivialement sur
+$A$, alors le corollaire 2 à la prop. 4.3.2 donne une suite exacte canonique :}
+
+\LayerTarget{tohoku:eq:4.4.3}
+\[
+\tag{4.4.3}
+\begin{aligned}
+0\longrightarrow{}&
+\bigoplus_{p+q=n-1}
+\mathrm{Ext}_{\mathbf Z}^1(H_p(G,\mathbf Z),H^q(X,A))\\
+\longrightarrow{}&H^n(X;G,A)
+\longrightarrow
+\bigoplus_{p+q=n}
+\mathrm{Hom}_{\mathbf Z}(H_p(G,\mathbf Z),H^q(X,A))
+\longrightarrow0.
+\end{aligned}
+\]
+
+\LayerTarget{tohoku:remark:4.4.1:1}
+\noindent\textsc{Remarques.} 1. Dans cette dernière formule, nous avions
+sous-entendu que $k=\mathbf Z$. Cependant cela n'a pas d'importance, car si
+$k$ est quelconque et $A$ est un faisceau de $k$-modules où $G$ opère, alors
+les $H^p(G,A)$ et $H^p(X;G,A)$ sont les mêmes, qu'on regarde $A$ comme un
+faisceau de $k(G)$-modules ou comme un faisceau de $\mathbf Z(G)$-modules.
+
+\LayerTarget{tohoku:proof:remark-4.4.1:1}
+Pour le voir on est ramené à prouver que si $A$ est un faisceau injectif de
+$k(G)$-modules, alors
+$\mathrm{Ext}_{\mathbf Z(G)}^n(X;\mathbf Z,A)$ et
+$\mathbf{Ext}_{\mathbf Z(G)}^n(\mathbf Z,A)$ (où nous écrivons $\mathbf Z$ et
+$\mathbf Z(G)$ pour les faisceaux constants qu'ils définissent) sont nuls pour
+$n>0$. Pour le premier, cela résulte de la suite spectrale $II$, qui montre
+qu'il est isomorphe à $H^n(G,\Gamma(A))$, qui est nul puisque $\Gamma(A)$ est
+un $k$-module injectif (pour lequel le résultat invoqué est bien connu).
+
+\TohokuContinuation{195}

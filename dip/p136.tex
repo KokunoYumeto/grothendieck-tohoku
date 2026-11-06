@@ -1,0 +1,79 @@
+% Direct-authority diplomatic French for printed p.136.
+\SourcePage{136}
+
+\LayerTarget{tohoku:thm:1.10.1:p2}
+\noindent de $C$ dans $C$, et un homomorphisme $f$ du foncteur identique dans
+$M$, tels que pour tout $A\in C$, $M(A)$ soit injectif et $f(A)$ soit un
+monomorphisme de $A$ dans $M(A)$. La démonstration étant essentiellement
+connue, nous esquisserons seulement les points principaux.
+
+\LayerTarget{tohoku:lemma:1.10.1:1}
+\noindent\textsc{Lemme 1.} --- \textit{Si $C$ satisfait l'axiome AB 5), alors
+l'objet $M\in C$ est injectif si et seulement si pour tout sous-truc $V$ du
+générateur $U$, et tout morphisme $v$ de $V$ dans $M$, $v$ se prolonge en un
+morphisme de $U$ dans $M$.}
+
+\LayerTarget{tohoku:lemma:1.10.1:1:proof}
+Il suffit de prouver que la condition est suffisante, soit donc alors $u$ un
+morphisme d'un sous-truc $B$ d'un $A\in C$ dans $M$, montrons qu'il existe un
+morphisme de $A$ dans $M$ prolongeant $u$. Considérons l'ensemble $P$ des
+prolongements de $u$ à des sous-trucs de $A$ contenant $B$ (c'est bien un
+ensemble, car en vertu de l'existence d'un générateur, les sous-trucs de $A$
+forment un ensemble). Ordonnons-le par la relation de prolongement. En vertu
+de la deuxième formulation de l'axiome AB 5) (cf. 1.5) cet ensemble est
+inductif. Il admet donc un élément maximal, on est donc ramené au cas où $u$
+est lui-même maximal, et à prouver qu'alors $B=A$.
+
+Prouvons donc que si $B\neq A$, il existe un prolongement de $u$ à un
+$B'\neq B$. Soit en effet $j$ un morphisme de $U$ dans $A$ tel que
+$j(U)\not\subset B$, posons $B'=j(U)+B$ (donc $B'\neq B$). Soit
+$V=j^{-1}(B)$ l'image inverse de $B$ par $j$, soit
+$j':V\longrightarrow B$ le morphisme induit par $j$, considérons la suite de
+morphismes
+
+\[
+ V\mathrel{\mathop{\longrightarrow}^{\varphi'}}U\times B
+ \mathrel{\mathop{\longrightarrow}^{\varphi}}B'\longrightarrow0,
+\]
+
+\noindent où le morphisme $\varphi'$ a pour composantes l'application
+identique de $V$ dans $U$ et $-j'$, et $\varphi$ a pour composantes $j$ et
+l'application identique de $B$ dans $B'$. On voit aussitôt que cette suite est
+exacte, donc pour définir un morphisme $v$ de $B'$ dans $M$, il suffit de
+définir un morphisme $w$ de $U\times B$ dans $M$ tel que
+$w\varphi'=0$. Or soit $k$ une extension de $uj':V\longrightarrow M$ à $U$,
+et prenons pour $w$ le morphisme de $U\times B$ dans $M$ dont les composantes
+sont $k$ et $u$, on vérifie aussitôt que $w\varphi'=0$, et que le morphisme
+$v:B'\longrightarrow M$ défini par $w$ prolonge $u$, ce qui achève la
+démonstration du lemme 1.
+
+\LayerTarget{tohoku:thm:1.10.1:construction:M1}
+Soit $A\in C$, soit $I(A)$ l'ensemble de tous les morphismes $u_i$ de
+sous-trucs $V_i$ de $U$ dans $A$. Considérons le morphisme
+
+\[
+ \bigoplus V_i\longrightarrow A\times U^{(I(A))}
+\]
+
+\noindent dont la restriction au facteur $V_i$ a pour composantes
+$-u_i:V_i\longrightarrow A$, et l'injection canonique de $V_i$ dans le i.ème
+facteur de la somme directe $U^{(I(A))}$. Soit $M_1(A)$ le conoyau du morphisme
+envisagé, $f(A):A\longrightarrow M_1(A)$ le morphisme induit par
+l'épimorphisme canonique de $A\times U^{(I(A))}$ sur son quotient. Alors
+$f(A)$ est un monomorphisme (vérification facile grâce au fait que le morphisme
+canonique $\bigoplus V_i\longrightarrow U^{(I(A))}$ est un monomorphisme en
+vertu de AB 4)) et de plus tout morphisme $u_i:V_i\longrightarrow A$ se
+``prolonge'' en un morphisme $U\longrightarrow M_1(A)$ (savoir le morphisme
+induit sur le i.ème facteur de $U^{(I(A))}$ par l'épimorphisme canonique de
+$A\times U^{(I(A))}$ sur son quotient $M_1(A)$).
+
+\LayerTarget{tohoku:thm:1.10.1:construction:transfinite:p1}
+Définissons par récurrence transfinie, pour tout nombre ordinal $i$, l'objet
+$M_i(A)$, et pour deux nombres ordinaux $i\leq j$, un morphisme
+\textit{injectif} $M_i(A)\longrightarrow M_j(A)$, de telle façon que les
+$M_i(A)$ pour $i<i_0$ ($i_0$ nombre ordinal fixé) forment un système inductif.
+Pour $i=0$, on prendra $M_0(A)=A$ ; pour $i=1$, $M_1(A)$ et
+$M_0(A)\longrightarrow M_1(A)$ sont déjà définis. Si la construction est
+faite pour les ordinaux $<i$, et si $i$ est de la forme $j+1$,
+
+\TohokuContinuation{137}

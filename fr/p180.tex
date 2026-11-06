@@ -1,0 +1,96 @@
+% Corrected French for printed p.180; departures are append-only below.
+\SourcePage{180}
+
+\LayerTarget{tohoku:corollary:3.9.1:3}
+\noindent\textsc{Corollaire 3.} \textit{Supposons la condition préliminaire du
+corollaire précédent satisfaite, supposons de plus que les recouvrements
+$\mathbf R\in\mathfrak R(A)$ aient un nerf de dimension $\leq n$. Alors les
+conditions équivalentes du corollaire précédent impliquent même
+$H^i(A,F)=0$ pour $A\in\mathcal S$ et tout $i>0$.}
+
+\LayerTarget{tohoku:proof:corollary-3.9.1-3}
+On aura en effet automatiquement $H^i(\mathbf R,F)=0$ pour
+$\mathbf R\in\mathfrak R(A)$ et $i>n$, donc pour tout $i$, c'est-à-dire que
+la condition $A(m)$ sera vérifiée pour tout $m$, donc il suffit d'appliquer le
+corollaire avec $m$ grand.
+
+\LayerTarget{tohoku:proof:theorem-3.9.1:induction-on-n}
+\noindent\textsc{Démonstration du Théorème 3.9.1.} Nous procéderons par
+récurrence sur l'entier $n$, la proposition étant évidente si $n=0$.
+Supposons donc $n\geq1$, et le théorème démontré pour les entiers $n'<n$. De
+l'hypothèse de récurrence on tire d'abord aussitôt $H^i(A,F)=\{0\}$ pour
+$1\leq i\leq n-1$, il reste donc à prouver la nullité de
+$c^n\in H^n(A,F)$, sous la condition qu'il existe une partie finie $L$ de
+$\mathfrak R(A)$ telle que la restriction de $c^n$ à tout
+$B\in\mathbf R^L$ soit nulle. Soit $k$ le nombre d'éléments de $L$, nous
+raisonnons par récurrence sur $k$. La conclusion est triviale si $k=0$,
+prouvons-la pour $k=1$.
+
+\LayerTarget{tohoku:proof:theorem-3.9.1:base-k-one}
+Par hypothèse, il existe $\mathbf R\in\mathfrak R(A)$ tel que la restriction
+de $c^n$ à tout $B\in\mathbf R$ soit nulle. Comme les $B\in\mathbf R$ sont
+dans $\mathcal S$, d'où $H^i(B,F)=\{0\}$ pour $1\leq i\leq n-1$, le terme
+$E_2^{p,q}$ de la suite spectrale de Leray relative à $\mathbf R$ est nul pour
+$1\leq q\leq n-1$. On en conclut classiquement une suite exacte
+
+\LayerTarget{tohoku:eq:theorem-3.9.1-edge-sequence}
+\[
+H^n(\mathbf R,F)\longrightarrow H^n(A,F)
+\longrightarrow H^0(\mathbf R,H^n(F))\longrightarrow\cdots.
+\]
+
+Comme le premier terme est nul en vertu de $A(n)$, le deuxième homomorphisme
+est injectif, or par hypothèse l'image de $c^n$ par ce dernier est nulle, donc
+$c^n$ est nul.
+
+\LayerTarget{tohoku:proof:theorem-3.9.1:induction-on-k}
+Supposons maintenant $k\geq2$, et la conclusion démontrée pour les valeurs
+$k'<k$. Soit $L=(\mathbf R^1,\ldots,\mathbf R^k)$. Il suffit de prouver,
+d'après ce qu'on a vu, que la restriction $c_B^n$ de $c^n$ à tout
+$B\in\mathbf R^1$ est nulle. Or pour $i=2,\ldots,k$, la restriction
+$\mathbf R_B^i$ de $\mathbf R^i$ à $B$ appartient à $\mathfrak R(B)$,
+d'autre part la restriction de $c_B^n$ à tout ensemble appartenant à
+l'intersection des recouvrements $\mathbf R_B^i$ ($2\leq i\leq k$) est nulle
+par hypothèse sur $c^n$. Appliquant notre hypothèse de récurrence, pour
+$k'=k-1$, à $c_B^n$ et $B$, on trouve que $c_B^n=0$, ce qui achève la
+démonstration du théorème.
+
+\LayerTarget{tohoku:proposition:3.9.2}
+\noindent\textsc{Proposition 3.9.2.} \textit{L'hypothèse préliminaire du
+corollaire 2 est satisfaite dans le cas suivant : $X$ est quasi-compact, les
+$A\in\mathcal S$ sont fermés, $X\in\mathcal S$, les
+$\mathbf R\in\mathfrak R(X)$ sont finis et, pour tout $A\in\mathcal S$ et
+tout $\mathbf R\in\mathfrak R(X)$, la trace $\mathbf R_A$ de $\mathbf R$ sur
+$A$ appartient à $\mathfrak R(A)$ ; de plus, pour deux points distincts $x,y$
+de $X$, il existe un $\mathbf R\in\mathfrak R(X)$ dont aucun ensemble ne
+contient à la fois $x$ et $y$.}
+
+\LayerTarget{tohoku:definition:quasi-compact}
+(Nous dirons qu'un espace est quasi-compact s'il satisfait à l'axiome des
+recouvrements ouverts des espaces compacts, sans être néanmoins nécessairement
+séparé).
+
+\LayerTarget{tohoku:construction:cover-stars-and-neighborhoods}
+\noindent\textsc{Démonstration.} Pour un recouvrement $\mathbf R$ de $X$ et un
+$x\in X$, désignons par $E_x(\mathbf R)$ (étoile de $\mathbf R$ en $x$) la
+réunion des $A\in\mathbf R$ qui contiennent $x$, et soit $O_x(\mathbf R)$ le
+complémentaire de la réunion des $A\in\mathbf R$ qui ne contiennent pas $x$.
+
+\LayerTarget{tohoku:eq:cover-star-inclusions}
+On a donc $x\in O_x(\mathbf R)\subset E_x(\mathbf R)$, de plus, pour tout
+$y\in O_x(\mathbf R)$, on a $E_y(\mathbf R)\subset E_x(\mathbf R)$.
+
+\LayerTarget{tohoku:claim:closed-cover-star-neighborhood}
+Si $\mathbf R$ est un recouvrement fini de $X$ par des ensembles fermés,
+$O_x(\mathbf R)$ est un \textit{voisinage ouvert de $x$}.
+
+\LayerTarget{tohoku:proof:proposition-3.9.2:finite-intersection:p1}
+Sous les conditions de la proposition, soit $\mathcal U$ un recouvrement
+ouvert de $X$, soit $x\in X$, soit $U_x\in\mathcal U$ avec $x\in U_x$ ;
+l'intersection des $E_x(\mathbf R)$ pour $\mathbf R$ parcourant
+$\mathfrak R(X)$ est par hypothèse réduite à $x$, d'où on conclut, par raison
+de quasi-compacité, qu'il existe une partie finie $L_x$ de $\mathfrak R(X)$
+telle que l'intersection des $E_x(\mathbf R)$ pour $\mathbf R\in L_x$, i.e.
+$E_x(\mathbf R^{L_x})$, est contenue dans $U_x$.
+
+\TohokuContinuation{181}

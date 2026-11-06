@@ -1,0 +1,92 @@
+% Direct-authority diplomatic French for printed p.140.
+\SourcePage{140}
+
+\LayerTarget{tohoku:axiom:delta-functor:2:p2}
+\noindent
+\[
+\hbox{(2.1.1.)}\quad
+\cdots\longrightarrow T^i(A')\longrightarrow T^i(A)
+\longrightarrow T^i(A'')\longrightarrow T^{i+1}(A')
+\longrightarrow\cdots
+\]
+
+\noindent est un complexe, i. e. le composé de deux morphismes consécutifs
+dans cette suite est nul.
+
+\LayerTarget{tohoku:def:delta-star-and-variance}
+Définition analogue pour un $\partial^*$-foncteur covariant, la seule
+différence étant que l'opérateur $\partial$ diminue le degré d'une unité au
+lieu de l'augmenter. Définition analogue pour les $\partial$-foncteurs et
+$\partial^*$-foncteurs contravariants ; les $T^i$ sont alors des foncteurs
+additifs contravariants et les opérateurs bords vont de $T^i(A')$ dans
+$T^{i+1}(A'')$ ou $T^{i-1}(A'')$. Si on change de signe les degrés $i$ dans
+$T^i$, ou si on remplace la catégorie $C'$ par sa duale, les
+$\partial$-foncteurs sont changés en $\partial^*$-foncteurs. Ainsi, on peut
+toujours se ramener à l'étude des $\partial$-foncteurs covariants. Remarquons
+que si $a=-\infty$, $b=+\infty$, un $\partial$-foncteur est une
+\textquotedblleft connected sequence of functors\textquotedblright\ de [6,
+Chap. III].
+
+\LayerTarget{tohoku:def:delta-functor-morphism}
+Étant donnés deux $\partial$-foncteurs $T$ et $T'$ définis pour les mêmes
+degrés, on appelle \textit{morphisme} (ou transformation naturelle) de $T$
+dans $T'$ un système $f=(f^i)$ de morphismes fonctoriels
+$f^i:T^i\longrightarrow T'^i$, soumis à la condition naturelle de commutation
+naturelle de commutation avec $\partial$ : pour toute suite exacte
+$0\longrightarrow A'\longrightarrow A\longrightarrow A''\longrightarrow 0$,
+le diagramme
+
+\LayerTarget{tohoku:diagram:delta-morphism}
+\[
+\begin{array}{ccc}
+T^i(A'') & \mathop{\longrightarrow}\limits^{\partial} & T^{i+1}(A')\\
+\big\downarrow && \big\downarrow\\
+T'^i(A'') & \mathop{\longrightarrow}\limits^{\partial} & T'^{i+1}(A')
+\end{array}
+\]
+
+\noindent est commutatif. Les morphismes de $\partial$-foncteurs s'ajoutent
+et se composent de façon évidente.
+
+\LayerTarget{tohoku:def:exact-delta-functor}
+Supposons que $C'$ soit aussi une catégorie abélienne. Alors un
+$\partial$-foncteur est dit \textit{exact} si pour toute suite exacte
+$0\longrightarrow A'\longrightarrow A\longrightarrow A''\longrightarrow 0$
+dans $C$, la suite correspondante (2.1.1) de morphismes est exacte. On appelle
+\textit{foncteur cohomologique} (resp. \textit{foncteur homologique}) un
+$\partial$-foncteur (resp. $\partial^*$-foncteur) exact défini pour tous les
+degrés.
+
+\LayerTarget{tohoku:section:2.2}
+\noindent\textbf{2.2. $\partial$-foncteurs universels.}
+
+\LayerTarget{tohoku:def:universal-delta-functor}
+Soit $T=(T^i)_{0\leq i\leq a}$ un $\partial$-foncteur covariant de $C$ dans
+$C'$, où $a>0$. $T$ est dit un $\partial$-foncteur \textit{universel} si pour
+tout $\partial$-foncteur $T'=(T'^0)$ défini pour les mêmes degrés, et tout
+morphisme fonctoriel $f^{i_0}$ de $T^{i_0}$ dans $T'^{i_0}$, il existe un
+morphisme et un seul $f$ de $T$ dans $T'$ qui pour le degré $i_0$ se réduise à
+$f^{i_0}$. Définition identique pour un $\partial$-foncteur contravariant ;
+dans le cas des $\partial^*$-foncteurs il faut considérer des morphismes de
+$T'$ dans $T$ et non de $T$ dans $T'$.
+
+\LayerTarget{tohoku:prop:satellites-uniqueness}
+Par définition même, pour un foncteur covariant $F$ donné de $C$ dans $C$, et
+pour $a$, donné, $a>0$, il ne peut exister, à isomorphismes canoniques près,
+qu'un seul $\partial$-foncteur universel défini en degrés $0\leq i\leq a$ et
+se réduisant à $F$ en degré 0.
+
+\LayerTarget{tohoku:def:right-left-satellites}
+Ses composantes sont alors notées $S^iF$, et appelées \textit{foncteurs
+satellites droits de $F$}. Si $i<0$, on posera aussi $S_iF=S^{-i}F$, où les
+$S_iF$ sont les satellites \textit{gauches} de $F$, définis comme $S^iF$,
+mais par la considération des $\partial^*$-foncteur universels définis en
+degrés $0\leq i\leq a$, tels que $T^0=F$. On vérifie aussitôt que pour $i$
+donné, si $S^iF$ existe, il est indépendant du choix de $a$.
+
+\LayerTarget{tohoku:remark:satellites-existence:p1}
+Dans tous les cas à ma connaissance, les foncteurs satellites d'un foncteur
+additif quelconque $F$ existent. D'ailleurs, si $C,C'$ sont donnés, pour
+montrer
+
+\TohokuContinuation{141}

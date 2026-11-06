@@ -1,0 +1,82 @@
+% Direct-authority diplomatic French for printed p.151.
+\SourcePage{151}
+
+\LayerTarget{tohoku:construction:resolving-functor-spectral-sequences:p2}
+\noindent spectrales d'hyperhomologie (2.4.2) de $F$ par rapport au complexe
+$K$.
+
+\LayerTarget{tohoku:prop:2.5.3}
+\noindent\textsc{Proposition 2.5.3.} --- \textit{Les isomorphismes (2.5.3)
+proviennent d'isomorphismes fonctoriels de la première (resp. la deuxième)
+suite spectrale du bicomplexe $\mathbf F(K)$ avec la première (resp. la
+deuxième) suite spectrale d'hyperhomologie du foncteur $F$ par rapport au
+complexe $K$.}
+
+\LayerTarget{tohoku:prop:2.5.3:proof:p1}
+Ces isomorphismes vont être explicités dans la démonstration ci-dessous. Soit
+$C(K)=(C^{p,q}(K))_{p,q}$ une \og résolution injective\fg{} de $K$ au sens de
+[6, Chap. XVII] ; considérant $K$ comme un bicomplexe à deuxième degré nul, on
+a un homomorphisme d'augmentation $K\longrightarrow C(K)$. Considérons le
+bicomplexe $M(K)=\mathbf F(C(K))$ donné par
+\[
+M^{p,q}(K)=\sum_{q'+q''=q}\mathbf F^{q''}(C^{p,q'}(K)).
+\]
+$M(K)$ n'est pas déterminé de façon unique par $K$, cependant les deux suites
+spectrales de $M(K)$ et leur aboutissement commun le sont (puisque $C(K)$ est
+déterminé à une équivalence d'homotopie de bicomplexes près), ce sont des
+foncteurs spectraux bien déterminés en la variable $K$. Posons
+$L(K)=F(C(K))$ ; les homomorphismes d'augmentation
+$K\longrightarrow C(K)$ et $F\longrightarrow\mathbf F$ définissent des
+homomorphismes de bicomplexes
+\[
+L(K)=F(C(K))\longrightarrow M(K)=\mathbf F(C(K))
+\longleftarrow\mathbf F(K),
+\]
+d'où des homomorphismes \textit{fonctoriels} pour les suites spectrales
+correspondantes (homomorphismes indépendants du choix de $C(K)$) :
+\LayerTarget{tohoku:eq:2.5.4}
+\[
+\tag{2.5.4}
+\begin{aligned}
+\mathrm I L(K)&\longrightarrow\mathrm I M(K)\longleftarrow\mathrm I\mathbf F(K),\\
+\mathrm{II}L(K)&\longrightarrow\mathrm{II}M(K)\longleftarrow\mathrm{II}\mathbf F(K),
+\end{aligned}
+\]
+définissant les mêmes homomorphismes pour les aboutissements
+\[
+HL(K)\longrightarrow HM(K)\longleftarrow H\mathbf F(K).
+\]
+Pour les termes initiaux, les homomorphismes (2.5.4) donnent :
+\LayerTarget{tohoku:eq:2.5.5}
+\[
+\tag{2.5.5}
+\begin{aligned}
+{}_{\mathrm I}E_2^{p,q}L(K)&\longrightarrow{}_{\mathrm I}E_2^{p,q}M(K)
+\longleftarrow{}_{\mathrm I}E_2^{p,q}\mathbf F(K),\\
+{}_{\mathrm{II}}E_2^{p,q}L(K)&\longrightarrow{}_{\mathrm{II}}E_2^{p,q}M(K)
+\longleftarrow{}_{\mathrm{II}}E_2^{p,q}\mathbf F(K).
+\end{aligned}
+\]
+Nous allons prouver que les homomorphismes (2.5.5) sont des isomorphismes, et
+que les isomorphismes correspondants entre les termes extrêmes de (2.5.5)
+(qui sont les termes initiaux des suites spectrales d'hyperhomologie de $F$
+pour $K$, resp. du bicomplexe $\mathbf F(K)$) sont ceux résultant des formules
+(2.5.3) ; il en résultera que les homomorphismes (2.5.4) sont des
+isomorphismes, d'où des isomorphismes entre les termes extrêmes, ce seront
+évidemment les isomorphismes cherchés. Tout revient donc à prouver que les
+termes médians des lignes (2.5.5) ont respectivement la forme
+$H^p(R^q(F(K)))$ et $R^pF(H^q(K))$ (la vérification que les homomorphismes
+dans (2.5.5) sont bien les isomorphismes naturels étant alors purement
+mécanique, et d'ailleurs implicitement contenue dans la démonstration qui
+suit).
+
+On va démontrer $H_{\mathrm{II}}(M)^{p,q}=R^qF(K^p)$ (d'où résultera aussitôt
+$ {}_{\mathrm I}E_2^{p,q}(M)=H^p(R^qF(K))$). Or pour $p$ fixé,
+$M^{p*}=(M^{p,q})_q$ est le complexe simple associé au bicomplexe
+\[
+(\mathbf F^{q''}(C^{p,q'}(K)))_{q',q''}=\mathbf F(C(K^p)),
+\]
+où $C(K^p)$ désigne le complexe $C^{p*}(K)$,
+
+\TohokuContinuation{152}
+

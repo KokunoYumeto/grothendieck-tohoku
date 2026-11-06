@@ -1,0 +1,83 @@
+% Corrected French for printed p.196.
+\clearpage
+\SourcePage{196}
+
+\LayerTarget{tohoku:result:abelian-g-sheaves-additive}
+En particulier, les $G$-faisceaux abéliens forment une catégorie additive,
+dont nous allons indiquer les propriétés.
+
+\LayerTarget{tohoku:definition:g-o-module}
+Plus généralement, soit $O$ un $G$-faisceau d'anneaux avec unité, considérons
+les faisceaux $A$ sur $X$ qui sont à la fois des $G$-faisceaux abéliens et des
+$O$-modules, les opérations de $O$ sur $A$ étant compatibles avec les
+opérations de $G$ (i.e. l'homomorphisme naturel de faisceaux d'ensembles
+$O\times A\longrightarrow A$ étant un $G$-homomorphisme) : un tel faisceau
+sera appelé un \textit{$G$-$O$-Module}. Appelant
+\textit{$G$-$O$-homomorphisme} un homomorphisme de faisceaux qui est un
+$O$-homomorphisme et un $G$-homomorphisme, on voit que la somme ou le composé
+de deux $G$-$O$-homomorphismes est un $G$-$O$-homomorphisme.
+
+\LayerTarget{tohoku:definition:category-g-o-modules}
+Donc les $G$-$O$-Modules forment une \textit{catégorie additive} notée
+$C^{O(G)}$ ; si $O$ est le faisceau constant des entiers (avec les opérations
+triviales de $G$) on obtient de nouveau la catégorie des $G$-faisceaux
+abéliens, notée $C^{X(G)}$.
+
+\LayerTarget{tohoku:comparison:trivial-action-g-o-modules}
+Si $G$ opère trivialement sur $X$, la catégorie $C^{O(G)}$ s'interprète comme
+la catégorie des $O'$-Modules, où $O'$ est un faisceau d'anneaux convenable,
+si par exemple $G$ opère trivialement sur $O$, ou aura
+$O'=O\otimes_{\mathbf Z}\mathbf Z(G)$, (où $\mathbf Z(G)$ désigne l'algèbre
+de $G$ par rapport à l'anneau $\mathbf Z$ des entiers, ou plutôt le faisceau
+constant qu'il définit). Les résultats de 3.1 restent valables à de petites
+modifications près :
+
+\LayerTarget{tohoku:proposition:5.1.1}
+\noindent\textsc{Proposition 5.1.1.} \textit{Soit $O$ un $G$-faisceau
+d'anneaux sur $X$. Alors la catégorie additive $C^{O(G)}$ des
+$G$-$O$-Modules est une catégorie abélienne, satisfaisant les axiomes AB 5)
+et AB 3*) de 1.5, et admet un générateur.}\textsuperscript{9)}
+
+\LayerTarget{tohoku:proof:5.1.1:p1}
+La vérification est triviale, sauf l'existence du générateur, dont nous allons
+donner une construction maintenant, généralisant celle du 3.1.
+
+\LayerTarget{tohoku:construction:generator-l-u}
+Pour tout ouvert $U$ de $X$, soit $L(U)$ le $O$-module somme directe des
+$O$-modules $O_{g\cdot U}$ pour $g\in G$. $L(U)$ peut être considéré comme
+$G$-faisceau de façon évidente, de sorte que $L(U)$ devient même un
+$G$-$O$-Module. Si $A$ est un $G$-$O$-Module quelconque, un
+$G$-$O$-homomorphisme de $L(U)$ dans $A$ est connu quand on connaît sa
+restriction à $O_U$, qui est un $O$-homomorphisme de $O_U$ dans $A$, qu'on
+peut d'ailleurs se donner à l'avance arbitrairement. La donnée d'un tel
+homomorphisme équivaut aussi à la donnée d'une section de $A$ sur $U$.
+
+\LayerTarget{tohoku:result:generator-family-g-o-modules}
+Si $B$ est un sous-$G$-$O$-Module de $A$ distinct de $A$, on peut trouver sur
+un ouvert convenable $U$ une section de $A$ qui n'est pas une section de $B$.
+Par suite, la famille de $L(U)$ est une famille de générateurs de $C^{O(G)}$,
+et leur somme directe (pour $U$ parcourant tous les ouverts de $X$) est donc
+un générateur.
+
+\LayerTarget{tohoku:conclusion:injective-g-o-embedding:p1}
+De la proposition 4.1 résulte en particulier que tout $G$-$O$-faisceau est
+isomorphe à un sous-faisceau d'un $G$-$O$-Module injectif. Il importe pour la
+
+\LayerTarget{tohoku:footnote:9}
+\begin{quote}
+\footnotesize
+9) Cette proposition, ainsi que divers résultats de la suite, peuvent
+s'énoncer aussi dans le contexte plus général qui suit. On se donne une
+catégorie $C$, un groupe $G$, et une ``représentation de $G$ par des foncteurs
+dans $C$'' : à tout $g\in G$ est associé un foncteur
+$F_g:C\longrightarrow C$, de telle façon qu'on ait $F_e=$ foncteur identique,
+$F_gF_{g'}=F_{gg'}$ (du moins à des isomorphismes fonctoriels donnés près,
+satisfaisant à certaines conditions de cohérence que nous n'expliciterons
+pas). Alors on peut construire la catégorie $C^G$ des ``objets de $C$ avec
+groupe d'opérateurs $G$'', tout comme $C^{X(G)}$ (pour un espace à groupe
+d'opérateurs $X(G)$) peut se construire à partir de $C^X$. (Comparer aussi
+avec le cas particulier, exemple 1.7. f). Beaucoup de propriétés vraies pour
+$C$ se conservent alors par passage à $C^G$.
+\end{quote}
+
+\TohokuContinuation{197}

@@ -1,0 +1,83 @@
+% Source-aligned English for printed p.158.
+\SourcePage{158}
+
+\LayerTarget{tohoku:construction:inverse-image-comparison:p2}
+\noindent extends uniquely to a homomorphism of cohomological functors
+\[
+R\Gamma^Y_\Psi\longrightarrow (R\Gamma^X_\Phi)g.
+\]
+We have therefore proved:
+
+\LayerTarget{tohoku:prop:3.2.2}
+\textsc{Proposition 3.2.2.} --- \textit{Let $f:X\longrightarrow Y$ be a
+continuous map, and let $\Phi$ and $\Psi$ be antifilters of closed subsets of
+$X$ and $Y$, respectively, such that $B\in\Psi$ implies
+$f^{-1}(B)\in\Phi$. For every sheaf of abelian groups $F$ on $Y$, there is a
+unique family of homomorphisms}
+\[
+H^p_\Psi(Y,F)\longrightarrow H^p_\Phi(X,f^{-1}(F))
+\qquad(-\infty<p<+\infty)
+\]
+\textit{forming a homomorphism of cohomological functors whose degree-zero
+part is the natural homomorphism.}
+
+These homomorphisms will be called the natural homomorphisms. Their uniqueness
+implies an evident transitivity property, whose statement is left to the
+reader.
+
+\LayerTarget{tohoku:construction:restriction-homomorphisms}
+In particular, if $Y$ is a subset of $X$ and we put
+$H^p_\Psi(Y,F)=H^p_\Psi(Y,F\vert Y)$, where $F\vert Y$ denotes the
+restriction of the sheaf $F$ to $Y$, there are \textit{restriction
+homomorphisms}
+\[
+H^p_\Phi(X,F)\longrightarrow H^p_{\Phi\cap Y}(Y,F),
+\]
+where $\Phi\cap Y$ denotes the trace of $\Phi$ on $Y$.
+
+\LayerTarget{tohoku:section:3.3}
+\textbf{3.3. Acyclicity criteria.} The developments in this section, which
+will be very useful below, are due to Godement and will be treated in detail
+in Godement's book [9] cited in the Introduction.
+
+\LayerTarget{tohoku:lemma:3.3.1}
+\textsc{Lemma 3.3.1.} --- \textit{Let $F:C\longrightarrow C'$ be a covariant
+functor between abelian categories, and suppose that every object of $C$ is
+isomorphic to a subobject of an injective object. Let $\mathbf M$ be a class
+of objects of $C$ satisfying the following conditions: (i) every $A\in C$
+admits a monomorphism into some $M\in\mathbf M$; (ii) every $A\in C$
+isomorphic to a direct summand of an $M\in\mathbf M$ belongs to $\mathbf M$;
+(iii) for every exact sequence
+$0\longrightarrow M'\longrightarrow M\longrightarrow M''\longrightarrow0$
+in $C$ with $M',M\in\mathbf M$, one also has $M''\in\mathbf M$, and the
+sequence
+$0\longrightarrow F(M')\longrightarrow F(M)\longrightarrow
+F(M'')\longrightarrow0$ is exact. Then every injective object of $C$ belongs
+to $\mathbf M$, and $R^pF(M)=0$ for every $M\in\mathbf M$ and $p>0$.}
+
+First let $I$ be injective in $C$. By (i), $I$ embeds into some
+$M\in\mathbf M$ and, since $I$ is injective, it is isomorphic to a direct
+summand of $M$. Thus $I\in\mathbf M$ by (ii). Now let $M\in\mathbf M$ and
+prove that $R^pF(M)=0$ for $p>0$. Take a right resolution of $M$ by injective
+objects $C^i$, $i\geq0$, and let $Z^i$ denote its subobject of cycles in
+$C^i$. It is enough to prove that the sequences
+\[
+\begin{gathered}
+0\longrightarrow F(M)\longrightarrow F(C^0)\longrightarrow F(Z^1)
+\longrightarrow0,\\
+0\longrightarrow F(Z^1)\longrightarrow F(C^1)\longrightarrow F(Z^2)
+\longrightarrow0,\quad\text{and so on}
+\end{gathered}
+\]
+are exact. By (iii), it is enough to prove that all $Z^i$ and $C^i$ belong to
+$\mathbf M$. This is already known for the $C^i$, since they are injective,
+and follows for the $Z^i$ by induction from (iii).
+
+\LayerTarget{tohoku:cor:3.3.1}
+\textsc{Corollary.} --- \textit{For every $A\in C$, the groups $R^pF(A)$ may
+be computed from any resolution of $A$ by objects $C^i\in\mathbf M$.}
+
+Indeed, such a resolution exists by (i), and computes the $R^pF(A)$ because
+the lemma makes every $C^i$ $F$-acyclic.
+
+\TohokuContinuation{159}

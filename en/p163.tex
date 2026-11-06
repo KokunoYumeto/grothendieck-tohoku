@@ -1,0 +1,71 @@
+% Source-aligned English for printed p.163.
+\SourcePage{163}
+
+\LayerTarget{tohoku:claim:3.4.2:H1-bijection:surjectivity}
+if $L$ is locally isomorphic to $\overline F$ (for one readily sees that a
+sheaf locally isomorphic to a flabby sheaf is flabby). It is an epimorphism.
+Indeed, let $(h_{ij})$ be a 1-cocycle of $H$ relative to an open covering
+$(U_i)$ of $X$. Since $H^1(X,\overline H)$ consists only of the neutral
+element, there exist $\overline h_i\in\Gamma(U_i,\overline H)$ such that
+$h_{ij}=\overline h_i^{-1}\overline h_j$. On the other hand, the
+$\overline h_i$ can plainly be lifted to sections $\overline g_i$ of
+$\overline G$ (it suffices to recall the definitions of $\overline G$ and
+$\overline H$!). Put $p_{ij}=\overline g_i^{-1}\overline g_j$. The section
+of $H$ over $U_{ij}$ defined by $p_{ij}$ is then $h_{ij}$; hence
+$p_{ij}\in\Gamma(U_{ij},P)$. Thus $(p_{ij})$ is a 1-cocycle of $P$ that
+defines the given 1-cocycle upon passage to the quotient.
+
+\LayerTarget{tohoku:construction:3.4.2:associated-P-bundle}
+It follows from the preceding result that the fiber space $E$ is isomorphic
+to the fiber space associated with a fiber space $Q$ having structure sheaf
+$P$; moreover, $Q$ is determined up to isomorphism.
+
+\LayerTarget{tohoku:action:3.4.2:P-actions}
+Let $P=\overline F G\subset\overline G$ act on $\overline G$ by inner
+automorphisms. Then $F$ remains stable under these actions, since
+$\overline F$ acts trivially on $\overline F$ and $F$ is invariant in $G$.
+Thus $P$ acts naturally on $\overline F$. Moreover, $F$ is stable under the
+actions of $P$, and the resulting actions of $P$ on $F$ are precisely those
+obtained by composing $P\longrightarrow H$ with the natural representation
+of $H$ by actions on $F$. It follows that the associated sheaf $F^E$ also
+identifies with the associated sheaf $F^Q$. The actions of $P$ also descend
+to the quotient $F'=\overline F/F$; the representations of $P$ by germs of
+automorphisms of $F,\overline F,F'$ will all be denoted by $\sigma$. We now
+have an exact sequence of homomorphisms of sheaves:
+
+\LayerTarget{tohoku:eq:3.4.2:crossed-extension}
+\[
+e\longrightarrow G\longrightarrow P\mathop{\longrightarrow}^{u}F'
+\longrightarrow e.
+\]
+
+\LayerTarget{tohoku:map:3.4.2:u}
+The homomorphism $G\longrightarrow P=\overline F G$ is the inclusion and
+hence a homomorphism of sheaves of groups. The map
+$u:P\longrightarrow F'$ sends a product $\overline f g$, with
+$\overline f\in\overline F(x)$ and $g\in G(x)$, to the class of $\overline f$
+in $F'(x)$. This is well-defined because $G\cap\overline F=F$.
+
+\LayerTarget{tohoku:claim:3.4.2:u-properties}
+This map \textit{does not preserve} the multiplicative structures in general,
+but it satisfies the following conditions: (i) $u$ is surjective, and two
+elements of $P$ have the same image if and only if they are congruent under
+the right action of $G$, that is, if they define the same element of $P/G$;
+(ii) $u$ is a crossed homomorphism from $P$ to $F'$, where $P$ acts on $F'$
+as indicated above. Thus, in every fiber $P(x)$,
+$u(e)=e$ and $u(pp')=u(p)\sigma(p)u(p')$.
+
+\LayerTarget{tohoku:construction:3.4.2:dQ-obstruction}
+From this situation and from the fiber space $Q$ with structure sheaf $P$ we
+will derive an element $d(Q)\in H^1(X,{F'}^Q)$, where ${F'}^Q$ is the sheaf
+associated with $Q$ and the given actions of $P$ on $F'$, in such a way that
+$d(Q)=0$ if and only if the class $c(Q)\in H^1(X,P)$ of $Q$ lies in the image
+of $H^1(X,G)$. Proposition 3.4.2 will then be proved, modulo the immediate
+verifications of naturality.
+
+\LayerTarget{tohoku:reduction:3.4.2:E-via-Q}
+Indeed, the resulting condition is necessary and sufficient for the class
+$c(E)\in H^1(X,H)$ to lie in the image of $H^1(X,G)$, as is immediately seen
+from the commutative diagram
+
+\TohokuContinuation{164}

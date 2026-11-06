@@ -1,0 +1,71 @@
+% Source-aligned English for printed p.153, with logged type corrections.
+\SourcePage{153}
+
+\LayerTarget{tohoku:construction:four-functor-square:p2}
+\noindent $G$-acyclic.
+
+\LayerTarget{tohoku:prop:2.5.5}
+\noindent\textsc{Proposition 2.5.5.} --- \textit{Under the preceding
+hypotheses, let $A\in C$ and consider the two hyperhomology spectral sequences
+of $G$ with respect to $\mathbf F(A)$. They are spectral functors of $A$ and
+are respectively isomorphic to the second spectral functors of the composites
+$F'G'$ and $GF$.}
+
+\LayerTarget{tohoku:prop:2.5.5:proof}
+The assertion for the composite $GF$ is precisely Proposition 2.5.4. The
+second spectral sequence of $F'G'$ is, by definition, the second spectral
+sequence of $F'$ with respect to $G'(C(A))$, where $C(A)$ is an injective
+resolution of $A$. By Proposition 2.5.3 it therefore identifies with the
+second spectral sequence of the bicomplex $\mathbf F'G'(C(A))$, whose first
+degree comes from $C(A)$. Since $\mathbf F'G'=G\mathbf F$, it remains to
+compute $\mathrm{II}(G\mathbf F(C(A)))$. For fixed $q$,
+$\mathbf F^qC(A)$ is a resolution of $\mathbf F^q(A)$ by $G$-acyclic
+objects, because $\mathbf F^q$ is exact. After exchanging its two degrees,
+$\mathbf F(C(A))$ is thus a resolution of $\mathbf F(A)$ by $G$-acyclic
+objects. By 2.4, the second spectral sequence of
+$G(\mathbf F(C(A)))$ identifies with the first hyperhomology spectral
+sequence of $G$ with respect to $\mathbf F(A)$.
+
+\LayerTarget{tohoku:cor:2.5.5}
+\noindent\textsc{Corollary.} --- \textit{Let $C,C',C'',C'''$ and
+$F,G,F',G'$ be as above. Let $\mathbf F,\mathbf G,\mathbf F',\mathbf G'$ be
+resolving functors for $F,G,F',G'$, with a natural isomorphism
+$\mathbf F'\mathbf G'=\mathbf G\mathbf F$ compatible with the differentials
+in the resolving functors. Suppose that, for every injective object $I$ of
+$C$ and every $q\geq0$, $\mathbf F^q(I)$ is $G$-acyclic and
+$\mathbf G'{}^q(I)$ is $F'$-acyclic. Then for every
+$A\in C$, the second spectral sequences of $F'G'$ and $GF$ at $A$ identify
+with the first and second hyperhomology spectral sequences of $G$ for
+$\mathbf F(A)$; equivalently, with the first and second hyperhomology spectral
+sequences of $F'$ for $\mathbf G'(A)$; and equivalently, with the two spectral
+sequences of the bicomplex
+$\mathbf G(\mathbf F(A))=\mathbf F'(\mathbf G'(A))$.}
+
+\LayerTarget{tohoku:chapter:III}
+\noindent\textbf{Chapter III. Cohomology with coefficients in a sheaf.}
+
+\LayerTarget{tohoku:section:3.1}
+\noindent\textbf{3.1. Generalities on sheaves.}
+
+\LayerTarget{tohoku:def:presheaf-and-sheaf:p1}
+Let $X$ be a topological space, not necessarily separated. Recall from 1.7,
+example h, that a \textit{presheaf of sets on $X$} is an inductive system of
+sets on the set of nonempty open subsets of $X$, ordered by reverse
+inclusion. Thus, for every open $U\subset X$, there is a set $F(U)$ and, for
+every pair of nonempty opens $U\supset V$, a \textit{restriction map}
+\[
+\varphi_{VU}:F(U)\longrightarrow F(V),
+\]
+such that $\varphi_{UU}$ is the identity of $F(U)$ and
+$\varphi_{WV}\varphi_{VU}=\varphi_{WU}$ whenever
+$U\supset V\supset W$. The presheaf $F$ is a \textit{sheaf} if, for every
+cover $(U_i)$ of an open $U$ by nonempty opens and every family
+$f_i\in F(U_i)$ satisfying
+\[
+\varphi_{U_{ij}U_i}f_i=\varphi_{U_{ij}U_j}f_j
+\]
+for every pair $(i,j)$ with $U_{ij}=U_i\cap U_j\ne\varnothing$, there is a
+unique $f\in F(U)$ such that $\varphi_{U_iU}f=f_i$ for every $i$. If in these
+definitions one assumes
+
+\TohokuContinuation{154}

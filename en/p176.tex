@@ -1,0 +1,104 @@
+% Source-aligned English for printed p.176.
+\SourcePage{176}
+
+\LayerTarget{tohoku:corollary:3.8.1:1:p2}
+\noindent\textit{all the $U_{i_0\ldots i_p}$ are $F$-acyclic (that is, they
+satisfy $H^p(U_{i_0\ldots i_p},F)=0$ for $p>0$).}
+
+\LayerTarget{tohoku:def:point-indexed-cover-system}
+We now restrict attention to coverings
+$\mathcal U=(U_x)_{x\in X}$ indexed by the points $x$ of $X$, with
+$x\in U_x$ for every $x$, and order them by writing
+$\mathcal U\preceq\mathcal U'$ if $U'_x\subset U_x$ for every $x$.
+
+\LayerTarget{tohoku:map:point-cover-refinement-complexes}
+If $C_{\mathcal U}$ and $C_{\mathcal U'}$ are the corresponding
+functor-complexes on $C^X$, there is then a functorial homomorphism
+$C_{\mathcal U}\longrightarrow C_{\mathcal U'}$, hence a homomorphism of the
+corresponding spectral functors. Immediate passage to the inductive limit gives
+
+\smallskip
+\noindent\textbf{Editorial correction.} The printed text gives
+$U_x\subset U'_x$ while also writing
+$C_{\mathcal U}\longrightarrow C_{\mathcal U'}$. Čech restriction maps have
+this direction when $\mathcal U'$ refines $\mathcal U$, hence when
+$U'_x\subset U_x$ for every $x$. That corrected order is used here and in the
+following inductive limit.
+
+\LayerTarget{tohoku:corollary:3.8.1:2}
+\noindent\textsc{Corollary 2.} \textit{Let $X$ be any topological space.
+There exists a spectral functor on the category $C^X$ of sheaves of abelian
+groups on $X$, abutting to the graded functor $(H^n(X,F))$, whose initial term
+is given by}
+
+\LayerTarget{tohoku:eq:global-cech-spectral-E2}
+\[
+E_2^{p,q}(F)=\check H^p(X,H^q(F))
+\]
+\textit{(where $H^q(F)$ is the presheaf defined in Theorem 3.5.1). We have}
+
+\LayerTarget{tohoku:eq:global-cech-spectral-E20q}
+\[
+E_2^{0,q}(F)=0\quad\textit{for }q>0.
+\]
+
+This last formula follows from the definition of $\check H^0(X,H^q(F))$ and
+the following fact:
+
+\LayerTarget{tohoku:lemma:3.8.2}
+\noindent\textsc{Lemma 3.8.2.} --- \textit{Let $U$ be a neighborhood of $x$
+and let $c^q\in H^q(U,F)$. Then there exists a neighborhood $V\subset U$ of
+$x$ such that the image of $c^q$ in $H^q(V,F)$ is zero.}
+
+\LayerTarget{tohoku:proof:3.8.2}
+Indeed, take an injective resolution of $F\mid U$, let $C$ be the corresponding
+complex, and represent $c^q$ by an element of $H^q(\Gamma(U,C))$ represented
+by a cocycle $z\in\Gamma(U,C^q)$. Since $C$ is acyclic in degree $q$, the
+restriction of $z$ to a suitable neighborhood $V$ of $x$ is a coboundary.
+This proves the assertion, since $C\mid V$ is an injective resolution of
+$F\mid V$ by Proposition 3.1.3, and hence
+$H^q(V,F)=H^q(\Gamma(C\mid V))$.
+
+The spectral sequence of Corollary 2 gives functorial homomorphisms
+
+\LayerTarget{tohoku:map:global-cech-to-derived-cohomology}
+\[
+\check H^p(X,F)\longrightarrow H^p(X,F),
+\]
+and the formula
+
+\LayerTarget{tohoku:eq:global-cech-E201}
+\[
+E_2^{0,1}=0
+\]
+shows that:
+
+\LayerTarget{tohoku:corollary:3.8.1:3}
+\noindent\textsc{Corollary 3.} \textit{The preceding homomorphisms are
+bijective for $p=0$ or $1$ (as we already knew), and are monomorphisms for
+$p=2$.}
+
+\LayerTarget{tohoku:remark:paracompact-cech-comparison}
+We also recover the fact that if $X$ is \textit{paracompact}, then
+$\check H^p=H^p$; more precisely, \textit{the canonical homomorphisms above
+are then isomorphisms.} Indeed, in this case one checks (using the fact that
+the sheaf associated to the presheaf $H^q(F)$ is zero for $q>0$) that
+
+\LayerTarget{tohoku:eq:paracompact-global-cech-E2-vanishing}
+\[
+E_2^{p,q}=0\quad\text{for }q>0;
+\]
+see [9].
+
+\LayerTarget{tohoku:criterion:global-cech-edge-range}
+Corollary 3 generalizes as follows: \textit{If
+$\check H^p(X,H^q(F))=0$ for $0<q<n$, then the homomorphism
+$\check H^i(X,F)\longrightarrow H^i(X,F)$ is an isomorphism for $i\leq n$ and
+a monomorphism for $i=n+1$.} We conclude (with H. Cartan):
+
+\LayerTarget{tohoku:corollary:3.8.1:4:p1}
+\noindent\textsc{Corollary 4.} \textit{Let $\mathcal U$ be a collection of
+open sets forming a basis for the topology of $X$, and let $F$ be a sheaf of
+abelian groups on $X$ such that for every nonempty sequence}
+
+\TohokuContinuation{177}

@@ -1,0 +1,85 @@
+% Source-aligned English for printed p.126.
+\SourcePage{126}
+
+\LayerTarget{tohoku:section:1.3}
+\noindent\textbf{1.3. Additive categories.}
+An \textit{additive category} is a category $C$ for which, for every pair
+$(A,B)$ of objects of $C$, an abelian-group law is given on
+$\mathrm{Hom}(A,B)$, in such a way that composition of morphisms is a bilinear
+operation.
+
+\LayerTarget{tohoku:section:1.3:p1}
+We assume moreover that the sum and the product of any two objects $A,B$ of
+$C$ exist. It is in fact enough to postulate the existence of the sum
+\textit{or} the product of $A$ and $B$; the existence of the other then follows
+easily, and moreover $A+B$ is canonically isomorphic to $A\times B$. (Assuming,
+for example, that $A\times B$ exists, consider the morphisms
+$A\longrightarrow A\times B$ and $B\longrightarrow A\times B$ whose
+components are $(I_A,0)$ and $(0,I_B)$, respectively; one verifies that this
+gives a representation of $A\times B$ as a direct sum of $A$ and $B$.)
+Finally, we postulate the existence of an object $A$ such that $I_A=0$; it is
+called a \textit{null object}, or a \textit{zero}, of $C$. Equivalently,
+$\mathrm{Hom}(A,A)$ is reduced to zero, or, again, for every $B\in C$,
+$\mathrm{Hom}(A,B)$ (or $\mathrm{Hom}(B,A)$) is reduced to zero. If $A$ and
+$A'$ are two null objects, there is then a unique isomorphism from $A$ to $A'$
+(namely the unique element $0$ of $\mathrm{Hom}(A,A')$!); we shall therefore
+identify all the null objects of $C$ with a single one, denoted $0$, by an
+abuse of notation.
+
+\LayerTarget{tohoku:section:1.3:p2}
+The dual category of an additive category is again an additive category.
+
+\LayerTarget{tohoku:section:1.3:p3}
+Let $C$ be an additive category and let $u:A\longrightarrow B$ be a morphism
+in $C$. For $u$ to be injective (respectively, surjective), it is necessary
+and sufficient that there be no nonzero morphism whose composition on the
+right (respectively, on the left) with $u$ is zero. A \textit{generalized
+kernel} of $u$ is a monomorphism $i:A'\longrightarrow A$ such that the
+morphisms $C\longrightarrow A$ that are right zero-divisors for $u$ are
+exactly those that factor as
+
+\[
+  C\longrightarrow A'\mathrel{\mathop{\longrightarrow}^{i}}A.
+\]
+
+\noindent Such a monomorphism is defined up to equivalence (cf.
+No.~1); hence, among the generalized kernels of $u$ (if any exist), there is
+exactly one that is a subobject of $A$: it is called \textit{the kernel of
+$u$}, and is denoted $\mathrm{Ker}\,u$. Dually, one defines the
+\textit{cokernel of $u$} (which is a quotient object of $B$, if it exists),
+denoted $\mathrm{Coker}\,u$. The \textit{image} (respectively,
+\textit{coimage}) of the morphism $u$ is the kernel of its cokernel
+(respectively, the cokernel of its kernel), if it exists; it is thus a
+subobject of $B$ (respectively, a quotient object of $A$)%
+\LayerTarget{tohoku:section:1.3:footnote:1ter}\textsuperscript{1 ter)} and is
+denoted $\mathrm{Im}\,u$ (respectively, $\mathrm{Coim}\,u$). If $u$ admits an
+image and a coimage, there is a unique morphism
+$\bar u:\mathrm{Coim}\,u\longrightarrow\mathrm{Im}\,u$ such that $u$ is
+identical to the composite
+
+\[
+ A\longrightarrow\mathrm{Coim}\,u\longrightarrow
+ \mathrm{Im}\,u\longrightarrow B,
+\]
+
+\noindent where the outer morphisms are the canonical morphisms.
+
+\LayerTarget{tohoku:section:1.3:p4}
+A functor $F$ from an additive category $C$ to another such category $C'$ is
+called an \textit{additive functor} if, for two morphisms
+$u,v:A\longrightarrow B$ in $C$, one has
+$F(u+v)=F(u)+F(v)$. The analogous definition applies to multifunctors.
+Composites of additive functors are additive. If $F$ is an additive functor,
+$F$ carries a finite direct sum of objects $A_i$ to the direct sum of the
+$F(A_i)$.
+
+\par\medskip\hrule\smallskip
+\LayerTarget{tohoku:section:1.3:footnote:1ter:text}%
+\noindent
+\textsuperscript{1 ter)} A more natural definition of the image of $u$, to
+tell the truth, would be to take the smallest subobject $B'$ of $B$ (if one
+exists) such that $u$ comes from a morphism from $A$ to $B'$. This definition
+is equivalent to the one given in the text only when $C$ is an abelian
+category (cf. 1.4.)
+
+\TohokuContinuation{127}

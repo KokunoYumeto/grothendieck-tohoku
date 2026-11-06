@@ -1,0 +1,112 @@
+% Direct-authority diplomatic French for printed p.128.
+\SourcePage{128}
+
+\LayerTarget{tohoku:section:1.4:p4}
+\noindent la surjection canonique $B\longrightarrow B/B'$. On définit
+dualement l'image directe $u(A')$ d'un quotient $A'$ de $A$, c'est un quotient
+de $B$. On démontre pour ces notions toutes les propriétés formelles usuelles.
+
+\LayerTarget{tohoku:section:1.4:exact-sequence}
+Enfin, rappelons qu'un couple
+
+\[
+  A\mathrel{\mathop{\longrightarrow}^{u}}B
+   \mathrel{\mathop{\longrightarrow}^{v}}C
+\]
+
+\noindent de deux morphismes consécutifs est dit \textit{exact} si
+$\mathrm{Ker}\,v=\mathrm{Im}\,u$, d'où plus généralement la notion de
+\textit{suite exacte} de morphismes. Pour qu'une suite
+
+\[
+  0\longrightarrow A\longrightarrow B\longrightarrow C
+\]
+
+\noindent soit exacte, il faut et il suffit que pour tout $X\in C$, la suite
+d'homomorphismes de groupes abéliens suivante soit exacte :
+
+\[
+  0\longrightarrow\mathrm{Hom}(X,A)\longrightarrow\mathrm{Hom}(X,B)
+  \longrightarrow\mathrm{Hom}(X,C).
+\]
+
+\noindent Critère dual pour qu'une suite
+$C\longrightarrow B\longrightarrow A\longrightarrow0$ soit exacte. Pour
+qu'une suite
+
+\[
+  0\longrightarrow A'\longrightarrow A\longrightarrow A''\longrightarrow0
+\]
+
+\noindent soit exacte, il faut et il suffit que $u$ soit un monomorphisme et
+que $v$ en soit un conoyau généralisé.
+
+\LayerTarget{tohoku:section:1.4:exact-functor}
+Soit $F$ un foncteur covariant d'une catégorie abélienne $C$ dans une autre
+$C'$. Suivant la terminologie introduite dans [6], nous dirons que $F$ est un
+\textit{foncteur semi-exact} (resp. \textit{exact à gauche} resp.
+\textit{exact à droite}) si pour toute suite exacte
+
+\[
+  0\longrightarrow A'\longrightarrow A\longrightarrow A''\longrightarrow0
+\]
+
+\noindent dans $C$, la suite de morphismes correspondants
+
+\[
+  0\longrightarrow F(A')\longrightarrow F(A)\longrightarrow F(A'')
+  \longrightarrow0
+\]
+
+\noindent est exacte en $F(A)$ (resp. en $F(A)$ et $F(A')$, resp. en $F(A)$
+et $F(A'')$). $F$ est dit un \textit{foncteur exact} si $F$ est exact à gauche
+et à droite, i. e. transforme une suite exacte du type précédent en une suite
+exacte ; alors $F$ transforme \textit{toute} suite exacte en une suite exacte.
+Si $F$ est exact à gauche, $F$ transforme une suite exacte
+
+\[
+  0\longrightarrow A\longrightarrow B\longrightarrow C
+\]
+
+\noindent en une suite exacte
+
+\[
+  0\longrightarrow F(A)\longrightarrow F(B)\longrightarrow F(C);
+\]
+
+\noindent énoncé dual pour les foncteurs exacts à droite. Si $F$ est un
+foncteur contravariant, on dit que $F$ est semi-exact (resp. exact à gauche
+etc.) si $F$ l'est en tant que foncteur covariant de $C^\circ$ dans $C'$. Le
+composé de foncteurs covariants exacts à gauche (resp. à droite) est du même
+type. Nous renvoyons à [6] pour d'autres sorites de ce genre, et l'étude des
+propriétés d'exactitude des multifoncteurs. Comme exemple important, notons que
+$\mathrm{Hom}(A,B)$ est un bifoncteur additif sur $C\times C$, à valeurs dans
+la catégorie abélienne des groupes abéliens, contravariant en $A$ et covariant
+en $B$, et exact à gauche par rapport aux deux arguments (c'est-à-dire un
+bifoncteur exact à gauche dans la terminologie de [6]).
+
+\LayerTarget{tohoku:section:1.5}
+\noindent\textbf{1.5. Sommes et produits infinis.}
+Dans certaines constructions, nous aurons besoin de l'existence et de
+certaines propriétés des sommes directes et produits directs infinis. Voici
+par ordre de force croissante, les axiomes les plus utilisés.
+
+\LayerTarget{tohoku:section:1.5:AB3}
+\noindent\textbf{AB 3)} \textit{Pour toute famille $(A_i)_{i\in I}$ d'objet de
+$C$, la somme directe des $A_i$ (cf. N\textsuperscript{o}1) existe.}
+
+\LayerTarget{tohoku:section:1.5:p1}
+Cet axiome implique que pour toute famille de sous-trucs $A_i$ d'un $A\in C$,
+le sup des $A_i$ existe : il suffit de prendre l'image de la somme directe
+$\bigoplus_{i\in I}A_i$ par le morphisme dont les composantes sont les
+injections canoniques $A_i\longrightarrow A$. Nous avons vu que la somme
+directe d'une famille quelconque de morphismes surjectifs est surjectif
+(N\textsuperscript{o}1) ; en fait, on voit même que le foncteur
+
+\[
+  (A_i)_{i\in I}\longmapsto\bigoplus_{i\in I}A_i,
+\]
+
+\noindent défini sur la ``catégorie produit'' $C^I$, et à valeurs
+
+\TohokuContinuation{129}

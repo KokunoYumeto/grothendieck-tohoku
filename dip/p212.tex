@@ -1,0 +1,85 @@
+% Direct-authority diplomatic French for printed p.212.
+\clearpage
+\SourcePage{212}
+
+\LayerTarget{tohoku:construction:fixed-point-free-refinement}
+\noindent Il suffit donc de définir un homomorphisme canonique
+$H^n(\mathcal U';G,P)\to H^n(\mathcal V;G,P)$, or on est maintenant dans le
+cas envisagé au début, grâce au fait que $\mathcal U'$ est un
+$G$-recouvrement sans points fixes moins fin que $\mathcal V$. La définition
+des homomorphismes (5.5.12) est ainsi achevée, de plus ces homomorphismes
+jouissent de propriétés de transitivité évidentes. Il s'ensuit d'abord que si
+$\mathcal U$ et $\mathcal V$ sont deux $G$-recouvrements équivalents, alors
+l'homomorphisme (5.5.12) est un isomorphisme, de sorte que
+$H^n(\mathcal U;G,P)$ ne dépend que de la classe du $G$-recouvrement
+$\mathcal U$ (pour la relation d'équivalence définie par la relation de
+préordre : $\mathcal V$ est plus fin que $\mathcal U$). Posons alors
+
+\LayerTarget{tohoku:definition:equivariant-cech-cohomology}
+\LayerTarget{tohoku:equation:5.5.13}
+\[
+\tag{5.5.13}
+\check H^n(X;G,P)=\varinjlim\,\cdot\,H^n(\mathcal U;G,P)
+\]
+
+\noindent la limite inductive étant prise suivant l'ensemble ordonné des
+classes de $G$-recouvrements ouverts de $X$. Les homomorphismes (5.5.3)
+définissent des homomorphismes fonctoriels
+
+\LayerTarget{tohoku:comparison:cech-to-equivariant-cohomology}
+\LayerTarget{tohoku:equation:5.5.14}
+\[
+\tag{5.5.14}
+\check H^n(X;G,A)\longrightarrow H^n(X;G,A)
+\]
+
+\noindent pour $A\in C^{X(G)}$ ; on se propose d'indiquer des conditions sous
+lesquelles on a là des isomorphismes. Un passage à la limite inductive dans
+les suites spectrales associées aux divers $\mathcal U$ (théorème 5.5.3)
+montre que $H^*(X;G,A)$ est l'aboutissement d'un foncteur spectral
+cohomologique, dont le terme initial est
+
+\LayerTarget{tohoku:spectral-sequence:equivariant-cech-cohomology}
+\LayerTarget{tohoku:equation:5.5.15}
+\[
+\tag{5.5.15}
+E_2^{p,q}(A)=H^p(X;G,H^q(A)),
+\]
+
+\noindent les homomorphismes (5.5.14) n'étant autres que les
+``edge-homomorphisms'' de cette suite spectrale. Or, on prouve :
+
+\LayerTarget{tohoku:lemma:5.5.5}
+\noindent\textsc{Lemme 5.5.5.}\quad \textit{Supposons que $Y$ soit
+paracompact, $X$ séparé et que $G$ soit un groupe discontinu
+d'homéomorphismes dans $X$ (cf. 5.5.3). Si $P$ est un $G$-préfaisceau abélien
+tel que le faisceau associé soit nul, alors $\check H^n(X;G,P)=0$ pour tout
+$n>0$.}
+
+\LayerTarget{tohoku:proof:lemma-5.5.5}
+Dans le calcul de $\check H^n(X;G,P)$ d'après (5.5.13), on peut se borner à
+des $G$-recouvrements $\mathcal U$ sans points fixes ; pour ceux-ci la
+proposition 5.5.4 s'applique, de telle façon qu'il suffit de prouver ceci : si
+$f^n\in C^n(\mathcal U,P)^G$, où $\mathcal U$ est un $G$-recouvrement ouvert
+sans point fixe, alors il existe un $G$-recouvrement ouvert sans point fixe
+$\mathcal V$ plus fin, et une application $\varphi:J\to I$ pour les ensembles
+d'indices, satisfaisant aux conditions envisagées plus haut, et telle que
+$\overline\varphi(f^n)=0$. On commence par montrer qu'il existe des
+$G$-recouvrements ouverts arbitrairement fins du type
+$(gU_i)_{(g,i)\in G\times I}$, où $(U_i)$ est une famille d'ouverts de $X$
+telle que, si $G_i$ est le stabilisateur de $U_i$, $G_i$ soit fini et
+$g\notin G_i$ implique $gU_i\cap U_i=\phi$. On supposera donc cidessus que
+$\mathcal U$ est du type précédent.
+
+Considérons la cochaîne non homogène
+$(F_{i_0,g_1i_1,\ldots,g_ni_n})$ qui correspond à $f^n$. Considérons $I$
+comme le nerf du recouvrement $(f(U_i))=(U'_i)$ de $Y$, et pour tout simplexe
+$s=(i_0,\ldots,i_n)$ de $I$, soit $U'_s=U'_{i_0\ldots i_n}$. Pour fout
+$n$-simplexe $s$ de $I$, et tout $y\in U'_s$, soit $W^s_y$ un voisinage
+ouvert de $y$, contenu dans $U'_s$, et tel que pour tout système
+$\mathbf g=(g_1,\ldots,g_n)$ tel que
+$U_{s,\mathbf g}=U_{i_0}\cap g_1U_{i_1}\cap\cdots\cap g_nU_{i_n}$ ait une
+projection sur $Y$ qui contient $y$, la restriction de
+$F_{i_0,g_1i_1,\ldots,g_ni_n}$ à
+
+\TohokuContinuation{213}

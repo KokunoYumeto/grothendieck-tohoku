@@ -1,0 +1,76 @@
+% Source-aligned English for printed p.213.
+\clearpage
+\SourcePage{213}
+
+\LayerTarget{tohoku:proof:lemma-5.5.5}
+\noindent $U_{s,\mathbf g}\cap f^{-1}(W^s_y)$ is zero. Such a $W^s_y$ exists
+by the hypothesis on $P$, by the fact that there are only finitely many
+systems $\mathbf g$ to consider, and because, as $W$ runs through a
+fundamental system of neighborhoods of $y$, the sets
+$U_{s,\mathbf g}\cap f^{-1}(W)$ run through a fundamental system of
+neighborhoods of the finite set of $x\in U_{s,\mathbf g}$ that project to $y$.
+Since $Y$ is paracompact, a well-known lemma in Čech theory now gives a
+covering $\mathcal V'=(V'_j)_{j\in J}$ of $Y$ and a map
+$\varphi':J\to I$ such that $V'_j\subset U'_{\varphi'(j)}$ for every $j\in J$,
+and such that for every $n$-simplex $t$ of $J$, $V'_t$ is contained in at
+least one of the sets $W_y^{\varphi'(t)}$. Set
+$V_j=U_{\varphi'(j)}\cap f^{-1}(V'_j)$ and
+$\mathcal V=(g\cdot V_j)_{(g,j)\in G\times J}$, and consider the map
+$\varphi:G\times J\to G\times I$ defined by $\varphi'$. It is immediate that
+$(\mathcal V,\varphi)$ satisfies the required conditions and, in particular,
+$\varphi(F)=0$, whence $\overline\varphi(f^n)=0$.
+
+The sheaf associated with the presheaf $H^q(A)$, for $q>0$, is zero (Lemma
+3.8.2). Lemma 5.5.5 and the spectral sequence with initial term (5.5.15) then
+give:
+
+\LayerTarget{tohoku:theorem:5.5.6}
+\noindent\textsc{Theorem 5.5.6.}\quad \textit{If $G$ is a discrete group of
+homeomorphisms of $X$, and if $Y=X/G$ is paracompact, then the homomorphisms}
+
+\LayerTarget{tohoku:equation:5.5.14}
+\[
+\tag{5.5.14}
+\check H^n(X;G,A)\longrightarrow H^n(X;G,A)
+\]
+
+\noindent\textit{are isomorphisms for every abelian $G$-sheaf $A$.}
+
+\LayerTarget{tohoku:remark:2-low-degree-cech-consequences}
+\noindent\textsc{Remarks II.}\quad From the spectral sequence with initial
+term (5.5.15), without any hypothesis on $X,G,A$, one obtains
+
+\LayerTarget{tohoku:equation:cech-h1-identification}
+\[
+\check H^1(X;G,A)=H^1(X;G,A)
+\]
+
+\LayerTarget{tohoku:comparison:cech-h2-injection}
+\noindent (and $\check H^2(X;G,A)\to H^2(X;G,A)$ is injective, since one
+checks that $E_2^{0,n}=0$ for every $n>0$).
+
+\LayerTarget{tohoku:interpretation:g-a-bundles}
+Now $\check H^1(X;G,A)$ has a geometric interpretation, as one checks
+easily, as the set of classes of $G$-$A$-bundles on $X$ (i.e. bundles on $X$
+``with structural sheaf $A$'' [11], on which $G$ acts compatibly with this
+structure). Moreover, $\check H^1(X;G,A)$ is also defined, and has the same
+geometric interpretation, when $A$ is a $G$-sheaf of groups that need not be
+commutative. The developments of [11], in particular Chapter V, can then be
+carried over almost word for word to the more general context of $G$-bundles.
+It would moreover be appropriate to give a treatment of ``noncommutative
+Homological Algebra'' in the context of functors and categories, encompassing
+both this theory of bundles and the algebraic mechanism of group-extension
+questions (for Lie groups and others), as developed, for example, in papers
+by Hochschild and A. Shapiro [12, 13, 19].
+
+\LayerTarget{tohoku:section:5.6-equivariant-ext}
+\noindent\textbf{5.6.\quad The $\operatorname{Ext}^n_{O,G}(X;A,B)$.}
+In this subsection, $O$ denotes a fixed $G$-sheaf of rings, and we consider
+the abelian category $C^{O(G)}$ of $G$-$O$-modules (cf. 5.1).
+
+\LayerTarget{tohoku:definition:equivariant-o-homomorphisms}
+The group of $G$-$O$-homomorphisms from a $G$-$O$-module $A$ to another one
+$B$ will be denoted $\operatorname{Hom}_{O,G}(A,B)$, or
+$\operatorname{Hom}_{O,G}(X;A,B)$ if one wishes to make explicit
+
+\TohokuContinuation{214}
