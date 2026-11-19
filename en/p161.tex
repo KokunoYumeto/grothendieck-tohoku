@@ -7,88 +7,76 @@
 \setlength{\belowdisplayshortskip}{0.5\baselineskip}
 
 \LayerTarget{tohoku:construction:divisor-sequence:p2}
-\noindent $\mathbf D$ is flabby, since a section of $\mathbf D$ over a nonempty open
+\noindent $X$ is \textit{flasque}, since a section of $\mathbf D$ over a nonempty open
 subset $U\subset X$ is a formal linear combination $\sum n_iV_i$ of
 irreducible hypersurfaces $V_i$ in $U$, and is therefore the restriction of
-the section $\sum n_iV_i$ of $\mathbf D$ on $X$. Consequently,
-
+the section $\sum n_iV_i$ of $\mathbf D$ on $X$. Consequently, the exact sequence
 \LayerTarget{tohoku:eq:divisor-resolution}
-\[
-0\longrightarrow\mathbf O^*\longrightarrow\mathbf K^*\longrightarrow
-\mathbf D\longrightarrow0\longrightarrow0\longrightarrow\cdots
-\]
-is a resolution of $\mathbf O^*$ by flabby sheaves ($\mathbf K^*$ is flabby
+$0\to\mathbf O^*\to\mathbf K^*\to\mathbf D\to0\to0\to\ldots.$
+is a resolution of $\mathbf O^*$ by flasque sheaves ($\mathbf K^*$ is flasque
 because it is constant and $X$ is irreducible; cf. the end of 3.3). We thus
 obtain the values of $H^p(X,\mathbf O^*)$; the symbol $\Phi$ is omitted when
 $\Phi$ is the family of all closed subsets of $X$:
-
 \LayerTarget{tohoku:eq:divisor-class-cohomology}
-\[
-H^1(X,\mathbf O^*)=
-\Gamma(\mathbf D)/\operatorname{Im}\bigl(\Gamma(\mathbf K^*)\bigr),
-\]
+$H^1(X,\mathbf O^*)=\Gamma(\mathbf D)/\operatorname{Im}(\Gamma(\mathbf K^*))$,
 the group of divisor classes modulo principal divisors. This familiar fact
 also follows immediately from the exact cohomology sequence. Moreover,
-$H^i(X,\mathbf O^*)=0$ for $i\geq2$, a result I first obtained in a much less
+$H^i(X,\mathbf O^*)=0$ for $i\geqq2$, a result I first obtained in a much less
 direct way by the method of Čech coverings. This result extends without
 change when $X$ is a ``variety scheme'' in the sense of [5 bis], and more
-generally to ``arithmetic varieties'' defined by gluing together ``spectra''
+generally to ``arithmetic varieties'' defined by ``gluing together'' ``spectra''
 of commutative rings [8]. The following application can also be formulated
 for arithmetic varieties.
 
 \LayerTarget{tohoku:prop:3.4.1}
-\textsc{Proposition 3.4.1.} --- \textit{Let $X$ be an irreducible algebraic
+\indent\textsc{Proposition 3.4.1.} \textit{Let $X$ be an irreducible algebraic
 variety over an algebraically closed field $k$, whose local rings are
 factorial; a nonsingular variety is an example. Then
-$H^i(X,\mathbf O^*)=0$ for $i\geq2$. If $E$ is a locally trivial algebraic
+$H^i(X,\mathbf O^*)=0$ for $i\geqq2$. If $E$ is a locally trivial algebraic
 fiber bundle over $X$ with structure group the projective group
-$\operatorname{GP}(n-1,k)$ (cf. [20]), then $E$ is isomorphic to the fiber
+$\mathit{GP}(n-1,k)$ \textup{(}cf. \textup{[20])}, then $E$ is isomorphic to the fiber
 space associated with a locally trivial algebraic fiber bundle whose
-structure group is the linear group $\operatorname{Gl}(n,k)$.}
+structure group is the linear group $\mathit{Gl}(n,k)$.}
 
 \LayerTarget{tohoku:proof:3.4.1}
 For every algebraic group $G$, let $\mathbf O(G)$ denote the sheaf of groups
 of germs of regular maps from $X$ to $G$. The first assertion of the
-proposition is $H^i(X,\mathbf O(k^*))=0$ for $i\geq2$ and has already been
+proposition is $H^i(X,\mathbf O(k^*))=0$ for $i\geqq2$ and has already been
 proved. In the terminology developed in [11], the second assertion says that
 the canonical map
 
 \LayerTarget{tohoku:eq:pgl-lift-map}
 \[
-H^1\bigl(X,\mathbf O(\operatorname{Gl}(n,k))\bigr)
-\longrightarrow
-H^1\bigl(X,\mathbf O(\operatorname{GP}(n-1,k))\bigr)
+H^1(X,\mathbf O(\mathit{Gl}(n,k)))
+\to
+H^1(X,\mathbf O(\mathit{GP}(n-1,k)))
 \]
 is surjective. To prove this, consider the exact sequence of algebraic groups
-
 \LayerTarget{tohoku:eq:central-extension}
-\[
-e\longrightarrow k^*\longrightarrow\operatorname{Gl}(n,k)
-\longrightarrow\operatorname{GP}(n-1,k)\longrightarrow e,
-\]
+$e\to k^*\to\mathit{Gl}(n,k)\to\mathit{GP}(n-1,k)\to e$,
 where the first homomorphism is the natural isomorphism of $k^*$ onto the
-center of $\operatorname{Gl}(n,k)$. It is easy to check that the fibration of
-$\operatorname{Gl}(n,k)$ by the subgroup $k^*$ is locally trivial, that is,
+center of $\mathit{Gl}(n,k)$. It is easy to check that the fibration of
+$\mathit{Gl}(n,k)$ by the subgroup $k^*$ is locally trivial, that is,
 it has a rational section. The preceding exact sequence therefore gives an
 exact sequence of sheaves
 
 \LayerTarget{tohoku:eq:sheaf-central-extension}
 \[
-e\longrightarrow\mathbf O(k^*)
-\longrightarrow\mathbf O(\operatorname{Gl}(n,k))
-\longrightarrow\mathbf O(\operatorname{GP}(n-1,k))
-\longrightarrow e,
+e\to\mathbf O(k^*)
+\to\mathbf O(\mathit{Gl}(n,k))
+\to\mathbf O(\mathit{GP}(n-1,k))
+\to e
 \]
 where $\mathbf O(k^*)$ lies in the center of
-$\mathbf O(\operatorname{Gl}(n,k))$. The proposition now follows from
+$\mathbf O(\mathit{Gl}(n,k))$. The proposition now follows from
 $H^2(X,\mathbf O(k^*))=0$ and from the corollary to the following result,
 which generalizes [11, Proposition 5.7.2, Corollary], where we had to impose
 paracompactness assumptions.
 
 \LayerTarget{tohoku:prop:3.4.2:p1}
-\textsc{Proposition 3.4.2.} --- \textit{Let $X$ be a topological space and
-let $e\longrightarrow F\longrightarrow G\longrightarrow H\longrightarrow e$
-be a}
+\indent\textsc{Proposition 3.4.2.} \textit{Let $X$ be a topological space and
+let $e\to F\to G\to H\to e$
+be an}
 
 \TohokuContinuation{162}
 \endgroup

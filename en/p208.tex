@@ -3,76 +3,75 @@
 \SourcePage{208}
 
 \LayerTarget{tohoku:proof:lemma-5.5.2:p1}
-\noindent of injective objects in $\mathbf K(C_1)$ given in 2.4, $C$ is
-acyclic in dimensions $>0$ and ``decomposes''; moreover, the $C^i$ and
-$Z^i(C)$ are injective. It follows first that $\overline F(C)$ is a resolution
-of $F(Z^0(C))$, whence
-$R^nG(\overline F(C))=R^nG(F(Z^0(C)))$; and since $Z^0(C)$ is injective, the
+\noindent of injective objects in $\mathbf K({\mathbf C}_1)$ given in 2.4, $\mathrm C$ is
+acyclic in dimensions $>0$ and ``decomposes''; moreover, the $\mathrm C^i$ and
+$Z^i(\mathrm C)$ are injective. It follows first that $\overline F(\mathrm C)$ is a resolution
+of $F(Z^0(\mathrm C))$, whence
+${\mathbf R}^nG(\overline F(\mathrm C))=R^nG(F(Z^0(\mathrm C)))$; and since $Z^0(\mathrm C)$ is injective, the
 second member vanishes by the hypothesis on $F$. We may therefore apply
-Theorem 2.4 to the composite functor $(H^0\overline G)\overline F$. This gives
+Theorem 2.4.1 to the composite functor $(H^0\overline G)\overline F$. This gives
 the spectral functor in the statement, taking account of
-$R^i\overline F=\overline{R^iF}$ (a relation following immediately from the
+$R^q\overline F=\overline{R^qF}$ (a relation following immediately from the
 definitions).
 
 \LayerTarget{tohoku:corollary:lemma-5.5.2}
-\noindent\textsc{Corollary.} \textit{Under the preceding conditions, let $C$
-be a resolution of an object $A\in C_1$. Then there exists a cohomological
+\textsc{Corollary.} \textit{Under the preceding conditions, let $\mathrm C$
+be a resolution of an object $A\in {\mathbf C}_1$. Then there exists a cohomological
 spectral sequence abutting to the graded object $(R^n(GF)(A))$, whose initial
-term is given in (5.5.2).}
+term is given in \textup{(5.5.2)}.}
 
 \LayerTarget{tohoku:proof:corollary-lemma-5.5.2}
-Indeed, here $R^n(GF)(C)=R^n(GF)(A)$.
+Indeed, here ${\mathbf R}^n(GF)(\mathrm C)=R^n(GF)(A)$.
 
 \LayerTarget{tohoku:definition:g-cover}
 Return to the space $X$ with its operator group $G$. Let
-$\mathcal U=(U_i)_{i\in I}$ be a covering of $X$, with $G$ acting on the index
-set $I$ so that $g\cdot U_i=U_{g\cdot i}$ for every $i\in I$. We shall call
-$\mathcal U$ a $G$-covering. If $P$ is an abelian presheaf on $X$ on which $G$
-acts, then the complex $C(\mathcal U,P)$ of cochains of $\mathcal U$ with
+${\mathbf U}=(U_i)_{i\in I}$ be a covering of $X$, with $G$ acting on the index
+set $I$ so that $g. U_i=U_{g. i}$ for every $i\in I$. We shall call
+${\mathbf U}$ a $G$-\textit{covering}. If $P$ is an abelian presheaf on $X$ on which $G$
+acts, then the complex $C({\mathbf U},P)$ of cochains of ${\mathbf U}$ with
 coefficients in $P$ may obviously be regarded as a complex of $G$-groups. We
 put
 
 \LayerTarget{tohoku:equation:5.5.3}
 \[
 \tag{5.5.3}
-H^n(\mathcal U;G,P)=R^n\Gamma^G(C(\mathcal U,P)),
+H^n({\mathbf U};G,P)={\mathbf R}^n\Gamma^G(C({\mathbf U},P)),
 \]
-
 \LayerTarget{tohoku:construction:equivariant-cech-bicomplex}
 where the second member may therefore also be written as the group
-$H^n(C(G,C(\mathcal U,P)))$. Here $C(G,C(\mathcal U,P))$ is the bicomplex
-formed by the cochains of $G$ with values in the complex $C(\mathcal U,P)$, a
-bicomplex which may be denoted $C(\mathcal U;G,P)$:
+$H^n(C(G,C({\mathbf U},P)))$. Here $C(G,C({\mathbf U},P))$ is the bicomplex
+formed by the cochains of $G$ with values in the complex $C({\mathbf U},P)$, a
+bicomplex which may be denoted $C({\mathbf U};G,P)$:
 
 \LayerTarget{tohoku:equation:5.5.3-bis}
 \[
 \tag{5.5.3 bis}
-H^n(\mathcal U;G,P)=H^n(C(\mathcal U;G,P)).
+H^n({\mathbf U};G,P)=H^n(C({\mathbf U};G,P)).
 \]
 
 \LayerTarget{tohoku:construction:open-g-cover-spectral-functor}
-Suppose first that the $G$-covering $\mathcal U$ is open. We apply Lemma 5.5.1
-with the categories $C^{X(G)}$, $C^G$ (the category of $G$-modules), and $C$
+Suppose first that the $G$-covering ${\mathbf U}$ is \textit{open}. We apply Lemma 5.5.1
+with the categories ${\mathbf C}^{X(G)}$, ${\mathbf C}^G$ (the category of $G$-modules), and ${\mathbf C}$
 (the category of abelian groups), the functors $\Gamma_X$ and $\Gamma^G$, and
-finally $\mathbf K(A)=C(\mathcal U,A)$. The functor $\Gamma_X$ sends injective
+finally $\mathbf K(A)=C({\mathbf U},A)$. The functor $\Gamma_X$ sends injective
 objects to $\Gamma^G$-acyclic objects (the corollary to Proposition 5.1.3), and
-conditions (i) and (ii) of the lemma are satisfied: (i) because $\mathcal U$ is
+conditions (i) and (ii) of the lemma are satisfied: (i) because ${\mathbf U}$ is
 open, and (ii) by what was said in 3.8 (second paragraph). It remains to
 identify $R^q\mathbf K(A)$. The calculation is immediate (and was already made
-in 3.8): one finds $R^q\mathbf K(A)=C(\mathcal U,H^q(A))$, where $H^q(A)$
+in 3.8): one finds $R^q\mathbf K(A)=C({\mathbf U},H^q(A))$, where $H^q(A)$
 denotes the presheaf $H^q(A)(V)=H^q(V,A)$. We have therefore proved:
 
 \LayerTarget{tohoku:theorem:5.5.3}
-\noindent\textsc{Theorem 5.5.3.} \textit{Let $X$ be a space equipped with an
-operator group $G$, and let $\mathcal U=(U_i)$ be an open $G$-covering of $X$.
-Then on the category $C^{X(G)}$ of abelian $G$-sheaves on $X$ there exists a
+\textsc{Theorem 5.5.3.} \textit{Let $X$ be a space equipped with an
+operator group $G$, and let ${\mathbf U}=(U_i)$ be an open $G$-covering of $X$.
+Then on the category ${\mathbf C}^{X(G)}$ of abelian $G$-sheaves on $X$ there exists a
 cohomological spectral functor abutting to the graded functor
 $(H^n(X;G,A))$, whose initial term is}
 
 \LayerTarget{tohoku:equation:5.5.4}
 \[
 \tag{5.5.4}
-E_2^{p,q}(A)=H^p(\mathcal U;G,H^q(A))
+E_2^{p,q}(A)=H^p({\mathbf U};G,H^q(A))
 \]
 \textit{(where $H^q(A)$ is the presheaf $H^q(A)(V)=H^q(V,A)$ on $X$).}
 
@@ -80,11 +79,9 @@ E_2^{p,q}(A)=H^p(\mathcal U;G,H^q(A))
 As usual, one deduces the edge homomorphisms
 \[
 \tag{5.5.5}
-H^n(\mathcal U;G,A)\longrightarrow H^n(X;G,A)
+H^n(U;G,A)\to H^n(X;G,A)
 \]
-
 \LayerTarget{tohoku:conclusion:theorem-5.5.3:p1}
-and a five-term exact sequence showing, among other things, that the preceding
-homomorphism
+and a five-term exact sequence showing, among other things, that \textit{the preceding homomorphism}
 
 \TohokuContinuation{209}

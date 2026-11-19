@@ -3,9 +3,9 @@
 
 \LayerTarget{tohoku:section:1.2:p2}
 \noindent transformation'' from $F$ to $G$ by certain authors) is a
-``function'' that associates to every $A\in C$ a morphism $f(A)$ from $F(A)$
-to $G(A)$, in such a way that for every morphism $u:A\longrightarrow B$ in
-$C$, the following diagram
+``function'' that associates to every $A\in \mathbf{C}$ a morphism $f(A)$ from $F(A)$
+to $G(A)$, in such a way that for every morphism $u:A\to B$ in
+$\mathbf{C}$, the following diagram
 \[
 \begin{array}{ccc}
 F(A) & \stackrel{F(u)}{\longrightarrow} & F(B) \\
@@ -13,30 +13,30 @@ F(A) & \stackrel{F(u)}{\longrightarrow} & F(B) \\
 G(A) & \stackrel{G(u)}{\longrightarrow} & G(B)
 \end{array}
 \]
-is commutative. Morphisms of functors $F\longrightarrow G$ and
-$G\longrightarrow H$ compose in the evident way; this composition is
+is commutative. Morphisms of functors $F\to G$ and
+$G\to H$ compose in the evident way; this composition is
 associative, and the ``identity morphism'' of the functor $F$ is an identity
-for composition of morphisms of functors. (Thus, if $C$ is a set, the functors
-from $C$ to $C'$ again form a category.) Finally, note that the composite $GF$
-of two functors $F:C\longrightarrow C'$ and $G:C'\longrightarrow C''$ behaves
+for composition of morphisms of functors. (Thus, if $\mathbf{C}$ is a set, the functors
+from $\mathbf{C}$ to $\mathbf{C}'$ again form a category.) Finally, note that the composite $GF$
+of two functors $F:\mathbf{C}\to \mathbf{C}'$ and $G:\mathbf{C}'\to \mathbf{C}''$ behaves
 formally as a bifunctor with respect to the arguments $G$ and $F$: a functorial
-morphism $G\longrightarrow G'$ (respectively, $F\longrightarrow F'$) defines a
-functorial morphism $GF\longrightarrow G'F$ (respectively,
-$GF\longrightarrow GF'$).
+morphism $G\to G'$ (respectively, $F\to F'$) defines a
+functorial morphism $GF\to G'F$ (respectively,
+$GF\to GF'$).
 
 \LayerTarget{tohoku:section:1.2:p3}
-An \textit{equivalence} of a category $C$ with a category $C'$ is a system
+An \textit{equivalence} of a category $\mathbf{C}$ with a category $\mathbf{C}'$ is a system
 $(F,G,\varphi,\psi)$ formed of covariant functors
 \[
-  F:C\longrightarrow C' \qquad G:C'\longrightarrow C
+  F:\mathbf{C}\to\mathbf{C}' \qquad G:\mathbf{C}'\to\mathbf{C}
 \]
 and homomorphisms of functors
 \[
-  \varphi:1_C\longrightarrow GF \qquad
-  \psi:1_{C'}\longrightarrow FG,
+  \varphi:\mathbf{1}_{\mathrm{C}}\to GF \qquad
+  \psi:\mathbf{1}_{\mathrm{C}'}\to FG,
 \]
-where $1_C$ and $1_{C'}$ are the identity functors in $C$ and $C'$,
-respectively, such that for every $A\in C$ and $A'\in C'$ the composites
+where $\mathbf{1}_{\mathrm{C}}$ and $\mathbf{1}_{\mathrm{C}'}$ are the identity functors in $\mathbf{C}$ and $\mathbf{C}'$,
+respectively, such that for every $A\in \mathbf{C}$ and $A'\in \mathbf{C}'$ the composites
 \[
 \begin{array}{ccccc}
 F(A) & \stackrel{F(\varphi(A))}{\longrightarrow} & FGF(A) &
@@ -46,21 +46,21 @@ G(A') & \stackrel{G(\psi(A'))}{\longrightarrow} & GFG(A') &
 \end{array}
 \]
 are the identities of $F(A)$ and $G(A')$, respectively. Then for every pair
-$A,B$ of objects of $C$, the map $f\longrightarrow F(f)$ from
+$A,B$ of objects of $\mathbf{C}$, the map $f\to F(f)$ from
 $\mathrm{Hom}(A,B)$ to $\mathrm{Hom}(F(A),F(B))$ is a bijection, whose inverse
-is the map $g\longrightarrow G(g)$ from $\mathrm{Hom}(F(A),F(B))$ to
+is the map $g\to G(g)$ from $\mathrm{Hom}(F(A),F(B))$ to
 $\mathrm{Hom}(GF(A),GF(B))$, identified with $\mathrm{Hom}(A,B)$ via the
-isomorphisms $\varphi(A):A\longrightarrow GF(A)$ and
-$\varphi(B):B\longrightarrow GF(B)$. Equivalences between categories compose
+isomorphisms $\varphi(A):A\to GF(A)$ and
+$\varphi(B):B\to GF(B)$. Equivalences between categories compose
 like functors. Two categories are said to be \textit{equivalent} if there
 exists an equivalence between them. In ordinary language one then often allows
 oneself not to distinguish between one and the other. It is important,
 however, to observe the difference between this notion and the much stricter
 notion of isomorphism (which applies if one wants to compare categories that
-are sets): let $C$ be a nonempty set, and for every pair of objects $A,B\in C$
-let $\mathrm{Hom}(A,B)$ be a singleton; then $C$ becomes (under the unique
+are sets): let $\mathbf{C}$ be a nonempty set, and for every pair of objects $A,B\in \mathbf{C}$
+let $\mathrm{Hom}(A,B)$ be a singleton; then $\mathbf{C}$ becomes (under the unique
 possible composition laws
-$\mathrm{Hom}(A,B)\times\mathrm{Hom}(B,C)\longrightarrow\mathrm{Hom}(A,C)$) a
+$\mathrm{Hom}(A,B)\times\mathrm{Hom}(B,C)\to\mathrm{Hom}(A,C)$) a
 category, and two categories constructed by this procedure are always
 equivalent, but they are isomorphic only if they are equipotent. None of the
 equivalences of categories encountered in practice is an isomorphism.

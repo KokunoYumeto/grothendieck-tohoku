@@ -2,7 +2,7 @@
 \SourcePage{163}
 
 \LayerTarget{tohoku:claim:3.4.2:H1-bijection:surjectivity}
-si $L$ est localement isomorphe à $\overline F$ (car on voit facilement
+\noindent si $L$ est localement isomorphe à $F$ (car on voit facilement
 qu'un faisceau localement isomorphe à un faisceau flasque est flasquee).
 C'est un épimorphisme, car soit $(h_{ij})$ un 1-cocycle de $H$ relatif à un
 recouvrement ouvert $(U_i)$ de $X$, comme $H^1(X,\overline H)$ est réduit à
@@ -10,7 +10,7 @@ l'élément neutre, il existe des $\overline h_i\in\Gamma(U_i,\overline H)$
 telles que $h_{ij}=\overline h_i^{-1}\overline h_j$, d'autre part on peut
 évidemment relever les $\overline h_i$ en des sections $\overline g_i$ de
 $\overline G$ (il suffit de se rappeler de la définition de $\overline G$ et
-$\overline H$ !). Posant $p_{ij}=\overline g_i^{-1}\overline g_j$, on voit
+$\overline H$ !). Posant $p_{ij}=\overline g_i^{-1}g_j$, on voit
 aussitôt que la section de $H$ sur $U_{ij}$ définie par $p_{ij}$ est $h_{ij}$,
 d'où on conclut que $p_{ij}\in\Gamma(U_{ij},P)$, donc $(p_{ij})$ est un
 1-cocycle de $P$ définissant le 1-cocycle donné par passage au quotient.
@@ -19,15 +19,14 @@ d'où on conclut que $p_{ij}\in\Gamma(U_{ij},P)$, donc $(p_{ij})$ est un
 Du résultat précédent on conclut que le fibré $E$ est isomorphe au fibré
 associé à un fibré $Q$ de faisceau structural $P$, bien déterminé d'ailleurs
 à isomorphisme près.
-
 \LayerTarget{tohoku:action:3.4.2:P-actions}
 Notons d'ailleurs que faisant opérer
-$P=\overline F G\subset\overline G$ sur $\overline G$ par automorphismes
+$P=F G\subset\overline G$ sur $\overline G$ par automorphismes
 intérieurs, $F$ reste stable par ces opérations (puisque $\overline F$ opère
 trivialement sur $\overline F$, et que $F$ est invariant dans $G$), donc $P$
 opère dans $\overline F$ de façon naturelle. De plus $F$ est stable sous les
 opérations de $P$, et les opérations de $P$ sur $F$ ainsi obtenues ne sont
-autres que celles qu'on obtient en composant $P\longrightarrow H$ et la
+autres que celles qu'on obtient en composant $P\to H$ et la
 représentation naturelle de $H$ par des opérations dans $F$. De ceci on
 déduit donc que le faisceau associé $F^E$ s'identifie aussi au faisceau
 associé $F^Q$. Par ailleurs, les opérations de $P$ passent aussi au quotient
@@ -37,18 +36,17 @@ une suite exact d'homomorphismes de faisceaux :
 
 \LayerTarget{tohoku:eq:3.4.2:crossed-extension}
 \[
-e\longrightarrow G\longrightarrow P\mathop{\longrightarrow}^{u}F'
-\longrightarrow e.
+e\to G\to P\mathop{\to}^{u}F'
+\to e.
 \]
 
 \LayerTarget{tohoku:map:3.4.2:u}
-L'homomorphisme $G\longrightarrow P=\overline F G$ est l'homomorphisme
+L'homomorphisme $G\to P=\overline F G$ est l'homomorphisme
 d'injection, donc un homomorphisme de faisceaux de groupes, et
-l'homomorphisme $u:P\longrightarrow F'$ est défini en faisant correspondre,
-à un produit $\overline f g$ ($\overline f\in\overline F(x)$,
+l'homomorphisme $u:P\to F'$ est défini en faisant correspondre,
+à un produit $f g$ ($\overline f\in\overline F(x)$,
 $g\in G(x)$) la classe de $\overline f$ dans $F'(x)$ (cette définition a un
 sens, grâce au fait que $G\cap\overline F=F$).
-
 \LayerTarget{tohoku:claim:3.4.2:u-properties}
 Cet homomorphisme \textit{ne respecte pas} en général les structures
 multiplicatives, mais satisfait aux conditions suivantes : (i) $u$ est
@@ -57,7 +55,6 @@ sont congrus sous $G$ opérant à droite (i. e. s'ils définissent le même
 élément de $P/G$) (ii) $u$ est un homomorphisme croisé de $P$ dans $F'$
 ($P$ opérant sur $F'$ comme indiqué plus haut), i. e. on a, dans chaque fibre
 $P(x)$, $u(e)=e$ et $u(pp')=u(p)\sigma(p)u(p')$.
-
 \LayerTarget{tohoku:construction:3.4.2:dQ-obstruction}
 Nous allons de cette situation, et de la donnée du fibré $Q$ à faisceau
 structural $P$, déduire un élément $d(Q)\in H^1(X,{F'}^Q)$ (où ${F'}^Q$ est
@@ -66,7 +63,6 @@ façon que la nullité de $d(Q)$ soit nécessaire et suffisante pour que la
 classe $c(Q)\in H^1(X,P)$ de $Q$ soit dans l'image de $H^1(X,G)$. Alors la
 proposition 3.4.2 sera prouvée (modulo des vérifications immédiates de
 naturalité).
-
 \LayerTarget{tohoku:reduction:3.4.2:E-via-Q}
 En effet la condition trouvée est nécessaire et suffisante pour que la classe
 $c(E)\in H^1(X,H)$ soit dans l'image de $H^1(X,G)$ (comme on voit aussitôt

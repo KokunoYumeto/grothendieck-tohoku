@@ -3,7 +3,6 @@
 
 \LayerTarget{tohoku:construction:hyperhomology-resolution:a:p2}
 \noindent an injective object.
-
 \LayerTarget{tohoku:construction:hyperhomology-resolution:b}
 b) Take an ``injective resolution'' of $K$ in the sense of [6, Chapter XVII].
 The quotation marks are necessary because the terminology of [6] is plainly
@@ -11,56 +10,49 @@ ambiguous. Thus the $L^{p,q}$ are injective and, for fixed $p$, taking the
 cycles, boundaries, or cohomology of $L^{p,*}$ with respect to the first
 differential gives an injective resolution of the object formed by the cycles,
 boundaries, or cohomology, respectively, in $K^p$.
-
 \LayerTarget{tohoku:construction:hyperhomology-identification}
 If $L$ is as above, $H^*F(L)$ is essentially independent of the choice of $L$
 and identifies with $R^*(F\mathbin{\circ}H^0)(K)$. Here $H^0$ is regarded as a
-covariant left exact functor $\mathfrak K\longrightarrow C$, and
-$F\mathbin{\circ}H^0$ is the composite $\mathfrak K\longrightarrow C'$. To see
+covariant left exact functor $\mathfrak K\to \mathbf{C}$, and
+$F\mathbin{\circ}H^0$ is the composite $\mathfrak K\to \mathbf{C}'$. To see
 this, take an injective resolution $L'$ of $K$ in the sense of a). There is a
 homomorphism, unique up to homotopy, from the resolution $L$ to $L'$, hence a
-homomorphism $F(L)\longrightarrow F(L')$ inducing an isomorphism
-\[
-{}_{\mathrm I}E_2^{p,q}(F(L))\longrightarrow
-{}_{\mathrm I}E_2^{p,q}(F(L')).
-\]
-Both sides identify with $H^p(R^qF(K))$, so this induces an isomorphism from
+homomorphism $F(L)\to F(L')$ inducing an \textit{isomorphism}
+$I_2^{p,q}(F(L))\to
+I_2^{p,q}(F(L'))$.
+Both sides identify with $H^p(R^qF(K))$, so this induces an \textit{isomorphism} from
 $HF(L)$ to $HF(L')$. The latter is described by the second spectral sequence
-of the bicomplex $F(L')$: one has $H_{\mathrm I}^q(F(L'))=0$ for $q>0$, and
+of the bicomplex $F(L')$: one has $H_{I}^q(F(L'))=0$ for $q>0$, as is immediately seen, and
 hence
-\[
-H^nF(L')=H^n(FH^0(L'^{*,n})).
-\]
+$H^nF(L')=H^n(FH^0(L'^{*n}))$.
 The right side is, by definition, $R^n(F\mathbin{\circ}H^0)(K)$. This defines
 and computes the \textit{hyperhomology}
-$\mathfrak R F(K)=\mathfrak R^*(FH^0)(K)$ of $F$ with respect to $K$, together
+$\mathfrak R F(K)=R^*(FH^0)(K)$ of $F$ with respect to $K$, together
 with the first spectral sequence, whose initial term is
-${}_{\mathrm I}E_2^{p,q}F(K)=H^p(R^qF(K))$ and which abuts to it.
-
+$I_2^{p,q}F(K)=H^p(R^qF(K))$ and which abuts to it.
 If $L$ is instead an ``injective resolution'' as in b), the second spectral
 sequence of $F(L)$ is essentially independent of $L$, since $L$ is unique up
 to homotopy equivalence. It abuts to $\mathfrak R F(K)$ and has the initial
 term in (2.4.2). It would in fact suffice to require
-$R^nF(L^{p,q})=0$ for $n>0$, rather than injectivity of $L^{p,q}$, for the
+$R^nF(L^{pq})=0$ for $n>0$, rather than injectivity of $L^{p,q}$, for the
 second spectral sequence of $F(L)$ to be the one in (2.4.2).
-
 \LayerTarget{tohoku:remark:derived-spectral-functor-scope}
 If $K$ is in nonnegative degrees, both derived spectral sequences of $F$ are
-cohomological. They can also be defined without assuming that $K$ is bounded
-below, provided $F$ has finite injective dimension, that is, $R^pF=0$ for a
+\textit{cohomological}. They can also be defined without assuming that $K$ is bounded
+below, \textit{provided $F$ has finite injective dimension}, that is, $R^pF=0$ for a
 suitable $p$. This does not seem to be contained in [6]; since it will not be
 used below, we merely record it without proof. One can of course define left
-derived spectral functors of $F$ when $C$ has enough projective objects, and
+derived spectral functors of $F$ when $\mathbf{C}$ has enough projective objects, and
 one can also treat contravariant functors. Reference [6] treats a
 multifunctor, but we shall not need that case.
 
 \LayerTarget{tohoku:construction:composite-functor-spectral-sequences:p1}
-Let $C,C',C''$ be abelian categories and let
-$F:C\longrightarrow C'$ and $G:C'\longrightarrow C''$ be covariant functors.
-Suppose that every object of $C$ or $C'$ is isomorphic to a subobject of an
+Let $\mathbf{C},\mathbf{C}',\mathbf{C}''$ be abelian categories and let
+$F:\mathbf{C}\to \mathbf{C}'$ and $G:\mathbf{C}'\to \mathbf{C}''$ be covariant functors.
+Suppose that every object of $\mathbf{C}$ or $\mathbf{C}'$ is isomorphic to a subobject of an
 injective object, so that the right derived functors of $F,G$, and $GF$ may be
-formed. We seek relations among them. Let $A\in C$ and let $C(A)$ be the
+formed. We seek relations among them. Let $A\in \mathbf{C}$ and let $C(A)$ be the
 complex associated to a right resolution of $A$ by injective objects. The
-complex $F(C(A))$ in $C'$ is determined up to homotopy as $C(A)$ varies.
+complex $F(C(A))$ in $\mathbf{C}'$ is determined up to homotopy as we vary
 
 \TohokuContinuation{148}

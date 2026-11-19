@@ -1,5 +1,5 @@
 % Corrected French for printed p.166.
-% One correction is recorded in the page decision ledger.
+% Elision retained; the printed F_X and final H^p_Z are corrected to F_Y and H^p_Phi.
 \SourcePage{166}
 
 \LayerTarget{tohoku:remark:3.4.2:3:p2}
@@ -13,51 +13,42 @@ l'existence d'une connexion holomorphe (non nécessairement intégrable) sur
 $E$.
 
 \LayerTarget{tohoku:section:3.5}
-\textbf{3.5. La suite exacte relative à un sous-espace fermé.} Soit $Y$ un
+\indent\textbf{3.5. La suite exacte relative à un sous-espace fermé.} Soit $Y$ un
 sous-espace localement fermé (i. e. intersection d'une partie ouverte et d'une
 partie fermée) de l'espace $X$. Pour tout faisceau abélien $F$ sur $Y$, il
 existe un faisceau abélien et un seul sur $X$, dont la restriction à $Y$ soit
-$F$ et dont la restriction à $CY$ soit 0. Pour le voir, on est ramené aussitôt
+$F$ et dont la restriction à $\complement Y$ soit 0. Pour le voir, on est ramené aussitôt
 au cas où $Y$ est ouvert ou fermé, où la vérification facile est faite dans
 [4, XVII, prop. 1].
-
 \LayerTarget{tohoku:def:extension-by-zero-locally-closed}
-Ce faisceau sur $X$ sera noté $F^X$. $F\longmapsto F^X$ est un foncteur exact
-$C^Y\longrightarrow C^X$, de plus on a, si $Z\subset Y\subset X$ ($Z$
+Ce faisceau sur $X$ sera noté $F^X$. $F\to F^X$ est un foncteur exact
+$\mathbf C^Y\to \mathbf C^X$, de plus on a, si $Z\subset Y\subset X$ ($Z$
 localement fermé dans $Y$ donc dans $X$), et si $F$ est un faisceau abélien
 sur $Z$ :
-
 \LayerTarget{tohoku:eq:extension-by-zero-transitivity}
-\[
-(F^Y)^X=F^X.
-\]
-
+$(F^Y)^X=F^X$.
 \LayerTarget{tohoku:def:restriction-extension-FY}
 Si maintenant $F$ est un faisceau abélien sur $X$, on pose
 $F_Y=(F\vert Y)^X$, c'est donc le faisceau sur $X$ caractérisé par la
 condition que sa restriction à $Y$ est la même que celle de $F$, et sa
-restriction à $CY$ est nulle. $F_Y$ est un foncteur exact
-$C^X\longrightarrow C^X$, de plus on a encore une propriété de transitivité
-
+restriction à $\complement Y$ est nulle. $F_Y$ est un foncteur exact
+$\mathbf C^X\to \mathbf C^X$, de plus on a encore une propriété de transitivité
 \LayerTarget{tohoku:eq:restriction-extension-transitivity}
-\[
-(F_Y)_Z=F_Z
-\]
+$(F_Y)_Z=F_Z$
 si $Z\subset Y\subset X$ sont comme ci-dessus. Si on suppose $Y$ fermé, donc
-$U=CY$ ouvert, on a une suite exacte bien connue
+$U=\complement Y$ ouvert, on a une suite exacte bien connue
 
 \LayerTarget{tohoku:eq:closed-subspace-exact-sequence}
 \[
-0\longrightarrow F_U\longrightarrow F\longrightarrow F_Y\longrightarrow0
+0\to F_U\to F\to F_Y\to0
 \]
 pour tout faisceau abélien $F$ sur $X$. Rappelons que l'on a
 $\Gamma(F_Y)=\Gamma(Y,F)=\Gamma(F\vert Y)$, tandis que $\Gamma(F_U)$
 s'identifie au sous-groupe de $\Gamma(F)$ formé des sections dont le support
 est contenu dans $U$.
-
 \LayerTarget{tohoku:def:induced-support-antifilter}
 Soit $\Phi$ un antifiltre de parties fermées de $X$ ; pour toute partie $Z$
-de $X$, soit $\Phi_Z$ l'antifiltre \og induit\fg{} formé des $A\in\Phi$ qui
+de $X$, soit $\Phi_Z$ l'antifiltre ``induit'' formé des $A\in\Phi$ qui
 sont contenus dans $Z$ (ne pas confondre avec la trace $\Phi\cap Z$ de $\Phi$
 sur $Z$ !). On vérifie facilement que si $Z$ est localement fermé, et $\Phi$
 paracompactifiante (cf. 3.3.) alors $\Phi_Z$ est aussi paracompactifiante. Si
@@ -77,18 +68,16 @@ valable pour tout faisceau abélien $F$ sur $X$ ; formule d'ailleurs équivalent
 \Gamma_{\Phi_Z}(Z,G)=\Gamma_\Phi(X,G^X)
 \]
 valable pour tout faisceau abélien $G$ sur $Z$.
-
 \LayerTarget{tohoku:construction:cohomology-support-comparison:p1}
 Comme $G^X$ est un foncteur \textit{exact} en $G$, les $H^p_\Phi(X,G^X)$
-forment un foncteur cohomologique sur $C^Z$, et comme le foncteur cohomologique
+forment un foncteur cohomologique sur $\mathbf C^Z$, et comme le foncteur cohomologique
 universel $(H^p_{\Phi_Z}(Z,G))$ coïncide avec le premier en dimension 0, on en
 conclut des \textit{homomorphismes canoniques}
 
 \LayerTarget{tohoku:eq:canonical-support-comparison}
 \[
-H^p_{\Phi_Z}(Z,G)\longrightarrow H^p_\Phi(X,G^X)
+H^p_{\Phi_Z}(Z,G)\to H^p_\Phi(X,G^X)
 \]
-(caractérisés par le fait de définir un homomorphisme de foncteurs
-cohomologiques
+(caractérisés par le fait de définir un homomorphisme de foncteurs coho-
 
 \TohokuContinuation{167}

@@ -3,49 +3,48 @@
 \SourcePage{129}
 
 \LayerTarget{tohoku:section:1.5:p1}
-\noindent dans $C$, est \textit{exact à droite}. Il est même exact si $I$ est
+\noindent dans $\mathbf{C}$, est \textit{exact à droite}. Il est même exact si $I$ est
 fini, mais pas nécessairement si $I$ est infini, car la somme directe d'une
 famille infinie de monomorphismes n'est pas nécessairement un monomorphisme,
 comme nous l'avons remarqué au N\textsuperscript{o}1 (pour la situation duale).
 D'où l'axiome suivant :
 
 \LayerTarget{tohoku:section:1.5:AB4}
-\noindent\textbf{AB 4)} \textit{L'axiome AB 3) est vérifié, et la somme directe
+\noindent AB 4) \textit{L'axiome \textup{AB 3)} est vérifié, et la somme directe
 d'une famille de monomorphismes est un monomorphisme.}
 
 L'axiome suivant est strictement plus fort que AB 4) :
 
 \LayerTarget{tohoku:section:1.5:AB5}
-\noindent\textbf{AB 5)} \textit{L'axiome AB 3) est vérifié, et si
+\noindent AB 5) \textit{L'axiome \textup{AB 3)} est vérifié, et si
 $(A_i)_{i\in I}$ est une famille filtrante croissante de sous-trucs d'un
-$A\in C$, $B$ un sous-truc quelconque de $A$, on a}
+$A\in\mathbf{C}$, $B$ un sous-truc quelconque de $A$, on a}
 
 \[
   \left(\sum_i A_i\right)\cap B=\sum_i(A_i\cap B).
 \]
 
-\noindent (On a noté, conformément aux usages, $\sum A_i$ le sup des $A_i$, et
+\noindent (On a noté, conformément aux usages, $\displaystyle\sum A_i$ le sup des $A_i$, et
 $P\cap Q$ le inf des sous-trucs $P$ et $Q$ de $A$).
-
 \LayerTarget{tohoku:section:1.5:AB5:equivalent}
-AB 5) peut encore s'exprimer ainsi : \textit{AB 3) est satisfait, et si
-$A\in C$ est le sup d'une famille filtrante croissante de sous-trucs $A_i$, et
+AB 5) peut encore s'exprimer ainsi : \textit{\textup{AB 3)} est satisfait, et si
+$A\in\mathbf{C}$ est le sup d'une famille filtrante croissante de sous-trucs $A_i$, et
 si pour tout $i$ on se donne un morphisme
-$u_i:A_i\longrightarrow B$ tel que pour $A_i\subset A_j$, $u_i$ soit induit
+$u_i:A_i\to B$ tel que pour $A_i\subset A_j$, $u_i$ soit induit
 par $u_j$, alors il existe un morphisme $u$} (évidemment unique) \textit{de $A$
 dans $B$ qui induise les $u_i$}. Notons enfin l'axiome suivant qui renforce
 encore AB 5), mais dont nous n'aurons pas à nous servir dans ce travail :
 
 \LayerTarget{tohoku:section:1.5:AB6}
-\noindent\textbf{AB 6)} \textit{L'axiome AB 3) est vérifié, et pour tout
-$A\in C$ et toute famille $(B^j)_{j\in J}$ de familles
+\noindent AB 6) \textit{L'axiome \textup{AB 3)} est vérifié, et pour tout
+$A\in\mathbf{C}$ et toute famille $(B^j)_{j\in J}$ de familles
 $B^j=(B_i^j)_{i\in I_j}$ filtrantes croissantes de sous-trucs $B_i^j$ de $A$,
 on a}
 
 \[
  \bigcap_{j\in J}\left(\sum_{i\in I_j}B_i^j\right)
- =\sum_{(i_j)\in\prod_{j\in J}I_j}
-   \left(\bigcap_{j\in J}B_{i_j}^j\right).
+ =\sum_{(i_j)\in\prod I_j}
+   \left(\bigcap_{j\in J}B_{i_j}^j\right)
 \]
 
 \noindent (Cet axiome inclut implicitement l'existence du inf d'une famille
@@ -61,14 +60,14 @@ elle satisfait de plus aux axiomes AB 3*) et AB 4*), mais non à AB 5*). Les
 faits sont inverses pour la catégorie duale, qui par la dualité de Pontrjagin
 est isomorphe à la catégorie des groupes abéliens topologiques compacts. (Cela
 montre que AB 5*) n'est pas une conséquence de AB 4*), donc AB 5) n'est pas non
-plus une conséquence de AB 4)). La catégorie abélienne des faisceaux de groupes
+plus conséquence de AB 4)). La catégorie abélienne des faisceaux de groupes
 abéliens sur un espace topologique fixé $X$ satisfait à l'axiome AB 5) et
 AB 3*), mais non à AB 4*), car nous avons déjà remarqué qu'un produit de
 morphismes surjectifs n'est pas nécessairement un morphisme surjectif.
-Remarquons pour finir que si $C$ est une catégorie satisfaisant à la fois à
-AB 5) et AB 5*), alors $C$ est réduit aux éléments nuls (car on voit alors
-facilement que pour $A\in C$, le morphisme canonique
-$A^{(I)}\longrightarrow A^I$ est un isomorphisme, et on vérifie que ceci n'est
+Remarquons pour finir que si $\mathbf{C}$ est une catégorie satisfaisant à la fois à
+AB 5) et AB 5*), alors $\mathbf{C}$ est réduit aux éléments nuls (car on voit alors
+facilement que pour $A\in\mathbf{C}$, le morphisme canonique
+$A^{(I)}\to A^I$ est un isomorphisme, et on vérifie que ceci n'est
 possible que si $A$ est nul).
 
 \LayerTarget{tohoku:section:1.5:p3}

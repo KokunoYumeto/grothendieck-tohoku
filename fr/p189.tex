@@ -3,17 +3,20 @@
 \SourcePage{189}
 
 \LayerTarget{tohoku:eq:4.2.8}
+\noindent (qui sont caractérisés par la condition de définir un homomorphisme
+de foncteurs cohomologiques, se réduisant à l'homomorphisme (4.1.3) en
+dimension 0).
 \LayerTarget{tohoku:proof:theorem-4.2.2}
 $A$ étant fixé, pour que ces homomorphismes soient des isomorphismes quels que
 soient $p$ et $B$, il faut et il suffit que (i) ce soit le cas pour $p=0$
-(ii) $\mathrm{Ext}_{O(x)}^p(A(x),B(x))=0$ si $p>0$ et $B$ est un $O$-module
+(ii) $\mathrm{Ext}_{{\mathbf O}(x)}^p(A(x),B(x))=0$ si $p>0$ et $B$ est un ${\mathbf O}$-module
 injectif. Les propositions 4.1.1 et 4.1.2 ont visiblement été faites exprès
 pour vérifier ces conditions. On obtient par suite :
 
 \LayerTarget{tohoku:theorem:4.2.2}
-\noindent\textsc{Théorème 4.2.2.} \textit{Supposons que $O$ soit un faisceau
-cohérent d'anneaux noethériens à gauche, et que $A$ soit un $O$-module
-cohérent. Alors les homomorphismes (4.2.8) sont des isomorphismes quels que
+\textsc{Théorème 4.2.2.} \textit{Supposons que ${\mathbf O}$ soit un faisceau
+cohérent d'anneaux noethériens à gauche, et que $A$ soit un ${\mathbf O}$-module
+cohérent. Alors les homomorphismes \textup{(4.2.8)} sont des isomorphismes quels que
 soient $B$ et $p$.}
 
 \LayerTarget{tohoku:remark:locally-free-ext-vanishing}
@@ -21,38 +24,36 @@ Notons enfin le cas trivial suivant où les homomorphismes (4.2.8) sont des
 isomorphismes, les deux membres étant nuls :
 
 \LayerTarget{tohoku:proposition:4.2.3}
-\noindent\textsc{Proposition 4.2.3.} \textit{Supposons que $A$ soit localement
-isomorphe à $O^n$ (où $n$ est un entier fini $>0$ donné). Alors
-$\mathbf{Ext}_O^p(A,B)=0$ pour tout $O$-module $B$ et $p>0$.}
+\textsc{Proposition 4.2.3.} \textit{Supposons que $A$ soit localement
+isomorphe à ${\mathbf O}^n$ \textup{(}où $n$ est un entier fini $>0$ donné\textup{)}. Alors
+$\mathbf{Ext}_{\mathbf O}^p(A,B)=0$ pour tout ${\mathbf O}$-module $B$ et $p>0$.}
 
 \LayerTarget{tohoku:proof:proposition-4.2.3}
-En effet, en vertu de la nature locale de $\mathbf{Ext}_O^p(A,B)$, on peut
-supposer $A=O^n$. Mais alors $\mathbf{Hom}_O(A,B)=B^n$ est un foncteur
+En effet, en vertu de la nature locale de $\mathbf{Ext}_{\mathbf O}^p(A,B)$, on peut
+supposer $A={\mathbf O}^n$. Mais alors $\mathbf{Hom}_{\mathbf O}(A,B)=B^n$ est un foncteur
 \textit{exact} en $B$, d'où la conclusion.
 
 \LayerTarget{tohoku:corollary:4.2.3}
-\noindent\textsc{Corollaire.} \textit{Si $A$ est localement isomorphe à
-$O^n$, on a}
+\textsc{Corollaire.} \textit{Si $A$ est localement isomorphe à
+${\mathbf O}^n$, on a}
 \[
-\mathrm{Ext}_O^p(X;A,B)=H^p(X,\mathbf{Hom}_O(A,B))
+\mathrm{Ext}_{\mathbf O}^p(X;A,B)=H^p(X,\mathbf{Hom}_{\mathbf O}(A,B))
 \]
-\textit{pour tout $O$-module $B$.}
+\textit{pour tout ${\mathbf O}$-module $B$.}
 
 \LayerTarget{tohoku:proof:corollary-4.2.3}
 Cela résulte en effet aussitôt de la suite spectrale du théorème 4.2.1. En
-particulier, on trouve (faisant $A=O$) :
-
+particulier, on trouve (faisant $A={\mathbf O}$) :
 \LayerTarget{tohoku:eq:4.2.9}
 \[
 \tag{4.2.9}
-H^p(X,B)=\mathrm{Ext}_O^p(X;O,B)
+H^p(X,B)=\mathrm{Ext}_{\mathbf O}^p(X;{\mathbf O},B)
 \]
-
 \LayerTarget{tohoku:remark:cohomology-as-ext}
-formule valable sans aucune hypothèse sur $O$ ou le $O$-module $B$, et qui est
+formule valable sans aucune hypothèse sur ${\mathbf O}$ ou le ${\mathbf O}$-module $B$, et qui est
 d'ailleurs triviale directement, les $H^p(X,B)$ étant les foncteurs dérivés,
-\textit{dans $C^O$} (grâce à prop. 4.1.3) du foncteur
-$\Gamma(B)=\mathrm{Hom}_O(O,B)$.
+\textit{dans $\mathbf C^{\mathbf O}$} (grâce à prop. 4.1.3) du foncteur
+$\Gamma(B)=\mathrm{Hom}_{\mathbf O}({\mathbf O},B)$.
 
 \LayerTarget{tohoku:construction:computing-spectral-sequence}
 Pour terminer ce N$^\circ$, nous indiquons une ``méthode de calcul'' de la
@@ -60,25 +61,25 @@ suite spectrale du théorème 4.2.1, plus commode que celle qui résulterait de
 l'application pure et simple de la définition.
 
 \LayerTarget{tohoku:proposition:4.2.4}
-\noindent\textsc{Proposition 4.2.4.} \textit{Soit
-$\mathbf{L}=(L_i)$ une résolution gauche de $A$ par des $O$-modules $L_i$
-localement isomorphes à des $O^{n_i}$, considérons le foncteur
-$\mathbf{h}_{\mathbf{L}}$ sur $C^O$, à valeurs dans les complexes à degrés
-positifs dans $C$, défini par
-$\mathbf{h}_{\mathbf{L}}(B)=\mathbf{Hom}_O(\mathbf{L},B)$; posons de même
-$\mathbf{h}_A(B)=\mathbf{Hom}_O(A,B)$. Alors $\mathbf{h}_{\mathbf{L}}$ est une
-résolvante (cf. 2.5) du foncteur $\mathbf{h}_A$.}
+\textsc{Proposition 4.2.4.} \textit{Soit
+$\mathbf{L}=(L_i)$ une résolution gauche de $A$ par des ${\mathbf O}$-modules $L_i$
+localement isomorphes à des ${\mathbf O}^{n_i}$, considérons le foncteur
+$\mathbf{h}_{\mathbf{L}}$ sur $\mathbf C^{\mathbf O}$, à valeurs dans les complexes à degrés
+positifs dans $\mathbf C^X$, défini par
+$\mathbf{h}_{\mathbf{L}}(B)=\mathbf{Hom}_{\mathbf O}(\mathbf{L},B)$; posons de même
+$\mathbf{h}_A(B)=\mathbf{Hom}_{\mathbf O}(A,B)$. Alors $\mathbf{h}_{\mathbf{L}}$ est une
+résolvante \textup{(}cf.\ \textup{2.5)} du foncteur $\mathbf{h}_A$.}
 
 \LayerTarget{tohoku:proof:proposition-4.2.4}
 En effet, $\mathbf{h}_{\mathbf{L}}$ est un foncteur exact (prop. 4.2.3), de
 plus $H^0(\mathbf{h}_{\mathbf{L}}(B))=\mathbf{h}_A(B)$ grâce au fait que le
-foncteur $C\longmapsto\mathbf{Hom}_O(C,B)$ est exact à gauche en $C$, enfin si
+foncteur $C\to\mathbf{Hom}_{\mathbf O}(C,B)$ est exact à gauche en $C$, enfin si
 $B$ est injectif, $\mathbf{h}_{\mathbf{L}}(B)$ est un complexe acyclique en
 dimensions $>0$, puisque alors le foncteur
-$C\longmapsto\mathbf{Hom}_O(C,B)$ est exact.
+$C\to\mathbf{Hom}_{\mathbf O}(C,B)$ est exact.
 
 \LayerTarget{tohoku:corollary:4.2.4:1}
-\noindent\textsc{Corollaire 1.} \textit{Sous les conditions de la proposition
+\textsc{Corollaire 1.} \textit{Sous les conditions de la proposition
 précédente, on a}
 
 \TohokuContinuation{190}

@@ -3,11 +3,7 @@
 \SourcePage{199}
 
 \LayerTarget{tohoku:construction:canonical-map-inverse-direct:p1}
-$g(x)$ sur $V$, dont la valeur en chaque $x\in V$ est un élément de
-\[
-f_*^G(A)(f(x))=
-\varinjlim_{U\ni f(x)}\Gamma(f^{-1}(U),A)^G,
-\]
+$g(x)$ sur $V$, dont la valeur en chaque $x\in V$ est un élément de $f_*^G(A)(f(x))=\mathop{\underset{\to}{\mathrm{lim.}}}\limits_{u\ni f(x)}\Gamma(f^{-1}(U),A)^G$,
 et telle que pour tout $x\in V$ existe un voisinage ouvert $V'\subset V$ de
 $x$ et une section $h$ de $f_*^G(A)$ sur un voisinage $U'$ de $f(x)$ (i.e.
 une section invariante $h$ de $A$ sur $f^{-1}(U')$) telle qu'on ait
@@ -16,18 +12,16 @@ canonique\textsuperscript{10)} :
 
 \LayerTarget{tohoku:equation:5.1.2}
 \[
-f^{-1}(f_*^G(A))\longrightarrow A.
+f^{-1}(f_*^G(A))\to A
 \tag{5.1.2}
 \]
-
 \LayerTarget{tohoku:criterion:inverse-direct-essential-image}
 identifiant $f^{-1}(f_*^G(A))$ à un sous-faisceau $A'$ de $A$. Il résulte de
-la formule (5.1.1) ci-dessus que l'on a $A'\simeq A$ si et seulement si $A$ est
+la formule (5.1.1) ci-dessus que l'on a $A'=A$ si et seulement si $A$ est
 isomorphe à un $G$-faisceau de la forme $f^{-1}(B)$. S'il en est ainsi alors
 pour tout $x\in X$, les opérations de $G_x$ dans $A(x)$ sont triviales. La
 réciproque est d'ailleurs vraie si $G$ satisfait la condition (D) plus bas
 (cf. 5.3), comme on le vérifie facilement ;
-
 \LayerTarget{tohoku:result:fixed-point-free-equivalence}
 \textit{si donc en plus les $G_x$ sont réduits à l'identité} (i.e. si aucun
 $g\ne e$ dans $G$ n'admet de point fixe) \textit{les foncteurs $f_*^G$ et
@@ -35,13 +29,12 @@ $f^{-1}$ établissent des isomorphismes réciproques l'un de l'autre de la
 catégorie des $G$-faisceaux sur $X$ et de la catégorie des faisceaux sur $Y$.}
 
 \LayerTarget{tohoku:example:constant-direct-image}
-\noindent\textsc{Exemples d'images directes de $G$-faisceaux.} Si $A$ est le
+\textsc{Exemples d'images directes de G-faisceaux.} Si $A$ est le
 faisceau constant sur $X$ défini par un ensemble $M$ où $G$ opère
 trivialement, alors $A^G$ est le faisceau constant sur $Y$ défini par le même
 ensemble $M$ ; mais si $G$ n'opère pas trivialement dans $M$, et si on n'est
-pas dans le cas ``sans points fixes'', alors $f_*^G(M)$ n'est évidemment plus
+pas dans le cas ``sans points fixes'', alors $f^G(M)$ n'est évidemment plus
 localement constant en général.
-
 \LayerTarget{tohoku:example:germ-function-direct-images}
 Supposons que la condition (D) de 5.3 soit vérifiée, soit $A$ le faisceau des
 germes d'applications de $X$ dans un ensemble $M$, alors $A^G$ est le faisceau
@@ -56,19 +49,18 @@ Géométrie Algébrique abstraite, ou même pour les variétés arithmétiques.
 
 \LayerTarget{tohoku:section:5.2}
 \bigskip
-\noindent\textbf{5.2. Les foncteurs $H^n(X;G,A)$ et $H^n(G,A)$ et les suites
+\textbf{5.2. Les foncteurs $H^n(X;G,A)$ et $\mathbf H^n(G,A)$ et les suites
 spectrales fondamentales.}
-
 \LayerTarget{tohoku:definition:section-invariant-functors}
 Pour éviter des confusions, nous notons $\Gamma_X$ et $\Gamma_Y$ les foncteurs
 ``sections'' définis pour des faisceaux sur $X$ resp. sur $Y$, et $\Gamma^G$
-le foncteur $M\longmapsto M^G$ faisant correspondre, à un ensemble $M$ où
+le foncteur $M\to M^G$ faisant correspondre, à un ensemble $M$ où
 opère $G$, l'ensemble des invariants de $M$. Enfin, si $A$ est un $G$-faisceau
 sur $X$, on pose
 
 \LayerTarget{tohoku:equation:5.2.1}
 \[
-\Gamma_X^G(A)=\Gamma_X(A)^G,
+\Gamma_X^G(A)=\Gamma_X(A)^G
 \tag{5.2.1}
 \]
 donc par définition, on a les formules
@@ -79,13 +71,10 @@ donc par définition, on a les formules
 \tag{5.2.2}
 \]
 
-\LayerTarget{tohoku:footnote:10}
-\begin{quote}
-\footnotesize
-10) Plus généralement, si $f$ est une application continue d'un espace $X$
+\SourceFootnote{10}{\LayerTarget{tohoku:footnote:10}
+Plus généralement, si $f$ est une application continue d'un espace $X$
 dans un espace $Y$, on a, pour les faisceaux $A$ sur $X$, des monomorphismes
-fonctoriels $f^{-1}(f_*(A))\longrightarrow A$, dont le monomorphisme (5.1.2)
-se déduit immédiatement, grâce à l'injection $A^G\longrightarrow f_*(A)$.
-\end{quote}
+fonctoriels $f^{-1}(f_*(A))\to A$, dont le monomorphisme (5.1.2)
+se déduit immédiatement, grâce à l'injection $A^G\to f_*(A)$.}
 
 \TohokuContinuation{200}

@@ -6,23 +6,22 @@
 \LayerTarget{tohoku:proof:lemma-5.6.2}
 \LayerTarget{tohoku:construction:equivariant-injective-envelope}
 \noindent dans un module $M(A)$, qui est un foncteur (non additif !) de $A$,
-l'homomorphisme $A\longrightarrow M_1(A)$ étant fonctoriel ; on itère le
+l'homomorphisme $A\to M_1(A)$ étant fonctoriel ; on itère le
 procédé transfiniment, et on passe à la limite inductive, ce qui nous donne un
-objet injectif $M(A)$ qui est encore un foncteur en $A$, et une injection
-$A\longrightarrow M(A)$ qui est un homomorphisme fonctoriel. Cette
-construction est bien définie, une fois choisi un générateur $U$ de $C$ et un
+objet injectif $M(A)$ qui est encore un \textit{foncteur} en $A$, et une injection
+$A\to M(A)$ qui est un homomorphisme \textit{fonctoriel}. Cette
+construction est bien définie, une fois choisi un générateur $U$ de ${\mathbf C}$ et un
 cardinal convenable. De plus, remplaçant au besoin $U$ par la somme directe de
 ses transformés par $G$ (comparer avec la démonstration de prop. 5.1.1), on
-peut supposer que $U$ provient d'un élément de $C(G)$. On voit alors, pour des
+peut supposer que $U$ provient d'un élément de ${\mathbf C}(G)$. On voit alors, pour des
 raisons évidentes de ``transport de structure'', que si $A$ est un objet de
-$C(G)$, $G$ opère aussi dans $M(A)$, qui se trouve donc être un objet de
-$C(G)$ en réalité, et l'injection $A\longrightarrow M(A)$ est compatible avec
+${\mathbf C}(G)$, $G$ opère aussi dans $M(A)$, qui se trouve donc être un objet de
+${\mathbf C}(G)$ en réalité, et l'injection $A\to M(A)$ est compatible avec
 les opérations de $G$. C'est l'injection cherchée de $A$ dans un objet de
-$C(G)$ qui est injectif dans $C$.
-
+${\mathbf C}(G)$ qui est injectif dans ${\mathbf C}$.
 \LayerTarget{tohoku:conclusion:lemma-5.6.2}
 Cela achève la démonstration ; le lecteur qui conserverait des doutes
-explicitera la démonstration dans le cas $C=C^O$ envisagé dans le lemme, en se
+explicitera la démonstration dans le cas ${\mathbf C}={\mathbf C}^{\mathbf O}$ envisagé dans le lemme, en se
 bornant s'il préfère au cas ``purement algébrique'' où $X$ est réduit à un
 point.
 
@@ -31,45 +30,36 @@ Nous sommes maintenant en mesure d'énoncer le résultat principal de ce
 numéro, démontré dans les considérations qui précédaient :
 
 \LayerTarget{tohoku:theorem:5.6.3}
-\noindent\textsc{Théorème 5.6.3.}\quad \textit{Soit $X$ un espace muni d'un
-groupe d'homéomorphismes $G$ et d'un $G$-faisceau d'anneaux $O$. Soit $A$ un
-$G$-$O$-Module. On peut trouver, sur la catégorie $C^{O(G)}$ des
-$G$-$O$-Modules, trois foncteurs spectraux cohomologiques, aboutissant au
-foncteur gradué $\bigl(\operatorname{Ext}_{O,G}^n(X;A,B)\bigr)$, et dont les
+\textsc{Théorème 5.6.3.}\quad \textit{Soit $X$ un espace muni d'un
+groupe d'homéomorphismes $G$ et d'un $G$-faisceau d'anneaux ${\mathbf O}$. Soit $A$ un
+$G$-${\mathbf O}$-Module. On peut trouver, sur la catégorie ${\mathbf C}^{{\mathbf O}(G)}$ des
+$G$-${\mathbf O}$-Modules, trois foncteurs spectraux cohomologiques, aboutissant au
+foncteur gradué $\bigl(\operatorname{Ext}_{{\mathbf O},G}^n(X;A,B)\bigr)$, et dont les
 termes initiaux sont respectivement :}
 
 \LayerTarget{tohoku:equation:5.6.11}
 \begin{equation}
 \begin{aligned}
 \mathrm I_2^{p,q}(B)
-  &=H^p\bigl(Y,\mathbf{Ext}_{O,G}^q(A,B)\bigr),\\
+  &=H^p\bigl(Y,\mathbf{Ext}_{{\mathbf O},G}^q(A,B)\bigr),\\
 \mathrm {II}_2^{p,q}(B)
-  &=H^p\bigl(G,\operatorname{Ext}_O^q(X;A,B)\bigr),\\
-\mathrm {III}_2^{p,q}(B)
-  &=H^p\bigl(X;G,\mathbf{Ext}_O^q(A,B)\bigr).
+  &=H^p\bigl(G,\operatorname{Ext}_{\mathbf O}^q(X;A,B)\bigr),\\
+\mathrm {III}_2^{p\,q}(B)
+  &=H^p\bigl(X;G,\mathbf{Ext}_{\mathbf O}^q(A,B)\bigr).
 \end{aligned}
 \tag{5.6.11}
 \end{equation}
 
 \LayerTarget{tohoku:specialization:theorem-5.6.3}
-Si $O=A$ les deux premières suites spectrales se réduisent aux suites
+Si ${\mathbf O}=A$ les deux premières suites spectrales se réduisent aux suites
 spectrales du théorème 5.2.1, la troisième suite spectrale est nouvelle. Si
 $G$ se réduit à l'élément neutre, alors les suites spectrales I et III sont
 identique, et identiques à la suite spectrale du théorème 4.2.1, tandis que la
 suite spectrale II est triviale. Si $X$ se réduit à un point, les suites
 spectrales II et III sont identiques, et d'ailleurs non triviales en général
 (et, il semble, utiles), tandis que la suite spectrale I est
-triviale.\textsuperscript{11)}
-
-\LayerTarget{tohoku:consequence:edge-homomorphisms-five-term}
-On tire des suites spectrales précédentes des ``edge-homomorphisms'' et des
-suites exactes à 5 termes, que nous n'écrirons pas.
-
-\LayerTarget{tohoku:transition:degeneration-case}
-Nous n'expliciterons qu'un seul cas particulier de dégénérescence :
-
-\LayerTarget{tohoku:footnote:11}
-\noindent\textsuperscript{11)} La suite spectrale non triviale obtenue aboutit
+triviale.\textsuperscript{11)}\SourceFootnote{11}{\LayerTarget{tohoku:footnote:11}
+La suite spectrale non triviale obtenue aboutit
 à $\operatorname{Ext}_U(A,B)$ et son terme initial est
 $H^p\bigl(G,\operatorname{Ext}_O^q(A,B)\bigr)$ ($U$ étant l'anneau engendré
 par $\mathbf Z(G)$ et le $G$-anneau $O$, pour les relations de commutation
@@ -78,6 +68,12 @@ peut obtenir cette suite spectrale plus facilement directement, en utilisant
 des résolutions projectives de $A$ au lieu de résolutions injectives de $B$.
 On voit en effet très facilement que si $A$ est un $U$-module libre, alors
 $A$ est un $O$-module libre, et $\operatorname{Hom}_O(A,B)$ est un $G$-module
-$\Gamma^G$-acyclique.
+$\Gamma^G$-acyclique.}
+
+\LayerTarget{tohoku:consequence:edge-homomorphisms-five-term}
+On tire des suites spectrales précédentes des ``edge-homomorphisms'' et des
+suites exactes à 5 termes, que nous n'écrirons pas.
+\LayerTarget{tohoku:transition:degeneration-case}
+Nous n'expliciterons qu'un seul cas particulier de dégénérescence :
 
 \TohokuContinuation{218}

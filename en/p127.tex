@@ -3,23 +3,23 @@
 
 \LayerTarget{tohoku:section:1.4}
 \noindent\textbf{1.4. Abelian categories.}
-An \textit{abelian category} is an additive category $C$ satisfying the two
+An \textit{abelian category} is an additive category $\mathbf{C}$ satisfying the two
 following additional axioms (which are self-dual):
 
 \LayerTarget{tohoku:section:1.4:AB1}
-\noindent\textbf{AB 1)} \textit{Every morphism admits a kernel and a cokernel}
+\noindent AB 1) \textit{Every morphism admits a kernel and a cokernel}
 (cf. 1.3.)
 
 \LayerTarget{tohoku:section:1.4:AB2}
-\noindent\textbf{AB 2)} \textit{Let $u$ be a morphism in $C$. Then the
+\noindent AB 2) \textit{Let $u$ be a morphism in $\mathbf{C}$. Then the
 canonical morphism
-$\bar u:\mathrm{Coim}\,u\longrightarrow\mathrm{Im}\,u$ (cf. 1.3.) is an
+$\bar u:\mathrm{Coim}\,u\to\mathrm{Im}\,u$ \textup{(cf. 1.3)} is an
 isomorphism.}
 
 \LayerTarget{tohoku:section:1.4:p1}
 It follows in particular that \textit{a bijective morphism is an isomorphism}.
 Note that there are many additive categories satisfying AB 1) in which the
-morphisms $\bar u:\mathrm{Coim}\,u\longrightarrow\mathrm{Im}\,u$ are always
+morphisms $\bar u:\mathrm{Coim}\,u\to\mathrm{Im}\,u$ are always
 bijective without necessarily being isomorphisms. This is the case, for
 example, for the additive category of separated topological modules over a
 given topological ring, with continuous homomorphisms as morphisms, or for the
@@ -29,33 +29,27 @@ a holomorphic manifold of complex dimension 1. These are therefore
 nonabelian additive categories.
 
 \LayerTarget{tohoku:section:1.4:p2}
-If $C$ is an abelian category, the entire usual formalism of diagrams of
+If $\mathbf{C}$ is an abelian category, the entire usual formalism of diagrams of
 homomorphisms between abelian groups can be developed anew by replacing the
-homomorphisms with morphisms in $C$, provided that one has in view only
+homomorphisms with morphisms in $\mathbf{C}$, provided that one has in view only
 properties ``of finite character'', i.e. properties not involving infinite
 direct sums or direct products (for which special precautions are necessary;
 see No.~5). We shall confine ourselves here to indicating a few particularly
 important facts, referring to [3] for further details.
 
 \LayerTarget{tohoku:section:1.4:p3}
-In what follows, we place ourselves in a fixed abelian category $C$. Let
-$A\in C$. To every subobject of $A$ associate its cokernel (which is therefore
+In what follows, we place ourselves in a fixed abelian category $\mathbf{C}$. Let
+$A\in\mathbf{C}$. To every subobject of $A$ associate its cokernel (which is therefore
 a quotient of $A$), and to every quotient object of $A$ associate its kernel
 (which is therefore a subobject of $A$). This gives \textit{a one-to-one
 correspondence between the class of subobjects of $A$ and the class of quotient
 objects of $A$}; moreover, this correspondence is an \textit{order
 anti-isomorphism} for the natural order relations. Furthermore, the subobjects
-of $A$ form a \textit{lattice} (and hence so do the quotient objects): if $P$
+of $A$ form a class with a \textit{lattice} structure (and hence so do the quotient objects): if $P$
 and $Q$ are two subobjects of $A$, their supremum is the image of the direct
 sum $P+Q$ under the morphism whose components are the canonical injections of
 $P$ and $Q$ into $A$, and their infimum is the kernel of the morphism from $A$
-to the product
-
-\[
-  (A/P)\times(A/Q)
-\]
-
-\noindent whose components are the canonical surjections from $A$ onto $A/P$
+to the product $(A/P)\times(A/Q)$ whose components are the canonical surjections from $A$ onto $A/P$
 and $A/Q$. (In accordance with usage, $A/P$ denotes the quotient of $A$
 corresponding to the subobject $P$; a dual notation such as $A\backslash R$ for
 the subobject of $A$ corresponding to a quotient object $R$ seems natural.)
@@ -63,9 +57,9 @@ There are dual interpretations for the infimum or the supremum of two quotient
 objects of $A$.
 
 \LayerTarget{tohoku:section:1.4:p4}
-Let $u:A\longrightarrow B$ be a morphism. If $A'$ is a subobject of $A$, the
+Let $u:A\to B$ be a morphism. If $A'$ is a subobject of $A$, the
 image of $A'$ under $u$, denoted $u(A')$, is defined as $\mathrm{Im}\,ui$,
-where $i$ is the canonical injection $A'\longrightarrow A$. Dually, one
+where $i$ is the canonical injection $A'\to A$. Dually, one
 defines the inverse image $u^{-1}(B')$ of a quotient $B'$ of $B$; it is a
 quotient of $A$. If $B'$ is now a subobject of $B$, the inverse image of $B'$
 under $u$, denoted $u^{-1}(B')$, is defined as the kernel of $ju$, where $j$

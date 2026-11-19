@@ -7,11 +7,11 @@ ou encore, partant d'un faisceau $F$ sur $X$ :
 
 \LayerTarget{tohoku:eq:canonical-support-comparison-FZ}
 \[
-H^p_{\Phi_Z}(Z,F\vert Z)\longrightarrow H^p_\Phi(X,F_Z).
+H^p_{\Phi_Z}(Z,F\vert Z)\to H^p_\Phi(X,F_Z).
 \]
 
 \LayerTarget{tohoku:theorem:3.5.1}
-\noindent\textsc{Théorème 3.5.1.} --- \textit{Les homomorphismes précédents
+\indent\textsc{Théorème 3.5.1.} \textit{Les homomorphismes précédents
 sont des isomorphismes dans chacun des deux cas suivants :}
 \begin{enumerate}
 \item \textit{$Z$ est fermé.}
@@ -19,64 +19,60 @@ sont des isomorphismes dans chacun des deux cas suivants :}
 \end{enumerate}
 
 \LayerTarget{tohoku:proof:3.5.1}
-\noindent\textsc{Démonstration.} Il suffit dans chacun de ces deux cas, de
-vérifier que les foncteurs $H^p_\Phi(X,G^X)$ sur $C^Z$ sont effaçables pour
-$p\geq1$. Si $Z$ est fermé, cela résulte du fait que si $G$ est injectif,
+\indent\textsc{Démonstration.} Il suffit dans chacun de ces deux cas, de
+vérifier que les foncteurs $H^p_\Phi(X,G^X)$ sur $\mathbf C^Z$ sont effaçables pour
+$p\geqq1$. Si $Z$ est fermé, cela résulte du fait que si $G$ est injectif,
 $G^X$ est injectif (prop. 3.1.4). Si $Z$ est ouvert, et si $\Phi$ est
-paracompactifiante, il en est de même de $\Phi_Z$, donc tout $G\in C^Z$ se
+paracompactifiante, il en est de même de $\Phi_Z$, donc tout $G\in \mathbf C^Z$ se
 plonge dans un faisceau $\Phi_Z$-mou (cf. 3.3), il suffit alors de noter que si
 $G$ est $\Phi_Z$-mou, alors $G^X$ est $\Phi$-mou, (fait dont la vérification
 est immédiate), et d'appliquer le corollaire à prop. 3.3.2.
 
 Revenons alors à la suite exacte
-$0\longrightarrow F_U\longrightarrow F\longrightarrow F_Y\longrightarrow0$
+$0\to F_U\to F\to F_Y\to0$
 relative à un sous-espace fermé $Y$ et son complémentaire ouvert $U$, elle
 donne naissance à une suite exacte de cohomologie, qu'on peut écrire, grâce au
 théorème précédent :
 
 \LayerTarget{tohoku:eq:closed-open-support-long-exact-sequence}
 \[
-\mathinner{\cdotp\cdotp\cdotp\cdotp} H^p_\Phi(X,F_U)\longrightarrow H^p_\Phi(X,F)
-\longrightarrow H^p_{\Phi_Y}(Y,F)\longrightarrow
-H^{p+1}_\Phi(X,F_U)\cdots
+\mathinner{\cdotp\cdotp\cdotp\cdotp} H^p_\Phi(X,F_U)\to H^p_\Phi(X,F)
+\to H^p_{\Phi_Y}(Y,F)\to
+H^{p+1}_\Phi(X,F_U)\mathinner{\cdotp\cdotp\cdotp\cdotp}
 \]
-(où pour simplifier, on a écrit $F$ au lieu de $F\vert Y$ dans le troisième
+(oû pour simplifier, on a écrit $F$ au lieu de $F\vert Y$ dans le troisième
 terme).
-
 \LayerTarget{tohoku:eq:open-support-identification}
 Si $\Phi$ est paracompactifiante, on peut de plus remplacer les termes de la
-forme $H^p_\Phi(X,F_U)$ par $H^p_{\Phi_U}(U,F)$, et on obtient alors la suite
+forme $H^p(X,F_U)$ par $H^p_{\Phi_U}(U,F)$, et on obtient alors la suite
 exacte bien connue de [4, XVII].
 
 \LayerTarget{tohoku:section:3.6}
-\textbf{3.6. Sur la dimension cohomologique de certains espaces}%
+\indent\textbf{3.6. Sur la dimension cohomologique de certains espaces}%
 \LayerTarget{tohoku:footnote:8}\textsuperscript{8)}.
 
 \LayerTarget{tohoku:proposition:3.6.1}
-\noindent\textsc{Proposition 3.6.1.} --- \textit{Soient $X$ un espace
+\indent\textsc{Proposition 3.6.1.} \textit{Soient $X$ un espace
 topologique, $(T^p)$ un foncteur cohomologique covariant, défini sur la
-catégorie $C^X$ des faisceaux de groupes abéliens sur $X$, à valeurs dans une
-catégorie $C'$. On suppose que $C'$ satisfait la condition AB 4) (cf. 1.5) qui
-implique que l'on peut former dans $C'$ des limites inductives (prop. 1.8), et
-on suppose que les $T^p$ permutent aux limites inductives. Soit $F\in C^X$,
-alors $T^p(F)$ appartient à toute sous-catégorie épaisse (cf. 1.11) $C''$ de
-$C'$ stable par sommes directes infinies, qui contient tous les objets de la
-forme $T^i(Z_U)$, où $U$ est un ouvert arbitraire de $X$ et où $i$ est égal à
+catégorie $\mathbf C^X$ des faisceaux de groupes abéliens sur $X$, à valeurs dans une
+catégorie $\mathbf C'$. On suppose que $\mathbf C'$ satisfait la condition \textup{AB 4)} \textup{(}cf. \textup{1.5)} qui
+implique que l'on peut former dans $\mathbf C'$ des limites inductives \textup{(}prop. \textup{1.8)}, et
+on suppose que les $T^p$ permutent aux limites inductives. Soit $F\in \mathbf C^X$,
+alors $T^p(F)$ appartient à toute sous-catégorie épaisse \textup{(}cf. \textup{1.11)} $\mathbf C''$ de
+$\mathbf C'$ stable par sommes directes infinies, qui contient tous les objets de la
+forme $T^i(\mathbf Z_U)$, où $U$ est un ouvert arbitraire de $X$ et où $i$ est égal à
 $p,p+1$ ou $p+2$.}
 
 \LayerTarget{tohoku:proof:3.6.1:p1}
-(La signification de $Z_U$ est la même qu'au numéro précédent).
-
+(La signification de $\mathbf Z_U$ est la même qu'au numéro précédent).
 \LayerTarget{tohoku:construction:generator-family}
 Considérons une famille $(f_i)_{i\in I}$ de sections de $F$ sur des ouverts
-$U_i$ ; chaque $f_i$ définit un homomorphisme de $Z_{U_i}$ dans $F$, donc
+$U_i$ ; chaque $f_i$ définit un homomorphisme de $\mathbf Z_{U_i}$ dans $F$, donc
 $(f_i)$ définit un homomorphisme de la
-
 \LayerTarget{tohoku:eq:generator-epimorphism}
-somme directe $\displaystyle\bigoplus_i Z_{U_i}$ dans $F$.
-
+somme directe $\displaystyle\bigoplus_i \mathbf Z_{U_i}$ dans $F$.
 \LayerTarget{tohoku:def:system-of-generators}
-Nous dirons que $(f_i)$ est un \textit{système de générateurs de $F$} si
+Nous dirons que $(f_i)$ est un \textit{système de générateurs} de $F$ si
 l'homomorphisme précédent est un épimorphisme. Il est trivial qu'il existe
 toujours, pour $F$ donné, une famille de générateurs, d'où résulte aussitôt que
 $F$ est limite inductive d'une famille filtrante croissante

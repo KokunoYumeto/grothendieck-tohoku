@@ -1,93 +1,81 @@
 % Corrected French for printed p.161.
-% Corrections: restore O* as the resolved sheaf; rationnelle.
+% Corrections: O* as resolved sheaf; rationnelle; unbalanced parentheses. Opening X is the valid p.160 continuation.
 \SourcePage{161}
 
 \LayerTarget{tohoku:construction:divisor-sequence:p2}
-\noindent $\mathbf D$ est flasque, car une section de $\mathbf D$ sur un ouvert non
+\noindent $X$ est \textit{flasque}, car une section de $\mathbf D$ sur un ouvert non
 vide $U\subset X$ est une combinaison linéaire formelle
 $\sum n_iV_i$ d'hypersurfaces irréductibles $V_i$ dans $U$, et est donc la
 restriction de la section $\sum n_iV_i$ de $\mathbf D$ sur $X$. Par suite,
-
-\LayerTarget{tohoku:eq:divisor-resolution}
-\[
-0\longrightarrow\mathbf O^*\longrightarrow\mathbf K^*\longrightarrow
-\mathbf D\longrightarrow0\longrightarrow0\longrightarrow\cdots
-\]
+la suite exacte \LayerTarget{tohoku:eq:divisor-resolution}
+$0\to\mathbf O^*\to\mathbf K^*\to\mathbf D\to0\to0\to\ldots.$
 est une résolution de $\mathbf O^*$ par des faisceaux flasques
 ($\mathbf K^*$ est flasque puisqu'il est constant et que $X$ est
 irréductible, cf. fin de 3.3). On en conclut les valeurs des
 $H^p(X,\mathbf O^*)$ (on omet le signe $\Phi$ quand on prend pour $\Phi$ la
 famille de toutes les parties fermées de $X$) :
-
 \LayerTarget{tohoku:eq:divisor-class-cohomology}
-\[
-H^1(X,\mathbf O^*)=
-\Gamma(\mathbf D)/\operatorname{Im}\bigl(\Gamma(\mathbf K^*)\bigr)
-\]
+$H^1(X,\mathbf O^*)=\Gamma(\mathbf D)/\operatorname{Im}(\Gamma(\mathbf K^*))$
 $={}$ groupe des classes de diviseurs modulo les diviseurs principaux (fait
 bien connu, et qui résulte d'ailleurs aussitôt de la suite exacte de
-cohomologie), et $H^i(X,\mathbf O^*)=0$ si $i\geq2$, (résultat que j'avais
+cohomologie), et $H^i(X,\mathbf O^*)=0$ si $i\geqq2$, (résultat que j'avais
 obtenu d'abord, de façon beaucoup moins simple, par la méthode des
 recouvrements de Čech). On notera d'ailleurs que ce résultat s'étend sans
-changement au cas où $X$ est un \og schéma de variété\fg{}, au sens de
-[5 bis], plus généralement au cas de \og variétés arithmétiques\fg{},
-définies par \og recollement\fg{} à partir de \og spectres\fg{} d'anneaux
+changement au cas où $X$ est un ``schéma de variété'' au sens de
+[5 bis], plus généralement au cas de ``variétés arithmétiques'',
+définies par ``recollement'' à partir de ``spectres'' d'anneaux
 commutatifs [8]. L'application ci-dessous peut aussi se formuler dans le
 cadre des variétés arithmétiques :
 
 \LayerTarget{tohoku:prop:3.4.1}
-\textsc{Proposition 3.4.1.} --- \textit{Soit $X$ une variété algébrique
-irréductible (sur un corps algébriquement clos $k$) dont les anneaux locaux
-sont factoriels (par exemple une variété sans singularités), alors on a
-$H^i(X,\mathbf O^*)=0$ pour $i\geq2$. Si $E$ est un fibré algébrique
+\indent\textsc{Proposition 3.4.1.} \textit{Soit $X$ une variété algébrique
+irréductible \textup{(}sur un corps algébriquement clos $k$\textup{)} dont les anneaux locaux
+sont factoriels \textup{(}par exemple une variété sans singularités\textup{)}, alors on a
+$H^i(X,\mathbf O^*)=0$ pour $i\geqq2$. Si $E$ est un fibré algébrique
 localement trivial sur $X$, de groupe structural le groupe projectif
-$\operatorname{GP}(n-1,k)$ (cf. [20]), alors $E$ est isomorphe à l'espace
+$\mathit{GP}(n-1,k)$ \textup{(}cf. \textup{[20])}, alors $E$ est isomorphe à l'espace
 fibré associé à un espace fibré algébrique localement trivial de groupe
-structural le groupe linéaire $\operatorname{Gl}(n,k)$.}
+structural le groupe linéaire $\mathit{Gl}(n,k)$.}
 
 \LayerTarget{tohoku:proof:3.4.1}
 Pour tout groupe algébrique $G$, désignons par $\mathbf O(G)$ le faisceau de
 groupes des germes d'applications régulières de $X$ dans $G$. Alors la
 première assertion de la proposition à démontrer s'écrit
-$H^i(X,\mathbf O(k^*))=0$ pour $i\geq2$, et a déjà été prouvée, la deuxième
+$H^i(X,\mathbf O(k^*))=0$ pour $i\geqq2$, et a déjà été prouvée, la deuxième
 s'écrit, en utilisant les notions et la terminologie développée dans [11] :
 l'application canonique
 
 \LayerTarget{tohoku:eq:pgl-lift-map}
 \[
-H^1\bigl(X,\mathbf O(\operatorname{Gl}(n,k))\bigr)
-\longrightarrow
-H^1\bigl(X,\mathbf O(\operatorname{GP}(n-1,k))\bigr)
+H^1(X,\mathbf O(\mathit{Gl}(n,k)))
+\to
+H^1(X,\mathbf O(\mathit{GP}(n-1,k)))
 \]
 est surjective. Pour le prouver, considérons la suite exacte de groupes
 algébriques
-
 \LayerTarget{tohoku:eq:central-extension}
-\[
-e\longrightarrow k^*\longrightarrow\operatorname{Gl}(n,k)
-\longrightarrow\operatorname{GP}(n-1,k)\longrightarrow e,
-\]
+$e\to k^*\to\mathit{Gl}(n,k)\to\mathit{GP}(n-1,k)\to e$,
 où le premier homomorphisme est l'isomorphisme naturel de $k^*$ sur le centre
-de $\operatorname{Gl}(n,k)$. On constate facilement que la fibration de
-$\operatorname{Gl}(n,k)$ par le sous-groupe $k^*$ est localement triviale
+de $\mathit{Gl}(n,k)$. On constate facilement que la fibration de
+$\mathit{Gl}(n,k)$ par le sous-groupe $k^*$ est localement triviale
 (i.e. il existe une section rationnelle), donc la suite exacte précédente
 donne naissance à une suite exacte de faisceaux
 
 \LayerTarget{tohoku:eq:sheaf-central-extension}
 \[
-e\longrightarrow\mathbf O(k^*)
-\longrightarrow\mathbf O(\operatorname{Gl}(n,k))
-\longrightarrow\mathbf O(\operatorname{GP}(n-1,k))
-\longrightarrow e,
+e\to\mathbf O(k^*)
+\to\mathbf O(\mathit{Gl}(n,k))
+\to\mathbf O(\mathit{GP}(n-1,k))
+\to e
 \]
 où $\mathbf O(k^*)$ est dans le centre de
-$\mathbf O(\operatorname{Gl}(n,k))$. La proposition résulte alors de
+$\mathbf O(\mathit{Gl}(n,k))$. La proposition résulte alors de
 $H^2(X,\mathbf O(k^*))=0$, et du corollaire au résultat suivant, qui
 généralise [11, prop. 5.7.2, corollaire], où nous étions obligés de faire des
 hypothèses de paracompacité :
 
 \LayerTarget{tohoku:prop:3.4.2:p1}
-\textsc{Proposition 3.4.2.} --- \textit{Soient $X$ un espace topologique,
-$e\longrightarrow F\longrightarrow G\longrightarrow H\longrightarrow e$ une}
+\indent\textsc{Proposition 3.4.2.} \textit{Soient $X$ un espace topologique,
+$e\to F\to G\to H\to e$ une}
 
 \TohokuContinuation{162}

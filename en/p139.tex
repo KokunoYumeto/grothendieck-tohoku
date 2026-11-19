@@ -7,79 +7,76 @@ also isomorphic to the coimage of this morphism and is therefore both a
 subobject of $B'$ and a quotient object of $B''$. By shrinking the subobject
 $A'$ of $A$ and the quotient $C'$ of $C$ if necessary, we may suppose that
 $u$ and $v$ come respectively from morphisms, still denoted by the same
-letters, $A'\longrightarrow Q$ and $Q\longrightarrow C'$. We may therefore
-take the composite $vu\in\mathrm{Hom}_C(A',C')$. The element of
-$\mathrm{Hom}_{C/C'}(A,C)$ that it defines depends only on $u'$ and $v'$; we
+letters, $A'\to Q$ and $Q\to C'$. We may therefore
+take the composite $vu\in\mathrm{Hom}_{\mathrm{C}}(A',C')$. The element of
+$\mathrm{Hom}_{\mathrm{C}/\mathrm{C}'}(A,C)$ that it defines depends only on $u'$ and $v'$; we
 denote it by $v'u'$. It is straightforward to prove that the composition law
 so defined is bilinear and associative, and that the class in
-$\mathrm{Hom}_{C/C'}(A,A)$ of the identity map $I_A$ is an identity element.
-Thus $C/C'$ is an additive category; in fact it is even an abelian category.
+$\mathrm{Hom}_{\mathrm{C}/\mathrm{C}'}(A,A)$ of the identity map $I_A$ is an identity element.
+Thus $\mathbf{C}/\mathbf{C}'$ is an additive category; in fact it is even an abelian category.
 We shall not give this extremely tedious verification here.
-
 \LayerTarget{tohoku:prop:quotient-category-properties}
-Thus \textit{$C/C'$ is an abelian category; moreover the identity functor $F$
-from $C$ to $C/C'$ is exact} and in particular preserves kernels, cokernels,
-images, and coimages. \textit{One has $F(A)=0$ if and only if $A\in C'$, and
-every object of $C/C'$ is of the form $F(A)$ for some $A\in C$.} These facts,
+Thus \textit{$\mathbf{C}/\mathbf{C}'$ is an abelian category; moreover the identity functor $F$
+from $\mathbf{C}$ to $\mathbf{C}/\mathbf{C}'$ is exact} and in particular preserves kernels, cokernels,
+images, and coimages. \textit{$F(A)$ is a zero object if and only if $A\in \mathbf{C}'$, and
+every object of $\mathbf{C}/\mathbf{C}'$ is of the form $F(A)$ for some $A\in \mathbf{C}$.} These facts,
 which essentially characterize the quotient category, permit the language
-\textquotedblleft modulo $C'$\textquotedblright\ to be used safely: it simply
+\textquotedblleft modulo $\mathbf{C}'$\textquotedblright\ to be used safely: it simply
 means that one is working in the abelian quotient category.
-
 \LayerTarget{tohoku:remark:quotient-spectral-sequences}
 This language is particularly convenient when one has a spectral sequence in
-$C$ and wants to exploit the fact that some of its terms lie in $C'$; see
-2.4. Reducing modulo $C'$, that is, applying the functor $F$, gives a spectral
-sequence in $C/C'$ in which the corresponding terms vanish. One thereby
-often obtains exact sequences modulo $C'$ by the usual criteria for deriving
+$\mathbf{C}$ and wants to exploit the fact that some of its terms lie in $\mathbf{C}'$; see
+2.4. Reducing modulo $\mathbf{C}'$, that is, applying the functor $F$, gives a spectral
+sequence in $\mathbf{C}/\mathbf{C}'$ in which the corresponding terms vanish. One thereby
+often obtains exact sequences modulo $\mathbf{C}'$ by the usual criteria for deriving
 exact sequences from spectral sequences in which certain terms vanish.
 
 \LayerTarget{tohoku:chapter:2}
 \bigskip
 \begin{center}
-{\large\bfseries Chapter II Homological Algebra in Abelian Categories}
+{\normalsize\bfseries Chapter II Homological Algebra in Abelian Categories}
 \end{center}
 
 \LayerTarget{tohoku:section:2.1}
-\noindent\textbf{2.1. $\partial$-functors and
+\textbf{2.1. $\partial$-functors and
 $\partial^*$-functors.}
-
 \LayerTarget{tohoku:def:delta-functor:p1}
-Let $C$ be an abelian category and $C'$ an additive category, and let $a$ and
+Let $\mathbf{C}$ be an abelian category and $\mathbf{C}'$ an additive category, and let $a$ and
 $b$ be two integers, possibly equal to $+\infty$ or $-\infty$, such that
-$a+1<b$. A \textit{covariant $\partial$-functor from $C$ to $C'$ in degrees
-$a<i<b$} is a system $T=(T^i)$ of additive covariant functors from $C$ to
-$C'$, one for each $a<i<b$, together with, for every $i$ such that
+$a+1<b$. A \textit{covariant $\partial$-functor from $\mathbf{C}$ to $\mathbf{C}'$ in degrees
+$a<i<b$} is a system $T=(T^i)$ of additive covariant functors from $\mathbf{C}$ to
+$\mathbf{C}'$, one for each $a<i<b$, together with, for every $i$ such that
 $a<i<b-1$ and every exact sequence
-$0\longrightarrow A'\longrightarrow A\longrightarrow A''\longrightarrow 0$
-in $C$, a morphism
+$0\to A'\to A\to A''\to 0$
+in $\mathbf{C}$, a morphism
 
 \[
- \partial:T^i(A'')\longrightarrow T^{i+1}(A')
+ \partial:T^i(A'')\to T^{i+1}(A')
 \]
 
 \noindent called the boundary homomorphism, or connecting homomorphism,
 satisfying the following axioms:
 
 \LayerTarget{tohoku:axiom:delta-functor:1}
-\noindent (i) Given a second exact sequence
-$0\longrightarrow B'\longrightarrow B\longrightarrow B''\longrightarrow 0$
+ (i) Given a second exact sequence
+$0\to B'\to B\to B''\to 0$
 and a homomorphism from the first exact sequence to the second, the
 corresponding diagram
 
 \LayerTarget{tohoku:diagram:delta-naturality}
 \[
-\begin{array}{ccc}
-T^i(A'') & \mathop{\longrightarrow}\limits^{\partial} & T^{i+1}(A')\\
+\begin{array}{lcl}
+T^i(A'') & \mathop{\to}\limits^{\partial} & T^{i+1}(A')\\
 \big\downarrow && \big\downarrow\\
-T^i(B'') & \mathop{\longrightarrow}\limits^{\partial} & T^{i+1}(B')
+T^i(B'') & \mathop{\to}\limits^{\partial} & T^{i+1}(B')
 \end{array}
 \]
 
 \noindent is commutative.
 
 \LayerTarget{tohoku:axiom:delta-functor:2:p1}
-\noindent (ii) For every exact sequence
-$0\longrightarrow A'\longrightarrow A\longrightarrow A''\longrightarrow 0$,
+ (ii) For every exact sequence
+$0\to A'\to A\to A''\to 0$,
 the associated sequence of morphisms
 
 \TohokuContinuation{140}

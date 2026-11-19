@@ -3,21 +3,21 @@
 
 \LayerTarget{tohoku:def:additive-diagram-relations:p2}
 \noindent $R_{ij}$, we shall say that $D$ is $R$-commutative if every $D(L)$,
-$L\in R$, is zero. A pair $(S,R)=\Sigma$, consisting of a diagram scheme and a
+$L\in R$, is zero. A pair $(\mathrm{S},R)=\Sigma$, consisting of a diagram scheme and a
 set $R$ as above, will be called a \textit{diagram scheme with commutation
-relations}. For every additive category $C$, we may then consider the
-subcategory $C^\Sigma$ of $C^S$ consisting of the $R$-commutative diagrams.
+relations}. For every additive category $\mathbf{C}$, we may then consider the
+subcategory $\mathbf{C}^\Sigma$ of $\mathbf{C}^S$ consisting of the $R$-commutative diagrams.
 
 \LayerTarget{tohoku:prop:1.6.1}
-\noindent\textsc{Proposition 1.6.1.} --- \textit{Let $\Sigma$ be a diagram
-scheme with commutation relations, and let $C$ be an additive category. Then
-$C^\Sigma$ is an additive category. If $C$ is a category with infinite direct
-products (respectively, infinite direct sums), then so is $C^\Sigma$.
-Moreover, if $C$ satisfies one of axioms AB 1) through AB 6), or one of the
-dual axioms AB 3*) through AB 6*), then so does $C^\Sigma$.}
+\textsc{Proposition 1.6.1.} \textit{Let $\Sigma$ be a diagram
+scheme with commutation relations, and let $\mathbf{C}$ be an additive category. Then
+$\mathbf{C}^\Sigma$ is an additive category. If $\mathbf{C}$ is a category with infinite direct
+products (respectively, infinite direct sums), then so is $\mathbf{C}^\Sigma$.
+Moreover, if $\mathbf{C}$ satisfies one of axioms \textup{AB 1)} through \textup{AB 6)}, or one of the
+dual axioms \textup{AB 3*)} through \textup{AB 6*)}, then so does $\mathbf{C}^\Sigma$.}
 
 \LayerTarget{tohoku:prop:1.6.1:proof}
-Indeed, if $D,D'\in C^\Sigma$ and $u$ is a morphism from $D$ to $D'$, then its
+Indeed, if $D,D'\in \mathbf{C}^\Sigma$ and $u$ is a morphism from $D$ to $D'$, then its
 kernel (respectively, cokernel, image, or coimage) is the diagram formed by the
 kernels (respectively, \ldots) of the components $u_i$; the morphisms in this
 diagram, corresponding to the arrows of the scheme, are deduced from those of
@@ -26,49 +26,42 @@ $D$ (respectively, $D'\ldots$) in the evident way by restriction
 families of diagrams are interpreted analogously. The subobjects $D'$ of a
 diagram $D$ are identified with families $(D'(i))$ of subobjects of the
 $D(i)$ such that, for every arrow $\varphi$ with origin $i$ and endpoint $j$,
-$D(\varphi)D'(i)\subset D'(j)$; then $D'(\varphi)$ is defined as the morphism
-$D'(i)\longrightarrow D'(j)$ induced by $D(\varphi)$. Quotient objects of $D$
+$D(\varphi).\,D'(i)\subset D'(j)$; then $D'(\varphi)$ is defined as the morphism
+$D'(i)\to D'(j)$ induced by $D(\varphi)$. Quotient objects of $D$
 are determined dually.
 
 \LayerTarget{tohoku:def:dual-diagram-scheme}
-If $S$ is a diagram scheme, the scheme having the same vertices and the same
-set of arrows as $S$, but with the origin and endpoint of every arrow
-interchanged, is called the \textit{dual scheme} and is denoted by $S^\circ$.
-If a set $R$ of commutation relations for $S$ is also given, we retain the
-same set for $S^\circ$. With this convention, for an additive category $C$,
-the dual category of $C^\Sigma$ is identified with
-$(C^\circ)^{\Sigma^\circ}$.
+If $\mathrm{S}$ is a diagram scheme, the scheme having the same vertices and the same
+set of arrows as $\mathrm{S}$, but with the origin and endpoint of every arrow
+interchanged, is called the \textit{dual scheme} and is denoted by $\mathrm{S}^0$.
+If a set $R$ of commutation relations for $\mathrm{S}$ is also given, we retain the
+same set for $\mathrm{S}^0$. With this convention, for an additive category $\mathbf{C}$,
+the dual category of $\mathbf{C}^\Sigma$ is identified with
+$(\mathbf{C}^\circ)^{\Sigma^\circ}$.
 
 \LayerTarget{tohoku:def:canonical-diagram-extension}
-Let $C,C'$ be two additive categories and let $\Sigma$ be a diagram scheme
-with commutation relations. For every functor $F$ from $C$ to $C'$, one
-defines in the evident way the functor $F^\Sigma$ from $C^\Sigma$ to
-$C'^\Sigma$, called the \textit{canonical extension of $F$ to diagrams}.
+Let $\mathbf{C},\mathbf{C}'$ be two additive categories and let $\Sigma$ be a diagram scheme
+with commutation relations. For every functor $F$ from $\mathbf{C}$ to $\mathbf{C}'$, one
+defines in the evident way the functor $F^\Sigma$ from $\mathbf{C}^\Sigma$ to
+$\mathbf{C}'^\Sigma$, called the \textit{canonical extension of $F$ to diagrams}.
 Formally, $F^\Sigma$ behaves functorially in the argument $F$; in particular,
-a natural transformation $F\longrightarrow F'$ defines a natural
-transformation $F^\Sigma\longrightarrow F'^\Sigma$. Finally, for a composite
-functor one has
-
-\[
-  (GF)^\Sigma=G^\Sigma F^\Sigma,
-\]
-
-\noindent and the exactness properties of a functor are preserved by
+a natural transformation $F\to F'$ defines a natural
+transformation $F^\Sigma\to F'^\Sigma$. Finally, for a composite
+functor one has $(GF)^\Sigma=G^\Sigma F^\Sigma$, and the exactness properties of a functor are preserved by
 extension to a class of diagrams.
 
 \LayerTarget{tohoku:section:1.7}
-\noindent\textbf{1.7. Examples of categories defined by diagram schemes.}
-
+\textbf{1.7. Examples of categories defined by diagram schemes.}
 \LayerTarget{tohoku:example:1.7:a}
-\noindent a) Take $I$ to consist of one element and the set of arrows to be
+a) Take $I$ to consist of one element and the set of arrows to be
 empty. The commutation relations are then of the form $n_i e=0$, and hence
-may be reduced to a single relation $ne=0$. Thus $C^\Sigma$ is the subcategory
-of $C$ consisting of the objects annihilated by the integer $n$. If $n=0$,
-this is $C$ itself.
+may be reduced to a single relation $ne=0$. Thus $\mathbf{C}^\Sigma$ is the subcategory
+of $\mathbf{C}$ consisting of the objects annihilated by the integer $n$. If $n=0$,
+this is $\mathbf{C}$ itself.
 
 \LayerTarget{tohoku:example:1.7:b:p1}
-\noindent b) Take an arbitrary $I$, with no arrows and no commutation
-relations. Then $C^\Sigma$ is identified with the product category $C^I$. If
+b) Take an arbitrary $I$, with no arrows and no commutation
+relations. Then $\mathbf{C}^\Sigma$ is identified with the product category $\mathbf{C}^I$. If
 there are given
 
 \TohokuContinuation{132}

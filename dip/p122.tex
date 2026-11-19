@@ -34,7 +34,7 @@ $\mathbf{H}^{n}(G,A)$ et les suites spectrales fondamentales}
 \TohokuContentsEntry{5.5.}{Calcul des $H^{n}(X;\,G,A)$ par les recouvrements}
 \LayerTarget{tohoku:section:5.6}
 \TohokuContentsEntry{5.6.}{Les foncteurs
-$\mathrm{Ext}_{O,G}^{n}(X;\,A,B)$}
+$\mathrm{Ext}_{\mathrm{O},\mathrm{G}}^{n}(X;\,A,B)$}
 \LayerTarget{tohoku:section:5.7}
 \TohokuContentsEntry{5.7.}{Introduction de familles $\Phi$.}
 \endgroup
@@ -48,44 +48,43 @@ $\mathrm{Ext}_{O,G}^{n}(X;\,A,B)$}
 \LayerTarget{tohoku:section:1.1}
 \noindent\textbf{1.1. Catégories.}\quad
 \LayerTarget{tohoku:section:1.1:p1}
-Rappelons qu'on appelle \textit{catégorie} une classe non vide $C$ d'objets,
-avec la donnée pour $A,B\in C$ d'un ensemble $\mathrm{Hom}(A,B)$ (appelé
+Rappelons qu'on appelle \textit{catégorie} une classe non vide $\mathbf{C}$ d'objets,
+avec la donnée pour $A,B\in\mathbf{C}$ d'un ensemble $\mathrm{Hom}(A,B)$ (appelé
 ensemble des \textit{morphismes} de $A$ dans $B$), et pour trois objets
-$A,B,C\in C$, d'une application (dite \textit{composition des morphismes})
-$(u,v)\longrightarrow vu$ de $\mathrm{Hom}(A,B)\times\mathrm{Hom}(B,C)$ dans
+$A,B,C\in\mathbf{C}$, d'une application (dite \textit{composition des morphismes})
+$(u,v)\to vu$ de $\mathrm{Hom}(A,B)\times\mathrm{Hom}(B,C)$ dans
 $\mathrm{Hom}(A,C)$, ces données satisfaisant aux deux axiomes suivants : la
-composition des homomorphismes est \textit{associative} ; pour tout $A\in C$,
+composition des homomorphismes est \textit{associative} ; pour tout $A\in\mathbf{C}$,
 il existe dans $\mathrm{Hom}(A,A)$ un élément $I_A$ (appelé le
-\textit{morphisme identique de $A$}) qui soit une unité à droite et à gauche
+\textit{morphisme identique} de $A$) qui soit une unité à droite et à gauche
 pour la composition des morphismes. (Cet élément $I_A$ est alors déterminé de
 façon unique). Enfin, il sera prudent de supposer que la donnée d'un morphisme
 $u$ détermine ses objets de ``départ'' et ``d'arrivée'', en d'autres termes que
-si $(A,B)$ et $(A',B')$ sont deux couples distincts d'objets de $C$, alors
+si $(A,B)$ et $(A',B')$ sont deux couples distincts d'objets de $\mathbf{C}$, alors
 $\mathrm{Hom}(A,B)$ et $\mathrm{Hom}(A',B')$ sont deux ensembles disjoints.
 
 \LayerTarget{tohoku:section:1.1:p2}
-Si $C$ est une catégorie, on définit la \textit{catégorie duale} $C^{\circ}$
-comme la catégorie ayant les mêmes objets que $C$, et où l'ensemble
+Si $\mathbf{C}$ est une catégorie, on définit la \textit{catégorie duale} $\mathbf{C}^{\circ}$
+comme la catégorie ayant les mêmes objets que $\mathbf{C}$, et où l'ensemble
 $\mathrm{Hom}(A,B)^{\circ}$ des morphismes de $A$ dans $B$ est identique à
-$\mathrm{Hom}(B,A)$, le composé de $u$ et $v$ dans $C^{\circ}$ étant défini
-comme le composé de $v$ et $u$ dans $C$. Toute notion et tout énoncé relatif à
-une catégorie non précisée admet une \textit{notion ou un énoncé dual}
+$\mathrm{Hom}(B,A)$, le composé de $u$ et $v$ dans $\mathbf{C}^{\circ}$ étant défini
+comme le composé de $v$ et $u$ dans $\mathbf{C}$. Toute notion et tout énoncé relatif à
+une catégorie non précisée admet une notion ou un énoncé dual
 (``procédé de renversement des flèches''), qui sera tout aussi utile dans les
 applications, mais dont l'explicitation est laissée le plus souvent au
 lecteur.
 
 \LayerTarget{tohoku:section:1.1:p3}
-Soit donnée une catégorie $C$ et un morphisme $u:A\longrightarrow B$ dans $C$.
-Pour tout $C\in C$, on définit une application
-$v\longrightarrow uv:\mathrm{Hom}(C,A)\longrightarrow\mathrm{Hom}(C,B)$ et
+Soit donnée une catégorie $\mathbf{C}$ et un morphisme $u:A\to B$ dans $\mathbf{C}$.
+Pour tout $C\in\mathbf{C}$, on définit une application
+$v\to uv:\mathrm{Hom}(C,A)\to\mathrm{Hom}(C,B)$ et
 une application
-$w\longrightarrow wu:\mathrm{Hom}(B,C)\longrightarrow\mathrm{Hom}(A,C)$.
+$w\to wu:\mathrm{Hom}(B,C)\to\mathrm{Hom}(A,C)$.
 On dit que $u$ est un \textit{monomorphisme} ou que $u$ est
 \textit{injectif} (resp. que $u$ est un \textit{épimorphisme} ou que $u$ est
 \textit{surjectif}) si la première (resp. la seconde) des deux applications
 précédentes est toujours injective ; $u$ est dit \textit{bijectif} si $u$ est
 à la fois injectif et surjectif.
-
 \LayerTarget{tohoku:section:1.1:p4}
 On appelle \textit{inverse à gauche} (resp. \textit{à droite}) de $u$ un
 $v\in\mathrm{Hom}(B,A)$ tel que $vu=I_A$ (resp. $uv=I_B$) ; $v$ est dit

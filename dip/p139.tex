@@ -7,58 +7,55 @@ isomorphe à la coimage de ce morphisme, et est donc à la fois un sous-truc de
 $B'$ et un truc-quotient de $B''$. En diminuant au besoin le sous-truc $A'$ de
 $A$ et le quotient $C'$ de $C$, on peut supposer que $u$ et $v$ proviennent
 respectivement de morphismes (notés encore par la même lettre)
-$A'\longrightarrow Q$ et $Q\longrightarrow C'$. On peut donc prendre le
-composé $vu\in\mathrm{Hom}_C(A',C')$, et on vérifie que l'élément de
-$\mathrm{Hom}_{C/C'}(A,C)$ qu'il définit ne dépend que de $u'$ et $v'$, on le
+$A'\to Q$ et $Q\to C'$. On peut donc prendre le
+composé $vu\in\mathrm{Hom}_{\mathrm{C}}(A',C')$, et on vérifie que l'élément de
+$\mathrm{Hom}_{\mathrm{C}/\mathrm{C}'}(A,C)$ qu'il définit ne dépend que de $u'$ et $v'$, on le
 notera $v'u'$. Il n'y a aucune difficulté à prouver que la loi de composition
 ainsi définie est bilinéaire, associative, et que la classe dans
-$\mathrm{Hom}_{C/C'}(A,A)$ de l'application identique $I_A$ est une unité
-universelle, donc que $C/C'$ est une catégorie additive ; et enfin que c'est
+$\mathrm{Hom}_{\mathrm{C}/\mathrm{C}'}(A,A)$ de l'application identique $I_A$ est une unité
+universelle, donc que $\mathbf{C}/\mathbf{C}'$ est une catégorie additive ; et enfin que c'est
 même une catégorie abélienne. Nous ne ferons pas ici cette vérification
 extrêmement fastidieuse.
-
 \LayerTarget{tohoku:prop:quotient-category-properties}
-Ainsi \textit{$C/C'$ apparaît comme une catégorie abélienne, de plus le
-foncteur identique $F$ de $C$ dans $C/C'$ est exact} (et permute en
+Ainsi \textit{$\mathbf{C}/\mathbf{C}'$ apparaît comme une catégorie abélienne, de plus le
+foncteur identique $F$ de $\mathbf{C}$ dans $\mathbf{C}/\mathbf{C}'$ est exact} (et permute en
 particulier aux noyaux, conoyaux, images et coimages), \textit{$F(A)$ est nue
-si et seulement si $A\in C'$, enfin tout objet de $C/C'$ est de la forme
-$F(A)$, $A\in C$.} Ce sont ces faits (qui essentiellement caractérisent la
+si et seulement si $A\in \mathbf{C}'$, enfin tout objet de $\mathbf{C}/\mathbf{C}'$ est de la forme
+$F(A)$, $A\in \mathbf{C}$.} Ce sont ces faits (qui essentiellement caractérisent la
 catégorie quotient) qui permettent d'appliquer le langage
-\textquotedblleft mod. $C'$\textquotedblright\ en toute sécurité, ce langage
+\textquotedblleft mod. $\mathbf{C}'$\textquotedblright\ en toute sécurité, ce langage
 signifiant simplement qu'on se place dans la catégorie abélienne quotient.
-
 \LayerTarget{tohoku:remark:quotient-spectral-sequences}
 Il est particulièrement commode pour exploiter, quand on a une suite spectrale
-(cf. 2.4) dans $C$, le fait que certains termes de cette suite spectrale sont
-dans $C'$ : réduisant mod. $C'$ (i. e. appliquant le foncteur $F$) on trouve
-une suite spectrale dans $C/C'$ où les termes correspondants sont nuls, d'où
-souvent des suites exactes mod. $C'$ à l'aide des critères usuels d'obtention
+(cf. 2.4) dans $\mathbf{C}$, le fait que certains termes de cette suite spectrale sont
+dans $\mathbf{C}'$ : réduisant mod. $\mathbf{C}'$ (i. e. appliquant le foncteur $F$) on trouve
+une suite spectrale dans $\mathbf{C}/\mathbf{C}'$ où les termes correspondants sont nuls, d'où
+souvent des suites exactes mod. $\mathbf{C}'$ à l'aide des critères usuels d'obtention
 de suites exactes à partir de suites spectrales dont certains termes sont
 nuls.
 
 \LayerTarget{tohoku:chapter:2}
 \bigskip
 \begin{center}
-{\large\bfseries Chapitre II Algèbre Homologique dans les catégories
+{\normalsize\bfseries Chapitre II Algèbre Homologique dans les catégories
 abéliennes.}
 \end{center}
 
 \LayerTarget{tohoku:section:2.1}
-\noindent\textbf{2.1. $\partial$-foncteurs et
+\textbf{2.1. $\partial$-foncteurs et
 $\partial^*$-foncteurs.}
-
 \LayerTarget{tohoku:def:delta-functor:p1}
-Soient $C$ une catégorie abélienne, $C'$ une catégorie additive, $a$ et $b$
+Soient $\mathbf{C}$ une catégorie abélienne, $\mathbf{C}'$ une catégorie additive, $a$ et $b$
 deux entiers (pouvant être égaux à $+\infty$ ou $-\infty$) tels que
-$a+1<b$. Un \textit{$\partial$-foncteur covariant de $C$ dans $C'$, à degrés
-$a<i<b$}, est un système $T=(T^i)$ de foncteurs covariants additifs de $C$
-dans $C'$, $(a<i<b)$, plus la donnée, pour tout $i$ tel que $a<i<b-1$, et
+$a+1<b$. Un \textit{$\partial$-foncteur covariant de $\mathbf{C}$ dans $\mathbf{C}'$, à degrés
+$a<i<b$}, est un système $T=(T^i)$ de foncteurs covariants additifs de $\mathbf{C}$
+dans $\mathbf{C}'$, $(a<i<b)$, plus la donnée, pour tout $i$ tel que $a<i<b-1$, et
 toute suite exacte
-$0\longrightarrow A'\longrightarrow A\longrightarrow A''\longrightarrow 0$
-dans $C$, d'un morphisme
+$0\to A'\to A\to A''\to 0$
+dans $\mathbf{C}$, d'un morphisme
 
 \[
- \partial:T^i(A'')\longrightarrow T^{i+1}(A')
+ \partial:T^i(A'')\to T^{i+1}(A')
 \]
 
 \noindent (\textquotedblleft l'homomorphisme bord\textquotedblright\ ou
@@ -66,25 +63,25 @@ dans $C$, d'un morphisme
 suivants étant supposés satisfaits :
 
 \LayerTarget{tohoku:axiom:delta-functor:1}
-\noindent (i) Si on a une deuxième suite exacte
-$0\longrightarrow B'\longrightarrow B''\longrightarrow 0$ et un
+ (i) Si on a une deuxième suite exacte
+$0\to B'\to B''\to 0$ et un
 homomorphisme de la première suite exacte dans la seconde, alors les
 diagrammes correspondants
 
 \LayerTarget{tohoku:diagram:delta-naturality}
 \[
-\begin{array}{ccc}
-T^i(A'') & \mathop{\longrightarrow}\limits^{\partial} & T^{i+1}(A')\\
+\begin{array}{lcl}
+T^i(A'') & \mathop{\to}\limits^{\partial} & T^{i+1}(A')\\
 \big\downarrow && \big\downarrow\\
-T^i(B'') & \mathop{\longrightarrow}\limits^{\partial} & T^{i+1}(B')
+T^i(B'') & \mathop{\to}\limits^{\partial} & T^{i+1}(B')
 \end{array}
 \]
 
 \noindent sont commutatifs.
 
 \LayerTarget{tohoku:axiom:delta-functor:2:p1}
-\noindent (ii) Pour toute suite exacte
-$0\longrightarrow A'\longrightarrow A\longrightarrow A''\longrightarrow 0$,
+ (ii) Pour toute suite exacte
+$0\to A'\to A\to A''\to 0$,
 la suite de morphismes associée
 
 \TohokuContinuation{140}

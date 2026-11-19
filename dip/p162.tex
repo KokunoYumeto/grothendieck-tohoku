@@ -2,67 +2,61 @@
 \SourcePage{162}
 
 \LayerTarget{tohoku:prop:3.4.2:p2}
-\textit{suite exacte de faisceaux de groupes sur $X$, avec $F$ abélien.
-Soient $E$ un espace fibré sur $X$ à faisceau structural $H$ [11, Chap. IV],
-$F^E$ le faisceau de groupes associé à $E$ et aux opérations de $H$ sur $F$
-définies à l'aide des automorphismes intérieurs de $G$ (qui opèrent sur le
-faisceau invariant $F$). On peut alors définir un \og élément cobord\fg{}
-$\partial E\in H^2(X,F^E)$, de façon \og fonctorielle\fg{}, de telle façon que
+\noindent\textit{suite exacte de faisceaux de groupes sur $X$, avec $F$ abélien.
+Soient $E$ un espace fibré sur $X$ à faisceau structural $H$ \textup{[11,} Chap. IV\textup{]},
+$\mathbf F^E$ le faisceau de groupes associé à $E$ et aux opérations de $H$ sur $F$
+définies à l'aide des automorphismes intérieurs de $G$ \textup{(}qui opèrent sur le
+faisceau invariant $F$\textup{)}. On peut alors définir un ``élément cobord''
+$\partial E\in H^2(X,F)$, de façon ``fonctorielle'', de telle façon que
 la condition nécessaire et suffisante pour que $\partial E=0$, c'est que la
-classe $c(E)$ de $E$ dans $H^1(X,H)$ [11, Chap. V] appartienne à l'image de
+classe $c(E)$ de $E$ dans $H^1(X,H)$ \textup{[11,} Chap. V\textup{]} appartienne à l'image de
 $H^1(X,G)$.}
 
 Cet énoncé se simplifie quand $F$ est dans le centre de $G$, car alors
 $F^E=F$ ne dépend plus du fibré $E$, et on obtient :
 
 \LayerTarget{tohoku:cor:3.4.2}
-\textsc{Corollaire.} --- \textit{Soit
-$e\longrightarrow F\longrightarrow G\longrightarrow H\longrightarrow e$
+\indent\textsc{Corollaire.} \textit{Soit
+$e\to F\to G\to H\to e$
 une suite exacte de faisceaux de groupes sur l'espace $X$, avec $F$ dans le
-centre de $G$. Alors on peut trouver une application (\og fonctorielle\fg{})
-\[
-\partial:H^1(X,H)\longrightarrow H^2(X,F)
-\]
+centre de $G$. Alors on peut trouver une application \textup{(}``fonctorielle\textup{)}
+$\partial:H^1(X,H)\to H^2(X,F)$
 telle que $\partial^{-1}(0)=\operatorname{Im}(H^1(X,G))$.}
 
 \LayerTarget{tohoku:proof:3.4.2:p1}
-\textsc{Démonstration de prop. 3.4.2.} Plongeons tout faisceau $M$ sur $X$
+\indent\textsc{Démonstration de prop. 3.4.2.} Plongeons tout faisceau $M$ sur $X$
 dans le faisceau $\overline M$ dont l'ensemble des section sur l'ouvert $U$
 est l'ensemble
-
 \LayerTarget{tohoku:construction:flabby-envelope}
-\[
-\prod_{x\in U}M(x);
-\]
+$\displaystyle\prod_{x\in U}M(x)$;
 $\overline M$ est donc un faisceau \textit{flasque} et $M$ s'identifie à un
 sous-faisceau de $\overline M$. Si $M$ est un faisceau de groupes (resp. de
 groupes abéliens) il en est de même de $\overline M$. D'autre part, on vérifie
 facilement que si $L$ est un faisceau flasque de groupes (non nécessairement
 abéliens), alors $H^1(X,L)$ est réduit à l'élément neutre (en d'autres termes,
 tout faisceau \textit{principal} sous $L$ [11, définition 3.4.2] admet une
-section ; on construit aisément une telle section par \og zornification\fg{}
+section ; on construit aisément une telle section par ``zornification''
 sur l'ensemble des sections construites sur des ouverts de $X$).
-
 \LayerTarget{tohoku:comparison:cech-derived-h1}
 Il résulte de ceci, que pour des faisceaux $F$ de groupes abéliens, le groupe
 $H^1(X,F)$ tel qu'il est défini dans [11] (par la méthode de Čech) est le même
 que celui défini axiomatiquement dans ce travail (savoir le premier satellite
-droit $S^1\Gamma$ du foncteur $\Gamma$ sur $C^X$). Revenons alors aux
+droit $\mathrm S^1\Gamma$ du foncteur $\Gamma$ sur $\mathbf C^X$). Revenons alors aux
 conditions de prop. 3.4.2, on a un homomorphisme de suites exactes :
 
 \LayerTarget{tohoku:diagram:3.4.2:flabby-embedding}
 \[
-\begin{array}{ccccccccc}
-e&\longrightarrow&F&\longrightarrow&G&\longrightarrow&H&\longrightarrow&e\\
+\begin{array}[b]{ccccccccc}
+e&\to&F&\to&G&\to&H&\to&e\\
 &&\big\downarrow&&\big\downarrow&&\big\downarrow&&\\[0.45em]
-e&\longrightarrow&\overline F&\longrightarrow&\overline G&\longrightarrow
-&\overline H&\longrightarrow&e
+e&\to&\overline F&\to&\overline G&\to
+&\overline H&\to&e
 \end{array}
-\qquad \overline F\cap G=F
+\qquad F\cap G=F
 \]
 $G$ et $\overline F$ sont des sous-faisceaux de groupes de $\overline G$,
-$\overline F$ distingué. Soit $\overline F\mathbin{\cdot}G$ le faisceau de
-groupes de $\overline G$ engendré par $G$ et $\overline F$, posons :
+$\overline F$ distingué. Soit $F\mathbin{\cdot}G$ le faisceau de
+groupes de $\overline G$ engendré par $G$ et $F$, posons :
 
 \LayerTarget{tohoku:construction:3.4.2:P-Fprime}
 \LayerTarget{tohoku:eq:3.4.2:quotients}
@@ -74,13 +68,13 @@ groupes
 
 \LayerTarget{tohoku:eq:3.4.2:P-extension}
 \[
-e\longrightarrow\overline F\longrightarrow P\longrightarrow H
-\longrightarrow e.
+e\to\overline F\to P\to H
+\to e.
 \]
 
 \LayerTarget{tohoku:claim:3.4.2:H1-bijection}
-Montrons que l'application correspondante
-$H^1(X,P)\longrightarrow H^1(X,H)$ est bijective. C'est un monomorphisme en
+Montrons que \textit{l'application correspondante
+$H^1(X,P)\to H^1(X,H)$ est bijective.} C'est un monomorphisme en
 vertu de la suite exacte de cohomologie de [11, prop. 5.6.2], compte tenu du
 fait que $H^1(X,L)$ est réduit à l'élément neutre
 

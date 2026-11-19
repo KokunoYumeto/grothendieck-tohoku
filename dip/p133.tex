@@ -2,79 +2,70 @@
 \SourcePage{133}
 
 \LayerTarget{tohoku:example:1.7:h:p2}
-\noindent diagrammes correspondants (pour une catégorie $C$ donnée, non
+\noindent diagrammes correspondants (pour une catégorie $\mathbf{C}$ donnée, non
 nécessairement additive) sont connus sous le nom de \textit{systèmes
-inductifs} sur $I$ à valeurs dans $C$. Si on change $I$ en l'ensemble
-préordonné opposé, ou $C$ en $C^\circ$, on obtient les \textit{systèmes
-projectifs} sur $I$ à valeurs dans $C$. Un cas important est celui où $I$ est
+inductifs} sur $I$ à valeurs dans $\mathbf{C}$. Si on change $I$ en l'ensemble
+préordonné opposé, ou $\mathbf{C}$ en $\mathbf{C}^\circ$, on obtient les \textit{systèmes
+projectifs} sur $I$ à valeurs dans $\mathbf{C}$. Un cas important est celui où $I$ est
 l'ensemble des parties ouvertes d'un espace topologique $X$, ordonné par la
 relation $\supset$ : on obtient alors la notion de \textit{préfaisceau} sur
-$X$ (à valeurs dans la catégorie $C$).
+$X$ (à valeurs dans la catégorie $\mathbf{C}$).
 
 \LayerTarget{tohoku:section:1.8}
-\noindent\textbf{1.8. Limites inductives et projectives.} Nous ne parlerons
+\textbf{1.8. Limites inductives et projectives.} Nous ne parlerons
 que des premières, la notion de limite projective étant duale de celle de
-limite inductive. Soit $C$ une catégorie, $I$ un ensemble préordonné,
-$\mathbf A=(A_i,u_{ij})$ un système inductif sur $I$ à valeurs dans $C$
-($u_{ij}$ est un morphisme $A_j\longrightarrow A_i$ défini pour $i\geq j$).
-
+limite inductive. Soit $\mathbf{C}$ une catégorie, $I$ un ensemble préordonné,
+$\mathbf A=(A_i,u_{ij})$ un système inductif sur $I$ à valeurs dans $\mathbf{C}$
+($u_{ij}$ est un morphisme $A_j\to A_i$ défini pour $i\geqq j$).
 \LayerTarget{tohoku:def:inductive-limit}
 On appelle \textit{limite inductive} (généralisée) de $\mathbf A$ un système
-formé d'un $\overline A\in C$ et d'une famille $(u_i)$ de morphismes
-$u_i:A_i\longrightarrow\overline A$, satisfaisant aux conditions suivantes :
-a) Pour $i\leq j$, on a $u_i=u_j u_{ji}$ ; b) Pour tout $B\in C$ et toute
-famille $(v_i)$ de morphismes $v_i:A_i\longrightarrow B$, telle que l'on ait
-pour tout couple $(i,j)$ avec $i\leq j$, la relation $v_i=v_j u_{ji}$, on peut
-trouver un morphisme $v$ et un seul de $\overline A$ dans $B$ tel que l'on ait
+formé d'un $\overline{\mathbf A}\in \mathbf{C}$ et d'une famille $(u_i)$ de morphismes
+$u_i:A_i\to\mathbf A$, satisfaisant aux conditions suivantes :
+a) Pour $i\leqq j$, on a $u_i=u_j u_{ji}$ b) Pour tout $B\in \mathbf{C}$ et toute
+famille $(v_i)$ de morphismes $v_i:A_i\to B$, telle que l'on ait
+pour tout couple $(i,j)$ avec $i\leqq j$, la relation $v_i=v_j u_{ji}$, on peut
+trouver un morphisme $v$ et un seul de $\overline{\mathbf A}$ dans $B$ tel que l'on ait
 $v_i=v u_i$ pour tout $i\in I$.
-
 \LayerTarget{tohoku:def:inductive-limit:functoriality}
-Si $(\overline A,(u_i))$ est une limite inductive de
-$\mathbf A=(A_i,u_{ij})$, et si $(\overline B,(v_i))$ est une limite inductive
+Si $(\overline{\mathbf A},(u_i))$ est une limite inductive de
+$\mathbf A=(A_i,u_{ij})$, et si $(\mathbf B,(v_i))$ est une limite inductive
 d'un deuxième système inductif $\mathbf B=(B_i,v_{ij})$, enfin si
 $w=(w_i)$ est un morphisme de $\mathbf A$ dans $\mathbf B$, alors il existe un
-morphisme $\overline w$ et un seul de $\overline A$ dans $\overline B$ tel que
+morphisme $\overline w$ et un seul de $\overline{\mathbf A}$ dans $\overline{\mathbf B}$ tel que
 l'on ait, pour tout $i\in I$ : $\overline w u_i=v_iw_i$. En particulier, deux
 limites inductives d'un même système inductif sont canoniquement isomorphes
 (dans un sens évident), aussi est-il naturel de choisir, pour tout système
 inductif qui admet une limite inductive, une telle limite inductive (par
 exemple au moyen du symbole $\tau$ de Hilbert), qu'on notera alors
 $\mathop{\rm lim}\limits_{\longrightarrow}\mathbf A$ ou
-$\mathop{\rm lim}\limits_{\longrightarrow,\,i\in I}A_i$, et qu'on
+$\mathop{\rm lim}\limits_{\substack{\longrightarrow\\i\in I}}A_i$, et qu'on
 appellera \textit{la} limite inductive du système inductif donné.
-
 \LayerTarget{tohoku:def:inductive-limit:functor}
-Si $I$ et $C$ sont tels que
+Si $I$ et $\mathbf{C}$ sont tels que
 $\mathop{\rm lim}\limits_{\longrightarrow}\mathbf A$ existe pour
-\textit{tout} système inductif $\mathbf A$ sur $I$ à valeurs dans $C$, il
+\textit{tout} système inductif $\mathbf A$ sur $I$ à valeurs dans $\mathbf{C}$, il
 résulte de ce qui précède que
 $\mathop{\rm lim}\limits_{\longrightarrow}\mathbf A$ est un \textit{foncteur
-covariant} défini sur la catégorie des systèmes inductifs de $I$ dans $C$, à
-valeurs dans $C$.
+covariant} défini sur la catégorie des systèmes inductifs de $I$ dans $\mathbf{C}$, à
+valeurs dans $\mathbf{C}$.
 
 \LayerTarget{tohoku:prop:1.8}
-\noindent\textsc{Proposition 1.8.} --- \textit{Soit $C$ une catégorie
-abélienne satisfaisant à l'axiome AB 3) (existence des sommes directes
+\textsc{Proposition 1.8.} \textit{Soit $\mathbf{C}$ une catégorie
+abélienne satisfaisant à l'axiome \textup{AB 3)} (existence des sommes directes
 quelconques) et soit $I$ un ensemble préordonné filtrant croissant. Alors pour
-tout système inductif $\mathbf A$ sur $I$, à valeurs dans $C$, la limite
+tout système inductif $\mathbf A$ sur $I$, à valeurs dans $\mathbf{C}$, la limite
 inductive $\mathop{\rm lim}\limits_{\longrightarrow}\mathbf A$ existe, et
-c'est un foncteur additif exact à droite de $\mathbf A$. Si $C$ satisfait à
-l'axiome AB 5) (cf. 1.5) ce foncteur est même exact, et alors le noyau du
+c'est un foncteur additif exact à droite de $\mathbf A$. Si $\mathbf{C}$ satisfait à
+l'axiome \textup{AB 5)} \textup{(\textit{cf.} 1.5)} ce foncteur est même exact, et alors le noyau du
 morphisme canonique
-$u_i:A_i\longrightarrow\mathop{\rm lim}\limits_{\longrightarrow}\mathbf A$
-est le sup des noyaux des morphismes $u_{ji}:A_i\longrightarrow A_j$ pour
-$j\geq i$. (En particulier, si les $u_{ji}$ sont injectifs, il en est de même
+$u_i:A_i\to\mathop{\rm lim}\limits_{\longrightarrow}\mathbf A$
+est le $\sup$ des noyaux des morphismes $u_{ji}:A_i\to A_j$ pour
+$j\geqq i$. (En particulier, si les $u_{ji}$ sont injectifs, il en est de même
 de $u_i$).}
 
 \LayerTarget{tohoku:prop:1.8:proof:p1}
-Pour construire une limite inductive de $(A_i,u_{ij})$, on considère
-
-\[
-  S=\bigoplus_{i\in I}A_i,
-\]
-
-\noindent et pour tout couple $(i,j)$ avec $i\leq j$, le morphisme $w_{ij}$ de
-$A_i$ dans $S$ déduit du morphisme $A_i\longrightarrow A_i+A_j$ dont les
+Pour construire une limite inductive de $(A_i,u_{ij})$, on considère $S=\displaystyle\bigoplus_{i\in I}A_i$, et pour tout couple $(i,j)$ avec $i\leqq j$, le morphisme $w_{ij}$ de
+$A_i$ dans $S$ déduit du morphisme $A_i\to A_i+A_j$ dont les
 composantes sont $I_{A_i}$ et $-u_{ji}$. Soit $N_{ij}$
 
 \TohokuContinuation{134}

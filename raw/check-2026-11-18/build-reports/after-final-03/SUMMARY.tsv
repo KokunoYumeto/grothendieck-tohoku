@@ -1,0 +1,4 @@
+layer	phase	passes_attempted	exit_codes	status	pdf_pages	errors_final_pass	pdf_sha256	warnings_final_pass	overfull_count_final_pass	max_overfull_pt	overfull_gt_2pt	overfull_gt_10pt	limit_passed	pdf_context_basis
+dip	after-final-03	2	0,0	two passes successful	83	0	ba88cc4b6fc4d1eff1d41f340293ce9c05f9de061d05c95f87ed80980023d14c	0	0	0.00000	0	0	yes	named source-page destinations; inclusive interval through the next source-page anchor
+fr	after-final-03	2	0,0	two passes successful	83	0	5544a6756dbb38fd974d4e904c88b7cc9a135cd69652d0e68de3cc44236b072f	0	0	0.00000	0	0	yes	named source-page destinations; inclusive interval through the next source-page anchor
+en	after-final-03	2	0,0	two passes successful	81	0	70595a2c3450a0c1ce071a0f71b24d10b2599e1b889c644a27b7b8c97aeccd22	0	0	0.00000	0	0	yes	named source-page destinations; inclusive interval through the next source-page anchor

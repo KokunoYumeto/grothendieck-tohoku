@@ -3,86 +3,75 @@
 
 \LayerTarget{tohoku:def:subcategory:p2}
 \noindent plus des conditions précédentes, les groupes
-$\mathrm{Hom}_{C'}(A,B)$ sont des sous-groupes de
-$\mathrm{Hom}_C(A,B)$.
-
+$\mathrm{Hom}_{\mathrm{C}'}(A,B)$ sont des sous-groupes de
+$\mathrm{Hom}_{\mathrm{C}}(A,B)$.
 \LayerTarget{tohoku:def:complete-subcategory}
-Supposons que $C$ soit une catégorie abélienne, $C'$ est appelé une
-\textit{sous-catégorie complète} si (i) \textit{pour $A,B\in C'$, on a
-$\mathrm{Hom}_{C'}(A,B)=\mathrm{Hom}_C(A,B)$.} (ii) \textit{Si dans une
-suite exacte $A\longrightarrow B\longrightarrow C\longrightarrow
-D\longrightarrow E$ les 4 termes extrêmes sont dans $C'$, il en est de même
-du terme médian $D$.} D'après (i), $C'$ est complètement déterminé par la
+Supposons que $\mathbf{C}$ soit une catégorie abélienne, $\mathbf{C}'$ est appelé une
+sous-catégorie \textit{complète} si (i) \textit{pour $A,B\in \mathbf{C}'$, on a
+$\mathrm{Hom}_{\mathrm{C}'}(A,B)=\mathrm{Hom}_{\mathrm{C}}(A,B)$.} (ii) \textit{Si dans une
+suite exacte $A\to B\to C\to
+D\to E$ les 4 termes extrêmes sont dans $\mathbf{C}'$, il en est de même
+du terme médian $D$.} D'après (i), $\mathbf{C}'$ est complètement déterminé par la
 classe de ses objets. (ii) équivaut à dire que pour tout morphisme
-$P\longrightarrow Q$ avec $P,Q\in C'$ le noyau et le conoyau sont dans $C'$,
+$P\to Q$ avec $P,Q\in \mathbf{C}'$ le noyau et le conoyau sont dans $\mathbf{C}'$,
 et que pour toute suite exacte
-$0\longrightarrow R'\longrightarrow R\longrightarrow R''\longrightarrow 0$
-avec $R',R''$ dans $C'$, $R$ est dans $C'$. On vérifie aussitôt, qu'alors
-$C'$ est elle-même une classe abéliennne, et que pour un morphisme
-$u:A\longrightarrow B$ dans $C'$, noyau et conoyau (donc aussi image et
-coimage) sont identiques au noyau et conoyau (resp. \ldots) envisagé dans
-$C$.
+$0\to R'\to R\to R''\to 0$
+avec $R',R''$ dans $\mathbf{C}'$, $R$ est dans $\mathbf{C}'$. On vérifie aussitôt, qu'alors
+$\mathbf{C}'$ est elle-même une classe abéliennne, et que pour un morphisme
+$u:A\to B$ dans $\mathbf{C}'$, noyau et conoyau (donc aussi image et
+coimage) sont identiques au noyau et conoyau (resp. \ldots\,.) envisagé dans
+$\mathbf{C}$.
 
 \LayerTarget{tohoku:def:thick-subcategory}
-La sous-catégorie $C'$ de $C$ est dite \textit{épaisse}, si elle satisfait à
+La sous-catégorie $\mathbf{C}'$ de $\mathbf{C}$ est dite \textit{épaisse}, si elle satisfait à
 la condition (i) ci-dessus, et au renforcement suivant de la condition (ii) :
 (iii) \textit{Si dans une suite exacte
-$A\longrightarrow B\longrightarrow C$ les termes extrêmes $A,C$ sont dans
-$C'$, il en est de même de $B$.} Si $C$ est la catégorie abélienne des
+$A\to B\to C$ les termes extrêmes $A,C$ sont dans
+$\mathbf{C}'$, il en est de même de $B$.} Si $\mathbf{C}$ est la catégorie abélienne des
 groupes abéliens, on trouve la notion de ``classe de groupes abéliens'' de
 [17]. On voit comme dans [17] que (iii) équivaut à la conjonction des trois
-conditions suivantes : Tout objet nul est dans $C'$, tout objet isomorphe à
-un sous-truc ou un truc-quotient d'un objet $C'$ est dans $C'$, toute
-extension de deux objets de $C'$ est dans $C'$.
+conditions suivantes : Tout objet nul est dans $\mathbf{C}'$, tout objet isomorphe à
+un sous-truc ou un truc-quotient d'un objet $\mathbf{C}'$ est dans $\mathbf{C}'$, toute
+extension de deux objets de $\mathbf{C}'$ est dans $\mathbf{C}'$.
 
 \LayerTarget{tohoku:def:quotient-category}
-Soit $C$ une catégorie abélienne, $C'$ une sous-catégorie épaisse, nous allons
-définir une nouvelle catégorie abélienne, notée $C/C'$ et appelée
-\textit{catégorie quotient de $C$ par $C'$}. Les objets de $C/C'$ sont par
-définition les objets de $C$. Nous allons définir les morphismes dans $C/C'$
-de $A$ dans $B$, appelés ``morphismes mod. $C'$ de $A$ dans $B$''.
-
+Soit $\mathbf{C}$ une catégorie abélienne, $\mathbf{C}'$ une sous-catégorie épaisse, nous allons
+définir une nouvelle catégorie abélienne, notée $\mathbf{C}/\mathbf{C}'$ et appelée
+\textit{catégorie quotient} de $\mathbf{C}$ par $\mathbf{C}'$. Les objets de $\mathbf{C}/\mathbf{C}'$ sont par
+définition les objets de $\mathbf{C}$. Nous allons définir les morphismes dans $\mathbf{C}/\mathbf{C}'$
+de $A$ dans $B$, appelés ``morphismes mod. $\mathbf{C}'$ de $A$ dans $B$''.
 \LayerTarget{tohoku:def:quasi-equal}
-Disons qu'un sous-truc $A'$ de $A$ est égal mod. $C'$ à $A$, ou quasi-égal à
-$A$, si $A/A'\in C'$ ; alors tout sous-truc de $A$ contenant $A'$ est encore
+Disons qu'un sous-truc $A'$ de $A$ est égal mod. $\mathbf{C}'$ à $A$, ou quasi-égal à
+$A$, si $A/A'\in \mathbf{C}'$ ; alors tout sous-truc de $A$ contenant $A'$ est encore
 quasi-égal à $A$, de plus le inf de deux sous-trucs de $A$ quasi-égaux à $A$
 est encore quasi-égal à $A$. Dualement, on introduit la notion de quotient de
 $B$ qussi-égal à $B$ : un tel quotient $B/N$ est quasi-égal à $B$ si
-$N\in C'$.
-
+$N\in \mathbf{C}'$.
 \LayerTarget{tohoku:def:quotient-morphism}
-Un morphisme mod. $C'$ de $A$ dans $B$ est alors défini par un morphisme $f'$
+Un morphisme mod. $\mathbf{C}'$ de $A$ dans $B$ est alors défini par un morphisme $f'$
 d'un sous-truc $A'$ de $A$ quasi-égal à $A$, dans un quotient $B'$ de $B$
 quasi-égal à $B$, étant entendu qu'un morphisme
-$f'':A''\longrightarrow B''$ (satisfaisant aux mêmes conditions), définit le
-même morphisme mod. $C'$, si et seulement si on peut trouver
-$A'''\leq\mathrm{Inf}(A',A'')$, $B'''\leq\mathrm{Inf}(B',B'')$, $A'''$ quasi
+$f'':A''\to B''$ (satisfaisant aux mêmes conditions), définit le
+même morphisme mod. $\mathbf{C}'$, si et seulement si on peut trouver
+$A'''\leqq\mathrm{Inf}(A',A'')$, $B'''\leqq\mathrm{Inf}(B',B'')$, $A'''$ quasi
 égal à $A$, $B'''$ quasi égal à $B$, tels que les morphismes
-$A'''\longrightarrow B'''$ définis par $f',f''$ soient identiques. Cette
+$A'''\to B'''$ définis par $f',f''$ soient identiques. Cette
 dernière relation entre $f'$ et $f''$ est bien une relation d'équivalence, la
-définition précédente des morphismes mod. $C'$ est donc cohérente.
-
+définition précédente des morphismes mod. $\mathbf{C}'$ est donc cohérente.
 \LayerTarget{tohoku:def:quotient-hom}
-Supposons que pour tout $A\in C$, les sous-trucs de $A$ forment un ensemble
+Supposons que pour tout $A\in \mathbf{C}$, les sous-trucs de $A$ forment un ensemble
 (ce qui est vrai pour toutes les catégories connues), alors on peut
-considérer l'ensemble des morphismes mod. $C'$ de $A$ dans $B$, noté
-$\mathrm{Hom}_{C/C'}(A,B)$. $\mathrm{Hom}_{C/C'}(A,B)$ apparaît comme limite
-inductive des groupes abéliens $\mathrm{Hom}_C(A',B')$ où $A'$ ($B'$)
+considérer l'ensemble des morphismes mod. $\mathbf{C}'$ de $A$ dans $B$, noté
+$\mathrm{Hom}_{\mathrm{C}/\mathrm{C}'}(A,B)$. $\mathrm{Hom}_{\mathrm{C}/\mathrm{C}'}(A,B)$ apparaît comme limite
+inductive des groupes abéliens $\mathrm{Hom}_{\mathrm{C}}(A',B')$ oû $A'$ ($B'$)
 parcourt les sous-trucs de $A$ (quotients de $B$) quasi-égaux à $A$ ($B$), et
 peut être considéré par suite comme un groupe abélien.
-
 \LayerTarget{tohoku:def:quotient-composition:p1}
 On définit de même un accouplement
-
-\[
- \mathrm{Hom}_{C/C'}(A,B)\times\mathrm{Hom}_{C/C'}(B,C)
- \longrightarrow\mathrm{Hom}_{C/C'}(A,C)
-\]
-
-\noindent de la façon suivante. Soit $u\in\mathrm{Hom}_C(A',B')$ un
-représentant d'une $u'\in\mathrm{Hom}_{C/C'}(A,B)$, et
-$v\in\mathrm{Hom}_C(B'',C')$ un représentant d'un
-$v'\in\mathrm{Hom}_{C/C'}(B,C)$. Soit $Q$ l'image du morphisme canonique
-$B''\longrightarrow B'$ du
+$\mathrm{Hom}_{\mathrm{C}/\mathrm{C}'}(A,B)\times\mathrm{Hom}_{\mathrm{C}/\mathrm{C}'}(B,C)  \to\mathrm{Hom}_{\mathrm{C}/\mathrm{C}'}(A,C)$ de la façon suivante. Soit $u\in\mathrm{Hom}_{\mathrm{C}}(A',B')$ un
+représentant d'une $u'\in\mathrm{Hom}_{\mathrm{C}/\mathrm{C}'}(A,B)$, et
+$v\in\mathrm{Hom}_{\mathrm{C}}(B'',C')$ un représentant d'un
+$v'\in\mathrm{Hom}_{\mathrm{C}/\mathrm{C}'}(B,C)$. Soit $Q$ l'image du morphisme canonique
+$B''\to B'$ du
 
 \TohokuContinuation{139}

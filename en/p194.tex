@@ -3,16 +3,14 @@
 \SourcePage{194}
 
 \LayerTarget{tohoku:setup:g-module-sheaf-notation}
-$H^p(G,A)$. Thus $\Gamma^G$ is the functor $h_k$ in the preceding notation,
+$\mathbf H^p(G,A)$. Thus $\Gamma^G$ is the functor $h_{\mathbf k}$ in the preceding notation,
 and
-
 \LayerTarget{tohoku:definition:g-invariant-sections-sheaf}
 $\Gamma^G(A)=\Gamma(A)^G$, the group of elements of $\Gamma(A)$ invariant
 under $G$, and this equals $\Gamma(A^G)$, where $A^G$ denotes the subsheaf of
-$A$ formed by germs of sections invariant under $G$. (If $G$ admits a finite
+$A$ formed by germs of sections invariant under $G$. (If $G$ admits a \textit{finite}
 system of generators, then $A^G$ is also the set of elements of $A$ invariant
 under $G$.)
-
 \LayerTarget{tohoku:definition:sheaf-group-cohomology}
 The $\mathbf H^p(G,A)$ ($-\infty<p<+\infty$) are sheaf functors of $A$ and
 form the derived cohomological functor of
@@ -20,21 +18,19 @@ $\boldsymbol{\Gamma}^G(A)=A^G$. There are canonical homomorphisms
 
 \LayerTarget{tohoku:map:group-cohomology-stalk}
 \[
-\mathbf H^p(G,A)(x)\longrightarrow H^p(G,A(x))
+\mathbf H^p(G,A)(x)\to H^p(G,A(x))
 \]
-
 \LayerTarget{tohoku:remark:locality-group-cohomology}
 which are bijective in every case that we shall have to consider, and always
 when $G$ is finite, by Theorem 4.2.2 or Corollary 1 to Proposition 4.2.4, as
 one prefers! These functors are local in nature; that is, they commute with
 restriction to an open set.
-
 \LayerTarget{tohoku:definition:equivariant-cohomology}
 The $H^p(X;G,A)$ form the derived cohomological functor of $\Gamma^G(A)$.
 We have the following theorem.
 
 \LayerTarget{tohoku:theorem:4.4.1}
-\noindent\textsc{Theorem 4.4.1.} \textit{There exist two cohomological spectral
+\textsc{Theorem 4.4.1.} \textit{There exist two cohomological spectral
 functors on the category of $G$-sheaves, abutting to the graded functor
 $(H^m(X;G,A))$, whose initial terms are respectively}
 
@@ -46,12 +42,11 @@ $(H^m(X;G,A))$, whose initial terms are respectively}
 \mathrm {II}_2^{p,q}&=H^p(G,H^q(X,A)).
 \end{aligned}
 \]
-
 \LayerTarget{tohoku:construction:operator-complex-spectral-sequences}
-\textit{These are also the two spectral sequences of the ``complex with
-operators'' $C(A)$, where $C(A)$ is the canonical resolution of $A$, or the
+\textit{These are also the two spectral sequences of the \textup{``}complex with
+operators\textup{''} $\mathrm C(A)$, where $\mathrm C(A)$ is the canonical resolution of $A$, or the
 two hypercohomology spectral sequences of $X$ with respect to the complex
-$C(G,A)$ of ``$G$-cochains with coefficients in the sheaf $A$''. These two
+$C(G,A)$ of \textup{``}$G$-cochains with coefficients in the sheaf $A$\textup{''}. These two
 spectral sequences are trivial if $G$ acts trivially on $A$ and, in addition,
 $A$ is a vector space over the field $k$; then there is a canonical
 isomorphism}
@@ -65,30 +60,29 @@ H^n(X;G,A)=
 \]
 
 \textit{More generally, suppose only that $G$ acts trivially on $A$. Then
-Corollary 2 to Proposition 4.3.2 gives a canonical exact sequence}
+Corollary \textup{2} to Proposition \textup{4.3.2} gives a canonical exact sequence}
 
 \LayerTarget{tohoku:eq:4.4.3}
 \[
 \tag{4.4.3}
 \begin{aligned}
-0\longrightarrow{}&
+0\to{}&
 \bigoplus_{p+q=n-1}
-\mathrm{Ext}_{\mathbf Z}^1(H_p(G,\mathbf Z),H^q(X,A))\\
-\longrightarrow{}&H^n(X;G,A)
-\longrightarrow
+\mathrm{Ext}_{Z}^1(H_p(G,Z),H^q(X,A))\\
+\to{}&H^n(X;G,A)
+\to
 \bigoplus_{p+q=n}
-\mathrm{Hom}_{\mathbf Z}(H_p(G,\mathbf Z),H^q(X,A))
-\longrightarrow0.
+\mathrm{Hom}_{Z}(H_p(G,Z),H^q(X,A))
+\to0.
 \end{aligned}
 \]
 
 \LayerTarget{tohoku:remark:4.4.1:1}
-\noindent\textsc{Remarks.} 1. In this last formula we had implicitly taken
-$k=\mathbf Z$. This is immaterial, however, because if $k$ is arbitrary and
-$A$ is a sheaf of $k$-modules on which $G$ acts, then $H^p(G,A)$ and
-$H^p(X;G,A)$ are the same whether $A$ is regarded as a sheaf of
-$k(G)$-modules or as a sheaf of $\mathbf Z(G)$-modules.
-
+\textsc{Remarks.} 1. In this last formula we had implicitly taken
+$k=Z$. This is immaterial, however, because if $k$ is arbitrary and
+$A$ is a sheaf of $k$-modules on which $G$ acts, then $\mathbf H^p(G,A)$ and
+$H^p(X,G,A)$ are the same whether $A$ is regarded as a sheaf of
+$k(G)$-modules or as a sheaf of $Z(G)$-modules.
 \LayerTarget{tohoku:proof:remark-4.4.1:1}
 To see this, it suffices to prove that if $A$ is an injective sheaf of
 $k(G)$-modules, then $\mathrm{Ext}_{\mathbf Z(G)}^n(X;\mathbf Z,A)$ and
@@ -96,6 +90,6 @@ $\mathbf{Ext}_{\mathbf Z(G)}^n(\mathbf Z,A)$, where $\mathbf Z$ and
 $\mathbf Z(G)$ denote the constant sheaves that they define, vanish for
 $n>0$. For the first, this follows from spectral sequence $II$, which shows
 that it is isomorphic to $H^n(G,\Gamma(A))$. This vanishes because $\Gamma(A)$
-is an injective $k$-module, for which the result invoked is well known.
+is an injective $k(G)$-module, for which the result invoked is well known.
 
 \TohokuContinuation{195}

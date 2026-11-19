@@ -9,40 +9,36 @@ variable $B$,
 \]
 où $C(B)$ est le complexe défini par une résolution droite de $B$ par des
 objets injectifs. Bien entendu, les $R_2^iT$ sont des bifoncteurs.
-
 \LayerTarget{tohoku:construction:derived-bifunctor:cohomological-first-variable}
-\textit{Supposons maintenant que pour tout objet injectif $B$ dans $C_2$, le
-foncteur $A\longrightarrow T(A,B)$ sur $C_1$ soit exact}, nous allons montrer
-que pour tout $B\in C_2$ la suite $(R_2^iT(A,B))$ peut-être considéré comme un
+\textit{Supposons maintenant que pour tout objet injectif $B$ dans $\mathbf{C}_2$, le
+foncteur $A\to T(A,B)$ sur $\mathbf{C}_1$ doit exact}, nous allons montrer
+que \textit{pour tout} $B\in \mathbf{C}_2$ la suite $(R_2^iT(A,B))$ peut-être considéré comme un
 foncteur cohomologique en $A$. Soit en effet $C(B)$ le complexe défini par une
 résolution droite de $B$ par des objets injectifs. Pour toute suite exacte
-$0\longrightarrow A'\longrightarrow A\longrightarrow A''\longrightarrow0$
-dans $C_1$, la suite d'homomorphismes de complexes
-\[
-0\longrightarrow T(A'',C(B))\longrightarrow T(A,C(B))
- \longrightarrow T(A',C(B))\longrightarrow0
-\]
+$0\to A'\to A\to A''\to0$
+dans $\mathbf{C}_1$, la suite d'homomorphismes de complexes
+$0\to T(A'',C(B))\to T(A,C(B))
+ \to T(A',C(B))\to0$
 est exacte (d'après l'hypothèse sur $T$, les termes de $C(B)$ étant injectifs),
 elle définit donc une suite exacte de cohomologie, c'est-à-dire une suite
 exacte
 \LayerTarget{tohoku:sequence:partial-derived-long-exact}
 \[
-\cdots\longrightarrow R_2^iT(A'',B)\longrightarrow R_2^iT(A,B)
-\longrightarrow R_2^iT(A',B)
+\ldotp\,\ldotp\,\ldotp\,\ldotp\to R_2^iT(A'',B)\to R_2^iT(A,B)
+\to R_2^iT(A',B)
 \mathrel{\mathop{\longrightarrow}\limits^{\partial}}R_2^{i+1}T(A'',B)
-\longrightarrow\cdots .
+\to\ldotp\,\ldotp\,\ldotp\,\ldotp .
 \]
 On vérifie aussitôt que le morphisme $\partial$ dans cette suite ne dépend pas
 du choix particulier du complexe $C(B)$, et qu'il permute aux homomorphismes
 de suites exactes, ce qui montre bien que $(R_2^iT(A,B))$ pour $B$ fixé est un
 foncteur cohomologique en $A$ ; on vérifie d'ailleurs aussitôt que pour un
-morphisme $B\longrightarrow B'$ dans $C_2$, les morphismes correspondants
-$R_2^iT(A,B)\longrightarrow R_2^iT(A,B')$ définissent un morphisme de
+morphisme $B\to B'$ dans $\mathbf{C}_2$, les morphismes correspondants
+$R_2^iT(A,B)\to R_2^iT(A,B')$ définissent un morphisme de
 $\partial$-foncteurs en $A$.
-
 \LayerTarget{tohoku:def:right-balanced}
-Si on suppose que dans $C_1$, tout objet est isomorphe à un quotient d'un objet
-projectif, et que pour tout objet projectif $A\in C_1$, le foncteur $T(A,B)$
+Si on suppose que dans $\mathbf{C}_1$, tout objet est isomorphe à un quotient d'un objet
+projectif, et que pour tout objet projectif $A\in \mathbf{C}_1$, le foncteur $T(A,B)$
 est exact en $B$ (on dit alors, conformément à la terminologie de [6], que $T$
 est ``right balanced''), alors les $R_2^iT(A,B)$ sont aussi les foncteurs
 dérivés droits $R^iT(A,B)$ de $T$, et coïncident aussi avec les foncteurs
@@ -52,28 +48,28 @@ $R^iT$ et $R_1^iT$ par rapport à leur première variable.
 
 \LayerTarget{tohoku:example:ext-bifunctor}
 Les considérations précédentes ont été développées surtout pour le cas d'une
-catégorie abélienne $C$ dans laquelle tout objet est isomorphe à un sous-truc
+catégorie abélienne $\mathbf{C}$ dans laquelle tout objet est isomorphe à un sous-truc
 d'un objet injectif, mais où on ne suppose pas que tout objet soit isomorphe à
-un truc quotient d'un objet projectif. Prenons alors $C_1=C_2=C$, $C'=$
+un truc quotient d'un objet projectif. Prenons alors $\mathbf{C}_1=\mathbf{C}_2=\mathbf{C}$, $C'=$
 catégorie des groupes abéliens, $T(A,B)=\mathrm{Hom}(A,B)$ ; par définition
 même d'un objet injectif, $\mathrm{Hom}(A,B)$ est exact en $A$ si $B$ est
 injectif. Désignant par $\mathrm{Ext}^p(A,B)$ les foncteurs dérivés droits par
 rapport à $B$, on voit que les $\mathrm{Ext}^p(A,B)$ forment un foncteur
-cohomologique en $B$ et en $A$. On a
+cohomologique en $B$ \textit{et} en $A$. On a
 $\mathrm{Ext}^0(A,B)=\mathrm{Hom}(A,B)$ puisque $\mathrm{Hom}(A,B)$ est exact
 à gauche, il est facile de voir que $\mathrm{Ext}^1(A,B)$ peut encore
 s'interpréter comme le groupe des classes d'extensions de $A$ (quotient) par
 $B$ (sous-truc) [6 ; Chap. XIV].
 
 \LayerTarget{tohoku:example:sheaf-ext}
-Un cas important où la catégorie abélienne $C$ contient suffisamment d'objets
-injectifs, mais pas assez d'objets projectifs, est celui où $C$ est la
+Un cas important où la catégorie abélienne $\mathbf{C}$ contient suffisamment d'objets
+injectifs, mais pas assez d'objets projectifs, est celui où $\mathbf{C}$ est la
 catégorie des faisceaux de modules sur un faisceau d'anneaux donné sur un
 espace topologique $X$. Au Chap. IV, nous étudierons de façon plus détaillée
 les groupes $\mathrm{Ext}^p(A,B)$ dans ce cas.
 
 \LayerTarget{tohoku:section:2.4}
-\noindent\textbf{2.4. Suites spectrales et foncteurs spectraux.} Pour la
+\textbf{2.4. Suites spectrales et foncteurs spectraux.} Pour la
 théorie des
 
 \TohokuContinuation{145}

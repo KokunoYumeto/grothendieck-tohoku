@@ -5,10 +5,10 @@
 
 \LayerTarget{tohoku:remark:condition-D-basic-properties:p1}
 \noindent topologie de Zariski et $G$ un groupe fini d'automorphismes de $X$,
-la condition (D) n'est pas vérifiée (sauf si $G$ opère trivialement).
+la condition (D) n'est \textit{pas} vérifiée (sauf si $G$ opère trivialement).
 
 \LayerTarget{tohoku:theorem:5.3.1}
-\noindent\textsc{Théorème 5.3.1.} \textit{Supposons la condition (D) vérifiée.
+\textsc{Théorème 5.3.1.} \textit{Supposons la condition (D) vérifiée.
 Soit $A$ un $G$-faisceau abélien sur $X$, soit $y\in Y$, $x$ un élément de
 $f^{-1}(y)$. On a alors des isomorphismes canoniques}
 
@@ -20,39 +20,39 @@ $f^{-1}(y)$. On a alors des isomorphismes canoniques}
 
 \LayerTarget{tohoku:proof:theorem-5.3.1}
 Prenant $V_x$ comme dans l'énoncé de la condition (D), et de plus $V_x$
-ouvert et stable par $G_x$, on peut appliquer le corollaire au théorème 5.2.1,
-ce qui nous ramène au cas où $G=G_x$, $X=V_x$ donc où $G$ est
+ouvert et stable par $G_x$, on peut appliquer le corollaire à la proposition
+5.2.1, ce qui nous ramène au cas où $G=G_x$, $X=V_x$ donc où $G$ est
 \textit{fini}. Montrons qu'alors $R^qf_*(A)=0$ pour $q>0$. On a pour tout
 $y\in Y$ :
 
 \LayerTarget{tohoku:equation:5.3.1-stalk-limit}
 \[
-R^qf_*(A)(y)=\varinjlim H^q(f^{-1}(U),A),
+R^qf_*(A)(y)=\mathop{\underset{\to}{\mathrm{lim.}}} H^q(f^{-1}(U),A),
 \]
 la limite étant prise suivant les voisinages ouverts $U$ de $y$. Or $x$ et
 $V_x$ étant pris comme ci-dessus, et se bornant aux $U\subset f(V_x)$, on
 voit que $f^{-1}(U)$ est réunion finie d'ouverts disjoints deux à deux
-$g\cdot U_x$ ($g\in G/G_x$), où $U_x=V_x\cap f^{-1}(U)$, donc
+$g\mathbin{.}U_x$ ($g\in G/G_x$), où $U_x=V_x\cap f^{-1}(U)$, donc
 $H^q(f^{-1}(U),A)$ est somme directe d'un nombre fini de groupes isomorphes à
 $H^q(U_x,A)$. Quand $U$ parcourt un système fondamental de voisinages de $y$,
 $U_x$ parcourt un système fondamental de voisinages de $x$, donc on obtient
-pour $R^qf_*(A)$ la somme directe d'un nombre fini de groupes isomorphes à
-$\varinjlim H^q(U_x,A)$ ; or ce dernier est nul pour $q>0$, en vertu du lemme
+pour $R^qf_*(A)(y)$ la somme directe d'un nombre fini de groupes isomorphes à
+$\mathop{\underset{\to}{\lim}} H^q(U_x,A)$ ; or ce dernier est nul pour $q>0$, en vertu du lemme
 3.8.2.
 
-On a donc bien $R^qf_*(A)=0$ pour $q>0$, donc en vertu de la proposition 5.2.2
-le premier membre de (5.3.1) s'identifie à $\mathbf H^n(G,f_*(A))(y)$, qui,
-$G$ étant fini, est égal à $H^n(G,f_*(A)(y))$ (comme on l'a signalé dans 4.4).
-Se rappelant qu'on pouvait supposer $X=V_x$, donc que $f^{-1}(y)$ est réduit à
+On a donc bien $R^qf_*(A)=0$ pour $q>0$, donc en vertu de proposition 5.2.2 le
+premier membre de (5.3.1) s'identifie à $\mathbf H^n(G,f_*(A))(y)$, qui, $G$
+étant fini, est égal à $H^n(G,f_*(A)(y))$ (comme on l'a signalé dans 4.4). Se
+rappelant qu'on pouvait supposer $X=V_x$, donc que $f^{-1}(y)$ est réduit à
 $x$, on a alors $f_*(A)(y)=A(x)$, ce qui achève la démonstration.
 
 \LayerTarget{tohoku:corollary:5.3.1:1}
-\noindent\textsc{Corollaire.} \textit{Supposons que pour tout $x\in X$,
+\textsc{Corollaire.} \textit{Supposons que pour tout $x\in X$,
 l'ordre $n_x$ du stabilisateur $G_x$ soit tel que la multiplication par $n_x$
 soit un automorphisme du groupe $A(x)$. Alors
 $H^*(X;G,A)=H^*(Y,A^G)$, et par suite $H^*(Y,A^G)$ est l'aboutissement d'une
 suite spectrale dont le terme initial est
-$\mathrm{II}_2^{p,q}=H^p(G,H^q(X,A))$.}
+$II_2^{p,q}=H^p(G,H^q(X,A))$.}
 
 \LayerTarget{tohoku:proof:corollary-5.3.1:1}
 En effet, le théorème 5.3.1 donne $\mathbf H^q(G,A)=0$ pour $q>0$, donc on est
@@ -63,15 +63,15 @@ vectoriels sur un corps de caractéristique $p$ ne divisant aucun des $n_x$
 de base, on pourra utiliser la variante suivante :
 
 \LayerTarget{tohoku:corollary:5.3.1:2}
-\noindent\textsc{Corollaire 2.} \textit{Supposons que les ordres $n_x$ des
+\textsc{Corollaire 2.} \textit{Supposons que les ordres $n_x$ des
 $G_x$ admettent un ppcm $n$ ; soit $P$ l'ensemble des diviseurs premiers de
-$n$, $C(P)$ la catégorie des groupes abéliens dont chaque élément a un ordre
+$n$, ${\mathbf C}(P)$ la catégorie des groupes abéliens dont chaque élément a un ordre
 fini n'ayant pas d'autres diviseurs premiers que des $p\in P$. Alors avec la
-terminologie introduite dans 1.11, $H^*(X;G,A)$ est isomorphe mod $C(P)$ à
-$H^*(Y,A^G)$, donc ce dernier est l'aboutissement mod $C(P)$ d'une suite
+terminologie introduite dans \textup{1.11}, $H^*(X;G,A)$ est isomorphe mod ${\mathbf C}(P)$ à
+$H^*(Y,A^G)$, donc ce dernier est l'aboutissement mod ${\mathbf C}(P)$ d'une suite
 spectrale cohomologique dont le terme initial est $H^p(G,H^q(X,A))$.}
 
 \LayerTarget{tohoku:proof:corollary-5.3.1:2:p1}
-En effet, réduisons mod $C(P)$ les suites spectrales du théorème 5.2.1.
+En effet, réduisons mod ${\mathbf C}(P)$ les suites spectrales du théorème 5.2.1.
 
 \TohokuContinuation{205}

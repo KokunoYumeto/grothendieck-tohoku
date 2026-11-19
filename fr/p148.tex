@@ -1,35 +1,35 @@
 % Corrected French for printed p.148.
-% Corrections: add les before objets injectifs twice; une foncteur -> un foncteur.
+% Correction: une foncteur -> un foncteur. Article additions withdrawn after second reading.
 \SourcePage{148}
 
 \LayerTarget{tohoku:construction:composite-functor-spectral-sequences:p2}
 \noindent $C(A)$. Il s'ensuit aussitôt que les suites spectrales définies par
 $G$ et ce complexe $F(C(A))$ ne dépendent que de $A$, ce sont donc des
-foncteurs spectraux cohomologiques sur $C$, ayant le même aboutissement,
+foncteurs spectraux cohomologiques sur $\mathbf{C}$, ayant le même aboutissement,
 appelés \textit{foncteurs spectraux du foncteur composé} $G\mathbin{\circ}F$.
 Les formules données plus haut donnent immédiatement leurs termes initiaux :
 \[
-{}_{\mathrm I}E_2^{p,q}(A)=\bigl(R^p((R^qG)F)\bigr)(A),
+I_2^{p,q}(A)=(R^p((R^qG)F))(A)
 \qquad
-{}_{\mathrm{II}}E_2^{p,q}(A)=R^pG(R^qF(A)).
+II_2^{p,q}(A)=R^pG(R^qF(A)).
 \]
 De loin le cas le plus important pour l'obtention de suites spectrales non
-triviales est celui où $F$ transforme les objets injectifs en objets annulés
-par les $R^qG$, $q\geq1$ (on appelle de tels objets $G$-acycliques), et où
+triviales est celui où $F$ transforme objets injectifs en objets annulés
+par les $R^qG$, $q\geqq1$ (on appelle de tels objets $G$-\textit{acycliques}), et où
 $R^0G=G$ (i. e. $G$ est exact à gauche) : alors
-${}_{\mathrm I}E_2^{p,q}=0$ si $q>0$, et se réduit à $R^p(GF)$ si $q=0$,
+$I_2^{p,q}=0$ si $q>0$, et se réduit à $R^p(GF)$ si $q=0$,
 d'où résulte que l'aboutissement commun des deux suites spectrales s'identifie
 au foncteur dérivé droit de $GF$. On obtient ainsi le
 
 \LayerTarget{tohoku:thm:2.4.1}
-\noindent\textsc{Théorème 2.4.1.} --- \textit{Soient $C,C',C''$ trois
-catégories abéliennes, on suppose que tout objet de $C$ ou $C'$ est isomorphe
+\textsc{Théorème 2.4.1.} \textit{Soient $\mathbf{C},\mathbf{C}',\mathbf{C}''$ trois
+catégories abéliennes, on suppose que tout objet de $\mathbf{C}$ ou $\mathbf{C}'$ est isomorphe
 à un sous-truc d'un objet injectif. Considérons des foncteurs covariants
-$F:C\longrightarrow C'$ et $G:C'\longrightarrow C''$, on suppose que $G$ est
-exact à gauche et que $F$ transforme les objets injectifs en objets
-$G$-acycliques (i. e. annulés par les $R^qG$, $q>0$). Alors il existe un
-foncteur spectral cohomologique sur $C$, à valeurs dans $C''$, aboutissant au
-foncteur dérivé à droite $\mathfrak R(GF)$ de $GF$, (convenablement filtré),
+$F:\mathbf{C}\to \mathbf{C}'$ et $G:\mathbf{C}'\to \mathbf{C}''$, on suppose que $G$ est
+exact à gauche et que $F$ transforme objets injectifs en objets
+$G$-acycliques \textup{(}i. e. annulés par les $R^qG$, $q>0$\textup{)}. Alors il existe un
+foncteur spectral cohomologique sur $\mathbf{C}$, à valeurs dans $\mathbf{C}''$, aboutissant au
+foncteur dérivé à droite $\mathfrak R(GF)$ de $GF$, \textup{(}convenablement filtré\textup{)},
 et dont le terme initial est}
 \LayerTarget{tohoku:eq:2.4.3}
 \[
@@ -38,14 +38,14 @@ E_2^{p,q}(A)=R^pG(R^qF(A)).
 \]
 
 \LayerTarget{tohoku:remark:2.4.1:1}
-\noindent\textsc{Remarques 1.} La deuxième hypothèse sur le couple $(F,G)$
+\textsc{Remarques 1.} La deuxième hypothèse sur le couple $(F,G)$
 signifie que les foncteurs $(R^qG)F$ ($q>0$) sont effaçables (cf. 2.2), ou
-encore que pour tout $A\in C$, on peut trouver un monomorphisme de $A$ dans un
-$M$ tel que $(R^qG)(F(M))=0$ pour $q\geq1$ ; c'est sous cette forme que le plus
+encore que pour tout $A\in \mathbf{C}$, on peut trouver un monomorphisme de $A$ dans un
+$M$ tel que $(R^qG)(F(M))=0$ pour $q\geqq1$ ; c'est sous cette forme que le plus
 souvent nous vérifierons cette hypothèse.
 
 \LayerTarget{tohoku:remark:2.4.1:2}
-\noindent 2. On vérifie aussitôt que pour calculer la deuxième suite spectrale
+2. On vérifie aussitôt que pour calculer la deuxième suite spectrale
 d'un foncteur composé (i. e. celle dont il est question dans le théorème
 2.4.1) il suffit de prendre une résolution $C(A)$ de $A$ par des $C^i$ qui
 sont $F$-acycliques (et non nécessairement injectifs) et de prendre la
@@ -53,16 +53,16 @@ deuxième suite spectrale d'hyperhomologie du foncteur $G$ par rapport au
 complexe $FC(A)$.
 
 \LayerTarget{tohoku:remark:2.4.1:3}
-\noindent 3. Notons deux cas particuliers importants où l'une des deux suites
+3. Notons deux cas particuliers importants où l'une des deux suites
 spectrales d'hyperhomologie d'un foncteur $F$ par rapport à un complexe $K$
-dégénère. \textit{Si $K$ est une résolution\textsuperscript{3)} d'un objet
-$A$ de $C$, alors $\mathfrak R^nF(K)=R^nF(A)$}, donc l'objet gradué
+dégénère. \textit{Si $K$ est une résolution\textsuperscript{\textup{3)}} d'un objet
+$A$ de $\mathbf{C}$, alors $\mathfrak R^nF(K)=R^nF(A)$}, donc l'objet gradué
 $(R^nF(A))$ est l'aboutissement d'une suite spectrale de terme initial
-${}_{\mathrm I}E_2^{p,q}(K)=H^p(R^qF(K))$. \textit{Si les $K^n$ sont
+$I_2^{p,q}(K)=H^p(R^qF(K))$. \textit{Si les $K^n$ sont
 $F$-acycliques} (i. e. $R^mF(K^n)=0$ pour $m>0$) \textit{alors
 $\mathfrak R^nF(K)=H^n(F(K))$}, donc l'objet gradué $(H^n(F(K)))$ est
 l'aboutissement d'une suite spectrale de terme initial
-${}_{\mathrm{II}}E_2^{p,q}(K)=R^pF(H^q(K))$. Combinant ces deux résultats, on
+$II_2^{p,q}(K)=R^pF(H^q(K))$. Combinant ces deux résultats, on
 trouve donc : \textit{si $K$ est une résolution de $A$ par des objets
 $F$-acycliques, on a $R^nF(A)=H^n(F(K))$}. Les isomorphismes ainsi obtenus sont
 d'ailleurs aussi les morphismes déduits d'un homomorphisme de $K$ dans une

@@ -8,80 +8,74 @@ identifies with $R^qF(K^p)$.
 
 It remains to compute the middle term in the second line of (2.5.5). First,
 \[
-H_{\mathrm I}(M)^{p,q}
+H_I(M)^{p,q}
 =\sum_{q'+q''=q}H^p(\mathbf F^{q''}(C^{*q'}(K))).
 \]
 Since $\mathbf F^{q''}$ is exact, the general summand on the right is
-\[
-\mathbf F^{q''}(H_{\mathrm I}^p(C^{*q'}(K)))
-=\mathbf F^{q''}(C^{q'}(H^p(K))),
-\]
+$\mathbf F^{q''}(H^p(C^{*q'}(K)))
+=\mathbf F^{q''}(C^{q'}(H^p(K))),$
 where $C(H^p(K))$ denotes an injective resolution of $H^p(K)$; recall the
 definition of an \textquotedblleft injective resolution\textquotedblright{}
 $C(K)$ of the complex $K$. Therefore
-\[
-(H_{\mathrm{II}}(H_{\mathrm I}(M)))^{p,q}
-=H^q(\mathbf F(C(H^p(K)))),
-\]
+$(H_{II}(H_I(M)))^{p,q}
+=H^q(\mathbf F(C(H^p(K)))),$
 which identifies with $R^qF(H^p(K))$ by Proposition 2.5.2. This proves the
 claim.
 
 \LayerTarget{tohoku:construction:composite-resolving-functor-spectral-sequence}
 Continue to let $\mathbf F$ be a resolving functor for the left exact functor
-$F:C\longrightarrow C'$. Let $G$ be a covariant functor from $C'$ to an
-abelian category $C''$, and suppose every object of $C'$ is isomorphic to a
-subobject of an injective object. For every $A\in C$, consider the second
+$F:\mathbf C\to \mathbf C'$. Let $G$ be a covariant functor from $\mathbf C'$ to an
+abelian category $\mathbf C''$, and suppose every object of $\mathbf C'$ is isomorphic to a
+subobject of an injective object. For every $A\in \mathbf C$, consider the second
 hyperhomology spectral sequence of $G$ with respect to the complex
 $\mathbf F(A)$. It is a spectral functor of $A$, and Proposition 2.5.1 gives
 its initial term:
 \LayerTarget{tohoku:eq:2.5.6}
 \[
 \tag{2.5.6}
-{}_{\mathrm{II}}E_2^{p,q}G(\mathbf F(A))=R^pG(R^qF(A)).
+II_2^{p,q}G(\mathbf F(A))=R^pG(R^qF(A)).
 \]
 This is a natural isomorphism with the initial term of the second spectral
 sequence of the composite functor $GF$.
 
 \LayerTarget{tohoku:prop:2.5.4}
-\noindent\textsc{Proposition 2.5.4.} --- \textit{The isomorphism (2.5.6)
+\textsc{Proposition 2.5.4.} \textit{The isomorphism \textup{(2.5.6)}
 arises from a natural isomorphism of the second hyperhomology spectral
 sequence of $G$ with respect to $\mathbf F(A)$ with the second spectral
 sequence of the composite functor $GF$.}
 
 \LayerTarget{tohoku:prop:2.5.4:proof}
 Let $C(A)$ be an injective resolution of $A$. Regard $F(C(A))$ as a simple
-complex in $C'$, and consider the natural homomorphisms (2.5.1). They induce
+complex in $\mathbf C'$, and consider the natural homomorphisms (2.5.1). They induce
 homomorphisms of the second hyperhomology spectral sequences of $G$:
 \[
-\mathrm{II}G(F(C(A)))\longrightarrow\mathrm{II}G(\mathbf F(C(A)))
-\longleftarrow\mathrm{II}G(\mathbf F(A)).
+IIG(F(C(A)))\to IIG(\mathbf F(C(A)))
+\leftarrow IIG(\mathbf F(A)).
 \]
 It remains to show that these are isomorphisms, for which it suffices to show
 that the corresponding homomorphisms of initial terms are isomorphisms. By
 Proposition 2.5.1,
-\[
-HF(C(A))\longrightarrow H\mathbf F(C(A))\longleftarrow H\mathbf F(A)
-\]
+$H(F(C(A)))\to H(\mathbf F(C(A)))\leftarrow H(\mathbf F(A))$
 are isomorphisms, which proves the assertion.
 
 \LayerTarget{tohoku:diagram:2.5:functor-square}
-\[
-\begin{array}{ccc}
-C & \xrightarrow{\ G'\ } & C'''\\
-{\scriptstyle F,\mathbf F}\downarrow && \downarrow{\scriptstyle F',\mathbf F'}\\
-C' & \xrightarrow{\ G\ } & C''
-\end{array}
-\]
+\SourceSideDiagram{%
+$\begin{array}{ccc}
+\mathbf C & \xrightarrow{\ G'\ } & \mathbf C'''\\
+{F,\mathbf F}\downarrow && \downarrow{F',\mathbf F'}\\
+\mathbf C' & \xrightarrow[\ G\ ]{} & \mathbf C''
+\end{array}$%
+}
 
 \LayerTarget{tohoku:construction:four-functor-square:p1}
-Let $C,C',C'',C'''$ be four abelian categories, and suppose in $C,C'$, and
-$C'''$ that every object is isomorphic to a subobject of an injective object.
+Let $\mathbf C,\mathbf C',\mathbf C'',\mathbf C'''$ be four abelian categories, and suppose in $\mathbf C,\mathbf C'$, and
+$\mathbf C'''$ that every object is isomorphic to a subobject of an injective object.
 Consider covariant functors $F,G,F',G'$ as in the diagram. Let $\mathbf F$ be
 a resolving functor for $F$ and $\mathbf F'$ a resolving functor for $F'$,
 with a commutation isomorphism
-$\mathbf F'G'=G\mathbf F$\footnote{This isomorphism is understood to be
-natural and to respect the connecting homomorphism in the complexes
-$\mathbf F'G'(A)$ and $G\mathbf F(A)$.}. Suppose in addition that, for every
-injective object $I$ of $C$ and every $q\geq0$, the object $\mathbf F^q(I)$ is
+$\mathbf F'G'=G\mathbf F$\textsuperscript{7)}\SourceFootnote{7}{This isomorphism is understood to be
+natural and to respect the coboundary homomorphism in the complexes
+$\mathbf F'G'(A)$ and $G\mathbf F(A)$.}. Suppose in addition that $\mathbf F$ carries
+injective objects to
 
 \TohokuContinuation{153}

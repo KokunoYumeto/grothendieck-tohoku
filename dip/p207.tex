@@ -8,7 +8,7 @@ comme application du corollaire précédent, que si un groupe fini $G$ d'ordre
 premier $p$ opère dans un espace $X$ de dimension finie qui est acyclique mod.
 $p$, alors l'ensemble $X_0$ des points fixes et l'espace quotient $X/G$ sont
 acycliques mod. $p$. Il en résulte que si $X$ est acyclique pour un corps de
-coefficients $k$ (de caractéristique quelconque, le cas de caractéristique
+coéfficients $k$ (de caractéristique quelconque, le cas de caractéristique
 $\ne p$ étant trivial), il en est de même de $X/G$ ; et $k$ étant arbitraire,
 cet énoncé reste valable en y remplaçant $k$ par $\mathbf Z$. Une récurrence
 immédiate montre que ces résultats relatifs à $X/G$ sont encore valables si on
@@ -20,60 +20,57 @@ Steenrod (non publié), qui ont inspiré le présent numéro.
 
 \LayerTarget{tohoku:section:5.5}
 \bigskip
-\noindent\textbf{5.5. Calcul des $H^n(X;G,A)$ par les recouvrements.} Nous
+\textbf{5.5. Calcul des $H^n(X;G,A)$ par les recouvrements.} Nous
 aurons à nous servir de résultats auxiliaires :
 
 \LayerTarget{tohoku:lemma:5.5.1}
-\noindent\textsc{Lemme 5.5.1.} \textit{Soient $C_1,C_2,C_3$ trois catégories
+\textsc{Lemme 5.5.1.} \textit{Soient ${\mathbf C}_1,{\mathbf C}_2,{\mathbf C}_3$ trois catégories
 abéliennes, on suppose que dans les deux premières tout objet est isomorphe à
 un sous-truc d'un objet injectif. Soient $F$ et $G$ des foncteurs covariants de
-$C_1$ dans $C_2$ et de $C_2$ dans $C_3$ respectivement, on suppose que $F$
+${\mathbf C}_1$ dans ${\mathbf C}_2$ et de ${\mathbf C}_2$ dans ${\mathbf C}_3$ respectivement, on suppose que $F$
 transforme objets injectifs en objets $G$-acycliques. Soit enfin $\mathbf K$ un
-foncteur covariant de $C_1$ dans la catégorie $\mathbf K(C_2)$ des complexes à
-degrés positifs dans $C_2$, satisfaisant aux deux conditions (i)
-$H^0\mathbf K(A)=F(A)$ (isomorphisme fonctoriel) (ii) $\mathbf K(A)$ est
+foncteur covariant de ${\mathbf C}_1$ dans la catégorie $\mathbf K({\mathbf C}_2)$ des complexes à
+degrés positifs dans ${\mathbf C}_2$, satisfaisant aux deux conditions \textup{(i)}
+$H^0\mathbf K(A)=F(A)$ (isomorphisme fonctoriel) \textup{(ii)} $\mathbf K(A)$ est
 acyclique en dimensions $n>0$ quand $A$ est injectif. Sous ces conditions, il
-existe sur $C_1$ un foncteur spectral cohomologique, aboutissant au foncteur
+existe sur ${\mathbf C}_1$ un foncteur spectral cohomologique, aboutissant au foncteur
 gradué $(R^n(GF)(A))$, et dont le terme initial est}
 
 \LayerTarget{tohoku:equation:5.5.1}
 \[
 \tag{5.5.1}
-E_2^{p,q}(A)=R^pG\bigl(R^q\mathbf K(A)\bigr).
+E_2^{p,q}(A)={\mathbf R}^pG\bigl(R^q\mathbf K(A)\bigr)
 \]
 
 \LayerTarget{tohoku:proof:lemma-5.5.1}
-Désignons par $H^0$ le foncteur covariant $L\longmapsto H^0(L)$ de
-$\mathbf K(C_2)$ dans $C_2$, on a alors
+Désignons par $H^0$ le foncteur covariant $L\to H^0(L)$ de
+$K({\mathbf C}_2)$ dans ${\mathbf C}_2$, on a alors
 $GF=G(H^0\mathbf K)=(GH^0)\mathbf K$. Or si $A$ est injectif, $\mathbf K(A)$
-est $(GH^0)$-acyclique, i.e. on a $R^nG(\mathbf K(A))=0$ pour $n>0$ ; en
+est $(GH^0)$-acyclique, i.e. on a ${\mathbf R}^nG(\mathbf K(A))=0$ pour $n>0$ ; en
 effet, $\mathbf K(A)$ est une résolution de $F(A)$ en vertu de (i) et (ii),
-donc $R^nG(\mathbf K(A))=R^nG(F(A))$ et le dernier membre est nul en vertu de
+donc ${\mathbf R}^nG(\mathbf K(A))=R^nG(F(A))$ et le dernier membre est nul en vertu de
 l'hypothèse faite sur $F$. On peut donc appliquer le théorème 2.4.1 au
 foncteur composé $(GH^0)\mathbf K$, ce qui donne le foncteur spectral du lemme.
 
 \LayerTarget{tohoku:lemma:5.5.2}
-\noindent\textsc{Lemme 5.5.2.} \textit{$C_1,C_2,C_3,F$ et $G$ étant comme
+\textsc{Lemme 5.5.2.} \textit{${\mathbf C}_1,{\mathbf C}_2,{\mathbf C}_3,F$ et $G$ étant comme
 dans le lemme précédent, il existe un foncteur spectral cohomologique sur la
-catégorie $\mathbf K(C_1)$ des complexes $C$ à degrés positifs dans $C_1$,
-aboutissant au foncteur gradué $(R^n(GF)(C))$, et dont le terme initial est}
+catégorie $\mathbf K({\mathbf C}_1)$ des complexes $\mathrm C$ à degrés positifs dans ${\mathbf C}_1$,
+aboutissant au foncteur gradué $({\mathbf R}^n(GF)(\mathrm C))$, et dont le terme initial est}
 
 \LayerTarget{tohoku:equation:5.5.2}
 \[
 \tag{5.5.2}
-E_2^{p,q}(C)=R^pG\bigl(R^qF(C)\bigr).
+E_2^{p,q}(\mathrm C)={\mathbf R}^pG\bigl(R^qF(\mathrm C)\bigr).
 \]
 
 \LayerTarget{tohoku:proof:lemma-5.5.2:p1}
 Indiquons par une barre au dessus d'un foncteur, le foncteur obtenu par
 ``prolongement'' aux catégories de complexes à degrés positifs. On a alors
-\[
-R^n(GF)=R^n\bigl(H^0\overline{GF}\bigr)
-=R^n\bigl((H^0\overline G)\overline F\bigr).
-\]
-Or le foncteur $\overline F:\mathbf K(C_1)\longrightarrow\mathbf K(C_2)$
+${\mathbf R}^n(GF)=R^n\bigl(H^0\overline{GF}\bigr)=R^n\bigl((H^0\overline G)\overline F\bigr)$.
+Or le foncteur $\overline F:\mathbf K({\mathbf C}_1)\to\mathbf K({\mathbf C}_2)$
 transforme objets injectifs en objets $(H^0\overline G)$-acycliques, en
-d'autres termes, si $C$ est un objet injectif de $\mathbf K(C_1)$, alors
-$R^nG(\overline F(C))=0$ pour $n>0$ ; en effet, d'après la cara-
+d'autres termes, si $\mathrm C$ est un objet injectif de $\mathbf K({\mathbf C}_1)$, alors
+${\mathbf R}^nG(F(\mathrm C))=0$ pour $n>0$ ; en effet, d'après la cara-
 
 \TohokuContinuation{208}

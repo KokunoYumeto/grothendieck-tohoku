@@ -3,98 +3,93 @@
 \SourcePage{210}
 
 \LayerTarget{tohoku:proposition:5.5.4}
-\noindent\textit{où $C(\mathcal U,P)$ désigne le complexe (à opérateurs) des
-cochaînes quelconques (non nécessairement alternées) de $\mathcal U$ à
-coefficients dans $P$.}
+\noindent\textit{où $C({\mathbf U},P)$ désigne le complexe (à opérateurs) des
+cochaines quelconques (non nécessairement alternées) de ${\mathbf U}$ à
+coéfficients dans $P$.}
 
 Conjuguant avec le corollaire 1 du théorème 5.5.3, il vient :
 
 \LayerTarget{tohoku:corollary:fixed-point-free-g-covering}
-\noindent\textsc{Corollaire.} \textit{$\mathcal U$ étant un $G$-recouvrement
-sans point fixe, on suppose que $\mathcal U$ est ouvert, ou que $\mathcal U$
-est fermé et de plus $X$ paracompact ou $\mathcal U$ fini. Si $A$ est un
+\textsc{Corollaire.} \textit{${\mathbf U}$ étant un $G$-recouvrement
+sans point fixe, on suppose que ${\mathbf U}$ est ouvert, ou que ${\mathbf U}$
+est fermé et de plus $X$ paracompact ou ${\mathbf U}$ fini. Si $A$ est un
 $G$-faisceau tel que $H^n(U_{i_0\ldots i_p},A)=0$ pour tout
-$(i_0,\ldots,i_p)\in I^{p+1}$ et tout $n>0$, alors on a des isomorphismes
+$(i_0\ldots\,.\,i_p)\in I^{p+1}$ et tout $n>0$, alors on a des isomorphismes
 canoniques :}
 
 \LayerTarget{tohoku:equation:fixed-point-free-g-covering-cohomology}
 \[
-H^n(X;G,A)=H^n\bigl(C(\mathcal U,A)^G\bigr).
+H^n(X;G,A)=H^n\bigl(C({\mathbf U},A)^G\bigr).
 \]
 
 \LayerTarget{tohoku:calculation:nonhomogeneous-equivariant-cochains}
-Nous allons expliciter le complexe $C(\mathcal U,P)^G$ quand $\mathcal U$ est
+Nous allons expliciter le complexe $C({\mathbf U},P)^G$ quand ${\mathbf U}$ est
 un $G$-recouvrement sans point fixe. Alors l'ensemble d'indices de
-$\mathcal U$ est isomorphe (en tant qu'ensemble où opère $G$) à un produit
+${\mathbf U}$ est isomorphe (en tant qu'ensemble où opère $G$) à un produit
 $G\times I$ où $G$ opère par translations gauches sur le premier facteur :
 $g'\cdot(g,i)=(g'g,i)$; nous identifierons $i$ à $(e,i)$. Soit
-$(f_{g_0i_0,\ldots,g_ni_n})$ une $n$-cochaîne invariante à coefficients dans
+$(f_{g_0i_0,\ldots,g_ni_n})$ une $n$-cochaine invariante à coéfficients dans
 $P$, posons
 
 \LayerTarget{tohoku:equation:5.5.9}
 \[
 \tag{5.5,9}
 F_{i_0,g_1i_1,\ldots,g_ni_n}
-=f_{e\cdot i_0,g_1i_1,\ldots,g_ni_n}.
+=f_{e.\,i_0,g_1i_1,\ldots,g_ni_n}
 \]
-
 $F$ est une fonction qui dépend des $n+1$ arguments $i_0,\ldots,i_n\in I$ et
 des $n$ arguments $g_1,\ldots,g_n\in G$, à valeurs dans les
-$P(U_{i_0}\cap g_1U_{i_1}\cap\cdots\cap g_nU_{i_n})$, et la cochaîne
+$P(U_{i_0}\cap g_1U_{i_1}\cap\ldots\,.\,\cap g_{i_n}U_{i_n})$, et la cochaine
 invariante donnée est entièrement déterminée par la connaissance de cette
-``cochaîne non homogène'' $F$, en vertu de
+``\emph{cochaine non homogène}'' $F$, en vertu de
 
 \LayerTarget{tohoku:equation:5.5.10}
 \[
 \tag{5.5.10}
 f_{g_0i_0,\ldots,g_ni_n}
-=g_0\cdot F_{i_0,g_0^{-1}g_1i_1,\ldots,g_0^{-1}g_ni_n}.
+=g_0.\,F_{i_0,g_0^{-1}g_1i_1,\ldots,g_0^{-1}g_ni_n}
 \]
-
-cette formule définit d'ailleurs, quand on part d'une cochaîne non homogène
-$F$, une cochaîne invariante $f$, et la cochaîne non homogène associée à $f$
+cette formule définit d'ailleurs, quand on part d'une cochaine non homogène
+$F$, une cochaine invariante $f$, et la cochaine non homogène associée à $f$
 n'est autre que $F$. Reste à exprimer l'opérateur différentiel de
-$C(\mathcal U,P)^G$ directement en termes de cochaînes non homogènes. On trouve
+$C({\mathbf U},P)^G$ directement en termes de cochaines non homogènes. On trouve
 immédiatement :
 
 \LayerTarget{tohoku:equation:5.5.11}
 \[
 \tag{5.5.11}
 \begin{aligned}
-(\partial F)_{i_0,g_1i_1,\ldots,g_{n+1}i_{n+1}}
-&=g_1\cdot F_{i_1,g_1^{-1}g_2i_2,\ldots,
+&(\partial F)_{i_0\,g_1i_1,\ldots,g_{n+1}i_{n+1}}
+=g_1.\,F_{i_1,g_1^{-1}g_2i_2,\ldots,
 g_1^{-1}g_{n+1}i_{n+1}}\\
-&\quad+\sum_{1\leq\alpha\leq n+1}(-1)^\alpha
+&\qquad+\sum_{1\leqq\alpha\leqq n+1}(-1)^\alpha
 F_{i_0,g_1i_1,\ldots,\widehat{g_\alpha i_\alpha},\ldots,
-g_{n+1}i_{n+1}}.
+g_{n+1}i_{n+1}}
 \end{aligned}
 \]
-
-où le signe $\widehat{\phantom{g_\alpha i_\alpha}}$ signifie que les lettres
+oû le signe $\wedge$ signifie que les lettres
 placées en dessous doivent être omises.
-
 \LayerTarget{tohoku:special-case:single-orbit-covering}
-Un cas particulièrement intéressant est celui où $I$ est réduit à un élément,
+Un cas particulièrement intéressant est celui oû $I$ est réduit à un élément,
 c'est à dire où on part d'une partie $D$ de $X$ telle que
-$\bigcup_{g\in G}g\cdot D=X$, et qu'on considère le recouvrement
-$(g\cdot D)_{g\in G}$. Alors les $n$-cochaînes non homogènes sont des systèmes
+$\displaystyle\bigcup_{g\in G}g\cdot D=X$, et qu'on considère le recouvrement
+$(g\cdot D)_{g\in G}$. Alors les $n$-cochaines non homogènes sont des systêmes
 $(F_{g_1,\ldots,g_n})$, avec
 
 \LayerTarget{tohoku:equation:single-orbit-cochain-domain}
 \[
 F_{g_1,\ldots,g_n}\in
-P(D\cap g_1\cdot D\cap\cdots\cap g_n\cdot D)
+P(D\cap g_1\cdot D\cap\ldots\,.\,\cap g_n\cdot D)
 \]
-
 et la formule (5.5.11) devient
 
 \LayerTarget{tohoku:equation:5.5.11bis}
 \[
 \tag{5.5.11 bis}
 \begin{aligned}
-(\partial F)_{g_1,\ldots,g_{n+1}}
-&=g_1\cdot F_{g_1^{-1}g_2,\ldots,g_1^{-1}g_{n+1}}\\
-&\quad+\sum_{1\leq\alpha\leq n+1}(-1)^\alpha
+&(\partial F)_{g_1,\ldots,g_{n+1}}
+=g_1\cdot F_{g_1^{-1}g_2,\ldots,g_1^{-1}g_{n+1}}\\
+&\qquad+\sum_{1\leqq\alpha\leqq n+1}(-1)^\alpha
 F_{g_1,\ldots,\widehat{g_\alpha},\ldots,g_{n+1}}.
 \end{aligned}
 \]
@@ -102,7 +97,7 @@ F_{g_1,\ldots,\widehat{g_\alpha},\ldots,g_{n+1}}.
 \LayerTarget{tohoku:construction:complex-from-local-composition-data}
 Soit donc $L$ l'ensemble des $g\in G$ tels que $g\cdot D\cap D\ne\phi$ (ce
 sera un ensemble fini dans les cas ``raisonnables''), la formule précédente
-montre que le complexe $C(\mathcal U,P)^G$ donnant les groupes
-$H^n(\mathcal U;G,P)$ peut se construire en connaissant
+montre que le complexe $C({\mathbf U},P)^G$ donnant les groupes
+$H^n({\mathbf U};G,P)$ peut se construire en connaissant
 
 \TohokuContinuation{211}

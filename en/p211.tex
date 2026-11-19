@@ -3,54 +3,53 @@
 \SourcePage{211}
 
 \LayerTarget{tohoku:construction:complex-from-local-composition-data}
-\noindent only the composition law $(g,g')\mapsto g^{-1}g'$ in $L$ (where it
+\noindent only the composition law $(g,g')\to g^{-1}g'$ in $L$ (where it
 is defined), the intersections $D\cap g\cdot D$ ($g\in L$), and of course the
-groups $P(D\cap g_1\cdot D\cap\cdots\cap g_n\cdot D)$ (with the $g_i$ in
+groups $P(D\cap g_1\cdot D\cap\ldots\,.\,\cap g_n\cdot D)$ (with the $g_i$ in
 $L$), their restriction maps, and the way in which the $g_i\in L$ act on them.
 
 \LayerTarget{tohoku:remark:1a-local-composition-computation}
-\noindent\textsc{Remarks I.}\quad a) Under the preceding conditions, suppose,
+\textsc{Remarks I.}\quad a) Under the preceding conditions, suppose,
 for example, that $P$ is the constant sheaf defined by a commutative ring $k$,
-and that the $D\cap g_1\cdot D\cap\cdots\cap g_n\cdot D$ are $k$-acyclic and
+and that the $D\cap g_1\cdot D\cap\ldots\,.\,\cap g_n\cdot D$ are $k$-acyclic and
 connected. The values $F_{g_1,\ldots,g_n}$ are then simply elements of $k$
-(defined when $D\cap g_1\cdot D\cap\cdots\cap g_n\cdot D\ne\phi$), and the
+(defined when $D\cap g_1\cdot D\cap\ldots\,.\,\cap g_n\cdot D\ne\phi$), and the
 complex of these cochains gives the cohomology $H^*(X;G,k)$. This gives an
 explicit computational method if the set $L$ above is assumed finite (which
-implies that the complex $C(\mathcal U,k)^G$ is free of finite type in every
-dimension). This should, for example, permit the computation of the
+implies that the complex $C({\mathbf U},k)^G$ is free of finite type in every
+dimension). It seems that this should, for example, permit the computation of the
 cohomology of modular groups in several variables (here
-$H^*(X;G,\mathbf Z)=H^*(G,\mathbf Z)$, since $X$ is a contractible open subset
+$H^*(X;G,Z)=H^*(G,Z)$, since $X$ is a contractible open subset
 of Euclidean space), when one knows a sufficiently simple fundamental domain
 $D$ (without having to examine what happens at multiple points as in method
 [10], which seems impracticable for an overly complicated set of fixed
 points).
 
 \LayerTarget{tohoku:remark:1b-spectral-sequence-comparison}
-b) Take $D=X$, so that $\mathcal U=(g\cdot X)_{g\in G}$. The spectral sequence
+b) Take $D=X$, so that ${\mathbf U}=(g\cdot X)_{g\in G}$. The spectral sequence
 of Theorem 5.5.3 is then the second spectral sequence of Theorem 5.2.1, with
 initial term $H^p(G,H^q(X,A))$. Moreover, in every case there is a canonical
-functorial morphism from the spectral sequence of Theorem 5.5.3 to the second
-spectral sequence of Theorem 5.2.1, as one sees by completing Lemma 5.5.1,
+functorial morphism from the second spectral sequence of Theorem 5.2.1 to the
+spectral sequence of Theorem 5.5.3, as one sees by completing Lemma 5.5.1,
 respectively Lemma 5.5.2, in this sense.
 
 \LayerTarget{tohoku:construction:equivariant-cech-refinement-maps}
 To conclude this subsection, we give some indications concerning the
 ``Čech-style'' computation of $H^n(X;G,A)$, generalizing the considerations of
-3.8. Let $\mathcal U$ and $\mathcal V$ be two $G$-coverings, with
-$\mathcal V$ finer than $\mathcal U$. We shall define canonical homomorphisms
+3.8. Let ${\mathbf U}$ and ${\mathbf V}$ be two $G$-coverings, with
+${\mathbf V}$ finer than ${\mathbf U}$. We shall define canonical homomorphisms
 
 \LayerTarget{tohoku:equation:5.5.12}
 \[
 \tag{5.5.12}
-H^n(\mathcal U;G,P)\longrightarrow H^n(\mathcal V;G,P)
+H^n({\mathbf U};G,P)\to H^n({\mathbf V};G,P)
 \]
-
 \LayerTarget{tohoku:proof:independence-of-equation-5.5.12}
 for every abelian $G$-presheaf $P$, functorially in $P$. First, writing
-$\mathcal U=(U_i)_{i\in I}$ and $\mathcal V=(V_j)_{j\in J}$, suppose there is
+${\mathbf U}=(U_i)_{i\in I}$ and ${\mathbf V}=(V_j)_{j\in J}$, suppose there is
 a map $\varphi:J\to I$ such that $V_j\subset U_{\varphi(j)}$ for every
-$j\in J$, and which commutes with $G$. This classically induces a homomorphism
-$\overline\varphi:C(\mathcal U,P)\to C(\mathcal V,P)$, which here also
+$j\in J$, \textit{and which commutes with $G$}. This classically induces a homomorphism
+$\overline\varphi:C({\mathbf U},P)\to C({\mathbf V},P)$, which here also
 commutes with $G$; hence, by (5.5.3), it induces a homomorphism (5.5.12). The
 latter is \textit{independent of the choice of $\varphi$}. Indeed, if
 $\varphi'$ is another map with the same properties, one classically constructs
@@ -60,18 +59,17 @@ $\overline\varphi-\overline{\varphi'}=\partial s+s\partial$. For evident
 reasons of ``transport of structure,'' $s$ commutes with $G$, and consequently
 $\overline\varphi$ and $\overline{\varphi'}$ define the same homomorphism
 (5.5.12).
-
 \LayerTarget{tohoku:construction:fixed-point-free-refinement}
 If one no longer assumes that a $\varphi$ as above can be found, consider the
 set $I'=G\times I$, on which $G$ acts by $g'(g,i)=(g'g,i)$, and the
-fixed-point-free $G$-covering $\mathcal U'=(U'_{(g,i)})_{(g,i)\in G\times I}$
-defined by $U'_{(g,i)}=U_{g\cdot i}=gU_i$. The map
+fixed-point-free $G$-covering ${\mathbf U}'=(U'_{(g,i)})_{(g,i)\in G\times I}$
+defined by $U'_{(g,i)}=U_{g.\,i}=gU_i$. The map
 $\psi(g,i)=g\cdot i$ has the required properties above and therefore defines
 a homomorphism.
 
 \LayerTarget{tohoku:equation:fixed-point-free-refinement-map}
 \[
-H^n(\mathcal U;G,P)\longrightarrow H^n(\mathcal U';G,P)
+H^n({\mathbf U};G,P)\to H^n({\mathbf U}';G,P)
 \]
 
 \TohokuContinuation{212}

@@ -8,6 +8,18 @@
 \usepackage{microtype}
 \usepackage{xcolor}
 \usepackage{paracol}
+\usepackage{wrapfig}
+\usepackage{graphicx}
+% Reproduce the inverted h in bibliography entry [1], printed p. 221.
+\providecommand{\SourceTurnedH}{%
+  \begingroup
+  \setbox0=\hbox{x}%
+  \raisebox{\ht0}{\rotatebox{180}{h}}%
+  \endgroup}
+\providecommand{\SourceSideDiagram}[1]{%
+  \begin{wrapfigure}{l}{0.34\textwidth}%
+  \centering #1%
+  \end{wrapfigure}}
 \usepackage{fancyhdr}
 \usepackage[hypertexnames=false]{hyperref}
 \usepackage{bookmark}
@@ -25,7 +37,7 @@
 
 \setlength{\parindent}{1.35em}
 \setlength{\parskip}{0.35em}
-\setlength{\emergencystretch}{2em}
+\setlength{\emergencystretch}{4em}
 \pagestyle{fancy}
 \fancyhf{}
 \fancyhead[LE,RO]{\small\textsc{Sur quelques points d'algebre homologique}}
@@ -46,6 +58,10 @@
 }
 \newcommand{\TohokuPartBoundary}[1]{}
 \newcommand{\TohokuTerminal}[1]{}
+\providecommand{\SourceFootnote}[2]{%
+  \begingroup\renewcommand*{\dotFFN}{}%
+  \renewcommand{\thefootnote}{#1)}%
+  \stepcounter{footnote}\footnotetext[\value{footnote}]{#2}\endgroup}
 \newcommand{\TohokuAuthorityLine}{%
   Tohoku Mathematical Journal (Second Series), vol.~9 (1957), pp.~119--221%
 }

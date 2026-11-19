@@ -2,38 +2,38 @@
 \SourcePage{134}
 
 \LayerTarget{tohoku:prop:1.8:proof:p2}
-\noindent $=w_{ij}(A_i)$, let $N$ be the subobject of $S$ that is the supremum
-of the $N_{ij}$ (which exists by axiom AB 3)), put $\overline A=S/N$, and let
-$u_i:A_i\longrightarrow\overline A$ be the morphism induced by the canonical
-morphism $S\longrightarrow S/N$. One sees immediately that
-$(\overline A,u_i)$ is an inductive limit of $\mathbf A$. We leave to the
+\noindent $=w_{ij}(A_i)$, let $N$ be the subobject of $\mathrm{S}$ that is the supremum
+of the $N_{ij}$ (which exists by axiom AB 3)), put $\overline{\mathbf A}=\mathrm{S}/N$, and let
+$u_i:A_i\to\overline{\mathbf A}$ be the morphism induced by the canonical
+morphism $\mathrm{S}\to \mathrm{S}/N$. One sees immediately that
+$(\overline{\mathbf A},u_i)$ is an inductive limit of $\mathbf A$. We leave to the
 reader the proof of the other assertions of Proposition 1.8, a proof that is
 of course well known.
 
 \LayerTarget{tohoku:section:1.9}
-\noindent\textbf{1.9. Generators and cogenerators.} Let $C$ be a category and
-let $(U_i)_{i\in I}$ be a family of objects of $C$. It is called a
-\textit{family of generators of $C$} if, for every object $A\in C$ and every
+\textbf{1.9. Generators and cogenerators.} Let $\mathbf{C}$ be a category and
+let $(U_i)_{i\in I}$ be a family of objects of $\mathbf{C}$. It is called a
+\textit{family of generators} of $\mathbf{C}$ if, for every object $A\in \mathbf{C}$ and every
 proper subobject $B\neq A$, there are an $i\in I$ and a morphism
-$u:U_i\longrightarrow A$ that does not come from a morphism from $U_i$ to
-$B$. Then, for every $A\in C$, the subobjects of $A$ form a \textit{set}:
+$u:U_i\to A$ that does not come from a morphism from $U_i$ to
+$B$. Then, for every $A\in \mathbf{C}$, the subobjects of $A$ form a \textit{set}:
 indeed, a subobject $B$ of $A$ is completely determined by the set of
 morphisms from objects $U_i$ to $A$ that come from a morphism from $U_i$ to
-$B$. An object $U\in C$ is called a \textit{generator} of $C$ if the singleton
+$B$. An object $U\in \mathbf{C}$ is called a \textit{generator} of $\mathbf{C}$ if the singleton
 family $\{U\}$ is a family of generators.
 
 \LayerTarget{tohoku:prop:1.9.1}
-\noindent\textsc{Proposition 1.9.1.} --- \textit{Suppose that $C$ is an
-abelian category satisfying axiom AB 3), the existence of infinite direct
-sums. Let $(U_i)_{i\in I}$ be a family of objects of $C$, and let
-$U=\bigoplus U_i$ be its direct sum. The following conditions are equivalent:}
+\textsc{Proposition 1.9.1.} \textit{Suppose that $\mathbf{C}$ is an
+abelian category satisfying axiom \textup{AB 3)}, the existence of infinite direct
+sums. Let $(U_i)_{i\in I}$ be a family of objects of $\mathbf{C}$, and let
+$U=\oplus U_i$ be its direct sum. The following conditions are equivalent:}
 
-\begin{enumerate}
-\item[a)] \textit{$(U_i)$ is a family of generators of $C$.}
-\item[b)] \textit{$U$ is a generator of $C$.}
-\item[c)] \textit{Every $A\in C$ is isomorphic to a quotient of a direct sum
+\textit{a) $(U_i)$ is a family of generators of $\mathbf{C}$.}
+
+\textit{b) $U$ is a generator of $\mathbf{C}$.}
+
+\textit{c) Every $A\in \mathbf{C}$ is isomorphic to a quotient of a direct sum
 $U^{(I)}$ of objects all identical to $U$.}
-\end{enumerate}
 
 \LayerTarget{tohoku:prop:1.9.1:proof}
 The equivalence of a) and b) follows almost immediately from the definition.
@@ -46,17 +46,17 @@ because if $A$ is a quotient of $U^{(I)}$, then for every proper subobject
 $B$ of $A$ there is an $i$ such that the canonical image in $A$ of the
 $i$-th factor of $U^{(I)}$ is not contained in $B$; this gives a morphism from
 $U$ to $A$ that does not come from a morphism from $U$ to $B$. (Notice that
-the additive structure of $C$ has not really been used here.)
+the additive structure of $\mathbf{C}$ has not really been used here.)
 
 \LayerTarget{tohoku:section:1.9:examples:p1}
-\noindent\textsc{Examples.} If $C$ is the abelian category of unital left
+\textsc{Examples.} If $\mathbf{C}$ is the abelian category of unital left
 modules over a ring $U$ with identity, then $U$, regarded as a left module over
-itself, is a generator. If $C$ is the category of sheaves of abelian groups on
+itself, is a generator. If $\mathbf{C}$ is the category of sheaves of abelian groups on
 a fixed topological space $X$, and for every open $U\subset X$ we denote by
-$Z_U$ the sheaf on $X$ that is zero over $X\setminus U$ and equal to the
-constant sheaf of integers over $U$, then the family of the $Z_U$ forms a
-system of generators of $C$. This example immediately generalizes to the case
-of a sheaf $O$ of rings on $X$ and the category of sheaves of $O$-modules on
+$\mathbf{Z}_U$ the sheaf on $X$ that is zero over $\complement U$ and equal to the
+constant sheaf of integers over $U$, then the family of the $\mathbf{Z}_U$ forms a
+system of generators of $\mathbf{C}$. This example immediately generalizes to the case
+of a sheaf $\mathbf{O}$ of rings on $X$ and the category of sheaves of $\mathbf{O}$-modules on
 $X$. Further examples are contained in the following proposition:
 
 \TohokuContinuation{135}

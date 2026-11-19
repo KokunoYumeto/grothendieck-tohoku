@@ -2,35 +2,32 @@
 \SourcePage{141}
 
 \LayerTarget{tohoku:remark:satellites-existence:p2}
-\noindent that every covariant additive functor $F:C\longrightarrow C'$ has a
+\noindent that every covariant additive functor $F:\mathbf{C}\to \mathbf{C}'$ has a
 universal $\partial$-functor defined in all degrees and equal to $F$ in degree
 zero, that is, that all satellites $S^iF$ exist, it plainly suffices to prove
 that $S^1F$ and $S^{-1}F$ exist, by the formulas
-\[
- S^1(S^iF)=S^{i+1}F\quad\hbox{for }i\geq0,\qquad
- S^{-1}(S^iF)=S^{i-1}F\quad\hbox{for }i\leq0,
-\]
-\noindent whose verification directly from the definition is trivial. The
+$S^1(S^iF)=S^{i+1}F$ for $i\geqq0$, $S^{-1}(S^iF)=S^{i-1}F$ for $i\leqq0$,
+whose verification directly from the definition is trivial. The
 problems of finding $S^1F$ and $S^{-1}F$ are dual: these two functors are
-interchanged when $C$ and $C'$ are replaced by their opposite categories.
+interchanged when $\mathbf{C}$ and $\mathbf{C}'$ are replaced by their opposite categories.
 
 \LayerTarget{tohoku:def:effaceable-coeffaceable}
-An additive functor $F:C\longrightarrow C'$ is called \textit{effaceable} if,
-for every $A\in C$, there exists a monomorphism $u:A\longrightarrow M$ such
-that $F(u)=0$. If every object of $C$ has an injective effacement, see 1.10,
+An additive functor $F:\mathbf{C}\to \mathbf{C}'$ is called \textit{effaceable} if,
+for every $A\in \mathbf{C}$, there exists a monomorphism $u:A\to M$ such
+that $F(u)=0$. If every object of $\mathbf{C}$ has an injective effacement, see 1.10,
 Remark 1, this is equivalent to requiring $F(u)=0$ for every injective
-effacement $u$. If every object $A\in C$ has a monomorphism into an injective
+effacement $u$. If every object $A\in \mathbf{C}$ has a monomorphism into an injective
 object $M$, see 1.10.1, it is equivalent to requiring $F(M)=0$ for every
 injective object $M$. Dually, $F$ is called \textit{co-effaceable} if for
-every $A\in C$ there exists an epimorphism $u:P\longrightarrow A$ such that
+every $A\in \mathbf{C}$ there exists an epimorphism $u:P\to A$ such that
 $F(u)=0$.
 
 \LayerTarget{tohoku:prop:2.2.1}
-\noindent\textsc{Proposition 2.2.1.} --- \textit{Let $C$ and $C'$ be abelian
-categories and let $T=(T^i)_{0\leq i\leq a}$ be an exact
-$\partial$-functor, covariant or contravariant, from $C$ to $C'$, where
+\indent\textsc{Proposition 2.2.1.} \textit{Let $\mathbf{C}$ and $\mathbf{C}'$ be abelian
+categories and let $T=(T^i)\quad 0\leqq i\leqq a$ be an exact
+$\partial$-functor, covariant or contravariant, from $\mathbf{C}$ to $\mathbf{C}'$, where
 $a>0$. If $T$ is covariant and $T^i$ is effaceable for $i>0$, then $T$ is a
-universal $\partial$-functor. The converse holds if every object $A\in C$ has
+universal $\partial$-functor. The converse holds if every object $A\in \mathbf{C}$ has
 an injective effacement; see 1.10. If $T$ is contravariant, the same statement
 holds with \textit{co-effaceable} and \textit{projective effacement} in place
 of \textit{effaceable} and \textit{injective effacement}, respectively.}
@@ -38,43 +35,43 @@ of \textit{effaceable} and \textit{injective effacement}, respectively.}
 \LayerTarget{tohoku:prop:2.2.1:proof:p1}
 For the direct assertion it suffices, for example, to prove the following.
 Suppose $(T'^0,T'^1)$ is a $\partial$-functor defined in degrees 0 and 1 and
-$f^0:T^0\longrightarrow T'^0$ is a natural transformation. Then there is a
+$f^0:T^0\to T'^0$ is a natural transformation. Then there is a
 unique morphism $(f^0,f^1)$ from $(T^0,T^1)$ to $(T'^0,T'^1)$ whose degree-zero
-component is $f^0$. We assume $T$ covariant to fix ideas. Let $A\in C$ and
+component is $f^0$. We assume $T$ covariant to fix ideas. Let $A\in \mathbf{C}$ and
 choose an exact sequence
-$0\longrightarrow A\longrightarrow M\longrightarrow A'\longrightarrow 0$
-such that the morphism $T^1(A)\longrightarrow T^1(M)$ is zero. If $f^1$ has
+$0\to A\to M\to A'\to 0$
+such that the morphism $T^1(A)\to T^1(M)$ is zero. If $f^1$ has
 been constructed, there is a commutative diagram
 
 \LayerTarget{tohoku:diagram:prop-2.2.1}
 \[
-\begin{array}{ccccccc}
-T^0(M)&\longrightarrow&T^0(A')&\longrightarrow&T^1(A)&\longrightarrow&T^1(M)\\
+\begin{array}{lclclcl}
+T^0(M)&\to&T^0(A')&\to&T^1(A)&\to&T^1(M)\\
 \big\downarrow&&\big\downarrow&&\big\downarrow&&\\
-T'^0(M)&\longrightarrow&T'^0(A')&\longrightarrow&T'^1(A)&&
+T'^0(M)&\to&T'^0(A')&\to&T'^1(A).&&
 \end{array}
 \]
 
 \LayerTarget{tohoku:prop:2.2.1:proof:p2}
-The first row is exact, so the morphism
-$T^0(A')\longrightarrow T^1(A)$ is surjective. Consequently
-$f^1(A):T^1(A)\longrightarrow T'^1(A)$ is completely determined on passing
+\noindent The first row is exact, so the morphism
+$T^0(A')\to T^1(A)$ is surjective. Consequently
+$f^1(A):T^1(A)\to T'^1(A)$ is completely determined on passing
 to the quotient by
-$f^0(A'):T^0(A')\longrightarrow T'^0(A')$. This proves uniqueness of
+$f^0(A'):T^0(A')\to T'^0(A')$. This proves uniqueness of
 $f^1(A)$. Conversely, omit $f^1(A)$ from the preceding diagram. Since the
 composite of the two morphisms in the second row is zero, the requirement
 that the diagram commute uniquely defines a morphism
-$T^1(A)\longrightarrow T'^1(A)$. Standard arguments show that the morphism so
+$T^1(A)\to T'^1(A)$. Standard arguments show that the morphism so
 defined is independent of the chosen exact sequence
-$0\longrightarrow A\longrightarrow M\longrightarrow A'\longrightarrow 0$,
+$0\to A\to M\to A'\to 0$,
 is natural, and commutes with $\partial$. This proves the first part of the
 proposition. The second part follows from the next existence theorem.
 
 \LayerTarget{tohoku:thm:2.2.2:p1}
-\noindent\textsc{Theorem 2.2.2.} --- \textit{Let $C$ be an abelian category in
-which every object $A\in C$ has an injective effacement; see 1.10. Then, for
-every covariant additive functor $F$ on $C$, the satellites $S^iF$ for
-$i\geq0$ exist and are effaceable functors for $i>0$. In order that the
-universal $\partial$-functor $(S^iF)_{i\geq0}$ be exact, it}
+\indent\textsc{Theorem 2.2.2.} \textit{Let $\mathbf{C}$ be an abelian category in
+which every object $A\in \mathbf{C}$ has an injective effacement; see 1.10. Then, for
+every covariant additive functor $F$ on $\mathbf{C}$, the satellites $S^iF$ for
+$i\geqq0$ exist and are effaceable functors for $i>0$. In order that the
+universal $\partial$-functor $(S^iF)_{i\geqq0}$ be exact, it}
 
 \TohokuContinuation{142}

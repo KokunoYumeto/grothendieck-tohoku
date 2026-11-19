@@ -15,50 +15,44 @@ the \textit{vertices}, the elements of $\Phi$ are the \textit{arrows} of the
 diagram, and if $\varphi$ is an arrow of the diagram, $d(\varphi)$ is called
 its \textit{direction}, characterized by the \textit{origin} and the
 \textit{endpoint} of the arrow (which are therefore vertices of the scheme).
-
 \LayerTarget{tohoku:def:composite-arrow}
 A \textit{composite arrow} with origin $i$ and endpoint $j$ is, by definition,
 a nonempty finite sequence of arrows of the diagram, the origin of the first
 being $i$, the endpoint of each being the origin of the next, and the endpoint
 of the last being $j$.
-
 \LayerTarget{tohoku:def:diagram-category}
-If $C$ is a category, a \textit{diagram in $C$ with scheme $S$} is a function
-$D$ that assigns to every $i\in I$ an object $D(i)\in C$, and to every arrow
+If $\mathbf{C}$ is a category, a \textit{diagram in $\mathbf{C}$ with scheme $\mathrm{S}$} is a function
+$D$ that assigns to every $i\in I$ an object $D(i)\in \mathbf{C}$, and to every arrow
 $\varphi$ with origin $i$ and endpoint $j$ a morphism $D(\varphi)$ from $D(i)$
-to $D(j)$. The class of such diagrams will be denoted by $C^S$ and regarded as
+to $D(j)$. The class of such diagrams will be denoted by $\mathbf{C}^S$ and regarded as
 a category: a morphism from $D$ to $D'$ is a family of morphisms
-$v_i:D(i)\longrightarrow D'(i)$ such that, for every arrow $\varphi$ with
+$v_i:D(i)\to D'(i)$ such that, for every arrow $\varphi$ with
 origin $i$ and endpoint $j$, the following diagram commutes:
 
 \LayerTarget{tohoku:diagram:diagram-morphism-square}
 \[
 \begin{array}{ccc}
 D(i) & \stackrel{v_i}{\longrightarrow} & D'(i) \\
-{\scriptstyle D(\varphi)}\,\big\downarrow &&
-  \big\downarrow\,{\scriptstyle D'(\varphi)} \\
-D(j) & \stackrel{v_j}{\longrightarrow} & D'(j)
+{D(\varphi)}\,\big\downarrow &&
+  \big\downarrow\,{D'(\varphi)} \\
+D(j) & \stackrel{v_j}{\longrightarrow} & D'(j)\qquad .
 \end{array}
-\qquad .
 \]
-
 Morphisms of diagrams compose in the evident way, and the axioms of a
 category are verified trivially.
-
 \LayerTarget{tohoku:def:commutative-diagram}
-If $D$ is a diagram with scheme $S$, then for every composite arrow
-$\varphi=(\varphi_1,\ldots,\varphi_k)$ in $S$ we define
-$D(\varphi)=D(\varphi_k)\cdots D(\varphi_1)$; this is a morphism from $D(i)$
+If $D$ is a diagram with scheme $\mathrm{S}$, then for every composite arrow
+$\varphi=(\varphi_1,\ldots,\varphi_k)$ in $\mathrm{S}$ we define
+$D(\varphi)=D(\varphi_k)\ldots D(\varphi_1)$; this is a morphism from $D(i)$
 to $D(j)$ if $i$ and $j$ are respectively the origin and endpoint of
 $\varphi$. The diagram $D$ is said to be \textit{commutative} if
 $D(\varphi)=D(\varphi')$ whenever $\varphi$ and $\varphi'$ are two composite
 arrows having the same origin and the same endpoint.
-
 \LayerTarget{tohoku:def:commutation-relations}
 More generally, let $R$ be a set consisting of pairs $(\varphi,\varphi')$ of
 composite arrows having the same origins and the same endpoints, together
 with composite arrows whose origin equals their endpoint. We consider the
-subcategory $C^{S,R}$ of $C^S$ consisting of diagrams that satisfy the
+subcategory $\mathbf{C}^{S,R}$ of $\mathbf{C}^S$ consisting of diagrams that satisfy the
 \textit{commutation relations} $D(\varphi)=D(\varphi')$ for
 $(\varphi,\varphi')\in R$, and for which $D(\varphi)$ is the identity morphism
 of $D(i)$ if $\varphi\in R$ has $i$ as its origin and endpoint.
@@ -69,9 +63,9 @@ varies with the categories under consideration. What follows seems to cover
 the most important cases. For every $(i,j)\in I\times I$, choose a set
 $R_{ij}$ of formal integral linear combinations of composite arrows with
 origin $i$ and endpoint $j$, and, if $i=j$, of an auxiliary element $e_i$.
-If $D$ is then a diagram with values in an additive category $C$, for every
+If $D$ is then a diagram with values in an additive category $\mathbf{C}$, for every
 $L\in R_{ij}$ we may define the morphism
-$D(L):D(i)\longrightarrow D(j)$ by replacing in the expression for $L$ each
+$D(L):D(i)\to D(j)$ by replacing in the expression for $L$ each
 composite arrow $\varphi$ by $D(\varphi)$ and $e_i$ by the identity morphism
 of $D(i)$. If $R$ denotes the union of the
 

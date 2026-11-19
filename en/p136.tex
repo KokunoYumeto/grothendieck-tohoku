@@ -2,73 +2,60 @@
 \SourcePage{136}
 
 \LayerTarget{tohoku:thm:1.10.1:p2}
-\noindent from $C$ to $C$, together with a natural transformation $f$ from
-the identity functor to $M$, such that for every $A\in C$, $M(A)$ is injective
+\noindent from $\mathbf{C}$ to $\mathbf{C}$, together with a natural transformation $f$ from
+the identity functor to $M$, such that for every $A\in \mathbf{C}$, $M(A)$ is injective
 and $f(A)$ is a monomorphism from $A$ to $M(A)$. Since the proof is
 essentially known, we shall sketch only the main points.
 
 \LayerTarget{tohoku:lemma:1.10.1:1}
-\noindent\textsc{Lemma 1.} --- \textit{If $C$ satisfies axiom AB 5), then an
-object $M\in C$ is injective if and only if, for every subobject $V$ of the
+\textsc{Lemma 1.} \textit{If $\mathbf{C}$ satisfies axiom \textup{AB 5)}, then an
+object $M\in \mathbf{C}$ is injective if and only if, for every subobject $V$ of the
 generator $U$ and every morphism $v$ from $V$ to $M$, $v$ extends to a
 morphism from $U$ to $M$.}
 
 \LayerTarget{tohoku:lemma:1.10.1:1:proof}
 It suffices to prove that the condition is sufficient. Let $u$ be a morphism
-to $M$ from a subobject $B$ of an object $A\in C$; we show that it extends to
+to $M$ from a subobject $B$ of an object $A\in \mathbf{C}$; we show that it extends to
 a morphism from $A$ to $M$. Let $P$ be the set of extensions of $u$ to
 subobjects of $A$ containing $B$. This is indeed a set, since the existence of
 a generator implies that the subobjects of $A$ form a set. Order $P$ by the
 extension relation. By the second formulation of axiom AB 5) (cf. 1.5), this
 set is inductive. It therefore has a maximal element. We are thus reduced to
 the case in which $u$ itself is maximal, and must prove that $B=A$.
-
 Suppose $B\neq A$. We prove that $u$ extends to some $B'\neq B$. Choose a
 morphism $j$ from $U$ to $A$ such that $j(U)\not\subset B$, and put
 $B'=j(U)+B$, so $B'\neq B$. Let $V=j^{-1}(B)$ be the inverse image of $B$
-under $j$, and let $j':V\longrightarrow B$ be the morphism induced by $j$.
+under $j$, and let $j':V\to B$ be the morphism induced by $j$.
 Consider the sequence
-
-\[
- V\mathrel{\mathop{\longrightarrow}^{\varphi'}}U\times B
- \mathrel{\mathop{\longrightarrow}^{\varphi}}B'\longrightarrow0,
-\]
-
-\noindent where $\varphi'$ has components the identity map from $V$ to $U$
+$V\mathrel{\mathop{\to}^{\varphi'}}U\times B  \mathrel{\mathop{\to}^{\varphi}}B'\to0,$ where $\varphi'$ has components the identity map from $V$ to $U$
 and $-j'$, while $\varphi$ has components $j$ and the identity map from $B$
 to $B'$. This sequence is immediately seen to be exact. Thus, to define a
 morphism $v$ from $B'$ to $M$, it suffices to define a morphism $w$ from
 $U\times B$ to $M$ such that $w\varphi'=0$. Let $k$ be an extension to $U$ of
-$uj':V\longrightarrow M$, and take for $w$ the morphism from $U\times B$ to
+$uj':V\to M$, and take for $w$ the morphism from $U\times B$ to
 $M$ with components $k$ and $u$. Then $w\varphi'=0$, and the morphism
-$v:B'\longrightarrow M$ defined by $w$ extends $u$. This proves Lemma 1.
+$v:B'\to M$ defined by $w$ extends $u$. This proves Lemma 1.
 
 \LayerTarget{tohoku:thm:1.10.1:construction:M1}
-Let $A\in C$, and let $I(A)$ be the set of all morphisms $u_i$ from
+Let $A\in \mathbf{C}$, and let $I(A)$ be the set of all morphisms $u_i$ from
 subobjects $V_i$ of $U$ to $A$. Consider the morphism
-
-\[
- \bigoplus V_i\longrightarrow A\times U^{(I(A))}
-\]
-
-\noindent whose restriction to the factor $V_i$ has components
-$-u_i:V_i\longrightarrow A$ and the canonical injection of $V_i$ into the
+$\oplus V_i\to A\times U^{(I(A))}$ whose restriction to the factor $V_i$ has components
+$-u_i:V_i\to A$ and the canonical injection of $V_i$ into the
 $i$-th factor of the direct sum $U^{(I(A))}$. Let $M_1(A)$ be its cokernel,
-and let $f(A):A\longrightarrow M_1(A)$ be the morphism induced by the
+and let $f(A):A\to M_1(A)$ be the morphism induced by the
 canonical epimorphism from $A\times U^{(I(A))}$ onto its quotient. Then
 $f(A)$ is a monomorphism; this follows easily from the fact that the canonical
-morphism $\bigoplus V_i\longrightarrow U^{(I(A))}$ is a monomorphism by
-AB 4). Moreover, every morphism $u_i:V_i\longrightarrow A$ ``extends'' to a
-morphism $U\longrightarrow M_1(A)$, namely the morphism induced on the $i$-th
+morphism $\oplus V_i\to U^{(I(A))}$ is a monomorphism by
+AB 4). Moreover, every morphism $u_i:V_i\to A$ ``extends'' to a
+morphism $U\to M_1(A)$, namely the morphism induced on the $i$-th
 factor of $U^{(I(A))}$ by the canonical epimorphism from
 $A\times U^{(I(A))}$ onto its quotient $M_1(A)$.
-
 \LayerTarget{tohoku:thm:1.10.1:construction:transfinite:p1}
 By transfinite recursion, for every ordinal $i$ define the object $M_i(A)$,
-and for every two ordinals $i\leq j$ an injective morphism
-$M_i(A)\longrightarrow M_j(A)$, in such a way that the $M_i(A)$ for $i<i_0$,
+and for every two ordinals $i\leqq j$ an \textit{injective} morphism
+$M_i(A)\to M_j(A)$, in such a way that the $M_i(A)$ for $i<i_0$,
 where $i_0$ is a fixed ordinal, form an inductive system. For $i=0$ take
-$M_0(A)=A$; for $i=1$, $M_1(A)$ and $M_0(A)\longrightarrow M_1(A)$ have
+$M_0(A)=A$; for $i=1$, $M_1(A)$ and $M_0(A)\to M_1(A)$ have
 already been defined. If the construction has been made for the ordinals
 $<i$, and if $i$ is of the form $j+1$,
 

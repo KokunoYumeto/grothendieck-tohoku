@@ -2,17 +2,17 @@
 \SourcePage{135}
 
 \LayerTarget{tohoku:prop:1.9.2}
-\noindent\textsc{Proposition 1.9.2.} --- \textit{Soit $\Sigma$ un schéma de
-diagrammes avec relations de commutation (cf. 1.6), et soient $C$ une
-catégorie abélienne, $(U_i)_{i\in I}$ une famille de générateurs de $C$. On
+\textsc{Proposition 1.9.2.} \textit{Soit $\Sigma$ un schéma de
+diagrammes avec relations de commutation \textup{(}\textit{cf} \textup{1.6)}, et soient $\mathbf{C}$ une
+catégorie abélienne, $(U_i)_{i\in I}$ une famille de générateurs de $\mathbf{C}$. On
 suppose que pour toute flèche de $\Sigma$, l'origine et l'extrémité de la
 flèche sont distincts, et que dans les relations de commutation ne figurent
 pas les morphismes identiques $e_s$ (où $s$ est un sommet)\textsuperscript{2)}.
-Alors pour tout $A\in C$, et tout sommet $s$ du schéma, le diagramme
+Alors pour tout $A\in \mathbf{C}$, et tout sommet $s$ du schéma, le diagramme
 $\varepsilon_s(A)$ dont la valeur est $A$ au sommet $s$ et $0$ en tous les
 autres sommets, et dont la valeur sur chaque flèche est $0$, appartient à
-$C^\Sigma$. De plus, la famille des $\varepsilon_s(U_i)$ ($s$ et $i$
-variables) est un système de générateurs de $C^\Sigma$.}
+$\mathbf{C}^\Sigma$. De plus, la famille des $\varepsilon_s(U_i)$ ($s$ et $i$
+variables) est un système de générateurs de $\mathbf{C}$.}
 
 \LayerTarget{tohoku:prop:1.9.2:proof}
 La vérification est immédiate, il suffit de remarquer, pour la dernière
@@ -22,8 +22,8 @@ s'identifient aux morphismes de $A$ dans $D(s)$.
 \LayerTarget{tohoku:def:cogenerator-family}
 Nous laissons au lecteur le soin de développer la notion duale de
 \textit{famille de cogénérateurs} d'une catégorie abélienne. On peut montrer
-que si $C$ est une catégorie abélienne satisfaisant à l'axiome AB 5)
-(cf. 1.5.) alors l'existence d'un générateur implique l'existence d'un
+que si $\mathbf{C}$ est une catégorie abélienne satisfaisant à l'axiome AB 5)
+(\textit{cf.} 1.5.) alors l'existence d'un générateur implique l'existence d'un
 cogénérateur (nous ne nous servirons pas de ce résultat). Ainsi la catégorie
 des modules unitaires à gauche sur un an neau $U$ avec unité admet toujours un
 cogénérateur : si par exemple $U=\mathbf Z$, on peut prendre pour cogénérateur
@@ -31,20 +31,18 @@ le groupe des nombres rationnels mod $\mathbf Z$ (ou le tore
 $\mathbf T=\mathbf R/\mathbf Z$).
 
 \LayerTarget{tohoku:section:1.10}
-\noindent\textbf{1.10. Objets injectifs et projectifs.}
-
+\textbf{1.10. Objets injectifs et projectifs.}
 \LayerTarget{tohoku:def:injective-object}
-Rappelons qu'un objet $M$ d'une catégorie abélienne $C$ est dit
-\textit{injectif} si le foncteur $A\longmapsto\mathrm{Hom}(A,M)$ (qui de toutes
+Rappelons qu'un objet $M$ d'une catégorie abélienne $\mathbf{C}$ est dit
+\textit{injectif} si le foncteur $A\to\mathrm{Hom}(A,M)$ (qui de toutes
 façons est exact à gauche) est exact, i. e. si pour tout morphisme $u$ dans
-$M$ d'un sous-truc $B$ d'un $A\in C$, il existe un morphisme de $A$ dans $M$
+$M$ d'un sous-truc $B$ d'un $A\in \mathbf{C}$, il existe un morphisme de $A$ dans $M$
 qui le prolonge.
-
 \LayerTarget{tohoku:def:injective-effacement}
-Un morphisme $A\longrightarrow M$ est dit un \textit{effacement injectif} (de
+Un morphisme $A\to M$ est dit un \textit{effacement injectif} (de
 $A$) si c'est un monomorphisme, et si pour tout monomorphisme
-$B\longrightarrow C$ et tout morphisme $B\longrightarrow A$, on peut trouver
-un morphisme $C\longrightarrow M$ rendant commutatif le diagramme
+$B\to C$ et tout morphisme $B\to A$, on peut trouver
+un morphisme $C\to M$ rendant commutatif le diagramme
 
 \LayerTarget{tohoku:diagram:injective-effacement}
 \[
@@ -54,27 +52,23 @@ B & \longrightarrow & C \\
 A & \longrightarrow & M
 \end{array}
 \]
-
 Ainsi, pour que l'application identique de $M$ soit un effacement injectif il
 faut et il suffit que $M$ soit injectif ; tout monomorphime dans un objet
 injectif est un effacement injectif.
 
 \LayerTarget{tohoku:thm:1.10.1:p1}
-\noindent\textsc{Théorème 1.10.1.} --- \textit{Si $C$ satisfait à axiome
-AB 5) (cf. 1.5.) et admet un générateur (cf. 1.9) alors pour tout $A\in C$, il
+\textsc{Théorème 1.10.1.} \textit{Si $\mathbf{C}$ satisfait à axiome
+\textup{AB 5) (}\textit{cf.} \textup{1.5.)} et admet un générateur \textup{(}\textit{cf.} \textup{1.9)} alors pour tout $A\in \mathbf{C}$, il
 existe un monomorphisme de $A$ dans un objet injectif $M$.}
 
 On va même construire un foncteur
-$M:A\longrightarrow M(A)$ (non additif en général !)
+$M:A\to M(A)$ (non additif en général !)
 
 \LayerTarget{tohoku:footnote:2}
-\begin{quote}
-\footnotesize
-2) La catégorie $C^\Sigma$ des systèmes inductifs dans $C$ construits sur un
+\SourceFootnote{2}{La catégorie $\mathbf{C}^\Sigma$ des systèmes inductifs dans $\mathbf{C}$ construits sur un
 ensemble d'indices \textit{ordonné} $I$, rentre dans ce cas. En effet il suffit
 alors, dans l'exemple 1.7.h) de considérer les flèches $(i,j)$ avec $i<j$, et
 les relations de commutation $(i,j)(j,k)=(i,k)$, où les $e_s$ n'interviennent
-plus.
-\end{quote}
+plus.}
 
 \TohokuContinuation{136}

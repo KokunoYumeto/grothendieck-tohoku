@@ -1,14 +1,14 @@
 % Corrected French for printed p.153.
-% Corrections: d'hyperhomologie; foncteurs; fonctoriels; les objets;
-% à coefficients; restriction; seven resolving-functor prime/type errors.
+% Original verbal slips are corrected at the places recorded in CORRECTIONS.tsv.
+% The seven formerly alleged prime errors are absent from the print.
 \SourcePage{153}
 
 \LayerTarget{tohoku:construction:four-functor-square:p2}
-\noindent $G$-acyclique.
+\noindent objets $G$-acycliques.
 
 \LayerTarget{tohoku:prop:2.5.5}
-\noindent\textsc{Proposition 2.5.5.} --- \textit{Plaçons-nous dans les
-conditions précédentes. Pour un $A\in C$, considérons les deux suites
+\textsc{Proposition 2.5.5.} \textit{Plaçons-nous dans les
+conditions précédentes. Pour un $A\in \mathbf C$, considérons les deux suites
 spectrales d'hyperhomologie de $G$ par rapport au complexe $\mathbf F(A)$,
 ce sont des foncteurs spectraux en $A$. Ils sont isomorphes respectivement au
 deuxième foncteur spectral du foncteur composé $F'G'$ et $GF$.}
@@ -21,7 +21,7 @@ $G'(C(A))$ (où $C(A)$ désigne une résolution injective de $A$), donc
 s'identifie en vertu de proposition 2.5.3 à la deuxième suite spectrale du
 bicomplexe $\mathbf F'G'(C(A))$ (dont le premier degré est celui qui provient
 de $C(A)$), or on a $\mathbf F'G'=G\mathbf F$, il faut donc calculer la suite
-spectrale $\mathrm{II}(G\mathbf F(C(A)))$. Or pour tout $q$ fixé,
+spectrale $II(G\mathbf F(C(A)))$. Or pour tout $q$ fixé,
 $\mathbf F^qC(A)$ est une résolution de $\mathbf F^q(A)$ (puisque
 $\mathbf F^q$ est exact) par des objets $G$-acycliques, donc
 $\mathbf F(C(A))$ devient, après échange de ses deux degrés, une résolution
@@ -31,14 +31,13 @@ s'ensuit que la deuxième suite spectrale de $G(\mathbf F(C(A)))$ s'identifie
 $\mathbf F(A)$.
 
 \LayerTarget{tohoku:cor:2.5.5}
-\noindent\textsc{Corollaire.} --- \textit{$C,C',C'',C'''$ et $F,G,F',G'$
-étant comme ci-dessus (voir diagramme) on suppose donnés des foncteurs
+\textsc{Corollaire.} \textit{$\mathbf C,\mathbf C',\mathbf C'',\mathbf C'''$ et $F,G,F',G'$
+étant comme ci-dessus \textup{(}voir diagramme\textup{)} on suppose donnés des foncteurs
 résolvants $\mathbf F,\mathbf G,\mathbf F',\mathbf G'$ pour $F,G,F',G'$, on
-suppose $\mathbf F'\mathbf G'=\mathbf G\mathbf F$ (isomorphismes fonctoriels
-compatibles avec les opérateurs de dérivation dans les foncteurs résolvants),
-et que, pour tout objet injectif $I$ de $C$ et tout $q\geq0$, l'objet
-$\mathbf F^q(I)$ soit $G$-acyclique et l'objet $\mathbf G'{}^q(I)$ soit
-$F'$-acyclique. Alors pour tout $A\in C$, les
+suppose $\mathbf F'{}^i\mathbf G'{}^j=\mathbf G^j\mathbf F^i$ \textup{(}isomorphismes fonctoriels
+compatibles avec les opérateurs de dérivation dans les foncteurs résolvants\textup{)},
+et que $\mathbf F$ \textup{(}resp. $\mathbf G'$\textup{)} transforme objets injectifs en objets qui sont
+$G$-acycliques \textup{(}resp. $F'$-acycliques\textup{)}. Alors pour tout $A\in \mathbf C$, les
 deuxièmes suites spectrales des foncteurs composés $F'G'$ et $GF$ pour $A$
 s'identifient à la première et deuxième suite spectrale d'hyperhomologie de
 $G$ pour le complexe $\mathbf F(A)$, ou encore à la première et la deuxième
@@ -47,30 +46,25 @@ enfin à l'une et l'autre des deux suites spectrales du bicomplexe
 $\mathbf G(\mathbf F(A))=\mathbf F'(\mathbf G'(A))$.}
 
 \LayerTarget{tohoku:chapter:III}
-\noindent\textbf{Chapitre III. Cohomologie à coefficients dans un faisceau.}
+\begin{center}\textbf{Chapitre III Cohomologie à coéfficients dans un faisceau.}\end{center}
 
 \LayerTarget{tohoku:section:3.1}
-\noindent\textbf{3.1. Généralités sur les faisceaux.}
-
+\textbf{3.1. Généralités sur les faisceaux.}\quad
 \LayerTarget{tohoku:def:presheaf-and-sheaf:p1}
 Soit $X$ un espace topologique (non nécessairement séparé). Rappelons (1.7
-exemple h) qu'on appelle \textit{préfaisceau d'ensembles sur $X$} tout système
+exemple h) qu'on appelle \textit{préfaisceau d'ensembles} sur $X$ tout système
 inductif d'ensembles défini sur l'ensemble des parties ouvertes non vides de
 $X$, ordonné par $\supset$. Il consiste donc en la donnée, pour tout ouvert
 $U\subset X$, d'un ensemble $F(U)$, et pour tout couple d'ouverts non vides
 $U,V$ avec $U\supset V$, d'une \textit{application de restriction}
-\[
-\varphi_{VU}:F(U)\longrightarrow F(V),
-\]
+$\varphi_{VU}:F(U)\to F(V),$
 avec les conditions : $\varphi_{UU}=$ application identique de $F(U)$,
 $\varphi_{WV}\varphi_{VU}=\varphi_{WU}$ si
 $U\supset V\supset W$. On dit que le préfaisceau $F$ est un \textit{faisceau}
 si pour tout recouvrement $(U_i)$ d'un ouvert $U$ de $X$ par des ouverts non
 vides, et toute famille $(f_i)$ d'éléments $f_i\in F(U_i)$ telle que
-\[
-\varphi_{U_{ij}U_i}f_i=\varphi_{U_{ij}U_j}f_j
-\]
-pour tout couple $(i,j)$ tel que $U_{ij}=U_i\cap U_j\ne\varnothing$, il existe
+$\varphi_{U_{ij}U_i}f_i=\varphi_{U_{ij}U_j}f_j$
+pour tout couple $(i,j)$ tel que $U_{ij}=U_i\cap U_j\ne\phi$, il existe
 un $f\in F(U)$ et un seul tel que $\varphi_{U_iU}f=f_i$ pour tout $i$. Si dans
 les définitions précédentes, on suppose
 

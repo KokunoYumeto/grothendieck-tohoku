@@ -2,90 +2,87 @@
 \SourcePage{179}
 
 \LayerTarget{tohoku:eq:special-cover-H1-is-Z:p2}
+\noindent la limite $\check H^1(X,H^1(F))=\mathbf Z$, ce qui achève la
+démonstration.
 
 \LayerTarget{tohoku:section:3.9}
-\noindent\textbf{3.9. Critères d'acyclicité par la méthode des
+\textbf{3.9. Critères d'acyclicité par la méthode des
 recouvrements.}\textsuperscript{8)}
-
 \LayerTarget{tohoku:setup:acyclicity-cover-families}
-Soient $X$ un espace topologique, $\mathcal S$ un ensemble non vide de parties
-de $X$. Pour tout $A\in\mathcal S$, on suppose donné un ensemble
+Soient $X$ un espace topologique, $\mathfrak S$ un ensemble non vide de parties
+de $X$. Pour tout $A\in\mathfrak S$, on suppose donné un ensemble
 $\mathfrak R(A)$ non vide de recouvrements $\mathbf R$ de $A$ par des
-ensembles qui sont dans $\mathcal S$ ainsi que leurs intersections finies. On
+ensembles qui sont dans $\mathfrak S$ ainsi que leurs intersections finies. On
 suppose que si $\mathbf R,\mathbf R'\in\mathfrak R(A)$ et
 $B\in\mathbf R$, alors la trace $\mathbf R'_B$ de $\mathbf R'$ sur $B$
 appartient à $\mathfrak R(B)$.
-
 \LayerTarget{tohoku:conditions:acyclicity-cover-families}
 On suppose de plus que l'on est dans l'une des trois conditions suivantes
 (qui permettent d'écrire la suite spectrale de Leray-Cartan pour chacun des
-recouvrements $\mathbf R\in\mathfrak R(A)$, avec $A\in\mathcal S$): (i) les
-$A\in\mathcal S$ sont ouverts ; (ii) les $A\in\mathcal S$ sont fermés et les
-recouvrements $\mathbf R\in\mathfrak R(A)$ sont finis ; (iii) les
-$A\in\mathcal S$ sont fermés, $X$ est paracompact, les
+recouvrements $\mathbf R\in\mathfrak R(A)$, avec $A\in\mathfrak S$): (i) les
+$A\in\mathfrak S$ sont ouverts (ii) Les $A\in\mathfrak S$ sont fermés et les
+recouvrements $\mathbf R\in\mathfrak R(A)$ sont finis (iii). Les
+$A\in\mathfrak S$ sont fermés, $X$ est paracompact, les
 $\mathbf R\in\mathfrak R(A)$ sont localement finis.
 
 \LayerTarget{tohoku:theorem:3.9.1}
-\noindent\textsc{Théorème 3.9.1.} \textit{Sous les conditions précédentes,
+\textsc{Théorème 3.9.1.} \textit{Sous les conditions précédentes,
 supposons donnés un faisceau abélien $F$ sur $X$, et un entier naturel
-$n\geq 0$. Supposons les conditions suivantes vérifiées :}
+$n\geqq 0$. Supposons les conditions suivantes vérifiées :}
 
 \LayerTarget{tohoku:condition:3.9.1:A-n}
-\begin{quote}\itshape
-$A(n)$ : $H^i(\mathbf R,F)=0$ pour $1\leq i\leq n$ et tout
-$\mathbf R\in\mathfrak R(A)$, $A\in\mathcal S$.
-\end{quote}
+\begingroup\itshape
+$A(n)$ : $H^i(\mathbf R,F)=0$ pour $1\leqq i\leqq n$ et tout
+$\mathbf R\in\mathfrak R(A)$, $A\in\mathfrak S$.\par
+\endgroup
 
 \LayerTarget{tohoku:condition:3.9.1:B-n-minus-1}
-\begin{quote}\itshape
-$B(n-1)$ : Pour tout $A\in\mathcal S$, tout $c^i\in H^i(A,F)$ (avec
-$1\leq i\leq n-1$) il existe une partie finie $L$ de $\mathfrak R(A)$ telle
+\begingroup\itshape\hangindent=2.5em\hangafter=1
+$B(n-1)$ : Pour tout $A\in\mathfrak S$, tout $c^i\in H^i(A,F)$ \textup{(}avec
+$1\leqq i\leqq n-1$\textup{)} il existe une partie finie $L$ de $\mathfrak R(A)$ telle
 que, si $\mathbf R^L$ désigne le recouvrement ``intersection'' des
 recouvrements $\mathbf R\in L$, la restriction de $c^i$ à tout ensemble
-$B\in\mathbf R^L$ est nulle.
-\end{quote}
+$B\in\mathbf R^L$ est nulle.\par
+\endgroup
 
 \LayerTarget{tohoku:conclusion:3.9.1}
-\noindent\textit{Sous ces conditions, pour tout $A\in\mathcal S$ on a
-$H^i(A,F)=\{0\}$ pour $1\leq i\leq n-1$, et si $c^n\in H^n(A,F)$, alors
+\noindent\textit{Sous ces conditions, pour tout $A\in\mathfrak S$ on a
+$H^i(A,F)=\{0\}$ pour $1\leqq i\leqq n-1$, et si $c^n\in H^n(A,F)$, alors
 $c^n$ est nul si et seulement si on peut trouver une partie finie $L$ de
 $\mathfrak R(A)$ telle que la restriction de $c^n$ à tout
 $B\in\mathbf R^L$ soit nulle.}
 
-Énonçons tout de suite les corollaires les plus intéressants :
+Enonçons tout de suite les corollaires les plus intéressants :
 
 \LayerTarget{tohoku:corollary:3.9.1:1}
-\noindent\textsc{Corollaire 1.} \textit{Avec les notations du théorème 3.9.1,
-pour qu'on ait $H^i(A,F)=\{0\}$ pour tout $A\in\mathcal S$ et
-$1\leq i\leq n$, il faut et il suffit que les conditions $A(n)$ et $B(n)$
+\textsc{Corollaire 1.} \textit{Avec les notations du théorème \textup{3.9.1},
+pour qu'on ait $H^i(A,F)=\{0\}$ pour tout $A\in\mathfrak S$ et
+$1\leqq i\leqq n$, il faut et il suffit que les conditions $A(n)$ et $B(n)$
 soient satisfaites.}
 
 \LayerTarget{tohoku:proof:corollary-3.9.1-1:sufficiency}
 En effet, la suffisance résulte aussitôt du théorème.
-
 \LayerTarget{tohoku:proof:corollary-3.9.1-1:necessity}
-Réciproquement, supposons $H^i(A,F)=\{0\}$ pour $A\in\mathcal S$ et
-$1\leq i\leq n$, alors $B(n)$ est trivialement vérifiée ; vérifions $A(n)$ :
-la suite spectrale de Leray pour le recouvrement $\mathbf R$ de $A$
+Réciproquement, supposons $H^i(A,F)=\{0\}$ pour $A\in\mathfrak S$ et
+$1\leqq i\leqq n$, alors $B(n)$ est trivialement vérifiée, vérifions $A(n)$ :
+la suite spectrale de Leray pour le recouvrement $\mathbf R$ de $A$,
 (théorème 3.8.1 et remarque de 3.8) aboutit à $H^*(A,F)$ et a pour terme
 initial
-\[
-E_2^{p,q}=H^p(\mathbf R,H^q(F)),
-\]
-qui est nul si $1\leq q\leq n$ car $C(\mathbf R,H^q(F))=0$ pour ces valeurs
+$E_2^{p,q}=H^p(\mathbf R,H^q(F))$,
+qui est nul si $1\leqq q\leqq n$ car $C(\mathbf R,H^q(F))=0$ pour ces valeurs
 de $q$ (les intersections finies d'ensembles $\in\mathbf R$ appartenant à
-$\mathcal S$). On en conclut classiquement que
-$H^i(A,F)=H^i(\mathbf R,F)$ pour $0\leq i\leq n$, d'où
-$H^i(\mathbf R,F)=0$ pour ces $i$.
+$\mathfrak S$). On en conclut classiquement que
+$H^i(A,F)=H^i(\mathbf R,F)$ pour $0\leqq i\leqq n$, d'où
+$H^i(\mathbf R,F)=0$ pour ces $i>0$.
 
 \LayerTarget{tohoku:corollary:3.9.1:2}
-\noindent\textsc{Corollaire 2.} \textit{Supposons (avec les notations du
-théorème 3.9.1) que pour tout $A\in\mathcal S$ et tout recouvrement ouvert de
+\textsc{Corollaire 2.} \textit{Supposons \textup{(}avec les notations du
+théorème \textup{3.9.1)} que pour tout $A\in\mathfrak S$ et tout recouvrement ouvert de
 $A$, on puisse trouver un recouvrement plus fin de la forme $\mathbf R^L$, où
 $L$ est une partie finie de $\mathfrak R(A)$. Alors pour que
-$H^i(A,F)=\{0\}$ pour tout $A\in\mathcal S$ et $1\leq i\leq n$, il faut et
+$H^i(A,F)=\{0\}$ pour tout $A\in\mathfrak S$ et $1\leqq i\leqq n$, il faut et
 il suffit que $H^i(\mathbf R,F)=\{0\}$ pour tout
-$\mathbf R\in\mathfrak R(A)$ ($A\in\mathcal S$) et $1\leq i\leq n$.}
+$\mathbf R\in\mathfrak R(A)$ \textup{(}$A\in\mathfrak S$\textup{)} et $1\leqq i\leqq n$.}
 
 \LayerTarget{tohoku:proof:corollary-3.9.1-2}
 En effet, la condition $B(n)$ est vérifiée (quel que soit $n>0$) en vertu du

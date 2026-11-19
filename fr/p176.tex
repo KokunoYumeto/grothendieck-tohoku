@@ -3,41 +3,30 @@
 
 \LayerTarget{tohoku:corollary:3.8.1:1:p2}
 \noindent\textit{tous les $U_{i_0\ldots i_p}$ sont $F$-acycliques
-(c'est-à-dire satisfont $H^p(U_{i_0\ldots i_p},F)=0$ pour $p>0$).}
+\textup{(}c'est-à-dire satisfont $H^q(U_{i_0\ldots i_p},F)=0$ pour $q>0$\textup{)}.}
 
 \LayerTarget{tohoku:def:point-indexed-cover-system}
 Bornons-nous maintenant aux recouvrements
-$\mathcal U=(U_x)_{x\in X}$ indexés par les points $x$ de $X$, tels que
+$\mathbf U=(U_x)_{x\in X}$ indexés par les points $x$ de $X$, tels que
 $x\in U_x$ pour tout $x$, ordonnons-les en écrivant
-$\mathcal U\preceq\mathcal U'$ si $U'_x\subset U_x$ pour tout $x$.
-
+$\mathbf U\leqq\mathbf U'$ si $U'_x\subset U_x$ pour tout $x$.
 \LayerTarget{tohoku:map:point-cover-refinement-complexes}
-Si $C_{\mathcal U}$ et $C_{\mathcal U'}$ sont les foncteurs-complexes
-correspondants sur $C^X$, on aura alors un homomorphisme fonctoriel
-$C_{\mathcal U}\longrightarrow C_{\mathcal U'}$, d'où un homomorphisme pour
+Si $C_{\mathrm U}$ et $C_{\mathrm U'}$ sont les foncteurs-complexes
+correspondants sur $\mathbf C^X$, on aura alors un homomorphisme fonctoriel
+$C_{\mathrm U}\to C_{\mathrm U'}$, d'où un homomorphisme pour
 les foncteurs spectraux correspondants. Un passage immédiat à la limite
 inductive donne alors le
 
-\smallskip
-\noindent\textbf{Correction éditoriale.} Le texte imprimé donne
-$U_x\subset U'_x$ tout en écrivant
-$C_{\mathcal U}\longrightarrow C_{\mathcal U'}$. Les restrictions de Čech
-ont ce sens lorsque $\mathcal U'$ raffine $\mathcal U$, donc lorsque
-$U'_x\subset U_x$ pour tout $x$. C'est cette relation corrigée qui est
-utilisée ici et dans la limite inductive suivante.
-
 \LayerTarget{tohoku:corollary:3.8.1:2}
-\noindent\textsc{Corollaire 2.} \textit{Soit $X$ un espace topologique
-quelconque. Il existe un foncteur spectral sur la catégorie $C^X$ des faisceaux
+\textsc{Corollaire 2.} \textit{Soit $X$ un espace topologique
+quelconque. Il existe un foncteur spectral sur la catégorie $\mathbf C^X$ des faisceaux
 de groupes abéliens sur $X$, aboutissant au foncteur gradué $(H^n(X,F))$, et
 dont le terme initial est donné par}
-
 \LayerTarget{tohoku:eq:global-cech-spectral-E2}
 \[
 E_2^{p,q}(F)=\check H^p(X,H^q(F))
 \]
-\textit{($H^q(F)$ étant le préfaisceau défini dans le th. 3.5.1). On a}
-
+\textit{\textup{(}$H^q(F)$ étant le préfaisceau défini dans le th. \textup{3.8.1)}. On a}
 \LayerTarget{tohoku:eq:global-cech-spectral-E20q}
 \[
 E_2^{0,q}(F)=0\quad\textit{pour }q>0.
@@ -47,8 +36,8 @@ Cette dernière formule résulte de la définition de
 $\check H^0(X,H^q(F))$ et du fait suivant :
 
 \LayerTarget{tohoku:lemma:3.8.2}
-\noindent\textsc{Lemme 3.8.2.} --- \textit{Soit $U$ un voisinage de $x$ et
-soit $c^q\in H^q(U,F)$, alors il existe un voisinage $V\subset U$ de $x$ tel
+\textsc{Lemme 3.8.2.} \textit{Soit $U$ un voisinage de $x$ et
+soit $c^q\in H^q(U,F)$, avec $q>0$, alors il existe un voisinage $V\subset U$ de $x$ tel
 que l'image de $c^q$ dans $H^q(V,F)$ soit nulle.}
 
 \LayerTarget{tohoku:proof:3.8.2}
@@ -61,46 +50,39 @@ $C\mid V$ est une résolution injective de $F\mid V$ en vertu de prop. 3.1.3,
 donc que $H^q(V,F)=H^q(\Gamma(C\mid V))$.
 
 La suite spectrale du corollaire 2 donne des homomorphismes fonctoriels
-
 \LayerTarget{tohoku:map:global-cech-to-derived-cohomology}
 \[
-\check H^p(X,F)\longrightarrow H^p(X,F)
+\check H^p(X,F)\to H^p(X,F)
 \]
 et la formule
-
 \LayerTarget{tohoku:eq:global-cech-E201}
-\[
-E_2^{0,1}=0
-\]
+$E_2^{0,1}=0$
 montre que :
 
 \LayerTarget{tohoku:corollary:3.8.1:3}
-\noindent\textsc{Corollaire 3.} \textit{Les homomorphismes précédents sont
-bijectifs si $p=0$ ou $1$ (ce que nous savions déjà) et des monomorphismes si
+\textsc{Corollaire 3.} \textit{Les homomorphismes précédents sont
+bijectifs si $p=0$ ou $1$ \textup{(}ce que nous savions déjà\textup{)} et des monomorphismes si
 $p=2$.}
 
 \LayerTarget{tohoku:remark:paracompact-cech-comparison}
-On retrouve d'ailleurs le fait que si $X$ est \textit{paracompact}, alors
+On retrouve d'ailleurs le fait que \textit{si $X$ est paracompact}, alors
 $\check H^p=H^p$, plus précisément, \textit{les homomorphismes canoniques
 ci-dessus sont alors des isomorphismes.} En effet, on vérifie dans ce cas
 (grâce au fait que le faisceau associé au préfaisceau $H^q(F)$ est nul si
 $q>0$) que
-
 \LayerTarget{tohoku:eq:paracompact-global-cech-E2-vanishing}
-\[
-E_2^{p,q}=0\quad\text{pour }q>0,
-\]
+$E_2^{p,q}=0$ pour $q>0$,
 cf. [9].
 
 \LayerTarget{tohoku:criterion:global-cech-edge-range}
 Le corollaire 3 se généralise ainsi : \textit{Si
 $\check H^p(X,H^q(F))=0$ pour $0<q<n$, alors l'homomorphisme
-$\check H^i(X,F)\longrightarrow H^i(X,F)$ est un isomorphisme pour $i\leq n$
+$\check H^i(X,F)\to H^i(X,F)$ est un isomorphisme pour $i\leqq n$
 et un monomorphisme pour $i=n+1$.} On en conclut (avec H. Cartan) :
 
 \LayerTarget{tohoku:corollary:3.8.1:4:p1}
-\noindent\textsc{Corollaire 4.} \textit{Soit $\mathcal U$ un ensemble
+\textsc{Corollaire 4.} \textit{Soit $\mathbf U$ un ensemble
 d'ouverts formant une base pour la topologie de $X$, soit $F$ un faisceau
-abélien sur $X$ tel que pour toute suite non vide}
+abélien sur $X$ tel que pour toute suite non}
 
 \TohokuContinuation{177}

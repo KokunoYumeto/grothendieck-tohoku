@@ -2,86 +2,42 @@
 \SourcePage{128}
 
 \LayerTarget{tohoku:section:1.4:p4}
-\noindent the canonical surjection $B\longrightarrow B/B'$. Dually, one
+\noindent the canonical surjection $B\to B/B'$. Dually, one
 defines the direct image $u(A')$ of a quotient $A'$ of $A$; it is a quotient
 of $B$. All the usual formal properties are proved for these notions.
 
 \LayerTarget{tohoku:section:1.4:exact-sequence}
-Finally, recall that a pair
-
-\[
-  A\mathrel{\mathop{\longrightarrow}^{u}}B
-   \mathrel{\mathop{\longrightarrow}^{v}}C
-\]
-
-\noindent of two consecutive morphisms is called \textit{exact} if
+Finally, recall that a pair $A\mathrel{\mathop{\to}^{u}}B \mathrel{\mathop{\to}^{v}}C$ of two consecutive morphisms is called \textit{exact} if
 $\mathrm{Ker}\,v=\mathrm{Im}\,u$, whence, more generally, the notion of an
-\textit{exact sequence} of morphisms. For a sequence
+\textit{exact sequence} of morphisms. For a sequence $0\to A\to B\to C$ to be exact, it is necessary and sufficient that, for every
+$X\in\mathbf{C}$, the following sequence of homomorphisms of abelian groups be exact:
 
 \[
-  0\longrightarrow A\longrightarrow B\longrightarrow C
-\]
-
-\noindent to be exact, it is necessary and sufficient that, for every
-$X\in C$, the following sequence of homomorphisms of abelian groups be exact:
-
-\[
-  0\longrightarrow\mathrm{Hom}(X,A)\longrightarrow\mathrm{Hom}(X,B)
-  \longrightarrow\mathrm{Hom}(X,C).
+  0\to\mathrm{Hom}(X,A)\to\mathrm{Hom}(X,B)
+  \to\mathrm{Hom}(X,C).
 \]
 
 \noindent There is a dual criterion for a sequence
-$C\longrightarrow B\longrightarrow A\longrightarrow0$ to be exact. For a
-sequence
-
-\[
-  0\longrightarrow A'\longrightarrow A\longrightarrow A''\longrightarrow0
-\]
-
-\noindent to be exact, it is necessary and sufficient that $u$ be a
+$C\to B\to A\to0$ to be exact. For a
+sequence $0\to A'\to A\to A''\to0$ to be exact, it is necessary and sufficient that $u$ be a
 monomorphism and that $v$ be a generalized cokernel of it.
 
 \LayerTarget{tohoku:section:1.4:exact-functor}
-Let $F$ be a covariant functor from an abelian category $C$ to another such
-category $C'$. Following the terminology introduced in [6], we say that $F$ is
+Let $F$ be a covariant functor from an abelian category $\mathbf{C}$ to another such
+category $\mathbf{C}'$. Following the terminology introduced in [6], we say that $F$ is
 a \textit{half-exact functor} (respectively, \textit{left exact}, respectively,
-\textit{right exact}) if, for every exact sequence
-
-\[
-  0\longrightarrow A'\longrightarrow A\longrightarrow A''\longrightarrow0
-\]
-
-\noindent in $C$, the corresponding sequence of morphisms
-
-\[
-  0\longrightarrow F(A')\longrightarrow F(A)\longrightarrow F(A'')
-  \longrightarrow0
-\]
-
-\noindent is exact at $F(A)$ (respectively, at $F(A)$ and $F(A')$,
+\textit{right exact}) if, for every exact sequence $0\to A'\to A\to A''\to0$ in $\mathbf{C}$, the corresponding sequence of morphisms $0\to F(A')\to F(A)\to F(A'') \to0$ is exact at $F(A)$ (respectively, at $F(A)$ and $F(A')$,
 respectively, at $F(A)$ and $F(A'')$). $F$ is called an \textit{exact functor}
 if it is both left and right exact, i.e. if it carries an exact sequence of the
 preceding type to an exact sequence; it then carries \textit{every} exact
 sequence to an exact sequence. If $F$ is left exact, it carries an exact
-sequence
-
-\[
-  0\longrightarrow A\longrightarrow B\longrightarrow C
-\]
-
-\noindent to an exact sequence
-
-\[
-  0\longrightarrow F(A)\longrightarrow F(B)\longrightarrow F(C);
-\]
-
-\noindent there is a dual statement for right-exact functors. If $F$ is a
+sequence $0\to A\to B\to C$ to an exact sequence $0\to F(A)\to F(B)\to F(C)$; there is a dual statement for right-exact functors. If $F$ is a
 contravariant functor, it is said to be half-exact (respectively, left exact,
-etc.) if it has that property as a covariant functor from $C^\circ$ to $C'$.
+etc.) if it has that property as a covariant functor from $\mathbf{C}^\circ$ to $\mathbf{C}'$.
 The composite of covariant left-exact (respectively, right-exact) functors is
 of the same type. We refer to [6] for further sorites of this kind and for the
 study of exactness properties of multifunctors. As an important example, note
-that $\mathrm{Hom}(A,B)$ is an additive bifunctor on $C\times C$, with values
+that $\mathrm{Hom}(A,B)$ is an additive bifunctor on $\mathbf{C}\times\mathbf{C}$, with values
 in the abelian category of abelian groups, contravariant in $A$ and covariant
 in $B$, and left exact with respect to both arguments (that is, a left-exact
 bifunctor in the terminology of [6]).
@@ -93,21 +49,15 @@ of infinite direct sums and direct products. Here, in increasing order of
 strength, are the most frequently used axioms.
 
 \LayerTarget{tohoku:section:1.5:AB3}
-\noindent\textbf{AB 3)} \textit{For every family $(A_i)_{i\in I}$ of objects
-of $C$, the direct sum of the $A_i$ (cf. No.~1) exists.}
+\noindent AB 3) \textit{For every family $(A_i)_{i\in I}$ of objects
+of $\mathbf{C}$, the direct sum of the $A_i$ (cf. No.~1) exists.}
 
 \LayerTarget{tohoku:section:1.5:p1}
 This axiom implies that, for every family of subobjects $A_i$ of an object
-$A\in C$, the supremum of the $A_i$ exists: it suffices to take the image of
-the direct sum $\bigoplus_{i\in I}A_i$ under the morphism whose components are
-the canonical injections $A_i\longrightarrow A$. We have seen that the direct
+$A\in\mathbf{C}$, the supremum of the $A_i$ exists: it suffices to take the image of
+the direct sum $\oplus A_i$ under the morphism whose components are
+the canonical injections $A_i\to A$. We have seen that the direct
 sum of an arbitrary family of surjective morphisms is surjective (No.~1); in
-fact, one even sees that the functor
-
-\[
-  (A_i)_{i\in I}\longmapsto\bigoplus_{i\in I}A_i,
-\]
-
-\noindent defined on the ``product category'' $C^I$, and taking values
+fact, one even sees that the functor $(A_i)_{i\in I}\to\displaystyle\bigoplus_{i\in I}A_i$, defined on the ``product category'' $\mathbf{C}^I$, and taking values
 
 \TohokuContinuation{129}

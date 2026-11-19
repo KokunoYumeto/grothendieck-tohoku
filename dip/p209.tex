@@ -3,75 +3,74 @@
 \SourcePage{209}
 
 \LayerTarget{tohoku:conclusion:theorem-5.5.3:p1}
-\noindent précédent est injectif si $n=1$. De plus :
+\noindent\textit{précédent est injectif si $n=1$.} De plus :
 
 \LayerTarget{tohoku:corollary:1-theorem-5.5.3}
-\noindent\textsc{Corollaire 1.} \textit{Si les $U_{i_0\ldots i_p}$ sont tous
-$A$-acycliques, alors les homomorphismes (5.5.5) sont des isomorphismes.}
+\textsc{Corollaire 1.} \textit{Si les $U_{i_0\ldots i_p}$ sont tous
+$A$-acycliques, alors les homomorphismes \textup{(5.5.5)} sont des isomorphismes.}
 
 \LayerTarget{tohoku:corollary:2-theorem-5.5.3}
-\noindent\textsc{Corollaire 2.} \textit{Le théorème précédent est encore
-valable si $\mathcal U$ est un $G$-recouvrement fermé, pourvu que l'on soit dans
-l'un ou l'autre cas suivant : a) $\mathcal U$ est localement fini et $X$
-paracompact, b) $\mathcal U$ est fini.}
+\textsc{Corollaire 2.} \textit{Le théorème précédent est encore
+valable si ${\mathbf U}$ est un $G$-recouvrement fermé, pourvu que l'on soit dans
+l'un ou l'autre cas suivant : a) ${\mathbf U}$ est localement fini et $X$
+paracompact, b) ${\mathbf U}$ est fini.}
 
 \LayerTarget{tohoku:proof:corollary-2-theorem-5.5.3}
 Dans le cas a), en vertu de ce qui est censé avoir été vu dans 3.8 (voir
 remarque de 3.8), les conditions (i) et (ii) du lemme 5.5.1 sont encore
 satisfaites (pour (i), c'est d'ailleurs trivial sans hypothèse de
-paracompacité, grâce au fait que $\mathcal U$ est localement fini), et la
-formule $R^q\mathbf K(A)=C(\mathcal U,H^q(A))$ est encore valable. Dans le cas
+paracompacité, grâce au fait que ${\mathbf U}$ est localement fini), et la
+formule $R^q\mathbf K(A)=C({\mathbf U},H^q(A))$ est encore valable. Dans le cas
 b), il faut suivre la méthode de Godement (qu'il développe pour $G$ réduit à
 l'unité), et que nous allons esquisser, à cause des possibilités d'application
 à la Géométrie Algébrique abstraite. Tout d'abord, on introduit, suivant une
-idée de P. Cartier, le complexe de faisceaux $C(\mathcal U,A)$, dont le complexe
+idée de P. Cartier, le complexe de faisceaux ${\mathbf C}({\mathbf U},A)$, dont le complexe
 des sections sur un ouvert $V$ quelconque est par définition
-$C(\mathcal U|V,A|V)$ (où le signe $|$ indique comme toujours qu'on prend la
+$C({\mathbf U}|V,A|V)$ (oû le signe $|$ indique comme toujours qu'on prend la
 restriction à l'ensemble indiqué après ce signe). On prouve que c'est là une
-résolution de $A$ (voir livre de Godement [9] pour des détails). Nous allons lui
+\emph{résolution} de $A$ (voir livre de Godement [9] pour des détails). Nous allons lui
 appliquer le corollaire au lemme 5.5.2 (les lettres dans l'énoncé de ce lemme
 ayant la même signification que plus haut). Il reste seulement à prouver que
-$R^iF(C)=H^q(X,C(\mathcal U,A))$ est isomorphe (fonctoriellement) à
-$C(\mathcal U,H^i(A))$. Cela n'offre pas de difficulté, grâce au fait que
-$\mathcal U$ est fini, et en utilisant le théorème 3.5.1.
+$R^qF(\mathrm C)=H^q(X,{\mathbf C}({\mathbf U},A))$ est isomorphe (fonctoriellement) à
+$C({\mathbf U},H^q(A))$. Cela n'offre pas de difficulté, grâce au fait que
+${\mathbf U}$ est \emph{fini}, et en utilisant le théorème 3.5.1.
 
 \LayerTarget{tohoku:definition:fixed-point-free-g-cover}
-Nous dirons qu'un $G$-recouvrement $\mathcal U=(U_i)_{i\in I}$ est ``sans point
-fixe'' si $G$ opère dans $I$ sans point fixe, i. e. si $g\ne e$ implique
-$g\cdot i\ne i$ pour tout $i$. Si alors $P$ est un $G$-préfaisceau quelconque,
+Nous dirons qu'un \emph{$G$-recouvrement} ${\mathbf U}=(U_i)_{i\in I}$ est ``\emph{sans point fixe}'' si $G$ opère dans $I$ sans point fixe, i. e. si $g\ne e$ implique
+$g.\, i\ne i$ pour tout $i$. Si alors $P$ est un $G$-préfaisceau quelconque,
 alors pour tout $n$, on a
 
 \LayerTarget{tohoku:equation:5.5.6}
 \[
 \tag{5.5.6}
-C^n(\mathcal U,P)=
+C^n({\mathbf U},P)=
 \prod_{(i_0,\ldots,i_n)}\ \prod_{g\in G}
-P(g\cdot U_{i_0\ldots i_p}),
+P(g.\, U_{i_0\ldots i_p}),
 \]
 
 \LayerTarget{tohoku:calculation:fixed-point-free-g-cover-cochains}
-le premier signe $\prod$ étant étendu à un système complet de représentants
-$(i_0,\ldots,i_n)$ de $I^{n+1}/G$. Dans le deuxième produit, tous les termes
-sont canoniquement isomorphes à $P(U_{i_0\ldots i_n})$, de sorte que ce produit
+le premier signe $\displaystyle\prod$ étant étendu à un système complet de représentants
+$(i_0,\ldots,i^n)$ de $I^{n+1}/G$. Dans le deuxième produit, tous les termes
+sont canoniquement isomorphes à $P(U_{i_0\ldots,i_n})$, de sorte que ce produit
 s'identifie au groupe des applications de $G$ dans le groupe fixe
 $P(U_{i_0\ldots i_n})$, $G$ y opérant par translations gauches. Il est bien
 connu qu'un tel $G$-module est $\Gamma^G$-acyclique, donc il en est de même de
-$C^n(\mathcal U,P)$. On fera cependant attention que la formule (5.5.6) n'est
-valable qu'en supposant que $C(\mathcal U,P)$ désigne le complexe des cochaînes
-quelconques (non nécessairement alternées) de $\mathcal U$ à coefficients dans
+$C^n({\mathbf U},P)$. On fera cependant attention que la formule (5.5.6) n'est
+valable qu'en supposant que $C({\mathbf U},P)$ désigne le complexe des cochaines
+\emph{quelconques} (non nécessairement alternées) de ${\mathbf U}$ à coéfficients dans
 $P$ (alors que les considérations antérieures valaient indifféremment pour les
-cochaînes quelconques, ou les cochaînes alternées). En utilisant la première
+cochaines quelconques, ou les cochaines alternées). En utilisant la première
 suite spectrale d'hyperhomologie du foncteur $\Gamma^G$ par rapport au complexe
-$C(\mathcal U,P)$, on trouve alors :
+$C({\mathbf U},P)$, on trouve alors :
 
 \LayerTarget{tohoku:proposition:5.5.4}
-\noindent\textsc{Proposition 5.5.4.} \textit{Si $\mathcal U$ est un
+\textsc{Proposition 5.5.4.} \textit{Si ${\mathbf U}$ est un
 $G$-recouvrement sans points fixes, alors on a pour tout $G$-préfaisceau $P$ :}
 
 \LayerTarget{tohoku:equation:5.5.7}
 \[
 \tag{5.5.7}
-H^n(\mathcal U,G,P)=H^n((C(\mathcal U,P)^G)
+H^n({\mathbf U},G,P)=H^n((C({\mathbf U},P)^G)
 \]
 
 \TohokuContinuation{210}

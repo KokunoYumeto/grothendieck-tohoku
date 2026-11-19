@@ -1,5 +1,5 @@
 % Corrected French for printed p.157.
-% Corrections: upper endpoint +infinity; antifiltre spelling; plural parties.
+% Corrections: upper endpoint +infinity; support subscript Phi; antifiltre spelling; plural parties.
 \SourcePage{157}
 
 \LayerTarget{tohoku:def:sections-and-supports}
@@ -10,26 +10,25 @@ $\Gamma(A,F)=\Gamma(F\vert A)$, où $F\vert A$ désigne la restriction de $F$ à
 $A$). Plus généralement, soit $\Phi$ un ensemble non vide de parties fermées
 de $X$, filtrant croissant, et tel que $A\in\Phi$, $B\subset A$ implique
 $B\in\Phi$ : pour abréger, nous dirons que $\Phi$ est un \textit{antifiltre
-de parties fermées de $X$}. On désigne par $\Gamma_\Phi(F)$ le sous-groupe de
+de parties fermées} de $X$. On désigne par $\Gamma_\Phi(F)$ le sous-groupe de
 $\Gamma(F)$ formé des sections $f$ dont le support (= complémentaire du plus
 grand ouvert dans $X$ sur lequel la restriction de $f$ soit nulle) est
 $\in\Phi$.
-
 \LayerTarget{tohoku:def:cohomology-with-supports}
 On voit aussitôt que $\Gamma_\Phi(F)$ est un foncteur exact à gauche défini
-sur $C^X$ à valeurs dans la catégorie des groupes abéliens. Il s'impose donc
+sur $\mathbf C^X$ à valeurs dans la catégorie des groupes abéliens. Il s'impose donc
 de considérer ses foncteurs dérivés droits, identiques aux satellites droits
 (cf. 2.3), qui existent en vertu du corollaire à la prop. 3.1.1. On les note
 $H^p_\Phi(X,F)$, (où $p$ est un entier quelconque). D'après la théorie des
 foncteurs dérivés :
 
 \LayerTarget{tohoku:prop:3.2.1}
-\textsc{Proposition 3.2.1.} --- \textit{Le système des foncteurs
-$H^p_\Phi(X,F)$ ($-\infty<p<+\infty$) est caractérisé par les conditions
-suivantes : ils forment un foncteur cohomologique sur $C^X$ à valeurs dans la
+\indent\textsc{Proposition 3.2.1.} \textit{Le système des foncteurs
+$H^p_\Phi(X,F)$ \textup{(}$-\infty<p<+\infty$\textup{)} est caractérisé par les conditions
+suivantes : ils forment un foncteur cohomologique sur $\mathbf C^X$ à valeurs dans la
 catégorie des groupes abéliens, $H^p_\Phi(X,F)$ est nul pour $p<0$, coïncide
-avec $\Gamma_\Phi(F)$ pour $p=0$, et est effaçable (c'est-à-dire s'annule pour
-$F$ injectif) si $p>0$.}
+avec $\Gamma_\Phi(F)$ pour $p=0$, et est effaçable \textup{(}c'est-à-dire s'annule pour
+$F$ injectif\textup{)} si $p>0$.}
 
 \LayerTarget{tohoku:construction:compute-cohomology-with-supports}
 Pour calculer les $H^p_\Phi(X,F)$, on prend une résolution droite de $F$ par
@@ -48,24 +47,24 @@ indiquerons plus bas (cf. 3.3).
 Soit $f$ une application continue d'un espace $X$ dans un espace $Y$, pour
 tout faisceau $F$ sur $Y$, on définit de façon naturelle le \textit{faisceau
 image réciproque} de $F$ par $f$, (noté $f^{-1}(F)$ par abus de notations) :
-on considère $F$ comme espace étalé sur $Y$, il suffit de reprendre la
+si on considère $F$ comme espace étalé sur $Y$, il suffit de reprendre la
 définition de l'image inverse d'un fibré. On obtient ainsi un \textit{foncteur
-covariant additif exact} $F\longmapsto f^{-1}(F)$ de $C^Y$ dans $C^X$, que
-nous allons désigner par $g$. Pour tout $F\in C^Y$, on a un homomorphisme
-évident $\Gamma(F)\longrightarrow\Gamma(g(F))$, d'ailleurs fonctoriel, i. e.
+covariant additif exact} $F\to f^{-1}(F)$ de $\mathbf C^Y$ dans $\mathbf C^X$, que
+nous allons désigner par $\mathrm{g}$. Pour tout $F\in \mathbf C^Y$, on a un homomorphisme
+évident $\Gamma(F)\to\Gamma(\mathrm{g}(F))$, d'ailleurs fonctoriel, i. e.
 on a un homomorphisme de foncteurs
-$\Gamma^Y\longrightarrow\Gamma^Xg$ (où nous avons mis en exposant l'espace
+$\Gamma^Y\to\Gamma^X\mathrm{g}$ (où nous avons mis en exposant l'espace
 relativement auquel on considère le foncteur $\Gamma$). Plus généralement,
 considérons un antifiltre $\Phi$ de parties fermées de $X$ et un antifiltre
 $\Psi$ de parties fermées de $Y$ tel que pour tout $B\in\Psi$, on ait
-$f^{-1}(B)\in\Phi$. Alors pour tout $F\in C^Y$, l'homomorphisme
-$\Gamma(F)\longrightarrow\Gamma(g(F))$ applique $\Gamma_\Psi(F)$ dans
-$\Gamma_\Phi(g(F))$, d'où un homomorphisme fonctoriel
-$\Gamma^Y_\Psi\longrightarrow\Gamma^X_\Phi g$. D'ailleurs, $g$ étant un
-foncteur exact, le foncteur $(R\Gamma^X_\Phi)g$ peut être considéré comme un
-foncteur cohomologique sur $C^Y$, se réduisant à $\Gamma^X_\Phi g$ en
+$f^{-1}(B)\in\Phi$. Alors pour tout $F\in \mathbf C^Y$, l'homomorphisme
+$\Gamma(F)\to\Gamma(\mathrm{g}(F))$ applique $\Gamma_\Psi(F)$ dans
+$\Gamma_\Phi(\mathrm{g}(F))$, d'où un homomorphisme fonctoriel
+$\Gamma_\Psi\to\Gamma_\Phi \mathrm{g}$. D'ailleurs, $\mathrm{g}$ étant un
+foncteur \textit{exact}, le foncteur $(R\Gamma_\Phi)\mathrm{g}$ peut être considéré comme un
+\textit{foncteur cohomologique} sur $\mathbf C^Y$, se réduisant à $\Gamma^X_\Phi \mathrm{g}$ en
 dimensions 0 ; comme le foncteur cohomologique $R\Gamma^Y_\Psi$ est
-\og universel\fg{} (prop. 2.2.1) l'homomorphisme fonctoriel
-$\Gamma^Y_\Psi\longrightarrow\Gamma^X_\Phi g$
+``universel'' (prop. 2.2.1) l'homomorphisme fonctoriel
+$\Gamma^Y_\Psi\to\Gamma^X_\Phi \mathrm{g}$
 
 \TohokuContinuation{158}

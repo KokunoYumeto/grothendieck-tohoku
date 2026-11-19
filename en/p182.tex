@@ -5,53 +5,50 @@
 % The incoming continuation is already integrated at the p.181 reading seam.
 
 \LayerTarget{tohoku:corollary:3.10.1:1}
-\noindent\textsc{Corollary 1.} \textit{Let $X$ be a space equipped with a
+\textsc{Corollary 1.} \textit{Let $X$ be a space equipped with a
 paracompactifying family $\Phi$. Then, for every abelian sheaf $F$ on $X$,}
-
 \LayerTarget{tohoku:eq:corollary-3.10.1-1:support-limit}
 \[
-H^p_{\Phi}(X,F)=\varinjlim_U H^p(X,F_U),
+H^p_{\Phi}(X,F)=\varinjlim\limits_U H^p(X,F_U)
 \]
 \textit{where the inductive limit is taken over the filtered ordered set of
-open subsets $U$ of $X$ whose closure belongs to $\Phi$. (Here $F_U$ denotes
+open subsets $U$ of $X$ whose closure belongs to $\Phi$. \textup{(}Here $F_U$ denotes
 the sheaf on $X$ whose restriction to $U$ is $F|U$ and whose restriction to
-$C U$ is zero.)}
+$\mathrm C U$ is zero\textup{)}.}
 
 \LayerTarget{tohoku:proof:corollary-3.10.1-1}
 By Theorem 3.5.1,
 $H^p(X,F_U)=H^p_{\Phi_U}(U,F)$, where $\Phi_U$ is the family of subsets of
 $U$ that are closed in $X$. Setting
 $\Gamma_{\Phi_U}(F)=H^0(X,F_U)$, we may also write
-$H^p(X,F_U)=\mathbf R^p\Gamma_{\Phi_U}(F)$, in view of Proposition 3.1.3.
+$H^p(X,F_U)=R^p\Gamma_{\Phi_U}(F)$, in view of Proposition 3.1.3.
 Hence Proposition 3.10.1 gives
-$\varinjlim_U H^p(X,F_U)=\mathbf R^p\Gamma_{\Phi}(F)$, since
-$\varinjlim_U\Gamma_{\Phi_U}(F)=\Gamma_{\Phi}(F)$, q.e.d.
-
+$\mathop{\underset{\to}{\lim}} H^p(X,F_U)=R^p\Gamma_{\Phi}(F)$, since
+$\mathop{\underset{\to}{\lim}}\Gamma_{\Phi_U}(F)=\Gamma_{\Phi}(F)$, q.e.d.
 \LayerTarget{tohoku:remark:corollary-3.10.1-1:cartan}
-The preceding corollary is sometimes useful for reducing cohomology ``with
+--- The preceding corollary is sometimes useful for reducing cohomology ``with
 supports in $\Phi$'' to cohomology with arbitrary supports; it was pointed
-out to me by H. Cartan.
+out to me by Mr. Cartan.
 
 \LayerTarget{tohoku:corollary:3.10.1:2}
-\noindent\textsc{Corollary 2.} \textit{Let $X$ be a topological space and let
+\textsc{Corollary 2.} \textit{Let $X$ be a topological space and let
 $Y$ be a subset of $X$ having a fundamental system of paracompact
-neighborhoods. (It is enough, for example, that $X$ be metrizable, or locally
-compact and paracompact.) Then, for every abelian sheaf $F$ on $X$,}
-
+neighborhoods. \textup{(}It is enough, for example, that $X$ be metrizable, or that $X$ be locally
+compact and paracompact and $Y$ be closed\textup{)}. Then, for every abelian sheaf $F$ on $X$,}
 \LayerTarget{tohoku:eq:corollary-3.10.1-2:neighborhood-limit}
 \[
-H^p(Y,F)=\varinjlim_U H^p(U,F),
+H^p(Y,F)=\mathop{\underset{\to}{\lim}} H^p(U,F)
 \]
 \textit{where the limit is taken over the decreasing filtered ordered set of
 open neighborhoods $U$ of $Y$ in $X$.}
 
 \LayerTarget{tohoku:proof:corollary-3.10.1-2}
 Indeed, the hypothesis gives
-$H^0(Y,F)=\varinjlim_U H^0(U,F)$ ([11], Proposition 2.2.1), while the derived
-functors of $F\longmapsto H^0(U,F)$ are the $H^p(U,F)$. Thus Corollary 2 is a
+$H^0(Y,F)=\mathop{\underset{\to}{\lim}} H^0(U,F)$ ([11], Proposition 2.2.1), while the derived
+functors of $F\to H^0(U,F)$ are the $H^p(U,F)$. Thus Corollary 2 is a
 special case of the proposition. Observe also that
-$H^0(Y,F)=\varinjlim_U H^0(U,F)$, and consequently Corollary 2 remains valid
-when $Y$ is \textit{closed} and has \textit{a paracompact neighborhood}; the
+$H^0(Y,F)=\mathop{\underset{\to}{\lim}} H^0(U,F)$, and consequently Corollary 2 remains valid
+when $Y$ is \textit{closed} and has \textit{a} paracompact neighborhood; the
 proof is analogous to that of [11]. The cited work also gives a simple
 counterexample, with $p=0$, for the case in which no paracompactness
 hypothesis is imposed.
@@ -61,13 +58,12 @@ As a supplement, we record without proof the following result, a special case
 of general results on projective systems. Let $X$ be a locally compact space,
 and consider the increasing filtered set of relatively compact open subsets
 $U$ of $X$. For every abelian sheaf $F$ on $X$, the restriction homomorphisms
-$H^p(X,F)\longrightarrow H^p(U,F)$ define canonical homomorphisms, which are
+$H^p(X,F)\to H^p(U,F)$ define canonical homomorphisms, which are
 evidently homomorphisms of $\partial$-functors:
-
 \LayerTarget{tohoku:eq:3.10.2}
 \[
 \tag{3.10.2}
-H^p(X,F)\longrightarrow\varprojlim_U H^p(U,F),
+H^p(X,F)\to\mathop{\underset{\leftarrow}{\lim}} H^p(U,F)
 \]
 which are evidently bijective for $p=0$.
 

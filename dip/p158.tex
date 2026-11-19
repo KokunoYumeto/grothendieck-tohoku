@@ -4,82 +4,74 @@
 \LayerTarget{tohoku:construction:inverse-image-comparison:p2}
 \noindent se prolonge de façon unique en un homomorphisme de foncteurs
 cohomologiques
-\[
-R\Gamma^Y_\Psi\longrightarrow (R\Gamma^X_\Phi)g.
-\]
+$R\Gamma_\Psi\to (R\Gamma_\Phi)\mathrm{g}$.
 On a donc prouvé :
 
 \LayerTarget{tohoku:prop:3.2.2}
-\textsc{Proposition 3.2.2.} --- \textit{Soit $f$ une application continue
-d'un espace $X$ dans un espace $Y$, $\Phi$ (resp. $\Psi$) un antifiltre de
-parties fermées de $X$ (resp. $Y$), tels que $B\in\Psi$ implique
+\indent\textsc{Proposition 3.2.2.} \textit{Soit $f$ une application continue
+d'un espace $X$ dans un espace $Y$, $\Phi$ \textup{(}resp. $\Psi$\textup{)} un antifiltre de
+parties fermées de $X$ \textup{(}resp. $Y$\textup{)}, tels que $B\in\Psi$ implique
 $f^{-1}(B)\in\Phi$. On peut de façon unique trouver, pour tout faisceau de
 groupes abéliens $F$ sur $Y$, des homomorphismes}
 \[
-H^p_\Psi(Y,F)\longrightarrow H^p_\Phi(X,f^{-1}(F))
+H^p_\Psi(Y,F)\to H^p_\Phi(X,f^{-1}(F))
 \qquad(-\infty<p<+\infty)
 \]
 \textit{de façon à obtenir un homomorphisme de foncteurs cohomologiques, se
-réduisant à l'homomorphisme naturel en dimension 0.}
+réduisant à l'homomorphisme naturel en dimension \textup{0}.}
 
 Ces homomorphismes seront appelés homomorphismes naturels. De leur unicité
 résulte une propriété de transitivité évidente, dont l'énoncé est laissé au
 lecteur.
 
 \LayerTarget{tohoku:construction:restriction-homomorphisms}
-En particulier, si $Y$ est une \textit{partie de $X$}, et si on pose
-$H^p_\Psi(Y,F)=H^p_\Psi(Y,F\vert Y)$, où $F\vert Y$ désigne la
-\og restriction\fg{} du faisceau $F$ à $Y$, on a des \og homomorphismes de
-restriction\fg{}
-\[
-H^p_\Phi(X,F)\longrightarrow H^p_{\Phi\cap Y}(Y,F),
-\]
+En particulier, si $Y$ est une \textit{partie} de $X$, et si on pose
+$H^p_\Psi(Y,F)=H^p_\Psi(Y,F\vert Y)$, oû $F\vert Y$ désigne la
+``restriction'' du faisceau $F$ à $Y$, on a des ``homomorphismes de
+\textit{restriction}''
+$H^p_\Phi(X,F)\to H^p_{\Phi\cap Y}(Y,F)$,
 où $\Phi\cap Y$ désigne la \textit{trace} de $\Phi$ sur $Y$.
 
 \LayerTarget{tohoku:section:3.3}
-\textbf{3.3. Critères d'acyclicité.} Les développements de ce numéro, très
+\indent\textbf{3.3. Critères d'acyclicité.} Les développements de ce numéro, très
 commodes pour la suite, sont dûs à Godement, et seront traités de façon
 détaillée dans le livre de Godement [9] cité dans l'Introduction.
 
 \LayerTarget{tohoku:lemma:3.3.1}
-\textsc{Lemme 3.3.1.} --- \textit{Soit $F$ un foncteur covariant d'une
-catégorie abélinne $C$ dans une autre $C'$, on suppose que tout objet de $C$
+\indent\textsc{Lemme 3.3.1.} \textit{Soit $F$ un foncteur covariant d'une
+catégorie abélinne $\mathbf C$ dans une autre $\mathbf C'$, on suppose que tout objet de $\mathbf C$
 est isomorphe à un sous-truc d'un objet injectif. Soit $\mathbf M$ une classe
-d'objets de $C$, satisfaisant aux conditions suivantes : (i) Pour tout
-$A\in C$, il existe un monomorphisme de $A$ dans un $M\in\mathbf M$ (ii) Tout
-$A\in C$, isomorphe à un facteur direct d'un $M\in\mathbf M$, appartient à
-$\mathbf M$ (iii) Pour toute suite exacte
-$0\longrightarrow M'\longrightarrow M\longrightarrow M''\longrightarrow0$
-dans $C$ avec $M'$ et $M$ dans $\mathbf M$, $M''$ appartient aussi à
+d'objets de $\mathbf C$, satisfaisant aux conditions suivantes : \textup{(}i\textup{)} Pour tout
+$A\in \mathbf C$, il existe un monomorphisme de $A$ dans un $M\in\mathbf M$ \textup{(}ii\textup{)} Tout
+$A\in \mathbf C$, isomorphe à un facteur direct d'un $M\in\mathbf M$, appartient à
+$\mathbf M$ \textup{(}iii\textup{)} Pour toute suite exacte
+$0\to M'\to M\to M''\to0$
+dans $\mathbf C$ avec $M'$ et $M$ dans $\mathbf M$, $M''$ appartient aussi à
 $\mathbf M$, et la suite
-$0\longrightarrow F(M')\longrightarrow F(M)\longrightarrow
-F(M'')\longrightarrow0$ est aussi exacte. Sous ces conditions, tout objet
-injectif de $C$ est dans $\mathbf M$, et pour tout $M\in\mathbf M$, on a
+$0\to F(M')\to F(M)\to
+F(M'')\to0$ est aussi exacte. Sous ces conditions, tout objet
+injectif de $\mathbf C$ est dans $\mathbf M$, et pour tout $M\in\mathbf M$, on a
 $R^pF(M)=0$ pour $p>0$.}
 
-Soit d'abord $I$ un objet injectif dans $C$, $I$ se plonge dans un
+Soit d'abord $I$ un objet injectif dans $\mathbf C$, $I$ se plonge dans un
 $M\in\mathbf M$ en vertu de (i), et est donc isomorphe à un facteur direct de
 $M$ (puisque $I$ est injectif), donc est dans $\mathbf M$ en vertu de (ii).
-Soit $M\in\mathbf M$, prouvons $R^pF(M)=0$ pour $p>0$ ; pour ceci considérons
-une résolution droite de $M$ par des objets injectifs $C^i$ ($i\geq0$), soit
+Soit $M\in\mathbf M$, prouvons $R^pF(M)=0$ pour $p>0$, pour ceci considérons
+une résolution droite de $M$ par des objets injectifs $C^i$ ($i\geqq0$), soit
 $Z^i$ le sous-truc des cycles dans $C^i$, il suffit de prouver que les suites
-\[
-0\longrightarrow F(M)\longrightarrow F(C^0)\longrightarrow F(Z^1)
-\longrightarrow0,\qquad
-0\longrightarrow F(Z^0)\longrightarrow F(C^0)\longrightarrow F(Z^1)
-\longrightarrow0,\quad\text{etc.}
-\]
+$0\to F(M)\to F(C^0)\to F(Z^1)\to0$,
+$0\to F(Z^0)\to F(C^0)\to F(Z^1)\to0$ etc.
 sont exactes, et pour ceci il suffit de prouver en vertu de (iii) que les
-$Z^i$ et $C^i$ sont dans $\mathbf M$. On le sait déjà pour les $C^i$
+$Z^i$ et $C^i$ sont dans $M$. On le sait déjà pour les $C^i$
 puisqu'ils sont injectifs, et pour les $Z^i$ cela résulte de (iii) par
 récurrence sur $i$.
 
 \LayerTarget{tohoku:cor:3.3.1}
-\textsc{Corollaire.} --- \textit{Pour tout $A\in C$, on peut calculer les
-$R^pF(A)$ à l'aide d'une résolution (quelconque) de $A$ par des
+\indent\textsc{Corollaire.} \textit{Pour tout $A\in \mathbf C$, on peut calculer les
+$R^pF(A)$ à l'aide d'une résolution \textup{(}quelconque\textup{)} de $A$ par des
 $C^i\in\mathbf M$.}
 
-En effet, une telle résolution existe en vertu de (i), et elle permet de
+En effet, une telle résolution existe en vertu de (\textit{i}), et elle permet de
 calculer les $R^pF(A)$ puisque les $C^i$ sont $F$-acycliques en vertu du
 lemme.
 

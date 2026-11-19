@@ -7,33 +7,26 @@
 \LayerTarget{tohoku:construction:godement-resolution}
 \textit{Resolution of the identity.} For every sheaf $F$, let $C^0(F)$ be the
 product sheaf defined by the family of sets $F(x)$. There is a natural
-injective homomorphism $F\longrightarrow C^0(F)$. Restricting to abelian
+injective homomorphism $F\to C^0(F)$. Restricting to abelian
 sheaves on $X$, the method of 2.5, Example a), constructs a resolution
 $C(F)$ of the identity. It agrees with $C^0(F)$ in degree 0 and, in degree
-$n\geq2$, is defined by
-\[
-C^n(F)=C^0\bigl(C^{n-1}(F)/\operatorname{Im}C^{n-2}(F)\bigr).
-\]
-The $C^n(F)$ are flabby and hence $\Gamma_\Phi$-acyclic for every antifilter
-$\Phi$ of closed subsets. Thus $\Gamma_\Phi C(F)$ is a resolving functor for
+$n\geqq2$, is defined by
+$C^n(F)=C^0(C^{n-1}(F)/\operatorname{Im}C^{n-2}(F))$.
+The $C^n(A)$ are flasque and hence $\Gamma_\Phi$-acyclic for every antifilter
+$\Phi$ of closed subsets. Thus $\Gamma_\Phi C(A)$ is a resolving functor for
 $\Gamma_\Phi$, and
-\[
-H^n_\Phi(X,F)=H^n\bigl(\Gamma_\Phi C(F)\bigr).
-\]
-$C(F)$ is called the \textit{canonical resolution of $F$}; it was introduced
+$H^n_\Phi(X,F)=H^n(\Gamma_\Phi C(F))$.
+$C(F)$ is called the \textit{canonical resolution} of $F$; it was introduced
 and used systematically by Godement.
-
 \LayerTarget{tohoku:construction:cartan-resolution}
 If $\Phi$ is paracompactifying, another resolving functor for $\Gamma_\Phi$
 is obtained by taking a fixed resolution $C$ of the constant sheaf
-$\mathbf Z$ by fine torsion-free sheaves and assigning to every $F$ the
+$\mathbf Z$ by \textit{fine torsion-free} sheaves and assigning to every $F$ the
 complex of sheaves $F\otimes C$. This is a resolution of $F$, since $C$ is
 torsion-free, and it is exact in $F$ for the same reason. Moreover, the
 $F\otimes C^n$ are fine and hence $\Gamma_\Phi$-acyclic. Therefore
 $\Gamma_\Phi(F\otimes C)$ is a resolving functor for $\Gamma_\Phi$, and
-\[
-H^n_\Phi(X,F)=H^n\bigl(\Gamma_\Phi(F\otimes C)\bigr).
-\]
+$H^n_\Phi(X,F)=H^n(\Gamma_\Phi(F\otimes C))$.
 $F\otimes C$ will be called the Cartan resolution of $F$. Recall that it can
 be used only when $\Phi$ is paracompactifying.
 
@@ -42,13 +35,13 @@ be used only when $\Phi$ is paracompactifying.
 is not the union of two closed proper subsets, equivalently if every two
 nonempty open subsets have nonempty intersection. This is also equivalent to
 every open subset of $X$ being connected. Every \textit{constant} sheaf $F$
-on $X$ is then plainly flabby. The converse also holds when $X$ is connected,
+on $X$ is then plainly flasque. The converse also holds when $X$ is connected,
 as one sees by taking a constant sheaf whose fiber has more than one point.
-\textit{In particular, if $F$ is a constant sheaf of abelian groups on an
+In particular, \textit{if $F$ is a constant sheaf of abelian groups on an
 irreducible space $X$, then $H^p(X,F)=0$ for $p>0$.}
 
 \LayerTarget{tohoku:section:3.4}
-\textbf{3.4. Applications to lifting problems for structure
+\indent\textbf{3.4. Applications to lifting problems for structure
 groups\textsuperscript{8)}.} Let $X$ be an irreducible algebraic variety over
 an algebraically closed field $k$; we follow the terminology of [15,
 Chapter II]. Let $\mathbf O$ be its sheaf of local rings, that is, the sheaf
@@ -58,20 +51,16 @@ the cited work, Proposition 9. Let $\mathbf O^*$ and $\mathbf K^*$ be the
 subsheaves of $\mathbf O$ and $\mathbf K$, respectively, formed by germs of
 invertible functions. Evidently, $\mathbf K^*$ is again a constant sheaf of
 abelian groups, and $\mathbf O^*$ is a subsheaf of it.
-
 \LayerTarget{tohoku:construction:divisor-sequence:p1}
 The quotient sheaf $\mathbf K^*/\mathbf O^*=\mathbf D$ is the sheaf of
-\textit{germs of locally principal divisors on $X$}. It agrees with the sheaf
-of \textit{germs of divisors on $X$} if the local rings $\mathbf O(x)$ of
+\textit{germs of locally principal divisors} on $X$. It agrees with the sheaf
+of \textit{germs of divisors} on $X$ if the local rings $\mathbf O(x)$ of
 $X$ are factorial, for example if $X$ is nonsingular; we assume this from
 now on. On the other hand, it is immediate that the sheaf $\mathbf D$ of
 germs of divisors on
 
 \LayerTarget{tohoku:footnote:8}
-\begin{quote}
-\footnotesize
-8) This section is not needed for understanding what follows.
-\end{quote}
+\SourceFootnote{8}{This section is not needed for understanding what follows.}
 
 \TohokuContinuation{161}
 

@@ -34,7 +34,7 @@ $\mathbf{H}^{n}(G,A)$ and the fundamental spectral sequences}
 \TohokuContentsEntry{5.5.}{Calculation of the $H^{n}(X;\,G,A)$ by coverings}
 \LayerTarget{tohoku:section:5.6}
 \TohokuContentsEntry{5.6.}{The functors
-$\mathrm{Ext}_{O,G}^{n}(X;\,A,B)$}
+$\mathrm{Ext}_{\mathrm{O},\mathrm{G}}^{n}(X;\,A,B)$}
 \LayerTarget{tohoku:section:5.7}
 \TohokuContentsEntry{5.7.}{Introduction of families $\Phi$.}
 \endgroup
@@ -48,44 +48,42 @@ $\mathrm{Ext}_{O,G}^{n}(X;\,A,B)$}
 \LayerTarget{tohoku:section:1.1}
 \noindent\textbf{1.1. Categories.}\quad
 \LayerTarget{tohoku:section:1.1:p1}
-Recall that a \textit{category} is a nonempty class $C$ of objects, together
-with, for $A,B\in C$, a set $\mathrm{Hom}(A,B)$ (called the set of
-\textit{morphisms} from $A$ to $B$), and, for three objects $A,B,C\in C$, a
+Recall that a \textit{category} is a nonempty class $\mathbf{C}$ of objects, together
+with, for $A,B\in\mathbf{C}$, a set $\mathrm{Hom}(A,B)$ (called the set of
+\textit{morphisms} from $A$ to $B$), and, for three objects $A,B,C\in\mathbf{C}$, a
 map (called \textit{composition of morphisms})
-$(u,v)\longrightarrow vu$ from
+$(u,v)\to vu$ from
 $\mathrm{Hom}(A,B)\times\mathrm{Hom}(B,C)$ to $\mathrm{Hom}(A,C)$, these data
 satisfying the following two axioms: composition of homomorphisms is
-\textit{associative}; for every $A\in C$, there exists in
-$\mathrm{Hom}(A,A)$ an element $I_A$ (called the \textit{identity morphism of
-$A$}) that is a right and left identity for composition of morphisms. (This
+\textit{associative}; for every $A\in\mathbf{C}$, there exists in
+$\mathrm{Hom}(A,A)$ an element $I_A$ (called the \textit{identity morphism} of $A$) that is a right and left identity for composition of morphisms. (This
 element $I_A$ is then uniquely determined.) Finally, it will be prudent to
 suppose that the datum of a morphism $u$ determines its ``source'' and
 ``target'' objects, in other words, that if $(A,B)$ and $(A',B')$ are two
-distinct pairs of objects of $C$, then $\mathrm{Hom}(A,B)$ and
+distinct pairs of objects of $\mathbf{C}$, then $\mathrm{Hom}(A,B)$ and
 $\mathrm{Hom}(A',B')$ are two disjoint sets.
 
 \LayerTarget{tohoku:section:1.1:p2}
-Given a category $C$, define the \textit{dual category} $C^{\circ}$ to be the
-category having the same objects as $C$, and in which the set
+Given a category $\mathbf{C}$, define the \textit{dual category} $\mathbf{C}^{\circ}$ to be the
+category having the same objects as $\mathbf{C}$, and in which the set
 $\mathrm{Hom}(A,B)^{\circ}$ of morphisms from $A$ to $B$ is identical with
-$\mathrm{Hom}(B,A)$, the composite of $u$ and $v$ in $C^{\circ}$ being
-defined as the composite of $v$ and $u$ in $C$. Every notion and every
-statement concerning an unspecified category has a \textit{dual notion or
-statement} (``reversal of arrows''), which will be just as useful in
+$\mathrm{Hom}(B,A)$, the composite of $u$ and $v$ in $\mathbf{C}^{\circ}$ being
+defined as the composite of $v$ and $u$ in $\mathbf{C}$. Every notion and every
+statement concerning an unspecified category has a dual notion or
+statement (``reversal of arrows''), which will be just as useful in
 applications, but whose explication is most often left to the reader.
 
 \LayerTarget{tohoku:section:1.1:p3}
-Let a category $C$ and a morphism $u:A\longrightarrow B$ in $C$ be given. For
-every $C\in C$, define a map
-$v\longrightarrow uv:\mathrm{Hom}(C,A)\longrightarrow\mathrm{Hom}(C,B)$ and
+Let a category $\mathbf{C}$ and a morphism $u:A\to B$ in $\mathbf{C}$ be given. For
+every $C\in\mathbf{C}$, define a map
+$v\to uv:\mathrm{Hom}(C,A)\to\mathrm{Hom}(C,B)$ and
 a map
-$w\longrightarrow wu:\mathrm{Hom}(B,C)\longrightarrow\mathrm{Hom}(A,C)$.
+$w\to wu:\mathrm{Hom}(B,C)\to\mathrm{Hom}(A,C)$.
 We say that $u$ is a \textit{monomorphism}, or that $u$ is \textit{injective}
 (respectively, that $u$ is an \textit{epimorphism}, or that $u$ is
 \textit{surjective}), if the first (respectively, the second) of the two
 preceding maps is always injective; $u$ is called \textit{bijective} if it is
 both injective and surjective.
-
 \LayerTarget{tohoku:section:1.1:p4}
 A \textit{left inverse} (respectively, \textit{right inverse}) of $u$ is a
 $v\in\mathrm{Hom}(B,A)$ such that $vu=I_A$ (respectively, $uv=I_B$); $v$ is

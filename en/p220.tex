@@ -8,50 +8,46 @@
 \Gamma_\Phi^G=\Gamma_\Psi f_*^G=\Gamma^G\Gamma_\Phi.
 \tag{5.7.3}
 \end{equation}
-
 \LayerTarget{tohoku:spectral-sequence:5.7-i-supported-equivariant}
-Since $f_*^G$ takes injective objects of $C^{X(G)}$ to flabby sheaves, hence
+Since $f_*^G$ takes injective objects of ${\mathbf C}^{X(G)}$ to flasque sheaves, hence
 to $\Gamma_\Psi$-acyclic sheaves, the first formula again gives \textit{a
-cohomological spectral functor on $C^{X(G)}$, converging to the graded functor
-$(H_\Phi^m(X;G,A))$, with initial term}
+cohomological spectral functor on ${\mathbf C}^{X(G)}$, converging to the graded functor
+$(H_\Phi^n(X;G,A))$, with initial term}
 
 \LayerTarget{tohoku:equation:5.7.4}
 \begin{equation}
-\mathrm I_2^{p,q}(A)=H_\Psi^p\bigl(Y,\mathbf H^q(G,A)\bigr).
+I_2^{p.q}(A)=H_\Psi^p\bigl(Y,\mathbf H^q(G,A)\bigr).
 \tag{5.7.4}
 \end{equation}
-
 \LayerTarget{tohoku:obstruction:second-spectral-sequence-with-supports}
 The second spectral sequence of Theorem 5.2.1 no longer generalizes as it
 stands, since one cannot in general say that, if $B$ is an injective object of
-$C^{X(G)}$, then $\Gamma_\Phi(B)$ is a $\Gamma^G$-acyclic $G$-module. But
+${\mathbf C}^{X(G)}$, then $\Gamma_\Phi(B)$ is a $\Gamma^G$-acyclic $G$-module. But
 \textit{suppose that every member of $\Psi$ has a neighborhood belonging to
 $\Psi$.}
-
 \LayerTarget{tohoku:construction:extension-by-zero-support-limit}
 For every open subset $U\subset Y$, let $A_U=A_{f^{-1}(U)}$ be the abelian
 $G$-sheaf on $X$ which is zero on the complement of $f^{-1}(U)$ and agrees
 with $A$ on $f^{-1}(U)$. One has
-$\Gamma_\Phi(A)=\varinjlim\Gamma_X(A_U)$, where the filtered direct limit is
+$\Gamma_\Phi(A)=\mathop{\underset{\to}{\lim}}\Gamma_X(A_U)$, where the inductive limit is
 taken over the ordered filtering set of open subsets $U$ of $Y$ such that
 $\overline U\in\Psi$. Since the maps
 $\Gamma_X(A_U)\to\Gamma_X(A_V)$ for $U\subset V$ are injective, the functor
-$\Gamma^G$ commutes with the filtered direct limit, and one obtains the
+$\Gamma^G$ commutes with the inductive limit, and one obtains the
 functorial identity
 
 \LayerTarget{tohoku:equation:5.7.5}
 \begin{equation}
-\Gamma_\Phi^G(A)=\varinjlim\Gamma_X^G(A_U),
+\Gamma_\Phi^G(A)=\mathop{\underset{\to}{\lim.}}\Gamma_X^G(A_U)
 \tag{5.7.5}
 \end{equation}
 whence, as in Corollary 1 to Proposition 3.10.1,
 
 \LayerTarget{tohoku:equation:5.7.6}
 \begin{equation}
-H_\Phi^m(X;G,A)=\varinjlim H^m(X;G,A_U).
+H_\Phi^n(X;G,A)=\mathop{\underset{\to}{\lim}} H^n(X;G,A_U).
 \tag{5.7.6}
 \end{equation}
-
 \LayerTarget{tohoku:spectral-sequence:ii-a-u}
 For every $U$, the group $H^*(X;G,A_U)$ is the abutment of a cohomological
 spectral sequence $\mathrm {II}(A,U)$ with initial term
@@ -60,7 +56,6 @@ spectral sequence $\mathrm {II}(A,U)$ with initial term
 \[
 \mathrm {II}(A,U)_2^{p,q}=H^p\bigl(G,H^q(X,A_U)\bigr).
 \]
-
 \LayerTarget{tohoku:construction:inductive-system-of-spectral-sequences}
 For varying $U$, these spectral sequences form an inductive system. It follows
 from (5.7.6) that $H_\Phi^*(X;G,A)$ is \textit{the abutment of a
@@ -68,45 +63,35 @@ cohomological spectral sequence with initial term}
 
 \LayerTarget{tohoku:equation:5.7.7}
 \begin{equation}
-\mathrm {II}_2^{p,q}(A)=\varinjlim_U H^p\bigl(G,H^q(X,A_U)\bigr).
+\mathrm {II}_2^{p,q}(A)=\mathop{\underset{\to}{\lim.}}\limits_U H^p\bigl(G,H^q(X,A_U)\bigr).
 \tag{5.7.7}
 \end{equation}
-
 \LayerTarget{tohoku:comparison:cohomology-and-filtered-limit}
 Of course, this spectral sequence is itself a spectral functor in $A$. In the
 most important cases (which we shall make explicit below) one can interchange
-$H^p(G,-)$ and $\varinjlim$. Since
-$\varinjlim H^q(X,A_U)=H_\Phi^q(X,A)$ (Corollary 1 to Proposition 3.10.1), one
+$H^p(G,-)$ and $\mathop{\underset{\to}{\lim.}}$. Since
+$\mathop{\underset{\to}{\lim.}} H^q(X,A_U)=H_\Phi^q(X,A)$ (Corollary 1 to Proposition 3.10.1), one
 then obtains the usual form of the initial term:
 
 \LayerTarget{tohoku:equation:5.7.7-bis}
 \begin{equation}
-\mathrm {II}_2^{p,q}=H^p\bigl(G,H_\Phi^q(X,A)\bigr).
+\mathrm {II}_2^{p,q}=H^p\bigl(G,H_\Phi^q(X,A)\bigr)
 \tag{5.7.7 bis}
 \end{equation}
 
 \LayerTarget{tohoku:conditions:validity-5.7.7-bis}
-\noindent\textit{Conditions for the validity of formula (5.7.7 bis).}
+\noindent\textit{Conditions for the validity of formula \textup{(5.7.7 bis).}}
 
 \LayerTarget{tohoku:condition:5.7.7-bis-finite-group}
-\noindent a) $G$ is a finite group.
+a) $G$ is a finite group.
 
 \LayerTarget{tohoku:condition:5.7.7-bis-trivial-action}
-\noindent b) $G$ acts trivially on the $H^q(X,A_U)$, and the groups
-$H_p(G,\mathbf Z)$ are of finite type.
+b) $G$ acts trivially on the $H^q(X,A_U)$, and the groups
+$H_p(G,Z)$ are of finite type.
 
 \LayerTarget{tohoku:condition:5.7.7-bis-essentially-constant}
-\noindent c) The inductive system $(H^q(X,A_U))$ is ``essentially constant''
+c) The inductive system $(H^q(X,A_U))$ is ``essentially constant''
 for every $q$; that is, one can find a cofinal system $(U_i)$ such that the
 homomorphisms $H^q(X,A_{U_i})\to H^q(X,A_{U_j})$ are isomorphisms.
-
-\noindent\textit{Editorial qualification.} The neighborhood hypothesis above
-proves only (5.7.5). The derived filtered-colimit identity (5.7.6) and the
-abutment asserted before (5.7.7) additionally require that, for every eligible
-$U$, the exact extension-by-zero functor $E_U:A\longmapsto A_U$ take injective
-abelian $G$-sheaves to $\Gamma_X^G$-acyclic objects. The comparison with
-ordinary cohomology used in (5.7.7 bis) additionally requires $\Phi$ to be
-paracompactifying. Without these added hypotheses, no derived filtered-colimit
-identity or abutment is asserted here.
 
 \TohokuContinuation{221}

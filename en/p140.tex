@@ -4,10 +4,10 @@
 \LayerTarget{tohoku:axiom:delta-functor:2:p2}
 \noindent
 \[
-\hbox{(2.1.1.)}\quad
-\cdots\longrightarrow T^i(A')\longrightarrow T^i(A)
-\longrightarrow T^i(A'')\longrightarrow T^{i+1}(A')
-\longrightarrow\cdots
+\tag{2.1.1.}
+\ldots\,.\;T^i(A')\to T^i(A)
+\to T^i(A'')\to T^{i+1}(A')
+\to\ldots\,.
 \]
 
 \noindent is a complex; that is, the composite of any two consecutive
@@ -20,7 +20,7 @@ raising it. The definitions of contravariant $\partial$-functors and
 $\partial^*$-functors are likewise analogous: the $T^i$ are then
 contravariant additive functors, and the boundary operators go from
 $T^i(A')$ to $T^{i+1}(A'')$ or $T^{i-1}(A'')$. Reversing the signs of the
-degrees $i$ in $T^i$, or replacing $C'$ by its opposite category, transforms
+degrees $i$ in $T^i$, or replacing $\mathbf{C}'$ by its opposite category, transforms
 $\partial$-functors into $\partial^*$-functors. Thus one may always reduce to
 the study of covariant $\partial$-functors. Observe that when $a=-\infty$ and
 $b=+\infty$, a $\partial$-functor is a \textquotedblleft connected sequence
@@ -29,18 +29,18 @@ of functors\textquotedblright\ in [6, Chapter III].
 \LayerTarget{tohoku:def:delta-functor-morphism}
 Given two $\partial$-functors $T$ and $T'$ defined in the same degrees, a
 \textit{morphism}, or natural transformation, from $T$ to $T'$ is a system
-$f=(f^i)$ of natural transformations $f^i:T^i\longrightarrow T'^i$ satisfying
+$f=(f^i)$ of natural transformations $f^i:T^i\to T'^i$ satisfying
 the natural compatibility condition with $\partial$: for every exact
 sequence
-$0\longrightarrow A'\longrightarrow A\longrightarrow A''\longrightarrow 0$,
+$0\to A'\to A\to A''\to 0$,
 the diagram
 
 \LayerTarget{tohoku:diagram:delta-morphism}
 \[
 \begin{array}{ccc}
-T^i(A'') & \mathop{\longrightarrow}\limits^{\partial} & T^{i+1}(A')\\
+T^i(A'') & \mathop{\to}\limits^{\partial} & T^{i+1}(A')\\
 \big\downarrow && \big\downarrow\\
-T'^i(A'') & \mathop{\longrightarrow}\limits^{\partial} & T'^{i+1}(A')
+T'^i(A'') & \mathop{\to}\limits^{\partial} & T'^{i+1}(A')
 \end{array}
 \]
 
@@ -48,43 +48,41 @@ T'^i(A'') & \mathop{\longrightarrow}\limits^{\partial} & T'^{i+1}(A')
 the evident way.
 
 \LayerTarget{tohoku:def:exact-delta-functor}
-Suppose that $C'$ is also an abelian category. A $\partial$-functor is called
+Suppose that $\mathbf{C}'$ is also an abelian category. A $\partial$-functor is called
 \textit{exact} if, for every exact sequence
-$0\longrightarrow A'\longrightarrow A\longrightarrow A''\longrightarrow 0$
-in $C$, the corresponding sequence (2.1.1) is exact. A
+$0\to A'\to A\to A''\to 0$
+in $\mathbf{C}$, the corresponding sequence (2.1.1) is exact. A
 \textit{cohomological functor}, respectively a \textit{homological functor},
-is an exact $\partial$-functor, respectively $\partial^*$-functor, defined in
+is an \textit{exact} $\partial$-functor, respectively $\partial^*$-functor, defined in
 all degrees.
 
 \LayerTarget{tohoku:section:2.2}
-\noindent\textbf{2.2. Universal $\partial$-functors.}
-
+\indent\textbf{2.2. Universal $\partial$-functors.}
 \LayerTarget{tohoku:def:universal-delta-functor}
-Let $T=(T^i)_{0\leq i\leq a}$ be a covariant $\partial$-functor from $C$ to
-$C'$, where $a>0$. The functor $T$ is called \textit{universal} if, for every
+Let $T=(T^i)\quad 0\leqq i\leqq a$ be a covariant $\partial$-functor from $\mathbf{C}$ to
+$\mathbf{C}'$, where $a>0$. The functor $T$ is called \textit{universal} if, for every
 $\partial$-functor $T'=(T'^i)$ defined in the same degrees and every natural
-transformation $f^0:T^0\longrightarrow T'^0$, there exists a
-unique morphism $f:T\longrightarrow T'$ whose component in degree $0$ is
+transformation $f^0:T^0\to T'^0$, there exists a
+unique morphism $f:T\to T'$ whose component in degree $0$ is
 $f^0$. The definition is identical for a contravariant
 $\partial$-functor; for $\partial^*$-functors one must instead consider
 morphisms from $T'$ to $T$, rather than from $T$ to $T'$.
 
 \LayerTarget{tohoku:prop:satellites-uniqueness}
-By the definition itself, given a covariant functor $F:C\longrightarrow C'$
+By the definition itself, given a covariant functor $F:\mathbf{C}\to \mathbf{C}'$
 and an integer $a>0$, there can exist, up to canonical isomorphism, at most
-one universal $\partial$-functor defined in degrees $0\leq i\leq a$ and equal
+one universal $\partial$-functor defined in degrees $0\leqq i\leqq a$ and equal
 to $F$ in degree zero.
-
 \LayerTarget{tohoku:def:right-left-satellites}
-Its components are denoted $S^iF$ and called the \textit{right satellite
-functors of $F$}. For $i>0$ we also set $S_iF=S^{-i}F$, where the $S_iF$ are
-the \textit{left satellites} of $F$, defined like the $S^iF$ but by using
-universal $\partial^*$-functors in degrees $0\leq i\leq a$ such that $T^0=F$.
+Its components are denoted $S^iF$ and called the right \textit{satellite
+functors} of $F$. For $i>0$ we also set $S_iF=S^{-i}F$, where the $S_iF$ are
+the \textit{left} satellites of $F$, defined like the $S^iF$ but by using
+universal $\partial^*$-functors in degrees $0\leqq i\leqq a$ such that $T^0=F$.
 It follows immediately that, for fixed $i$, if $S^iF$ exists, it is
 independent of the choice of $a$.
 
 \LayerTarget{tohoku:remark:satellites-existence:p1}
 In every case known to me, the satellite functors of an arbitrary additive
-functor $F$ exist. Moreover, given $C$ and $C'$, in order to prove
+functor $F$ exist. Moreover, given $\mathbf{C}$ and $\mathbf{C}'$, in order to prove
 
 \TohokuContinuation{141}

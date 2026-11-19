@@ -3,59 +3,49 @@
 \SourcePage{219}
 
 \LayerTarget{tohoku:example:holomorphic-equivariant-sheaves}
-\noindent\textsc{An example.}\quad Suppose that $G$ is a group of
+\textsc{An example.}\quad Suppose that $G$ is a group of
 automorphisms of a holomorphic variety, or more generally of a ``holomorphic
-space'' $X$, with $O$ the sheaf of germs of holomorphic functions on $X$.
-
+space'' $X$, with ${\mathbf O}$ the sheaf of germs of holomorphic functions on $X$.
 \LayerTarget{tohoku:classification:coherent-extension-classes}
 If $A$ and $B$ are two coherent analytic sheaves on which $G$ acts, every
 analytic sheaf that is an extension of $A$ by $B$ is coherent. It follows that
-the classes of coherent $G$-$O$-sheaves that are extensions of $A$ by $B$
+the classes of coherent $G$-${\mathbf O}$-sheaves that are extensions of $A$ by $B$
 correspond to the elements of the complex vector space
-$\operatorname{Ext}_{O,G}^{1}(X;A,B)$.
-
+$\operatorname{Ext}_{{\mathrm O},G}^{1}(X;A,B)$.
 \LayerTarget{tohoku:equivalence:holomorphic-bundles-locally-free-sheaves}
 On the other hand, if $n$ is an integer $>0$, there is a natural
 correspondence between holomorphic vector bundles $E$ with fiber
-$\mathbf C^n$ and coherent algebraic sheaves $M$ on $X$ that are locally
-isomorphic to $O^n$: to $E$ corresponds the sheaf $O(E)$ of germs of
+$\mathbf C^n$ and coherent analytic sheaves $M$ on $X$ that are locally
+isomorphic to ${\mathbf O}^n$: to $E$ corresponds the sheaf ${\mathbf O}(E)$ of germs of
 holomorphic sections of $E$, and to $M$ corresponds the holomorphic bundle
-whose fiber at $x\in X$ is $M(x)\otimes_{O(x)}\mathbf C$ ($\mathbf C$ being
-regarded as a module over the augmented algebra $O(x)$).
-
+whose fiber at $x\in X$ is $M(x)\otimes_{{\mathbf O}(x)}\mathbf C$ ($\mathbf C$ being
+regarded as a module over the augmented algebra ${\mathbf O}(x)$).
 \LayerTarget{tohoku:equivalence:equivariant-holomorphic-bundles}
 It is then immediate that, under this correspondence, holomorphic vector
 bundles with fiber $\mathbf C^n$ admitting $G$ as a group of operators
-correspond to $G$-$O$-modules that, as $O$-modules, are locally isomorphic to
-$O^n$.
-
+correspond to $G$-${\mathbf O}$-modules that, as ${\mathbf O}$-modules, are locally isomorphic to
+${\mathbf O}^n$.
 \LayerTarget{tohoku:classification:equivariant-bundle-extensions}
 It follows that the classes of extensions of an equivariant holomorphic
 bundle $E$ by another such bundle $F$ correspond naturally to the elements of
-$\operatorname{Ext}_{O,G}^{1}(X;O(E),O(F))$, which, by Corollary 1 to Theorem
+$\operatorname{Ext}_{{\mathrm O},G}^{1}(X;{\mathbf O}(E),{\mathbf O}(F))$, which, by Corollary 1 to Theorem
 5.6.3, is isomorphic to the vector space
-
 \LayerTarget{tohoku:equation:holomorphic-equivariant-ext-h1}
-\[
-H^1\bigl(X;G,O(E'\otimes F)\bigr)
-\]
+$H^1\bigl(X;G,{\mathbf O}(E'\otimes F)\bigr)$
 ($E'$ denoting the dual bundle of $E$).
-
 \LayerTarget{tohoku:descent:discontinuous-action-characteristic-zero}
 One can go further if $G$ is a \textit{discontinuous} group, for since we are
 in characteristic 0, Corollary 1 to Theorem 5.3.1 gives
 $H^1(X;G,L)=H^1(Y,L^G)$ for every $G$-sheaf of vector spaces. Moreover, if
 $L$ is a coherent analytic sheaf, then so is $L^G$ (see [5, Chap. XII]); in
-particular $O(E'\otimes F)^G$ is a coherent analytic sheaf on $Y$.
-
+particular ${\mathbf O}(E'\otimes F)^G$ is a coherent analytic sheaf on $Y$.
 \LayerTarget{tohoku:finiteness:compact-quotient-extension-classes}
 It follows, for example, from [7] that if $Y$ is compact, then the vector
 space of classes of equivariant holomorphic vector bundles that are
 extensions of $E$ by $F$ is finite-dimensional. (In fact, spectral sequence I
 shows that if $Y$ is compact and $A$ and $B$ are two coherent analytic
-sheaves with operators, then the $\operatorname{Ext}_{O,G}^{i}(X;A,B)$ are
+sheaves with operators, then the $\operatorname{Ext}_{{\mathbf O},G}^{i}(X;A,B)$ are
 finite-dimensional.)
-
 \LayerTarget{tohoku:analogue:abstract-algebraic-geometry}
 There are analogous results in abstract Algebraic Geometry, except that in
 that case one can write $H^*(X;G,L)=H^*(Y,L^G)$ only if, for example, the order
@@ -63,8 +53,7 @@ of $G$ is prime to the characteristic, or if $G$ acts ``without fixed
 points.''
 
 \LayerTarget{tohoku:section:5.7}
-\noindent\textbf{5.7.\quad Introduction of the families $\Phi$.}
-
+\textbf{5.7.\quad Introduction of the families $\Phi$.}
 \LayerTarget{tohoku:definition:support-antifilter}
 Let $\Phi$ be an antifilter of closed subsets of the space $X$, and consider
 the functor
@@ -74,24 +63,22 @@ the functor
 \Gamma_\Phi^G(A)=\Gamma_\Phi(A)^G
 \tag{5.7.1}
 \end{equation}
-on the category $C^{X(G)}$ of abelian $G$-sheaves on $X$. Put
+on the category ${\mathbf C}^{X(G)}$ of abelian $G$-sheaves on $X$. Put
 
 \LayerTarget{tohoku:equation:5.7.2}
 \begin{equation}
 H_\Phi^p(X;G,A)=R^p\Gamma_\Phi^G(A).
 \tag{5.7.2}
 \end{equation}
-
 \LayerTarget{tohoku:construction:invariant-support-antifilter}
 If $\Phi$ is the antifilter consisting of all closed subsets of $X$, one
-recovers the functors $H^p(X;G,A)$ of 5.2. Let $\Phi'$ be the set of closed
+recovers the functors $H^n(X;G,A)$ of 5.2. Let $\Phi'$ be the set of closed
 subsets of $X$ contained in a closed subset $F\in\Phi$ invariant under $G$.
 It is then clear that $\Phi'$ is an antifilter of closed subsets of $X$ and
 that $\Gamma_\Phi^G=\Gamma_{\Phi'}^G$. We shall therefore assume henceforth
-that $\Phi=\Phi'$, or equivalently that $\Phi$ is the set of closed subsets
+that $\Phi=\Phi'$, or equivalently that $\Phi$ \textit{is the set of closed subsets
 $F$ of $X$ such that $\overline{f(F)}\in\Psi$, where $\Psi$ is an antifilter
-of closed subsets of $Y$.
-
+of closed subsets of $Y$.}
 \LayerTarget{tohoku:transition:section-5.7-functorial-formulas}
 One then has the functorial formulas:
 

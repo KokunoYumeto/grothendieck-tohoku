@@ -5,42 +5,38 @@
 \noindent right partial derived functors of $T$ with respect to the second
 variable $B$,
 \[
- R_2^iT(A,B)=H^i(T(A,C(B))),
+ R_2^iT(A,B)=H^i(T(A,C(B)))
 \]
 where $C(B)$ is the complex defined by a right resolution of $B$ by injective
 objects. Of course, the $R_2^iT$ are bifunctors.
-
 \LayerTarget{tohoku:construction:derived-bifunctor:cohomological-first-variable}
-\textit{Suppose now that for every injective object $B$ of $C_2$, the functor
-$A\longmapsto T(A,B)$ on $C_1$ is exact.} We shall show that for every
-$B\in C_2$ the system $(R_2^iT(A,B))$ can be regarded as a cohomological
+\textit{Suppose now that for every injective object $B$ of $\mathbf{C}_2$, the functor
+$A\to T(A,B)$ on $\mathbf{C}_1$ is exact.} We shall show that \textit{for every}
+$B\in \mathbf{C}_2$ the system $(R_2^iT(A,B))$ can be regarded as a cohomological
 functor of $A$. Let $C(B)$ be the complex defined by a right resolution of
 $B$ by injective objects. For every exact sequence
-$0\longrightarrow A'\longrightarrow A\longrightarrow A''\longrightarrow0$
-in $C_1$, the sequence of complex homomorphisms
-\[
-0\longrightarrow T(A'',C(B))\longrightarrow T(A,C(B))
- \longrightarrow T(A',C(B))\longrightarrow0
-\]
+$0\to A'\to A\to A''\to0$
+in $\mathbf{C}_1$, the sequence of complex homomorphisms
+$0\to T(A'',C(B))\to T(A,C(B))
+ \to T(A',C(B))\to0$
 is exact, since the terms of $C(B)$ are injective and by the hypothesis on
 $T$. It therefore defines a long exact cohomology sequence
 \LayerTarget{tohoku:sequence:partial-derived-long-exact}
 \[
-\cdots\longrightarrow R_2^iT(A'',B)\longrightarrow R_2^iT(A,B)
-\longrightarrow R_2^iT(A',B)
+\ldotp\,\ldotp\,\ldotp\,\ldotp\to R_2^iT(A'',B)\to R_2^iT(A,B)
+\to R_2^iT(A',B)
 \mathrel{\mathop{\longrightarrow}\limits^{\partial}}R_2^{i+1}T(A'',B)
-\longrightarrow\cdots .
+\to\ldotp\,\ldotp\,\ldotp\,\ldotp .
 \]
-The morphism $\partial$ in this sequence is independent of the particular
+One immediately checks that the morphism $\partial$ in this sequence is independent of the particular
 complex $C(B)$ chosen and commutes with homomorphisms of exact sequences.
 Thus $(R_2^iT(A,B))$, for fixed $B$, is indeed a cohomological functor of $A$.
-Moreover, if $B\longrightarrow B'$ is a morphism in $C_2$, the corresponding
-morphisms $R_2^iT(A,B)\longrightarrow R_2^iT(A,B')$ define a morphism of
+Moreover, one immediately checks that if $B\to B'$ is a morphism in $\mathbf{C}_2$, the corresponding
+morphisms $R_2^iT(A,B)\to R_2^iT(A,B')$ define a morphism of
 $\partial$-functors in $A$.
-
 \LayerTarget{tohoku:def:right-balanced}
-Suppose also that every object of $C_1$ is isomorphic to a quotient of a
-projective object and that, for every projective $A\in C_1$, the functor
+Suppose also that every object of $\mathbf{C}_1$ is isomorphic to a quotient of a
+projective object and that, for every projective $A\in \mathbf{C}_1$, the functor
 $T(A,B)$ is exact in $B$. In the terminology of [6], $T$ is then
 ``right balanced.'' The $R_2^iT(A,B)$ are then also the right derived functors
 $R^iT(A,B)$ of $T$, and they also coincide with the partial derived functors
@@ -49,34 +45,28 @@ precisely the natural boundary homomorphisms of $R^iT$ and $R_1^iT$ with
 respect to their first variable.
 
 \LayerTarget{tohoku:example:ext-bifunctor}
-The preceding discussion was developed chiefly for an abelian category $C$
+The preceding discussion was developed chiefly for an abelian category $\mathbf{C}$
 in which every object is isomorphic to a subobject of an injective object,
 without assuming that every object is isomorphic to a quotient of a projective
-object. Take $C_1=C_2=C$, let $C'$ be the category of abelian groups, and set
+object. Take $\mathbf{C}_1=\mathbf{C}_2=\mathbf{C}$, let $C'$ be the category of abelian groups, and set
 $T(A,B)=\mathrm{Hom}(A,B)$. By the definition of an injective object,
 $\mathrm{Hom}(A,B)$ is exact in $A$ when $B$ is injective. Denote the right
 derived functors with respect to $B$ by $\mathrm{Ext}^p(A,B)$. The system
-$(\mathrm{Ext}^p(A,B))$ is a cohomological functor both in $B$ and in $A$.
+$(\mathrm{Ext}^p(A,B))$ is a cohomological functor both in $B$ \textit{and} in $A$.
 Since $\mathrm{Hom}(A,B)$ is left exact,
 $\mathrm{Ext}^0(A,B)=\mathrm{Hom}(A,B)$; it is also easy to see that
 $\mathrm{Ext}^1(A,B)$ can be interpreted as the group of classes of extensions
 of $A$ as quotient by $B$ as subobject; see [6, Chap. XIV].
 
 \LayerTarget{tohoku:example:sheaf-ext}
-An important class of cases in which an abelian category $C$ has enough
+An important class of cases in which an abelian category $\mathbf{C}$ has enough
 injective objects and may fail to have enough projective objects is furnished
 by categories of sheaves of modules over a given sheaf of rings on a
 topological space $X$. In Chapter IV we shall study the groups
 $\mathrm{Ext}^p(A,B)$ in this case in greater detail.
 
-\smallskip
-\noindent\textbf{Editorial correction.} The printed sentence asserts the
-lack of enough projectives without qualification. There are exceptions: when
-$X$ is a one-point space, the category is a module category and has enough
-projectives.
-
 \LayerTarget{tohoku:section:2.4}
-\noindent\textbf{2.4. Spectral sequences and spectral functors.} For the
+\textbf{2.4. Spectral sequences and spectral functors.} For the
 theory of
 
 \TohokuContinuation{145}

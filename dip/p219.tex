@@ -4,69 +4,58 @@
 \SourcePage{219}
 
 \LayerTarget{tohoku:example:holomorphic-equivariant-sheaves}
-\noindent\textsc{Un exemple.}\quad Supposons que $G$ soit un groupe
+\textsc{Un exemple.}\quad Supposons que $G$ soit un groupe
 d'automorphismes d'une variété holomorphe, ou plus généralement d'un
-\og espace holomorphe\fg{} $X$, $O$ le faisceau des germes de fonctions
+``espace holomorphe'' $X$, ${\mathbf O}$ le faisceau des germes de fonctions
 holomorphes sur $X$.
-
 \LayerTarget{tohoku:classification:coherent-extension-classes}
 Si $A$ et $B$ sont deux faisceaux analytiques cohérents où $G$ opère, comme
 tout faisceau analytique extension de $A$ par $B$ est cohérent, il s'ensuit
-que les classes de $G$-$O$-faisceaux cohérents extensions de $A$ par $B$
+que les classes de $G$-${\mathbf O}$-faisceaux cohérents extensions de $A$ par $B$
 correspondent aux éléments de l'espace vectoriel complexe
-$\operatorname{Ext}_{O,G}^{1}(X;A,B)$.
-
+$\operatorname{Ext}_{{\mathrm O},G}^{1}(X;A,B)$.
 \LayerTarget{tohoku:equivalence:holomorphic-bundles-locally-free-sheaves}
 D'autre part, si $n$ est un entier $>0$, il y a une correspondance naturelle
 entre les fibrés vectoriele holomorphes $E$ à fibre l'espace $\mathbf C^n$, et
 les faisceaux algébriques cohérents $M$ sur $X$ qui sont localment isomorphes
-à $O^n$ : à $E$ correspond le faisceau $O(E)$ des germes de sections
+à ${\mathbf O}^n$ : à $E$ correspond le faisceau ${\mathbf O}(E)$ des germes de sections
 holomorphes de $E$, et à $M$ correspond le fibré holomorphe dont la fibre en
-$x\in X$ est $M(x)\otimes_{O(x)}\mathbf C$ ($\mathbf C$ étant considérée comme
-un module sur l'algèbre augmentée $O(x)$).
-
+$x\in X$ est $M(x)\otimes_{{\mathbf O}(x)}\mathbf C$ ($\mathbf C$ étant considérée comme
+un module sur l'algèbre augmentée ${\mathbf O}(x)$).
 \LayerTarget{tohoku:equivalence:equivariant-holomorphic-bundles}
 Il est alors immédiat que dans cette correspondance, les fibrés vectoriels
 holomorphes à fibre $\mathbf C^n$ admettant $G$ comme groupe d'opérateurs
-correspondent aux $G$-$O$-Modules qui sont, en tant que $O$-Modules,
-localement isomorphes à $O^n$.
-
+correspondent aux $G$-${\mathbf O}$-Modules qui sont, en tant que ${\mathbf O}$-Modules,
+localement isomorphes à ${\mathbf O}^n$.
 \LayerTarget{tohoku:classification:equivariant-bundle-extensions}
 Il s'ensuit que les classes d'extensions d'un fibré holomorphe à opérateurs
 $E$ par un autre $F$ correspondent de façon naturelle aux éléments de
-$\operatorname{Ext}_{O,G}^{1}(X;O(E),O(F))$, qui est isomorphe, en vertu du
+$\operatorname{Ext}_{{\mathrm O},G}^{1}(X;{\mathbf O}(E),{\mathbf O}(F))$, qui est isomorphe, en vertu du
 corollaire 1 au théorème 5.6.3 à l'espace vectoriel
-
 \LayerTarget{tohoku:equation:holomorphic-equivariant-ext-h1}
-\[
-H^1\bigl(X;G,O(E'\otimes F)\bigr)
-\]
+$H^1\bigl(X;G,{\mathbf O}(E'\otimes F)\bigr)$
 ($E'$ désignant le fibré dual de $E$).
-
 \LayerTarget{tohoku:descent:discontinuous-action-characteristic-zero}
 On peut aller plus loin si $G$ est un groupe \textit{discontinu} car comme on
 est en caractéristique 0, on aura en vertu du corollaire 1 au théorème 5.3.1 :
 $H^1(X;G,L)=H^1(Y,L^G)$ pour tout $G$-faisceau d'espaces vectoriels.
 D'ailleurs si $L$ est un faisceau analytique cohérent, il en est de même de
-$L^G$ (voir [5, Chap. XII]), en particulier $O(E'\otimes F)^G$ est un faisceau
+$L^G$ (voir [5, Chap. XII], en particulier ${\mathbf O}(E'\otimes F)^G$ est un faisceau
 analytique cohérent sur $Y$.
-
 \LayerTarget{tohoku:finiteness:compact-quotient-extension-classes}
 On conclut par exemple, grâce à [7], que si $Y$ est compacte, alors l'espace
 vectoriel des classes de $G$-fibrés vectoriels holomorphes extension de $E$
 par $F$ est de dimension finie. (En fait, la suite spectrale I montre que si
 $Y$ est compact, et $A$ et $B$ deux faisceaux analytiques cohérents à
-opérateurs, alors les $\operatorname{Ext}_{O,G}^{i}(X;A,B)$ sont de dimension
+opérateurs, alors les $\operatorname{Ext}_{{\mathbf O},G}^{i}(X;A,B)$ sont de dimension
 finie).
-
 \LayerTarget{tohoku:analogue:abstract-algebraic-geometry}
 On a des résultats analogues en Géométrie Algébrique abstraite, sauf qu'alors
 on ne peut écrire $H^*(X;G,L)=H^*(Y,L^G)$ que si par exemple l'ordre de $G$
-est premier à la caractéristique, ou si $G$ opère \og sans points fixes\fg{}.
+est premier à la caractéristique, ou si $G$ opère ``sans points fixes''.
 
 \LayerTarget{tohoku:section:5.7}
-\noindent\textbf{5.7.\quad Introduction des familles $\Phi$.}
-
+\textbf{5.7.\quad Introduction des familles $\Phi$.}
 \LayerTarget{tohoku:definition:support-antifilter}
 Soit $\Phi$ un antifiltre de parties fermées sur l'espace $X$, considérons le
 foncteur
@@ -76,24 +65,22 @@ foncteur
 \Gamma_\Phi^G(A)=\Gamma_\Phi(A)^G
 \tag{5.7.1}
 \end{equation}
-sur la catégorie $C^{X(G)}$ des $G$-faisceaux abéliens sur $X$. On posera
+sur la catégorie ${\mathbf C}^{X(G)}$ des $G$-faisceaux abéliens sur $X$. On posera
 
 \LayerTarget{tohoku:equation:5.7.2}
 \begin{equation}
 H_\Phi^p(X;G,A)=R^p\Gamma_\Phi^G(A).
 \tag{5.7.2}
 \end{equation}
-
 \LayerTarget{tohoku:construction:invariant-support-antifilter}
 Si $\Phi$ est l'antifiltre formé de toutes les parties fermées de $X$, on
-retrouve les foncteurs $H^p(X;G,A)$ du 5.2. Soit $\Phi'$ l'ensemble des
+retrouve les foncteurs $H^n(X;G,A)$ du 5.2. Soit $\Phi'$ l'ensemble des
 parties fermées de $X$ contenues dans une partie fermée $F\in\Phi$ invariante
 par $G$, alors il est évident que $\Phi'$ est un antifiltre de parties fermées
 de $X$, et que $\Gamma_\Phi^G=\Gamma_{\Phi'}^G$. On supposera donc par la suite
-que $\Phi=\Phi'$, ou ce qui revient au même, que $\Phi$ est l'ensemble des
+que $\Phi=\Phi'$, ou ce qui revient au même, que $\Phi$ \textit{est l'ensemble des
 parties fermées $F$ de $X$ telles que $\overline{f(F)}\in\Psi$, où $\Psi$ est
-un antifiltre de parties fermées de $Y$.
-
+un antifiltre de parties fermées de $Y$.}
 \LayerTarget{tohoku:transition:section-5.7-functorial-formulas}
 On a alors les formules fonctorielles :
 

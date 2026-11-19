@@ -1,8 +1,6 @@
 % Source-aligned English for printed p.216.
 \clearpage
 \SourcePage{216}
-\begingroup
-\small
 
 \LayerTarget{tohoku:proof:coinduced-hom-acyclicity}
 \LayerTarget{tohoku:definition:coinduced-module-b-prime}
@@ -12,112 +10,92 @@
 \[
 (g'f)(g)=f(gg'),
 \qquad
-(\lambda f)(g)=\lambda^g f(g).
+(\lambda f)(g)=\lambda^g f(g),
 \]
-
 \LayerTarget{tohoku:construction:coinduced-u-module-b-prime}
-\noindent One immediately checks that $B'$ thereby becomes a $U$-module and
-that an injective $U$-homomorphism $\varphi:B\longrightarrow B'$ is defined by
+ one immediately checks that $B'$ thereby becomes a $U$-module and
+that an injective $U$-homomorphism $\varphi:B\to B'$ is defined by
 
 \LayerTarget{tohoku:equation:coinduced-u-embedding}
 \[
-\varphi(b)(g)=g\mathbin{\cdot}b.
+\varphi(b)(g)=g\mathbin{\cdot}b
 \]
-
 \LayerTarget{tohoku:reduction:hom-direct-summand-acyclicity}
 Thus $B$ embeds in the $U$-module $B'$, and since $B$ is injective, it is a
 direct summand of $B'$. Hence $\operatorname{Hom}_O(A,B)$ is (as a
 $G$-module) a direct summand of $\operatorname{Hom}_O(A,B')$, and it suffices
 to show that the latter is $\Gamma^G$-acyclic.
-
 \LayerTarget{tohoku:definition:conjugation-action-on-hom}
 Put $H=\operatorname{Hom}_O(A,B)$ and regard $H$ as a $G$-module by making $G$
 act by
-\[
-u^g(a)=g\,u(g^{-1}a).
-\]
+$u^g(a)=g\,u(g^{-1}a)$.
 One then checks immediately that there is a canonical isomorphism
 
 \LayerTarget{tohoku:equation:hom-coinduction-isomorphism}
 \[
-\begin{aligned}
 \operatorname{Hom}_O(A,B')
-&=\operatorname{Hom}_O
-  \bigl(A,\operatorname{Hom}_{\mathbf Z}(\mathbf Z(G),B)\bigr)\\
-&=\operatorname{Hom}_{\mathbf Z}
-  \bigl(\mathbf Z(G),\operatorname{Hom}_O(A,B)\bigr),
-\end{aligned}
+=\operatorname{Hom}_O
+  \bigl(A,\operatorname{Hom}_{\mathrm Z}(\mathbf Z(G),B)\bigr)
+=\operatorname{Hom}_{\mathrm Z}
+  \bigl(\mathbf Z(G),\operatorname{Hom}_O(A,B)\bigr)
 \]
-
 \LayerTarget{tohoku:construction:two-coinduced-g-actions}
-\noindent where the last member
-$H''=\operatorname{Hom}_{\mathbf Z}(\mathbf Z(G),H)$ is endowed with the
+ where the last member
+$H''=\operatorname{Hom}_{\mathrm Z}(\mathbf Z(G),H)$ is endowed with the
 $G$-module structure defined by
-\[
-f^{g'}(g)=g'f(gg').
-\]
+$f^{g'}(g)=g'f(gg')$.
 For this, write, for every
 $u\in\operatorname{Hom}_O
-\bigl(A,\operatorname{Hom}_{\mathbf Z}(\mathbf Z(G),B)\bigr)$,
+\bigl(A,\operatorname{Hom}_{\mathrm Z}(\mathbf Z(G),B)\bigr)$,
 $u(a)(g)=g\mathbin{\cdot}u_g(a)$. Then the $u_g$ are $O$-homomorphisms from
 $A$ to $B$, and $u$ is identified with the family of the $u_g$, itself
 identified with an element of
-$\operatorname{Hom}_{\mathbf Z}(\mathbf Z(G),H)$. Also consider the
+$\operatorname{Hom}_{\mathrm Z}(\mathbf Z(G),H)$. Also consider the
 $G$-module $H'$ obtained by putting on
-$\operatorname{Hom}_{\mathbf Z}(\mathbf Z(G),H)$ the $G$-module structure
+$\operatorname{Hom}_{\mathrm Z}(\mathbf Z(G),H)$ the $G$-module structure
 defined by
-\[
-(g'f)(g)=f(gg').
-\]
-
+$(g'f)(g)=f(gg')$.
 \LayerTarget{tohoku:equation:coinduced-action-intertwiner}
 One obtains a $G$-isomorphism $\psi$ from $H'$ onto $H''$ by putting
-\[
-\psi(f)(g)=g^{-1}f(g).
-\]
-
+$\psi(f)(g)=g^{-1}f(g)$.
 \LayerTarget{tohoku:conclusion:coinduced-hom-acyclicity}
 It is well known that $H'$ is $\Gamma^G$-acyclic, whatever the $G$-module $H$
 may be; hence the same is true of $H''$, q.e.d.
 
 \LayerTarget{tohoku:spectral-sequence:three-equivariant-ext-sequences}
 Lemma 5.6.1 allows us to derive from formulas (5.6.5) three spectral sequences
-converging to $\operatorname{Ext}_{O,G}^{*}(X;A,B)$. To make the initial terms
+converging to $\operatorname{Ext}_{{\mathbf O},G}(X;A,B)$. To make the initial terms
 of the last two explicit, it remains to make explicit the derived functors of
-$h_{O,A}$ and $\mathbf h_{O,A}$ regarded as functors on $C^{O(G)}$.
-
+$h_{{\mathbf O},A}$ and $\mathbf h_{{\mathbf O},A}$ regarded as functors on ${\mathbf C}^{{\mathbf O}(G)}$.
 \LayerTarget{tohoku:relation:derived-hom-functors}
-When they are regarded as functors on the category $C^O$ of $O$-modules
+When they are regarded as functors on the category ${\mathbf C}^{\mathbf O}$ of ${\mathbf O}$-modules
 (without operators), their derived functors are, by definition (4.2), the
-functors $\operatorname{Ext}_O^n(X;A,B)$ and, respectively, the functors
-$\mathbf{Ext}_O^n(A,B)$. The same remains true when they are regarded as
-functors on $C^{O(G)}$, as follows immediately from the definitions and from
+functors $\operatorname{Ext}_{\mathbf O}^n(X;A,B)$ and, respectively, the functors
+$\mathbf{Ext}_{\mathbf O}^n(A,B)$. The same remains true when they are regarded as
+functors on ${\mathbf C}^{{\mathbf O}(G)}$, as follows immediately from the definitions and from
 
 \LayerTarget{tohoku:lemma:5.6.2}
-\noindent\textsc{Lemma 5.6.2.}\quad \textit{If $B$ is an injective
-$G$-$O$-module, then it is an injective $O$-module.}
+\textsc{Lemma 5.6.2.}\quad \textit{If $B$ is an injective
+$G$-${\mathbf O}$-module, then it is an injective ${\mathbf O}$-module.}
 
 \LayerTarget{tohoku:proof:lemma-5.6.2}
 As in Lemma 5.6.1, we are reduced to the case in which $B$ is the product
 sheaf defined by a family $(B_x)_{x\in X}$ of injective $U_x$-modules $B_x$.
 It therefore suffices to prove that the $B_x$ are also injective
-$O(x)$-modules, which reduces us to the case in which $X$ consists of a single
+${\mathbf O}(x)$-modules, which reduces us to the case in which $X$ consists of a single
 point $x$.
-
 \LayerTarget{tohoku:reduction:equivariant-injective-underlying}
 In fact, the proof does not seem simpler in this case, and the proof we shall
-give would apply whenever one has an abelian category $C$ (such as $C^O$) on
+give would apply whenever one has an abelian category ${\mathbf C}$ (such as ${\mathbf C}^{\mathbf O}$) on
 which a group $G$ ``acts'', as in\textsuperscript{9)}, permitting passage to
-the corresponding category $C(G)$ (here $C^{O(G)}$) of ``objects with an
-operator''; assume that $C$ satisfies AB 5) and has a generator: \textit{then
-every injective object $A$ of $C(G)$ is also injective in $C$}.
-
+the corresponding category ${\mathbf C}(G)$ (here ${\mathbf C}^{{\mathbf O}(G)}$) of ``objects with an
+operator''; assume that ${\mathbf C}$ satisfies $AB$ 5) and has a generator: \textit{then
+every injective object $A$ of ${\mathbf C}(G)$ is also injective in ${\mathbf C}$}.
 \LayerTarget{tohoku:construction:equivariant-injective-envelope}
-To prove this, it plainly suffices to prove that every object $A$ of $C(G)$
-embeds in an object $M$ of $C(G)$ which is injective in $C$. For this, it
+To prove this, it plainly suffices to prove that every object $A$ of ${\mathbf C}(G)$
+embeds in an object $M$ of ${\mathbf C}(G)$ which is injective in ${\mathbf C}$. For this, it
 suffices to examine the construction given in 1.10 for embedding $A$
-(regarded as an object of $C$) in an injective object $M$ of $C$: one embeds
+(regarded as an object of ${\mathbf C}$) in an injective object $M$ of ${\mathbf C}$: one embeds
 $A$
 
-\endgroup
 \TohokuContinuation{217}

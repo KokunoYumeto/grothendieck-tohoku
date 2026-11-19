@@ -5,20 +5,20 @@
 \noindent natural to choose, among all the $(A,(u_i))$ as above, a particular
 system (for example by means of Hilbert's symbol $\tau$) which will be called
 \textit{the product} of the family of objects $(A_i)_{i\in I}$. It is therefore
-not a mere object $A$ of $C$, but such an object equipped with a family $(u_i)$
+not a mere object $A$ of $\mathbf{C}$, but such an object equipped with a family $(u_i)$
 of morphisms into the $A_i$, called the \textit{canonical projections of the
 product} onto its factors $A_i$. The product of the $A_i$ (if it exists) is
-denoted by $\prod_{i\in I}A_i$. If $I$ consists of a single element $i$, then
-the product identifies with $A_i$ itself. We say that $C$ is a
-\textit{category with products} if the product of two objects of $C$ always
+denoted by $\displaystyle\prod_{i\in I}A_i$. If $I$ consists of a single element $i$, then
+the product identifies with $A_i$ itself. We say that $\mathbf{C}$ is a
+\textit{category with products} if the product of two objects of $\mathbf{C}$ always
 exists (then the same is true of the product of any nonempty finite family of
-objects of $C$). We say that $C$ is a \textit{category with infinite products}
-if the product of any nonempty family of objects of $C$ always exists. We have
-seen that if we have two products $A=\prod_{i\in I}A_i$ and
-$B=\prod_{i\in I}B_i$ corresponding to the same index set $I$, then a family
-$(v_i)$ of morphisms $A_i\longrightarrow B_i$ canonically defines a morphism
+objects of $\mathbf{C}$). We say that $\mathbf{C}$ is a \textit{category with infinite products}
+if the product of any nonempty family of objects of $\mathbf{C}$ always exists. We have
+seen that if we have two products $A=\displaystyle\prod_{i\in I}A_i$ and
+$B=\displaystyle\prod_{i\in I}B_i$ corresponding to the same index set $I$, then a family
+$(v_i)$ of morphisms $A_i\to B_i$ canonically defines a morphism
 $v$ from $A$ to $B$, called the \textit{product of the morphisms $v_i$} and
-sometimes denoted $\prod_{i\in I}v_i$. If the $v_i$ are monomorphisms, then so
+sometimes denoted $\displaystyle\prod_{i\in I}v_i$. If the $v_i$ are monomorphisms, then so
 is their product, but the analogous statement for epimorphisms is false in
 general (as one sees, for example, in the category of sheaves on a fixed
 topological space).
@@ -26,29 +26,29 @@ topological space).
 \LayerTarget{tohoku:section:1.1:p9}
 Considerations dual to the preceding ones make it possible to define the notion
 of a \textit{representation of an object $A$ as a sum} of a family of objects
-$A_i$ by morphisms $u_i:A_i\longrightarrow A$ (for every $B\in C$, the natural
+$A_i$ by morphisms $u_i:A_i\to A$ (for every $B\in \mathbf{C}$, the natural
 map
 \[
-  \mathrm{Hom}(A,B)\longrightarrow
+  \mathrm{Hom}(A,B)\to
   \prod_{i\in I}\mathrm{Hom}(A_i,B)
 \]
-is bijective), of the \textit{direct sum} $\bigoplus_{i\in I}A_i$, equipped
+is bijective), of the \textit{direct sum} $\displaystyle\bigoplus_{i\in I}A_i$, equipped
 with the \textit{canonical injections}
-$A_i\longrightarrow\bigoplus_{i\in I}A_i$ (which, despite their name, are not
+$A_i\to\displaystyle\bigoplus_{i\in I}A_i$ (which, despite their name, are not
 necessarily monomorphisms), and of the \textit{sum morphism} of a family of
-morphisms $u_i:A_i\longrightarrow B_i$. If the $u_i$ are epimorphisms, then so
+morphisms $u_i:A_i\to B_i$. If the $u_i$ are epimorphisms, then so
 is their sum.
 
 \LayerTarget{tohoku:section:1.2}
 \noindent\textbf{1.2. Functors.}\quad
 \LayerTarget{tohoku:section:1.2:p1}
-Let $C,C'$ be two categories. Recall that a \textit{covariant functor} from
-$C$ to $C'$ is a ``function'' $F$ which associates to an object $A\in C$ an
-object $F(A)$ of $C'$, and to a morphism $u:A\longrightarrow B$ in $C$ a
-morphism $F(u):F(A)\longrightarrow F(B)$, in such a way that
+Let $\mathbf{C},\mathbf{C}'$ be two categories. Recall that a \textit{covariant functor} from
+$\mathbf{C}$ to $\mathbf{C}'$ is a ``function'' $F$ which associates to an object $A\in \mathbf{C}$ an
+object $F(A)$ of $\mathbf{C}'$, and to a morphism $u:A\to B$ in $\mathbf{C}$ a
+morphism $F(u):F(A)\to F(B)$, in such a way that
 $F(I_A)=I_{F(A)}$ and $F(vu)=F(v)F(u)$. The analogous definition applies to
-\textit{contravariant functors} from $C$ to $C'$ (which are also covariant
-functors from $C^{\circ}$ to $C'$ or from $C$ to ${C'}^{\circ}$). We similarly
+\textit{contravariant functors} from $\mathbf{C}$ to $\mathbf{C}'$ (which are also covariant
+functors from $\mathbf{C}^{\circ}$ to $\mathbf{C}'$ or from $\mathbf{C}$ to ${\mathbf{C}'}^{\circ}$). We similarly
 define functors of several variables, or \textit{multifunctors}, covariant in
 some variables and contravariant in others. In general discussions, for
 simplicity we shall restrict ourselves to functors of one variable. Functors
@@ -56,8 +56,8 @@ compose like functions; this composition is associative and the ``identity
 functors'' play the role of identities.
 
 \LayerTarget{tohoku:section:1.2:p2}
-Let $C$ and $C'$ be two fixed categories, and let $F$ and $G$ be two covariant
-functors from $C$ to $C'$. A \textit{functorial morphism} $f$ from $F$ to $G$
+Let $\mathbf{C}$ and $\mathbf{C}'$ be two fixed categories, and let $F$ and $G$ be two covariant
+functors from $\mathbf{C}$ to $\mathbf{C}'$. A \textit{functorial morphism} $f$ from $F$ to $G$
 (also called a ``natural
 
 \TohokuContinuation{125}

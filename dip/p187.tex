@@ -7,90 +7,83 @@
 compte alors des réflexions qui ont précédé le lemme 1, on trouve :
 
 \LayerTarget{tohoku:proposition:4.1.2}
-\noindent\textsc{Proposition 4.1.2.} \textit{Supposons que $O$ soit un faisceau
-cohérent d'anneaux noethériens à gauche. Alors pour tout $O$-module injectif
-$B$ et tout $x\in X$, $B(x)$ est un $O(x)$-module injectif.}
+\textsc{Proposition 4.1.2.} \textit{Supposons que ${\mathbf O}$ soit un faisceau
+cohérent d'anneaux noethériens à gauche. Alors pour tout ${\mathbf O}$-module injectif
+$B$ et tout $x\in X$, $B(x)$ est un ${\mathbf O}(x)$-module injectif.}
 
 Enfin, signalons encore :
 
 \LayerTarget{tohoku:proposition:4.1.3}
-\noindent\textsc{Proposition 4.1.3.} \textit{Soient $A$ et $B$ deux
-$O$-modules. Si $B$ est injectif alors $\mathbf{Hom}_O(A,B)$ est un faisceau
-flasque (cf. 3.3).}
+\textsc{Proposition 4.1.3.} \textit{Soient $A$ et $B$ deux
+${\mathbf O}$-modules. Si $B$ est injectif alors $\mathbf{Hom}_{\mathbf O}(A,B)$ est un faisceau
+flasque \textup{(}cf.\ \textup{3.3)}.}
 
 \LayerTarget{tohoku:proof:proposition-4.1.3}
 En effet, une section de ce faisceau sur l'ouvert $U$ s'identifie à un
-homomorphisme du $O$-module $A_U$ dans $B$ (où la notation $A_U$ est celle de
+homomorphisme du ${\mathbf O}$-module $A_U$ dans $B$ (où la notation $A_U$ est celle de
 3.5), donc ($B$ étant injectif) se prolonge en un homomorphisme de $A$ dans
-$B$, i. e. en une section de $\mathbf{Hom}_O(A,B)$ sur tout $X$.
+$B$, i. e. en une section de $\mathbf{Hom}_{\mathbf O}(A,B)$ sur tout $X$.
 
 \LayerTarget{tohoku:section:4.2}
-\SectionHeading{4.2. Les foncteurs $\mathrm{Ext}_O^p(X,A,B)$ et
-$\mathbf{Ext}_O^p(A,B)$ et la suite spectrale fondamentale.}
-
+\textbf{4.2. Les foncteurs $\mathrm{Ext}_{\mathbf O}^p(X,A,B)$ et
+$\mathbf{Ext}_{\mathbf O}^p(A,B)$ et la suite spectrale fondamentale.}
 \LayerTarget{tohoku:construction:global-ext-o}
 En vertu du corollaire à prop. 3.1.1., on peut prendre les foncteurs dérivés
-de tout foncteur covariant additif défini sur $C^O$. En particulier, cela
-permet de construire comme d'habitude les foncteurs $\mathrm{Ext}_O^p(A,B)$
-dans $C^O$ comme foncteurs dérivés droits du foncteur
-$B\longmapsto\mathrm{Hom}_O(A,B)$ dans $C^O$, à valeurs dans la catégorie des
+de tout foncteur covariant additif défini sur $\mathbf C^{\mathbf O}$. En particulier, cela
+permet de construire comme d'habitude les foncteurs $\mathrm{Ext}^p(A,B)$
+dans $\mathbf C^{\mathbf O}$ comme foncteurs dérivés droits du foncteur
+$B\to\mathrm{Hom}(A,B)$ dans $\mathbf C^{\mathbf O}$, à valeurs dans la catégorie des
 groupes abéliens. Pour éviter des confusions de notations, nous allons
-cependant noter ces foncteurs $\mathrm{Ext}_O^p(X;A,B)$, (indiquant dans la
-notation à la fois l'espace $X$ et le faisceau d'anneaux $O$). Nous poserons,
-pour toute partie $U$ de $X$ :
-
+cependant noter ces foncteurs $\mathrm{Ext}_{\mathbf O}^p(X;A,B)$, (indiquant dans la
+notation à la fois l'espace $X$ et le faisceau d'anneaux ${\mathbf O}$). Nous poserons,
+pour toute partie $U$ de $X$.
 \LayerTarget{tohoku:eq:4.2.1}
 \[
 \tag{4.2.1}
-\mathrm{Ext}_O^p(U;A,B)=
-\mathrm{Ext}_{O|U}^p(U;A|U,B|U).
+\mathrm{Ext}_{\mathbf O}^p(U;A,B)=
+\mathrm{Ext}_{{\mathbf O}|U}(U;A|U,B|U).
 \]
-
 \LayerTarget{tohoku:construction:ext-restriction-maps}
 Compte tenu de la proposition 3.1.3 et du fait que le foncteur
-$B\longmapsto B|U$ est exact, on voit que les $\mathrm{Ext}_O^p(U;A,B)$ sont
+$B\to B|U$ est exact, on voit que les $\mathrm{Ext}_{\mathbf O}^p(U;A,B)$ sont
 les foncteurs dérivés droits du foncteur
-$B\longmapsto\mathrm{Hom}_O(U;A,B)$ sur $C^O$. Les homomorphismes fonctoriels
-$\mathrm{Hom}_O(U;A,B)\longrightarrow\mathrm{Hom}_O(V;A,B)$ définissent par
+$B\to\mathrm{Hom}_{\mathbf O}(U;A,B)$ sur $\mathbf C^{\mathbf O}$. Les homomorphismes fonctoriels
+$\mathrm{Hom}_{\mathbf O}(U;A,B)\to\mathrm{Hom}_{\mathbf O}(V;A,B)$ définissent par
 suite des homomorphismes pour les foncteurs dérivés droits :
-
 \LayerTarget{tohoku:eq:4.2.2}
 \[
 \tag{4.2.2}
-\mathrm{Ext}_O^p(U;A,B)\longrightarrow\mathrm{Ext}_O^p(V;A,B)
+\mathrm{Ext}_{\mathbf O}^p(U;A,B)\to\mathrm{Ext}_{\mathbf O}^p(V;A,B)
 \qquad(V\subset U)
 \]
-
 \LayerTarget{tohoku:definition:ext-presheaf}
-grâce auxquels le système des $\mathrm{Ext}_O^p(U;A,B)$, pour $U$ ouvert
+grâce auxquels le système des $\mathrm{Ext}_{\mathbf O}^p(U;A,B)$, pour $U$ ouvert
 variable, devient un \textit{préfaisceau abélien} sur $X$, noté
-$\mathrm{Ext}_O^p(-;A,B)$.
+$\mathrm{Ext}_{\mathbf O}^p(-;A,B)$.
 
 \LayerTarget{tohoku:definition:sheaf-ext-o}
 On peut aussi considérer les foncteurs dérivés droits de
-$\mathbf{Hom}_O(A,B)$ par rapport à $B$, on les note
-$\mathbf{Ext}_O^p(A,B)$. Ici, tenant compte de prop. 3.1.3 et de la relation
+$\mathbf{Hom}_{\mathbf O}(A,B)$ par rapport à $B$, on les note
+$\mathbf{Ext}_{\mathbf O}^p(A,B)$. Ici, tenant compte de prop. 3.1.3 et de la relation
 évidente
-$\mathbf{Hom}_O(A,B)|U=\mathbf{Hom}_{O|U}(A|U,B|U)$, on trouve des
+$\mathbf{Hom}_{\mathbf O}(A,B)|U=\mathbf{Hom}_{{\mathbf O}|U}(A|U,B|U)$, on trouve des
 isomorphismes
-
 \LayerTarget{tohoku:eq:4.2.3}
 \[
 \tag{4.2.3}
-\mathbf{Ext}_O^p(A,B)|U=
-\mathbf{Ext}_{O|U}^p(A|U,B|U))
+\mathbf{Ext}_{\mathbf O}^p(A,B)|U=
+\mathbf{Ext}_{{\mathbf O}|U}^p(A|U,B|U))
 \]
-
 \LayerTarget{tohoku:remark:local-nature-of-sheaf-ext}
 (c'est pourquoi on se dispense de préciser dans la notation sur quel espace
 on se place). De façon imagée, \textit{les foncteurs
-$\mathbf{Ext}_O^p(A,B)$ sont de nature locale} (contrairement aux foncteurs
-$\mathrm{Ext}_O^p(X,A,B)$, essentiellement “globaux”). En vertu de lemme
-3.7.2, $\mathbf{Ext}_O^p(A,B)$ peut être considéré aussi comme le faisceau
-associé au préfaisceau $\mathrm{Ext}_O^p(-;A,B)$ défini ci-dessus.
+$\mathbf{Ext}_{\mathbf O}^p(A,B)$ sont de nature locale} (contrairement aux foncteurs
+$\mathrm{Ext}_{\mathbf O}^p(X,A,B)$, essentiellement ``globaux''). En vertu de lemme
+3.7.2, $\mathbf{Ext}_{\mathbf O}^p(A,B)$ peut être considéré aussi comme le faisceau
+associé au préfaisceau $\mathrm{Ext}_{\mathbf O}^p(-;A,B)$ défini ci-dessus.
 
 \LayerTarget{tohoku:remark:ext-bifunctoriality:p1}
 Les considérations de la fin de 2.3 montrent que les
-$\mathrm{Ext}_O^p(X;A,B)$ resp.
+$\mathrm{Ext}_{\mathbf O}^p(X;A,B)$ resp.
 
 \TohokuContinuation{188}

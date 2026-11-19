@@ -4,10 +4,10 @@
 \SourcePage{206}
 
 \LayerTarget{tohoku:proof:transformation-first-spectral-sequence:p1}
-\noindent du théorème 5.3.1. On a
-$\mathbf H^n(G,A_U)(y)=\mathbf H^n(G,A_U(y))$ pour $y\in Y_0$. En vertu de
-la proposition 5.2.3, l'homomorphisme
-$H^n(Y,(A^G)_V)\longrightarrow H^n(X;G,A_U)$ est donc un isomorphisme pour
+\noindent de théorème 5.3.1 on a
+$\mathbf H^n(G,A_U)(y)=H^n(G,A_U(y))$ pour $y\in Y_0$. En vertu de
+proposition 5.2.3, l'homomorphisme
+$H^n(Y,(A^G)_V)\to H^n(X;G,A_U)$ est donc un isomorphisme pour
 tout $n$. On voit tout aussi facilement que $H^n(X;G,A_{X_0})$ s'identifie à
 $H^n(X_0;G,A)$, de plus on sait que
 $H^n(Y,(A^G)_{Y_0})=H^n(Y_0,A^G)$. On déduit alors du diagramme précédent,
@@ -16,65 +16,57 @@ par un ``diagram-chasing'' évident, une suite d'homomorphismes
 \LayerTarget{tohoku:sequence:5.4.2}
 \[
 \tag{5.4.2}
-\begin{aligned}
-{}\longrightarrow H^{n-1}(X;G,A)
- &\xrightarrow{\beta^{n-1}}
- \frac{H^{n-1}(X_0;G,A)}{\operatorname{Im}H^{n-1}(Y_0,A^G)}
+\begin{gathered}
+{}\to H^{n-1}(X,G,A)
+ \xrightarrow{\beta^{n-1}}
+ H^{n-1}(X_0;G,A)/\operatorname{Im}H^{n-1}(Y_0,A^G)
  \xrightarrow{\partial} H^n(Y,A^G)\\[-0.2em]
- &\xrightarrow{\alpha^n}H^n(X;G,A)
+ \xrightarrow{\alpha^n}H^n(X;G,A)
  \xrightarrow{\beta^n}
- \frac{H^n(X_0;G,A)}{\operatorname{Im}H^n(Y_0,A^G)}
- \longrightarrow
-\end{aligned}
+ H^n(X_0;G,A)/\operatorname{Im}H^n(Y_0,A^G)
+ \to
+\end{gathered}
 \]
 qui est un complexe (le produit de deux homomorphismes consécutifs est nul),
 et exacte partout sauf éventuellement aux termes $H^n(Y,A^G)$, le défaut
 d'exactitude $\operatorname{Ker}\alpha^n/\operatorname{Im}\partial$ en ce
 terme étant isomorphe canoniquement au noyau de l'homomorphisme
-$H^n(Y_0,A^G)\longrightarrow H^n(X_0;G,A)$. On obtient ainsi :
+$H^n(Y_0,A^G)\to H^n(X_0;G,A)$. On obtient ainsi :
 
 \LayerTarget{tohoku:proposition:5.4.1}
-\noindent\textsc{Proposition 5.4.1.} \textit{La suite d'homomorphismes (5.4.2)
-définit sur $H^n(Y,A^G)$ une suite de composition de longueur 3, dont les
+\textsc{Proposition 5.4.1.} \textit{La suite d'homomorphismes \textup{(5.4.2)}
+définit sur $H^n(Y,A^G)$ une suite de composition de longueur \textup{3}, dont les
 quotients successifs sont isomorphes respectivement à}
-\[
-\operatorname{Coker}\beta^{n-1}
-=\frac{H^{n-1}(X_0;G,A)}{
-  \operatorname{Im}H^{n-1}(X;G,A)+\operatorname{Im}H^{n-1}(Y_0,A^G)},
-\]
+$\operatorname{Coker}\beta^{n-1}=H^{n-1}(X_0;G,A)/(\operatorname{Im}H^{n-1}(X;G,A)+\operatorname{Im}H^{n-1}(Y_0,A^G))$,
 \textit{à}
-$\operatorname{Ker}\bigl(H^n(Y_0,A^G)\longrightarrow H^n(X_0;G,A)\bigr)$
+$\operatorname{Ker}\bigl(H^n(Y_0,A^G)\to H^n(X_0;G,A)\bigr)$
 \textit{et à} $\operatorname{Ker}\beta^n\subset H^n(X;G,A)$.
 
 \LayerTarget{tohoku:comparison:first-and-second-spectral-sequences-5.4}
 On peut donc dire que l'utilisation de la première suite spectrale nous donne
 un moyen de ramener la détermination de $H^*(Y,A^G)$ à une bonne connaissance
-de $H^*(X;G,A)$, $H^*(X_0;G,A)$, $H^*(Y_0,A^G)$ et des homomorphismes naturels
-\[
-H^*(X;G,A)\longrightarrow H^*(X_0;G,A)\longleftarrow H^*(Y_0,A^G).
-\]
+de $H^*(X,G,A)$, $H^*(X_0,G,A)$, $H^*(Y_0,A^G)$ et des homomorphismes naturels
+$H^*(X;G,A)\to H^*(X_0;G,A)\leftarrow H^*(Y_0,A^G)$.
 Or la détermination des deux premiers groupes pourra être tentée par
 utilisation de la \textit{deuxième} suite spectrale, tandis que le calcul de
 $H^*(Y_0,A^G)$ sera souvent possible si on a pu choisir $Y_0$ assez petit. Un
 cas particulièrement simple et important est donné par le
 
 \LayerTarget{tohoku:corollary:5.4.1}
-\noindent\textsc{Corollaire.} \textit{Supposons que $G$ opère trivialement sur
-$X_0$ (donc $G$ est fini), que $A$ soit un faisceau d'espaces vectoriels sur
+\textsc{Corollaire.} \textit{Supposons que $G$ opère trivialement sur
+$X_0$ (donc $G$ est fini si $X_0\ne\varnothing$), que $A$ soit un faisceau d'espaces vectoriels sur
 un corps $k$, et que $G$ opère trivialement sur $A\mathbin{|}X_0$. Alors la
-suite (5.4.2) est exacte, et $H^n(X_0;G,A)$ s'identifie canoniquement à}
-\[
-\bigoplus_{p+q=n}H^p(G,k)\otimes H^q(X_0,A).
-\]
+suite \textup{(5.4.2)} est exacte, et $H^n(X_0,G,A)$ s'identifie canoniquement à}
+$\displaystyle\bigoplus_{p+q=n}H^p(G,k)\otimes H^q(X_0,A)$.
 
 \LayerTarget{tohoku:proof:corollary-5.4.1}
 En effet, la dernière assertion est un cas particulier de la dernière
-assertion du théorème 4.4.1. Par suite, l'homomorphisme canonique de
+assertion de théorème 4.4.1. Par suite, l'homomorphisme canonique de
 $H^n(Y_0,A^G)=H^n(X_0,A)$ dans $H^n(X_0;G,A)$ est injectif, donc la suite
 (5.4.2) est exacte.
 
 \LayerTarget{tohoku:remark:smith-fixed-point-application:p1}
-\noindent\textsc{Remarques.} Supposons que $G$ soit un groupe fini d'ordre
+\textsc{Remarques.} Supposons que $G$ soit un groupe fini d'ordre
 premier, alors en prenant pour $X_0$ l'ensemble des points de $X$ fixes sous
 $G$, et $Y_0=f(X_0)$, $Y_0$ satisfait à la condition énoncée au début de ce
 numéro. Si alors $A$ est un faisceau d'espaces vectoriels provenant d'un

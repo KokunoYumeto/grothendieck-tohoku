@@ -1,66 +1,66 @@
 % Corrected French for printed p.146.
-% Correction: opérateurs de bord / opérateur de bord total in footnote 6.
+% Corrections and reverted normalizations are recorded in CORRECTIONS.tsv.
 \SourcePage{146}
 
 \LayerTarget{tohoku:example:bicomplex-spectral-sequences}
-Soit par exemple $K$ un \textit{bicomplexe}\footnote{Contrairement à la
-terminologie introduite dans [6], nous supposons que les deux opérateurs de
-bord $d'$ et $d''$ d'un bicomplexe $K$ \textit{commutent}, et nous prendrons
-donc comme opérateur de bord \textit{total} $d=d'+d_t''$, où
-$d_t''x=(-1)^p d''x$ pour $x\in K^{p,q}$.} dans $C$, $K=(K^{p,q})$, et
+Soit par exemple $K$ un \textit{bicomplexe}\textsuperscript{6)}\SourceFootnote{6}{Contrairement à la
+terminologie introduite dans [6], nous supposons que les deux opérateurs
+bord $\mathrm{d}'$ et $\mathrm{d}''$ d'un bicomplexe $K$ \textit{commutent}, et nous prendrons
+donc comme opérateur bord \textit{total} $d=d'+d_t''$, où
+$d_t''x=(-1)^p d''x$ pour $x\in K^{p,q}$.} dans $\mathbf{C}$, $K=(K^{p,q})$, et
 supposons que pour tout entier $n$, il n'existe qu'un nombre fini de couples
 $(p,q)$ tels que $p+q=n$ et que $K^{p,q}\ne0$. Alors on peut trouver deux
-suites spectrales, aboutissant toutes deux à $H(K)=(H^n(K))$ (cohomologie du
+suites spectrales, aboutissant toutes deux à $H(K)=(H^n(K))$, (cohomologie du
 complexe simple $(K^n)$ associé à $K$,
-$K^n=\sum_{p+q=n}K^{p,q}$) et dont les premiers termes sont respectivement
+$K^n=\displaystyle\sum_{p+q=n}K^{p,q}$) et dont les premiers termes sont respectivement
 \LayerTarget{tohoku:eq:2.4.1}
 \[
 \tag{2.4.1}
-{}_{\mathrm I}E_2^{p,q}(K)=H_{\mathrm I}^pH_{\mathrm{II}}^q(K),
+I_2^{p,q}(K)=H_{I}^pH_{II}^q(K)
 \qquad
-{}_{\mathrm{II}}E_2^{p,q}(K)=H_{\mathrm{II}}^pH_{\mathrm I}^q(K)
+II_2^{p,q}(K)=H_{II}^pH_{I}^q(K)
 \]
 (en employant les notations de [6, Chap. XV, N\textsuperscript{o}6]). Ces
 suites spectrales sont des foncteurs spectraux en $K$. Ce sont d'ailleurs des
 suites spectrales \textit{cohomologiques} si les degrés de $K$ sont positifs.
 
 \LayerTarget{tohoku:construction:right-derived-spectral-functors:p1}
-Soit $F$ un foncteur covariant d'une catégorie abélienne $C$ dans une autre
-$C'$, supposons que dans $C$ tout objet soit isomorphe à un sous-truc d'un
-objet injectif. Soit $K=(K^n)$ un complexe dans $C$, limité à gauche (i. e.
+Soit $\mathbf{F}$ un foncteur covariant d'une catégorie abélienne $\mathbf{C}$ dans une autre
+$\mathbf{C}'$, supposons que dans $\mathbf{C}$ tout objet soit isomorphe à un sous-truc d'un
+objet injectif. Soit $K=(K^n)$ un complexe dans $\mathbf{C}$, limité à gauche (i. e.
 $K^n=0$ pour $n$ assez petit). Alors les considérations de [6, Chap. XVII]
 s'appliquent, et permettent de construire deux suites spectrales,
-$({}_{\mathrm I}E_r^{p,q}(K),{}_{\mathrm I}F^n(K))$ et
-$({}_{\mathrm{II}}E_r^{p,q}(K),{}_{\mathrm{II}}F^n(K))$, aboutissant au même
+$(IF_r^{p,q}(K),IF^n(K))$ et
+$(IIF_r^{p,q}(K),IIF^n(K))$, aboutissant au même
 truc gradué $\mathfrak R F(K)=(\mathfrak R^nF(K))$ (pour deux filtrations
 convenables de ce dernier), et dont les termes initiaux sont respectivement :
 \LayerTarget{tohoku:eq:2.4.2}
 \[
 \tag{2.4.2}
-{}_{\mathrm I}E_2^{p,q}(K)=H^p(R^qF(K)),
+IF_2^{p,q}(K)=H^p(R^qF(K))
 \qquad
-{}_{\mathrm{II}}E_2^{p,q}(K)=R^pF(H^q(K)).
+IIF_2^{p,q}(K)=R^pF(H^q(K))
 \]
-(Comme d'habitude, un foncteur appliqué à un complexe $K$ désigne le complexe
+(comme d'habitude, un foncteur appliqué à un complexe $K$ désigne le complexe
 obtenu en appliquant le foncteur à chacun des termes de $K$). Ces suites
 spectrales sont des foncteurs par rapport à $K$, et la variance des termes
 initiaux et finaux est celle qui est évidente sur leur forme explicite. On a
-ainsi défini deux foncteurs spectraux sur la catégorie des complexes dans $C$
+ainsi défini deux foncteurs spectraux sur la catégorie des complexes dans $\mathbf{C}$
 limités à gauche, on les appelle les \textit{foncteurs spectraux dérivés à
-droite de $F$} ou encore les \textit{foncteurs spectraux d'hyperhomologie (à
-droite) de $F$}. Les foncteurs $\mathfrak R^nF(K)$ sont appelés les
-\textit{foncteurs d'hyperhomologie de $F$}.
+droite de $F$} ou encore les \textit{foncteurs spectraux d'hyperhomologie} (à
+droite) \textit{de $F$}. Les foncteurs $\mathfrak R^nF(K)$ sont appelés les
+\textit{foncteurs d'hyperhomologie} de $F$.
 
 \LayerTarget{tohoku:construction:hyperhomology-resolution:a:p1}
 Rappelons le principe de la construction, en nous bornant pour fixer les idées
 au cas où $K$ est à degrés positifs. Soit $L=(L^{p,q})$ un complexe double, à
-degrés positifs, muni d'une augmentation $K\longrightarrow L$ (où $K$ est
+degrés positifs, muni d'une augmentation $K\to L$ (où $K$ est
 considéré comme un bicomplexe où le second degré est nul) ; on suppose que pour
-tout $p$, le complexe $L^{p,*}=(L^{p,q})_q$ est une \textit{résolution} de
+tout $p$, le complexe $L^{p*}=(L^{p,q})_q$ est une \textit{résolution} de
 $K^p$, et que pour tout $p,q$, on a $R^nF(L^{p,q})=0$ pour $n>0$. Voici deux
 façons particulières, toutes deux uniques à une équivalence d'homotopie de
 bicomplexes près, de construire un tel bicomplexe : a) On considère $K$ comme
-un objet de la catégorie abélienne $\mathfrak K$ des complexes dans $C$ à
+un objet de la catégorie abélienne $\mathfrak K$ des complexes dans $\mathbf{C}$ à
 degrés positifs, et on prend pour $L$ une résolution \textit{injective} de
 l'objet $K$. On constate facilement que les objets injectifs dans $\mathfrak K$
 sont les complexes $A=(A^i)$ à degrés positifs tels que chaque $A^i$ soit

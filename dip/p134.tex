@@ -2,40 +2,40 @@
 \SourcePage{134}
 
 \LayerTarget{tohoku:prop:1.8:proof:p2}
-\noindent $=w_{ij}(A_i)$, soit $N$ le sous-truc de $S$ borne supérieure des
+\noindent $=w_{ij}(A_i)$, soit $N$ le sous-truc de $\mathrm{S}$ borne supérieure des
 $N_{ij}$ (qui existe en vertu de l'axiome AB 3)), soit
-$\overline A=S/N$, soit $u_i:A_i\longrightarrow\overline A$ le morphisme
-induit par le morphisme canonique $S\longrightarrow S/N$, on constate aussitôt
-que $(\overline A,u_i)$ est une limite inductive de $\mathbf A$. Nous laissons
+$\overline{\mathbf A}=\mathrm{S}/N$, soit $u_i:A_i\to\overline{\mathbf A}$ le morphisme
+induit par le morphisme canonique $\mathrm{S}\to \mathrm{S}/N$, on constate aussitôt
+que $(\mathbf A,u_i)$ est une limite inductive de $\mathbf A$. Nous laissons
 au lecteur la démonstration des autres assertions de la proposition 1.8.,
 démonstration évidemment bien connue.
 
 \LayerTarget{tohoku:section:1.9}
-\noindent\textbf{1.9. Générateurs et cogénérateurs.} Soit $C$ une catégorie,
-et soit $(U_i)_{i\in I}$ une famille d'objets de $C$. On dit que c'est une
-\textit{famille de générateurs de $C$} si pour tout objet $A\in C$ et tout
+\textbf{1.9. Générateurs et cogénérateurs.} Soit $\mathbf{C}$ une catégorie,
+et soit $(U_i)_{i\in I}$ une famille d'objets de $\mathbf{C}$. On dit que c'est une
+\textit{famille de générateurs} de $\mathbf{C}$ si pour tout objet $A\in \mathbf{C}$ et tout
 sous-truc $B\neq A$, on peut trouver un $i\in I$ et un morphisme
-$u:U_i\longrightarrow A$ qui ne provienne pas d'un morphisme de $U_i$ dans
-$B$. Alors pour tout $A\in C$, les sous-trucs de $A$ forment un
+$u:U_i\to A$ qui ne provienne pas d'un morphisme de $U_i$ dans
+$B$. Alors pour tout $A\in \mathbf{C}$, les sous-trucs de $A$ forment un
 \textit{ensemble} : en effet, un sous-truc $B$ de $A$ est complètement
 déterminé par l'ensemble des morphismes d'objets $U_i$ dans $A$ qui proviennent
-d'un morphisme de $U_i$ dans $B$. On dit qu'un objet $U\in C$ est un
-\textit{générateur} de $C$ si la famille $\{U\}$ est une famille de
+d'un morphisme de $U_i$ dans $B$. On dit qu'un objet $U\in \mathbf{C}$ est un
+\textit{générateur} de $\mathbf{C}$ si la famille $\{U\}$ est une famille de
 générateurs.
 
 \LayerTarget{tohoku:prop:1.9.1}
-\noindent\textsc{Proposition 1.9.1.} --- \textit{Supposons que $C$ soit une
-catégorie abélienne satisfaisant à l'axiome AB 3) (existence de sommes directes
-infinie), soit $(U_i)_{i\in I}$ une famille d'objets de $C$,
-$U=\bigoplus U_i$ sa somme directe. Les conditions suivantes sont
+\textsc{Proposition 1.9.1.} \textit{Supposons que $\mathbf{C}$ soit une
+catégorie abélienne satisfaisant à l'axiome \textup{AB 3)} (existence de sommes directes
+infinie), soit $(U_i)_{i\in I}$ une famille d'objets de $\mathbf{C}$,
+$U=\oplus U_i$ sa somme directe. Les conditions suivantes sont
 équivalentes :}
 
-\begin{enumerate}
-\item[a)] \textit{$(U_i)$ est une famille de générateurs de $C$.}
-\item[b)] \textit{$U$ est un générateur de $C$.}
-\item[c)] \textit{Tout $A\in C$ est isomorphe à un quotient d'une somme
+\textit{a) $(U_i)$ est une famille de générateurs de $\mathbf{C}$.}
+
+\textit{b) $U$ est un générateur de $\mathbf{C}$.}
+
+\textit{c) Tout $A\in \mathbf{C}$ est isomorphe à un quotient d'une somme
 directe $U^{(I)}$ d'objets tous identiques à $U$.}
-\end{enumerate}
 
 \LayerTarget{tohoku:prop:1.9.1:proof}
 L'équivalence de a) et b) est une conséquence à peu près immédiate de la
@@ -47,20 +47,20 @@ $u\in\mathrm{Hom}(U,A)=I$ tel que $u(A)\not\subset B$, ce qui serait absurde ;
 donc $A$ est isomorphe à un quotient de $U^{(I)}$. c) implique b), car il est
 immédiat que si $A$ est un quotient de $U^{(I)}$, alors pour tout sous-truc
 $B$ de $A$ distinct de $A$, il existe un $i$ tel que l'image canonique dans
-$A$ du i.ème facteur de $U^{(I)}$ soit $\not\subset B$, d'où un morphisme de
+$A$ du $i$.ème facteur de $U^{(I)}$ soit $\not\subset B$, d'où un morphisme de
 $U$ dans $A$ qui ne provient pas d'un morphisme de $U$ dans $B$. (On notera
-que la structure additive de $C$ n'a pas réellement servi ici).
+que la structure additive de $\mathbf{C}$ n'a pas réellement servi ici).
 
 \LayerTarget{tohoku:section:1.9:examples:p1}
-\noindent\textsc{Exemples.} Si $C$ est la catégorie abélienne des modules à
+\textsc{Exemples.} Si $\mathbf{C}$ est la catégorie abélienne des modules à
 gauche unitaires sur un anneau $U$ avec unité, alors $U$ (considéré comme
-module à gauche sur lui-même) est un générateur. Si $C$ est la catégorie des
+module à gauche sur lui-même) est un générateur. Si $\mathbf{C}$ est la catégorie des
 faisceaux de groupes abéliens sur un espace topologique fixé $X$, et si pour
-tout ouvert $U\subset X$ on désigne par $Z_U$ le faisceau sur $X$ qui est nul
-au dessus de $C U$ et identique au faisceau constant des entiers au dessus de
-$U$, la famille des $Z_U$ forme un système de générateurs de $C$ ; cet exemple
-se généralise aussitôt au cas où on se donne sur $X$ un faisceau $O$ d'anneaux,
-et où l'on considère la catégorie des faisceaux de $O$-modules sur $X$.
+tout ouvert $U\subset X$ on désigne par $\mathbf{Z}_U$ le faisceau sur $X$ qui est nul
+au dessus de $\complement U$ et identique au faisceau constant des entiers au dessus de
+$U$, la famille des $\mathbf{Z}_U$ forme un système de générateurs de $\mathbf{C}$ ; cet exemple
+se généralise aussitôt au cas où on se donne sur $X$ un faisceau $\mathbf{O}$ d'anneaux,
+et où l'on considère la catégorie des faisceaux de $\mathbf{O}$-modules sur $X$.
 D'autres exemples sont contenus dans la proposition suivante :
 
 \TohokuContinuation{135}

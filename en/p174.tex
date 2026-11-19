@@ -13,56 +13,44 @@ study further.
 \textbf{3.8. Comparison with Čech cohomology.} We refer to [15] for the
 definition of the ``cohomology groups'' of $X$ with coefficients in an
 abelian sheaf $F$, calculated by the method of Čech coverings.
-
 \LayerTarget{tohoku:def:cech-cohomology}
 We denote these groups by $\check H^p(X,F)$, to distinguish them from the
 groups $H^p(X,F)$ defined in No.~2. (For simplicity, we shall consider no
-``family $\Phi$'' other than the family of all closed subsets.) We note,
+``family $\Phi$'' other than the family of \textit{all} closed subsets.) We note,
 however, that these groups can be defined when $F$ is assumed only to be a
 \textit{presheaf} of abelian groups:
-
 \LayerTarget{tohoku:construction:cech-cochain-complex}
-for every open covering $\mathcal U=(U_i)$ of $X$, one can form the complex
-
+for every open covering $\mathbf U=(U_i)$ of $X$, one can form the complex
 \LayerTarget{tohoku:eq:cech-cochain-complex-total}
-\[
-C(\mathcal U,F)=\sum_p C^p(\mathcal U,F)
-\]
-of cochains of $\mathcal U$ with values in the presheaf $F$, and set
-
+$C(\mathbf U,F)=\displaystyle\sum\limits_p C^p(\mathbf U,F)$
+of cochains of $\mathbf U$ with values in the presheaf $F$, and set
 \LayerTarget{tohoku:def:cover-cohomology}
-\[
-H^p(\mathcal U,F)=H^p(C(\mathcal U,F)),
-\]
+$H^p(\mathbf U,F)=H^p(C(\mathbf U,F))$,
 then take
-
 \LayerTarget{tohoku:eq:cech-cohomology-direct-limit}
 \[
-\check H^p(X,F)=\varinjlim_{\mathcal U} H^p(\mathcal U,F),
+\check H^p(X,F)=\varinjlim H^p(\mathbf U,F),
 \]
-where the direct limit is taken over the filtered partially ordered set of
+where the inductive limit is taken over the filtered partially ordered set of
 ``classes of open coverings'' of $X$ (two open coverings being regarded as
 equivalent if each refines the other).
 
 \LayerTarget{tohoku:obstruction:cech-not-cohomological}
 Unfortunately, the $\check H^p(X,F)$ do not in general form a cohomological
-functor on the category $C^X$ of sheaves of abelian groups on $X$ (see the
+functor on the category $\mathbf C^X$ of sheaves of abelian groups on $X$ (see the
 example at the end of this section).
-
 \LayerTarget{tohoku:construction:cech-delta-functor}
 But $(\check H^0,\check H^1)$ forms an exact $\partial$-functor [15], [11].
-Moreover, the $\check H^p$ are effaceable functors for $p>0$:
-
+Moreover, the $\check H^p$ are \textit{effaceable} functors for $p>0$:
 \LayerTarget{tohoku:lemma:product-sheaf-cech-acyclic}
 for this, it suffices, for example, to show that if $M$ is the product sheaf
 defined by a family $(M_x)_{x\in X}$ of abelian groups (cf. No.~1), then the
 $\check H^p(X,M)$ vanish for $p>0$. In fact, one even proves
-$H^p(\mathcal U,M)=0$ for every open covering $\mathcal U$ of $X$, using the
+$H^p(\mathbf U,M)=0$ for every open covering $\mathbf U$ of $X$, using the
 well-known homotopy operator employed classically when $M$ is fine and $X$ is
 paracompact.
-
 \LayerTarget{tohoku:comparison:cech-and-derived-cohomology}
-\textit{It follows that, if $X$ is such that the $\check H^p$ can be regarded
+It follows that, \textit{if $X$ is such that the $\check H^p$ can be regarded
 as the components of a cohomological functor, then these $\check H^p$ are
 canonically isomorphic to the functors $H^p$. This is so if $X$ is
 paracompact} (cf., for example, [15, No.~25]), or if $X$ is arbitrary but one
@@ -71,10 +59,10 @@ restricts to the values $p=0$ and $p=1$ (as we already observed in No.~4).
 \LayerTarget{tohoku:construction:cartan-leray-fixed-cover:p1}
 More precise results are related to the Cartan--Leray spectral sequence of a
 covering, as M. Cartan pointed out to me (whose idea I adopt here). Let
-$\mathcal U$ be a fixed open covering of $X$, and put
-$C(F)=C(\mathcal U,F)$ for every sheaf $F$. This gives a covariant left-exact
-functor from $C=C^X$ to the category $C'$ of complexes of abelian groups in
-positive degrees. Moreover, we have seen that the functors $H^p(C(F))$ are
+$\mathbf U$ be a fixed open covering of $X$, and put
+$C(F)=C(\mathbf U,F)$ for every sheaf $F$. This gives a covariant left-exact
+functor from $\mathbf C=\mathbf C^X$ to the category $\mathbf C'$ of complexes of abelian groups in
+nonnegative degrees. Moreover, we have seen that the functors $H^p(C(F))$ are
 effaceable. One readily concludes that there is a spectral functor abutting to
 the right derived functor
 

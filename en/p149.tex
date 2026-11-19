@@ -1,74 +1,73 @@
-% Source-aligned English for printed p.149, with logged type correction.
+% Source-aligned English for printed p.149.
 \SourcePage{149}
 
 \LayerTarget{tohoku:section:2.5}
-\noindent\textbf{2.5. Resolving functors.}
-
+\textbf{2.5. Resolving functors.} 
 \LayerTarget{tohoku:def:resolving-functor}
-Let $C$ and $C'$ be two abelian categories, and suppose every object of $C$
+Let $\mathbf{C}$ and $\mathbf{C}'$ be two abelian categories, and suppose every object of $\mathbf{C}$
 is isomorphic to a subobject of an injective object. Let $F$ be a covariant
-left exact functor from $C$ to $C'$. A \textit{resolving functor} for $F$ is
-a covariant functor $\mathbf F$ on $C$ with values in the category of
-nonnegatively graded complexes in $C'$, with
+left exact functor from $\mathbf{C}$ to $\mathbf{C}'$. A \textit{resolving functor} for $F$ is
+a covariant functor $\mathbf F$ on $\mathbf{C}$ with values in the category of
+nonnegatively graded complexes in $\mathbf{C}'$, with
 $\mathbf F(A)=(\mathbf F^n(A))$, equipped with an augmentation
-$F\longrightarrow\mathbf F$. Thus there is a homomorphism from $F$ to the
-functor $Z^0(\mathbf F)$ of degree-zero cocycles of $\mathbf F$. It must satisfy:
-(i) $\mathbf F$ is exact; (ii) $F\longrightarrow Z^0(\mathbf F)$ is an
+$F\to\mathbf F$. Thus there is a homomorphism from $F$ to the
+functor $Z^0\mathbf F^0$ of cocycles of $\mathbf F^0$. It must satisfy:
+(i) $\mathbf F$ is exact; (ii) $F\to Z^0\mathbf F^0$ is an
 isomorphism; and (iii) if $A$ is injective, then $\mathbf F(A)$ is acyclic in
 degrees $>0$.
 
 Let $\mathbf F$ be a resolving functor for $F$. Consider the functors
-$H^n\mathbf F(A)$ on $C$ with values in $C'$. By (i) they form a
+$H^n\mathbf F(A)$ on $\mathbf{C}$ with values in $\mathbf{C}'$. By (i) they form a
 cohomological functor; by (ii) this functor reduces to $F$ in degree 0; and by
 (iii) the $H^n\mathbf F(A)$ are effaceable for $n>0$. Consequently:
 
 \LayerTarget{tohoku:prop:2.5.1}
-\noindent\textsc{Proposition 2.5.1.} --- \textit{If $\mathbf F$ is a resolving
-functor for $F$, then for every $A\in C$ there are unique isomorphisms
-$H^n\mathbf F(A)=R^nF(A)$. They define an isomorphism of cohomological
-functors and reduce in degree 0 to the augmentation isomorphism.}
+\textsc{Proposition 2.5.1.} \textit{If $\mathbf F$ is a resolving
+functor for $F$, then for every $A\in \mathbf{C}$ there are unique isomorphisms
+$H^n\mathbf F(A)=\mathbf{R}^nF(A)$. They define an isomorphism of cohomological
+functors and reduce in degree $0$ to the augmentation isomorphism.}
 
 We shall give another proof of the preceding proposition, which provides a
 convenient computation of these isomorphisms.
 
 \LayerTarget{tohoku:prop:2.5.2}
-\noindent\textsc{Proposition 2.5.2.} --- \textit{Let $\mathbf F$ be a resolving
-functor for $F$. Let $A\in C$, and let $C=(C^p(A))$ be a right resolution of
+\textsc{Proposition 2.5.2.} \textit{Let $\mathbf F$ be a resolving
+functor for $F$. Let $A\in \mathbf{C}$, and let $C=(C^p(A))$ be a right resolution of
 $A$ by $F$-acyclic objects. Consider the bicomplex
 $\mathbf F C(A)=(\mathbf F^qC^p(A))_{p,q}$ and the natural homomorphisms}
 \LayerTarget{tohoku:eq:2.5.1}
 \[
 \tag{2.5.1}
-F(C(A))\longrightarrow\mathbf F(C(A))\longleftarrow\mathbf F(A),
+F(C(A))\to\mathbf F(C(A))\leftarrow\mathbf F(A)
 \]
 \textit{defined respectively by the augmentation
-$F\longrightarrow\mathbf F$ and the augmentation
-$A\longrightarrow C(A)$. Then the corresponding homomorphisms}
+$F\to\mathbf F$ and the augmentation
+$A\to C(A)$. Then the corresponding homomorphisms}
 \LayerTarget{tohoku:eq:2.5.2}
 \[
 \tag{2.5.2}
-H^nF(C(A))=R^nF(A)\longrightarrow H^n\mathbf F(C(A))
-\longleftarrow H^n\mathbf F(A)
+H^nF(C(A))=R^nF(A)\to H^n\mathbf F(C(A))
+\leftarrow H^n\mathbf F(A)
 \]
 \textit{are isomorphisms, and the corresponding isomorphism
-$H^n\mathbf F(A)=R^nF(A)$ is the one in Proposition 2.5.1.}
+$H^n\mathbf F(A)=R^nF(A)$ is the one in Proposition \textup{2.5.1.}}
 
 \LayerTarget{tohoku:prop:2.5.2:proof:p1}
 Regard $F(C(A))$, respectively $\mathbf F(A)$, as a bicomplex whose second,
 respectively first, degree is zero. The first spectral sequence of
 $\mathbf F(C(A))$ has initial term $H(F(C(A)))$, because
-$H_{\mathrm{II}}^q(\mathbf F(C(A)))$ vanishes for $q>0$ and identifies with
+$H_{II}^q(\mathbf F(C(A)))$ vanishes for $q>0$ and identifies with
 $F(C(A))$ for $q=0$, by Proposition 2.5.1 and because the $C^p(A)$ are
 $F$-acyclic. The first homomorphism in (2.5.1) therefore induces an
 isomorphism on the initial terms of spectral sequence $I$, hence an
 isomorphism on cohomology. Similarly,
-$H_{\mathrm I}(\mathbf F(C(A)))^{p,q}$ vanishes for $p>0$ and equals
-$\mathbf F(A)$ for $p=0$, since $\mathbf F$ is exact and $C(A)$ is a
+$H_I(\mathbf F(C(A)))^{p,q}$ vanishes for $p>0$ and equals
+$\mathbf F^q(A)$ for $p=0$, since $\mathbf F$ is exact and $C(A)$ is a
 resolution of $A$. Thus the second homomorphism in (2.5.1) induces an
 isomorphism on the initial terms of spectral sequences $II$, and hence again
 on cohomology. To show that the resulting isomorphism from
 $H^n\mathbf F(A)$ to $R^nF(A)$ is the one in Proposition 2.5.1, take an
-injective resolution $C'(A)$ of $A$, a homomorphism from $C(A)$ to $C'(A)$,
+\textit{injective} resolution $C'(A)$ of $A$, a homomorphism from $C(A)$ to $C'(A)$,
 and consider the associated homomorphism of diagram (2.5.2)
 
 \TohokuContinuation{150}

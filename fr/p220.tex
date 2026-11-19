@@ -9,31 +9,28 @@
 \Gamma_\Phi^G=\Gamma_\Psi f_*^G=\Gamma^G\Gamma_\Phi.
 \tag{5.7.3}
 \end{equation}
-
 \LayerTarget{tohoku:spectral-sequence:5.7-i-supported-equivariant}
-Comme $f_*^G$ transforme objets injectifs de $C^{X(G)}$ en faisceaux
+Comme $f_*^G$ transforme objets injectifs de ${\mathbf C}^{X(G)}$ en faisceaux
 flasques, donc $\Gamma_\Psi$-acycliques, la première formule donne encore
-\textit{un foncteur spectral cohomologique sur $C^{X(G)}$, aboutissant au
-foncteur gradué $(H_\Phi^m(X;G,A))$, et de terme initial}
+\textit{un foncteur spectral cohomologique sur ${\mathbf C}^{X(G)}$, aboutissant au
+foncteur gradué $(H_\Phi^n(X;G,A))$, et de terme initial}
 
 \LayerTarget{tohoku:equation:5.7.4}
 \begin{equation}
-\mathrm I_2^{p,q}(A)=H_\Psi^p\bigl(Y,\mathbf H^q(G,A)\bigr).
+I_2^{p.q}(A)=H_\Psi^p\bigl(Y,\mathbf H^q(G,A)\bigr).
 \tag{5.7.4}
 \end{equation}
-
 \LayerTarget{tohoku:obstruction:second-spectral-sequence-with-supports}
 La seconde suite spectrale du théorème 5.2.1 ne se généralise plus telle
 quelle, car on ne pourra pas dire en général que si $B$ est un objet injectif
-de $C^{X(G)}$, $\Gamma_\Phi(B)$ soit un $G$-module $\Gamma^G$-acyclique. Mais
+de ${\mathbf C}^{X(G)}$, $\Gamma_\Phi(B)$ soit un $G$-module $\Gamma^G$-acyclique. Mais
 \textit{supposons que tout ensemble de $\Psi$ ait un voisinage qui soit dans
 $\Psi$.}
-
 \LayerTarget{tohoku:construction:extension-by-zero-support-limit}
 Pour tout ouvert $U\subset Y$, soit $A_U=A_{f^{-1}(U)}$ le $G$-faisceau
-abélien sur $X$ qui est nul dans $C f^{-1}(U)$ et coïncide avec $A$ sur
+abélien sur $X$ qui est nul dans $\mathrm C f^{-1}(U)$ et coïncide avec $A$ sur
 $f^{-1}(U)$. On a
-$\Gamma_\Phi(A)=\varinjlim\Gamma_X(A_U)$, où la limite inductive est prise
+$\Gamma_\Phi(A)=\mathop{\underset{\to}{\lim}}\Gamma_X(A_U)$, où la limite inductive est prise
 suivant l'ensemble ordonné filtrant des parties ouvertes $U$ de $Y$ telles
 que $\overline U\in\Psi$. Comme les applications
 $\Gamma_X(A_U)\to\Gamma_X(A_V)$ pour $U\subset V$ sont injectives, le foncteur
@@ -42,17 +39,16 @@ fonctorielle :
 
 \LayerTarget{tohoku:equation:5.7.5}
 \begin{equation}
-\Gamma_\Phi^G(A)=\varinjlim\Gamma_X^G(A_U)
+\Gamma_\Phi^G(A)=\mathop{\underset{\to}{\lim.}}\Gamma_X^G(A_U)
 \tag{5.7.5}
 \end{equation}
 d'où, comme pour le corollaire 1 à prop. 3.10.1 :
 
 \LayerTarget{tohoku:equation:5.7.6}
 \begin{equation}
-H_\Phi^m(X;G,A)=\varinjlim H^m(X;G,A_U).
+H_\Phi^n(X;G,A)=\mathop{\underset{\to}{\lim}} H^n(X;G,A_U).
 \tag{5.7.6}
 \end{equation}
-
 \LayerTarget{tohoku:spectral-sequence:ii-a-u}
 Or pour tout $U$, $H^*(X;G,A_U)$ est l'aboutissement d'une suite spectrale
 cohomologique $\mathrm {II}(A,U)$ de terme initial
@@ -61,7 +57,6 @@ cohomologique $\mathrm {II}(A,U)$ de terme initial
 \[
 \mathrm {II}(A,U)_2^{p,q}=H^p\bigl(G,H^q(X,A_U)\bigr).
 \]
-
 \LayerTarget{tohoku:construction:inductive-system-of-spectral-sequences}
 et pour $U$ variable, ces suites spectrales forment un système inductif. On
 conclut alors de (5.7.6) que $H_\Phi^*(X;G,A)$ est \textit{l'aboutissement
@@ -69,15 +64,14 @@ d'une suite spectrale cohomologique de terme initial}
 
 \LayerTarget{tohoku:equation:5.7.7}
 \begin{equation}
-\mathrm {II}_2^{p,q}(A)=\varinjlim_U H^p\bigl(G,H^q(X,A_U)\bigr).
+\mathrm {II}_2^{p,q}(A)=\mathop{\underset{\to}{\lim.}}\limits_U H^p\bigl(G,H^q(X,A_U)\bigr).
 \tag{5.7.7}
 \end{equation}
-
 \LayerTarget{tohoku:comparison:cohomology-and-filtered-limit}
 Bien entendu, cette suite spectrale est même un foncteur spectral en $A$.
 Dans les cas les plus importants (que nous allons expliciter ci-dessous) on
-pourra échanger les signes $H^p(G,-)$ et $\varinjlim$, et alors on obtient,
-puisque $\varinjlim H^q(X,A_U)=H_\Phi^q(X,A)$ (corollaire 1 de la proposition
+pourra échanger les signes $H^p(G,-)$ et $\mathop{\underset{\to}{\lim.}}$, et alors on obtient,
+puisque $\mathop{\underset{\to}{\lim.}} H^q(X,A_U)=H_\Phi^q(X,A)$ (corollaire 1 de la proposition
 3.10.1), la forme usuelle du terme initial :
 
 \LayerTarget{tohoku:equation:5.7.7-bis}
@@ -87,29 +81,19 @@ puisque $\varinjlim H^q(X,A_U)=H_\Phi^q(X,A)$ (corollaire 1 de la proposition
 \end{equation}
 
 \LayerTarget{tohoku:conditions:validity-5.7.7-bis}
-\noindent\textit{Conditions de validité de la formule (5.7.7 bis).}
+\noindent\textit{Conditions de validité de la formule \textup{(5.7.7 bis).}}
 
 \LayerTarget{tohoku:condition:5.7.7-bis-finite-group}
-\noindent a) $G$ est un groupe fini.
+a) $G$ est un groupe fini.
 
 \LayerTarget{tohoku:condition:5.7.7-bis-trivial-action}
-\noindent b) $G$ opère trivialement dans les $H^q(X,A_U)$, et les
-$H_p(G,\mathbf Z)$ sont de type fini.
+b) $G$ opère trivialement dans les $H^q(X,A_U)$, et les
+$H_p(G,Z)$ sont de type fini.
 
 \LayerTarget{tohoku:condition:5.7.7-bis-essentially-constant}
-\noindent c) Le système inductif $(H^q(X,A_U))$ est
-\og essentiellement constant\fg{} pour tout $q$, i.~e. on peut trouver un
+c) Le système inductif $(H^q(X,A_U))$ est
+``essentiellement constant'' pour tout $q$, i.~e. on peut trouver un
 système cofinal $(U_i)$ tel que les homomorphismes
 $H^q(X,A_{U_i})\to H^q(X,A_{U_j})$ soient des isomorphismes.
-
-\noindent\textit{Qualification éditoriale.} L'hypothèse de voisinage ci-dessus
-ne démontre que (5.7.5). L'identité de limite inductive dérivée (5.7.6) et
-l'aboutissement affirmé avant (5.7.7) exigent en outre que, pour tout $U$
-admissible, le foncteur exact de prolongement par zéro
-$E_U:A\longmapsto A_U$ transforme les $G$-faisceaux abéliens injectifs en
-objets $\Gamma_X^G$-acycliques. La comparaison avec la cohomologie ordinaire
-utilisée dans (5.7.7 bis) exige aussi que $\Phi$ soit paracompactifiante. À
-défaut de ces hypothèses supplémentaires, aucune identité de limite inductive
-dérivée ni aucun aboutissement n'est affirmé ici.
 
 \TohokuContinuation{221}

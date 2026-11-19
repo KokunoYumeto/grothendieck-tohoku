@@ -10,69 +10,60 @@ augmentation isomorphism, or rather its inverse, so they are indeed the
 isomorphisms of Proposition 1.
 
 \LayerTarget{tohoku:example:2.5:identity-resolution}
-\noindent\textsc{Examples.} a) Let $I$ be the identity functor of $C$. A
+\textsc{Examples.} a) Let $I$ be the identity functor of $\mathbf{C}$. A
 resolving functor for $I$, also called a \textit{resolution of the identity}
-in $C$, is an exact covariant functor $\mathbf C$ from $C$ to the category of
-nonnegatively graded complexes in $C$, equipped with an augmentation
-$A\longrightarrow C^0(A)$ that is an isomorphism from $A$ onto $Z^0C(A)$,
+in $\mathbf{C}$, is an \textit{exact} covariant functor $C$ from $\mathbf{C}$ to the category of
+nonnegatively graded complexes in $\mathbf{C}$, equipped with an augmentation
+$A\to C(A)$ that is an isomorphism from $A$ onto $Z^0C(A)$,
 such that $C(A)$ is a resolution of $A$ whenever $A$ is injective. By
 Proposition 2.5.1, $C(A)$ is then a resolution of $A$ for every $A$, since
 $I$ is exact and $R^nI=0$ for $n>0$.
-
-Let $\mathbf C$ be a resolution of the identity in $C$, and let $F$ be a
-covariant left exact functor from $C$ to $C'$. Suppose
+Let $C$ be a resolution of the identity in $\mathbf{C}$, and let $F$ be a
+covariant left exact functor from $\mathbf{C}$ to $\mathbf{C}'$. \textit{Suppose}
 $R^nF(C^i(A))=0$ for every $n>0$, so the $C^i(A)$ are $F$-acyclic.
 \textit{Then $\mathbf F(A)=F(C(A))$ is a resolving functor for $F$.} Indeed,
 it is exact: from an exact sequence
-$0\longrightarrow A'\longrightarrow A\longrightarrow A''\longrightarrow0$
+$0\to A'\to A\to A''\to0$
 one obtains
-$0\longrightarrow C^i(A')\longrightarrow C^i(A)\longrightarrow
-C^i(A'')\longrightarrow0$, and since $R^1F(C^i(A'))=0$, also
-\[
-0\longrightarrow F(C^i(A'))\longrightarrow F(C^i(A))
-\longrightarrow F(C^i(A''))\longrightarrow0.
-\]
+$0\to C^i(A')\to C^i(A)\to
+C^i(A'')\to0$, and since $R^1F(C^i(A'))=0$, also
+$0\to F(C^i(A'))\to F(C^i(A))
+\to F(C^i(A''))\to0$.
 This proves (i). Condition (ii) follows because $F$ is left exact and
-$\mathbf C$ is exact. Condition (iii) follows because, with $C(A)$ an
+$C$ is exact. Condition (iii) follows because, with $C(A)$ an
 $F$-acyclic resolution of $A$, one has $H^n(F(C(A)))=R^nF(A)$, which vanishes
-for $n>0$ when $A$ is injective.
-
-A convenient way to construct a resolution of the identity in $C$ is to take
-an exact functor $C^0$ from $C$ to $C$ and a natural monomorphism
-$A\longrightarrow C^0(A)$. Define the $C^n(A)$ recursively, together with
-$d^{n-1}:C^{n-1}\longrightarrow C^n$, by
-\[
-C^1(A)=C^0(C^0(A)/\operatorname{Im}A)
-\]
-and, for $n\geq2$,
-\[
-C^n(A)=C^0(C^{n-1}(A)/\operatorname{Im}C^{n-2}(A)).
-\]
+for $n>0$ when $A$ is injective. --- A convenient way to construct a resolution of the identity in $\mathbf{C}$ is to take
+an exact functor $C^0(A)$ from $\mathbf{C}$ to $\mathbf{C}$ and a natural \textit{monomorphism}
+$A\to C^0(A)$. Define the $C^n(A)$ ($n\geqq0$) recursively, together with
+$d^{n-1}:C^{n-1}\to C^n$, by
+$C^1(A)=C^0(C^0(A)/\operatorname{Im}A)$
+and, for $n\geqq2$,
+$C^n(A)=C^0(C^{n-1}(A)/\operatorname{Im}C^{n-2}(A))$.
 Here $d^{n-1}$ is defined using the augmentation homomorphism from
 $Q=C^{n-1}(A)/\operatorname{Im}C^{n-2}(A)$ to $C^0(Q)$. This gives a
 resolution of the identity. For the $C^i(A)$ to be $F$-acyclic, it suffices
 that the $C^0(A)$ be so.
 
 \LayerTarget{tohoku:example:2.5:hom-projective-resolution}
-\noindent b) Let $P=(P_n)$ be a projective resolution of an object $A$ of
-$C$, and let $F(B)=\operatorname{Hom}(A,B)$ be the functor from $C$ to
+b) Let $P=(P_n)$ be a projective resolution of an object $A$ of
+$\mathbf{C}$, and let $F(B)=\operatorname{Hom}(A,B)$ be the functor from $\mathbf{C}$ to
 abelian groups. Then $\operatorname{Hom}(P,B)$ is a resolving functor for
 $F$.
 
 \LayerTarget{tohoku:construction:resolving-functor-spectral-sequences:p1}
 We now show how the most important spectral sequences can be computed by
 means of resolving functors. Let $\mathbf F$ be a resolving functor for a
-left exact functor $F:C\longrightarrow C'$. Let $K$ be a complex in $C$
+left exact functor $F:\mathbf{C}\to \mathbf{C}'$. Let $K$ be a complex in $\mathbf{C}$
 bounded on the left, and consider the bicomplex
 $\mathbf F(K)=(\mathbf F^q(K^p))_{p,q}$. It depends naturally on $K$, as do
-its two spectral sequences and their abutment. By the exactness of
-$\mathbf F$ and Proposition 2.5.1, the initial terms are
+its two spectral sequences and their abutment. The initial terms of these two spectral sequences are readily written using the exactness of
+$\mathbf F$ and Proposition 2.5.1; one finds
 \LayerTarget{tohoku:eq:2.5.3}
 \[
 \tag{2.5.3}
-{}_{\mathrm I}E_2^{p,q}(\mathbf F(K))=H^p(R^qF(K)),
+I_2^{p,q}(\mathbf F(K))=H^p(R^qF(K))
 \qquad
-{}_{\mathrm{II}}E_2^{p,q}(\mathbf F(K))=R^pF(H^q(K)).
+II_2^{p,q}(\mathbf F(K))=R^pF(H^q(K)).
 \]
 These are natural isomorphisms with the initial terms of the
 

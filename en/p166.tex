@@ -11,47 +11,38 @@ case necessary and sufficient for the existence on $E$ of a holomorphic
 connection, not necessarily integrable.
 
 \LayerTarget{tohoku:section:3.5}
-\textbf{3.5. The exact sequence relative to a closed subspace.} Let $Y$ be a
+\indent\textbf{3.5. The exact sequence relative to a closed subspace.} Let $Y$ be a
 locally closed subspace of $X$, that is, the intersection of an open subset
 and a closed subset. For every abelian sheaf $F$ on $Y$, there exists a unique
 abelian sheaf on $X$ whose restriction to $Y$ is $F$ and whose restriction to
-$CY$ is zero. To see this, one reduces at once to the case in which $Y$ is
+$\complement Y$ is zero. To see this, one reduces at once to the case in which $Y$ is
 open or closed; the straightforward verification is given in [4, XVII,
 Prop. 1].
-
 \LayerTarget{tohoku:def:extension-by-zero-locally-closed}
 Denote this sheaf on $X$ by $F^X$. The assignment
-$F\longmapsto F^X$ is an exact functor $C^Y\longrightarrow C^X$. Moreover,
+$F\to F^X$ is an exact functor $\mathbf C^Y\to \mathbf C^X$. Moreover,
 if $Z\subset Y\subset X$, with $Z$ locally closed in $Y$ and hence in $X$,
 and if $F$ is an abelian sheaf on $Z$, then
-
 \LayerTarget{tohoku:eq:extension-by-zero-transitivity}
-\[
-(F^Y)^X=F^X.
-\]
-
+$(F^Y)^X=F^X$.
 \LayerTarget{tohoku:def:restriction-extension-FY}
 Now let $F$ be an abelian sheaf on $X$ and put $F_Y=(F\vert Y)^X$. Thus $F_Y$
 is the sheaf on $X$ characterized by having the same restriction to $Y$ as
-$F$ and zero restriction to $CY$. The assignment $F\longmapsto F_Y$ is an
-exact functor $C^X\longrightarrow C^X$. It also has the transitivity property
-
+$F$ and zero restriction to $\complement Y$. The assignment $F\to F_Y$ is an
+exact functor $\mathbf C^X\to \mathbf C^X$. It also has the transitivity property
 \LayerTarget{tohoku:eq:restriction-extension-transitivity}
-\[
-(F_Y)_Z=F_Z
-\]
-when $Z\subset Y\subset X$ are as above. If $Y$ is closed, so that $U=CY$ is
+$(F_Y)_Z=F_Z$
+when $Z\subset Y\subset X$ are as above. If $Y$ is closed, so that $U=\complement Y$ is
 open, there is the familiar exact sequence
 
 \LayerTarget{tohoku:eq:closed-subspace-exact-sequence}
 \[
-0\longrightarrow F_U\longrightarrow F\longrightarrow F_Y\longrightarrow0
+0\to F_U\to F\to F_Y\to0
 \]
 for every abelian sheaf $F$ on $X$. Recall that
 $\Gamma(F_Y)=\Gamma(Y,F)=\Gamma(F\vert Y)$, whereas $\Gamma(F_U)$ identifies
 with the subgroup of $\Gamma(F)$ formed by sections whose support is contained
 in $U$.
-
 \LayerTarget{tohoku:def:induced-support-antifilter}
 Let $\Phi$ be an antifilter of closed subsets of $X$. For every subset $Z$ of
 $X$, let $\Phi_Z$ be the ``induced'' antifilter formed by the $A\in\Phi$ that
@@ -72,16 +63,15 @@ for every abelian sheaf $F$ on $X$. Equivalently,
 \Gamma_{\Phi_Z}(Z,G)=\Gamma_\Phi(X,G^X)
 \]
 for every abelian sheaf $G$ on $Z$.
-
 \LayerTarget{tohoku:construction:cohomology-support-comparison:p1}
-Since $G\longmapsto G^X$ is exact, the groups $H^p_\Phi(X,G^X)$ form a
-cohomological functor on $C^Z$. The universal cohomological functor
+Since $G\to G^X$ is \textit{exact}, the groups $H^p_\Phi(X,G^X)$ form a
+cohomological functor on $\mathbf C^Z$. The universal cohomological functor
 $(H^p_{\Phi_Z}(Z,G))$ agrees with it in degree 0, and therefore gives
 \textit{canonical homomorphisms}
 
 \LayerTarget{tohoku:eq:canonical-support-comparison}
 \[
-H^p_{\Phi_Z}(Z,G)\longrightarrow H^p_\Phi(X,G^X)
+H^p_{\Phi_Z}(Z,G)\to H^p_\Phi(X,G^X)
 \]
 (characterized by defining a homomorphism of cohomological functors
 

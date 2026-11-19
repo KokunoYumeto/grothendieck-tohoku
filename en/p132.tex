@@ -6,60 +6,60 @@
 kind considered in No.~1.
 
 \LayerTarget{tohoku:example:1.7:c}
-\noindent c) Take $I$ to consist of two elements, $a$ and $b$, with a single
+c) Take $I$ to consist of two elements, $a$ and $b$, with a single
 arrow having origin $a$ and endpoint $b$. This gives the category of
-morphisms $u:A\longrightarrow B$ between objects of $C$. Introducing
+morphisms $u:A\to B$ between objects of $\mathbf{C}$. Introducing
 commutation relations would amount to restricting to $A,B,u$ annihilated by
 specified integers.
 
 \LayerTarget{tohoku:example:1.7:d}
-\noindent d) \textit{Categories of functors.} Let $C'$ be another category,
-assumed to be a set. The covariant functors from $C'$ to $C$ then form a
+d) \textit{Categories of functors.} Let $\mathbf{C}'$ be another category,
+assumed to be a set. The covariant functors from $\mathbf{C}'$ to $\mathbf{C}$ then form a
 category, with natural transformations as morphisms (cf. 1, 1). This category
-may be interpreted as a category $C^\Sigma$: take $I=C'$, let the arrows with
+may be interpreted as a category $\mathbf{C}^\Sigma$: take $I=\mathbf{C}'$, let the arrows with
 origin $A'$ and endpoint $B'$ be, by definition, the elements of
 $\mathrm{Hom}(A',B')$, and take as commutation relations those expressing the
-two functor axioms. If $C'$ is moreover an additive category, the
-\textit{additive} functors from $C'$ to $C$ may likewise be interpreted as a
-category $C^\Sigma$ (by adjoining the required commutation relations).
+two functor axioms. If $\mathbf{C}'$ is moreover an additive category, the
+\textit{additive} functors from $\mathbf{C}'$ to $\mathbf{C}$ may likewise be interpreted as a
+category $\mathbf{C}^\Sigma$ (by adjoining the required commutation relations).
 
 \LayerTarget{tohoku:example:1.7:e}
-\noindent e) \textit{Complexes with values in $C$.} Let $I=\mathbf{Z}$, the
-set of integers, and let the arrows be $(d_n)_{n\in\mathbf{Z}}$, where $d_n$
+e) \textit{Complexes with values in $\mathbf{C}$.} Let $I=Z$, the
+set of integers, and let the arrows be $(d_n)_{n\in Z}$, where $d_n$
 has origin $n$ and endpoint $n+1$; the commutation relations are
 $d_{n+1}d_n=0$. Relations of the form $e_n=0$ may also be adjoined if one
-wishes to restrict to complexes in positive degrees, or in negative degrees.
+wishes to restrict to complexes in nonnegative degrees, or in nonpositive degrees.
 Bicomplexes and so forth are obtained analogously.
 
 \LayerTarget{tohoku:example:1.7:f}
-\noindent f) \textit{The category $C^G$ ($G$ a group).} Let $G$ be a group and
-$C$ a category, not necessarily additive. An \textit{object in $C$ with
-operator group $G$} is a pair $(A,r)$ consisting of an object $A\in C$ and a
+f) \textit{The category $\mathbf{C}^G$ ($G$ a group).} Let $G$ be a group and
+$\mathbf{C}$ a category, not necessarily additive. An \textit{object \textup{in $\mathbf{C}$} with
+operator group $G$} is a pair $(A,r)$ consisting of an object $A\in \mathbf{C}$ and a
 representation $r$ of $G$ in the automorphism group of $A$. If $(A',r')$ is a
 second such pair, a morphism from the first to the second is a morphism from
-$A$ to $A'$ commuting with the operations of $G$. The class $C^G$ of objects
-of $C$ with operator group $G$ thereby becomes a category. It may be
-interpreted as a class $C^\Sigma$, where $\Sigma=\Sigma(G)$ is the following
+$A$ to $A'$ commuting with the operations of $G$. The class $\mathbf{C}^G$ of objects
+of $\mathbf{C}$ with operator group $G$ thereby becomes a category. It may be
+interpreted as a class $\mathbf{C}^\Sigma$, where $\Sigma=\Sigma(G)$ is the following
 scheme with relations: its vertex set consists of a single element $i_0$, its
 set of arrows is $G$, and the commutation relations are $(s)(t)=(st)$, where
 the left-hand side denotes a composite arrow, and $(e)=e_{i_0}$, where $e$
-denotes the identity element of $G$. In particular, if $C$ is additive, then
-so is $C^G$; in that case this construction is contained in the next one, by
+denotes the identity element of $G$. In particular, if $\mathbf{C}$ is additive, then
+so is $\mathbf{C}^G$; in that case this construction is contained in the next one, by
 considering the group algebra of $G$.
 
 \LayerTarget{tohoku:example:1.7:g}
-\noindent g) \textit{The category $C^U$ ($U$ a ring with identity).} Consider
+g) \textit{The category $\mathbf{C}^U$ ($U$ a ring with identity).} Consider
 the additive category formed by pairs $(A,r)$ consisting of an object $A$ of
-$C$ and a unital representation of $U$ in the ring $\mathrm{Hom}(A,A)$, with
+$\mathbf{C}$ and a unital representation of $U$ in the ring $\mathrm{Hom}(A,A)$, with
 morphisms defined in the evident way. As above, it is interpreted as a
-category $C^{\Sigma(U)}$, where $\Sigma(U)$ is the scheme with relations
+category $\mathbf{C}^{\Sigma(U)}$, where $\Sigma(U)$ is the scheme with relations
 having one vertex, $U$ as its set of arrows, and commutation relations that we
 shall not write down.
 
 \LayerTarget{tohoku:example:1.7:h:p1}
-\noindent h) \textit{Inductive systems and projective systems.} Take as the
+h) \textit{Inductive systems and projective systems.} Take as the
 set of vertices a \textit{preordered} set $I$, and as arrows the pairs $(i,j)$
-of vertices with $i\leq j$, the origin and endpoint of $(i,j)$ being $i$ and
+of vertices with $i\leqq j$, the origin and endpoint of $(i,j)$ being $i$ and
 $j$, respectively. The commutation relations are
 $(i,j)(j,k)=(i,k)$ and $(i,i)=e_i$. The
 

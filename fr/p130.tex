@@ -15,53 +15,47 @@ ensembles $I$ et $\Phi$ et d'une application $d$ de $\Phi$ dans $I\times I$.
 Les éléments de $I$ sont les \textit{sommets}, les éléments de $\Phi$ les
 \textit{flèches} du diagramme, et si $\varphi$ est une flèche du diagramme,
 $d(\varphi)$ est appelé sa \textit{direction}, caractérisée par
-\textit{l'origine} et \textit{l'extrémité} de la flèche (ce sont donc des
+\textit{l'origine} et l'\textit{extrémité} de la flèche (ce sont donc des
 sommets du schéma).
-
 \LayerTarget{tohoku:def:composite-arrow}
 Une \textit{flèche composée} d'origine $i$ et extrémité $j$ est par définition
 une suite finie non vide de flèches du diagramme, l'origine de la première
 étant $i$, l'extrémité de chacune étant l'origine de la suivante et
 l'extrémité de la dernière étant $j$.
-
 \LayerTarget{tohoku:def:diagram-category}
-Si $C$ est une catégorie, on appelle \textit{diagramme dans $C$, de schéma
-$S$} une fonction $D$ qui associe à tout $i\in I$ un objet $D(i)\in C$, et à
+Si $\mathbf{C}$ est une catégorie, on appelle \textit{diagramme dans $\mathbf{C}$, de schéma
+$\mathrm{S}$} une fonction $D$ qui associe à tout $i\in I$ un objet $D(i)\in \mathbf{C}$, et à
 toute flèche $\varphi$ d'origine $i$ et extrémité $j$, un morphisme
 $D(\varphi)$ de $D(i)$ dans $D(j)$. La classe de tels diagrammes sera notée
-$C^S$, elle sera considérée comme une catégorie, en prenant comme morphismes
+$\mathbf{C}^S$, elle sera considérée comme une catégorie, en prenant comme morphismes
 de $D$ dans $D'$ une famille de morphismes
-$v_i:D(i)\longrightarrow D'(i)$ telle que pour toute flèche $\varphi$
+$v_i:D(i)\to D'(i)$ telle que pour toute flèche $\varphi$
 d'origine $i$ et d'extrémité $j$, on ait commutativité dans le diagramme :
 
 \LayerTarget{tohoku:diagram:diagram-morphism-square}
 \[
 \begin{array}{ccc}
 D(i) & \stackrel{v_i}{\longrightarrow} & D'(i) \\
-{\scriptstyle D(\varphi)}\,\big\downarrow &&
-  \big\downarrow\,{\scriptstyle D'(\varphi)} \\
-D(j) & \stackrel{v_j}{\longrightarrow} & D'(j)
+{D(\varphi)}\,\big\downarrow &&
+  \big\downarrow\,{D'(\varphi)} \\
+D(j) & \stackrel{v_j}{\longrightarrow} & D'(j)\qquad .
 \end{array}
-\qquad .
 \]
-
 Les morphismes de diagrammes se composent de façon évidente, et les axiomes
 d'une catégorie se vérifient trivialement.
-
 \LayerTarget{tohoku:def:commutative-diagram}
-Si $D$ est un diagramme de schéma $S$, alors pour toute flèche composée
-$\varphi=(\varphi_1,\ldots,\varphi_k)$ dans $S$, on définit
-$D(\varphi)=D(\varphi_k)\cdots D(\varphi_1)$, c'est un morphisme de $D(i)$
+Si $D$ est un diagramme de schéma $\mathrm{S}$, alors pour toute flèche composée
+$\varphi=(\varphi_1,\ldots,\varphi_k)$ dans $\mathrm{S}$, on définit
+$D(\varphi)=D(\varphi_k)\ldots D(\varphi_1)$, c'est un morphisme de $D(i)$
 dans $D(j)$ si $i$ et $j$ sont resp. l'origine et l'extrémité de $\varphi$.
 $D$ est dit un \textit{diagramme commutatif} si on a
 $D(\varphi)=D(\varphi')$ chaque fois que $\varphi$ et $\varphi'$ sont deux
 flèches composées ayant même origine et même extrémité.
-
 \LayerTarget{tohoku:def:commutation-relations}
 Plus généralement, si $R$ est un ensemble formé de couples
 $(\varphi,\varphi')$ de flèches composées ayant mêmes origines et mêmes
 extrémités, et de flèches composées dont l'origine égale l'extrémité, on
-considère la sous-catégorie $C^{S,R}$ de $C^S$ formée des diagrammes
+considère la sous-catégorie $\mathbf{C}^{S,R}$ de $\mathbf{C}^S$ formée des diagrammes
 satisfaisant aux \textit{relations de commutation}
 $D(\varphi)=D(\varphi')$ pour $(\varphi,\varphi')\in R$,
 $D(\varphi)={}$morphisme identique de $D(i)$ si $\varphi\in R$ a $i$ pour
@@ -72,10 +66,10 @@ On a à envisager encore d'autres types de commutation pour des diagrammes,
 dont la nature varie avec les catégories envisagées. Ce qui suit semble
 couvrir les cas les plus importants. Pour tout $(i,j)\in I\times I$,
 donnons-nous un ensemble $R_{ij}$ de combinaisons linéaires formelles à
-coefficients entiers de flèches composées d'origine $i$ et extrémité $j$, et,
+coéfficients entiers de flèches composées d'origine $i$ et extrémité $j$, et,
 si $i=j$, d'un élément $e_i$ auxiliaire. Si alors $D$ est un diagramme, à
-valeurs dans une catégorie additive $C$, on peut pour tout $L\in R_{ij}$
-définir le morphisme $D(L):D(i)\longrightarrow D(j)$, en remplaçant dans
+valeurs dans une catégorie additive $\mathbf{C}$, on peut pour tout $L\in R_{ij}$
+définir le morphisme $D(L):D(i)\to D(j)$, en remplaçant dans
 l'expression de $L$, une flèche composée $\varphi$ par $D(\varphi)$, et $e_i$
 par le morphisme identique de $D(i)$. Si on désigne par $R$ la réunion des
 

@@ -3,155 +3,82 @@
 
 \LayerTarget{tohoku:proof:R-quotient-ZYm:p2}
 \noindent nulle. D'autre part, la restriction de $R_m/R_{m-1}$ à
-$Y_m=U_m\cap \mathrm C V_{m-1}$ est isomorphe à celle de $R_m$ (puisque
+$Y_m=U_m\cap \complement V_{m-1}$ est isomorphe à celle de $R_m$ (puisque
 celle de $R_{m-1}$ est nulle) et y est engendrée par la restriction de la
-section $f_m$, donc elle est isomorphe au faisceau constant $Z$.
-
+section $f_m$, donc elle est isomorphe au faisceau constant $\mathbf Z$.
 \LayerTarget{tohoku:proof:3.6.1:p3}
-Ceci prouve bien que $R_m/R_{m-1}$ est isomorphe à $Z_{Y_m}$, et nous ramène
-à prouver que $T^{p+1}(Z_Y)\in C''$ si $Y$ est une partie localement fermée
-de $X$. On a alors $Y=V\cap \mathrm C U$, où $U$ et $V$ sont deux parties
+Ceci prouve bien que $R_m/R_{m-1}$ est isomorphe à $\mathbf Z_{Y_m}$, et nous ramène
+à prouver que $T^{p+1}(\mathbf Z_Y)\in \mathbf C''$ si $Y$ est une partie localement fermée
+de $X$. On a alors $Y=V\cap \complement U$, où $U$ et $V$ sont deux parties
 ouvertes de $X$. Soit $W$ la partie ouverte de $X$ réunion de $U$ et $V$, on
 a une suite exacte évidente :
-\[
-0\longrightarrow Z_U\longrightarrow Z_W\longrightarrow Z_Y
-\longrightarrow0,
-\]
+$0\to \mathbf Z_U\to \mathbf Z_W\to \mathbf Z_Y\to0$,
 d'où une suite exacte
-\[
-T^{p+1}(Z_W)\longrightarrow T^{p+1}(Z_Y)
-\longrightarrow T^{p+2}(Z_U).
-\]
-Par hypothèse, les termes extrêmes de cette suite exacte sont dans $C''$, il
-en est donc de même de $T^{p+1}(Z_Y)$, ce qui achève la démonstration de la
+$T^{p+1}(\mathbf Z_W)\to T^{p+1}(\mathbf Z_Y)\to T^{p+2}(\mathbf Z_U)$.
+Par hypothèse, les termes extrêmes de cette suite exacte sont dans $\mathbf C''$, il
+en est donc de même de $T^{p+1}(\mathbf Z_Y)$, ce qui achève la démonstration de la
 proposition.
 
 \LayerTarget{tohoku:proposition:3.6.2}
-\noindent\textsc{Proposition 3.6.2.} --- \textit{Soient $C$, $C'$ deux
-catégories abéliennes satisfaisant l'axiome AB 5) (cf. 1.5), on suppose que
-$C$ admet un générateur (cf. 1.9). Soit $T$ un foncteur covariant de $C$ dans
-$C'$. Pour que les foncteurs dérivés droits $R^pT$ commutent aux limites
+\indent\textsc{Proposition 3.6.2.} \textit{Soient $\mathbf C$, $\mathbf C'$ deux
+catégories abéliennes satisfaisant l'axiome \textup{AB 5) (}cf. \textup{1.5)}, on suppose que
+$\mathbf C$ admet un générateur \textup{(}cf. \textup{1.9)}. Soit $T$ un foncteur covariant de $\mathbf C$ dans
+$\mathbf C'$. Pour que les foncteurs dérivés droits $R^pT$ commutent aux limites
 inductives, il suffit que :}
 \begin{description}
 \LayerTarget{tohoku:subitem:3.6.2:a}
-\item[\textit{a)}] \textit{$T$ permute aux limites inductives ;}
+\item[\textnormal{\textit{a})}] \textit{$T$ permute aux limites inductives}
 \LayerTarget{tohoku:subitem:3.6.2:b}
-\item[\textit{b)}] \textit{Si $M=\varinjlim_i M_i$ dans $C$, où les $M_i$
+\item[\textnormal{\textit{b})}] \textit{Si $M=\varinjlim\limits_i M_i$ dans $\mathbf C$, où les $M_i$
 sont injectifs, alors $M$ est $T$-acyclique, i.\,e.
 $R^pT(M)=0$ pour $p>0$.}
 \end{description}
-
-\begin{quote}
-\small
-\textbf{Qualification éditoriale.} Avec la définition de la p.~143, pour un
-foncteur covariant qui n'est supposé qu'additif, le morphisme canonique
-$T(M)\longrightarrow R^0T(M)$ n'est pas nécessairement un isomorphisme.
-L'annulation $R^qT(M)=0$ pour $q>0$ exigée en b) ne fournit donc pas, à
-elle seule, la comparaison en degré zéro requise pour l'égalité
-$R^pT(A)=H^p(T(C))$ employée plus bas. La proposition et sa démonstration
-sont valables si l'on ajoute l'hypothèse que $T$ est exact à gauche.
-Sans cette hypothèse, il faut renforcer b) en demandant, pour tout
-$M=\varinjlim_i M_i$ qui y figure, à la fois que
-$T(M)\longrightarrow R^0T(M)$ soit un isomorphisme et que
-$R^qT(M)=0$ pour $q>0$. Cette qualification ne modifie ni a), ni la
-construction des résolutions compatibles, ni les isomorphismes de
-comparaison obtenus sous l'une ou l'autre des hypothèses ainsi précisées.
-\end{quote}
 
 \LayerTarget{tohoku:proof:3.6.2:p1}
 (La condition b) est évidemment nécessaire pour que la conclusion soit
 valable, et de même a) si $T$ est exact à gauche donc $R^0T=T$). Notons
 d'abord que les $R^pT$ sont bien définis, en vertu de th. 1.10.1. Soit
-$(A_i)_{i\in I}$ un système inductif dans $C$, $A$ sa limite inductive, on veut
+$(A_i)_{i\in I}$ un système inductif dans $\mathbf C$, $A$ sa limite inductive, on veut
 prouver que les morphismes naturels
-
 \LayerTarget{tohoku:eq:derived-colimit-comparison}
-\[
-\varinjlim_i R^pT(A_i)\longrightarrow R^pT(A)
-\]
+$\varinjlim R^pT(A_i)\to R^pT(A)$
 sont bijectifs.
-
 \LayerTarget{tohoku:construction:inductive-injective-resolutions}
-On va montrer d'abord qu'il existe un système inductif $(C_i)_{i\in I}$ de
-complexes (à valeurs dans $C$) et une ``augmentation''
-$(A_i)\longrightarrow(C_i)$, de telle façon que pour tout $i\in I$,
-$A_i\longrightarrow C_i$ soit une résolution droite de $A_i$ par des objets
-injectifs.
-
+On va montrer d'abord qu'\textit{il existe un système inductif $(C_i)_{i\in I}$ de
+complexes }(à valeurs dans $\mathbf C$)\textit{ et une ``augmentation''
+$(A_i)\to(C_i)$, de telle façon que pour tout $i\in I$,
+$A_i\to C_i$ soit une résolution droite de $A_i$ par des objets
+injectifs.}
 \LayerTarget{tohoku:construction:diagram-category-resolution}
-En effet, considérons la catégorie $I(C)$ des systèmes inductifs sur $I$ à
-valeurs dans $C$, c'est une catégorie de diagrammes, qui d'après prop. 1.6.1
-satisfait aux mêmes hypothèses que $C$. En vertu de théorème 1.10.1, tout objet
+En effet, considérons la catégorie $I(\mathbf C)$ des systèmes inductifs sur $I$ à
+valeurs dans $\mathbf C$, c'est une catégorie de diagrammes, qui d'après prop. 1.6.1
+satisfait aux mêmes hypothèses que $\mathbf C$. En vertu de théorème 1.10.1, tout objet
 de cette catégorie admet donc une résolution droite par des objets injectifs.
-Or, on vérifie aussitôt que si $(M_i)$ est un objet injectif de $I(C)$, alors
-les $M_i$ sont des objets injectifs de $C$ (c'est un fait général pour les
-catégories de diagrammes pour un schéma $\Sigma$ satisfaisant aux conditions
-générales de prop. 1.9.2).
-
-\begin{quote}
-\small
-\textbf{Correction éditoriale.} L'appel à la proposition 1.9.2 n'est pas
-valide tel qu'imprimé : son assertion sur la famille de générateurs est fausse
-en général. Pour $i$ dans le petit ensemble ordonné filtrant $I$, soit
-$F_i:C\longrightarrow I(C)$ l'adjoint à gauche de l'évaluation en $i$, défini
-par
-\[
-F_i(A)_j=
-\begin{cases}
-A,&i\leq j,\\
-0,&\text{sinon,}
-\end{cases}
-\]
-les morphismes de transition étant l'identité lorsque les deux valeurs sont
-$A$. Ce foncteur est exact objet par objet. Si $E$ est un générateur de $C$,
-alors $\bigoplus_{i\in I}F_i(E)$ est un générateur de $I(C)$. Puisque chaque
-$F_i$ est un adjoint à gauche exact, son adjoint à droite, l'évaluation en $i$,
-envoie les injectifs de $I(C)$ sur des injectifs de $C$. Ainsi $I(C)$ possède
-le générateur requis par le théorème 1.10.1, les évaluations préservent les
-injectifs et l'argument qui suit reste valable.
-\end{quote}
-
-Considérons alors une résolution droite de $(A_i)$ par des objets injectifs de
-$I(C)$,
-
+Or, on vérifie aussitôt que si $(M_i)$ est un objet injectif de $I(\mathbf C)$, alors
+les $M_i$ sont des objets injectifs de $\mathbf C$ (c'est un fait général pour les
+catégories de diagrammes pour un schéma $\displaystyle\sum$ satisfaisant aux conditions
+générales de prop. 1.9.2). Considérons alors une résolution droite de $(A_i)$ par des objets injectifs de
+$I(\mathbf C)$,
 \LayerTarget{tohoku:eq:diagram-injective-resolution}
-\[
-0\longrightarrow(A_i)\longrightarrow(C_i^0)\longrightarrow(C_i^1)
-\longrightarrow\cdots.
-\]
-
+$0\to(A_i)\to(C_i^0)\to(C_i^1)\to\mathinner{.\,.\,.\,.}$.
 \LayerTarget{tohoku:eq:component-injective-complex}
 Soit, pour tout $i$, $C_i$ le complexe
-\[
-0\longrightarrow C_i^0\longrightarrow C_i^1\longrightarrow\cdots,
-\]
+$0\to C_i^0\to C_i^1\to\mathinner{.\,.\,.\,.}$,
 on voit alors que le système $(C_i)$ répond à la question.
-
 \LayerTarget{tohoku:eq:colimit-resolution}
-Comme le foncteur $\varinjlim$ sur $I(C)$ est exact (proposition 1.8), on
+Comme le foncteur $\varinjlim$ sur $I(\mathbf C)$ est exact (proposition 1.8), on
 obtient une résolution $C$ de $A$ par les
-\[
-C^p=\varinjlim_i C_i^p.
-\]
-
+$C^p=\varinjlim\limits_i C_i^p$.
 \LayerTarget{tohoku:eq:T-acyclic-computation}
 En vertu de la condition b), les $C^p$ sont $T$-acycliques, donc on a
-\[
-R^pT(A)=H^p(T(C)).
-\]
-
+$R^pT(A)=H^p(T(C))$.
 \LayerTarget{tohoku:eq:T-colimit-complex}
 Comme $T$ permute aux limites inductives en vertu de a), on a
-\[
-T(C)=\varinjlim_i T(C_i),
-\]
-donc, en vertu de l'exactitude du foncteur $\varinjlim$ sur $I(C')$
+$T(C)=\varinjlim T(C_i)$,
+donc, en vertu de l'exactitude du foncteur $\varinjlim$ sur $I(\mathbf C')$
 (résultant de l'axiome AB 5) en vertu de prop. 1.8) on obtient
-
 \LayerTarget{tohoku:eq:cohomology-colimit-comparison}
-\[
-H^p(T(C))=\varinjlim_i H^pT(C_i).
-\]
+$H^p(T(C))=\varinjlim H^pT(C_i)$.
 Or $C_i$ étant le complexe
 
 \TohokuContinuation{170}

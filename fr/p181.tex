@@ -2,24 +2,29 @@
 \SourcePage{181}
 
 \LayerTarget{tohoku:proof:proposition-3.9.2:finite-intersection:p2}
-Les $O_x(\mathbf R^{L_x})$ forment un recouvrement ouvert de $X$, il existe
-donc un ensemble fini $Y\subset X$ tel que les $O_x(\mathbf R^{L_x})$
+des $E_x(\mathbf R)$ pour $\mathbf R$ parcourant $\mathfrak R(X)$ est par
+hypothèse réduite à $x$, d'où on conclut, par raison de quasi-compacité,
+qu'il existe une partie finie $L_x$ de $\mathfrak R(X)$ telle que
+l'intersection des $E_x(\mathbf R)$ pour $\mathbf R\in L_x$, i.e.
+$E_x(\mathbf R^{L_x})$, est contenue dans $U_x$. Les
+$O_x(\mathbf R^{L_x})$ forment un recouvrement ouvert de $X$, il existe donc
+un ensemble fini $Y\subset X$ tel que les $O_x(\mathbf R^{L_x})$
 correspondants aux $x\in Y$ recouvrent $X$. Soit $L$ la réunion des $L_x$
 pour $x\in Y$, je dis que le recouvrement $\mathbf R^L$ de $X$ est plus fin
-que $\mathcal U$. Soit en effet $A\in\mathbf R^L$ non vide, soit $a\in A$,
+que $\mathbf U$. Soit en effet $A\in\mathbf R^L$ non vide, soit $a\in A$,
 il existe $x\in Y$ tel que $a\in O_x(\mathbf R^{L_x})$ d'où
-$E_a(\mathbf R^{L_x})\subset E_x(\mathbf R^{L_x})\subset U_x$ et a fortiori
+$E_a(\mathbf R^{L_x})\subset E_x(\mathbf R^{L_x})\subset U_x$ et à fortiori
 $A\subset E_a(\mathbf R^L)\subset E_a(\mathbf R^{L_x})$ est contenu dans
 $U_x$, ce qui démontre notre assertion. Appliquant ce résultat, pour tout
-$A\in\mathcal S$, à l'ensemble des recouvrements de $A$ induits par les
+$A\in\mathfrak S$, à l'ensemble des recouvrements de $A$ induits par les
 recouvrements $\mathbf R\in\mathfrak R(X)$, la conclusion voulue apparaît.
 
 \LayerTarget{tohoku:application:corollary-3.9.1-3:cubes}
 Le cas d'application le plus frappant du corollaire 3 est celui où $X$ est
-le cube compact $0\leq x_i\leq1$ de $\mathbf R^n$, où $\mathcal S$ est la
-famille des cubes compacts $A$ du type $a_i\leq x_i\leq b_i$ contenus dans
+le cube compact $0\leqq x_i\leqq1$ de $\mathbf R^n$, où $\mathfrak S$ est la
+famille des cubes compacts $A$ du type $a_i\leqq x_i\leqq b_i$ contenus dans
 $X$, $\mathfrak R(A)$ étant la famille des recouvrements à deux ensembles de
-$A$ définis par des hyperplans parallèles aux hyperplans coordonnées : Pour
+$A$ définis par des hyperplans parallèles aux hyperplans coordonnés : Pour
 vérifier que $H^i(A,F)=0$ pour $i>0$ et tout $A$, il suffit de vérifier que
 pour tout $A$, et toute section $f$ de $F$ sur $A_1\cap A_2$, on a
 $f=f_1-f_2$, où $f_i$ est une section de $F$ sur $A_i$. C'est la réduction
@@ -27,46 +32,42 @@ faite par H. Cartan dans sa démonstration des théorèmes fondamentaux sur les
 variétés de Stein [5].
 
 \LayerTarget{tohoku:remark:theorem-3.9.1:nonabelian-n-one}
-\noindent\textsc{Remarque.} Si $n=1$, le théorème 3.9.1 garde un sens, et se
+\textsc{Remarque.} Si $n=1$, le théorème 3.9.1 garde un sens, et se
 vérifie facilement directement, si on suppose que $F$ est un faisceau de
 groupes non nécessairement abéliens. Cela permet de simplifier la
 démonstration du théorème [5, XVIII] sur les matrices holomorphes inversibles.
 
 \LayerTarget{tohoku:section:3.10}
-\SectionHeading{3.10. Passages à la limite en cohomologie des faisceaux.}
+\textbf{3.10. Passages à la limite en cohomologie des faisceaux.}
 Nous ne donnerons que deux résultats dans cette voie, (dont l'un nous servira
 au Chapitre 5, N\textsuperscript{o} 7), cas particuliers du résultat général
 suivant d'algèbre homologique :
 
 \LayerTarget{tohoku:proposition:3.10.1}
-\noindent\textsc{Proposition 3.10.1.} \textit{Soient $\mathcal C,\mathcal C'$ deux
-catégories abéliennes, on suppose que tout élément de $\mathcal C$ est
-isomorphe à un sous-truc d'un élément injectif, et que $\mathcal C'$ satisfait
-à l'axiome AB 5 (cf. 1.5), qui permet en particulier de prendre des limites
-inductives dans $\mathcal C'$ (cf. prop. 1.8). Soit $(F_i)_{i\in I}$ un
-système inductif de foncteurs additifs covariants de $\mathcal C$ dans
-$\mathcal C'$, soit $F=\varinjlim F_i$ le foncteur limite inductive des $F_i$,
-défini par $F(A)=\varinjlim F_i(A)$ pour tout $A\in\mathcal C$. Les
-homomorphismes $F_i\longrightarrow F$ définissent des homomorphismes de
-$\partial$-foncteurs $(\mathbf R^pF_i)\longrightarrow(\mathbf R^pF)$, d'où
+\textsc{Proposition 3.10.1.} \textit{Soient $\mathbf C,\mathbf C'$ deux
+catégories abéliennes, on suppose que tout élément de $\mathbf C$ est
+isomorphe à un sous-truc d'un élément injectif, et que $\mathbf C'$ satisfait
+à l'axiome \textup{AB 5 (}cf. \textup{1.5)}, qui permet en particulier de prendre des limites
+inductives dans $\mathbf C'$ \textup{(}cf. prop. \textup{1.8)}. Soit $(F_i)_{i\in I}$ un
+système inductif de foncteurs additifs covariants de $\mathbf C$ dans
+$\mathbf C'$, soit $F=\mathop{\underset{\to}{\lim}} F_i$ le foncteur limite inductive des $F_i$,
+défini par $F(A)=\mathop{\underset{\to}{\lim}} F_i(A)$ pour tout $A\in\mathbf C$. Les
+homomorphismes $F_i\to F$ définissent des homomorphismes de
+$\partial$-foncteurs $(\mathbf R^pF_i)\to(\mathbf R^pF)$, d'où
 un homomorphisme de $\partial$-foncteurs :}
-
 \LayerTarget{tohoku:eq:3.10.1}
 \[
-\tag{3.10.1}
-\varinjlim_i \mathbf R^pF_i(A)\longrightarrow \mathbf R^pF(A)
+\tag{3.10.1.}
+\mathop{\underset{\to}{\lim}} \mathbf R^pF_i(A)\to \mathbf R^pF(A)
 \]
-\textit{(les homomorphismes cobord pour la suite de foncteurs
-$\varinjlim_i\mathbf R^pF_i$ se définissant comme limite inductive des
-homomorphismes cobords relatifs aux $\mathbf R^pF_i$). Les homomorphismes
-(3.10.1) sont des isomorphismes.}
+\textit{\textup{(}les homomorphismes cobord pour la suite de foncteurs
+$\mathop{\underset{\to}{\lim}}\mathbf R^pF_i$ se définissant comme limite inductive des
+homomorphismes cobords relatifs aux $\mathbf R^pF_i$\textup{)}. Les homomorphismes
+\textup{(3.10.1)} sont des isomorphismes.}
 
 \LayerTarget{tohoku:proof:proposition-3.10.1:p1}
-Il suffit pour le voir de prendre une résolution injective $C=C(A)$ de $A$,
-le premier membre de (3.10.1) est alors $\varinjlim_i H^p(F_iC(A))$, le
-deuxième est $H^p(\varinjlim_i F_iC(A))$, ils sont donc isomorphes puisque le
-foncteur $\varinjlim_i$ sur la catégorie des systèmes inductifs sur $I$ à
-valeurs dans $\mathcal C'$ est exact (prop. 1.8) et en particulier permute à
-la formation de homologies de complexes.
+Il suffit pour le voir de prendre une résolution injective
+$C=C(A)$ de $A$, le premier membre de (3.10.1) est alors
+$\mathop{\underset{\to}{\lim}} H^p(F_iC(A))$, le deuxième est
 
 \TohokuContinuation{182}

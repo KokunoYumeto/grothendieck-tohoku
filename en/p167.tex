@@ -7,11 +7,11 @@ starting from a sheaf $F$ on $X$,
 
 \LayerTarget{tohoku:eq:canonical-support-comparison-FZ}
 \[
-H^p_{\Phi_Z}(Z,F\vert Z)\longrightarrow H^p_\Phi(X,F_Z).
+H^p_{\Phi_Z}(Z,F\vert Z)\to H^p_\Phi(X,F_Z).
 \]
 
 \LayerTarget{tohoku:theorem:3.5.1}
-\noindent\textsc{Theorem 3.5.1.} --- \textit{The preceding homomorphisms are
+\indent\textsc{Theorem 3.5.1.} \textit{The preceding homomorphisms are
 isomorphisms in each of the following two cases:}
 \begin{enumerate}
 \item \textit{$Z$ is closed.}
@@ -19,63 +19,59 @@ isomorphisms in each of the following two cases:}
 \end{enumerate}
 
 \LayerTarget{tohoku:proof:3.5.1}
-\noindent\textsc{Proof.} In each case it is enough to verify that the functors
-$H^p_\Phi(X,G^X)$ on $C^Z$ are effaceable for $p\geq1$. If $Z$ is closed,
+\indent\textsc{Proof.} In each case it is enough to verify that the functors
+$H^p_\Phi(X,G^X)$ on $\mathbf C^Z$ are effaceable for $p\geqq1$. If $Z$ is closed,
 this follows from the fact that $G^X$ is injective whenever $G$ is injective
 (Prop. 3.1.4). If $Z$ is open and $\Phi$ is paracompactifying, then so is
-$\Phi_Z$; hence every $G\in C^Z$ embeds in a $\Phi_Z$-soft sheaf (cf. 3.3).
+$\Phi_Z$; hence every $G\in \mathbf C^Z$ embeds in a $\Phi_Z$-soft sheaf (cf. 3.3).
 It remains only to note that if $G$ is $\Phi_Z$-soft, then $G^X$ is
 $\Phi$-soft, which is immediate, and to apply the corollary to Proposition
 3.3.2.
 
 Return now to the exact sequence
-$0\longrightarrow F_U\longrightarrow F\longrightarrow F_Y\longrightarrow0$
+$0\to F_U\to F\to F_Y\to0$
 associated with a closed subspace $Y$ and its open complement $U$. It gives
 rise to a cohomology exact sequence which, by the preceding theorem, may be
 written
 
 \LayerTarget{tohoku:eq:closed-open-support-long-exact-sequence}
 \[
-\mathinner{\cdotp\cdotp\cdotp\cdotp} H^p_\Phi(X,F_U)\longrightarrow H^p_\Phi(X,F)
-\longrightarrow H^p_{\Phi_Y}(Y,F)\longrightarrow
-H^{p+1}_\Phi(X,F_U)\cdots
+\mathinner{\cdotp\cdotp\cdotp\cdotp} H^p_\Phi(X,F_U)\to H^p_\Phi(X,F)
+\to H^p_{\Phi_Y}(Y,F)\to
+H^{p+1}_\Phi(X,F_U)\mathinner{\cdotp\cdotp\cdotp\cdotp}
 \]
 (where, for simplicity, $F$ has been written in place of $F\vert Y$ in the
 third term).
-
 \LayerTarget{tohoku:eq:open-support-identification}
 If $\Phi$ is paracompactifying, terms of the form $H^p_\Phi(X,F_U)$ may
 further be replaced by $H^p_{\Phi_U}(U,F)$, giving the familiar exact
 sequence of [4, XVII].
 
 \LayerTarget{tohoku:section:3.6}
-\textbf{3.6. On the cohomological dimension of certain spaces}%
+\indent\textbf{3.6. On the cohomological dimension of certain spaces}%
 \LayerTarget{tohoku:footnote:8}\textsuperscript{8)}.
 
 \LayerTarget{tohoku:proposition:3.6.1}
-\noindent\textsc{Proposition 3.6.1.} --- \textit{Let $X$ be a topological
+\indent\textsc{Proposition 3.6.1.} \textit{Let $X$ be a topological
 space and $(T^p)$ a covariant cohomological functor, defined on the category
-$C^X$ of sheaves of abelian groups on $X$ and taking values in a category
-$C'$. Suppose that $C'$ satisfies condition AB 4) (cf. 1.5), which implies
-that inductive limits may be formed in $C'$ (Prop. 1.8), and suppose that the
-$T^p$ commute with inductive limits. If $F\in C^X$, then $T^p(F)$ belongs to
-every thick subcategory (cf. 1.11) $C''$ of $C'$ that is stable under infinite
-direct sums and contains every object of the form $T^i(Z_U)$, where $U$ is an
+$\mathbf C^X$ of sheaves of abelian groups on $X$ and taking values in a category
+$\mathbf C'$. Suppose that $\mathbf C'$ satisfies condition \textup{AB 4)} \textup{(}cf. \textup{1.5)}, which implies
+that inductive limits may be formed in $\mathbf C'$ \textup{(}Prop. \textup{1.8)}, and suppose that the
+$T^p$ commute with inductive limits. If $F\in \mathbf C^X$, then $T^p(F)$ belongs to
+every thick subcategory \textup{(}cf. \textup{1.11)} $\mathbf C''$ of $\mathbf C'$ that is stable under infinite
+direct sums and contains every object of the form $T^i(\mathbf Z_U)$, where $U$ is an
 arbitrary open subset of $X$ and $i$ is equal to $p,p+1$, or $p+2$.}
 
 \LayerTarget{tohoku:proof:3.6.1:p1}
-(The meaning of $Z_U$ is the same as in the preceding section.)
-
+(The meaning of $\mathbf Z_U$ is the same as in the preceding section.)
 \LayerTarget{tohoku:construction:generator-family}
 Consider a family $(f_i)_{i\in I}$ of sections of $F$ on open subsets $U_i$.
-Each $f_i$ defines a homomorphism from $Z_{U_i}$ to $F$, and hence $(f_i)$
+Each $f_i$ defines a homomorphism from $\mathbf Z_{U_i}$ to $F$, and hence $(f_i)$
 defines a homomorphism from the
-
 \LayerTarget{tohoku:eq:generator-epimorphism}
-direct sum $\displaystyle\bigoplus_i Z_{U_i}$ to $F$.
-
+direct sum $\displaystyle\bigoplus_i \mathbf Z_{U_i}$ to $F$.
 \LayerTarget{tohoku:def:system-of-generators}
-We call $(f_i)$ a \textit{system of generators of $F$} if the preceding
+We call $(f_i)$ a \textit{system of generators} of $F$ if the preceding
 homomorphism is an epimorphism. It is clear that, for any given $F$, a family
 of generators always exists. Consequently, $F$ is the inductive limit of an
 increasing filtered family

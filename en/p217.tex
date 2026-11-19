@@ -4,24 +4,23 @@
 
 \LayerTarget{tohoku:proof:lemma-5.6.2}
 \LayerTarget{tohoku:construction:equivariant-injective-envelope}
-\noindent into a module $M(A)$, which is a (nonadditive!) functor of $A$, the
-homomorphism $A\longrightarrow M_1(A)$ being functorial; the procedure is
+\noindent into a module $M_1(A)$, which is a (nonadditive!) functor of $A$, the
+homomorphism $A\to M_1(A)$ being functorial; the procedure is
 iterated transfinitely, and one passes to the inductive limit, thereby
-obtaining an injective object $M(A)$ which is again a functor in $A$, and an
-injection $A\longrightarrow M(A)$ which is a functorial homomorphism. This
-construction is well defined once a generator $U$ of $C$ and a suitable
+obtaining an injective object $M(A)$ which is again a \textit{functor} in $A$, and an
+injection $A\to M(A)$ which is a \textit{functorial} homomorphism. This
+construction is well defined once a generator $U$ of ${\mathbf C}$ and a suitable
 cardinal have been chosen. Moreover, replacing $U$ if necessary by the direct
 sum of its transforms under $G$ (compare the proof of Prop. 5.1.1), one may
-suppose that $U$ comes from an object of $C(G)$. It is then clear, for evident
-reasons of ``transport of structure'', that if $A$ is an object of $C(G)$,
-$G$ also acts on $M(A)$, which is thus actually an object of $C(G)$, and the
-injection $A\longrightarrow M(A)$ is compatible with the operations of $G$.
-This is the desired injection of $A$ into an object of $C(G)$ which is
-injective in $C$.
-
+suppose that $U$ comes from an object of ${\mathbf C}(G)$. It is then clear, for evident
+reasons of ``transport of structure'', that if $A$ is an object of ${\mathbf C}(G)$,
+$G$ also acts on $M(A)$, which is thus actually an object of ${\mathbf C}(G)$, and the
+injection $A\to M(A)$ is compatible with the operations of $G$.
+This is the desired injection of $A$ into an object of ${\mathbf C}(G)$ which is
+injective in ${\mathbf C}$.
 \LayerTarget{tohoku:conclusion:lemma-5.6.2}
 This completes the proof; a reader who still has doubts may spell out the
-proof in the case $C=C^O$ considered in the lemma, restricting, if preferred,
+proof in the case ${\mathbf C}={\mathbf C}^{\mathbf O}$ considered in the lemma, restricting, if preferred,
 to the ``purely algebraic'' case in which $X$ consists of a single point.
 
 \LayerTarget{tohoku:transition:main-equivariant-ext-result}
@@ -29,45 +28,36 @@ We are now in a position to state the principal result of this section, proved
 by the preceding considerations:
 
 \LayerTarget{tohoku:theorem:5.6.3}
-\noindent\textsc{Theorem 5.6.3.}\quad \textit{Let $X$ be a space endowed with
-a group $G$ of homeomorphisms and a $G$-sheaf of rings $O$. Let $A$ be a
-$G$-$O$-module. On the category $C^{O(G)}$ of $G$-$O$-modules there exist
+\textsc{Theorem 5.6.3.}\quad \textit{Let $X$ be a space endowed with
+a group $G$ of homeomorphisms and a $G$-sheaf of rings ${\mathbf O}$. Let $A$ be a
+$G$-${\mathbf O}$-module. On the category ${\mathbf C}^{{\mathbf O}(G)}$ of $G$-${\mathbf O}$-modules there exist
 three cohomological spectral functors, converging to the graded functor
-$\bigl(\operatorname{Ext}_{O,G}^n(X;A,B)\bigr)$, whose initial terms are,
+$\bigl(\operatorname{Ext}_{{\mathbf O},G}^n(X;A,B)\bigr)$, whose initial terms are,
 respectively:}
 
 \LayerTarget{tohoku:equation:5.6.11}
 \begin{equation}
 \begin{aligned}
 \mathrm I_2^{p,q}(B)
-  &=H^p\bigl(Y,\mathbf{Ext}_{O,G}^q(A,B)\bigr),\\
+  &=H^p\bigl(Y,\mathbf{Ext}_{{\mathbf O},G}^q(A,B)\bigr),\\
 \mathrm {II}_2^{p,q}(B)
-  &=H^p\bigl(G,\operatorname{Ext}_O^q(X;A,B)\bigr),\\
-\mathrm {III}_2^{p,q}(B)
-  &=H^p\bigl(X;G,\mathbf{Ext}_O^q(A,B)\bigr).
+  &=H^p\bigl(G,\operatorname{Ext}_{\mathbf O}^q(X;A,B)\bigr),\\
+\mathrm {III}_2^{p\,q}(B)
+  &=H^p\bigl(X;G,\mathbf{Ext}_{\mathbf O}^q(A,B)\bigr).
 \end{aligned}
 \tag{5.6.11}
 \end{equation}
 
 \LayerTarget{tohoku:specialization:theorem-5.6.3}
-If $O=A$, the first two spectral sequences reduce to the spectral sequences
+If ${\mathbf O}=A$, the first two spectral sequences reduce to the spectral sequences
 of Theorem 5.2.1, while the third spectral sequence is new. If $G$ reduces to
 the identity element, then spectral sequences I and III are identical, and
 both agree with the spectral sequence of Theorem 4.2.1, whereas spectral
 sequence II is trivial. If $X$ consists of a single point, spectral sequences
 II and III are identical and, moreover, are nontrivial in general (and,
 apparently, useful), whereas spectral sequence I is
-trivial.\textsuperscript{11)}
-
-\LayerTarget{tohoku:consequence:edge-homomorphisms-five-term}
-The preceding spectral sequences yield edge homomorphisms and five-term exact
-sequences, which we shall not write down.
-
-\LayerTarget{tohoku:transition:degeneration-case}
-We shall make explicit only one particular case of degeneration:
-
-\LayerTarget{tohoku:footnote:11}
-\noindent\textsuperscript{11)} The nontrivial spectral sequence obtained
+trivial.\textsuperscript{11)}\SourceFootnote{11}{\LayerTarget{tohoku:footnote:11}
+The nontrivial spectral sequence obtained
 converges to $\operatorname{Ext}_U(A,B)$, and its initial term is
 $H^p\bigl(G,\operatorname{Ext}_O^q(A,B)\bigr)$ ($U$ being the ring generated
 by $\mathbf Z(G)$ and the $G$-ring $O$, subject to the commutation relations
@@ -75,6 +65,12 @@ $g\lambda g^{-1}=\lambda^g$ for $\lambda\in O$, $g\in G$). Note that this
 spectral sequence can be obtained more easily directly, using projective
 resolutions of $A$ instead of injective resolutions of $B$. Indeed, it is very
 easy to see that if $A$ is a free $U$-module, then $A$ is a free $O$-module
-and $\operatorname{Hom}_O(A,B)$ is a $\Gamma^G$-acyclic $G$-module.
+and $\operatorname{Hom}_O(A,B)$ is a $\Gamma^G$-acyclic $G$-module.}
+
+\LayerTarget{tohoku:consequence:edge-homomorphisms-five-term}
+The preceding spectral sequences yield edge homomorphisms and five-term exact
+sequences, which we shall not write down.
+\LayerTarget{tohoku:transition:degeneration-case}
+We shall make explicit only one particular case of degeneration:
 
 \TohokuContinuation{218}

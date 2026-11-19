@@ -6,21 +6,21 @@
 \LayerTarget{tohoku:def:additive-diagram-relations:p2}
 \noindent $R_{ij}$, on dira que $D$ est $R$-commutatif si tous les $D(L)$
 $(L\in R)$ sont nuls. Appelons \textit{schéma de diagramme avec relations de
-commutation} un couple $(S,R)=\Sigma$ formé d'un schéma de diagramme et d'un
-ensemble $R$ comme ci-dessus. Pour toute catégorie additive $C$, on peut alors
-considérer la sous-catégorie $C^\Sigma$ de $C^S$ formée des diagrammes
+commutation} un couple $(\mathrm{S},R)=\Sigma$ formé d'un schéma de diagramme et d'un
+ensemble $R$ comme ci-dessus. Pour toute catégorie additive $\mathbf{C}$, on peut alors
+considérer la sous-catégorie $\mathbf{C}^\Sigma$ de $\mathbf{C}^S$ formée des diagrammes
 $R$-commutatifs.
 
 \LayerTarget{tohoku:prop:1.6.1}
-\noindent\textsc{Proposition 1.6.1.} --- \textit{Soient $\Sigma$ un schéma de
-diagramme avec relations de commutation, $C$ une catégorie additive. Alors la
-catégorie $C^\Sigma$ est une catégorie additive, et si $C$ est une catégorie
+\textsc{Proposition 1.6.1.} \textit{Soient $\Sigma$ un schéma de
+diagramme avec relations de commutation, $\mathbf{C}$ une catégorie additive. Alors la
+catégorie $\mathbf{C}^\Sigma$ est une catégorie additive, et si $\mathbf{C}$ est une catégorie
 avec produits directs infinis (resp. sommes directes infinies) il en est de
-même de $C^\Sigma$. De plus, si $C$ satisfait à un des axiomes AB 1) à AB 6)
-ou des axiomes duals AB 3*) à AB 6*), il en est de même de $C^\Sigma$.}
+même de $\mathbf{C}^\Sigma$. De plus, si $\mathbf{C}$ satisfait à un des axiomes \textup{AB 1)} à \textup{AB 6)}
+ou des axiomes duals \textup{AB 3*)} à \textup{AB 6*)}, il en est de même de $\mathbf{C}^\Sigma$.}
 
 \LayerTarget{tohoku:prop:1.6.1:proof}
-D'ailleurs, si $D,D'\in C^\Sigma$, et si $u$ est un morphisme de $D$ dans
+D'ailleurs, si $D,D'\in \mathbf{C}^\Sigma$, et si $u$ est un morphisme de $D$ dans
 $D'$, alors son noyau (resp. conoyau, resp. image, resp. coimage) est le
 diagramme formé par les noyaux (resp. \ldots) des composantes $u_i$, les
 morphismes dans ce diagramme (correspondants aux flèches du schéma) se
@@ -29,49 +29,42 @@ restriction (resp. passage au quotient). On interprète de façon analogue la
 somme directe ou le produit direct d'une famille de diagrammes. Les sous-trucs
 $D'$ d'un diagramme $D$ s'identifient aux familles $(D'(i))$ de sous-trucs des
 $D(i)$ telles que pour toute flèche $\varphi$ d'origine $i$ et extrémité $j$,
-on ait $D(\varphi)\,D'(i)\subset D'(j)$ ; alors $D'(\varphi)$ se définit comme
-le morphisme $D'(i)\longrightarrow D'(j)$ défini par $D(\varphi)$. Les trucs
+on ait $D(\varphi).\,D'(i)\subset D'(j)$ ; alors $D'(\varphi)$ se définit comme
+le morphisme $D'(i)\to D'(j)$ défini par $D(\varphi)$. Les trucs
 quotients de $D$ se déterminent de façon duale.
 
 \LayerTarget{tohoku:def:dual-diagram-scheme}
-Si $S$ est un schéma de diagrammes, on appelle \textit{schéma dual} et on
-désigne par $S^\circ$ le schéma ayant mêmes sommets et même ensemble de flèches
-que $S$, mais l'origine et l'extrémité des flèches de $S$ étant intervertis. Si
-on donne de plus un ensemble $R$ de relations de commutation pour $S$, on
-gardera le même ensemble pour $S^\circ$. Avec cette convention, pour une
-catégorie additive $C$, la catégorie duale de $C^\Sigma$ s'identifie à
-$(C^\circ)^{\Sigma^\circ}$.
+Si $\mathrm{S}$ est un schéma de diagrammes, on appelle \textit{schéma dual} et on
+désigne par $\mathrm{S}^0$ le schéma ayant mêmes sommets et même ensemble de flèches
+que $\mathrm{S}$, mais l'origine et l'extrémité des flèches de $\mathrm{S}$ étant intervertis. Si
+on donne de plus un ensemble $R$ de relations de commutation pour $\mathrm{S}$, on
+gardera le même ensemble pour $\mathrm{S}^0$. Avec cette convention, pour une
+catégorie additive $\mathbf{C}$, la catégorie duale de $\mathbf{C}^\Sigma$ s'identifie à
+$(\mathbf{C}^\circ)^{\Sigma^\circ}$.
 
 \LayerTarget{tohoku:def:canonical-diagram-extension}
-Soient $C,C'$ deux catégories additives, $\Sigma$ un schéma de diagramme avec
-relations de commutation. Pour tout foncteur $F$ de $C$ dans $C'$, on définit
-de façon évidente le foncteur $F^\Sigma$ de $C^\Sigma$ dans $C'^\Sigma$, dit
+Soient $\mathbf{C},\mathbf{C}'$ deux catégories additives, $\Sigma$ un schéma de diagramme avec
+relations de commutation. Pour tout foncteur $F$ de $\mathbf{C}$ dans $\mathbf{C}'$, on définit
+de façon évidente le foncteur $F^\Sigma$ de $\mathbf{C}^\Sigma$ dans $\mathbf{C}'^\Sigma$, dit
 \textit{prolongement canonique de $F$ aux diagrammes}. $F^\Sigma$ se comporte
 formellement comme un foncteur par rapport à l'argument $F$, en particulier un
-morphisme fonctoriel $F\longrightarrow F'$ définit un homomorphisme fonctoriel
-$F^\Sigma\longrightarrow F'^\Sigma$. Notons enfin qu'on a pour un foncteur
-composé :
-
-\[
-  (GF)^\Sigma=G^\Sigma F^\Sigma,
-\]
-
-\noindent et que les propriétés d'exactitude d'un foncteur se conservent par
+morphisme fonctoriel $F\to F'$ définit un homomorphisme fonctoriel
+$F^\Sigma\to F'^\Sigma$. Notons enfin qu'on a pour un foncteur
+composé : $(GF)^\Sigma=G^\Sigma F^\Sigma$, et que les propriétés d'exactitude d'un foncteur se conservent par
 prolongement à une classe de diagrammes.
 
 \LayerTarget{tohoku:section:1.7}
-\noindent\textbf{1.7. Exemples de catégories définies par des schémas de
+\textbf{1.7. Exemples de catégories définies par des schémas de
 diagrammes.}
-
 \LayerTarget{tohoku:example:1.7:a}
-\noindent a) Prenons $I$ réduit à un élément, et l'ensemble des flèches vide.
+a) Prenons $I$ réduit à un élément, et l'ensemble des flèches vide.
 Alors les relations de commutation sont de la forme $n_i e=0$, donc peuvent se
-réduire à une unique relation $ne=0$. Alors $C^\Sigma$ est la sous-catégorie de
-$C$ formée des objets annulés par l'entier $n$. Si $n=0$, c'est $C$ lui-même.
+réduire à une unique relation $ne=0$. Alors $\mathbf{C}^\Sigma$ est la sous-catégorie de
+$\mathbf{C}$ formée des objets annulés par l'entier $n$. Si $n=0$, c'est $\mathbf{C}$ lui-même.
 
 \LayerTarget{tohoku:example:1.7:b:p1}
-\noindent b) Prenons $I$ quelconque, pas de flèches, pas de relations de
-commutation. Alors $C^\Sigma$ s'identifie à la catégorie produit $C^I$. Si on
+b) Prenons $I$ quelconque, pas de flèches, pas de relations de
+commutation. Alors $\mathbf{C}^\Sigma$ s'identifie à la catégorie produit $\mathbf{C}^I$. Si on
 suppose données des
 
 \TohokuContinuation{132}

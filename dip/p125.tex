@@ -3,9 +3,9 @@
 
 \LayerTarget{tohoku:section:1.2:p2}
 \noindent naturelle'' de $F$ dans $G$ par certains auteurs) est une
-``fonction'' qui associe à tout $A\in C$ un morphisme $f(A)$ de $F(A)$ dans
-$G(A)$, de telle façon que pour tout morphisme $u:A\longrightarrow B$ dans
-$C$, le diagramme suivant
+``fonction'' qui associe à tout $A\in \mathbf{C}$ un morphisme $f(A)$ de $F(A)$ dans
+$G(A)$, de telle façon que pour tout morphisme $u:A\to B$ dans
+$\mathbf{C}$, le diagramme suivant
 \[
 \begin{array}{ccc}
 F(A) & \stackrel{F(u)}{\longrightarrow} & F(B) \\
@@ -13,55 +13,55 @@ F(A) & \stackrel{F(u)}{\longrightarrow} & F(B) \\
 G(A) & \stackrel{G(u)}{\longrightarrow} & G(B)
 \end{array}
 \]
-soit commutatif. Les morphismes de foncteurs $F\longrightarrow G$ et
-$G\longrightarrow H$ se composent encore de façon évidente, cette composition
+soit commutatif. Les morphismes de foncteurs $F\to G$ et
+$G\to H$ se composent encore de façon évidente, cette composition
 est associative, et le ``morphisme identique'' du foncteur $F$ est une unité
-pour la composition des morphismes de foncteurs. (Donc si $C$ est un ensemble,
-les foncteurs de $C$ dans $C'$ forment de nouveau une catégorie). Notons enfin
-que le composé $GF$ de deux foncteurs $F:C\longrightarrow C'$ et
-$G:C'\longrightarrow C''$ se comporte formellement comme un bifoncteur par
+pour la composition des morphismes de foncteurs. (Donc si $\mathbf{C}$ est un ensemble,
+les foncteurs de $\mathbf{C}$ dans $\mathbf{C}'$ forment de nouveau une catégorie). Notons enfin
+que le composé $GF$ de deux foncteurs $F:\mathbf{C}\to \mathbf{C}'$ et
+$G:\mathbf{C}'\to \mathbf{C}''$ se comporte formellement comme un bifoncteur par
 rapport aux arguments $G$ et $F$ : un morphisme fonctoriel
-$G\longrightarrow G'$ (resp. $F\longrightarrow F'$) définit un morphisme
-fonctoriel $GF\longrightarrow G'F$ (resp. $GF\longrightarrow GF'$).
+$G\to G'$ (resp. $F\to F'$) définit un morphisme
+fonctoriel $GF\to G'F$ (resp. $GF\to GF'$).
 
 \LayerTarget{tohoku:section:1.2:p3}
-Une \textit{équivalence} d'une catégorie $C$ avec une catégorie $C'$ est un
+Une \textit{équivalence} d'une catégorie $\mathbf{C}$ avec une catégorie $\mathbf{C}'$ est un
 système $(F,G,\varphi,\psi)$ formé de foncteurs covariants :
 \[
-  F:C\longrightarrow C' \qquad G:C'\longrightarrow C
+  F:\mathbf{C}\to\mathbf{C}' \qquad G:\mathbf{C}'\to\mathbf{C}
 \]
 et d'homomorphismes de foncteurs
 \[
-  \varphi:1_C\longrightarrow GF \qquad
-  \psi:1_{C'}\longrightarrow FG
+  \varphi:\mathbf{1}_{\mathrm{C}}\to GF \qquad
+  \psi:\mathbf{1}_{\mathrm{C}'}\to FG
 \]
-(où $1_C$, $1_{C'}$ sont les foncteurs identiques dans $C$, resp. $C'$) tels
-que pour tout $A\in C$, $A'\in C'$, les composés
+(où $\mathbf{1}_{\mathrm{C}}$, $\mathbf{1}_{\mathrm{C}'}$ sont les foncteurs identiques dans $\mathbf{C}$, resp. $\mathbf{C}'$) tels
+que pour tout $A\in \mathbf{C}$, $A'\in \mathbf{C}'$, les composés
 \[
 \begin{array}{ccccc}
 F(A) & \stackrel{F(\varphi(A))}{\longrightarrow} & FGF(A) &
 \stackrel{\psi^{-1}(F(A))}{\longrightarrow} & F(A) \\
-G(A') & \stackrel{G(\psi(A'))}{\longrightarrow} & GFG(A') &
-\stackrel{\varphi^{-1}(G(A'))}{\longrightarrow} & G(A')
+G(A') & \stackrel{G(\psi(A))}{\longrightarrow} & GFG(A') &
+\stackrel{\varphi^{-1}(G(A))}{\longrightarrow} & G(A')
 \end{array}
 \]
 soient l'identité dans $F(A)$ resp. $G(A')$. Alors pour tout couple $A,B$
-d'objets de $C$ l'application $f\longrightarrow F(f)$ de
+d'objets de $\mathbf{C}$ l'application $f\to F(f)$ de
 $\mathrm{Hom}(A,B)$ dans $\mathrm{Hom}(F(A),F(B))$ est une bijection, dont
-l'inverse est l'application $g\longrightarrow G(g)$ de
+l'inverse est l'application $g\to G(g)$ de
 $\mathrm{Hom}(F(A),F(B))$ dans $\mathrm{Hom}(GF(A),GF(B))$ identifié à
 $\mathrm{Hom}(A,B)$ grâce aux isomorphismes
-$\varphi(A):A\longrightarrow GF(A)$ et
-$\varphi(B):B\longrightarrow GF(B)$. Les équivalences entre catégories se
+$\varphi(A):A\to GF(A)$ et
+$\varphi(B):B\to GF(B)$. Les équivalences entre catégories se
 composent comme les foncteurs. Deux catégories sont dites
 \textit{équivalentes} s'il existe une équivalence entre ces catégories. On se
 permet alors couramment, dans le langage, de ne pas distinguer entre l'une et
 l'autre. Il importe cependant d'observer la différence de cette notion avec la
 notion beaucoup plus stricte d'isomorphisme (qui s'applique si on veut comparer
-des catégories qui sont des ensembles) : Soit $C$ un ensemble non vide, soit
-pour tout couple d'objets $A,B\in C$, un ensemble $\mathrm{Hom}(A,B)$ réduit à
-un élément, alors $C$ devient (pour les uniques lois de composition possibles
-$\mathrm{Hom}(A,B)\times\mathrm{Hom}(B,C)\longrightarrow\mathrm{Hom}(A,C)$)
+des catégories qui sont des ensembles) : Soit $\mathbf{C}$ un ensemble non vide, soit
+pour tout couple d'objets $A,B\in \mathbf{C}$, un ensemble $\mathrm{Hom}(A,B)$ réduit à
+un élément, alors $\mathbf{C}$ devient (pour les uniques lois de composition possibles
+$\mathrm{Hom}(A,B)\times\mathrm{Hom}(B,C)\to\mathrm{Hom}(A,C)$)
 une catégorie, et deux catégories construites par ce procédé sont toujours
 équivalentes, mais elles ne sont isomorphes que si elles sont équipotentes.
 Aucune des équivalences de catégories qu'on rencontre en pratique n'est un

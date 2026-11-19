@@ -4,16 +4,13 @@
 \LayerTarget{tohoku:proof:3.6.2:p2}
 \noindent associated with an injective resolution of $A_i$, we have
 $H^pT(C_i)=R^pT(A_i)$, and hence the desired conclusion
-
 \LayerTarget{tohoku:eq:derived-colimit-isomorphism}
-\[
-R^pT(A)=\varinjlim_i R^pT(A_i).
-\]
+$R^pT(A)=\varinjlim R^pT(A_i)$.
 
 \LayerTarget{tohoku:proposition:3.6.3}
-\noindent\textsc{Proposition 3.6.3.} --- \textit{Let $X$ be a topological
+\indent\textsc{Proposition 3.6.3.} \textit{Let $X$ be a topological
 space endowed with an antifilter $\Phi$ of closed subsets. Then the functors
-$H^p_\Phi(X,F)$ on $C^X$ commute with inductive limits in the following two
+$H^p_\Phi(X,F)$ on $\mathbf C^X$ commute with inductive limits in the following two
 cases:}
 \begin{enumerate}
 \LayerTarget{tohoku:subitem:3.6.3:1}
@@ -27,7 +24,6 @@ closed subsets.}
 \LayerTarget{tohoku:def:zariski-space}
 (We call a space a \textit{Zariski space} if every decreasing sequence of
 closed subsets is stationary; cf. [15, page 223].) ---
-
 \LayerTarget{tohoku:proof:3.6.3}
 It suffices to verify conditions a) and b) of Proposition 3.6.2 for the functor
 $\Gamma_\Phi$. Verifying a) is an easy compactness exercise left to the reader
@@ -35,13 +31,13 @@ $\Gamma_\Phi$. Verifying a) is an easy compactness exercise left to the reader
 and from the following lemma.
 
 \LayerTarget{tohoku:lemma:3.6.4}
-\noindent\textsc{Lemma 3.6.4.} --- \textit{Under the assumptions of 1), every
+\indent\textsc{Lemma. 3.6.4.} \textit{Under the assumptions of \textup{1)}, every
 inductive limit of $\Phi$-soft sheaves is $\Phi$-soft. Under the assumptions of
-2), every inductive limit of flabby sheaves is flabby.}
+\textup{2}, every inductive limit of flasque sheaves is flasque.}
 
 \LayerTarget{tohoku:proof:3.6.4}
 Assume the conditions of 1). Let $(F_i)$ be an inductive system of
-$\Phi$-soft sheaves on $X$, let $F$ be its inductive limit, and let $f$ be a
+soft sheaves on $X$, let $F$ be its inductive limit, and let $f$ be a
 section of $F$ over some $A\in\Phi$, that is, over a compact subset $A$. By a)
 applied to the compact space $A$, the section $f$ comes from a section $f_i$ of
 some $F_i$ over $A$. Since $F_i$ is $\Phi$-soft, $f_i$ is the restriction of
@@ -51,32 +47,32 @@ subset $U$ of a Zariski space is itself a Zariski space and a) therefore
 applies to it.
 
 \LayerTarget{tohoku:def:cohomological-dimension}
-We say that a space $X$ has \textit{cohomological dimension} $\leq n$ if
+We say that a space $X$ has \textit{cohomological dimension} $\leqq n$ if
 $H^i(X,F)=0$ for $i>n$ and every sheaf of abelian groups $F$ on $X$.
 Combining Propositions 3.6.1 and 3.6.3 gives the following result.
 
 \LayerTarget{tohoku:corollary:cohomological-dimension-test}
-\noindent\textsc{Corollary.} --- \textit{Let $X$ be either a compact space or
-a Zariski space, and let $n$ be an integer $\geq0$. Then $X$ has
-cohomological dimension $\leq n$ if and only if $H^i(X,Z_U)=0$ for $i>n$ and
+\indent\textsc{Corollary} \textit{Let $X$ be either a compact space or
+a Zariski space, and let $n$ be an integer $\geqq0$. Then $X$ has
+cohomological dimension $\leqq n$ if and only if $H^i(X,\mathbf Z_U)=0$ for $i>n$ and
 every open subset $U$ of $X$.}
 
 \LayerTarget{tohoku:def:combinatorial-dimension}
 We now come to the essential result of this section. A Zariski space $X$ is
-said to have \textit{combinatorial dimension} $\leq n$ if every strictly
-decreasing sequence of irreducible closed subsets has at most $n+1$ members.
+said to have \textit{combinatorial dimension} $\leqq n$ if every strictly
+decreasing sequence of \textit{irreducible} closed subsets has at most $n+1$ members.
 Then:
 
 \LayerTarget{tohoku:theorem:3.6.5}
-\noindent\textsc{Theorem 3.6.5.} --- \textit{Let $X$ be a Zariski space of
-combinatorial dimension $\leq n$. Then $X$ has cohomological dimension
-$\leq n$; that is, $H^i(X,F)=0$ for $i>n$ and every sheaf of abelian groups
+\indent\textsc{Theorem 3.6.5.} \textit{Let $X$ be a Zariski space of
+combinatorial dimension $\leqq n$. Then $X$ has cohomological dimension
+$\leqq n$; that is, $H^i(X,F)=0$ for $i>n$ and every sheaf of abelian groups
 $F$ on $X$.}
 
 \LayerTarget{tohoku:proof:3.6.5:p1}
 We argue by induction on the combinatorial dimension $n$ of $X$. The theorem
-is trivial for $n=0$, when $X$ is a finite discrete set. Suppose it proved for
-combinatorial dimensions $\leq n-1$, where $n\geq1$, and prove it when $X$ has
-combinatorial dimension $\leq n$. Let the $X_i$ be the irreducible
+is trivial for $n=0$, when the quotient of $X$ by topological indistinguishability is a finite discrete set. Suppose it proved for
+combinatorial dimensions $\leqq n-1$, where $n\geqq1$, and prove it when $X$ has
+combinatorial dimension $\leqq n$. Let the $X_i$ be the irreducible
 
 \TohokuContinuation{171}

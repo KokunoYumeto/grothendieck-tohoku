@@ -4,86 +4,83 @@
 \SourcePage{141}
 
 \LayerTarget{tohoku:remark:satellites-existence:p2}
-\noindent que pour tout foncteur covariant additif $F$ de $C$ dans $C'$, il
+\noindent que pour tout foncteur covariant additif $F$ de $\mathbf{C}$ dans $\mathbf{C}'$, il
 existe un $\partial$-foncteur universel défini en tous les degrés et se
 réduisant à $F$ pour le degré zéro (i. e. tous les satellites $S^iF$
 existent) il suffit manifestement de prouver que $S^1F$ et $S^{-1}F$ existent,
 en vertu des formules
-\[
- S^1(S^iF)=S^{i+1}F\quad\hbox{si }i\geq0,\qquad
- S^{-1}(S^iF)=S^{i-1}F\quad\hbox{si }i\leq0,
-\]
-\noindent (dont la vérification à partir de la définition est triviale).
+$S^1(S^iF)=S^{i+1}F$ si $i\geqq0$, $S^{-1}(S^iF)=S^{i-1}F$ si $i\leqq0$,
+(dont la vérification à partir de la définition est triviale).
 D'ailleurs, la recherche de $S^1F$ et celle de $S^{-1}F$ sont deux problèmes
 duaux, ces
-deux foncteurs se permutent si on remplace $C$ et $C'$ par les catégories
+deux foncteurs se permutent si on remplace $\mathbf{C}$ et $\mathbf{C}'$ par les catégories
 duales.
 
 \LayerTarget{tohoku:def:effaceable-coeffaceable}
-Un foncteur additif $F$ de $C$ dans $C'$ est dit \textit{effaçable} si pour
-tout $A\in C$, on peut trouver un monomorphisme $u:A\longrightarrow M$ tel que
-$F(u)=0$ ; si $C$ est tel que tout objet $A\in C$ admet un effacement injectif
+Un foncteur additif $F$ de $\mathbf{C}$ dans $\mathbf{C}'$ est dit \textit{effaçable} si pour
+tout $A\in \mathbf{C}$, on peut trouver un monomorphisme $u:A\to M$ tel que
+$F(u)=0$ ; si $\mathbf{C}$ est tel que tout objet $A\in \mathbf{C}$ admet un effacement injectif
 (cf. 1.10 remarque 1) il revient au même de dire que $F(u)=0$ pour tout
-effacement injectif $u$ ; si enfin $C$ est tel que tout objet $A\in C$ admet
+effacement injectif $u$ ; si enfin $\mathbf{C}$ est tel que tout objet $A\in \mathbf{C}$ admet
 un monomorphisme dans un objet injectif $M$ (cf. 1.10.1) il revient au même de
 dire que $F(M)=0$ pour tout objet injectif $M$. Dualement, $F$ est dit
-\textit{coeffaçable} si pour tout $A\in C$, on peut trouver un épimorphisme
-$u:P\longrightarrow A$ tel que $F(u)=0$.
+\textit{coeffaçable} si pour tout $A\in \mathbf{C}$, on peut trouver un épimorphisme
+$u:P\to A$ tel que $F(u)=0$.
 
 \LayerTarget{tohoku:prop:2.2.1}
-\noindent\textsc{Proposition 2.2.1.} --- \textit{Soient $C,C'$ deux catégories
-abéliennes, $T=(T^i)_{0\leq i\leq a}$ un $\partial$-foncteur exact (covariant
-ou contravariant) de $C$ dans $C'$, avec $a>0$. Si $T$ est covariant et si
+\indent\textsc{Proposition 2.2.1.} \textit{Soient $\mathbf{C},\mathbf{C}'$ deux catégories
+abéliennes, $T=(T^i)\quad 0\leqq i\leqq a$ un $\partial$-foncteur exact (covariant
+ou contravariant) de $\mathbf{C}$ dans $\mathbf{C}'$, avec $a>0$. Si $T$ est covariant et si
 $T^i$ est effaçable pour $i>0$, alors $T$ est un $\partial$-foncteur universel,
-et la réciproque est vraie si $C$ est tel que tout objet $A\in C$ admet un
-effacement injectif (cf. 1.10). Si $T$ est contravariant, le même énoncé vaut
+et la réciproque est vraie si $\mathbf{C}$ est tel que tout objet $A\in \mathbf{C}$ admet un
+effacement injectif \textup{(}\textit{cf.}\textup{ 1.10)}. Si $T$ est contravariant, le même énoncé vaut
 en remplaçant « effaçable » et « effacement injectif » par « coeffaçable » et
 « effacement projectif », respectivement.}
 
 \LayerTarget{tohoku:prop:2.2.1:proof:p1}
 Il suffit pour la partie directe, de prouver par exemple que si
 $(T'^0,T'^1)$ est un $\partial$-foncteur défini pour les degrés 0, 1 et $f^0$
-un morphisme fonctoriel $T^0\longrightarrow T'^0$, alors il existe un
+un morphisme fonctoriel $T^0\to T'^0$, alors il existe un
 morphisme $(f^0,f^1)$ unique de $(T^0,T^1)$ dans $(T'^0,T'^1)$ se réduisant à
 $f^0$ pour le degré 0 (nous avons supposé $T$ covariant pour fixer les idées).
-Soit $A\in C$, considérons une suite exacte
-$0\longrightarrow A\longrightarrow M\longrightarrow A'\longrightarrow 0$
-telle que le morphisme $T^1(A)\longrightarrow T^1(M)$ soit nul. Si on a pu
+Soit $A\in \mathbf{C}$, considérons une suite exacte
+$0\to A\to M\to A'\to 0$
+telle que le morphisme $T^1(A)\to T^1(M)$ soit nul. Si on a pu
 construire $f^1$, on aura un diagramme commutatif
 
 \LayerTarget{tohoku:diagram:prop-2.2.1}
 \[
-\begin{array}{ccccccc}
-T^0(M)&\longrightarrow&T^0(A')&\longrightarrow&T^1(A)&\longrightarrow&T^1(M)\\
+\begin{array}{lclclcl}
+T^0(M)&\to&T^0(A')&\to&T^1(A)&\to&T^1(M)\\
 \big\downarrow&&\big\downarrow&&\big\downarrow&&\\
-T'^0(M)&\longrightarrow&T'^0(A')&\longrightarrow&T'^1(A)&&
+T'^0(M)&\to&T'^0(A')&\to&T'^1(A).&&
 \end{array}
 \]
 
 \LayerTarget{tohoku:prop:2.2.1:proof:p2}
-La première ligne étant exacte, on en conclut que le morphisme
-$T^0(A')\longrightarrow T^1(A)$ est surjectif, et par suite que le morphisme
-$f^1(A):T^1(A)\longrightarrow T'^1(A)$ est complètement déterminé par passage
+\noindent La première ligne étant exacte, on en conclut que le morphisme
+$T^0(A')\to T^1(A)$ est surjectif, et par suite que le morphisme
+$f^1(A):T^1(A)\to T'^1(A)$ est complètement déterminé par passage
 au quotient à partir de
-$f^0(A'):T^0(A')\longrightarrow T'^0(A')$, ce qui prouve l'unicité de
+$f^0(A'):T^0(A')\to T'^0(A')$, ce qui prouve l'unicité de
 $f^1(A)$. D'ailleurs, le diagramme précédent sans $f^1(A)$, compte tenu du
 fait que le produit des deux morphismes de la deuxième ligne est nul, permet
-de définir un morphisme $T^1(A)\longrightarrow T'^1(A)$ de façon unique par la
+de définir un morphisme $T^1(A)\to T'^1(A)$ de façon unique par la
 condition que le diagramme reste commutatif. Des raisonnements standards
 montrent que le morphisme ainsi défini ne dépend pas du choix particulier de
 la suite exacte
-$0\longrightarrow A\longrightarrow M\longrightarrow A'\longrightarrow 0$,
+$0\to A\to M\to A'\to 0$,
 puis le fait que ce morphisme est fonctoriel, et
 \textquotedblleft permute à $\partial$\textquotedblright. Cela prouve donc la
 première partie de la proposition. La deuxième partie est contenue dans le
 théorème d'existence suivant :
 
 \LayerTarget{tohoku:thm:2.2.2:p1}
-\noindent\textsc{Théorème 2.2.2.} --- \textit{Soit $C$ une catégorie
-abélienne telle que tout objet $A\in C$ admette un effacement injectif
-(cf. 1.10). Alors pour tout foncteur additif covariant $F$ sur $C$, les
-satellites $S^iF$ ($i\geq0$) existent et sont des foncteurs effaçables pour
-$i>0$. Pour que le $\partial$-foncteur universel $(S^iF)_{i\geq0}$ soit exact,
+\indent\textsc{Théorème 2.2.2.} \textit{Soit $\mathbf{C}$ une catégorie
+abélienne telle que tout objet $A\in \mathbf{C}$ admette un effacement injectif
+\textup{(}\textit{cf.}\textup{ 1.10)}. Alors pour tout foncteur additif covariant $F$ sur $\mathbf{C}$, les
+satellites $S^iF$ ($i\geqq0$) existent et sont des foncteurs effaçables pour
+$i>0$. Pour que le $\partial$-foncteur universel $(S^iF)_{i\geqq0}$ soit exact,
 il}
 
 \TohokuContinuation{142}

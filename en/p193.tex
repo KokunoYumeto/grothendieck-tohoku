@@ -3,66 +3,56 @@
 \SourcePage{193}
 
 \LayerTarget{tohoku:remark:4.3.2:1}
-still true, however (for other reasons), if $C(A)$ is replaced by the
-``Cartan resolution'' $A\otimes_{\mathbf Z}F$, where $F$ is a ``fundamental
+still true, however (for other reasons), if $\mathrm C(A)$ is replaced by the
+``Cartan resolution'' $A\otimes_ZF$, where $F$ is a ``fundamental
 sheaf'' on $X$, assumed paracompact.
 
 \LayerTarget{tohoku:remark:4.3.2:2}
-\noindent 2. Let $x\in X$. We saw in 4.2 that
-
+2. Let $x\in X$. We saw in 4.2 that
 \LayerTarget{tohoku:formula:stalk-ext-filtered-colimit}
 $\mathbf{Ext}_{\mathbf O}^p(\mathbf M,A)(x)=
-\varinjlim\mathrm{Ext}_{\mathbf O}^p(U;\mathbf M,A)$, where the direct limit is
+\mathop{\underset{\to}{\mathrm{lim.}}}\mathrm{Ext}_{\mathbf O}^p(U;\mathbf M,A)$, where the inductive limit is
 taken over the directed set of open neighborhoods $U$ of $x$.
-
 \LayerTarget{tohoku:construction:stalk-spectral-sequence-limits}
 For each $U$ one may form spectral sequences $II$ and $III$. Passing readily
-to the direct limit shows that
-$(\mathbf{Ext}_{\mathbf O}^p(\mathbf M,A)(x))_p$ is the abutment of two
-spectral sequences whose initial terms are, respectively,
+to the inductive limit shows that
+$(\mathbf{Ext}_{\mathbf O}^p(\mathbf M,A)(x))_p$ \textit{is the abutment of two
+spectral sequences} whose initial terms are, respectively,
 
 \LayerTarget{tohoku:formula:stalk-spectral-ii-initial-term}
 \[
-\mathrm{II}_2^{p,q}=\varinjlim
+II_2^{p,q}=\mathop{\underset{\to}{\mathrm{lim.}}}
 \mathrm{Ext}_O^p(M,H^q(U,A))
 \]
 
 \LayerTarget{tohoku:formula:stalk-spectral-iii-initial-term}
 \[
-\mathrm{III}_2^{p,q}=
-\bigoplus_{q'+q''=q}\varinjlim
+III_2^{p,q}=
+\bigoplus_{q'+q''=q}\mathop{\underset{\to}{\mathrm{lim.}}}
 \mathrm{Ext}_K^p(\mathrm{Tor}_{q'}^O(K,M),H^{q''}(U,A)).
 \]
 (In the second spectral sequence, $A$ is assumed to be annihilated by a
 two-sided ideal $I$, and $K=O/I$.)
-
 \LayerTarget{tohoku:criterion:stalk-ext-limit-transfer}
-It follows that whenever, in one of these spectral sequences, the direct-limit
-sign can be moved past $H(U,A)$ in each component of the initial term, the
+It follows that whenever, in one of these spectral sequences, the $\mathop{\underset{\to}{\mathrm{lim.}}}$ sign can be transferred to $H(U,A)$ in each component of the initial term, the
 formula
 $\mathbf{Ext}_{\mathbf O}^p(\mathbf M,A)(x)=
 \mathrm{Ext}_O^p(M,A(x))$ holds. Its validity was previously assured only
 when $M$ admits a projective resolution by finite free modules $O^{n_i}$.
 Here are two typical cases in which this occurs:
-
 \LayerTarget{tohoku:example:constant-sheaf-hlc}
-a) $A$ is the constant sheaf defined by an $O$-module $N$, and $X$ is HLC
+a) $A$ is the \textit{constant} sheaf defined by an $O$-module $N$, and $X$ is HLC
 (the first spectral sequence is used).
-
 \LayerTarget{tohoku:example:noetherian-quotient}
 b) $A$ is annihilated by an ideal $I$ such that $O/I=K$ is noetherian, and the
 $\mathrm{Tor}_q^O(K,M)$ are of finite type over $K$. ---Suppose that $A$ is
 the constant sheaf defined by an $O$-module $N$ annihilated by $I$, and, for
 simplicity, suppose that $K=O/I$ is a field. Then
-
 \LayerTarget{tohoku:formula:constant-sheaf-ext-presheaf}
 $\mathbf{Ext}_{\mathbf O}^n(\mathbf M,\mathbf N)$ is the sheaf associated to
 the presheaf defined by
-\[
-\bigoplus_{p+q=n}
-\mathrm{Hom}_K(\mathrm{Tor}_p^O(K,M),H^q(U,N)).
-\]
-
+$\displaystyle \bigoplus_{p+q=n}
+\mathrm{Hom}_K(\mathrm{Tor}_p^O(K,M),H^q(U,N)).$
 \LayerTarget{tohoku:example:theorem-4.2.2-stalk-failure}
 It is easy to construct examples (with $M=N=K$, $p=1$, $O$ the group algebra
 $K(G)$ of a group $G$, and $I$ the augmentation ideal) in which this sheaf is
@@ -71,25 +61,23 @@ $\mathrm{Ext}_O^p(M,N)$ ($=H^p(G,K)$). In this case the conclusion of Theorem
 4.2.2 therefore fails.
 
 \LayerTarget{tohoku:section:4.4}
-\SectionHeading{4.4. Case of sheaves with a group of operators.}
-
+\textbf{4.4. Case of sheaves with a group of operators.}
 \LayerTarget{tohoku:setup:group-operator-sheaves}
 Let $G$ be a group and $k$ a commutative ring with identity, and put
 $O=k(G)$, the group algebra of $G$ with coefficients in $k$. Then $O$ is an
 augmented algebra; denote its augmentation ideal by $I$, so that $k$ is
-identified with the $O$-module $O/I$. An $O$-module $A$ is simply a sheaf of
+identified with the $O$-module $O/I$. An $\mathbf O$-module $A$ is simply a sheaf of
 $k$-modules admitting $G$ as a group of operators. To say that $A$ is
 annihilated by $I$ means that $G$ acts trivially on $A$. Because of their
 importance for the next chapter, we shall quickly review the essential
 notation and results of the preceding sections in the present case.
-
 \LayerTarget{tohoku:setup:g-module-sheaf-notation}
 Suppressing $k$ once and for all from the notation (in practice, $k$ will be
 the ring $\mathbf Z$ of integers, or a field), we shall say $G$-module or
-$G$-sheaf in place of $O$-module. If $A,B$ are two $G$-sheaves, write
+$G$-sheaf in place of $\mathbf O$-module. If $A,B$ are two $G$-sheaves, write
 $\mathrm{Hom}_G(B,A)$, $\mathbf{Hom}_G(B,A)$,
 $\mathrm{Ext}_G^p(X;B,A)$, and $\mathbf{Ext}_G^p(B,A)$, putting $G$ in the
-subscript in place of $O$. When $B=k$, the only case of importance below,
+subscript in place of $\mathbf O$. When $B=k$, the only case of importance below,
 the preceding objects will also be denoted $\Gamma^G(A)$, $A^G$,
 $H^p(X;G,A)$, and
 

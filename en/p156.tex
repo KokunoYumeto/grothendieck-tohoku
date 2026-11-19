@@ -6,15 +6,13 @@
 Taking Theorem 1.10.1 into account gives the following.
 
 \LayerTarget{tohoku:cor:3.1.1}
-\textsc{Corollary.} --- \textit{Every $\mathbf O$-module is isomorphic to a
+\indent\textsc{Corollary.} \textit{Every $\mathbf O$-module is isomorphic to a
 sub-$\mathbf O$-module of an injective $\mathbf O$-module.}
 
 \LayerTarget{tohoku:construction:godement-injective-product}
 We give a direct proof of this corollary, due to Godement. For every $x\in X$,
 let $M_x$ be an $\mathbf O(x)$-module, and define a sheaf $M$ on $X$ by
-\[
-M(U)=\prod_{x\in U}M_x,
-\]
+$M(U)=\displaystyle\prod_{x\in U}M_x$,
 with the evident restriction maps and $\mathbf O(U)$-actions on $M(U)$. By
 construction, $M$ is an $\mathbf O$-module on $X$ isomorphic to the product
 of the $\mathbf O$-modules $M^x$ ($x\in X$), where $M^x(U)=M_x$ if $x\in U$
@@ -24,7 +22,7 @@ $(u_x)_{x\in X}$ in which $u_x$ is an $\mathbf O(x)$-homomorphism from $F(x)$
 to $M_x$. Hence:
 
 \LayerTarget{tohoku:prop:3.1.2}
-\textsc{Proposition 3.1.2.} --- \textit{If, for every $x\in X$, $M_x$ is an
+\indent\textsc{Proposition 3.1.2.} \textit{If, for every $x\in X$, $M_x$ is an
 injective $\mathbf O_x$-module, then the product sheaf $M$ defined above is an
 injective $\mathbf O$-module.}
 
@@ -36,33 +34,33 @@ injective $\mathbf O$-module $M$ defined by the $M_x$.
 \LayerTarget{tohoku:prop:3.1.3}
 We also record the following for later use.
 
-\textsc{Proposition 3.1.3.} --- \textit{Let $M$ be an injective
+\indent\textsc{Proposition 3.1.3.} \textit{Let $M$ be an injective
 $\mathbf O$-module on $X$, let $U$ be an open subset of $X$, and let
 $\mathbf O_U$ and $M_U$ be the restrictions of $\mathbf O$ and $M$ to $U$.
 Then $M_U$ is an injective $\mathbf O_U$-module.}
 
 Clearly $M_U$ is an $\mathbf O_U$-module. Let $F$ be an $\mathbf O_U$-module,
-let $G$ be a submodule of $F$, and let $u:G\longrightarrow M_U$ be a
+let $G$ be a submodule of $F$, and let $u:G\to M_U$ be a
 homomorphism. We show that $u$ extends to a homomorphism from $F$ to $M_U$.
 For an $\mathbf O_U$-module $H$ on $U$, let $\overline H$ be the
-$\mathbf O$-module obtained, in terms of étalé spaces, by extending $H$ by
-zero on $CU$; see [4, XVII, prop. 1]. Giving an $\mathbf O_U$-homomorphism
-$u:G\longrightarrow M_U$ is then equivalent to giving an
-$\mathbf O$-homomorphism $\overline u:\overline G\longrightarrow M$. Since
+$\mathbf O$-module obtained, in terms of étalé spaces, by ``extending $H$ by
+zero on $\complement_U$''; see [4, XVII, prop. 1]. Giving an $\mathbf O_U$-homomorphism
+$u:G\to M_U$ is then equivalent to giving an
+$\mathbf O$-homomorphism $\overline G\to M$. Since
 $\overline G$ is a submodule of $\overline F$ and $M$ is injective,
 $\overline u$ extends to a homomorphism from $\overline F$ to $M$, which
 induces the required homomorphism from $F$ to $M_U$. Note that Proposition
-3.1.3 becomes false if $U$ is assumed closed rather than open. The same
+3.1.3 becomes \textit{false} if $U$ is assumed \textit{closed} rather than open. The same
 argument proves:
 
 \LayerTarget{tohoku:prop:3.1.4}
-\textsc{Proposition 3.1.4.} --- \textit{Let $M$ be an injective
+\indent\textsc{Proposition 3.1.4.} \textit{Let $M$ be an injective
 $\mathbf O$-module on a closed subset $Y$ of $X$. Then the $\mathbf O$-module
-$M^X$ which agrees with $M$ on $Y$ and is zero on $CY$ is injective.}
+$M^X$ which agrees with $M$ on $Y$ and is zero on $\complement Y$ is injective.}
 
 \LayerTarget{tohoku:section:3.2}
-\textbf{3.2. Definition of $H^p_\Phi(X,F)$.} Let $X$ be a topological space.
-Write $C^X$ for the abelian category $C^{\mathbb Z_X}$ of abelian sheaves on
+\indent{\boldmath\textbf{3.2. Definition of $H^p_\Phi(X,F)$.}} Let $X$ be a topological space.
+Write $\mathbf C^X$ for the abelian category $\mathbf C^{\mathbf Z}_X$ of abelian sheaves on
 $X$. If $F$ is such a
 
 \TohokuContinuation{157}

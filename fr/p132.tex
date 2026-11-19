@@ -7,63 +7,63 @@
 type envisagé dans 1.
 
 \LayerTarget{tohoku:example:1.7:c}
-\noindent c) Prenons $I$ réduit à deux éléments, $a$ et $b$, avec pour seule
+c) Prenons $I$ réduit à deux éléments, $a$ et $b$, avec une seule
 flèche d'origine $a$ et extrémité $b$ : on trouve la catégorie des morphismes
-$u:A\longrightarrow B$ entre objets de $C$. L'introduction de relations de
+$u:A\to B$ entre objets de $\mathbf{C}$. L'introduction de relations de
 commutation reviendrait à se borner aux $A,B,u$ annulés par certains entiers
 précisés.
 
 \LayerTarget{tohoku:example:1.7:d}
-\noindent d) \textit{Catégories de foncteurs.} Soit $C'$ une autre catégorie,
-supposons qu'elle soit un ensemble. Alors les foncteurs covariants de $C'$ dans
-$C$ forment une catégorie, en prenant pour morphismes les morphismes
+d) \textit{Catégories de foncteurs.} Soit $\mathbf{C}'$ une autre catégorie,
+supposons qu'elle soit un ensemble. Alors les foncteurs covariants de $\mathbf{C}'$ dans
+$\mathbf{C}$ forment une catégorie, en prenant pour morphismes les morphismes
 fonctoriels (cf. 1, 1). Cette catégorie peut s'interpréter comme une catégorie
-$C^\Sigma$, où l'on prend $I=C'$, les flèches d'origine $A'$ et d'extrémité
+$\mathbf{C}^\Sigma$, où l'on prend $I=\mathbf{C}'$, les flèches d'origine $A'$ et d'extrémité
 $B'$ étant par définition les éléments de $\mathrm{Hom}(A',B')$, et les
 relations de commutation étant celles qui expriment les deux axiomes d'un
-foncteur. Si $C'$ est de plus une catégorie additive, les foncteurs
-\textit{additifs} de $C'$ dans $C$ peuvent aussi s'interpréter comme une
-catégorie $C^\Sigma$ (on rajoute les relations de commutation qu'il faut).
+foncteur. Si $\mathbf{C}'$ est de plus une catégorie additive, les foncteurs
+\textit{additifs} de $\mathbf{C}'$ dans $\mathbf{C}$ peuvent aussi s'interpréter comme une
+catégorie $\mathbf{C}^\Sigma$ (on rajoute les relations de commutation qu'il faut).
 
 \LayerTarget{tohoku:example:1.7:e}
-\noindent e) \textit{Complexes à valeurs dans $C$.} $I=\mathbf{Z}$ (ensemble
-des entiers), l'ensemble des flèches étant $(d_n)_{n\in\mathbf{Z}}$ où $d_n$
+e) \textit{Complexes à valeurs dans $\mathbf{C}$.} $I=Z$ (ensemble
+des entiers), l'ensemble des flèches étant $(d_n)_{n\in Z}$ où $d_n$
 est d'origine $n$ et d'extrémité $n+1$, les relations de commutation étant
 $d_{n+1}d_n=0$. On peut encore rajouter des relations de la forme $e_n=0$ si
 on veut se borner aux complexes à degrés positifs, ou à degrés négatifs. On
 obtient de façon analogue les bicomplexes etc.
 
 \LayerTarget{tohoku:example:1.7:f}
-\noindent f) \textit{La catégorie $C^G$, ($G$ un groupe).} Soit $G$ un groupe,
-$C$ une catégorie (non nécessairement additive). On appelle \textit{objet avec
-groupe d'opérateurs $G$ dans $C$}, un couple $(A,r)$ formé d'un objet $A\in C$
+f) \textit{La catégorie $\mathbf{C}^G$, ($G$ un groupe).} Soit $G$ un groupe,
+$\mathbf{C}$ une catégorie (non nécessairement additive). On appelle \textit{objet avec
+groupe d'opérateurs $G$} dans $\mathbf{C}$, un couple $(A,r)$ formé d'un objet $A\in \mathbf{C}$
 et d'une représentation $r$ de $G$ dans le groupe des automorphismes de $A$.
 Si $(A',r')$ est un deuxième tel couple, on appelle morphisme du premier dans
 le second un morphisme de $A$ dans $A'$ qui permute aux opérations de $G$. La
-classe $C^G$ des objets dans $C$ avec groupe d'opérateurs $G$ devient ainsi une
-catégorie. On peut l'interpréter comme une classe $C^\Sigma$, où on prend pour
+classe $\mathbf{C}^G$ des objets dans $\mathbf{C}$ avec groupe d'opérateurs $G$ devient ainsi une
+catégorie. On peut l'interpréter comme une classe $\mathbf{C}^\Sigma$, où on prend pour
 $\Sigma=\Sigma(G)$ le schéma avec relations suivant : l'ensemble des sommets
 est réduit à un élément $i_0$, l'ensemble des flèches est $G$, les relations de
 commutation sont $(s)(t)=(st)$ (où le premier membre désigne une flèche
 composée) et $(e)=e_{i_0}$ (où $e$ désigne l'élément unité de $G$). En
-particulier, si $C$ est une catégorie additive, il en est de même de $C^G$ ;
+particulier, si $\mathbf{C}$ est une catégorie additive, il en est de même de $\mathbf{C}^G$ ;
 dans ce cas, notre construction est contenue dans celle qui suit, (grâce à la
 considération de l'algèbre du groupe $G$).
 
 \LayerTarget{tohoku:example:1.7:g}
-\noindent g) \textit{La catégorie $C^U$ ($U$ un anneau avec unité).} On
+g) \textit{La catégorie $\mathbf{C}^U$ ($U$ un anneau avec unité).} On
 considère la catégorie additive formée des couples $(A,r)$ d'un objet $A$ de
-$C$ et d'une représentation unitaire de $U$ dans l'anneau
+$\mathbf{C}$ et d'une représentation unitaire de $U$ dans l'anneau
 $\mathrm{Hom}(A,A)$, les morphismes dans cette catégorie étant définis de
 façon évidente. Elle s'interprète encore comme ci-dessus comme une catégorie
-$C^{\Sigma(U)}$, où $\Sigma(U)$ est le schéma avec relations ayant un seul
+$\mathbf{C}^{\Sigma(U)}$, où $\Sigma(U)$ est le schéma avec relations ayant un seul
 sommet, $U$ comme ensemble de flèches, et des relations de commutation que nous
 n'écrirons pas.
 
 \LayerTarget{tohoku:example:1.7:h:p1}
-\noindent h) \textit{Systèmes inductifs et systèmes projectifs.} On prend
+h) \textit{Systèmes inductifs et systèmes projectifs.} On prend
 comme ensemble de sommets un ensemble \textit{préordonné} $I$, comme flèches
-les couples $(i,j)$ de sommets avec $i\leq j$, l'origine et l'extrémité de
+les couples $(i,j)$ de sommets avec $i\leqq j$, l'origine et l'extrémité de
 $(i,j)$ étant respectivement $i$ et $j$. Les relations de commutation sont
 $(i,j)(j,k)=(i,k)$ et $(i,i)=e_i$. Les
 

@@ -2,19 +2,19 @@
 \SourcePage{142}
 
 \LayerTarget{tohoku:thm:2.2.2:p2}
-\noindent\textit{it is necessary and sufficient that $F$ satisfy the following
-conditions: $F$ is half-exact, and for $P\subset Q\subset R$ in $C$, the
-kernel of $F(Q/P)\longrightarrow F(R/P)$ is contained in the image of
-$F(Q)\longrightarrow F(Q/P)$. These conditions are always satisfied if $F$
-is left exact or right exact.}\footnote{Added in proof. This condition is also
+\noindent\textit{is necessary and sufficient that $F$ satisfy the following
+conditions: $F$ is half-exact, and for $P\subset Q\subset R$ in $\mathbf{C}$, the
+kernel of $F(Q/P)\to F(R/P)$ is contained in the image of
+$F(Q)\to F(Q/P)$. These conditions are always satisfied if $F$
+is left exact or right exact.}\textsuperscript{2bis)}\SourceFootnote{2 bis}{Added in proof. This condition is also
 automatically satisfied if every object of $C$ is isomorphic to a subobject
 of an injective object; see [6, Chap. III].}
 
 \LayerTarget{tohoku:thm:2.2.2:proof:p1}
 The proof is essentially contained in [6, Chap. III]. For the first part it
-suffices to prove the existence of $S^1F$. Let $A\in C$ and consider an exact
+suffices to prove the existence of $S^1F$. Let $A\in \mathbf{C}$ and consider an exact
 sequence
-$0\longrightarrow A\longrightarrow M\longrightarrow A'\longrightarrow0$ in
+$0\to A\to M\to A'\to0$ in
 which the first morphism is an injective effacement of $A$. Set
 $S^1F(A)=F(A')/\mathrm{Im}(F(M))$. As in [6], the latter object is independent
 of the particular exact sequence chosen, up to canonical isomorphism, and can
@@ -22,41 +22,34 @@ be regarded as a functor of $A$. The definition of the boundary
 homomorphism, verification of axioms (i) and (ii) of 2.1, and verification
 that the resulting $\partial$-functor $(F,S^1F)$ is universal are likewise
 standard. We shall also omit the proof of the exactness criterion.
-
 \LayerTarget{tohoku:thm:2.2.2:dual}
---- \textit{We record the dual statement. If every object of $C$ has a
-projective effacement, then the satellites $S^iF$ for $i\leq0$ exist and are
-co-effaceable functors; the condition for the $\partial$-functor
-$(S^iF)_{i\leq0}$ to be exact is the same as in Theorem 2.2.2.} Consequently,
-if every object of $C$ has both an injective effacement and a projective
+--- We record the dual statement. \textit{If every object of $\mathbf{C}$ has a
+projective effacement, then the satellites $S^iF$ for $i\leqq0$ exist and are
+co-effaceable functors for $i<0$; the condition for the $\partial$-functor
+$(S^iF)_{i\leqq0}$ to be exact is the same as in Theorem \textup{2.2.2}.} Consequently,
+if every object of $\mathbf{C}$ has both an injective effacement and a projective
 effacement, every covariant additive functor $F$ has satellites $S^iF$ for
-all $i$. For every $a>0$, the finite right truncation
-$(S^iF)_{0\leq i\leq a}$ is initial-universal for extending a morphism out of
-$F$ in degree zero; after reversing degrees, the finite left truncation
-$(S^iF)_{-a\leq i\leq0}$ carries the transported terminal-universal property
-for extending a morphism into $F$ in degree zero. The glued
-$\partial$-functor $(S^iF)_{i\in\mathbf{Z}}$ is exact if and only if $F$
-satisfies the condition in Theorem 2.2.2, but it is not generally globally
-universal. If $F$ is contravariant, the
-cases $i\leq0$ and $i\geq0$ in the foregoing statements must be interchanged,
+all $i$, and the $\partial$-functor $(S^iF)$ is exact if and only if $F$
+satisfies the condition in Theorem 2.2.2. If $F$ is contravariant, the
+cases $i\leqq0$ and $i\geqq0$ in the foregoing statements must be interchanged,
 and the exactness condition replaced by its dual.
 
 \LayerTarget{tohoku:remark:satellites-small-skeleton:p1}
-\noindent\textsc{Remark.} We mention another case, very different from that
+\indent\textsc{Remark.} We mention another case, very different from that
 of Theorem 2.2.2, in which one can construct the satellite functors of an
-arbitrary functor from $C$ to $C'$. Suppose that there is a set
-$C_0\subset C$ such that every $A\in C$ is isomorphic to an object of $C_0$,
-and suppose that $C'$ is an abelian category in which infinite direct sums
-exist. Then the satellites $S^iF$, $i\geq0$, exist for every additive functor
-$F:C\longrightarrow C'$. Moreover, if $C'$ satisfies axiom AB 5), see 1.5,
+arbitrary functor from $\mathbf{C}$ to $\mathbf{C}'$. Suppose that there is a \textit{set}
+$\mathbf{C}_0\subset \mathbf{C}$ such that every $A\in \mathbf{C}$ is isomorphic to an object of $\mathbf{C}_0$,
+and suppose that $\mathbf{C}'$ is an abelian category in which infinite direct sums
+exist. Then the satellites $S^iF$, $i\geqq0$, exist for every additive functor
+$F:\mathbf{C}\to \mathbf{C}'$. Moreover, if $\mathbf{C}'$ satisfies axiom AB 5), see 1.5,
 and $F$ satisfies the condition at the end of Theorem 2.2.2, then the
-$\partial$-functor $(S^iF)_{i\geq0}$ is exact. The category of abelian groups,
+$\partial$-functor $(S^iF)_{i\geqq0}$ is \textit{exact}. The category of abelian groups,
 in particular, satisfies AB 5), so the preceding result can be applied to the
 functor $\mathrm{Hom}(A,B)$ with values in abelian groups. One can thereby
 define $\mathrm{Ext}^i(A,B)$ as its satellites, regarding
 $\mathrm{Hom}(A,B)$ either as a covariant functor of $B$ or as a contravariant
 functor of $A$. It would still remain to prove that the two procedures give
-the same result. The condition imposed on $C$ holds for categories whose
+the same result. The condition imposed on $\mathbf{C}$ holds for categories whose
 objects satisfy certain finiteness conditions, and in which infinite direct
 sums therefore do not generally exist. For example, it holds for the
 abelian category of not necessarily connected algebraic groups defined over

@@ -1,73 +1,72 @@
 % Corrected French for printed p.149.
 % Corrections: à caus de -> à cause de; celui de proposition -> celui de la proposition;
-% Z^0 applied to the complex-valued resolving functor.
+% The printed degree-zero cycle notation is retained after second reading.
 \SourcePage{149}
 
 \LayerTarget{tohoku:section:2.5}
-\noindent\textbf{2.5. Foncteurs résolvants.}
-
+\textbf{2.5. Foncteurs résolvants.} 
 \LayerTarget{tohoku:def:resolving-functor}
-Soient $C$ et $C'$ deux catégories abéliennes, on suppose que tout objet de
-$C$ est isomorphe à un sous-truc d'un objet injectif. Soit $F$ un foncteur
-covariant exact à gauche de $C$ dans $C'$. On appelle \textit{foncteur
-résolvant} de $F$ un foncteur covariant $\mathbf F$ défini sur $C$, à valeurs
-dans la catégorie des complexes à degrés positifs dans $C'$,
+Soient $\mathbf{C}$ et $\mathbf{C}'$ deux catégories abéliennes, on suppose que tout objet de
+$\mathbf{C}$ est isomorphe à un sous-truc d'un objet injectif. Soit $F$ un foncteur
+covariant exact à gauche de $\mathbf{C}$ dans $\mathbf{C}'$. On appelle \textit{foncteur
+résolvant} de $F$ un foncteur covariant $\mathbf F$ défini sur $\mathbf{C}$, à valeurs
+dans la catégorie des complexes à degrés positifs dans $\mathbf{C}'$,
 $\mathbf F(A)=(\mathbf F^n(A))$, muni d'une augmentation
-$F\longrightarrow\mathbf F$ (i. e. d'un homomorphisme du foncteur $F$ dans
-le foncteur $Z^0(\mathbf F)$ des cocycles en degré 0 de $\mathbf F$), et satisfaisant
-aux conditions suivantes : (i) Le foncteur $\mathbf F$ est exact ;
-(ii) $F\longrightarrow Z^0(\mathbf F)$ est un isomorphisme ; (iii) si $A$ est
+$F\to\mathbf F$ (i. e. d'un homomorphisme du foncteur $F$ dans
+le foncteur $Z^0\mathbf F^0$ des cocycles de $\mathbf F^0$), et satisfaisant
+aux conditions suivantes : (i) Le foncteur $\mathbf F$ est exact
+(ii) $F\to Z^0\mathbf F^0$ est un isomorphisme (iii) si $A$ est
 injectif, alors $\mathbf F(A)$ est acyclique en degrés $>0$.
 
 Soit $\mathbf F$ un foncteur résolvant pour $F$. Considérons les foncteurs
-$H^n\mathbf F(A)$ sur $C$, à valeurs dans $C'$. À cause de la condition (i),
+$H^n\mathbf F(A)$ sur $\mathbf{C}$, à valeurs dans $\mathbf{C}'$. A cause de la condition (i),
 ils forment un foncteur cohomologique, à cause de (ii) ce dernier se réduit à
 $F$ en dimension 0, enfin en vertu de (iii) les $H^n\mathbf F(A)$ pour $n>0$
 sont effaçables. Par suite :
 
 \LayerTarget{tohoku:prop:2.5.1}
-\noindent\textsc{Proposition 2.5.1.} --- \textit{Si $\mathbf F$ est un
-foncteur résolvant pour $F$, alors on a pour tout $A\in C$ des isomorphismes
-uniques $H^n\mathbf F(A)=R^nF(A)$, définissant un isomorphisme de foncteurs
-cohomologiques, et se réduisant en dimension 0 à l'isomorphisme
+\textsc{Proposition 2.5.1.} \textit{Si $\mathbf F$ est un
+foncteur résolvant pour $F$, alors on a pour tout $A\in \mathbf{C}$ des isomorphismes
+uniques $H^n\mathbf F(A)=\mathbf{R}^nF(A)$, définissant un isomorphisme de foncteurs
+cohomologiques, et se réduisant en dimension $0$ à l'isomorphisme
 d'augmentation.}
 
 Nous allons donner une autre démonstration de la proposition précédente,
 permettant un calcul commode de ces isomorphismes :
 
 \LayerTarget{tohoku:prop:2.5.2}
-\noindent\textsc{Proposition 2.5.2.} --- \textit{Soit $\mathbf F$ un foncteur
-résolvant pour $F$. Soit $A\in C$, et soit $C=(C^p(A))$ une résolution droite
+\textsc{Proposition 2.5.2.} \textit{Soit $\mathbf F$ un foncteur
+résolvant pour $F$. Soit $A\in \mathbf{C}$, et soit $C=(C^p(A))$ une résolution droite
 de $A$ par des objets $F$-acycliques. Considérons le bicomplexe
 $\mathbf F C(A)=(\mathbf F^qC^p(A))_{p,q}$, et les homomorphismes naturels}
 \LayerTarget{tohoku:eq:2.5.1}
 \[
 \tag{2.5.1}
-F(C(A))\longrightarrow\mathbf F(C(A))\longleftarrow\mathbf F(A)
+F(C(A))\to\mathbf F(C(A))\leftarrow\mathbf F(A)
 \]
 \textit{définis respectivement par l'augmentation
-$F\longrightarrow\mathbf F$ et par l'augmentation
-$A\longrightarrow C(A)$. Alors les homomorphismes correspondants}
+$F\to\mathbf F$ et par l'augmentation
+$A\to C(A)$. Alors les homomorphismes correspondants}
 \LayerTarget{tohoku:eq:2.5.2}
 \[
 \tag{2.5.2}
-H^nF(C(A))=R^nF(A)\longrightarrow H^n\mathbf F(C(A))
-\longleftarrow H^n\mathbf F(A)
+H^nF(C(A))=R^nF(A)\to H^n\mathbf F(C(A))
+\leftarrow H^n\mathbf F(A)
 \]
 \textit{sont des isomorphismes, et l'isomorphisme correspondant
-$H^n\mathbf F(A)=R^nF(A)$ est celui de la proposition 2.5.1.}
+$H^n\mathbf F(A)=R^nF(A)$ est celui de la proposition \textup{2.5.1.}}
 
 \LayerTarget{tohoku:prop:2.5.2:proof:p1}
 Nous considérons $F(C(A))$ (resp. $\mathbf F(A)$) comme un bicomplexe dont le
 deuxième (resp. premier) degré est nul. La première suite spectrale de
 $\mathbf F(C(A))$ a pour terme initial $H(F(C(A)))$ (car
-$H_{\mathrm{II}}^q(\mathbf F(C(A)))$ est nul pour $q>0$ et s'identifie à
+$H_{II}^q(\mathbf F(C(A)))$ est nul pour $q>0$ et s'identifie à
 $F(C(A))$ pour $q=0$, en vertu de prop. 2.5.1 et du fait que les $C^p(A)$ sont
 $F$-acycliques), donc le premier homomorphisme (2.5.1) induit un isomorphisme
 pour les termes initiaux de la suite spectrale $I$, donc induit un
 isomorphisme pour la cohomologie. De même,
-$H_{\mathrm I}(\mathbf F(C(A)))^{p,q}$ est nul pour $p>0$ et égal à
-$\mathbf F(A)$ pour $p=0$ (puisque $\mathbf F$ est un foncteur exact et
+$H_I(\mathbf F(C(A)))^{p,q}$ est nul pour $p>0$ et égal à
+$\mathbf F^q(A)$ pour $p=0$ (puisque $\mathbf F$ est un foncteur exact et
 $C(A)$ est une résolution de $A$), donc le deuxième homomorphisme (2.5.1)
 induit un isomorphisme pour les termes initiaux des suites spectrales $II$,
 donc induit encore un isomorphisme pour la cohomologie. Pour montrer que

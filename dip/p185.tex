@@ -8,89 +8,81 @@
 \end{center}
 
 \LayerTarget{tohoku:section:4.1}
-\SectionHeading{4.1. Les foncteurs $\mathrm{Hom}_O(A,B)$ et
-$\mathbf{Hom}_O(A,B)$.}
-
+\textbf{4.1. Les foncteurs $\mathrm{Hom}_\mathbf O(A,B)$ et
+$\mathbf{Hom}_\mathbf O(A,B)$.}
 \LayerTarget{tohoku:definition:hom-o-and-local-hom}
-Soit $X$ un espace topologique muni d'un faisceau $O$ d'anneaux avec unité,
-et soit $C^O$ la catégorie abélienne des $O$-Modules (à gauche) sur $X$
-(cf. 3.1). Si $A$ et $B$ sont deux $O$-modules, nous désignons par
-$\mathrm{Hom}_O(A,B)$ le groupe des $O$-homomorphismes du premier dans le
-second (ce groupe est en fait un module sur le centre de $\Gamma(O)$). Si $U$
+Soit $X$ un espace topologique muni d'un faisceau $\mathbf O$ d'anneaux avec unité,
+et soit $\mathbf C^\mathbf O$ la catégorie abélienne des $\mathbf O$-Modules (à gauche) sur $X$
+(cf. 3.1). Si $A$ et $B$ sont deux $\mathbf O$-modules, nous désignons par
+$\mathrm{Hom}_\mathbf O(A,B)$ le groupe des $\mathbf O$-homomorphismes du premier dans le
+second (ce groupe est en fait un module sur le centre de $\Gamma(\mathbf O)$). Si $U$
 est une partie quelconque de $X$, on posera
 \[
-\mathrm{Hom}_O(U;A,B)=\mathrm{Hom}_{O|U}(A|U,B|U)
+\mathrm{Hom}_\mathbf O(U;A,B)=\mathrm{Hom}_{\mathbf O|U}(A|U,B|U)
 \]
 (où $F|U$ désigne, comme d'habitude, la restriction d'un faisceau $F$ à $U$).
-
 \LayerTarget{tohoku:definition:sheaf-hom-o}
 Bien entendu, si $V\subset U$, on a un homomorphisme naturel
-$\mathrm{Hom}_O(U;A,B)\longrightarrow\mathrm{Hom}_O(V,A,B)$, et on vérifie
+$\mathrm{Hom}_\mathbf O(U;A,B)\to\mathrm{Hom}_\mathbf O(V,A,B)$, et on vérifie
 immédiatement que si on se restreint aux parties ouvertes $U$ de $X$, les
-groupes $\mathrm{Hom}_O(U;A,B)$ forment un \textit{faisceau} sur $X$, noté
-$\mathbf{Hom}_O(A,B)$. Ainsi par définition, on a
-
+groupes $\mathrm{Hom}_\mathbf O(U;A,B)$ forment un \textit{faisceau} sur $X$, noté
+$\mathbf{Hom}_\mathbf O(A,B)$. Ainsi par définition, on a
 \LayerTarget{tohoku:eq:4.1.1}
 \[
 \tag{4.1.1}
-\Gamma(U,\mathbf{Hom}_O(A,B))=\mathrm{Hom}_O(U;A,B)
+\Gamma(U,\mathbf{Hom}_\mathbf O(A,B))=\mathrm{Hom}_\mathbf O(U;A,B)
 \]
 et en particulier, faisant $U=X$ :
-
 \LayerTarget{tohoku:eq:4.1.2}
 \[
 \tag{4.1.2}
-\mathrm{Hom}_O(A,B)=\Gamma(\mathbf{Hom}_O(A,B)).
+\mathrm{Hom}_\mathbf O(A,B)=\Gamma(\mathbf{Hom}_\mathbf O(A,B)).
 \]
-
 \LayerTarget{tohoku:remark:sheaf-hom-o:center-module}
-D'ailleurs, $\mathbf{Hom}_O(A,B)$ peut aussi être considéré comme un faisceau
-de modules sur le centre $O^\natural$ de $O$.
+D'ailleurs, $\mathbf{Hom}_\mathbf O(A,B)$ peut aussi être considéré comme un faisceau
+de modules sur le \textit{centre} $\mathbf O^\natural$ de $\mathbf O$.
 
 \LayerTarget{tohoku:remark:hom-o:left-exactness}
-Rappelons que $\mathrm{Hom}_O(A,B)$ est un \textit{foncteur additif exact à
-gauche} en les deux arguments $A,B\in C^O$, à valeurs dans les groupes
-abéliens. On en conclut que $\mathbf{Hom}_O(A,B)$ peut aussi être regardé comme
-un foncteur exact à gauche en les deux arguments $A,B\in C^O$, à valeurs dans
-la catégorie $C^X$ des faisceaux abéliens sur $X$, (ou même à valeurs dans la
-catégorie $C^{O^\natural}$). Comme d'habitude, tous les homomorphismes que nous
+Rappelons que $\mathrm{Hom}_\mathbf O(A,B)$ est un \textit{foncteur additif exact à
+gauche} en les deux arguments $A,B\in \mathbf C^\mathbf O$, à valeurs dans les groupes
+abéliens. On en conclut que $\mathbf{Hom}_\mathbf O(A,B)$ peut aussi être regardé comme
+un foncteur exact à gauche en les deux arguments $A,B\in \mathbf C^\mathbf O$, à valeurs dans
+la catégorie $\mathbf C^X$ des faisceaux abéliens sur $X$, (ou même à valeurs dans la
+catégorie $\mathbf C^{\mathbf O^\natural}$). Comme d'habitude, tous les homomorphismes que nous
 écrirons seront ``fonctoriels''. Ce numéro donne quelques propriétés
 auxiliaires des foncteurs envisagés, préliminaires à l'étude de leurs foncteurs
 dérivés.
 
-Soient $A,B\in C^O$, et soit $x\in X$. Pour tout ouvert $U$ contenant $x$, on
+Soient $A,B\in \mathbf C^\mathbf O$, et soit $x\in X$. Pour tout ouvert $U$ contenant $x$, on
 a un homomorphisme évident
-$\mathrm{Hom}_O(U;A,B)\longrightarrow\mathrm{Hom}_{O(x)}(A(x),B(x))$, d'où par
+$\mathrm{Hom}_\mathbf O(U;A,B)\to\mathrm{Hom}_{\mathbf O(x)}(A(x),B(x))$, d'où par
 passage à la limite inductive sur les voisinages ouverts de $x$, un
 homomorphisme naturel
-
 \LayerTarget{tohoku:eq:4.1.3}
 \[
 \tag{4.1.3}
-\mathbf{Hom}_O(A,B)(x)\longrightarrow\mathrm{Hom}_{O(x)}(A(x),B(x))
+\mathbf{Hom}_\mathbf O(A,B)(x)\to\mathrm{Hom}_{\mathbf O(x)}(A(x),B(x))
 \]
 que nous allons étudier.
-
 \LayerTarget{tohoku:definition:finite-type-at-x}
-Nous dirons que $A$ est \textit{de type fini en $x$} si on peut trouver un
+Nous dirons que $A$ \textit{est de type fini en $x$} si on peut trouver un
 voisinage ouvert $U$ de $x$ tel que $A|U$ soit isomorphe à un quotient de
-$(O|U)^n$ (où $n$ est un entier fini $>0$) ;
-
+$(\mathbf O|U)^n$ (où $n$ est un entier fini $>0$) ;
 \LayerTarget{tohoku:definition:pseudo-coherent-at-x}
 $A$ est dit \textit{pseudo-cohérent en $x$} si on peut trouver un voisinage
 ouvert $U$ de $x$, et \textit{sur $U$} une suite exacte d'homomorphismes
-$O^m\longrightarrow O^n\longrightarrow A\longrightarrow0$ ($m,n$ entiers
+$\mathbf O^m\to \mathbf O^n\to A\to0$ ($m,n$ entiers
 finis $>0$). Nous dirons que $A$ est de type fini (resp. pseudo-cohérent) s'il
 l'est en tout point. Ceci posé :
 
 \LayerTarget{tohoku:proposition:4.1.1}
-\noindent\textsc{Proposition 4.1.1.} \textit{L'homomorphisme (4.1.3) est un
+\textsc{Proposition 4.1.1.} \textit{L'homomorphisme \textup{(4.1.3)} est un
 monomorphisme si $A$ est de type fini en $x$, et un isomorphisme si $A$ est
 pseudo-cohérent en $x$.}
 
 \LayerTarget{tohoku:proof:proposition-4.1.1:p1}
 Supposons $A$ de type fini en $x$, alors, en se restreignant au besoin à un
 voisinage convenable de $x$, on a une suite exacte
-$O^n\longrightarrow A\longrightarrow0$ d'où une suite
+$\mathbf O^n\to A\to0$ d'où une suite
 
 \TohokuContinuation{186}

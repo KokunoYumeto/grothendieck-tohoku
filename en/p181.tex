@@ -5,20 +5,20 @@
 The $O_x(\mathbf R^{L_x})$ form an open covering of $X$, so there is a finite
 subset $Y\subset X$ such that the $O_x(\mathbf R^{L_x})$ corresponding to
 $x\in Y$ cover $X$. Let $L$ be the union of the $L_x$ for $x\in Y$. I claim
-that the covering $\mathbf R^L$ of $X$ refines $\mathcal U$. Indeed, let
+that the covering $\mathbf R^L$ of $X$ refines $\mathbf U$. Indeed, let
 $A\in\mathbf R^L$ be nonempty and let $a\in A$. There is an $x\in Y$ such
 that $a\in O_x(\mathbf R^{L_x})$, whence
 $E_a(\mathbf R^{L_x})\subset E_x(\mathbf R^{L_x})\subset U_x$ and, a
 fortiori,
 $A\subset E_a(\mathbf R^L)\subset E_a(\mathbf R^{L_x})$ is contained in
 $U_x$. This proves the assertion. Applying this result, for every
-$A\in\mathcal S$, to the family of coverings of $A$ induced by the coverings
+$A\in\mathfrak S$, to the family of coverings of $A$ induced by the coverings
 $\mathbf R\in\mathfrak R(X)$ gives the desired conclusion.
 
 \LayerTarget{tohoku:application:corollary-3.9.1-3:cubes}
 The most striking application of Corollary 3 is the case in which $X$ is the
-compact cube $0\leq x_i\leq1$ in $\mathbf R^n$, $\mathcal S$ is the family
-of compact cubes $A$ of the form $a_i\leq x_i\leq b_i$ contained in $X$,
+compact cube $0\leqq x_i\leqq1$ in $\mathbf R^n$, $\mathfrak S$ is the family
+of compact cubes $A$ of the form $a_i\leqq x_i\leqq b_i$ contained in $X$,
 and $\mathfrak R(A)$ is the family of coverings of $A$ by two sets defined by
 hyperplanes parallel to the coordinate hyperplanes. To verify that
 $H^i(A,F)=0$ for $i>0$ and every $A$, it is enough to verify that, for every
@@ -27,46 +27,45 @@ where $f_i$ is a section of $F$ on $A_i$. This is the reduction made by
 H. Cartan in his proof of the fundamental theorems on Stein manifolds [5].
 
 \LayerTarget{tohoku:remark:theorem-3.9.1:nonabelian-n-one}
-\noindent\textsc{Remark.} If $n=1$, Theorem 3.9.1 remains meaningful and is
+\textsc{Remark.} If $n=1$, Theorem 3.9.1 remains meaningful and is
 easily verified directly when $F$ is assumed to be a sheaf of groups that
 need not be abelian. This simplifies the proof of theorem [5, XVIII] on
 invertible holomorphic matrices.
 
 \LayerTarget{tohoku:section:3.10}
-\SectionHeading{3.10. Passage to the limit in sheaf cohomology.}
+\textbf{3.10. Passage to the limit in sheaf cohomology.}
 We shall give only two results in this direction, one of which will be used
 in Chapter 5, No. 7. They are special cases of the following general result
 of homological algebra.
 
 \LayerTarget{tohoku:proposition:3.10.1}
-\noindent\textsc{Proposition 3.10.1.} \textit{Let $\mathcal C,\mathcal C'$ be
-two abelian categories. Suppose that every object of $\mathcal C$ is
-isomorphic to a subobject of an injective object, and that $\mathcal C'$
-satisfies axiom AB 5 (cf. 1.5), which in particular permits the formation of
-inductive limits in $\mathcal C'$ (cf. Proposition 1.8). Let
+\textsc{Proposition 3.10.1.} \textit{Let $\mathbf C,\mathbf C'$ be
+two abelian categories. Suppose that every object of $\mathbf C$ is
+isomorphic to a subobject of an injective object, and that $\mathbf C'$
+satisfies axiom \textup{AB 5 (}cf. \textup{1.5)}, which in particular permits the formation of
+inductive limits in $\mathbf C'$ \textup{(}cf. Proposition \textup{1.8)}. Let
 $(F_i)_{i\in I}$ be an inductive system of covariant additive functors from
-$\mathcal C$ to $\mathcal C'$, and let $F=\varinjlim F_i$ be their inductive
-limit, defined by $F(A)=\varinjlim F_i(A)$ for every $A\in\mathcal C$. The
-homomorphisms $F_i\longrightarrow F$ induce homomorphisms of
-$\partial$-functors $(\mathbf R^pF_i)\longrightarrow(\mathbf R^pF)$, and
+$\mathbf C$ to $\mathbf C'$, and let $F=\mathop{\underset{\to}{\lim}} F_i$ be their inductive
+limit, defined by $F(A)=\mathop{\underset{\to}{\lim}} F_i(A)$ for every $A\in\mathbf C$. The
+homomorphisms $F_i\to F$ induce homomorphisms of
+$\partial$-functors $(\mathbf R^pF_i)\to(\mathbf R^pF)$, and
 hence a homomorphism of $\partial$-functors:}
-
 \LayerTarget{tohoku:eq:3.10.1}
 \[
-\tag{3.10.1}
-\varinjlim_i \mathbf R^pF_i(A)\longrightarrow \mathbf R^pF(A).
+\tag{3.10.1.}
+\mathop{\underset{\to}{\lim}} \mathbf R^pF_i(A)\to \mathbf R^pF(A)
 \]
-\textit{(The connecting homomorphisms for the sequence of functors
-$\varinjlim_i\mathbf R^pF_i$ are defined as the inductive limits of the
-connecting homomorphisms for the $\mathbf R^pF_i$.) The homomorphisms
-(3.10.1) are isomorphisms.}
+\textit{\textup{(}The connecting homomorphisms for the sequence of functors
+$\mathop{\underset{\to}{\lim}}\mathbf R^pF_i$ are defined as the inductive limits of the
+connecting homomorphisms for the $\mathbf R^pF_i$\textup{)}. The homomorphisms
+\textup{(3.10.1)} are isomorphisms.}
 
 \LayerTarget{tohoku:proof:proposition-3.10.1:p1}
 It is enough to take an injective resolution $C=C(A)$ of $A$. The first
-member of (3.10.1) is then $\varinjlim_i H^p(F_iC(A))$, while the second is
-$H^p(\varinjlim_i F_iC(A))$. They are isomorphic because the functor
-$\varinjlim_i$ on the category of inductive systems over $I$ with values in
-$\mathcal C'$ is exact (Proposition 1.8) and, in particular, commutes with
+member of (3.10.1) is then $\mathop{\underset{\to}{\lim}} H^p(F_iC(A))$, while the second is
+$H^p(\mathop{\underset{\to}{\lim}} F_iC(A))$. They are isomorphic because the functor
+$\mathop{\underset{\to}{\lim}}$ on the category of inductive systems over $I$ with values in
+$\mathbf C'$ is exact (Proposition 1.8) and, in particular, commutes with
 taking the homology of complexes.
 
 \TohokuContinuation{182}

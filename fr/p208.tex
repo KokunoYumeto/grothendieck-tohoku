@@ -4,77 +4,76 @@
 \SourcePage{208}
 
 \LayerTarget{tohoku:proof:lemma-5.5.2:p1}
-\noindent des objets injectifs dans $\mathbf K(C_1)$ indiquée dans 2.4, $C$ est
-acyclique en dimensions $>0$ et se ``décompose'', de plus les $C^i$ et $Z^i(C)$
-sont injectifs, d'où il résulte d'abord que $\overline F(C)$ est une résolution
-de $F(Z^0(C))$ d'où $R^nG(\overline F(C))=R^nG(F(Z^0(C)))$, et comme $Z^0(C)$
+\noindent ctérisation des objets injectifs dans $\mathbf K({\mathbf C}_1)$ indiquée dans 2.4, $\mathrm C$ est
+acyclique en dimensions $>0$ et se ``décompose'', de plus les $\mathrm C^i$ et $Z^i(\mathrm C)$
+sont injectifs, d'où il résulte d'abord que $\overline F(\mathrm C)$ est une résolution
+de $F(Z^0(\mathrm C))$ d'où ${\mathbf R}^nG(\overline F(\mathrm C))=R^nG(F(Z^0(\mathrm C)))$, et comme $Z^0(\mathrm C)$
 est injectif le deuxième membre est nul d'après l'hypothèse sur $F$. Ainsi, on
-peut appliquer le théorème 2.4 au foncteur composé
+peut appliquer le théorème 2.4.1 au foncteur composé
 $(H^0\overline G)\overline F$, ce qui donne le foncteur spectral de l'énoncé,
-compte tenu que $R^i\overline F=\overline{R^iF}$ (relation qui résulte
+compte tenu que $R^q\overline F=\overline{R^qF}$ (relation qui résulte
 immédiatement des définitions).
 
 \LayerTarget{tohoku:corollary:lemma-5.5.2}
-\noindent\textsc{Corollaire.} \textit{Sous les conditions précédentes, soit $C$
-une résolution d'un objet $A\in C_1$. Alors il existe une suite spectrale
+\textsc{Corollaire.} \textit{Sous les conditions précédentes, soit $\mathrm C$
+une résolution d'un objet $A\in {\mathbf C}_1$. Alors il existe une suite spectrale
 cohomologique, aboutissant à l'objet gradué $(R^n(GF)(A))$, et dont le terme
-initial est donné dans (5.5.2).}
+initial est donné dans \textup{(5.5.2)}.}
 
 \LayerTarget{tohoku:proof:corollary-lemma-5.5.2}
-En effet, on a ici $R^n(GF)(C)=R^n(GF)(A)$.
+En effet, on a ici ${\mathbf R}^n(GF)(\mathrm C)=R^n(GF)(A)$.
 
 \LayerTarget{tohoku:definition:g-cover}
 Revenons à l'espace $X$ avec le groupe d'opérateurs $G$. Soit
-$\mathcal U=(U_i)_{i\in I}$ un recouvrement de $X$, $G$ opérant dans l'ensemble
-d'indices $I$ de telle façon qu'on ait $g\cdot U_i=U_{g\cdot i}$ pour tout
-$i\in I$ : on dira que $\mathcal U$ est un $G$-recouvrement. Si $P$ est un
+${\mathbf U}=(U_i)_{i\in I}$ un recouvrement de $X$, $G$ opérant dans l'ensemble
+d'indices $I$ de telle façon qu'on ait $g. U_i=U_{g. i}$ pour tout
+$i\in I$ : on dira que ${\mathbf U}$ est un $G$-\textit{recouvrement}. Si $P$ est un
 préfaisceau abélien sur $X$ dans lequel $G$ opère, alors le complexe
-$C(\mathcal U,P)$ des cochaînes de $\mathcal U$ à coefficients dans $P$ peut
+$C({\mathbf U},P)$ des cochaines de ${\mathbf U}$ à coéfficients dans $P$ peut
 être considéré comme un complexe de $G$-groupes de façon évidente. Nous
 poserons
 
 \LayerTarget{tohoku:equation:5.5.3}
 \[
 \tag{5.5.3}
-H^n(\mathcal U;G,P)=R^n\Gamma^G(C(\mathcal U,P))
+H^n({\mathbf U};G,P)={\mathbf R}^n\Gamma^G(C({\mathbf U},P))
 \]
-
 \LayerTarget{tohoku:construction:equivariant-cech-bicomplex}
 où le deuxième membre peut donc aussi s'expliciter comme le groupe
-$H^n(C(G,C(\mathcal U,P)))$, $C(G,C(\mathcal U,P))$ étant le bicomplexe formé
-des cochaînes de $G$ à valeurs dans le complexe $C(\mathcal U,P)$, bicomplexe
-qu'on pourra noter $C(\mathcal U;G,P)$ :
+$H^n(C(G,C({\mathbf U},P)))$, $C(G,C({\mathbf U},P))$ étant le bicomplexe formé
+des cochaines de $G$ à valeurs dans le complexe $C({\mathbf U},P)$, bicomplexe
+qu'on pourra noter $C({\mathbf U};G,P)$ :
 
 \LayerTarget{tohoku:equation:5.5.3-bis}
 \[
 \tag{5.5.3 bis}
-H^n(\mathcal U;G,P)=H^n(C(\mathcal U;G,P)).
+H^n({\mathbf U};G,P)=H^n(C({\mathbf U};G,P)).
 \]
 
 \LayerTarget{tohoku:construction:open-g-cover-spectral-functor}
-Supposons d'abord le $G$-recouvrement $\mathcal U$ ouvert. Nous allons appliquer
-le lemme 5.5.1 en prenant les catégories $C^{X(G)}$, $C^G$ (catégorie des
-$G$-modules), $C$ (catégorie des groupes abéliens), et les foncteurs
-$\Gamma_X$ et $\Gamma^G$, et posant enfin $\mathbf K(A)=C(\mathcal U,A)$.
-$\Gamma_X$ transforme bien les objets injectifs en objets
+Supposons d'abord le $G$-recouvrement ${\mathbf U}$ \textit{ouvert}. Nous allons appliquer
+le lemme 5.5.1 en prenant les catégories ${\mathbf C}^{X(G)}$, ${\mathbf C}^G$ (catégorie des
+$G$-modules), ${\mathbf C}$ (catégorie des groupes abéliens), et les foncteurs
+$\Gamma_X$ et $\Gamma^G$, et posant enfin $\mathbf K(A)=C({\mathbf U},A)$.
+$\Gamma_X$ transforme bien objets injectifs en objets
 $\Gamma^G$-acycliques (corollaire à la prop. 5.1.3), et les conditions (i) et
-(ii) du lemme sont satisfaites, (i) parce que $\mathcal U$ est ouvert, et (ii)
+(ii) du lemme sont satisfaites, (i) parce que ${\mathbf U}$ est ouvert, et (ii)
 en vertu de ce qui a été dit dans 3.8 (deuxième alinéa). Il reste à expliciter
-$R^q\mathbf K(A)$, le calcul est immédiat (et a d'ailleurs été fait dans 3.8),
-on trouve $R^q\mathbf K(A)=C(\mathcal U,H^q(A))$, où $H^q(A)$ désigne le
+$R^q\mathbf K(A)$, le calcul est immédiat (et a d'ailleurs été fait dans 3.8)
+on trouve $R^q\mathbf K(A)=C({\mathbf U},H^q(A))$, où $H^q(A)$ désigne le
 préfaisceau $H^q(A)(V)=H^q(V,A)$. On a donc prouvé :
 
 \LayerTarget{tohoku:theorem:5.5.3}
-\noindent\textsc{Théorème 5.5.3.} \textit{Soit $X$ un espace muni d'un groupe
-$G$ d'opérateurs, soit $\mathcal U=(U_i)$ un $G$-recouvrement ouvert de $X$.
-Alors il existe sur la catégorie $C^{X(G)}$ des $G$-faisceaux abéliens sur $X$,
+\textsc{Théorème 5.5.3.} \textit{Soit $X$ un espace muni d'un groupe
+$G$ d'opérateurs, soit ${\mathbf U}=(U_i)$ un $G$-recouvrement ouvert de $X$.
+Alors il existe sur la catégorie ${\mathbf C}^{X(G)}$ des $G$-faisceaux abéliens sur $X$,
 un foncteur spectral cohomologique, aboutissant au foncteur gradué
 $(H^n(X;G,A))$, et dont le terme initial est}
 
 \LayerTarget{tohoku:equation:5.5.4}
 \[
 \tag{5.5.4}
-E_2^{p,q}(A)=H^p(\mathcal U;G,H^q(A))
+E_2^{p,q}(A)=H^p({\mathbf U};G,H^q(A))
 \]
 \textit{(où $H^q(A)$ est le préfaisceau $H^q(A)(V)=H^q(V,A)$ sur $X$).}
 
@@ -82,10 +81,9 @@ E_2^{p,q}(A)=H^p(\mathcal U;G,H^q(A))
 On en conclut comme d'habitude des ``edge-homomorphisms''
 \[
 \tag{5.5.5}
-H^n(\mathcal U;G,A)\longrightarrow H^n(X;G,A)
+H^n(U;G,A)\to H^n(X;G,A)
 \]
-
 \LayerTarget{tohoku:conclusion:theorem-5.5.3:p1}
-et une suite exacte à 5 termes, montrant entre autres que l'homomorphisme
+et une suite exacte à 5 termes, montrant entre autres que \textit{l'homomorphisme}
 
 \TohokuContinuation{209}

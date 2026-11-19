@@ -4,18 +4,18 @@
 
 \LayerTarget{tohoku:definition:equivariant-o-homomorphisms}
 \noindent the space on which $A$ and $B$ are considered (which also gives
-meaning to the symbol $\operatorname{Hom}_{O,G}(U;A,B)$ if $U$ is a subset of
-$X$ stable under $G$). Since the sheaf $\mathbf{Hom}_O(A,B)$ is a
+meaning to the symbol $\operatorname{Hom}_{{\mathbf O},G}(U;A,B)$ if $U$ is a subset of
+$X$ stable under $G$). Since the sheaf $\mathbf{Hom}_{\mathrm O}(A,B)$ is a
 $G$-sheaf, the group
-$\operatorname{Hom}_O(A,B)=\Gamma_X\mathbf{Hom}_O(A,B)$ is a $G$-module, and
+$\operatorname{Hom}_{\mathbf O}(A,B)=\Gamma_X\mathbf{Hom}_{\mathrm O}(A,B)$ is a $G$-module, and
 we have the formulas
 
 \LayerTarget{tohoku:equation:5.6.1}
 \[
 \tag{5.6.1}
-\operatorname{Hom}_{O,G}(A,B)
-=\Gamma_X^G\mathbf{Hom}_O(A,B)
-=\Gamma^G\operatorname{Hom}_O(A,B).
+\operatorname{Hom}_{{\mathbf O},G}(A,B)
+=\Gamma_X^G\mathbf{Hom}_{\mathbf O}(A,B)
+=\Gamma^G\operatorname{Hom}_{\mathbf O}(A,B).
 \]
 
 \LayerTarget{tohoku:definition:equivariant-hom-sheaf}
@@ -24,12 +24,11 @@ Put:
 \LayerTarget{tohoku:equation:5.6.2}
 \[
 \tag{5.6.2}
-\mathbf{Hom}_{O,G}(A,B)=(\mathbf{Hom}_O(A,B))^G
+\mathbf{Hom}_{{\mathbf O},G}(A,B)=(\mathbf{Hom}_{\mathbf O}(A,B))^G
 \]
-
-\noindent thus $\mathbf{Hom}_{O,G}(A,B)$ is the sheaf on $Y=X/G$ whose
+ thus $\mathbf{Hom}_{{\mathbf O},G}(A,B)$ is the sheaf on $Y=X/G$ whose
 sections over the open set $U\subset Y$ form the group
-$\operatorname{Hom}_{O,G}(f^{-1}U;A,B)$ of $G$-$O$-homomorphisms from
+$\operatorname{Hom}_{{\mathbf O},G}(f^{-1}U;A,B)$ of $G$-${\mathbf O}$-homomorphisms from
 $A|f^{-1}(U)$ to $B|f^{-1}(U)$. Put:
 
 \LayerTarget{tohoku:definition:four-equivariant-hom-functors}
@@ -37,73 +36,69 @@ $A|f^{-1}(U)$ to $B|f^{-1}(U)$. Put:
 \[
 \tag{5.6.3}
 \begin{aligned}
-\mathbf h_{O,A}(B)&=\mathbf{Hom}_O(A,B),&
-h_{O,A}(B)&=\operatorname{Hom}_O(A,B),\\
-\mathbf h_{O,G,A}(B)&=\mathbf{Hom}_{O,G}(A,B),&
-h_{O,G,A}(B)&=\operatorname{Hom}_{O,G}(A,B),
+\mathbf h_{{\mathbf O},A}(B)&=\mathbf{Hom}_{\mathbf O}(A,B),&
+h_{{\mathbf O},A}(B)&=\operatorname{Hom}_{\mathbf O}(A,B),\\
+\mathbf h_{{\mathbf O},G,A}(B)&=\mathbf{Hom}_{{\mathbf O},G}(A,B),&
+h_{{\mathbf O},G,A}(B)&=\operatorname{Hom}_{{\mathbf O},G}(A,B),
 \end{aligned}
 \]
-
 \LayerTarget{tohoku:relation:equivariant-hom-functors}
-\noindent thus defining, for fixed $A$, four left exact functors, the latter
+ thus defining, for fixed $A$, four left exact functors, the latter
 two being related to the former two (already encountered in Chapter IV) by
 the functorial formulas
 
 \LayerTarget{tohoku:equation:5.6.4}
 \[
 \tag{5.6.4}
-\mathbf h_{O,G,A}=f_*^G\mathbf h_{O,A}
+\mathbf h_{{\mathbf O},G,A}=f_*^G\mathbf h_{{\mathbf O},A}
 \]
 
 \LayerTarget{tohoku:equation:5.6.5}
 \[
 \tag{5.6.5}
-h_{O,G,A}=\Gamma_Y\mathbf h_{O,G,A}
-=\Gamma^G h_{O,A}=\Gamma_X^G\mathbf h_{O,A}.
+h_{{\mathbf O},G,A}=\Gamma_Y\mathbf h_{{\mathbf O},G,A}
+=\Gamma^G h_{{\mathbf O},A}=\Gamma_X^G\mathbf h_{{\mathbf O},A}.
 \]
-
 \LayerTarget{tohoku:definition:equivariant-ext}
 We shall put:
 
 \LayerTarget{tohoku:equation:5.6.6}
 \[
 \tag{5.6.6}
-\operatorname{Ext}_{O,G}^n(X;A,B)=R^n h_{O,G,A}(B),
+\operatorname{Ext}_{{\mathbf O},G}^n(X;A,B)=R^n h_{{\mathbf O},G,A}(B),
 \]
 
 \LayerTarget{tohoku:equation:5.6.7}
 \[
 \tag{5.6.7}
-\mathbf{Ext}_{O,G}^n(A,B)=R^n\mathbf h_{O,G,A}(B).
+\mathbf{Ext}_{{\mathbf O},G}^n(X;A,B)=R^n\mathbf h_{{\mathbf O},G,A}(B).
 \]
-
 \LayerTarget{tohoku:property:equivariant-ext-functoriality}
-Thus, for two $G$-$O$-modules $A,B$, the
-$\operatorname{Ext}_{O,G}^n(X;A,B)$ are abelian groups forming a universal
+Thus, for two $G$-${\mathbf O}$-modules $A,B$, the
+$\operatorname{Ext}_{{\mathbf O},G}^n(X;A,B)$ are abelian groups forming a universal
 cohomological functor in $B$ and reducing to
-$\operatorname{Hom}_{O,G}(X;A,B)$ in dimension 0, whereas the
-$\mathbf{Ext}_{O,G}^n(A,B)$ are abelian sheaves on $Y$, forming a universal
-cohomological functor in $B$ and reducing to $\mathbf{Hom}_{O,G}(A,B)$ in
-dimension 0. Moreover, the $\operatorname{Ext}_{O,G}^n(X;A,B)$ are precisely
-the general $\operatorname{Ext}$ groups in the category $C^{O(G)}$. (Our
+$\operatorname{Hom}_{{\mathbf O},G}(X;A,B)$ in dimension 0, whereas the
+$\mathbf{Ext}_{{\mathbf O},G}^n(A,B)$ are abelian sheaves on $Y$, forming a universal
+cohomological functor in $B$ and reducing to $\mathbf{Hom}_{{\mathbf O},G}(A,B)$ in
+dimension 0. Moreover, the $\operatorname{Ext}_{{\mathbf O},G}^n(X;A,B)$ are precisely
+the general $\operatorname{Ext}$ groups in the category ${\mathbf C}^{{\mathbf O}(G)}$. (Our
 definitions are, of course, justified by Proposition 5.1.1.) Since
-$\operatorname{Hom}_{O,G}(A,B)$ and hence also
-$\mathbf{Hom}_{O,G}(A,B)$ is a contravariant functor exact in $A$ whenever
-$B$ is an injective object of $C^{O(G)}$, it follows (cf. 2.3) that the
-$\operatorname{Ext}_{O,G}^n(X;A,B)$, respectively the
-$\mathbf{Ext}_{O,G}^n(A,B)$, also form a cohomological functor contravariant
+$\operatorname{Hom}_{{\mathbf O},G}(A,B)$ and hence also
+$\mathbf{Hom}_{{\mathbf O},G}(A,B)$ is a contravariant functor exact in $A$ whenever
+$B$ is an injective object of ${\mathbf C}^{{\mathbf O}(G)}$, it follows (cf. 2.3) that the
+$\operatorname{Ext}_{{\mathbf O},G}^n(X;A,B)$, respectively the
+$\mathbf{Ext}_{{\mathbf O},G}^n(A,B)$, also form a cohomological functor contravariant
 in $A$ (for fixed $B$). Finally, one proves easily, as in 4.2 and 5.2 (which
 are special cases), that
 
 \LayerTarget{tohoku:equation:5.6.8}
 \[
 \tag{5.6.8}
-\mathbf{Ext}_{O,G}^n(A,B)|U
-=\mathbf{Ext}_{O,G}^n(A|f^{-1}(U),B|f^{-1}(U))
+\mathbf{Ext}_{{\mathbf O},G}^n(A,B)|U
+=\mathbf{Ext}_{{\mathbf O},G}^n(A|f^{-1}(U),B|f^{-1}(U))
 \]
-
-\noindent (\textit{local nature of} $\mathbf{Ext}$ \textit{with respect to
-the space} $Y$). It follows that there is a statement analogous to the
+ (\textit{local nature of} $\mathbf{Ext}$ with respect to
+the space $Y$). It follows that there is a statement analogous to the
 corollary to Proposition 5.2.1, which, when $G$ is a \textit{discontinuous}
 group of homeomorphisms (cf. 5.3), permits reduction to the case in which $G$
 is finite. Repeating the arguments of 4.1, one then proves that the natural
@@ -113,12 +108,11 @@ homomorphisms
 \LayerTarget{tohoku:equation:5.6.9}
 \[
 \tag{5.6.9}
-\mathbf{Hom}_{O,G}(A,B)(y)
-\longrightarrow \operatorname{Hom}_{U_x}(A(x),B(x))
+\mathbf{Hom}_{{\mathbf O},G}(A,B)(y)
+\to \operatorname{Hom}_{U_x}(A(x),B(x))
 \qquad (f(x)=y)
 \]
-
-\noindent (where $U_x$ is the ring generated by $O(x)$ and $Z(G_x)$, considered
+ (where $U_x$ is the ring generated by ${\mathbf O}(x)$ and ${\mathbf Z}(G_x)$, considered
 in 5.1) are
 
 \TohokuContinuation{215}

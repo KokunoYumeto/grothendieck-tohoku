@@ -4,38 +4,38 @@
 \SourcePage{205}
 
 \LayerTarget{tohoku:proof:corollary-5.3.1:2:p1}
-\noindent On a $\mathrm I_2^{p,q}=0\ \mathrm{mod}\ C(P)$ pour $q>0$, car en
+\noindent On a $I_2^{p,q}=0\ \mathrm{mod}\ {\mathbf C}(P)$ pour $q>0$, car en
 vertu du théorème 5.3.1 $\mathbf H^q(G,A)$ est un faisceau annulé par $n$,
-donc $H^p(X,\mathbf H^q(G,A))$ est annulé par $n$ pour tout $p$, donc est nul
-mod. $C(P)$. Le corollaire 2 en résulte aussitôt.
+donc $H^p(Y,\mathbf H^q(G,A))$ est annulé par $n$ pour tout $p$, donc est nul
+mod. ${\mathbf C}(P)$. Le corollaire 2 en résulte aussitôt.
 
 \LayerTarget{tohoku:application:fixed-point-free-case-5.3}
 Si les $n_x$ sont tous réduits à 1, c'est à dire si tout $g\in G$, $g\ne e$,
 n'a pas de point fixe (on dit alors simplement que $G$ \textit{opère sans
 points fixes}) on trouve $\mathbf H^n(G,A)=0$ pour $n>0$, donc
-$H^*(X;G,A)=H^*(Y,A^G)$, ce qui est aussi évident a priori, à cause de
+$H^*(X,G,A)=H^*(Y,A^G)$, ce qui est aussi évident à priori, à cause de
 l'isomorphisme signalé à la fin de 5.1 entre la catégorie des faisceaux sur
 $Y$ et la catégorie des $G$-faisceaux sur $X$, quand $G$ est un groupe discret
 d'homéomorphismes sans points fixes. On trouve donc dans ce cas l'énoncé
 classique :
 
 \LayerTarget{tohoku:corollary:5.3.1:3}
-\noindent\textsc{Corollaire 3.} \textit{Si $G$ opère ``sans points fixes'',
+\textsc{Corollaire 3.} \textit{Si $G$ opère ``sans points fixes'',
 alors $H^*(Y,A^G)$ est l'aboutissement d'une suite spectrale cohomologique dont
 le terme initial est $H^p(G,H^q(X,A))$.}
 
 \LayerTarget{tohoku:remark:spectral-sequence-construction-5.3}
-\noindent\textsc{Remarque.} Par définition, la deuxième suite spectrale du
+\textsc{Remarque.} Par définition, la deuxième suite spectrale du
 théorème 5.2.1 s'obtient en prenant une résolution $C(A)$ de $A$ par des
 faisceaux $\Gamma_X$-acycliques, et en prenant la deuxième suite spectrale du
 foncteur $\Gamma^G$ par rapport au complexe $\Gamma_X(C(A))$. En général, la
 première suite spectrale de $\Gamma^G$ par rapport à ce complexe ne s'identifie
 évidemment pas à la première suite spectrale du théorème 5.2.1 (prendre une
 résolution injective de $A$ !). Il en est cependant bien ainsi si on prend pour
-$C(A)$ la \textit{résolution canonique de $A$} (cf. 3.3), comme on voit par un
+$C(A)$ la \textit{résolution canonique} de $A$ (cf. 3.3), comme on voit par un
 raisonnement analogue à celui de la proposition 4.3.2. Il en est encore ainsi
 si $X$ et $Y$ sont paracompacts et si on prend pour $C(A)$ une résolution de
-Cartan de $A$, i.e. $C(A)=A\otimes_{\mathbf Z}C$, où $C$ est un ``faisceau
+Cartan de $A$, i.e. $C(A)=A\otimes_ZC$, où ${\mathbf C}$ est un ``faisceau
 fondamental'' au sens de Cartan-Leray, comme on peut montrer par des
 raisonnements assez différents (nous n'aurons pas à nous servir de ce fait).
 Par suite, la suite spectrale I est bien la suite spectrale de [10] dont le
@@ -43,10 +43,9 @@ terme initial avait été laissé non explicité.
 
 \LayerTarget{tohoku:section:5.4}
 \bigskip
-\noindent\textbf{5.4. Transformation de la première suite spectrale.} Nous
+\textbf{5.4. Transformation de la première suite spectrale.} Nous
 supposons toujours la condition (D) du numéro précédent satisfaite (bien que
 ce ne soit pas absolument essentiel).
-
 \LayerTarget{tohoku:setup:transformation-first-spectral-sequence}
 Soit $Y_0$ une partie fermée de $Y$ contenant les supports des
 $\mathbf H^n(G,A)$ pour $n>0$ (il suffit par exemple, en vertu du théorème
@@ -57,9 +56,9 @@ complémentaire de $X_0$. Considérons les suites exactes :
 \LayerTarget{tohoku:sequence:5.4-support-exact-sequences}
 \[
 \begin{gathered}
-0\longrightarrow A_U\longrightarrow A\longrightarrow A_{X_0}\longrightarrow0,\\
-0\longrightarrow(A^G)_V\longrightarrow A^G\longrightarrow
-  (A^G)_{Y_0}\longrightarrow0.
+0\to A_U\to A\to A_{X_0}\to0,\\
+0\to(A^G)_V\to A^G\to
+  (A^G)_{Y_0}\to0.
 \end{gathered}
 \]
 Comme on a manifestement $(A_U)^G=(A^G)_V$, on obtient un diagramme
@@ -69,14 +68,13 @@ commutatif de suites de cohomologie
 \[
 \tag{5.4.1}
 \begin{array}{c@{\;}c@{\;}c@{\;}c@{\;}c@{\;}c@{\;}c}
-\mathinner{\cdotp\cdotp\cdotp\cdotp}H^n(Y,(A^G)_V)&\to&H^n(Y,A^G)&\to&H^n(Y,(A^G)_{Y_0})&\to&
-H^{n+1}(Y,(A^G)_V)\!\to\!\mathinner{\cdotp\cdotp\cdotp\cdotp}\\[-0.2em]
-\downarrow&&\downarrow&&\downarrow&&\downarrow\\[0.45em]
-\mathinner{\cdotp\cdotp\cdotp\cdotp}H^n(X;G,A_U)&\to&H^n(X;G,A)&\to&H^n(X;G,A_{X_0})&\to&
-H^{n+1}(X;G,A_U)\!\to\!\mathinner{\cdotp\cdotp\cdotp\cdotp}
+\mathinner{.\,.\,.\,.}H^n(Y,(A^G)_V)&\to&H^n(Y,A^G)&\to&H^n(Y,(A^G)_{Y_0})&\to&
+H^{n+1}(Y,(A^G)_V)\!\to\!\mathinner{.\,.\,.\,.}\\[-0.2em]
+\downarrow\wr&&\downarrow&&\downarrow&&\downarrow\wr\\[0.45em]
+\mathinner{.\,.\,.\,.}H^n(X;G,A_U)&\to&H^n(X:G,A)&\to&H^n(X;G,A_{X_0})&\to&
+H^{n+1}(X;G,A_U)\!\to\!\mathinner{.\,.\,.\,.}
 \end{array}
 \]
-
 \LayerTarget{tohoku:proof:transformation-first-spectral-sequence:p1}
 Or il résulte de l'hypothèse sur $Y_0$ que $\mathbf H^n(G,A_U)=0$ pour $n>0$,
 car c'est évidemment le cas dans l'ouvert $V$, mais c'est vrai aussi sur

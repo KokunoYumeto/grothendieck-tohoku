@@ -2,68 +2,66 @@
 \SourcePage{155}
 
 \LayerTarget{tohoku:construction:sheafification:p2}
-\noindent foncteur en $F$, et l'homomorphisme
-$F\longrightarrow\mathfrak F(\overline F)$ est fonctoriel). Si on veut
+\noindent \textit{foncteur} en $F$, et l'homomorphisme
+$F\to\mathfrak F(F)$ est fonctoriel). Si on veut
 interpréter la notion de faisceau de groupes (ou de faisceau de groupes
 abéliens etc.) en termes d'espaces étalés, il faut se donner sur chaque
-\og fibre\fg{} de l'espace étalé une loi de groupe (resp. de groupe abélien
+``fibre'' de l'espace étalé une loi de groupe (resp. de groupe abélien
 etc.) de façon à satisfaire à une condition naturelle de continuité : on
 retrouve alors la définition de [4, XIV].
-
 \LayerTarget{tohoku:remark:stalkwise-exactness}
-On voit immédiatement sur les espaces étalés correspondants quand un
-homomorphisme $F\longrightarrow G$ de faisceaux est un monomorphisme resp. un
-épimorphisme : il faut et il suffit que sur chaque \og fibre\fg{} $F(x)$,
-l'homomorphisme correspondant $F(x)\longrightarrow G(x)$ soit un
+--- On voit immédiatement sur les espaces étalés correspondants quand un
+homomorphisme $F\to G$ de faisceaux est un monomorphisme resp. un
+épimorphisme : il faut et il suffit que sur chaque ``fibre'' $F(x)$,
+l'homomorphisme correspondant $F(x)\to G(x)$ soit un
 monomorphisme resp. un épimorphisme. De même, la fibre en $x$ du noyau,
 conoyau, image, coimage d'un homomorphisme de faisceaux de groupes abéliens
 s'obtient en prenant le noyau, conoyau etc. du homomorphisme de groupes
-abéliens $F(x)\longrightarrow G(x)$.
+abéliens $F(x)\to G(x)$.
 
 \LayerTarget{tohoku:def:sheaf-of-modules}
 Soit $\mathbf O$ un faisceau d'anneaux avec unité sur $X$, un
 \textit{faisceau de $\mathbf O$-modules à gauche} ou bref un
-$\mathbf O$-Module à gauche sur $X$ est un faisceau de groupes abéliens $F$,
+\textit{$\mathbf O$-Module à gauche} sur $X$ est un faisceau de groupes abéliens $F$,
 avec la donnée pour tout ouvert $U\subset X$ d'une structure de
 $\mathbf O(U)$-module unitaire à gauche sur $F(U)$, de telle façon que les
-opérations de restrictions $F(U)\longrightarrow F(V)$ soient compatibles
+opérations de restrictions $F(U)\to F(V)$ soient compatibles
 avec les opérations de $\mathbf O(U)$ et $\mathbf O(V)$ sur $F(U)$ resp.
 $F(V)$. (On peut exprimer ceci aussi en disant qu'on s'est donné un
 homomorphisme du faisceau d'anneaux $\mathbf O$ dans le faisceau d'anneaux des
 germes d'endomorphismes du faisceau de groupes abéliens $F$).
-
 On définit de façon analogue les $\mathbf O$-Modules à droite ; pour abréger,
 nous dirons simplement $\mathbf O$-Modules au lieu de $\mathbf O$-Modules à
 gauche. La notion de homomorphisme de $\mathbf O$-Modules, et de la
 composition et addition de tels homomorphismes est évidente, on obtient
-alors, la catégorie additive des $\mathbf O$-Modules sur $X$, notée
-$C^{\mathbf O}$. Si par exemple $k$ est un anneau donné avec unité, on peut
+alors, \textit{la catégorie additive des $\mathbf O$-Modules sur $X$}, notée
+$\mathbf C^{\mathbf O}$. Si par exemple $k$ est un anneau donné avec unité, on peut
 considérer sur $X$ le faisceau d'anneaux constant correspondant, noté $k_X$.
 La catégorie des $k_X$-Modules n'est autre que la catégorie des faisceaux de
-$k$-modules sur $X$ ; si par exemple $k=\mathbb Z$, on obtient la catégorie
+$k$-modules sur $X$ ; si par exemple $k=\mathbf Z$, on obtient la catégorie
 des faisceaux de groupes abéliens. Rappelons les faits suivants, signalés en
 passant dans 1.5 et 1.9 :
 
 \LayerTarget{tohoku:prop:3.1.1}
-\textsc{Proposition 3.1.1.} --- \textit{Soit $\mathbf O$ un faisceau d'anneaux
-avec unité sur l'espace $X$. Alors la catégorie additive $C^{\mathbf O}$ des
+\textsc{Proposition 3.1.1.} \textit{Soit $\mathbf O$ un faisceau d'anneaux
+avec unité sur l'espace $X$. Alors la catégorie additive $\mathbf C^{\mathbf O}$ des
 $\mathbf O$-Modules sur $X$ est une catégorie abélienne satisfaisant les
-axiomes AB 5) et AB 3*), et admet un générateur.}
+axiomes \textup{AB 5)} et \textup{AB 3*)}, et admet un générateur.}
 
 \LayerTarget{tohoku:proof:3.1.1:p1}
-Signalons que la somme directe $S$ d'une famille $(F_i)$ de faisceaux $F_i$ se
+Signalons que la somme directe $\mathrm S$ d'une famille $(F_i)$ de faisceaux $F_i$ se
 construit simplement en prenant pour chaque ouvert $U$ la somme directe des
 $F_i(U)$ et passant au faisceau associé au préfaisceau ainsi construit ; le
 procédé est le même pour la construction du produit $P$ des faisceaux $F_i$.
 La différence essentielle dans les deux cas est que pour tout $x\in X$,
-$S(x)$ est bien la somme directe des $F_i(x)$, mais $P(x)$ n'est pas le
+$\mathrm S(x)$ est bien la somme directe des $F_i(x)$, mais $P(x)$ \textit{n'est pas} le
 produit direct des $F_i(x)$. On se convainc aussi aisément que l'axiome
 AB 4*) n'est pas satisfait en général (en prenant par exemple pour
-$\mathbf O$ le faisceau constant $\mathbb Z_X$). Enfin, rappelons que si pour
+$\mathbf O$ le faisceau constant $\mathbf Z_X$). Enfin, rappelons que si pour
 tout ouvert $U\subset X$, on désigne par $\mathbf O_U$ le faisceau de
-$\mathbf O$-modules dont la restriction à $CU$ est nulle, et qui sur $U$
+$\mathbf O$-modules dont la restriction à $\complement U$ est nulle, et qui sur $U$
 coïncide avec $\mathbf O$ [4, XVII, prop. 1], la famille des $\mathbf O_U$ est
-un système de générateurs de $C^{\mathbf O}$, comme il résulte facilement de
+un système de générateurs de $\mathbf C^{\mathbf O}$, comme il résulte facilement de
 la définition 1.9 et du fait que les homomorphismes de $\mathbf O_U$
 
 \TohokuContinuation{156}

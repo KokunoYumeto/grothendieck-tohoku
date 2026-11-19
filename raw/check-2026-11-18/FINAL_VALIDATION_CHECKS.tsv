@@ -1,0 +1,49 @@
+check	status	detail
+check-events-schema	pass	Exact five-column header order is required.
+check-events-tsv	pass	Strict complete TSV with at least one event; malformed records or parse errors: 0.
+check-events-required-fields	pass	Missing or blank required cells: 0; parsed values are not normalized.
+check-events-exact-duplicates	pass	Exact parsed-value duplicate groups: 0; repeated IDs or dates alone are permitted.
+check-events-literal-types	pass	Distinct literal types outside the six approved values: 0.
+check-events-refutation-id-bindings	pass	Exact-type selected rows: 34; reference occurrences: 36; unmatched literal catalog references: 0. Tokens introduced with an explicit ID word also require binding.
+check-events-reference-presence-policy	pass	Exact-type selected rows without an extracted reference: 0; every selected row requires a reference.
+check-events-policy-approved	pass	Approved exact policy contract. CHECK_EVENTS_sha256=7f2354dc14a4fe72231725409962c7cabbe0417d8e41648230f4cd0701f4ac16; policy_sha256=2baa67ea4c8dcd440fcf086664faa6418f47cf0c110124e21220db674b4ac685; exact canonical type equality; no semantic or completeness judgment.
+required-CORRECTIONS.tsv	pass	Required deliverable exists and is nonempty.
+required-CHECK_RECORD.md	pass	Required deliverable exists and is nonempty.
+required-CHECK_EVENTS.tsv	pass	Required deliverable exists and is nonempty.
+required-NOTES.md	pass	Required deliverable exists and is nonempty.
+required-PDF_CHECK.md	pass	Required deliverable exists and is nonempty.
+required-README.md	pass	Required deliverable exists and is nonempty.
+required-progress.log	pass	Required deliverable exists and is nonempty.
+page-file-set-dip	pass	Expected 102 page files; found 102. Missing: none. Extra: none.
+main-file-dip	pass	Standalone main file is present.
+final-pdf-dip	pass	Final PDF is present.
+page-file-set-fr	pass	Expected 102 page files; found 102. Missing: none. Extra: none.
+main-file-fr	pass	Standalone main file is present.
+final-pdf-fr	pass	Final PDF is present.
+page-file-set-en	pass	Expected 102 page files; found 102. Missing: none. Extra: none.
+main-file-en	pass	Standalone main file is present.
+final-pdf-en	pass	Final PDF is present.
+ordered-page-completion	pass	progress.log must contain all 102 page-completion entries exactly once and in printed order.
+page-record-sections	pass	Detected 102 canonical printed-page sections at heading level two or three outside code fences. This checks headings, not the adequacy of the comparisons described in them.
+correction-schema	pass	Columns must match the requested correction-ledger schema and order.
+correction-evidence-present	pass	Rows with empty evidence: 0. Evidence presence does not establish its adequacy.
+no-explicitly-provisional-confidence	pass	Rows still explicitly marked provisional or awaiting rereading: 0. This does not infer that a second reading occurred.
+explicit-second-reading-confidence	pass	Rows without a recognized degree, explicit confirmed/amended/withdrawn second-reading verdict, and canonical positive R/E IDs: 0. Logical ledger records, first 20: none. This checks metadata, not the reading or event-history binding.
+unique-second-reading-identifiers	pass	Repeated annotated row IDs: 0; repeated last-event IDs: 0. Each retained ledger row must identify its own row and explicit review event.
+no-obvious-placeholder-NOTES.md	pass	Searches explicit placeholder wording only; substantive completion needs the primary reviewer's judgment.
+no-obvious-placeholder-PDF_CHECK.md	pass	Searches explicit placeholder wording only; substantive completion needs the primary reviewer's judgment.
+unchanged-source-README.md	pass	Exact byte comparison with supplied source README; any change requires review.
+unchanged-source-README.fr.md	pass	Exact byte comparison with supplied source README; any change requires review.
+frontmatter-dip	pass	Exact comparison through the first page input; unchanged prefix preserves the supplied front matter and its credits.
+frontmatter-fr	pass	Exact comparison through the first page input; unchanged prefix preserves the supplied front matter and its credits.
+frontmatter-en	pass	Exact comparison through the first page input; unchanged prefix preserves the supplied front matter and its credits.
+build-matches-current-tex	pass	A build phase must have hashes for the exact current TeX sources.
+final-build-dip	pass	Phase after-final-03: two successful passes, zero final-pass errors, and maximum overflow at most 2 pt are required.
+pdf-matches-built-dip	pass	Delivered PDF hash must match the selected build-phase PDF.
+final-build-fr	pass	Phase after-final-03: two successful passes, zero final-pass errors, and maximum overflow at most 2 pt are required.
+pdf-matches-built-fr	pass	Delivered PDF hash must match the selected build-phase PDF.
+final-build-en	pass	Phase after-final-03: two successful passes, zero final-pass errors, and maximum overflow at most 2 pt are required.
+pdf-matches-built-en	pass	Delivered PDF hash must match the selected build-phase PDF.
+privacy	pass	Found 0 recognizable privacy occurrences or inspection blockers outside protected original regions. Reports contain safe locations and hashes, never sensitive matches. No source is redacted automatically.
+privacy-source-credit-conflicts	pass	Found 0 privacy-pattern conflicts in byte-identical protected source regions. They are reported separately, never silently waived or removed. A conflict blocks final packaging until resolved explicitly by the primary reviewer.
+generated-validation-report-privacy	pass	The five newly generated reports were inspected; findings or blockers: 0.

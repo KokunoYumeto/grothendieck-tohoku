@@ -2,73 +2,53 @@
 \SourcePage{171}
 
 \LayerTarget{tohoku:proof:3.6.5:p2}
-\noindent irréductibles de $X$ [15, Chap. II, prop. 2]. Si $F$ est un faisceau
+\noindent posantes irréductibles de $X$ [15, Chap. II, prop. 2]. Si $F$ est un faisceau
 abélien sur $X$, on a un monomorphisme naturel de $F$ dans la somme directe
 des $F_k=F_{X_k}$, d'où une suite exacte
-
 \LayerTarget{tohoku:eq:irreducible-components-resolution}
 \[
-0\longrightarrow F\longrightarrow\bigoplus_k F_k\longrightarrow R
-\longrightarrow0
+0\to F\to\oplus F_k\to R
+\to0
 \]
 où $R$ est un faisceau dont le support est contenu dans
-
 \LayerTarget{tohoku:def:singular-locus-union}
-\[
-Y=\bigcup_{k\ne l}X_k\cap X_l,
-\]
-qui est de dimension combinatoire $\leq n-1$. On en conclut une suite exacte
-
+$Y=\displaystyle\bigcup\limits_{k\ne l}X_k\cap X_l$,
+qui est de dimension combinatoire $\leqq n-1$. On en conclut une suite exacte
 \LayerTarget{tohoku:eq:cohomology-component-sequence}
-\[
-H^{i-1}(X,R)\longrightarrow H^i(X,F)\longrightarrow
-\bigoplus_k H^i(X,F_k).
-\]
+$H^{i-1}(X,R)\to H^i(X,F)\to\displaystyle\bigoplus\limits_k H^i(X,F_k)$.
 Si $i>n$ d'où $i-1>n-1$, on a
 $H^{i-1}(X,R)=H^{i-1}(Y,R)=0$ d'après l'hypothèse de récurrence, il suffit
 donc, pour prouver $H^i(X,F)=0$, de prouver que $H^i(X,F_k)=0$. Or on a
-
 \LayerTarget{tohoku:eq:component-cohomology-identification}
-\[
-H^i(X,F_k)=H^i(X_k,F),
-\]
+$H^i(X,F_k)=H^i(X_k,F)$,
 cela nous ramène à prouver le théorème pour l'espace irréductible $X_k$. Nous
 supposerons donc $X$ irréductible. En vertu du corollaire à la proposition
-3.6.3, il suffit de prouver que $H^i(X,Z_U)=0$ pour $i>n$ et toute partie
-ouverte $U$ de $X$. On peut supposer $U\ne\phi$, alors $Y=\mathrm C U$ est
+3.6.3, il suffit de prouver que $H^i(X,\mathbf Z_U)=0$ pour $i>n$ et toute partie
+ouverte $U$ de $X$. On peut supposer $U\ne\phi$, alors $Y=\complement U$ est
 une partie fermée $\ne X$ de $X$, donc de dimension combinatoire
-$\leq n-1$. De la suite exacte
-
+$\leqq n-1$. De la suite exacte
 \LayerTarget{tohoku:eq:open-complement-sequence}
-\[
-0\longrightarrow Z_U\longrightarrow Z\longrightarrow Z_Y
-\longrightarrow0
-\]
-on tire, puisque $Z$ est flasque (cf. fin du 3.3),
-
+$0\to \mathbf Z_U\to \mathbf Z\to \mathbf Z_Y\to0$
+on tire, puisque $\mathbf Z$ est flasque (cf. fin du 3.3),
 \LayerTarget{tohoku:eq:open-support-cohomology-reduction}
-\[
-H^i(X,Z_U)=H^{i-1}(X,Z_Y)=H^{i-1}(Y,Z),
-\]
+$H^i(X,\mathbf Z_U)=H^{i-1}(X,\mathbf Z_Y)=H^{i-1}(Y,\mathbf Z)$,
 qui est encore nul d'après l'hypothèse de récurrence.
 
 \LayerTarget{tohoku:remark:3.6.5:1}
-\noindent\textsc{Remarques 1.} Le théorème précédent généralise un théorème
+\indent\textsc{Remarques} 1. Le théorème précédent généralise un théorème
 antérieur de Serre [18].
 
 \LayerTarget{tohoku:remark:3.6.5:2}
-\noindent 2. On peut trouver des espaces de Zariski de dimension cohomologique
+\indent 2. On peut trouver des espaces de Zariski de dimension cohomologique
 nulle, et de dimension combinatoire infinie, ou finie arbitrairement élevée.
-
 \LayerTarget{tohoku:def:ordered-zariski-example}
 Il suffit de considérer, sur un ensemble bien ordonné $X$ fini ou infini, la
-topologie dont les fermés sont les ensembles de la forme $X_x$, où pour tout
+topologie dont les fermés sont $X$ et les ensembles de la forme $X_x$, où pour tout
 $x\in X$, $X_x$ désigne l'ensemble des $y\in X$ tels que $y<x$.
 
 \LayerTarget{tohoku:section:3.7}
-\textbf{3.7. La suite spectrale de Leray d'une application continue.} Soit
+\indent\textbf{3.7. La suite spectrale de Leray d'une application continue.} Soit
 $f$ une application continue d'un espace $Y$ dans un espace $X$.
-
 \LayerTarget{tohoku:def:relative-support-antifilter}
 On suppose donné dans $Y$ un antifiltre $\Psi$ de parties fermées. Pour tout
 ouvert $U\subset X$, soit $\Psi(U)$ l'antifiltre de parties fermées dans
@@ -76,33 +56,28 @@ $f^{-1}(U)$ formé des $A\subset f^{-1}(U)$ tels que, pour tout $x\in U$,
 existe un voisinage $V\subset U$ de $x$ tel que l'adhérence de
 $A\cap f^{-1}(V)$ soit dans $\Psi$. En particulier, $\Psi(X)$ désigne un
 antifiltre de parties fermées de $Y$.
-
 \LayerTarget{tohoku:def:relative-direct-image}
 Soit $F$ un faisceau de groupes abéliens sur $Y$, considérons, pour tout ouvert
 $U\subset X$, le groupe $\Gamma_{\Psi(U)}(f^{-1}(U),F)$. On vérifie facilement
 que, pour les applications de restrictions évidentes (relatives à des
-inclusions $V\subset U$), ces groupes forment un faisceau sur $X$, noté
-$f_\Psi(F)$ et appelé \textit{image directe de $F$ par $f$ relativement à
+inclusions $V\subset U$), ces groupes forment un \textit{faisceau} sur $X$, noté
+$f(F)$ et appelé \textit{image directe de $F$ par $f$ relativement à
 $\Psi$}.
-
 \LayerTarget{tohoku:def:ordinary-direct-image}
 Si $\Psi$ est la famille de toutes les parties fermées de $Y$, on écrit
 simplement $f_*(F)$ au lieu de $f_\Psi(F)$, et $f_*(F)$ est appelé
-\textit{l'image directe du faisceau $F$ par $f$}. D'ailleurs, dans ce cas,
+l'\textit{image directe du faisceau $F$ par $f$}. D'ailleurs, dans ce cas,
 $\Psi(U)$ est l'ensemble de toutes les parties fermées de l'espace
 $f^{-1}(U)$, donc
-
 \LayerTarget{tohoku:eq:direct-image-sections}
-\[
-\Gamma(U,f_*(F))=\Gamma(f^{-1}(U),F)
-\]
+$\Gamma(U,f_*(F))=\Gamma(f^{-1}(U),F)$
 (définition qui a aussi sens si on suppose seulement que $F$ est un faisceau
 d'ensembles). --- Par définition, on a dans le cas général :
-
 \LayerTarget{tohoku:eq:relative-direct-image-sections}
 \[
-\Gamma(U,f_\Psi(F))=\Gamma_{\Psi(U)}(f^{-1}(U),F).
+\Gamma(U,f(F))=\Gamma_{\Psi(U)}(f^{-1}(U),F).
 \]
+
 On vérifie aussitôt la formule :
 
 \TohokuContinuation{172}

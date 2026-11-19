@@ -9,28 +9,24 @@
 pour toute $\varphi\in\Gamma(f_\Psi(F))=\Gamma_{\Psi(X)}(F)$ (dont on
 considère les supports dans $X$ et dans $Y$, qu'on distingue dans la notation
 en mettant l'espace en indice au symbole supp.).
-
 \LayerTarget{tohoku:def:pushforward-adapted-support-antifilter}
 Soit alors $\Phi$ un antifiltre de parties fermées dans $X$, désignons par
 $\Psi'$ l'antifiltre des parties fermées $A$ de $Y$ qui sont dans $\Psi(X)$,
 et telles que l'adhérence de $f(A)$ soit dans $\Phi$. Alors les formules
 précédentes impliquent la formule :
-
 \LayerTarget{tohoku:eq:adapted-support-sections}
 \[
 \Gamma_\Phi(f_\Psi(F))=\Gamma_{\Psi'}(F).
 \]
-
 \LayerTarget{tohoku:def:adapted-antifilters}
-(Les familles $\Phi$ et $\Psi$ sont dites \textit{adaptées (relativement à
-$f$)} si on a $\Psi=\Psi'$. C'est le cas par exemple si $\Phi$ et $\Psi$ sont
+(Les familles $\Phi$ et $\Psi$ sont dites \textit{adaptées} (\textit{relativement à
+$f$}) si on a $\Psi=\Psi'$. C'est le cas par exemple si $\Phi$ et $\Psi$ sont
 formés de toutes les parties fermées de $X$ resp. $Y$).
 
 \LayerTarget{tohoku:functor:relative-direct-image-left-exact}
-\textit{$f_\Psi$ est un foncteur exact à gauche} de la catégorie $C^Y$ des
-faisceaux abéliens sur $Y$ dans la catégorie $C^X$, de plus la formule
+\textit{$f_\Psi$ est un foncteur exact à gauche} de la catégorie $\mathbf C^Y$ des
+faisceaux abéliens sur $Y$ dans la catégorie $\mathbf C^X$, de plus la formule
 précédente désigne un isomorphisme \textit{fonctoriel}. On peut l'écrire
-
 \LayerTarget{tohoku:eq:adapted-support-functor-factorization}
 \[
 \Gamma_{\Psi'}=\Gamma_\Phi f_\Psi.
@@ -40,25 +36,23 @@ conditions moyennant lesquelles $f_\Psi$ transforme un faisceau injectif en
 un faisceau $\Gamma_\Phi$-acyclique.
 
 \LayerTarget{tohoku:lemma:3.7.1}
-\noindent\textsc{Lemme 3.7.1.}
-\begin{description}
+\indent\textsc{Lemme 3.7.1.}
 \LayerTarget{tohoku:subitem:3.7.1:1}
-\item[\textit{1)}] \textit{Si $\Psi$ est l'ensemble de toutes les parties
+1) \textit{Si $\Psi$ est l'ensemble de toutes les parties
 fermées de $Y$, $f_\Psi$ transforme faisceaux injectifs en faisceaux
 injectifs.}
+
 \LayerTarget{tohoku:subitem:3.7.1:2}
-\item[\textit{2)}] \textit{Si $\Phi$ est paracompactifiante, alors $f_\Psi$
+\indent 2) \textit{Si $\Phi$ est paracompactifiante, alors $f_\Psi$
 transforme faisceaux flasques en faisceaux $\Phi$-mous.}
-\end{description}
 
 \LayerTarget{tohoku:proof:3.7.1:1}
-\noindent\textsc{Démonstration.} 1) Supposons que $F$ soit injectif ; soit,
-pour tout $y\in Y$, $M(y)$ un groupe abélien injectif contenant $F(y)$, et
+\indent\textsc{Démonstration.} 1) Supposons que $F$ soit injectif ; soit,
+pour tout $y\in Y$, $M(y)$ un groupe abélien injectif contenant $\mathrm F(y)$, et
 soit $M$ le faisceau produit défini par les $M(y)$ (cf. 3.1). $F$ est un
 sous-faisceau de $M$, donc un facteur direct de $M$ puisqu'il est injectif,
 donc $f_\Psi(F)$ est un facteur direct de $f_\Psi(M)$, et il suffit de prouver
 que $f_\Psi(M)$ est injectif.
-
 \LayerTarget{tohoku:def:product-direct-image-sheaf}
 Or pour tout $x\in X$, soit $N(x)$ le groupe produit des $M(y)$ pour
 $y\in f^{-1}(x)$, il résulte aussitôt des définitions que $f(M)$ est le
@@ -75,15 +69,14 @@ $B'\in\Phi$ paracompact, donc $g$ est la restriction d'une section $g'$ de
 $f_\Psi(F)$ définie sur un voisinage convenable $U\subset B'$ de $B$. $B'$
 étant normal il existe un voisinage \textit{fermé} $B_1$ de $B$ contenu dans
 $U$, soit $U_1$ son intérieur.
-
 \LayerTarget{tohoku:construction:flabby-extension-section}
 Considérons $g'$ comme un élément de
 $\Gamma_{\Psi(U)}(f^{-1}(U),F)$, son support $A$ est une partie fermée de
 $f^{-1}(U)$, donc $A\cap f^{-1}(B_1)$ est une partie fermée de $Y$, donc son
 complémentaire dans $Y$ est ouvert. L'intersection de cet ouvert avec l'ouvert
-$f^{-1}(U_1)$ étant contenue dans $\mathrm C A$, $g'$ y est nulle, donc il
+$f^{-1}(U_1)$ étant contenue dans $\complement A$, $g'$ y est nulle, donc il
 existe une section $g_1$ de $F$ sur l'ouvert réunion de $f^{-1}(U_1)$ et de
-$\mathrm C(A\cap f^{-1}(B_1))$ qui coïncide avec $g'$ sur le premier et est
+$\complement(A\cap f^{-1}(B_1))$ qui coïncide avec $g'$ sur le premier et est
 nulle sur le second. Enfin, $F$ étant flasque, il existe une section $h$ de
 $F$ sur $Y$
 
